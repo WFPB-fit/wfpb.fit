@@ -1,0 +1,250 @@
+{
+    "overview":[
+        {
+            "title":"Health Implications of a Vegetarian Diet",
+            "url":"http://journals.sagepub.com/doi/abs/10.1177/1559827611425762",
+            "year":2011,
+            "is_meta":true,
+            "availability":"abstract",
+            "quote":"There is now a significant amount of research that demonstrates the health benefits of vegetarian and plant-based diets"
+        },
+        {
+            "title":"Vegetarian diets, low-meat diets and health: a review",
+            "url":"https://www.cambridge.org/core/journals/public-health-nutrition/article/vegetarian-diets-low-meat-diets-and-health-a-review/CFE7D0A7ADA80651A3DC03892287BABA",
+            "year":2012,
+            "is_meta":true,
+            "availability":"full",
+            "quote":"Both vegetarian diets and prudent diets allowing small amounts of red meat are associated with reduced risk of diseases...Evidence linking red meat intake, particularly processed meat, and increased risk of CHD, cancer and type 2 diabetes is convincing and provides indirect support for consumption of a plant-based diet."
+        },
+        {
+            "title":"Vegetarian, vegan diets and multiple health outcomes: A systematic review with meta-analysis of observational studies",
+            "url":"http://www.tandfonline.com/doi/abs/10.1080/10408398.2016.1138447",
+            "year":2016,
+            "is_meta":true,
+            "availability":"abstract",
+            "quote":"This comprehensive meta-analysis reports a significant protective effect of a vegetarian diet versus the incidence and/or mortality from ischemic heart disease (−25%) and incidence from total cancer (−8%). Vegan diet conferred a significant reduced risk (−15%) of incidence from total cancer"
+        },
+        {
+            "title":"Vegetarian diet: panacea for modern lifestyle diseases?",
+            "url":"https://academic.oup.com/qjmed/article/92/9/531/1520534/Vegetarian-diet-panacea-for-modern-lifestyle",
+            "year":1999,
+            "is_meta":true,
+            "availability":"full",
+            "quote":"review the beneficial and adverse effects of vegetarian diets in various medical conditions"
+        },
+        {
+            "title":"Health effects of vegan diets",
+            "url":"http://ajcn.nutrition.org/content/89/5/1627S.long",
+            "year":2009,
+            "is_meta":true,
+            "availability":"full",
+            "quote":"Vegans are thinner, have lower serum cholesterol and blood pressure, and enjoy a lower risk of CVD"
+        },
+        {
+            "title":"Vegetarian Diets: What Are the Advantages?",
+            "url":"https://www.karger.com/Article/Abstract/83787",
+            "year":2004,
+            "is_meta":true,
+            "availability":"abstract",
+            "quote":"The benefits arise from lower intakes of saturated fat, cholesterol and animal protein as well as higher intakes of complex carbohydrates, dietary fiber, magnesium, folic acid, vitamin C and E, carotenoids and other phytochemicals."
+        },
+        {
+            "title":"Accruing evidence on benefits of adherence to the Mediterranean diet on health: an updated systematic review and meta-analysis",
+            "url":"http://ajcn.nutrition.org/content/92/5/1189.long",
+            "year":2010,
+            "is_meta":true,
+            "availability":"abstract",
+            "quote":"This updated meta-analysis confirms, in a larger number of subjects and studies, the significant and consistent protection provided by adherence to the Mediterranean diet in relation to the occurrence of major chronic degenerative diseases."
+        }
+    ],
+
+    "arthritis":[
+        {
+            "title":"Fasting followed by vegetarian diet in patients with rheumatoid arthritis: a systematic review",
+            "url":"http://www.tandfonline.com/doi/abs/10.1080/030097401750065256",
+            "year":2009,
+            "is_meta":true,
+            "availability":"abstract",
+            "quote":"available evidence suggests that fasting followed by vegetarian diets might be useful in the treatment of RA"
+        },
+        {
+            "title":"Effectiveness and Safety of Dietary Interventions for Rheumatoid Arthritis: A Systematic Review of Randomized Controlled Trials",
+            "url":"https://www.ncbi.nlm.nih.gov/pubmed/20430134",
+            "year":2010,
+            "is_meta":true,
+            "availability":"abstract",
+            "quote":"The effects of dietary manipulation...on rheumatoid arthritis are still uncertain"
+        },
+        {
+            "title":"Is There a Role for Diet in the Therapy of Rheumatoid Arthritis?",
+            "url":"https://www.ncbi.nlm.nih.gov/pubmed/20430134",
+            "year":2016,
+            "is_meta":true,
+            "availability":"abstract",
+            "quote":"Given the complexity of studying the relationship between diet and RA disease activity, we highlight areas deserving further study before specific recommendations can be made to RA patients."
+        },
+        {
+            "title":"Rheumatoid arthritis treated with vegetarian diets",
+            "url":"http://m.ajcn.nutrition.org/content/70/3/594s.short",
+            "year":1999,
+            "is_meta":false,
+            "availability":"abstract",
+            "quote":"the results show that some patients with RA can benefit from a fasting period followed by a vegetarian diet"
+        },
+        {
+            "title":"Whole-Foods, Plant-Based Diet Alleviates the Symptoms of Osteoarthritis",
+            "url":"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4359818/",
+            "year":2015,
+            "is_meta":false,
+            "availability":"full",
+            "quote":"results suggest that a whole-foods, plant-based diet significantly improves self-assessed measures of functional status among osteoarthritis patients"
+        },
+        {
+            "title":"Faecal microbial flora and disease activity in rheumatoid arthritis during a vegan diet.",
+            "url":"https://www.ncbi.nlm.nih.gov/pubmed/9117178",
+            "year":1997,
+            "is_meta":false,
+            "availability":"abstract",
+            "quote":"a vegan diet changes the faecal microbial flora in RA patients, and changes in the faecal flora are associated with improvement in RA activity."
+        },
+        {
+            "title":"Uncooked vegan diet, rich in lactobacilli, decreased subjective symptoms of rheumatoid arthritis",
+            "url":"https://www.ncbi.nlm.nih.gov/pubmed/9566667",
+            "year":1998,
+            "is_meta":false,
+            "availability":"abstract",
+            "quote":"results showed that an uncooked vegan diet, rich in lactobacilli, decreased subjective symptoms of rheumatoid arthritis"
+        },
+        {
+            "title":"Effects of a Very Low-Fat, Vegan Diet in Subjects with Rheumatoid Arthritis",
+            "url":"http://online.liebertpub.com/doi/abs/10.1089/107555302753507195",
+            "year":2004,
+            "is_meta":false,
+            "availability":"abstract",
+            "quote":"This study showed that patients with moderate-to-severe RA, who switch to a very low-fat, vegan diet can experience significant reductions in RA symptoms."
+        }
+    ],
+    "Inflammatory Bowel Disease":[
+        {
+            "title":"An Examination of Diet for the Maintenance of Remission in Inflammatory Bowel Disease",
+            "url":"https://www.ncbi.nlm.nih.gov/pubmed/9566667",
+            "year":2017,
+            "is_meta":true,
+            "availability":"full",
+            "quote":"Pre-illness studies in IBD and intervention trials provide convincing evidence that a plant-based diet, with increased consumption of fruit/vegetables and less red meat intake could be suggested to patients with IBD in remission."
+        },
+        {
+            "title":"European Crohn’s and Colitis Organisation Topical Review on Environmental Factors in IBD",
+            "url":"https://academic.oup.com/ecco-jcc/article/2756096#94142366#94142400",
+            "year":2017,
+            "is_meta":true,
+            "availability":"full",
+            "quote":"in several animal models, high-fat/high-sugar diet, gluten, red meat, maltodextrin, and emulsifiers may induce or accelerate intestinal inflammation. Certain dietary fibres and soy protein might be beneficial...Presumably diet alone is inadequate to cause IBD, but there is evidence for a gene/diet interaction"
+        },
+        {
+            "title":"Diet as a Trigger or Therapy for Inflammatory Bowel Diseases.",
+            "url":"https://www.ncbi.nlm.nih.gov/pubmed/27793606",
+            "year":2017,
+            "is_meta":true,
+            "availability":"abstract",
+            "quote":"epidemiology studies have indicated that diets high in animal fat and low in fruits and vegetables are the most common pattern associated with an increased risk of IBD"
+        },
+        {
+            "title":"The Role of Diet in Inflammatory Bowel Disease.",
+            "url":"https://www.ncbi.nlm.nih.gov/pubmed/28397133",
+            "year":2017,
+            "is_meta":true,
+            "availability":"abstract",
+            "quote":"Until several ongoing clinical trials are completed, a reasonable approach to dietary recommendations for patients with IBD is to propose a well-balanced, healthy (low-fat, low-sugar) diet prepared from fresh ingredients, such as the Mediterranean diet, with exclusions of self-identified foods that worsen or trigger IBD-related symptoms."
+        },
+        {
+            "title":"Research Gaps in Diet and Nutrition in Inflammatory Bowel Disease. A Topical Review by D-ECCO Working Group [Dietitians of ECCO]",
+            "url":"https://academic.oup.com/ecco-jcc/article/doi/10.1093/ecco-jcc/jjx109/4080183/Research-Gaps-in-Diet-and-Nutrition-in",
+            "year":2017,
+            "is_meta":true,
+            "availability":"full",
+            "quote":"Evidence now proposes that whereas human genetics are important, they explain only a small fraction of the risk of developing the disease...The aim of this topical review was to extensively review the literature on the role of diet and nutrition in the aetiology and management of IBD and set the agenda for future research."
+        },
+        {
+            "title":"Is a low FODMAP diet beneficial for patients with inflammatory bowel disease? A meta-analysis and systematic review",
+            "url":"https://academic.oup.com/ecco-jcc/article/doi/10.1093/ecco-jcc/jjx109/4080183/Research-Gaps-in-Diet-and-Nutrition-in",
+            "year":2017,
+            "is_meta":true,
+            "availability":"abstract",
+            "quote":"The present meta-analysis offers proof to support that a low FODMAP diet is beneficial for reducing gastrointestinal symptoms in patients with quiescent IBD. With the inherent limitations, the findings of this analysis remain to be confirmed"
+        },
+        {
+            "title":"What Diet Can and Cannot Do: Role of Diet in Inflammatory Bowel Disease",
+            "url":"https://www.karger.com/Article/FullText/445392",
+            "year":2016,
+            "is_meta":true,
+            "availability":"full",
+            "quote":"The incidence of inflammatory bowel disease (IBD) is steadily in the rise in Western as well as in developing countries paralleling the increase of westernized diets, characterized by high protein and fat as well as excessive sugar intake, with less vegetables and fiber."
+        },
+        {
+            "title":"Environmental risk factors for inflammatory bowel diseases: Evidence based literature review",
+            "url":"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4945988/",
+            "year":2016,
+            "is_meta":true,
+            "availability":"full",
+            "quote":"This article critically reviews the current evidence on environmental risk factors for IBD and proposes directions for future research."
+        },
+        {
+            "title":"The Impact of Dietary Interventions on the Symptoms of Inflammatory Bowel Disease: A Systematic Review.",
+            "url":"https://www.ncbi.nlm.nih.gov/pubmed/25569442",
+            "year":2016,
+            "is_meta":true,
+            "availability":"abstract",
+            "quote":"Exclusion diets and the low FODMAP diet are two areas identified in this review that show promise for having therapeutic benefits for patients with IBD."
+        },
+        {
+            "title":"A mechanistic review on plant-derived natural compounds as dietary supplements for prevention of inflammatory bowel disease",
+            "url":"http://www.tandfonline.com/doi/abs/10.1586/17474124.2016.1145546",
+            "year":2016,
+            "is_meta":true,
+            "availability":"abstract",
+            "quote":"In conclusion, natural products can be considered as dietary supplements with therapeutic potential for IBD, provided that their safety and efficacy is confirmed in future well-designed clinical trials with adequate sample size."
+        },
+        {
+            "title":"Does a diet low in FODMAPs reduce symptoms associated with functional gastrointestinal disorders? A comprehensive systematic review and meta-analysis",
+            "url":"https://link.springer.com/article/10.1007/s00394-015-0922-1",
+            "year":2015,
+            "is_meta":true,
+            "availability":"abstract",
+            "quote":"The present meta-analysis supports the efficacy of a low FODMAP diet in the treatment of functional gastrointestinal symptoms"
+        },
+        {
+            "title":"Diet and Inflammatory Bowel Disease",
+            "url":"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4843040/",
+            "year":2015,
+            "is_meta":true,
+            "availability":"full",
+            "quote":"the low-FODMAP diet and the IBD-AID, seem to be reasonably balanced and sound without causing weight loss in ill IBD patients."
+        },
+        {
+            "title":"Epidemiology and risk factors for IBD",
+            "url":"https://www.nature.com/nrgastro/journal/v12/n4/full/nrgastro.2015.34.html",
+            "year":2015,
+            "is_meta":true,
+            "availability":"abstract",
+            "quote":"Established high-prevalence populations of IBD in North America and Europe experienced the steepest increase in incidence towards the second half of the twentieth century. Furthermore, populations previously considered 'low risk' (such as in Japan and India) are witnessing an increase in incidence..."
+        },
+        {
+            "title":"Diet and Inflammatory Bowel Disease: Review of Patient-Targeted Recommendations",
+            "url":"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4021001/",
+            "year":2015,
+            "is_meta":true,
+            "availability":"full",
+            "quote":"essentially all food groups- fruits, vegetables, meats, and grains- have been noted by patient self-report to exacerbate symptoms and do not provide generalizable information for other patients with IBD. Rather, patients may be instructed to be aware of their diet through food diaries and their symptoms and make modifications specific to the individual patient"
+        },
+        {
+            "title":"Dietary intake and risk of developing inflammatory bowel disease: a systematic review of the literature.",
+            "url":"https://www.ncbi.nlm.nih.gov/pubmed/21468064",
+            "year":2011,
+            "is_meta":true,
+            "availability":"abstract",
+            "quote":"High dietary intakes of total fats, PUFAs, omega-6 fatty acids, and meat were associated with an increased risk of CD and UC. High fiber and fruit intakes were associated with decreased CD risk, and high vegetable intake was associated with decreased UC risk."
+        }
+    ],
+    "weight":[]
+}
