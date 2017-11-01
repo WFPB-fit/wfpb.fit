@@ -1,0 +1,541 @@
+{
+    "disease": {
+        "overview": [
+            {
+                "title": "Meat intake and mortality: a prospective study of over half a million people",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2803089/",
+                "year": 2010,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "Red and processed meat intakes were associated with modest increases in total mortality, cancer mortality and CVD mortality."
+            },
+            {
+                "title": "Health Implications of a Vegetarian Diet",
+                "url": "http://journals.sagepub.com/doi/abs/10.1177/1559827611425762",
+                "year": 2011,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "There is now a significant amount of research that demonstrates the health benefits of vegetarian and plant-based diets"
+            }, {
+                "title": "Nutritional Update for Physicians: Plant-Based Diets",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3662288/",
+                "year": 2013,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "Healthy eating may be best achieved with a plant-based diet...They may also reduce the number of medications needed to treat chronic diseases and lower ischemic heart disease mortality rates. Physicians should consider recommending a plant-based diet to all their patients, especially those with high blood pressure, diabetes, cardiovascular disease, or obesity."
+            },
+            {
+                "title": "Vegetarian diets, low-meat diets and health: a review",
+                "url": "https://www.cambridge.org/core/journals/public-health-nutrition/article/vegetarian-diets-low-meat-diets-and-health-a-review/CFE7D0A7ADA80651A3DC03892287BABA",
+                "year": 2012,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "Both vegetarian diets and prudent diets allowing small amounts of red meat are associated with reduced risk of diseases...Evidence linking red meat intake, particularly processed meat, and increased risk of CHD, cancer and type 2 diabetes is convincing and provides indirect support for consumption of a plant-based diet."
+            },
+            {
+                "title": "Vegetarian, vegan diets and multiple health outcomes: A systematic review with meta-analysis of observational studies",
+                "url": "http://www.tandfonline.com/doi/abs/10.1080/10408398.2016.1138447",
+                "year": 2016,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "This comprehensive meta-analysis reports a significant protective effect of a vegetarian diet versus the incidence and/or mortality from ischemic heart disease (−25%) and incidence from total cancer (−8%). Vegan diet conferred a significant reduced risk (−15%) of incidence from total cancer"
+            },
+            {
+                "title": "Vegetarian diet: panacea for modern lifestyle diseases?",
+                "url": "https://academic.oup.com/qjmed/article/92/9/531/1520534/Vegetarian-diet-panacea-for-modern-lifestyle",
+                "year": 1999,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "review the beneficial and adverse effects of vegetarian diets in various medical conditions"
+            },
+            {
+                "title": "Health effects of vegan diets",
+                "url": "http://ajcn.nutrition.org/content/89/5/1627S.long",
+                "year": 2009,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "Vegans are thinner, have lower serum cholesterol and blood pressure, and enjoy a lower risk of CVD"
+            },
+            {
+                "title": "Vegetarian Diets: What Are the Advantages?",
+                "url": "https://www.karger.com/Article/Abstract/83787",
+                "year": 2004,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "The benefits arise from lower intakes of saturated fat, cholesterol and animal protein as well as higher intakes of complex carbohydrates, dietary fiber, magnesium, folic acid, vitamin C and E, carotenoids and other phytochemicals."
+            },
+            {
+                "title": "Accruing evidence on benefits of adherence to the Mediterranean diet on health: an updated systematic review and meta-analysis",
+                "url": "http://ajcn.nutrition.org/content/92/5/1189.long",
+                "year": 2010,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "This updated meta-analysis confirms, in a larger number of subjects and studies, the significant and consistent protection provided by adherence to the Mediterranean diet in relation to the occurrence of major chronic degenerative diseases."
+            }
+        ],
+
+        "arthritis": [{
+                "title": "Fasting followed by vegetarian diet in patients with rheumatoid arthritis: a systematic review",
+                "url": "http://www.tandfonline.com/doi/abs/10.1080/030097401750065256",
+                "year": 2009,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "available evidence suggests that fasting followed by vegetarian diets might be useful in the treatment of RA"
+            },
+            {
+                "title": "Effectiveness and Safety of Dietary Interventions for Rheumatoid Arthritis: A Systematic Review of Randomized Controlled Trials",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/20430134",
+                "year": 2010,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "The effects of dietary manipulation...on rheumatoid arthritis are still uncertain"
+            },
+            {
+                "title": "Is There a Role for Diet in the Therapy of Rheumatoid Arthritis?",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/20430134",
+                "year": 2016,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "Given the complexity of studying the relationship between diet and RA disease activity, we highlight areas deserving further study before specific recommendations can be made to RA patients."
+            },
+            {
+                "title": "Rheumatoid arthritis treated with vegetarian diets",
+                "url": "http://m.ajcn.nutrition.org/content/70/3/594s.short",
+                "year": 1999,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "the results show that some patients with RA can benefit from a fasting period followed by a vegetarian diet"
+            },
+            {
+                "title": "Whole-Foods, Plant-Based Diet Alleviates the Symptoms of Osteoarthritis",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4359818/",
+                "year": 2015,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "results suggest that a whole-foods, plant-based diet significantly improves self-assessed measures of functional status among osteoarthritis patients"
+            },
+            {
+                "title": "Faecal microbial flora and disease activity in rheumatoid arthritis during a vegan diet.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/9117178",
+                "year": 1997,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "a vegan diet changes the faecal microbial flora in RA patients, and changes in the faecal flora are associated with improvement in RA activity."
+            },
+            {
+                "title": "Uncooked vegan diet, rich in lactobacilli, decreased subjective symptoms of rheumatoid arthritis",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/9566667",
+                "year": 1998,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "results showed that an uncooked vegan diet, rich in lactobacilli, decreased subjective symptoms of rheumatoid arthritis"
+            },
+            {
+                "title": "Effects of a Very Low-Fat, Vegan Diet in Subjects with Rheumatoid Arthritis",
+                "url": "http://online.liebertpub.com/doi/abs/10.1089/107555302753507195",
+                "year": 2004,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "This study showed that patients with moderate-to-severe RA, who switch to a very low-fat, vegan diet can experience significant reductions in RA symptoms."
+            }
+        ],
+        "Inflammatory Bowel Disease": [{
+                "title": "An Examination of Diet for the Maintenance of Remission in Inflammatory Bowel Disease",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/9566667",
+                "year": 2017,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "Pre-illness studies in IBD and intervention trials provide convincing evidence that a plant-based diet, with increased consumption of fruit/vegetables and less red meat intake could be suggested to patients with IBD in remission."
+            },
+            {
+                "title": "European Crohn’s and Colitis Organisation Topical Review on Environmental Factors in IBD",
+                "url": "https://academic.oup.com/ecco-jcc/article/2756096#94142366#94142400",
+                "year": 2017,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "in several animal models, high-fat/high-sugar diet, gluten, red meat, maltodextrin, and emulsifiers may induce or accelerate intestinal inflammation. Certain dietary fibres and soy protein might be beneficial...Presumably diet alone is inadequate to cause IBD, but there is evidence for a gene/diet interaction"
+            },
+            {
+                "title": "Diet as a Trigger or Therapy for Inflammatory Bowel Diseases.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/27793606",
+                "year": 2017,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "epidemiology studies have indicated that diets high in animal fat and low in fruits and vegetables are the most common pattern associated with an increased risk of IBD"
+            },
+            {
+                "title": "The Role of Diet in Inflammatory Bowel Disease.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/28397133",
+                "year": 2017,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "Until several ongoing clinical trials are completed, a reasonable approach to dietary recommendations for patients with IBD is to propose a well-balanced, healthy (low-fat, low-sugar) diet prepared from fresh ingredients, such as the Mediterranean diet, with exclusions of self-identified foods that worsen or trigger IBD-related symptoms."
+            },
+            {
+                "title": "Research Gaps in Diet and Nutrition in Inflammatory Bowel Disease. A Topical Review by D-ECCO Working Group [Dietitians of ECCO]",
+                "url": "https://academic.oup.com/ecco-jcc/article/doi/10.1093/ecco-jcc/jjx109/4080183/Research-Gaps-in-Diet-and-Nutrition-in",
+                "year": 2017,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "Evidence now proposes that whereas human genetics are important, they explain only a small fraction of the risk of developing the disease...The aim of this topical review was to extensively review the literature on the role of diet and nutrition in the aetiology and management of IBD and set the agenda for future research."
+            },
+            {
+                "title": "Is a low FODMAP diet beneficial for patients with inflammatory bowel disease? A meta-analysis and systematic review",
+                "url": "https://academic.oup.com/ecco-jcc/article/doi/10.1093/ecco-jcc/jjx109/4080183/Research-Gaps-in-Diet-and-Nutrition-in",
+                "year": 2017,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "The present meta-analysis offers proof to support that a low FODMAP diet is beneficial for reducing gastrointestinal symptoms in patients with quiescent IBD. With the inherent limitations, the findings of this analysis remain to be confirmed"
+            },
+            {
+                "title": "What Diet Can and Cannot Do: Role of Diet in Inflammatory Bowel Disease",
+                "url": "https://www.karger.com/Article/FullText/445392",
+                "year": 2016,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "The incidence of inflammatory bowel disease (IBD) is steadily in the rise in Western as well as in developing countries paralleling the increase of westernized diets, characterized by high protein and fat as well as excessive sugar intake, with less vegetables and fiber."
+            },
+            {
+                "title": "Environmental risk factors for inflammatory bowel diseases: Evidence based literature review",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4945988/",
+                "year": 2016,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "This article critically reviews the current evidence on environmental risk factors for IBD and proposes directions for future research."
+            },
+            {
+                "title": "The Impact of Dietary Interventions on the Symptoms of Inflammatory Bowel Disease: A Systematic Review.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/25569442",
+                "year": 2016,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "Exclusion diets and the low FODMAP diet are two areas identified in this review that show promise for having therapeutic benefits for patients with IBD."
+            },
+            {
+                "title": "A mechanistic review on plant-derived natural compounds as dietary supplements for prevention of inflammatory bowel disease",
+                "url": "http://www.tandfonline.com/doi/abs/10.1586/17474124.2016.1145546",
+                "year": 2016,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "In conclusion, natural products can be considered as dietary supplements with therapeutic potential for IBD, provided that their safety and efficacy is confirmed in future well-designed clinical trials with adequate sample size."
+            },
+            {
+                "title": "Does a diet low in FODMAPs reduce symptoms associated with functional gastrointestinal disorders? A comprehensive systematic review and meta-analysis",
+                "url": "https://link.springer.com/article/10.1007/s00394-015-0922-1",
+                "year": 2015,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "The present meta-analysis supports the efficacy of a low FODMAP diet in the treatment of functional gastrointestinal symptoms"
+            },
+            {
+                "title": "Diet and Inflammatory Bowel Disease",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4843040/",
+                "year": 2015,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "the low-FODMAP diet and the IBD-AID, seem to be reasonably balanced and sound without causing weight loss in ill IBD patients."
+            },
+            {
+                "title": "Epidemiology and risk factors for IBD",
+                "url": "https://www.nature.com/nrgastro/journal/v12/n4/full/nrgastro.2015.34.html",
+                "year": 2015,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "Established high-prevalence populations of IBD in North America and Europe experienced the steepest increase in incidence towards the second half of the twentieth century. Furthermore, populations previously considered 'low risk' (such as in Japan and India) are witnessing an increase in incidence..."
+            },
+            {
+                "title": "Diet and Inflammatory Bowel Disease: Review of Patient-Targeted Recommendations",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4021001/",
+                "year": 2015,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "essentially all food groups- fruits, vegetables, meats, and grains- have been noted by patient self-report to exacerbate symptoms and do not provide generalizable information for other patients with IBD. Rather, patients may be instructed to be aware of their diet through food diaries and their symptoms and make modifications specific to the individual patient"
+            },
+            {
+                "title": "Dietary intake and risk of developing inflammatory bowel disease: a systematic review of the literature.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/16534521",
+                "year": 2011,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "High dietary intakes of total fats, PUFAs, omega-6 fatty acids, and meat were associated with an increased risk of CD and UC. High fiber and fruit intakes were associated with decreased CD risk, and high vegetable intake was associated with decreased UC risk."
+            },
+            {
+                "title": "A prospective study of long-term intake of dietary fiber and risk of Crohn's disease and ulcerative colitis.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/16534521",
+                "year": 2011,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "data from 170,776 women, followed up over 26 years...[shows] long-term intake of dietary fiber, particularly from fruit, is associated with lower risk of CD but not UC."
+            },
+            {
+                "title": "Epidemiologic analysis of Crohn disease in Japan: increased dietary intake of n-6 polyunsaturated fatty acids and animal protein relates to the increased incidence of Crohn disease in Japan.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/16534521",
+                "year": 1996,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "increased incidence of Crohn disease was strongly (P < 0.001) correlated with increased dietary intake of total fat (r = 0.919). animal fat (r = 0.880), n-6 polyunsaturated fatty acids (r = 0.883), animal protein (r = 0.908), milk protein (r = 0.924), and the ratio of n-6 to n-3 fatty acid intake (r = 0.792)...and was inversely correlated with intake of vegetable protein (r = -0.941, P < 0.001)."
+            },
+            {
+                "title": "Animal protein intake and risk of inflammatory bowel disease: The E3N prospective study.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/20461067",
+                "year": 2010,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "Among 67,581 participants...High total protein intake, specifically animal protein, was associated with a significantly increased risk of IBD...high consumption of meat or fish but not of eggs or dairy products was associated with IBD risk."
+            },
+            {
+                "title": "High Amount of Dietary Fiber Not Harmful But Favorable for Crohn Disease",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4315379/",
+                "year": 2015,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "Although the precise mechanism is to be determined, epidemiology provides convincing evidence that a plant-based diet is a healthy diet providing therapeutic and/or preventive effects against current major chronic diseases.22–24 Available data suggest the rationale to use dietary fiber in the treatment of IBD."
+            }
+        ],
+        "weight": [{
+                "title": "Weight gain over 5 years in 21,966 meat-eating, fish-eating, vegetarian, and vegan men and women in EPIC-Oxford",
+                "url": "https://www.nature.com/ijo/journal/v30/n9/full/0803305a.html",
+                "year": 2006,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "Lowest weight gain was seen among those who, during follow-up, had changed to a diet containing fewer animal food"
+            },
+            {
+                "title": "Metabolically Healthy Obese and Incident Cardiovascular Disease Events Among 3.5 Million Men and Women.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/28911506",
+                "year": 2017,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "During a mean follow-up of 5.4 years, obese individuals with no metabolic abnormalities had a higher risk of CHD (multivariate-adjusted hazard ratio [HR]: 1.49; 95% confidence interval [CI]: 1.45 to 1.54), cerebrovascular disease (HR: 1.07; 95% CI: 1.04 to 1.11), and heart failure (HR: 1.96; 95% CI: 1.86 to 2.06) compared with normal weight individuals with 0 metabolic abnormalities"
+            },
+            {
+                "title": "A Systematic Review and Meta-Analysis of Changes in Body Weight in Clinical Trials of Vegetarian Diets",
+                "url": "http://www.sciencedirect.com/science/article/pii/S2212267214017638",
+                "year": 2014,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "The prescription of vegetarian diets reduces mean body weight, suggesting potential value for prevention and management of weight-related conditions."
+            },
+            {
+                "title": "Vegetarian Diets and Weight Status",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/16673753",
+                "year": 2006,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "Vegetarian diets are associated with reduced body weight, lower incidence of certain chronic disease, and lower medical costs compared with non-vegetarian diets"
+            },
+            {
+                "title": "The effects of a low-fat, plant-based dietary intervention on body weight, metabolism, and insulin sensitivity.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/16164885",
+                "year": 2005,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "Adoption of a low-fat, vegan diet was associated with significant weight loss in overweight postmenopausal women, despite the absence of prescribed limits on portion size or energy intake."
+            },
+            {
+                "title": "Changing perceptions of hunger on a high nutrient density diet",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2988700/",
+                "year": 2010,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "768 participants primarily living in the United States who had changed their dietary habits from a low micronutrient to a high micronutrient diet...Highly significant differences were found between the two diets in relation to all physical and emotional symptoms as well as the location of hunger. Hunger was not an unpleasant experience while on the high nutrient density diet, was well tolerated and occurred with less frequency even when meals were skipped."
+            },
+            {
+                "title": "A two-year randomized weight loss trial comparing a vegan diet to a more moderate low-fat diet.",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2988700/",
+                "year": 2007,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "Individuals in the vegan group lost more weight than those in the NCEP group at 1 year [-4.9 (-0.5, -8.0) kg vs. -1.8 (0.8, -4.3); p < 0.05] and at 2 years [-3.1 (0.0, -6.0) kg vs. -0.8 (3.1, -4.2) kg; p < 0.05]. "
+            },
+            {
+                "title": "A multicenter randomized controlled trial of a plant-based nutrition program to reduce body weight and cardiovascular risk in the corporate setting: the GEICO study.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/23695207",
+                "year": 2013,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "An 18-week dietary intervention using a low-fat plant-based diet in a corporate setting improves body weight, plasma lipids, and, in individuals with diabetes, glycemic control."
+            },
+            {
+                "title": "A Two-Year Randomized Weight Loss Trial Comparing a Vegan Diet to a More Moderate Low-Fat Diet",
+                "url": "http://onlinelibrary.wiley.com/doi/10.1038/oby.2007.270/full",
+                "year": 2007,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "Individuals in the vegan group lost more weight than those in the NCEP group at 1 year [−4.9 (−0.5, −8.0) kg vs. −1.8 (0.8, −4.3); p < 0.05] and at 2 years [−3.1 (0.0, −6.0) kg vs. −0.8 (3.1, −4.2) kg; p < 0.05]."
+            }
+        ],
+        "allergies":[
+            {
+                "title": "Dietary Fiber and Bacterial SCFA Enhance Oral Tolerance and Protect against Food Allergy through Diverse Cellular Pathways",
+                "url": "http://www.cell.com/cell-reports/fulltext/S2211-1247(16)30630-1?_returnURL=http%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2211124716306301%3Fshowall%3Dtrue",
+                "year": 2014,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "Dietary elements, including fiber and vitamin A, therefore regulate numerous protective pathways in the gastrointestinal tract [of mice], necessary for immune non-responsiveness to food antigens."
+            },
+            {
+                "title": "Effects of Fruit and Vegetable Consumption on Risk of Asthma, Wheezing and Immune Responses: A Systematic Review and Meta-Analysis",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5409680/",
+                "year": 2017,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "Most of the studies (n = 30) reported beneficial associations of fruit and vegetable consumption with risk of asthma and/or respiratory function, while eight studies found no significant relationship. Some studies (n = 20) reported mixed results, as they found a negative association between fruit only or vegetable only, and asthma.  In addition, the meta-analyses in both adults and children showed inverse associations between fruit intake and risk of prevalent wheeze and asthma severity (p < 0.05). Likewise, vegetable intake was negatively associated with risk of prevalent asthma (p < 0.05). Seven studies examined immune responses in relation to fruit and vegetable intake in asthma, with n = 6 showing a protective effect against either systemic or airway inflammation. "
+            }
+        ],
+        "diabetes": [
+            {
+                "title": "Differential acute postprandial effects of processed meat and isocaloric vegan meals on the gastrointestinal hormone response in subjects suffering from type 2 diabetes and healthy controls: a randomized crossover study.",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4164634/",
+                "year": 2014,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "Our results suggest that the diet composition and the energy content, rather than the carbohydrate count, should be important considerations for dietary management and demonstrate that processed meat consumption is accompanied by impaired GIH responses and increased oxidative stress marker levels in diabetic patients."
+            },
+            {
+                "title": "Vegetarian diets and glycemic control in diabetes: a systematic review and meta-analysis",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4221319/",
+                "year": 2014,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "Consumption of vegetarian diets was associated with a significant reduction in HbA1c [−0.39 percentage point; 95% confidence interval (CI), −0.62 to −0.15; P=0.001; I2=3.0; P for heterogeneity =0.389], and a non-significant reduction in fasting blood glucose concentration (−0.36 mmol/L; 95% CI, −1.04 to 0.32; P=0.301; I2=0; P for heterogeneity =0.710), compared with consumption of comparator diets."
+            },
+            {
+                "title": "Vegetarian and vegan diets in type 2 diabetes management",
+                "url": "http://onlinelibrary.wiley.com/doi/10.1111/j.1753-4887.2009.00198.x/full",
+                "year": 2009,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "In clinical trials in individuals with type 2 diabetes, low-fat vegan diets improve glycemic control to a greater extent than conventional diabetes diets"
+            },
+            {
+                "title": "Vegetarian and vegan diets in type 2 diabetes management",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/19386029",
+                "year": 2009,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "In clinical trials in individuals with type 2 diabetes, low-fat vegan diets improve glycemic control to a greater extent than conventional diabetes diets"
+            },
+            {
+                "title": "Type of Vegetarian Diet, Body Weight, and Prevalence of Type 2 Diabetes",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/19386029",
+                "year": 2009,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "The study population comprised 22,434 men and 38,469 women...The 5-unit BMI difference between vegans and nonvegetarians indicates a substantial potential of vegetarianism to protect against obesity. Increased conformity to vegetarian diets protected against risk of type 2 diabetes after lifestyle characteristics and BMI were taken into account. Pesco- and semi-vegetarian diets afforded intermediate protection."
+            },
+            {
+                "title": "Vegetarian diets and incidence of diabetes in the Adventist Health Study",
+                "url": "http://www.sciencedirect.com/science/article/pii/S0939475311001700",
+                "year": 2011,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "Participants were 15,200 men and 26,187 women...who were free of diabetes. ... Vegetarian diets (vegan, lacto ovo, semi-) were associated with a substantial and independent reduction in diabetes incidence. In Blacks the dimension of the protection associated with vegetarian diets was as great as the excess risk associated with Black ethnicity."
+            },
+            {
+                "title": "Type 2 diabetes and the vegetarian diet.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/12936955",
+                "year": 2003,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "The vegetarian diet, therefore, contains a portfolio of natural products and food forms of benefit for both the carbohydrate and lipid abnormalities in diabetes. It is anticipated that their combined use in vegetarian diets will produce very significant metabolic advantages for the prevention and treatment of diabetes and its complications."
+            },
+            {
+                "title": "Effects of Vegetarian Diets on Blood Lipids: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/26508743",
+                "year": 2015,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "This systematic review and meta-analysis provides evidence that vegetarian diets effectively lower blood concentrations of total cholesterol, low-density lipoprotein cholesterol, high-density lipoprotein cholesterol, and non-high-density lipoprotein cholesterol. Such diets could be a useful nonpharmaceutical means of managing dyslipidemia, especially hypercholesterolemia."
+            },
+            {
+                "title": "A low-fat vegan diet improves glycemic control and cardiovascular risk factors in a randomized clinical trial in individuals with type 2 diabetes.",
+                "url": "http://care.diabetesjournals.org/content/29/8/1777.long",
+                "year": 2006,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "Individuals with type 2 diabetes (n = 99) were randomly assigned to a low-fat vegan diet (n = 49) or a diet following the American Diabetes Association (ADA) guidelines (n = 50) ... Both a low-fat vegan diet and a diet based on ADA guidelines improved glycemic and lipid control in type 2 diabetic patients. These improvements were greater with a low-fat vegan diet."
+            },
+            {
+                "title": "Effect of a Brown Rice Based Vegan Diet and Conventional Diabetic Diet on Glycemic Control of Patients with Type 2 Diabetes: A 12-Week Randomized Clinical Trial.",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4890770/",
+                "year": 2016,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "Although both groups showed significant reductions in HbA1C levels, the reductions were larger in the vegan group than in the conventional group (-0.5% vs. -0.2%; p-for-interaction = 0.017). When only considering participants with high compliance, the difference in HbA1c level reduction between the groups was found to be larger (-0.9% vs. -0.3%). The beneficial effect of vegan diets was noted even after adjusting for changes in total energy intake or waist circumference over the 12 weeks."
+            }
+        ],
+        "Cardiovascular Disease": [{
+                "title": "Plant-based foods and prevention of cardiovascular disease: an overview",
+                "url": "http://ajcn.nutrition.org/content/78/3/544S.long",
+                "year": 2003,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "Evidence from prospective cohort studies indicates that a high consumption of plant-based foods such as fruit and vegetables, nuts, and whole grains is associated with a significantly lower risk of coronary artery disease and stroke...Such diets, which also have many other health benefits, deserve more emphasis in dietary recommendations to prevent chronic diseases."
+            },
+            {
+                "title": "Diet, lifestyle, and the etiology of coronary artery disease: the Cornell China study.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/9860369",
+                "year": 1998,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "Investigators collected and analyzed mortality data for >50 diseases, including 7 different cancers, from 65 counties and 130 villages in rural mainland China ... The combined coronary artery disease mortality rates for both genders in rural China were inversely associated with the frequency of intake of green vegetables and plasma erythrocyte monounsaturated fatty acids, but positively associated with a combined index of salt intake plus urinary sodium and plasma apolipoprotein B. These apolipoproteins, in turn, are positively associated with animal protein intake and the frequency of meat intake and inversely associated with plant protein, legume, and light-colored vegetable intake."
+            },
+            {
+                "title": "A Plant-Based Diet, Atherogenesis, and Coronary Artery Disease Prevention",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4315380/",
+                "year": 2015,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "We suggest that a shift toward a plant-based diet may confer protective effects against atherosclerotic CAD by increasing endothelial protective factors in the circulation while reducing factors that are injurious to endothelial cells ... This review provides a mechanistic perspective of the evidence for protection by a plant-based diet against atherosclerotic CAD."
+            },
+            {
+                "title": "Mortality from Circulatory Diseases in Norway 1940-1945",
+                "url": "http://www.sciencedirect.com/science/article/pii/S014067365191210X?_rdoc=1&_fmt=high&_origin=gateway&_docanchor=&md5=b8429449ccfc9c30159a5f9aeaa92ffb&ccp=y",
+                "year": 1951,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": ""
+            },
+        ]
+    },
+    "ingredients": {
+
+    },
+    "externalities": {
+        "environment": [{
+                "title": "Analysis and valuation of the health and climate change cobenefits of dietary change",
+                "url": "http://m.pnas.org/content/113/15/4146.full",
+                "year": 2016,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "Transitioning toward more plant-based diets that are in line with standard dietary guidelines could reduce global mortality by 6–10% and food-related greenhouse gas emissions by 29–70% compared with a reference scenario in 2050...Overall, we estimate the economic benefits of improving diets to be 1–31 trillion US dollars, which is equivalent to 0.4–13% of global gross domestic product (GDP) in 2050."
+            },
+            {
+                "title": "Tackling Climate Change Through Livestock: A GLobal Assessment of Emissions and Mitigation Opportunities",
+                "url": "http://www.fao.org/3/a-i3437e.pdf",
+                "year": 2013,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "Total   GHG   emissions   from   livestock   supply   chains are estimated at 7.1 gigatonnes CO2-eq per annum for the 2005 reference period. They represent 14.5 percent of all human-induced emissions using the most recent IPCC estimates for total an-thropogenic emissions (49 gigatonnes CO2-eq for the year 2004; IPCC, 2007)."
+            },
+            {
+                "title": "Appetite for Destruction: Summary Report",
+                "url": "https://www.wwf.org.uk/sites/default/files/2017-10/WWF_AppetiteForDestruction_Summary_Report_SignOff.pdf",
+                "year": 2017,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "If everyone reduced the amount of animal products they ate to meet their nutritional requirements, the total agricultual land required would decline by 13%...The growth in intensive industrial farming coupled with an increased need for protein and energy-rich animal feed has had a devastating impact on nature. Feed crops threaten the biodiversity of many of Earth's most valuble and vulnerable areas."
+            },
+            {
+                "title": "Biodiversity conservation: The key is reducing meat consumption",
+                "url": "http://www.sciencedirect.com/science/article/pii/S0048969715303697",
+                "year": 2015,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "Livestock production is the single largest driver of habitat loss"
+            }
+        ],
+        "welfare": []
+    }
+}
