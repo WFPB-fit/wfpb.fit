@@ -1,7 +1,6 @@
 {
     "disease": {
-        "overview": [
-            {
+        "overview": [{
                 "title": "Meat intake and mortality: a prospective study of over half a million people",
                 "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2803089/",
                 "year": 2010,
@@ -365,8 +364,7 @@
                 "quote": "Individuals in the vegan group lost more weight than those in the NCEP group at 1 year [−4.9 (−0.5, −8.0) kg vs. −1.8 (0.8, −4.3); p < 0.05] and at 2 years [−3.1 (0.0, −6.0) kg vs. −0.8 (3.1, −4.2) kg; p < 0.05]."
             }
         ],
-        "allergies":[
-            {
+        "allergies": [{
                 "title": "Dietary Fiber and Bacterial SCFA Enhance Oral Tolerance and Protect against Food Allergy through Diverse Cellular Pathways",
                 "url": "http://www.cell.com/cell-reports/fulltext/S2211-1247(16)30630-1?_returnURL=http%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2211124716306301%3Fshowall%3Dtrue",
                 "year": 2014,
@@ -383,8 +381,222 @@
                 "quote": "Most of the studies (n = 30) reported beneficial associations of fruit and vegetable consumption with risk of asthma and/or respiratory function, while eight studies found no significant relationship. Some studies (n = 20) reported mixed results, as they found a negative association between fruit only or vegetable only, and asthma.  In addition, the meta-analyses in both adults and children showed inverse associations between fruit intake and risk of prevalent wheeze and asthma severity (p < 0.05). Likewise, vegetable intake was negatively associated with risk of prevalent asthma (p < 0.05). Seven studies examined immune responses in relation to fruit and vegetable intake in asthma, with n = 6 showing a protective effect against either systemic or airway inflammation. "
             }
         ],
-        "diabetes": [
+        "Multiple Sclerosis": [{
+                "title": "Multiple Sclerosis and Nutrition",
+                "url": "https://jamanetwork.com/journals/jamaneurology/article-abstract/573287",
+                "year": 1974,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "Prevalence of MS in many countries was correlated with average daily per capita consumption of fats and oils, protein, and calories, including calories of animal origin. Of these dietary factors, only calories of animal origin and fats and oils correlated significantly with MS prevalence. When the latter two were combined (animal-fats), a significant correlation with MS prevalence of.70 resulted, suggesting that increased consumption of animal-fat may be associated with MS."
+            },
             {
+                "title": "Nutrition Facts in Multiple Sclerosis",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4342365/",
+                "year": 2015,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "Here we show that dietary factors and lifestyle may exacerbate or ameliorate MS symptoms by modulating the inflammatory status ... What increases inflammation are hypercaloric Western-style diets, characterized by high salt, animal fat, red meat, sugar-sweetened drinks, fried food, low fiber, and lack of physical exercise. The persistence of this type of diet upregulates the metabolism of human cells toward biosynthetic pathways including those of proinflammatory molecules and also leads to a dysbiotic gut microbiota, alteration of intestinal immunity, and low-grade systemic inflammation. Conversely, exercise and low-calorie diets based on the assumption of vegetables, fruit, legumes, fish, prebiotics, and probiotics act on nuclear receptors and enzymes that upregulate oxidative metabolism, downregulate the synthesis of proinflammatory molecules, and restore or maintain a healthy symbiotic gut microbiota."
+            },
+            {
+                "title": "Complementary and alternative medicine for the treatment of multiple sclerosis",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2901236/",
+                "year": 2008,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "Surveys suggest that up to 70% of people with MS have tried one or more CAM treatment for their MS ... The most promising among CAM therapies that warrant further investigation are a low-fat diet, omega-3 fatty acids, lipoic acid and vitamin D supplementation as potential anti-inflammatory and neuroprotective agents"
+            }
+        ],
+        "Lupus": [{
+                "title": "Lupus erythematosus and nutrition: a review of the literature.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/11070144",
+                "year": 2000,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "Aggravating substances appear to include excess calories, excess protein, high fat (especially saturated and omega-6 polyunsaturated fatty acids), zinc, iron, and L-canavanine found in alfalfa tablets. Possible beneficial dietary compounds include vitamin E, vitamin A (beta-carotene), selenium, fish oils (omega-3 polyunsaturated fatty acids), evening primrose oil, flaxseed, a plant herb (Tripterygium wilfordii), dehydroepiandrosterone, and calcium plus vitamin D (if taking corticosteroids) ... No large-scale studies have been performed with LE patients to substantiate the benefit, if any, of these individual dietary interventions"
+            },
+            {
+                "title": "Effect of vegetarian diet on systemic lupus erythematosus.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/1349403",
+                "year": 1992,
+                "is_meta": false,
+                "availability": "paywall"
+            },
+            {
+                "title": "Apigenin, a non-mutagenic dietary flavonoid, suppresses lupus by inhibiting autoantigen presentation for expansion of autoreactive Th1 and Th17 cells",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2688212/",
+                "year": 2009,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "Apigenin therapy of SNF1 mice with established lupus suppressed serum levels of pathogenic autoantibodies to nuclear antigens up to 97% and markedly delayed development of severe glomerulonephritis"
+            }
+        ],
+        "Cognition": [{
+                "title": "Association of mediterranean diet with mild cognitive impairment and Alzheimer's disease: a systematic review and meta-analysis.",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3946820/",
+                "year": 2014,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "While the overall number of studies is small, pooled results suggest that a higher adherence to the MeDi is associated with a reduced risk of developing MCI and AD, and a reduced risk of progressing from MCI to AD. Further prospective-cohort studies with longer follow-up and randomized controlled trials are warranted to consolidate the evidence."
+            }, 
+            {
+                "title": "Neuroprotective Effect of Natural Products Against Alzheimer’s Disease",
+                "url": "https://link.springer.com/article/10.1007%2Fs11064-012-0799-9",
+                "year": 2012,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "Accumulated evidence suggests that naturally occurring phyto-compounds, such as polyphenolic antioxidants found in fruits, vegetables, herbs and nuts, may potentially hinder neurodegeneration, and improve memory and cognitive function. ... The neuroprotective effects of various naturally occurring compounds in AD is evaluating in this review."
+            },
+            {
+                "title": "A possible role for lutein and zeaxanthin in cognitive function in the elderly",
+                "url": "http://ajcn.nutrition.org/content/96/5/1161S.long",
+                "year": 2012,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "Oxidative damage and inflammation have been implicated in cognitive decline in the elderly. Epidemiologic evidence to date suggests that dietary carotenoids may be beneficial in cognitive health. ... Our cross-sectional and intervention studies find that increased xanthophyll status is related to better cognitive performance in the elderly. "
+            },
+            {
+                "title": "Fruit, vegetables and prevention of cognitive decline or dementia: a systematic review of cohort studies.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/22836704",
+                "year": 2012,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "Increased intake of vegetables is associated with a lower risk of dementia and slower rates of cognitive decline in older age. Yet, evidence that this association is also valid for high fruit consumption is lacking."
+            },
+            {
+                "title": "Nutritional modulation of cognitive function and mental health.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/23517914",
+                "year": 2012,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "We provide a model for the pathways by which food components provided by a Mediterranean-style diet can facilitate healthy brain function. We then review evidence for the role of selected nutrients/food components - antioxidants, omega-3 fatty acids and B vitamins - in the brain and, hence, modulation of cognitive function and mental health."
+            },
+            {
+                "title": "Food for thought: the role of dietary flavonoids in enhancing human memory, learning and neuro-cognitive performance: Symposium on ‘Diet and mental health’",
+                "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/BAA7D30D89D0CF9694A2565C47CA8BF2/S0029665108007088a.pdf/food_for_thought_the_role_of_dietary_flavonoids_in_enhancing_human_memory_learning_and_neurocognitive_performance.pdf",
+                "year": 2007,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "Emerging evidence suggests that dietary-derived flavonoids have the potential to improve human memory and neuro-cognitive performance via their ability to protect vulnerableneurons, enhance existing neuronal function and stimulate neuronal regeneration ... The presentreview explores the potential of flavonoids and their metabolite forms to promote memory andlearning through their interactions with neuronal signalling pathways pivotal in controlling LTPand memory in human subjects."
+            },
+            {
+                "title": "The incidence of dementia and intake of animal products: preliminary findings from the Adventist Health Study.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/8327020",
+                "year": 1993,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "The matched subjects who ate meat (including poultry and fish) were more than twice as likely to become demented as their vegetarian counterparts (relative risk 2.18, p = 0.065) and the discrepancy was further widened (relative risk 2.99, p = 0.048) when past meat consumption was taken into account ... There was a trend towards delayed onset of dementia in vegetarians in both substudies"
+            },
+            {
+                "title": "Western Diet Consumption and Cognitive Impairment: Links to Hippocampal Dysfunction and Obesity",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3056912/",
+                "year": 2012,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "The present paper summarizes research showing that Western diet intake is associated with cognitive impairment ... a model is described proposing that Western diet consumption contributes to the development of excessive food intake and obesity, in part, by interfering with a type of hippocampal-dependent memory inhibition that is critical in the ability of animals to refrain from responding to environmental cues associated with food, and ultimately from consuming energy intake in excess of that driven solely by caloric need."
+            },
+            {
+                "title": "Brain rust: recent discoveries on the role of oxidative stress in neurodegenerative diseases.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/22583954",
+                "year": 2012,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "The interaction of genes with their environment, may explain ND [neurodegenerative diseases]"
+            },
+            {
+                "title": "The longer-term impacts of Western diet on human cognition and the brain.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/23291218",
+                "year": 2013,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "Animal work over the last three decades has generated a convincing body of evidence that a Western diet - one high in saturated fat and refined carbohydrates (HFS diet) - can damage various brain systems ... While human research data is still at an early stage, there is evidence of an association between HFS diet and impaired cognitive function. Based upon the animal data, and a growing understanding of how HFS diets can disrupt brain function, we further suggest that there is a causal link running from HFS diet to impaired brain function in humans, and that HFS diets also contribute to the development of neurodegenerative conditions."
+            },
+            {
+                "title": "Dietary Patterns, Cognitive Decline, and Dementia: A Systematic Review",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4352174/",
+                "year": 2015,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "The results suggest that better adherence to a Mediterranean diet is associated with less cognitive decline, dementia, or Alzheimer disease ... Other healthy dietary patterns, derived both a priori ... and a posteriori ..., were shown to be associated with reduced cognitive decline and/or a reduced risk of dementia ... More conclusive evidence is needed to reach more targeted and detailed guidelines to prevent or postpone cognitive decline."
+            }
+
+        ],
+        "Mental Health": [
+            {
+                "title": "A Prospective Study of Diet Quality and Mental Health in Adolescents.",
+                "url": "http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0024805",
+                "year": 2011,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "There were cross-sectional, dose response relationships identified between measures of both healthy (positive) and unhealthy (inverse) diets and scores on the emotional subscale of the Pediatric Quality of Life Inventory (PedsQL), where higher scores mean better mental health, before and after adjustments for age, gender, socio-economic status, dieting behaviours, body mass index and physical activity."
+            },
+            {
+                "title": "Diet and mental health in the Arctic: is diet an important risk factor for mental health in circumpolar peoples? - a review",
+                "url": "http://www.tandfonline.com/doi/abs/10.3402/ijch.v62i3.17560",
+                "year": 2011,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "The change in traditional diets has already led to increased health problems, such as obesity, cardiovascular disease, and diabetes, while the mental health of circumpolar peoples has also declined substantially during the same time period. The decline in mental health is characterized by increased rates of depression, seasonal affective disorder, anxiety, and suicide, that now often occur at higher rates than in lower-latitude populations."
+            },
+            {
+                "title": "Relationship Between Diet and Mental Health in Children and Adolescents: A Systematic Review",
+                "url": "http://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2014.302110",
+                "year": 2014,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "We found evidence of a significant, cross-sectional relationship between unhealthy dietary patterns and poorer mental health in children and adolescents. We observed a consistent trend for the relationship between good-quality diet and better mental health and some evidence for the reverse. "
+            },
+            {
+                "title": "The Association Between Habitual Diet Quality and the Common Mental Disorders in Community-Dwelling Adults: The Hordaland Health Study",
+                "url": "http://journals.lww.com/psychosomaticmedicine/Abstract/2011/07000/The_Association_Between_Habitual_Diet_Quality_and.9.aspx",
+                "year": 2011,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "This cross-sectional study included 5731 population-based men and women aged 46 to 49 and 70 to 74 years. ... In this study, those with better quality diets were less likely to be depressed, whereas a higher intake of processed and unhealthy foods was associated with increased anxiety."
+            }
+        ],
+        "migraine": [
+            {
+                "title": "Nutrition intervention for migraine: a randomized crossover trial",
+                "url": "https://link.springer.com/content/pdf/10.1186%2F1129-2377-15-69.pdf",
+                "year": 2014,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "Worst headache pain in last 2 weeks, as measured by visual analog scale, was initially 6.4/10 cm (SD2.1 cm), and declined 2.1 cm during the diet period and 0.7 cm during the supplement period (p=0.03). Averageheadache intensity (0–10 scale) was initially 4.2 (SD 1.4) per week, and this declined by 1.0 during the diet periodand by 0.5 during the supplement period (p=0.20). Average headache frequency was initially 2.3 (SD 1.8) per week,and this declined by 0.3 during the diet period and by 0.4 during the supplement period (p=0.61). "
+            },
+            {
+                "title": "Is Migraine Food Allergy?: A Double-blind Controlled Trial of Oligoantigenic Diet Treatment",
+                "url": "http://www.sciencedirect.com/science/article/pii/S0140673683908668?_rdoc=1&_fmt=high&_origin=gateway&_docanchor=&md5=b8429449ccfc9c30159a5f9aeaa92ffb",
+                "year": 1983,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "93% of 88 children with severe frequent migraine recovered on oligoantigenic diets; the causative foods were identified by sequential reintroduction, and the role of the foods provoking migraine was established by a double-blind controlled trial in 40 of the children"
+            },
+            {
+                "title": "Diet restriction in migraine, based on IgG against foods: A clinical double-blind, randomised, cross-over trial",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2899772/",
+                "year": 2010,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "The average count of reactions with abnormally high titre was 24 ± 11 against 266 foods. Compared to baseline, there was a statistically significant reduction in the number of headache days (from 10.5 ± 4.4 to 7.5 ± 3.7; P < 0.001) and number of migraine attacks (from 9.0 ± 4.4 to 6.2 ± 3.8; P < 0.001) in the elimination diet period."
+            },
+            {
+                "title": "The diet factor in pediatric and adolescent migraine",
+                "url": "http://www.sciencedirect.com/science/article/pii/S0887899402004666",
+                "year": 2003,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": " list of foods, beverages, and additives that trigger migraine includes cheese, chocolate, citrus fruits, hot dogs, monosodium glutamate, aspartame, fatty foods, ice cream, caffeine withdrawal, and alcoholic drinks, especially red wine and beer. ... A well-balanced diet is encouraged, with avoidance of fasting or skipped meals."
+            },
+            {
+                "title": "The prevalence of diet-induced migraine",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/6498931",
+                "year": 1984,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "Nineteen percent of about 490 patients with classical or common migraine reported that headaches can be precipitated by chocolate, 18% by cheese and 11% by citrus fruit, and a highly significant majority of these patients were sensitive to all three foods. ... Patients with affected relatives were significantly more likely to report sensitivity to alcohol and chocolate; sensitivity to cheese and citrus fruit was less strongly related "
+            }
+        ],
+        "diabetes": [{
                 "title": "Differential acute postprandial effects of processed meat and isocaloric vegan meals on the gastrointestinal hormone response in subjects suffering from type 2 diabetes and healthy controls: a randomized crossover study.",
                 "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4164634/",
                 "year": 2014,
