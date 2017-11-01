@@ -1,5 +1,31 @@
 {
     "disease": {
+        "pollutants": [{
+            "title": "Empirical analyses of the influence of diet on human concentrations of persistent organic pollutants: a systematic review of all studies conducted in Spain.",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/21683445",
+            "year": 2011,
+            "is_meta": true,
+            "availability": "abstract",
+            "quote": "The most consistent association was between fish consumption and PCBs and HCB, followed by dairy products and PCBs. A few studies observed a relationship between meat and some POPs, whilst intake of vegetables, fruits and cereals was rarely related to POP levels. "
+        }],
+        "autoimmune": [{
+                "title": "Role of “Western Diet” in Inflammatory Autoimmune Diseases",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4034518/",
+                "year": 2015,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "nutritional patterns collectively termed the “Western diet”, including high-fat and cholesterol, high-protein, high-sugar, and excess salt intake, as well as frequent consumption of processed and ‘fast foods’, promote obesity, metabolic syndrome, and cardiovascular disease ... numerous positive experimental results across different disease entities encourage further exploration of the cellular and molecular immunological basis underlying nutritional control of autoimmunity. It is current knowledge that nutrition, the intestinal microbiota, the gut mucosal immune system, and autoimmune pathology are deeply intertwined."
+            },
+            {
+                "title": "Stress, Food, and Inflammation: Psychoneuroimmunology and Nutrition at the Cutting Edge",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2868080/#S1title",
+                "year": 2010,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "Inflammation is the common link among the leading causes of death. Inflammation is the common link among the leading causes of death. Mechanistic studies have shown how various dietary components can modulate key pathways to inflammation including sympathetic activity, oxidative stress, transcription factor nuclear factor kappa B (NF-κB) activation, and proinflammatory cytokine production ... Diets that promote inflammation are high in refined starches, sugar, saturated and trans-fats, and low in omega-3 fatty acids, natural antioxidants and fiber from fruits, vegetables, and whole grains"
+            },
+
+        ],
         "overview": [{
                 "title": "Meat intake and mortality: a prospective study of over half a million people",
                 "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2803089/",
@@ -40,6 +66,14 @@
                 "quote": "This comprehensive meta-analysis reports a significant protective effect of a vegetarian diet versus the incidence and/or mortality from ischemic heart disease (−25%) and incidence from total cancer (−8%). Vegan diet conferred a significant reduced risk (−15%) of incidence from total cancer"
             },
             {
+                "title": "Plant-derived immunomodulators: an insight on their preclinical evaluation and clinical trials",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4548092/",
+                "year": 2015,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "The present review will give an overview of widely investigated plant-derived compounds (curcumin, resveratrol, epigallocatechol-3-gallate, quercetin, colchicine, capsaicin, andrographolide, and genistein) which have exhibited potent effects on cellular and humoral immune functions in pre-clinical investigations and will highlight their clinical potential."
+            },
+            {
                 "title": "Vegetarian diet: panacea for modern lifestyle diseases?",
                 "url": "https://academic.oup.com/qjmed/article/92/9/531/1520534/Vegetarian-diet-panacea-for-modern-lifestyle",
                 "year": 1999,
@@ -72,7 +106,95 @@
                 "quote": "This updated meta-analysis confirms, in a larger number of subjects and studies, the significant and consistent protection provided by adherence to the Mediterranean diet in relation to the occurrence of major chronic degenerative diseases."
             }
         ],
+        "cancer": [{
+                "title": "Food, Nutrition, Physical Activity, and the Prevention of Cancer: a Global Perspective (page 67: grains/cereals. 75: veges, fruits, nuts, seeds, legumes, herbs, spices. 116: meat, poultry, fish, eggs. 129: milk, dairy. 135: Fat, Oil. 141: salty, sugary foods. 157: alcohol)",
+                "url": "http://www.aicr.org/assets/docs/pdf/reports/Second_Expert_Report.pdf",
+                "year": 2007,
+                "is_meta": true,
+                "availability": "full"
+            },
+            {
+                "title": "Cancer preventive effects of flavonoids—a review",
+                "url": "http://www.sciencedirect.com/science/article/pii/S0753332202001865",
+                "year": 2002,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "experimental studies have provided growing evidence for the beneficial action of flavonoids on multiple cancer-related biological pathways (carcinogen bioactivation, cell-signaling, cell cycle regulation, angiogenesis, oxidative stress, inflammation). Although the epidemiologic data on flavonoids and cancer are still limited and conflicting, some protective associations have been suggested for flavonoid-rich foods (soy and premenopausal breast cancer; green tea and stomach cancer; onion and lung cancer)."
+            },
+            {
+                "title": "Reduced cancer risk in vegetarians: an analysis of recent reports",
+                "url": "http://www.aicr.org/assets/docs/pdf/reports/Second_Expert_Report.pdf",
+                "year": 2011,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "Most large prospective observational studies show that vegetarian diets are at least modestly cancer protective (10%–12% reduction in overall cancer risk) although results for specific cancers are less clear. No long-term randomized clinical trials have been conducted to address this relationship. However, a broad body of evidence links specific plant foods such as fruits and vegetables, plant constituents such as fiber, antioxidants and other phytochemicals, and achieving and maintaining a healthy weight to reduced risk of cancer diagnosis and recurrence. Also, research links the consumption of meat, especially red and processed meats, to increased risk of several types of cancer"
+            },
+            {
+                "title": "Cancer is a Preventable Disease that Requires Major Lifestyle Changes",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2515569/",
+                "year": 2008,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "Only 5–10% of all cancer cases can be attributed to genetic defects, whereas the remaining 90–95% have their roots in the environment and lifestyle. The lifestyle factors include cigarette smoking, diet (fried foods, red meat), alcohol, sun exposure, environmental pollutants, infections, stress, obesity, and physical inactivity. The evidence indicates that of all cancer-related deaths, almost 25–30% are due to tobacco, as many as 30–35% are linked to diet, about 15–20% are due to infections, and the remaining percentage are due to other factors"
+            },
+            {
+                "title": "The role of diet in breast and prostate cancer survival.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/17684809",
+                "year": 2007,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote": "However, diet plays an important role in cancer prevention and survival and may also be implicated in racial and ethnic disparities. ... A plant-based diet, generally low in fat and high in fiber, may offer survival benefits for both breast and prostate cancer. Further research is required to establish effective interventions that promote healthy dietary choices that enhance cancer survival."
+            },
+            {
+                "title": "A Very-Low-Fat Vegan Diet Increases Intake of Protective Dietary Factors and Decreases Intake of Pathogenic Dietary Factors",
+                "url": "http://www.sciencedirect.com/science/article/pii/S0002822307020731",
+                "year": 2007,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "Ninety-three early-stage prostate cancer patients participated in a randomized controlled trial and were assigned to a very-low-fat (10% fat) vegan diet supplemented with soy protein and lifestyle changes or to usual care. ... Analyses of changes in dietary intake of macronutrients, vitamins, minerals, carotenoids, and isoflavones from baseline to 1 year showed significantly increased intake of most protective dietary factors (eg, fiber increased from a mean of 31 to 59 g/day, lycopene increased from 8,693 to 34,464 μg/day) and significantly decreased intake of most pathogenic dietary factors (eg, saturated fatty acids decreased from 20 to 5 g/day, cholesterol decreased from 200 to 10 mg/day) in the intervention group compared to controls"
+            },
+            {
+                "title": "The role of diet and physical activity in breast, colorectal, and prostate cancer survivorship: a review of the literature",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3251953/",
+                "year": 2011,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "Evidence from observational studies suggests that a low-fat, high-fibre diet might be protective against cancer recurrence and progression. However, there is a paucity of RCTs substantiating this. There is more support for physical activity, with a dose response for better outcomes. ... evidence suggests that the mechanism of benefit from diet and physical activity pertains to body weight, with excess body weight being a risk factor"
+            },
+            {
+                "title": "Clinical events in prostate cancer lifestyle trial: results from two years of follow-up.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/18602144",
+                "year": 2008,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "The patients in the experimental arm were encouraged to adopt a low-fat, plant-based diet, to exercise and practice stress management, and to attend group support sessions ... Patients with early-stage prostate cancer choosing active surveillance might be able to avoid or delay conventional treatment for at least 2 years by making changes in their diet and lifestyle."
+            },
+            {
+                "title": "Cancer Prevention and Treatment by Wholistic Nutrition",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5646698/",
+                "year": 2017,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "the promotion of cancer growth and development in laboratory animals initiated by a powerful mutagen/carcinogen can be repetitively turned on and off by non-mutagenic mechanisms, even completely, by modifying the consumption of protein at relevant levels of intake. ... This suggests that ultimate cancer development is primarily a nutrition-responsive disease rather than a genetic disease, with the understanding that nutrition is a comprehensive, wholistic biological effect that reflects the natural contents of nutrients and related substances in whole, intact food. "
+            },
+            {
+                "title": "Effects of a low-fat, high-fiber diet and exercise program on breast cancer risk factors in vivo and tumor cell growth and apoptosis in vitro.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/16965238",
+                "year": 2006,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "These results show that a very-low-fat, high-fiber diet combined with daily exercise results in major reductions in risk factors for BCa while subjects remained overweight/obese"
+            },
+            {
+                "title": "Intensive lifestyle changes may affect the progression of prostate cancer.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/16094059",
+                "year": 2005,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "Intensive lifestyle changes may affect the progression of early, low grade prostate cancer in men. Further studies and longer term followup are warranted."
+            }
 
+        ],
         "arthritis": [{
                 "title": "Fasting followed by vegetarian diet in patients with rheumatoid arthritis: a systematic review",
                 "url": "http://www.tandfonline.com/doi/abs/10.1080/030097401750065256",
@@ -406,6 +528,32 @@
                 "quote": "Surveys suggest that up to 70% of people with MS have tried one or more CAM treatment for their MS ... The most promising among CAM therapies that warrant further investigation are a low-fat diet, omega-3 fatty acids, lipoic acid and vitamin D supplementation as potential anti-inflammatory and neuroprotective agents"
             }
         ],
+        "Puberty": [{
+                "title": "Milk Intake and Total Dairy Consumption: Associations with Early Menarche in NHANES 1999-2004",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2530923/",
+                "year": 2011,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "There is some evidence that greater milk intake is associated with an increased risk of early menarche, or a lower age at menarche."
+            },
+            {
+                "title": "Percent Body Fat at Age 5 Predicts Earlier Pubertal Development Among Girls at Age 9",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2530923/",
+                "year": 2008,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "Girls with higher weight status in early childhood were more likely to exhibit earlier pubertal development relative to peers at 9 years, indicating that weight status preceded pubertal timing in girls."
+            },
+            {
+                "title": "Effects of Environmental Endocrine Disruptors on Pubertal Development",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3065309/",
+                "year": 2011,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "[Dioxins] may be transferred to humans from animal meat or milk ... To date, various EDs have been shown to exert unwanted effects on pubertal development. It is possible that there are numerous other chemicals with potential harmful effects on pubertal development. Future population-based studies are warranted for further investigation."
+            }
+
+        ],
         "Lupus": [{
                 "title": "Lupus erythematosus and nutrition: a review of the literature.",
                 "url": "https://www.ncbi.nlm.nih.gov/pubmed/11070144",
@@ -437,7 +585,15 @@
                 "is_meta": true,
                 "availability": "full",
                 "quote": "While the overall number of studies is small, pooled results suggest that a higher adherence to the MeDi is associated with a reduced risk of developing MCI and AD, and a reduced risk of progressing from MCI to AD. Further prospective-cohort studies with longer follow-up and randomized controlled trials are warranted to consolidate the evidence."
-            }, 
+            },
+            {
+                "title": "Brain foods: the effects of nutrients on brain function",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2805706/",
+                "year": 2010,
+                "is_meta": true,
+                "availability": "full",
+                "quote":"We now know that particular nutrients influence cognition by acting on molecular systems or cellular processes that are vital for maintaining cognitive function. This raises the exciting possibility that dietary manipulations are a viable strategy for enhancing cognitive abilities and protecting the brain from damage, promoting repair and counteracting the effects of aging"
+            },
             {
                 "title": "Neuroprotective Effect of Natural Products Against Alzheimer’s Disease",
                 "url": "https://link.springer.com/article/10.1007%2Fs11064-012-0799-9",
@@ -518,10 +674,8 @@
                 "availability": "full",
                 "quote": "The results suggest that better adherence to a Mediterranean diet is associated with less cognitive decline, dementia, or Alzheimer disease ... Other healthy dietary patterns, derived both a priori ... and a posteriori ..., were shown to be associated with reduced cognitive decline and/or a reduced risk of dementia ... More conclusive evidence is needed to reach more targeted and detailed guidelines to prevent or postpone cognitive decline."
             }
-
         ],
-        "Mental Health": [
-            {
+        "Mental Health": [{
                 "title": "A Prospective Study of Diet Quality and Mental Health in Adolescents.",
                 "url": "http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0024805",
                 "year": 2011,
@@ -554,8 +708,7 @@
                 "quote": "This cross-sectional study included 5731 population-based men and women aged 46 to 49 and 70 to 74 years. ... In this study, those with better quality diets were less likely to be depressed, whereas a higher intake of processed and unhealthy foods was associated with increased anxiety."
             }
         ],
-        "migraine": [
-            {
+        "migraine": [{
                 "title": "Nutrition intervention for migraine: a randomized crossover trial",
                 "url": "https://link.springer.com/content/pdf/10.1186%2F1129-2377-15-69.pdf",
                 "year": 2014,
@@ -677,6 +830,48 @@
                 "quote": "Although both groups showed significant reductions in HbA1C levels, the reductions were larger in the vegan group than in the conventional group (-0.5% vs. -0.2%; p-for-interaction = 0.017). When only considering participants with high compliance, the difference in HbA1c level reduction between the groups was found to be larger (-0.9% vs. -0.3%). The beneficial effect of vegan diets was noted even after adjusting for changes in total energy intake or waist circumference over the 12 weeks."
             }
         ],
+        "Addiction":[
+            {
+                "title": "Intense Sweetness Surpasses Cocaine Reward",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1931610/",
+                "year": 2007,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "Our findings clearly demonstrate that intense sweetness can surpass cocaine reward, even in drug-sensitized and -addicted [rats]"
+            },
+            {
+                "title": "From Passive Overeating to “Food Addiction”: A Spectrum of Compulsion and Severity",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3901973/",
+                "year": 2013,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "In conclusion, as we have seen in this review, an increasing number of scientists and clinicians subscribe to the view that compulsive overeating—a quintessentially defining feature of BED—shares pronounced similarities with conventional addictions like substance abuse [60, 211, 240, 241]. Not surprisingly, such discussions have inspired cautious conclusions that some forms of excessive overeating are most appropriately viewed as an addiction disorder"
+            },
+            {
+                "title": "Binge Eating Disorder and Food Addiction",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3671377/",
+                "year": 2013,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "Binge eating disorder (BED) shares many characteristics with addictive behaviors (e.g., diminished control, continued use despite negative consequences), and a body of scientific literature is building to support addiction conceptualizations of problematic eating. Despite similarities, BED and “food addiction” may represent unique yet overlapping conditions"
+            },
+            {
+                "title": "Symposium Overview—Food Addiction: Fact or Fiction?",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2714380/",
+                "year": 2009,
+                "is_meta": true,
+                "availability": "full",
+                "quote":"Taken together, the articles from this symposium provide evidence that neurological similarities exist in the response of humans (6) and rats (7,9) to foods and to drugs. Two of the reports (6,7), as well as our own work (14–16), suggest that even highly palatable food is not addictive in and of itself. Rather, it is the manner in which the food is presented (i.e., intermittently) and consumed (i.e., repeated, intermittent “gorging”) that appears to entrain the addiction-like process"
+            },
+            {
+                "title": "Is food addiction a valid and useful concept?",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3561707/",
+                "year": 2013,
+                "is_meta": true,
+                "availability": "full",
+                "quote":"While our starting point is that any reasonably comprehensive review must conclude that FA is a rough and incomplete descriptive phenomenon that is unsupported by existing evidence, such a perspective represents a starting point rather than a conclusion."
+            },
+        ],
         "Cardiovascular Disease": [{
                 "title": "Plant-based foods and prevention of cardiovascular disease: an overview",
                 "url": "http://ajcn.nutrition.org/content/78/3/544S.long",
@@ -708,11 +903,63 @@
                 "is_meta": false,
                 "availability": "abstract",
                 "quote": ""
-            },
+            }
         ]
     },
     "ingredients": {
-
+        "dairy": [{
+                "title": "Hormones in Dairy Foods and Their Impact on Public Health - A Narrative Review Article",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4524299/",
+                "year": 2015,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "The collected data from other researchers and our own data are indicating that the presence of steroid hormones in dairy products could be counted as an important risk factor for various cancers in humans."
+            },
+            {
+                "title": "Milk Intake and Total Dairy Consumption: Associations with Early Menarche in NHANES 1999-2004",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2530923/",
+                "year": 2011,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "There is some evidence that greater milk intake is associated with an increased risk of early menarche, or a lower age at menarche."
+            }, {
+                "title": "Milk intake and risk of mortality and fractures in women and men: cohort studies",
+                "url": "http://www.bmj.com/content/349/bmj.g6015",
+                "year": 2014,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "Two large Swedish cohorts, one with 61 433 women (39-74 years at baseline 1987-90) and one with 45 339 men (45-79 years at baseline 1997), were administered food frequency questionnaires ... High milk intake was associated with higher mortality in one cohort of women and in another cohort of men, and with higher fracture incidence in women"
+            }, {
+                "title": "Milk Consumption and Mortality from All Causes, Cardiovascular Disease, and Cancer: A Systematic Review and Meta-Analysis",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4586558/",
+                "year": 2015,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "The range of non-fermented and fermented milk consumption and the shape of the associations between milk consumption and mortality differed considerably between studies ...  we observed no consistent association between milk consumption and all-cause or cause-specific mortality."
+            }, {
+                "title": "Case-control study of risk factors for hip fractures in the elderly.",
+                "url": "https://www.ncbi.nlm.nih.gov/pubmed/8154473",
+                "year": 1994,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "There were 416 subjects ... Smoking, underweight in old age, overweight at age 20 years, and weight loss were associated with an increased risk of hip fracture. Consumption of dairy products, particularly at age 20 years, was associated with an increased risk of hip fracture in old age."
+            }, {
+                "title": "Calcium intake and hip fracture risk in men and women: a meta-analysis of prospective cohort studies and randomized controlled trials.",
+                "url": "http://ajcn.nutrition.org/content/86/6/1780.long",
+                "year": 2007,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "Pooled results from prospective cohort studies suggest that calcium intake is not significantly associated with hip fracture risk in women or men"
+            },
+            {
+                "title": "A Milk Protein, Casein, as a Proliferation Promoting Factor in Prostate Cancer Cells",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4524299/",
+                "year": 2015,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "α-Casein and total casein did not affect the proliferations of RWPE1, HEK293, A459, SNU484, MCF7, HEK293, or RWPE1 cells. However, PC3 cells treated with 1 mg/mL of α-casein and casein showed increased proliferation (228% and 166%, respectively), and the proliferation of LNCaP cells was also enhanced by 134% and 142%, respectively"
+            }
+        ]
     },
     "externalities": {
         "environment": [{
