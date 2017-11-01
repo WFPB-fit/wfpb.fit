@@ -1,0 +1,345 @@
+{
+    "source":"https://nutritiondata.self.com/",
+    "disclaimer": "[Omega-3 fatty acids: comparison of plant and seafood sources in human nutrition.](https://www.ncbi.nlm.nih.gov/pubmed/1825498)",
+    "Fish": [{
+            "name": "Sardine",
+            "sat": 1.5,
+            "poly": 5,
+            "mono": 3.9
+        },
+        {
+            "name": "Mackerel",
+            "sat": 7,
+            "poly": 6,
+            "mono": 8,
+            "omega3":0.4
+        },
+        {
+            "name": "Trout",
+            "sat": 1.4,
+            "poly": 1.5,
+            "mono": 2
+        },
+        {
+            "name": "Herring",
+            "sat": 2,
+            "poly": 2.1,
+            "mono": 3.7
+        },
+        {
+            "name": "Tuna",
+            "sat": 1.6,
+            "poly": 1.8,
+            "mono": 2.1,
+            "omega3":1.7
+        },
+        {
+            "name": "Cod",
+            "sat": 0.1,
+            "poly": 0.2,
+            "mono": 0.1
+        },
+        {
+            "name": "Salmon",
+            "sat": 3.1,
+            "poly": 3.9,
+            "mono": 3.8,
+            "omega3":2.3
+        }
+    ],
+    "Dairy": [{
+            "name": "2% Milk",
+            "sat": 0.6,
+            "poly": 0,
+            "mono": 0.3
+        },
+        {
+            "name": "Yogurt",
+            "sat": 0.1,
+            "poly": 0,
+            "mono": 0.1
+        },
+        {
+            "name": "Cheddar Cheese",
+            "sat": 21,
+            "poly": 0.9,
+            "mono": 9
+        },
+        {
+            "name": "Swiss Cheese",
+            "sat": 18,
+            "poly": 1,
+            "mono": 7
+        },
+        {
+            "name": "Parmigiano-Reggiano",
+            "sat": 17,
+            "poly": 1.2,
+            "mono": 8
+        },
+        {
+            "name": "Mozzarella Cheese",
+            "sat": 11,
+            "poly": 0.5,
+            "mono": 4.8
+        },
+        {
+            "name": "Feta Cheese",
+            "sat": 15,
+            "poly": 0.6,
+            "mono": 4.6
+        }
+    ],
+    "Plant Dairy": [{
+            "name": "Soy Milk",
+            "sat": 0.2,
+            "poly": 1,
+            "mono": 0.4
+        },
+        {
+            "name": "Rice Milk",
+            "sat": 0,
+            "poly": 0.3,
+            "mono": 0.6
+        }
+    ],
+    "Meat & Eggs": [{
+            "name": "Egg",
+            "sat": 3.3,
+            "poly": 1.4,
+            "mono": 4.1
+        },
+        {
+            "name": "70% Lean Beef",
+            "sat": 11,
+            "poly": 0.7,
+            "mono": 13
+        },
+        {
+            "name": "85% Lean Beef",
+            "sat": 6,
+            "poly": 0.5,
+            "mono": 7
+        },
+        {
+            "name": "70% Lean Beef",
+            "sat": 11,
+            "poly": 0.7,
+            "mono": 13
+        },
+        {
+            "name": "Flank Steak",
+            "sat": 3.4,
+            "poly": 0.3,
+            "mono": 3.3
+        },
+        {
+            "name": "Steak",
+            "sat": 8,
+            "poly": 0.9,
+            "mono": 9
+        },
+        {
+            "name": "Ground Turkey",
+            "sat": 2.7,
+            "poly": 2.9,
+            "mono": 3.5
+        },
+        {
+            "name": "Chicken Breast",
+            "sat": 1,
+            "poly": 0.8,
+            "mono": 1.2
+        }
+    ],
+    "Vegetables": [{
+            "name": "Tofu",
+            "sat": 0.7,
+            "poly": 2.7,
+            "mono": 1.1
+        },
+        {
+            "name": "Bell Pepper",
+            "sat": 0.1,
+            "poly": 0.1,
+            "mono": 0
+        },
+        {
+            "name": "Cuccumber",
+            "sat": 0,
+            "poly": 0,
+            "mono": 0
+        },
+        {
+            "name": "Tomato",
+            "sat": 0,
+            "poly": 0.1,
+            "mono": 0
+        },
+        {
+            "name": "Edamame",
+            "sat": 0.6,
+            "poly": 2.2,
+            "mono": 1.3
+        },
+        {
+            "name": "Olive",
+            "sat": 1.4,
+            "poly": 0.9,
+            "mono": 8
+        },
+        {
+            "name": "Avocado",
+            "sat": 2.1,
+            "poly": 1.8,
+            "mono": 10
+        }
+    ],
+    "Starch": [{
+            "name": "Rice",
+            "sat": 0.1,
+            "poly": 0.1,
+            "mono": 0.1
+        },
+        {
+            "name": "White bread",
+            "sat": 0.7,
+            "poly": 1.6,
+            "mono": 0.6
+        },
+        {
+            "name": "Sweet Potato",
+            "sat": 0,
+            "poly": 0,
+            "mono": 0
+        },
+        {
+            "name": "Potato",
+            "sat": 0,
+            "poly": 0,
+            "mono": 0
+        },
+        {
+            "name": "Whole wheat bread",
+            "sat": 0.7,
+            "poly": 0.6,
+            "mono": 1.6
+        }
+    ],
+    "Nuts and Seeds": [{
+            "name": "Flax",
+            "sat": 3.7,
+            "poly": 29,
+            "mono": 8,
+            "omega3":22.8
+        },
+        {
+            "name": "Walnut",
+            "sat": 6,
+            "poly": 47,
+            "mono": 9,
+            "omega3":9
+        },
+        {
+            "name": "Sunflower Seeds",
+            "sat": 4.5,
+            "poly": 23,
+            "mono": 19,
+            "omega3":0.06
+        },
+        {
+            "name": "Pistachio",
+            "sat": 6,
+            "poly": 14,
+            "mono": 24
+        },
+        {
+            "name": "Pine Nut",
+            "sat": 4.9,
+            "poly": 34,
+            "mono": 19
+        },
+        {
+            "name": "Brazil Nut",
+            "sat": 15,
+            "poly": 21,
+            "mono": 25
+        },
+        {
+            "name": "Cashew",
+            "sat": 8,
+            "poly": 8,
+            "mono": 24,
+            "omega3":0.06
+        },
+        {
+            "name": "Pumpkin",
+            "sat": 3.7,
+            "poly": 9,
+            "mono": 6
+        },
+        {
+            "name": "Sesame",
+            "sat": 7,
+            "poly": 22,
+            "mono": 19
+        },
+        {
+            "name": "Chia",
+            "sat": 3.3,
+            "poly": 24,
+            "mono": 2.3,
+            "omega3":17.6
+        },
+        {
+            "name": "Almond",
+            "sat": 3.7,
+            "poly": 12,
+            "mono": 31,
+            "omega3":0.06
+        },
+    ],
+    "oil": [{
+            "name": "Sunflower",
+            "sat": 13,
+            "poly": 36,
+            "mono": 46
+        },
+        {
+            "name": "Cocconut",
+            "sat": 87,
+            "poly": 1.8,
+            "mono": 6
+        },
+        {
+            "name": "Palm",
+            "sat": 49,
+            "poly": 9,
+            "mono": 37
+        },
+        {
+            "name": "Lard",
+            "sat": 32,
+            "poly": 11,
+            "mono": 41
+        },
+        {
+            "name": "Olive",
+            "sat": 14,
+            "poly": 11,
+            "mono": 73
+        },
+        {
+            "name": "Canola",
+            "sat": 7,
+            "poly": 28,
+            "mono": 63
+        },
+        {
+            "name": "Peanut",
+            "sat": 17,
+            "poly": 32,
+            "mono": 45
+        },
+    ]
+}
