@@ -1,0 +1,62 @@
+{
+    "vegetables":[
+        {
+            "name":"brown rice",
+            "$/lb":1.1,
+            "source":"https://www.amazon.com/Nishiki-Premium-Brown-Rice-15-Pounds/dp/B004NRHAZO/ref=sr_1_2_a_it?ie=UTF8&qid=1507702184&sr=8-2&keywords=bulk+brown+rice"
+        },
+        {
+            "name":"dried black beans",
+            "$/lb":0.96,
+            "source":"https://www.amazon.com/Dried-Black-Beans-Turtle-lb/dp/B00BWUN9MI/ref=sr_1_2_s_it?s=grocery&ie=UTF8&qid=1507687830&sr=1-2&keywords=bulk+black+beans"
+        },
+        {
+            "name":"kale",
+            "$/lb":2.78,
+            "source":"https://www.walmart.com/ip/Kale-Greens-1-lb-Bag/20631705"
+        },
+        {
+            "name":"spinach",
+            "$/lb":2.84,
+            "source":"https://www.walmart.com/ip/Marketside-Fresh-Spinach-10-oz/13893738"
+        },
+        {
+            "name":"onion",
+            "$/lb":0.65,
+            "source":"https://www.walmart.com/ip/Fresh-Yellow-Onions-3-lbs/10447842"
+        },
+        {
+            "name":"carrots",
+            "$/lb":0.68,
+            "source":"https://www.walmart.com/ip/Carrots-1-lb/44391515"
+        },
+        {
+            "name":"soy milk",
+            "$/gal":5.14,
+            "source":"https://www.walmart.com/ip/Great-Value-Soymilk-1-2-gal/19500254"
+        }
+    ],
+    "meat":[        
+        {
+            "name":"Chicken Breast",
+            "$/lb":2.1,
+            "source":"https://www.samsclub.com/sams/boneless-skinless-chicken-breasts-case-pack-only/prod20080011.ip?xid=hdr_locator_my-club_6326"
+        },     
+        {
+            "name":"Ground Beef",
+            "$/lb":2.88,
+            "source":"https://www.walmart.com/ip/73-Lean-27-Fat-Ground-Beef-Roll-1-Lb/15136790"
+        },
+        {
+            "name":"Milk",
+            "$/gal":1.48,
+            "source":"https://www.walmart.com/ip/Great-Value-Reduced-Fat-2-Milk-1-gal/10450115"
+        },
+        {
+            "name":"Cheddar Cheese",
+            "$/lb":4.22,
+            "source":"https://www.walmart.com/ip/Great-Value-Extra-Sharp-Cheddar-Cheese-16-oz/10452494"
+        },
+
+    ]
+}
