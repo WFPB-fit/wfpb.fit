@@ -22,7 +22,7 @@
                 "year": 2015,
                 "is_meta": true,
                 "availability": "full",
-                "quote":"There is a substantial amount of evidence to suggest that many foods, nutrients and non-nutrient food components modulate inflammation both acutely and chronically ... elevated unresolved chronic inflammation is a core perturbation in a range of chronic diseases and is an important determinant of the pathological impact of excess adiposity"
+                "quote": "There is a substantial amount of evidence to suggest that many foods, nutrients and non-nutrient food components modulate inflammation both acutely and chronically ... elevated unresolved chronic inflammation is a core perturbation in a range of chronic diseases and is an important determinant of the pathological impact of excess adiposity"
             },
             {
                 "title": "Stress, Food, and Inflammation: Psychoneuroimmunology and Nutrition at the Cutting Edge",
@@ -55,8 +55,8 @@
                 "year": 2011,
                 "is_meta": true,
                 "availability": "abstract",
-                "quote":"The modern Western-type diet is deficient in fruits and vegetables and contains excessive animal products, generating the accumulation of non-metabolizable anions and a lifespan state of overlooked metabolic acidosis, whose magnitude increases progressively with aging ...These adaptive processes lower the urine pH and induce an extensive change in urine composition, including hypocitraturia, hypercalciuria, and nitrogen and phosphate wasting. Low urine pH predisposes to uric acid stone formation. Hypocitraturia and hypercalciuria are risk factors for calcium stone disease. Even a very mild degree of metabolic acidosis induces skeletal muscle resistance to the insulin action and dietary acid load may be an important variable in predicting the metabolic abnormalities and the cardiovascular risk of the general population"
-            }, 
+                "quote": "The modern Western-type diet is deficient in fruits and vegetables and contains excessive animal products, generating the accumulation of non-metabolizable anions and a lifespan state of overlooked metabolic acidosis, whose magnitude increases progressively with aging ...These adaptive processes lower the urine pH and induce an extensive change in urine composition, including hypocitraturia, hypercalciuria, and nitrogen and phosphate wasting. Low urine pH predisposes to uric acid stone formation. Hypocitraturia and hypercalciuria are risk factors for calcium stone disease. Even a very mild degree of metabolic acidosis induces skeletal muscle resistance to the insulin action and dietary acid load may be an important variable in predicting the metabolic abnormalities and the cardiovascular risk of the general population"
+            },
             {
                 "title": "Health Implications of a Vegetarian Diet",
                 "url": "http://journals.sagepub.com/doi/abs/10.1177/1559827611425762",
@@ -781,12 +781,69 @@
                 "quote": "Our results suggest that the diet composition and the energy content, rather than the carbohydrate count, should be important considerations for dietary management and demonstrate that processed meat consumption is accompanied by impaired GIH responses and increased oxidative stress marker levels in diabetic patients."
             },
             {
+                "title": "Dietary intake of carbohydrates and risk of type 2 diabetes: the European Prospective Investigation into Cancer-Norfolk study.",
+                "url": "https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/dietary-intake-of-carbohydrates-and-risk-of-type-2-diabetes-the-european-prospective-investigation-into-cancernorfolk-study/CA456C1DECFA93B083A153FE85076848",
+                "pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/CA456C1DECFA93B083A153FE85076848/S0007114513002298a.pdf/dietary_intake_of_carbohydrates_and_risk_of_type_2_diabetes_the_european_prospective_investigation_into_cancernorfolk_study.pdf",
+                "year": 2013,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "Incident cases of diabetes (n 749) were identified and compared with a randomly selected subcohort of 3496 participants aged 40–79 years ... The replacement of 5 % energy intake from SFA [saturated fatty acids] with an isoenergetic amount of fructose was associated with a 30% lower diabetes risk (HR 0·69, 95 % CI 0·50, 0·96) ..."
+            },
+            {
+                "title": "Carbohydrate quantity and quality and risk of type 2 diabetes in the European Prospective Investigation into Cancer and Nutrition-Netherlands (EPIC-NL) study.",
+                "url": "http://ajcn.nutrition.org/content/92/4/905.long",
+                "year": 2010,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "A prospective cohort study was conducted in 37,846 participants ... Dietary GL [glycemic load] was associated with an increased diabetes risk ... GI [gylcemic index] tended to increase diabetes risk ... Dietary fiber was inversely associated with diabetes risk ... Of the carbohydrate subtypes, only starch was related to increased diabetes risk"
+            },
+            {
+                "title": "The EPIC-InterAct Study: A Study of the Interplay between Genetic and Lifestyle Behavioral Factors on the Risk of Type 2 Diabetes in European Populations",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4218968/",
+                "year": 2014,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "The study confirmed that adherence to specific dietary patterns, commonly characterised by high intake of fruits or vegetables and low intake of processed meat, sugar-sweetened beverages, and refined grains, may lower type 2 diabetes risk."
+            },
+            {
+                "title": "Dietary fibre and incidence of type 2 diabetes in eight European countries: the EPIC-InterAct Study and a meta-analysis of prospective studies.",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4472947",
+                "year": 2015,
+                "is_meta": true,
+                "availability": "full",
+                "quote": "The overall evidence indicates that the intake of total and cereal fibre is inversely related to the risk of type 2 diabetes. The results of the EPIC-InterAct Study suggest that the association may be partially explained by body weight."
+            },
+            {
+                "title": "Carbohydrates, dietary fiber, and incident type 2 diabetes in older women",
+                "url": "http://ajcn.nutrition.org/content/71/4/921.full",
+                "year": 2000,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "Total grain, whole-grain, total dietary fiber, cereal fiber, and dietary magnesium intakes showed strong inverse associations with incidence of diabetes after adjustment for potential nondietary confounding variables"
+            },
+            {
+                "title": "Glycemic Index and Dietary Fiber and the Risk of Type 2 Diabetes",
+                "url": "http://care.diabetesjournals.org/content/27/11/2701",
+                "year": 2004,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "This was a prospective study of 36,787 men and women ... Intakes of carbohydrate (OR per 200 g/day 0.58, 0.36–0.95), sugars (OR per 100 g/day 0.61, 0.47–0.79), and magnesium (OR per 500 mg/day 0.62, 0.43–0.90) were inversely associated with incidence of diabetes, whereas intake of starch (OR per 100 g/day 1.47, 1.06–2.05) and dietary GI (OR per 10 units 1.32, 1.05–1.66) were positively associated with diabetes. These relationships were attenuated after adjustment for BMI and waist-to-hip ratio."
+            },
+            {
+                "title": "A Very-Low-Fat Vegan Diet Increases Intake of Protective Dietary Factors and Decreases Intake of Pathogenic Dietary Factors",
+                "url": "http://www.sciencedirect.com/science/article/pii/S0002822307020731",
+                "year": 2007,
+                "is_meta": false,
+                "availability": "abstract",
+                "quote": "Ninety-three early-stage prostate cancer patients participated in a randomized controlled trial and were assigned to a very-low-fat (10% fat) vegan diet supplemented with soy protein and lifestyle changes or to usual care. ... Analyses of changes in dietary intake of macronutrients, vitamins, minerals, carotenoids, and isoflavones from baseline to 1 year showed significantly increased intake of most protective dietary factors (eg, fiber increased from a mean of 31 to 59 g/day, lycopene increased from 8,693 to 34,464 μg/day) and significantly decreased intake of most pathogenic dietary factors (eg, saturated fatty acids decreased from 20 to 5 g/day, cholesterol decreased from 200 to 10 mg/day) in the intervention group compared to controls"
+            },
+            {
                 "title": "Chronic inflammation in fat plays a crucial role in the development of obesity-related insulin resistance",
                 "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC296998/",
                 "year": 2003,
                 "is_meta": false,
                 "availability": "full",
-                "quote":"Increasing evidence from human population studies and animal research has established correlative as well as causative links between chronic inflammation and insulin resistance ... we show that many inflammation and macrophage-specific genes are dramatically upregulated in white adipose tissue (WAT) in mouse models of genetic and high-fat diet-induced obesity (DIO). ... We propose that obesity-related insulin resistance is, at least in part, a chronic inflammatory disease initiated in adipose tissue."
+                "quote": "Increasing evidence from human population studies and animal research has established correlative as well as causative links between chronic inflammation and insulin resistance ... we show that many inflammation and macrophage-specific genes are dramatically upregulated in white adipose tissue (WAT) in mouse models of genetic and high-fat diet-induced obesity (DIO). ... We propose that obesity-related insulin resistance is, at least in part, a chronic inflammatory disease initiated in adipose tissue."
             },
             {
                 "title": "Vegetarian diets and glycemic control in diabetes: a systematic review and meta-analysis",
@@ -951,7 +1008,7 @@
         ]
     },
     "ingredients": {
-        "soy":[],
+        "soy": [],
         "dairy": [{
                 "title": "Hormones in Dairy Foods and Their Impact on Public Health - A Narrative Review Article",
                 "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4524299/",
