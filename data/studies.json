@@ -592,7 +592,7 @@
                 "year": 2010,
                 "is_meta": true,
                 "availability": "full",
-                "quote":"We now know that particular nutrients influence cognition by acting on molecular systems or cellular processes that are vital for maintaining cognitive function. This raises the exciting possibility that dietary manipulations are a viable strategy for enhancing cognitive abilities and protecting the brain from damage, promoting repair and counteracting the effects of aging"
+                "quote": "We now know that particular nutrients influence cognition by acting on molecular systems or cellular processes that are vital for maintaining cognitive function. This raises the exciting possibility that dietary manipulations are a viable strategy for enhancing cognitive abilities and protecting the brain from damage, promoting repair and counteracting the effects of aging"
             },
             {
                 "title": "Neuroprotective Effect of Natural Products Against Alzheimer’s Disease",
@@ -830,8 +830,7 @@
                 "quote": "Although both groups showed significant reductions in HbA1C levels, the reductions were larger in the vegan group than in the conventional group (-0.5% vs. -0.2%; p-for-interaction = 0.017). When only considering participants with high compliance, the difference in HbA1c level reduction between the groups was found to be larger (-0.9% vs. -0.3%). The beneficial effect of vegan diets was noted even after adjusting for changes in total energy intake or waist circumference over the 12 weeks."
             }
         ],
-        "Addiction":[
-            {
+        "Addiction": [{
                 "title": "Intense Sweetness Surpasses Cocaine Reward",
                 "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1931610/",
                 "year": 2007,
@@ -861,7 +860,7 @@
                 "year": 2009,
                 "is_meta": true,
                 "availability": "full",
-                "quote":"Taken together, the articles from this symposium provide evidence that neurological similarities exist in the response of humans (6) and rats (7,9) to foods and to drugs. Two of the reports (6,7), as well as our own work (14–16), suggest that even highly palatable food is not addictive in and of itself. Rather, it is the manner in which the food is presented (i.e., intermittently) and consumed (i.e., repeated, intermittent “gorging”) that appears to entrain the addiction-like process"
+                "quote": "Taken together, the articles from this symposium provide evidence that neurological similarities exist in the response of humans (6) and rats (7,9) to foods and to drugs. Two of the reports (6,7), as well as our own work (14–16), suggest that even highly palatable food is not addictive in and of itself. Rather, it is the manner in which the food is presented (i.e., intermittently) and consumed (i.e., repeated, intermittent “gorging”) that appears to entrain the addiction-like process"
             },
             {
                 "title": "Is food addiction a valid and useful concept?",
@@ -869,8 +868,8 @@
                 "year": 2013,
                 "is_meta": true,
                 "availability": "full",
-                "quote":"While our starting point is that any reasonably comprehensive review must conclude that FA is a rough and incomplete descriptive phenomenon that is unsupported by existing evidence, such a perspective represents a starting point rather than a conclusion."
-            },
+                "quote": "While our starting point is that any reasonably comprehensive review must conclude that FA is a rough and incomplete descriptive phenomenon that is unsupported by existing evidence, such a perspective represents a starting point rather than a conclusion."
+            }
         ],
         "Cardiovascular Disease": [{
                 "title": "Plant-based foods and prevention of cardiovascular disease: an overview",
@@ -879,6 +878,20 @@
                 "is_meta": true,
                 "availability": "full",
                 "quote": "Evidence from prospective cohort studies indicates that a high consumption of plant-based foods such as fruit and vegetables, nuts, and whole grains is associated with a significantly lower risk of coronary artery disease and stroke...Such diets, which also have many other health benefits, deserve more emphasis in dietary recommendations to prevent chronic diseases."
+            }, {
+                "title": "A plant-based diet and coronary artery disease: a mandate for effective therapy",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5466936/",
+                "year": 2017,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "After 12 years, we reviewed the CVD events of our 18 adherent patients. During the eight years prior to entering our study, while in the care of expert cardiologists, they had sustained 49 cardiac events, which was indicative of disease progression. In contrast, 17 of the 18 patients sustained no further events during the 12 years they spent in our study"
+            }, {
+                "title": "A way to reverse CAD?",
+                "url": "http://www.mdedge.com/jfponline/article/83345/cardiology/way-reverse-cad",
+                "year": 2014,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "Of the 198 patients with CVD, 177 (89%) were adherent. Major cardiac events judged to be recurrent disease totaled one stroke in the adherent cardiovascular participants—a recurrent event rate of .6%, significantly less than reported by other studies of plant-based nutrition therapy. Thirteen of 21 (62%) nonadherent participants experienced adverse events."
             },
             {
                 "title": "Diet, lifestyle, and the etiology of coronary artery disease: the Cornell China study.",
