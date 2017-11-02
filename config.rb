@@ -40,7 +40,16 @@ page '/*.txt', layout: false
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+end
+
+
+after_build do |builder|
+  begin
+    HTMLProofer.check_directory(config[:build_dir], { assume_extension: true, http_status_ignore: [0, 999] }).run
+  rescue RuntimeError => e
+    puts e
+  end
+end

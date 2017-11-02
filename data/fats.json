@@ -1,5 +1,5 @@
 {
-    "source":"https://nutritiondata.self.com/",
+    "source": "https://nutritiondata.self.com/",
     "disclaimer": "[Omega-3 fatty acids: comparison of plant and seafood sources in human nutrition.](https://www.ncbi.nlm.nih.gov/pubmed/1825498)",
     "Fish": [{
             "name": "Sardine",
@@ -12,7 +12,7 @@
             "sat": 7,
             "poly": 6,
             "mono": 8,
-            "omega3":0.4
+            "omega3": 0.4
         },
         {
             "name": "Trout",
@@ -31,7 +31,7 @@
             "sat": 1.6,
             "poly": 1.8,
             "mono": 2.1,
-            "omega3":1.7
+            "omega3": 1.7
         },
         {
             "name": "Cod",
@@ -44,7 +44,7 @@
             "sat": 3.1,
             "poly": 3.9,
             "mono": 3.8,
-            "omega3":2.3
+            "omega3": 2.3
         }
     ],
     "Dairy": [{
@@ -231,21 +231,21 @@
             "sat": 3.7,
             "poly": 29,
             "mono": 8,
-            "omega3":22.8
+            "omega3": 22.8
         },
         {
             "name": "Walnut",
             "sat": 6,
             "poly": 47,
             "mono": 9,
-            "omega3":9
+            "omega3": 9
         },
         {
             "name": "Sunflower Seeds",
             "sat": 4.5,
             "poly": 23,
             "mono": 19,
-            "omega3":0.06
+            "omega3": 0.06
         },
         {
             "name": "Pistachio",
@@ -270,7 +270,7 @@
             "sat": 8,
             "poly": 8,
             "mono": 24,
-            "omega3":0.06
+            "omega3": 0.06
         },
         {
             "name": "Pumpkin",
@@ -289,14 +289,14 @@
             "sat": 3.3,
             "poly": 24,
             "mono": 2.3,
-            "omega3":17.6
+            "omega3": 17.6
         },
         {
             "name": "Almond",
             "sat": 3.7,
             "poly": 12,
             "mono": 31,
-            "omega3":0.06
+            "omega3": 0.06
         }
     ],
     "oil": [{

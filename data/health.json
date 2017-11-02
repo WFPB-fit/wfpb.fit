@@ -17,6 +17,14 @@
                 "quote": "nutritional patterns collectively termed the “Western diet”, including high-fat and cholesterol, high-protein, high-sugar, and excess salt intake, as well as frequent consumption of processed and ‘fast foods’, promote obesity, metabolic syndrome, and cardiovascular disease ... numerous positive experimental results across different disease entities encourage further exploration of the cellular and molecular immunological basis underlying nutritional control of autoimmunity. It is current knowledge that nutrition, the intestinal microbiota, the gut mucosal immune system, and autoimmune pathology are deeply intertwined."
             },
             {
+                "title": "Low-grade inflammation, diet composition and health: current research evidence and its translation",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4579563/",
+                "year": 2015,
+                "is_meta": true,
+                "availability": "full",
+                "quote":"There is a substantial amount of evidence to suggest that many foods, nutrients and non-nutrient food components modulate inflammation both acutely and chronically ... elevated unresolved chronic inflammation is a core perturbation in a range of chronic diseases and is an important determinant of the pathological impact of excess adiposity"
+            },
+            {
                 "title": "Stress, Food, and Inflammation: Psychoneuroimmunology and Nutrition at the Cutting Edge",
                 "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2868080/#S1title",
                 "year": 2010,
@@ -24,7 +32,14 @@
                 "availability": "full",
                 "quote": "Inflammation is the common link among the leading causes of death. Inflammation is the common link among the leading causes of death. Mechanistic studies have shown how various dietary components can modulate key pathways to inflammation including sympathetic activity, oxidative stress, transcription factor nuclear factor kappa B (NF-κB) activation, and proinflammatory cytokine production ... Diets that promote inflammation are high in refined starches, sugar, saturated and trans-fats, and low in omega-3 fatty acids, natural antioxidants and fiber from fruits, vegetables, and whole grains"
             },
-
+            {
+                "title": "A red meat-derived glycan promotes inflammation and cancer progression.",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4299224/",
+                "year": 2015,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "the nonhuman sialic acid N-glycolylneuraminic acid (Neu5Gc), showing that it is highly and selectively enriched in red meat. The bound form of Neu5Gc is bioavailable, undergoing metabolic incorporation into human tissues, despite being a foreign antigen. ... when human-like Neu5Gc-deficient mice were fed bioavailable Neu5Gc and challenged with anti-Neu5Gc antibodies, they developed evidence of systemic inflammation ... our data provide an unusual mechanistic explanation for the epidemiological association between red meat consumption and carcinoma risk."
+            }
         ],
         "overview": [{
                 "title": "Meat intake and mortality: a prospective study of over half a million people",
@@ -34,6 +49,14 @@
                 "availability": "full",
                 "quote": "Red and processed meat intakes were associated with modest increases in total mortality, cancer mortality and CVD mortality."
             },
+            {
+                "title": "Diet-induced metabolic acidosis",
+                "url": "http://www.sciencedirect.com/science/article/pii/S0261561411000604",
+                "year": 2011,
+                "is_meta": true,
+                "availability": "abstract",
+                "quote":"The modern Western-type diet is deficient in fruits and vegetables and contains excessive animal products, generating the accumulation of non-metabolizable anions and a lifespan state of overlooked metabolic acidosis, whose magnitude increases progressively with aging ...These adaptive processes lower the urine pH and induce an extensive change in urine composition, including hypocitraturia, hypercalciuria, and nitrogen and phosphate wasting. Low urine pH predisposes to uric acid stone formation. Hypocitraturia and hypercalciuria are risk factors for calcium stone disease. Even a very mild degree of metabolic acidosis induces skeletal muscle resistance to the insulin action and dietary acid load may be an important variable in predicting the metabolic abnormalities and the cardiovascular risk of the general population"
+            }, 
             {
                 "title": "Health Implications of a Vegetarian Diet",
                 "url": "http://journals.sagepub.com/doi/abs/10.1177/1559827611425762",
@@ -758,6 +781,14 @@
                 "quote": "Our results suggest that the diet composition and the energy content, rather than the carbohydrate count, should be important considerations for dietary management and demonstrate that processed meat consumption is accompanied by impaired GIH responses and increased oxidative stress marker levels in diabetic patients."
             },
             {
+                "title": "Chronic inflammation in fat plays a crucial role in the development of obesity-related insulin resistance",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC296998/",
+                "year": 2003,
+                "is_meta": false,
+                "availability": "full",
+                "quote":"Increasing evidence from human population studies and animal research has established correlative as well as causative links between chronic inflammation and insulin resistance ... we show that many inflammation and macrophage-specific genes are dramatically upregulated in white adipose tissue (WAT) in mouse models of genetic and high-fat diet-induced obesity (DIO). ... We propose that obesity-related insulin resistance is, at least in part, a chronic inflammatory disease initiated in adipose tissue."
+            },
+            {
                 "title": "Vegetarian diets and glycemic control in diabetes: a systematic review and meta-analysis",
                 "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4221319/",
                 "year": 2014,
@@ -920,6 +951,7 @@
         ]
     },
     "ingredients": {
+        "soy":[],
         "dairy": [{
                 "title": "Hormones in Dairy Foods and Their Impact on Public Health - A Narrative Review Article",
                 "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4524299/",
@@ -973,41 +1005,5 @@
                 "quote": "α-Casein and total casein did not affect the proliferations of RWPE1, HEK293, A459, SNU484, MCF7, HEK293, or RWPE1 cells. However, PC3 cells treated with 1 mg/mL of α-casein and casein showed increased proliferation (228% and 166%, respectively), and the proliferation of LNCaP cells was also enhanced by 134% and 142%, respectively"
             }
         ]
-    },
-    "externalities": {
-        "environment": [{
-                "title": "Analysis and valuation of the health and climate change cobenefits of dietary change",
-                "url": "http://m.pnas.org/content/113/15/4146.full",
-                "year": 2016,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "Transitioning toward more plant-based diets that are in line with standard dietary guidelines could reduce global mortality by 6–10% and food-related greenhouse gas emissions by 29–70% compared with a reference scenario in 2050...Overall, we estimate the economic benefits of improving diets to be 1–31 trillion US dollars, which is equivalent to 0.4–13% of global gross domestic product (GDP) in 2050."
-            },
-            {
-                "title": "Tackling Climate Change Through Livestock: A GLobal Assessment of Emissions and Mitigation Opportunities",
-                "url": "http://www.fao.org/3/a-i3437e.pdf",
-                "year": 2013,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "Total   GHG   emissions   from   livestock   supply   chains are estimated at 7.1 gigatonnes CO2-eq per annum for the 2005 reference period. They represent 14.5 percent of all human-induced emissions using the most recent IPCC estimates for total an-thropogenic emissions (49 gigatonnes CO2-eq for the year 2004; IPCC, 2007)."
-            },
-            {
-                "title": "Appetite for Destruction: Summary Report",
-                "url": "https://www.wwf.org.uk/sites/default/files/2017-10/WWF_AppetiteForDestruction_Summary_Report_SignOff.pdf",
-                "year": 2017,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "If everyone reduced the amount of animal products they ate to meet their nutritional requirements, the total agricultual land required would decline by 13%...The growth in intensive industrial farming coupled with an increased need for protein and energy-rich animal feed has had a devastating impact on nature. Feed crops threaten the biodiversity of many of Earth's most valuble and vulnerable areas."
-            },
-            {
-                "title": "Biodiversity conservation: The key is reducing meat consumption",
-                "url": "http://www.sciencedirect.com/science/article/pii/S0048969715303697",
-                "year": 2015,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "Livestock production is the single largest driver of habitat loss"
-            }
-        ],
-        "welfare": []
     }
 }
