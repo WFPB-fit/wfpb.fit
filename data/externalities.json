@@ -1,5 +1,13 @@
 {
     "environment": [{
+            "title": "Fourth National Climate Assessment (NCA4), Volume I",
+            "url": "https://science2017.globalchange.gov/",
+            "year": 2017,
+            "is_meta": true,
+            "availability": "full",
+            "quote": "This period is now the warmest in the history of modern civilization. ...  human activities, especially emissions of greenhouse gases, are the dominant cause of the observed warming since the mid-20th century. ... Thousands of studies conducted by researchers around the world have documented changes in surface, atmospheric, and oceanic temperatures; melting glaciers; diminishing snow cover; shrinking sea ice; rising sea levels; ocean acidification; and increasing atmospheric water vapor. ... global average sea level has risen by about 7–8 inches since 1900, with almost half (about 3 inches) of that rise occurring since 1993 ... Heavy rainfall is increasing in intensity and frequency across the United States and globally and is expected to continue to increase. ... Heatwaves have become more frequent in the United States since the 1960s, while extreme cold temperatures and cold waves are less frequent. ... The incidence of large forest fires in the western United States and Alaska has increased since the early 1980s and is projected to further increase ... The global atmospheric carbon dioxide (CO2) concentration has now passed 400 parts per million (ppm), a level that last occurred about 3 million years ago, when both global average temperature and sea level were significantly higher than today. ... In 2014 and 2015, emission growth rates slowed as economic growth became less carbon-intensive. Even if this slowing trend continues, however, it is not yet at a rate that would limit global average temperature change to well below 3.6°F (2°C) above preindustrial levels."
+        },
+        {
             "title": "Analysis and valuation of the health and climate change cobenefits of dietary change",
             "url": "http://m.pnas.org/content/113/15/4146.full",
             "year": 2016,
@@ -18,11 +26,11 @@
         {
             "title": "Livestock and Climate Change: What if the key actors in climate change are...cows, pigs, and chickens?",
             "url": "http://www.worldwatch.org/node/6294",
-            "pdf":"http://www.worldwatch.org/files/pdf/Livestock%20and%20Climate%20Change.pdf",
+            "pdf": "http://www.worldwatch.org/files/pdf/Livestock%20and%20Climate%20Change.pdf",
             "year": 2006,
             "is_meta": true,
             "availability": "full",
-            "quote":"our analysis shows that livestock and their byproducts actually account for at least 32,564 million tons of CO2e per year, or 51 percent of annual worldwide GHG [greenhouse gases] ... Some of these [sources of GHG] are obvious but underestimated, some are simply overlooked, and some are emissions sources that are already counted but have been assigned to the wrong sectors. ... where it was impossible to avoid imprecision in estimating any sum of GHGs, we strove to minimize the sum so our overall estimate could be understood as conservative."
+            "quote": "our analysis shows that livestock and their byproducts actually account for at least 32,564 million tons of CO2e per year, or 51 percent of annual worldwide GHG [greenhouse gases] ... Some of these [sources of GHG] are obvious but underestimated, some are simply overlooked, and some are emissions sources that are already counted but have been assigned to the wrong sectors. ... where it was impossible to avoid imprecision in estimating any sum of GHGs, we strove to minimize the sum so our overall estimate could be understood as conservative."
         },
         {
             "title": "Livestock’s Long Shadow: Environmental Issues and Options",
@@ -46,7 +54,7 @@
             "year": 2016,
             "is_meta": true,
             "availability": "full",
-            "quote":"Beyond 2030, the negative impacts of climate change on the productivity of crops, livestock, fisheries and forestry will become increasingly severe in all regions."
+            "quote": "Beyond 2030, the negative impacts of climate change on the productivity of crops, livestock, fisheries and forestry will become increasingly severe in all regions."
         },
         {
             "title": "Tackling Climate Change Through Livestock: A GLobal Assessment of Emissions and Mitigation Opportunities",

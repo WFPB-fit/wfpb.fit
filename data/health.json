@@ -8,6 +8,70 @@
             "availability": "abstract",
             "quote": "The most consistent association was between fish consumption and PCBs and HCB, followed by dairy products and PCBs. A few studies observed a relationship between meat and some POPs, whilst intake of vegetables, fruits and cereals was rarely related to POP levels. "
         }],
+        "osteoporosis": [{
+            "title": "Calcium intake and bone mineral density: systematic review and meta-analysis",
+            "url": "http://www.bmj.com/content/351/bmj.h4183",
+            "year": 2015,
+            "is_meta": true,
+            "availability": "full",
+            "quote": "Increasing calcium intake from dietary sources or by taking calcium supplements produces small non-progressive increases in BMD, which are unlikely to lead to a clinically significant reduction in risk of fracture."
+        }, {
+            "title": "Vitamin A intake and osteoporosis: a clinical review.",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/15671709",
+            "year": 2004,
+            "is_meta": true,
+            "availability": "abstract",
+            "quote": "There is a graded increase in relative risk of hip fracture with increasing retinol intake, attributable primarily to retinol (either from diet or supplements) but not beta-carotene intake. Higher serum retinol levels are associated with higher risk of any fracture and with higher risk of hip fracture, whereas there is no evidence of harm associated with beta-carotene intake."
+        }, {
+            "title": "Retinoid Receptors in Bone and Their Role in Bone Remodeling",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4356160/",
+            "year": 2015,
+            "is_meta": true,
+            "availability": "full",
+            "quote": "It has been known for many years that hypervitaminosis A promotes skeleton fragility by increasing osteoclast formation and decreasing cortical bone mass. Some epidemiological studies have suggested that increased intake of vitamin A and increased serum levels of retinoids may decrease bone mineral density and increase fracture rate, but the literature on this is not conclusive. "
+        }, {
+            "title": "The acute and chronic toxic effects of vitamin A.",
+            "url": "http://ajcn.nutrition.org/content/83/2/191.full",
+            "year": 2006,
+            "is_meta": true,
+            "availability": "full",
+            "quote": "Osteoporosis and hip fracture are associated with preformed vitamin A intakes that are only twice the current RDA. Assessing vitamin A status in persons with subtoxicity or toxicity is complicated because serum retinol concentrations are nonsensitive indicators in this range of liver vitamin A reserves"
+        }, {
+            "title": "Excess retinol intake may explain the high incidence of osteoporosis in northern Europe.",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/10439632",
+            "year": 1999,
+            "is_meta": false,
+            "availability": "abstract",
+            "quote": "An epidemiologic study of postmenopausal women in Sweden revealed that a chronic excess of retinol intake (> 1.5 mg/day) decreased bone mineral density and increased hip fracture risk. ... Retinol in fortified milk could explain also the association of high calcium intake and hip fracture incidence in northern Europe"
+        }, {
+            "title": "High dietary intake of retinol leads to bone marrow hypoxia and diaphyseal endosteal mineralization in rats",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/17972437",
+            "year": 2010,
+            "is_meta": false,
+            "availability": "abstract",
+            "quote": "Together these novel findings suggest that a rapid primary effect of excess retinol on bone tissue is the impairment of endosteal/marrow blood flow leading to hypoxia and pathological endosteal mineralization."
+        }, {
+            "title": "Vitamins and bone health: beyond calcium and vitamin D",
+            "url": "http://onlinelibrary.wiley.com/doi/10.1111/j.1753-4887.2011.00372.x/full",
+            "year": 2011,
+            "is_meta": true,
+            "availability": "abstract",
+            "quote": "Studies of vitamin A showed inconsistent results. Excessive, as well as insufficient, levels of retinol intake may be associated with compromised bone health. "
+        }, {
+            "title": "Serum Retinol Levels and the Risk of Fracture",
+            "url": "http://www.nejm.org/doi/full/10.1056/nejmoa021171#t=articleTop",
+            "year": 2003,
+            "is_meta": true,
+            "availability": "full",
+            "quote": "Men with retinol levels in the 99th percentile (>103.12 μg per deciliter [3.60 μmol per liter]) had an overall risk of fracture that exceeded the risk among men with lower levels by a factor of seven (P<0.001). The level of serum beta carotene was not associated with the risk of fracture."
+        }, {
+            "title": "Excessive Dietary Intake of Vitamin A Is Associated with Reduced Bone Mineral Density and Increased Risk for Hip Fracture",
+            "url": "http://annals.org/aim/article-abstract/712324/excessive-dietary-intake-vitamin-associated-reduced-bone-mineral-density-increased",
+            "year": 1998,
+            "is_meta": false,
+            "availability": "abstract",
+            "quote": "retinol intake was negatively associated with bone mineral density. For every 1-mg increase in daily intake of retinol, risk for hip fracture increased by 68% "
+        }, ],
         "autoimmune": [{
                 "title": "Role of “Western Diet” in Inflammatory Autoimmune Diseases",
                 "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4034518/",
@@ -437,6 +501,13 @@
             }
         ],
         "weight": [{
+                "title": "The BROAD study: A randomised controlled trial using a whole food plant-based diet in the community for obesity, ischaemic heart disease or diabetes.",
+                "url": "https://www.nature.com/nutd/journal/v7/n3/full/nutd20173a.html",
+                "year": 2017,
+                "is_meta": false,
+                "availability": "full",
+                "quote": "This programme led to significant improvements in BMI, cholesterol and other risk factors. To the best of our knowledge, this research has achieved greater weight loss at 6 and 12 months than any other trial that does not limit energy intake or mandate regular exercise."
+            }, {
                 "title": "Weight gain over 5 years in 21,966 meat-eating, fish-eating, vegetarian, and vegan men and women in EPIC-Oxford",
                 "url": "https://www.nature.com/ijo/journal/v30/n9/full/0803305a.html",
                 "year": 2006,
@@ -1044,14 +1115,7 @@
                 "year": 1994,
                 "is_meta": false,
                 "availability": "abstract",
-                "quote": "There were 416 subjects ... Smoking, underweight in old age, overweight at age 20 years, and weight loss were associated with an increased risk of hip fracture. Consumption of dairy products, particularly at age 20 years, was associated with an increased risk of hip fracture in old age."
-            }, {
-                "title": "Calcium intake and hip fracture risk in men and women: a meta-analysis of prospective cohort studies and randomized controlled trials.",
-                "url": "http://ajcn.nutrition.org/content/86/6/1780.long",
-                "year": 2007,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "Pooled results from prospective cohort studies suggest that calcium intake is not significantly associated with hip fracture risk in women or men"
+                "quote": "There were 416 subjects ... Consumption of dairy products, particularly at age 20 years, was associated with an increased risk of hip fracture in old age."
             },
             {
                 "title": "A Milk Protein, Casein, as a Proliferation Promoting Factor in Prostate Cancer Cells",
