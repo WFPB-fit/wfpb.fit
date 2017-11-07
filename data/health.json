@@ -1,1130 +1,1115 @@
-{
-    "disease": {
-        "pollutants": [{
-            "title": "Empirical analyses of the influence of diet on human concentrations of persistent organic pollutants: a systematic review of all studies conducted in Spain.",
-            "url": "https://www.ncbi.nlm.nih.gov/pubmed/21683445",
-            "year": 2011,
-            "is_meta": true,
-            "availability": "abstract",
-            "quote": "The most consistent association was between fish consumption and PCBs and HCB, followed by dairy products and PCBs. A few studies observed a relationship between meat and some POPs, whilst intake of vegetables, fruits and cereals was rarely related to POP levels. "
-        }],
-        "osteoporosis": [{
-            "title": "Calcium intake and bone mineral density: systematic review and meta-analysis",
-            "url": "http://www.bmj.com/content/351/bmj.h4183",
-            "year": 2015,
-            "is_meta": true,
-            "availability": "full",
-            "quote": "Increasing calcium intake from dietary sources or by taking calcium supplements produces small non-progressive increases in BMD, which are unlikely to lead to a clinically significant reduction in risk of fracture."
-        }, {
-            "title": "Vitamin A intake and osteoporosis: a clinical review.",
-            "url": "https://www.ncbi.nlm.nih.gov/pubmed/15671709",
-            "year": 2004,
-            "is_meta": true,
-            "availability": "abstract",
-            "quote": "There is a graded increase in relative risk of hip fracture with increasing retinol intake, attributable primarily to retinol (either from diet or supplements) but not beta-carotene intake. Higher serum retinol levels are associated with higher risk of any fracture and with higher risk of hip fracture, whereas there is no evidence of harm associated with beta-carotene intake."
-        }, {
-            "title": "Retinoid Receptors in Bone and Their Role in Bone Remodeling",
-            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4356160/",
-            "year": 2015,
-            "is_meta": true,
-            "availability": "full",
-            "quote": "It has been known for many years that hypervitaminosis A promotes skeleton fragility by increasing osteoclast formation and decreasing cortical bone mass. Some epidemiological studies have suggested that increased intake of vitamin A and increased serum levels of retinoids may decrease bone mineral density and increase fracture rate, but the literature on this is not conclusive. "
-        }, {
-            "title": "The acute and chronic toxic effects of vitamin A.",
-            "url": "http://ajcn.nutrition.org/content/83/2/191.full",
-            "year": 2006,
-            "is_meta": true,
-            "availability": "full",
-            "quote": "Osteoporosis and hip fracture are associated with preformed vitamin A intakes that are only twice the current RDA. Assessing vitamin A status in persons with subtoxicity or toxicity is complicated because serum retinol concentrations are nonsensitive indicators in this range of liver vitamin A reserves"
-        }, {
-            "title": "Excess retinol intake may explain the high incidence of osteoporosis in northern Europe.",
-            "url": "https://www.ncbi.nlm.nih.gov/pubmed/10439632",
-            "year": 1999,
-            "is_meta": false,
-            "availability": "abstract",
-            "quote": "An epidemiologic study of postmenopausal women in Sweden revealed that a chronic excess of retinol intake (> 1.5 mg/day) decreased bone mineral density and increased hip fracture risk. ... Retinol in fortified milk could explain also the association of high calcium intake and hip fracture incidence in northern Europe"
-        }, {
-            "title": "High dietary intake of retinol leads to bone marrow hypoxia and diaphyseal endosteal mineralization in rats",
-            "url": "https://www.ncbi.nlm.nih.gov/pubmed/17972437",
-            "year": 2010,
-            "is_meta": false,
-            "availability": "abstract",
-            "quote": "Together these novel findings suggest that a rapid primary effect of excess retinol on bone tissue is the impairment of endosteal/marrow blood flow leading to hypoxia and pathological endosteal mineralization."
-        }, {
-            "title": "Vitamins and bone health: beyond calcium and vitamin D",
-            "url": "http://onlinelibrary.wiley.com/doi/10.1111/j.1753-4887.2011.00372.x/full",
-            "year": 2011,
-            "is_meta": true,
-            "availability": "abstract",
-            "quote": "Studies of vitamin A showed inconsistent results. Excessive, as well as insufficient, levels of retinol intake may be associated with compromised bone health. "
-        }, {
-            "title": "Serum Retinol Levels and the Risk of Fracture",
-            "url": "http://www.nejm.org/doi/full/10.1056/nejmoa021171#t=articleTop",
-            "year": 2003,
-            "is_meta": true,
-            "availability": "full",
-            "quote": "Men with retinol levels in the 99th percentile (>103.12 μg per deciliter [3.60 μmol per liter]) had an overall risk of fracture that exceeded the risk among men with lower levels by a factor of seven (P<0.001). The level of serum beta carotene was not associated with the risk of fracture."
-        }, {
-            "title": "Excessive Dietary Intake of Vitamin A Is Associated with Reduced Bone Mineral Density and Increased Risk for Hip Fracture",
-            "url": "http://annals.org/aim/article-abstract/712324/excessive-dietary-intake-vitamin-associated-reduced-bone-mineral-density-increased",
-            "year": 1998,
-            "is_meta": false,
-            "availability": "abstract",
-            "quote": "retinol intake was negatively associated with bone mineral density. For every 1-mg increase in daily intake of retinol, risk for hip fracture increased by 68% "
-        }, ],
-        "autoimmune": [{
-                "title": "Role of “Western Diet” in Inflammatory Autoimmune Diseases",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4034518/",
-                "year": 2015,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "nutritional patterns collectively termed the “Western diet”, including high-fat and cholesterol, high-protein, high-sugar, and excess salt intake, as well as frequent consumption of processed and ‘fast foods’, promote obesity, metabolic syndrome, and cardiovascular disease ... numerous positive experimental results across different disease entities encourage further exploration of the cellular and molecular immunological basis underlying nutritional control of autoimmunity. It is current knowledge that nutrition, the intestinal microbiota, the gut mucosal immune system, and autoimmune pathology are deeply intertwined."
-            },
-            {
-                "title": "Low-grade inflammation, diet composition and health: current research evidence and its translation",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4579563/",
-                "year": 2015,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "There is a substantial amount of evidence to suggest that many foods, nutrients and non-nutrient food components modulate inflammation both acutely and chronically ... elevated unresolved chronic inflammation is a core perturbation in a range of chronic diseases and is an important determinant of the pathological impact of excess adiposity"
-            },
-            {
-                "title": "Stress, Food, and Inflammation: Psychoneuroimmunology and Nutrition at the Cutting Edge",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2868080/#S1title",
-                "year": 2010,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "Inflammation is the common link among the leading causes of death. Inflammation is the common link among the leading causes of death. Mechanistic studies have shown how various dietary components can modulate key pathways to inflammation including sympathetic activity, oxidative stress, transcription factor nuclear factor kappa B (NF-κB) activation, and proinflammatory cytokine production ... Diets that promote inflammation are high in refined starches, sugar, saturated and trans-fats, and low in omega-3 fatty acids, natural antioxidants and fiber from fruits, vegetables, and whole grains"
-            },
-            {
-                "title": "A red meat-derived glycan promotes inflammation and cancer progression.",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4299224/",
-                "year": 2015,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "the nonhuman sialic acid N-glycolylneuraminic acid (Neu5Gc), showing that it is highly and selectively enriched in red meat. The bound form of Neu5Gc is bioavailable, undergoing metabolic incorporation into human tissues, despite being a foreign antigen. ... when human-like Neu5Gc-deficient mice were fed bioavailable Neu5Gc and challenged with anti-Neu5Gc antibodies, they developed evidence of systemic inflammation ... our data provide an unusual mechanistic explanation for the epidemiological association between red meat consumption and carcinoma risk."
-            }
-        ],
-        "overview": [{
-                "title": "Meat intake and mortality: a prospective study of over half a million people",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2803089/",
-                "year": 2010,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "Red and processed meat intakes were associated with modest increases in total mortality, cancer mortality and CVD mortality."
-            },
-            {
-                "title": "Diet-induced metabolic acidosis",
-                "url": "http://www.sciencedirect.com/science/article/pii/S0261561411000604",
-                "year": 2011,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "The modern Western-type diet is deficient in fruits and vegetables and contains excessive animal products, generating the accumulation of non-metabolizable anions and a lifespan state of overlooked metabolic acidosis, whose magnitude increases progressively with aging ...These adaptive processes lower the urine pH and induce an extensive change in urine composition, including hypocitraturia, hypercalciuria, and nitrogen and phosphate wasting. Low urine pH predisposes to uric acid stone formation. Hypocitraturia and hypercalciuria are risk factors for calcium stone disease. Even a very mild degree of metabolic acidosis induces skeletal muscle resistance to the insulin action and dietary acid load may be an important variable in predicting the metabolic abnormalities and the cardiovascular risk of the general population"
-            },
-            {
-                "title": "Health Implications of a Vegetarian Diet",
-                "url": "http://journals.sagepub.com/doi/abs/10.1177/1559827611425762",
-                "year": 2011,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "There is now a significant amount of research that demonstrates the health benefits of vegetarian and plant-based diets"
-            }, {
-                "title": "Nutritional Update for Physicians: Plant-Based Diets",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3662288/",
-                "year": 2013,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "Healthy eating may be best achieved with a plant-based diet...They may also reduce the number of medications needed to treat chronic diseases and lower ischemic heart disease mortality rates. Physicians should consider recommending a plant-based diet to all their patients, especially those with high blood pressure, diabetes, cardiovascular disease, or obesity."
-            },
-            {
-                "title": "Vegetarian diets, low-meat diets and health: a review",
-                "url": "https://www.cambridge.org/core/journals/public-health-nutrition/article/vegetarian-diets-low-meat-diets-and-health-a-review/CFE7D0A7ADA80651A3DC03892287BABA",
-                "year": 2012,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "Both vegetarian diets and prudent diets allowing small amounts of red meat are associated with reduced risk of diseases...Evidence linking red meat intake, particularly processed meat, and increased risk of CHD, cancer and type 2 diabetes is convincing and provides indirect support for consumption of a plant-based diet."
-            },
-            {
-                "title": "Vegetarian, vegan diets and multiple health outcomes: A systematic review with meta-analysis of observational studies",
-                "url": "http://www.tandfonline.com/doi/abs/10.1080/10408398.2016.1138447",
-                "year": 2016,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "This comprehensive meta-analysis reports a significant protective effect of a vegetarian diet versus the incidence and/or mortality from ischemic heart disease (−25%) and incidence from total cancer (−8%). Vegan diet conferred a significant reduced risk (−15%) of incidence from total cancer"
-            },
-            {
-                "title": "Plant-derived immunomodulators: an insight on their preclinical evaluation and clinical trials",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4548092/",
-                "year": 2015,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "The present review will give an overview of widely investigated plant-derived compounds (curcumin, resveratrol, epigallocatechol-3-gallate, quercetin, colchicine, capsaicin, andrographolide, and genistein) which have exhibited potent effects on cellular and humoral immune functions in pre-clinical investigations and will highlight their clinical potential."
-            },
-            {
-                "title": "Vegetarian diet: panacea for modern lifestyle diseases?",
-                "url": "https://academic.oup.com/qjmed/article/92/9/531/1520534/Vegetarian-diet-panacea-for-modern-lifestyle",
-                "year": 1999,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "review the beneficial and adverse effects of vegetarian diets in various medical conditions"
-            },
-            {
-                "title": "Health effects of vegan diets",
-                "url": "http://ajcn.nutrition.org/content/89/5/1627S.long",
-                "year": 2009,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "Vegans are thinner, have lower serum cholesterol and blood pressure, and enjoy a lower risk of CVD"
-            },
-            {
-                "title": "Vegetarian Diets: What Are the Advantages?",
-                "url": "https://www.karger.com/Article/Abstract/83787",
-                "year": 2004,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "The benefits arise from lower intakes of saturated fat, cholesterol and animal protein as well as higher intakes of complex carbohydrates, dietary fiber, magnesium, folic acid, vitamin C and E, carotenoids and other phytochemicals."
-            },
-            {
-                "title": "Accruing evidence on benefits of adherence to the Mediterranean diet on health: an updated systematic review and meta-analysis",
-                "url": "http://ajcn.nutrition.org/content/92/5/1189.long",
-                "year": 2010,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "This updated meta-analysis confirms, in a larger number of subjects and studies, the significant and consistent protection provided by adherence to the Mediterranean diet in relation to the occurrence of major chronic degenerative diseases."
-            }
-        ],
-        "cancer": [{
-                "title": "Food, Nutrition, Physical Activity, and the Prevention of Cancer: a Global Perspective (page 67: grains/cereals. 75: veges, fruits, nuts, seeds, legumes, herbs, spices. 116: meat, poultry, fish, eggs. 129: milk, dairy. 135: Fat, Oil. 141: salty, sugary foods. 157: alcohol)",
-                "url": "http://www.aicr.org/assets/docs/pdf/reports/Second_Expert_Report.pdf",
-                "year": 2007,
-                "is_meta": true,
-                "availability": "full"
-            },
-            {
-                "title": "Cancer preventive effects of flavonoids—a review",
-                "url": "http://www.sciencedirect.com/science/article/pii/S0753332202001865",
-                "year": 2002,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "experimental studies have provided growing evidence for the beneficial action of flavonoids on multiple cancer-related biological pathways (carcinogen bioactivation, cell-signaling, cell cycle regulation, angiogenesis, oxidative stress, inflammation). Although the epidemiologic data on flavonoids and cancer are still limited and conflicting, some protective associations have been suggested for flavonoid-rich foods (soy and premenopausal breast cancer; green tea and stomach cancer; onion and lung cancer)."
-            },
-            {
-                "title": "Reduced cancer risk in vegetarians: an analysis of recent reports",
-                "url": "http://www.aicr.org/assets/docs/pdf/reports/Second_Expert_Report.pdf",
-                "year": 2011,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "Most large prospective observational studies show that vegetarian diets are at least modestly cancer protective (10%–12% reduction in overall cancer risk) although results for specific cancers are less clear. No long-term randomized clinical trials have been conducted to address this relationship. However, a broad body of evidence links specific plant foods such as fruits and vegetables, plant constituents such as fiber, antioxidants and other phytochemicals, and achieving and maintaining a healthy weight to reduced risk of cancer diagnosis and recurrence. Also, research links the consumption of meat, especially red and processed meats, to increased risk of several types of cancer"
-            },
-            {
-                "title": "Cancer is a Preventable Disease that Requires Major Lifestyle Changes",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2515569/",
-                "year": 2008,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "Only 5–10% of all cancer cases can be attributed to genetic defects, whereas the remaining 90–95% have their roots in the environment and lifestyle. The lifestyle factors include cigarette smoking, diet (fried foods, red meat), alcohol, sun exposure, environmental pollutants, infections, stress, obesity, and physical inactivity. The evidence indicates that of all cancer-related deaths, almost 25–30% are due to tobacco, as many as 30–35% are linked to diet, about 15–20% are due to infections, and the remaining percentage are due to other factors"
-            },
-            {
-                "title": "The role of diet in breast and prostate cancer survival.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/17684809",
-                "year": 2007,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "However, diet plays an important role in cancer prevention and survival and may also be implicated in racial and ethnic disparities. ... A plant-based diet, generally low in fat and high in fiber, may offer survival benefits for both breast and prostate cancer. Further research is required to establish effective interventions that promote healthy dietary choices that enhance cancer survival."
-            },
-            {
-                "title": "A Very-Low-Fat Vegan Diet Increases Intake of Protective Dietary Factors and Decreases Intake of Pathogenic Dietary Factors",
-                "url": "http://www.sciencedirect.com/science/article/pii/S0002822307020731",
-                "year": 2007,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "Ninety-three early-stage prostate cancer patients participated in a randomized controlled trial and were assigned to a very-low-fat (10% fat) vegan diet supplemented with soy protein and lifestyle changes or to usual care. ... Analyses of changes in dietary intake of macronutrients, vitamins, minerals, carotenoids, and isoflavones from baseline to 1 year showed significantly increased intake of most protective dietary factors (eg, fiber increased from a mean of 31 to 59 g/day, lycopene increased from 8,693 to 34,464 μg/day) and significantly decreased intake of most pathogenic dietary factors (eg, saturated fatty acids decreased from 20 to 5 g/day, cholesterol decreased from 200 to 10 mg/day) in the intervention group compared to controls"
-            },
-            {
-                "title": "The role of diet and physical activity in breast, colorectal, and prostate cancer survivorship: a review of the literature",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3251953/",
-                "year": 2011,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "Evidence from observational studies suggests that a low-fat, high-fibre diet might be protective against cancer recurrence and progression. However, there is a paucity of RCTs substantiating this. There is more support for physical activity, with a dose response for better outcomes. ... evidence suggests that the mechanism of benefit from diet and physical activity pertains to body weight, with excess body weight being a risk factor"
-            },
-            {
-                "title": "Clinical events in prostate cancer lifestyle trial: results from two years of follow-up.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/18602144",
-                "year": 2008,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "The patients in the experimental arm were encouraged to adopt a low-fat, plant-based diet, to exercise and practice stress management, and to attend group support sessions ... Patients with early-stage prostate cancer choosing active surveillance might be able to avoid or delay conventional treatment for at least 2 years by making changes in their diet and lifestyle."
-            },
-            {
-                "title": "Cancer Prevention and Treatment by Wholistic Nutrition",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5646698/",
-                "year": 2017,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "the promotion of cancer growth and development in laboratory animals initiated by a powerful mutagen/carcinogen can be repetitively turned on and off by non-mutagenic mechanisms, even completely, by modifying the consumption of protein at relevant levels of intake. ... This suggests that ultimate cancer development is primarily a nutrition-responsive disease rather than a genetic disease, with the understanding that nutrition is a comprehensive, wholistic biological effect that reflects the natural contents of nutrients and related substances in whole, intact food. "
-            },
-            {
-                "title": "Effects of a low-fat, high-fiber diet and exercise program on breast cancer risk factors in vivo and tumor cell growth and apoptosis in vitro.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/16965238",
-                "year": 2006,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "These results show that a very-low-fat, high-fiber diet combined with daily exercise results in major reductions in risk factors for BCa while subjects remained overweight/obese"
-            },
-            {
-                "title": "Intensive lifestyle changes may affect the progression of prostate cancer.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/16094059",
-                "year": 2005,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "Intensive lifestyle changes may affect the progression of early, low grade prostate cancer in men. Further studies and longer term followup are warranted."
-            }
-
-        ],
-        "arthritis": [{
-                "title": "Fasting followed by vegetarian diet in patients with rheumatoid arthritis: a systematic review",
-                "url": "http://www.tandfonline.com/doi/abs/10.1080/030097401750065256",
-                "year": 2009,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "available evidence suggests that fasting followed by vegetarian diets might be useful in the treatment of RA"
-            },
-            {
-                "title": "Effectiveness and Safety of Dietary Interventions for Rheumatoid Arthritis: A Systematic Review of Randomized Controlled Trials",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/20430134",
-                "year": 2010,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "The effects of dietary manipulation...on rheumatoid arthritis are still uncertain"
-            },
-            {
-                "title": "Is There a Role for Diet in the Therapy of Rheumatoid Arthritis?",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/20430134",
-                "year": 2016,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "Given the complexity of studying the relationship between diet and RA disease activity, we highlight areas deserving further study before specific recommendations can be made to RA patients."
-            },
-            {
-                "title": "Rheumatoid arthritis treated with vegetarian diets",
-                "url": "http://m.ajcn.nutrition.org/content/70/3/594s.short",
-                "year": 1999,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "the results show that some patients with RA can benefit from a fasting period followed by a vegetarian diet"
-            },
-            {
-                "title": "Whole-Foods, Plant-Based Diet Alleviates the Symptoms of Osteoarthritis",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4359818/",
-                "year": 2015,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "results suggest that a whole-foods, plant-based diet significantly improves self-assessed measures of functional status among osteoarthritis patients"
-            },
-            {
-                "title": "Faecal microbial flora and disease activity in rheumatoid arthritis during a vegan diet.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/9117178",
-                "year": 1997,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "a vegan diet changes the faecal microbial flora in RA patients, and changes in the faecal flora are associated with improvement in RA activity."
-            },
-            {
-                "title": "Uncooked vegan diet, rich in lactobacilli, decreased subjective symptoms of rheumatoid arthritis",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/9566667",
-                "year": 1998,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "results showed that an uncooked vegan diet, rich in lactobacilli, decreased subjective symptoms of rheumatoid arthritis"
-            },
-            {
-                "title": "Effects of a Very Low-Fat, Vegan Diet in Subjects with Rheumatoid Arthritis",
-                "url": "http://online.liebertpub.com/doi/abs/10.1089/107555302753507195",
-                "year": 2004,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "This study showed that patients with moderate-to-severe RA, who switch to a very low-fat, vegan diet can experience significant reductions in RA symptoms."
-            }
-        ],
-        "Inflammatory Bowel Disease": [{
-                "title": "An Examination of Diet for the Maintenance of Remission in Inflammatory Bowel Disease",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/9566667",
-                "year": 2017,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "Pre-illness studies in IBD and intervention trials provide convincing evidence that a plant-based diet, with increased consumption of fruit/vegetables and less red meat intake could be suggested to patients with IBD in remission."
-            },
-            {
-                "title": "European Crohn’s and Colitis Organisation Topical Review on Environmental Factors in IBD",
-                "url": "https://academic.oup.com/ecco-jcc/article/2756096#94142366#94142400",
-                "year": 2017,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "in several animal models, high-fat/high-sugar diet, gluten, red meat, maltodextrin, and emulsifiers may induce or accelerate intestinal inflammation. Certain dietary fibres and soy protein might be beneficial...Presumably diet alone is inadequate to cause IBD, but there is evidence for a gene/diet interaction"
-            },
-            {
-                "title": "Diet as a Trigger or Therapy for Inflammatory Bowel Diseases.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/27793606",
-                "year": 2017,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "epidemiology studies have indicated that diets high in animal fat and low in fruits and vegetables are the most common pattern associated with an increased risk of IBD"
-            },
-            {
-                "title": "The Role of Diet in Inflammatory Bowel Disease.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/28397133",
-                "year": 2017,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "Until several ongoing clinical trials are completed, a reasonable approach to dietary recommendations for patients with IBD is to propose a well-balanced, healthy (low-fat, low-sugar) diet prepared from fresh ingredients, such as the Mediterranean diet, with exclusions of self-identified foods that worsen or trigger IBD-related symptoms."
-            },
-            {
-                "title": "Research Gaps in Diet and Nutrition in Inflammatory Bowel Disease. A Topical Review by D-ECCO Working Group [Dietitians of ECCO]",
-                "url": "https://academic.oup.com/ecco-jcc/article/doi/10.1093/ecco-jcc/jjx109/4080183/Research-Gaps-in-Diet-and-Nutrition-in",
-                "year": 2017,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "Evidence now proposes that whereas human genetics are important, they explain only a small fraction of the risk of developing the disease...The aim of this topical review was to extensively review the literature on the role of diet and nutrition in the aetiology and management of IBD and set the agenda for future research."
-            },
-            {
-                "title": "Is a low FODMAP diet beneficial for patients with inflammatory bowel disease? A meta-analysis and systematic review",
-                "url": "https://academic.oup.com/ecco-jcc/article/doi/10.1093/ecco-jcc/jjx109/4080183/Research-Gaps-in-Diet-and-Nutrition-in",
-                "year": 2017,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "The present meta-analysis offers proof to support that a low FODMAP diet is beneficial for reducing gastrointestinal symptoms in patients with quiescent IBD. With the inherent limitations, the findings of this analysis remain to be confirmed"
-            },
-            {
-                "title": "What Diet Can and Cannot Do: Role of Diet in Inflammatory Bowel Disease",
-                "url": "https://www.karger.com/Article/FullText/445392",
-                "year": 2016,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "The incidence of inflammatory bowel disease (IBD) is steadily in the rise in Western as well as in developing countries paralleling the increase of westernized diets, characterized by high protein and fat as well as excessive sugar intake, with less vegetables and fiber."
-            },
-            {
-                "title": "Environmental risk factors for inflammatory bowel diseases: Evidence based literature review",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4945988/",
-                "year": 2016,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "This article critically reviews the current evidence on environmental risk factors for IBD and proposes directions for future research."
-            },
-            {
-                "title": "The Impact of Dietary Interventions on the Symptoms of Inflammatory Bowel Disease: A Systematic Review.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/25569442",
-                "year": 2016,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "Exclusion diets and the low FODMAP diet are two areas identified in this review that show promise for having therapeutic benefits for patients with IBD."
-            },
-            {
-                "title": "A mechanistic review on plant-derived natural compounds as dietary supplements for prevention of inflammatory bowel disease",
-                "url": "http://www.tandfonline.com/doi/abs/10.1586/17474124.2016.1145546",
-                "year": 2016,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "In conclusion, natural products can be considered as dietary supplements with therapeutic potential for IBD, provided that their safety and efficacy is confirmed in future well-designed clinical trials with adequate sample size."
-            },
-            {
-                "title": "Does a diet low in FODMAPs reduce symptoms associated with functional gastrointestinal disorders? A comprehensive systematic review and meta-analysis",
-                "url": "https://link.springer.com/article/10.1007/s00394-015-0922-1",
-                "year": 2015,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "The present meta-analysis supports the efficacy of a low FODMAP diet in the treatment of functional gastrointestinal symptoms"
-            },
-            {
-                "title": "Diet and Inflammatory Bowel Disease",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4843040/",
-                "year": 2015,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "the low-FODMAP diet and the IBD-AID, seem to be reasonably balanced and sound without causing weight loss in ill IBD patients."
-            },
-            {
-                "title": "Epidemiology and risk factors for IBD",
-                "url": "https://www.nature.com/nrgastro/journal/v12/n4/full/nrgastro.2015.34.html",
-                "year": 2015,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "Established high-prevalence populations of IBD in North America and Europe experienced the steepest increase in incidence towards the second half of the twentieth century. Furthermore, populations previously considered 'low risk' (such as in Japan and India) are witnessing an increase in incidence..."
-            },
-            {
-                "title": "Diet and Inflammatory Bowel Disease: Review of Patient-Targeted Recommendations",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4021001/",
-                "year": 2015,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "essentially all food groups- fruits, vegetables, meats, and grains- have been noted by patient self-report to exacerbate symptoms and do not provide generalizable information for other patients with IBD. Rather, patients may be instructed to be aware of their diet through food diaries and their symptoms and make modifications specific to the individual patient"
-            },
-            {
-                "title": "Dietary intake and risk of developing inflammatory bowel disease: a systematic review of the literature.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/16534521",
-                "year": 2011,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "High dietary intakes of total fats, PUFAs, omega-6 fatty acids, and meat were associated with an increased risk of CD and UC. High fiber and fruit intakes were associated with decreased CD risk, and high vegetable intake was associated with decreased UC risk."
-            },
-            {
-                "title": "A prospective study of long-term intake of dietary fiber and risk of Crohn's disease and ulcerative colitis.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/16534521",
-                "year": 2011,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "data from 170,776 women, followed up over 26 years...[shows] long-term intake of dietary fiber, particularly from fruit, is associated with lower risk of CD but not UC."
-            },
-            {
-                "title": "Epidemiologic analysis of Crohn disease in Japan: increased dietary intake of n-6 polyunsaturated fatty acids and animal protein relates to the increased incidence of Crohn disease in Japan.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/16534521",
-                "year": 1996,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "increased incidence of Crohn disease was strongly (P < 0.001) correlated with increased dietary intake of total fat (r = 0.919). animal fat (r = 0.880), n-6 polyunsaturated fatty acids (r = 0.883), animal protein (r = 0.908), milk protein (r = 0.924), and the ratio of n-6 to n-3 fatty acid intake (r = 0.792)...and was inversely correlated with intake of vegetable protein (r = -0.941, P < 0.001)."
-            },
-            {
-                "title": "Animal protein intake and risk of inflammatory bowel disease: The E3N prospective study.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/20461067",
-                "year": 2010,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "Among 67,581 participants...High total protein intake, specifically animal protein, was associated with a significantly increased risk of IBD...high consumption of meat or fish but not of eggs or dairy products was associated with IBD risk."
-            },
-            {
-                "title": "High Amount of Dietary Fiber Not Harmful But Favorable for Crohn Disease",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4315379/",
-                "year": 2015,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "Although the precise mechanism is to be determined, epidemiology provides convincing evidence that a plant-based diet is a healthy diet providing therapeutic and/or preventive effects against current major chronic diseases.22–24 Available data suggest the rationale to use dietary fiber in the treatment of IBD."
-            }
-        ],
-        "weight": [{
-                "title": "The BROAD study: A randomised controlled trial using a whole food plant-based diet in the community for obesity, ischaemic heart disease or diabetes.",
-                "url": "https://www.nature.com/nutd/journal/v7/n3/full/nutd20173a.html",
-                "year": 2017,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "This programme led to significant improvements in BMI, cholesterol and other risk factors. To the best of our knowledge, this research has achieved greater weight loss at 6 and 12 months than any other trial that does not limit energy intake or mandate regular exercise."
-            }, {
-                "title": "Weight gain over 5 years in 21,966 meat-eating, fish-eating, vegetarian, and vegan men and women in EPIC-Oxford",
-                "url": "https://www.nature.com/ijo/journal/v30/n9/full/0803305a.html",
-                "year": 2006,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "Lowest weight gain was seen among those who, during follow-up, had changed to a diet containing fewer animal food"
-            },
-            {
-                "title": "Metabolically Healthy Obese and Incident Cardiovascular Disease Events Among 3.5 Million Men and Women.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/28911506",
-                "year": 2017,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "During a mean follow-up of 5.4 years, obese individuals with no metabolic abnormalities had a higher risk of CHD (multivariate-adjusted hazard ratio [HR]: 1.49; 95% confidence interval [CI]: 1.45 to 1.54), cerebrovascular disease (HR: 1.07; 95% CI: 1.04 to 1.11), and heart failure (HR: 1.96; 95% CI: 1.86 to 2.06) compared with normal weight individuals with 0 metabolic abnormalities"
-            },
-            {
-                "title": "A Systematic Review and Meta-Analysis of Changes in Body Weight in Clinical Trials of Vegetarian Diets",
-                "url": "http://www.sciencedirect.com/science/article/pii/S2212267214017638",
-                "year": 2014,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "The prescription of vegetarian diets reduces mean body weight, suggesting potential value for prevention and management of weight-related conditions."
-            },
-            {
-                "title": "Vegetarian Diets and Weight Status",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/16673753",
-                "year": 2006,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "Vegetarian diets are associated with reduced body weight, lower incidence of certain chronic disease, and lower medical costs compared with non-vegetarian diets"
-            },
-            {
-                "title": "The effects of a low-fat, plant-based dietary intervention on body weight, metabolism, and insulin sensitivity.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/16164885",
-                "year": 2005,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "Adoption of a low-fat, vegan diet was associated with significant weight loss in overweight postmenopausal women, despite the absence of prescribed limits on portion size or energy intake."
-            },
-            {
-                "title": "Changing perceptions of hunger on a high nutrient density diet",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2988700/",
-                "year": 2010,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "768 participants primarily living in the United States who had changed their dietary habits from a low micronutrient to a high micronutrient diet...Highly significant differences were found between the two diets in relation to all physical and emotional symptoms as well as the location of hunger. Hunger was not an unpleasant experience while on the high nutrient density diet, was well tolerated and occurred with less frequency even when meals were skipped."
-            },
-            {
-                "title": "A two-year randomized weight loss trial comparing a vegan diet to a more moderate low-fat diet.",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2988700/",
-                "year": 2007,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "Individuals in the vegan group lost more weight than those in the NCEP group at 1 year [-4.9 (-0.5, -8.0) kg vs. -1.8 (0.8, -4.3); p < 0.05] and at 2 years [-3.1 (0.0, -6.0) kg vs. -0.8 (3.1, -4.2) kg; p < 0.05]. "
-            },
-            {
-                "title": "A multicenter randomized controlled trial of a plant-based nutrition program to reduce body weight and cardiovascular risk in the corporate setting: the GEICO study.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/23695207",
-                "year": 2013,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "An 18-week dietary intervention using a low-fat plant-based diet in a corporate setting improves body weight, plasma lipids, and, in individuals with diabetes, glycemic control."
-            },
-            {
-                "title": "A Two-Year Randomized Weight Loss Trial Comparing a Vegan Diet to a More Moderate Low-Fat Diet",
-                "url": "http://onlinelibrary.wiley.com/doi/10.1038/oby.2007.270/full",
-                "year": 2007,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "Individuals in the vegan group lost more weight than those in the NCEP group at 1 year [−4.9 (−0.5, −8.0) kg vs. −1.8 (0.8, −4.3); p < 0.05] and at 2 years [−3.1 (0.0, −6.0) kg vs. −0.8 (3.1, −4.2) kg; p < 0.05]."
-            }
-        ],
-        "allergies": [{
-                "title": "Dietary Fiber and Bacterial SCFA Enhance Oral Tolerance and Protect against Food Allergy through Diverse Cellular Pathways",
-                "url": "http://www.cell.com/cell-reports/fulltext/S2211-1247(16)30630-1?_returnURL=http%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2211124716306301%3Fshowall%3Dtrue",
-                "year": 2014,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "Dietary elements, including fiber and vitamin A, therefore regulate numerous protective pathways in the gastrointestinal tract [of mice], necessary for immune non-responsiveness to food antigens."
-            },
-            {
-                "title": "Effects of Fruit and Vegetable Consumption on Risk of Asthma, Wheezing and Immune Responses: A Systematic Review and Meta-Analysis",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5409680/",
-                "year": 2017,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "Most of the studies (n = 30) reported beneficial associations of fruit and vegetable consumption with risk of asthma and/or respiratory function, while eight studies found no significant relationship. Some studies (n = 20) reported mixed results, as they found a negative association between fruit only or vegetable only, and asthma.  In addition, the meta-analyses in both adults and children showed inverse associations between fruit intake and risk of prevalent wheeze and asthma severity (p < 0.05). Likewise, vegetable intake was negatively associated with risk of prevalent asthma (p < 0.05). Seven studies examined immune responses in relation to fruit and vegetable intake in asthma, with n = 6 showing a protective effect against either systemic or airway inflammation. "
-            }
-        ],
-        "Multiple Sclerosis": [{
-                "title": "Multiple Sclerosis and Nutrition",
-                "url": "https://jamanetwork.com/journals/jamaneurology/article-abstract/573287",
-                "year": 1974,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "Prevalence of MS in many countries was correlated with average daily per capita consumption of fats and oils, protein, and calories, including calories of animal origin. Of these dietary factors, only calories of animal origin and fats and oils correlated significantly with MS prevalence. When the latter two were combined (animal-fats), a significant correlation with MS prevalence of.70 resulted, suggesting that increased consumption of animal-fat may be associated with MS."
-            },
-            {
-                "title": "Nutrition Facts in Multiple Sclerosis",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4342365/",
-                "year": 2015,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "Here we show that dietary factors and lifestyle may exacerbate or ameliorate MS symptoms by modulating the inflammatory status ... What increases inflammation are hypercaloric Western-style diets, characterized by high salt, animal fat, red meat, sugar-sweetened drinks, fried food, low fiber, and lack of physical exercise. The persistence of this type of diet upregulates the metabolism of human cells toward biosynthetic pathways including those of proinflammatory molecules and also leads to a dysbiotic gut microbiota, alteration of intestinal immunity, and low-grade systemic inflammation. Conversely, exercise and low-calorie diets based on the assumption of vegetables, fruit, legumes, fish, prebiotics, and probiotics act on nuclear receptors and enzymes that upregulate oxidative metabolism, downregulate the synthesis of proinflammatory molecules, and restore or maintain a healthy symbiotic gut microbiota."
-            },
-            {
-                "title": "Complementary and alternative medicine for the treatment of multiple sclerosis",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2901236/",
-                "year": 2008,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "Surveys suggest that up to 70% of people with MS have tried one or more CAM treatment for their MS ... The most promising among CAM therapies that warrant further investigation are a low-fat diet, omega-3 fatty acids, lipoic acid and vitamin D supplementation as potential anti-inflammatory and neuroprotective agents"
-            }
-        ],
-        "Puberty": [{
-                "title": "Milk Intake and Total Dairy Consumption: Associations with Early Menarche in NHANES 1999-2004",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2530923/",
-                "year": 2011,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "There is some evidence that greater milk intake is associated with an increased risk of early menarche, or a lower age at menarche."
-            },
-            {
-                "title": "Percent Body Fat at Age 5 Predicts Earlier Pubertal Development Among Girls at Age 9",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2530923/",
-                "year": 2008,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "Girls with higher weight status in early childhood were more likely to exhibit earlier pubertal development relative to peers at 9 years, indicating that weight status preceded pubertal timing in girls."
-            },
-            {
-                "title": "Effects of Environmental Endocrine Disruptors on Pubertal Development",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3065309/",
-                "year": 2011,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "[Dioxins] may be transferred to humans from animal meat or milk ... To date, various EDs have been shown to exert unwanted effects on pubertal development. It is possible that there are numerous other chemicals with potential harmful effects on pubertal development. Future population-based studies are warranted for further investigation."
-            }
-
-        ],
-        "Lupus": [{
-                "title": "Lupus erythematosus and nutrition: a review of the literature.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/11070144",
-                "year": 2000,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "Aggravating substances appear to include excess calories, excess protein, high fat (especially saturated and omega-6 polyunsaturated fatty acids), zinc, iron, and L-canavanine found in alfalfa tablets. Possible beneficial dietary compounds include vitamin E, vitamin A (beta-carotene), selenium, fish oils (omega-3 polyunsaturated fatty acids), evening primrose oil, flaxseed, a plant herb (Tripterygium wilfordii), dehydroepiandrosterone, and calcium plus vitamin D (if taking corticosteroids) ... No large-scale studies have been performed with LE patients to substantiate the benefit, if any, of these individual dietary interventions"
-            },
-            {
-                "title": "Effect of vegetarian diet on systemic lupus erythematosus.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/1349403",
-                "year": 1992,
-                "is_meta": false,
-                "availability": "paywall"
-            },
-            {
-                "title": "Apigenin, a non-mutagenic dietary flavonoid, suppresses lupus by inhibiting autoantigen presentation for expansion of autoreactive Th1 and Th17 cells",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2688212/",
-                "year": 2009,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "Apigenin therapy of SNF1 mice with established lupus suppressed serum levels of pathogenic autoantibodies to nuclear antigens up to 97% and markedly delayed development of severe glomerulonephritis"
-            }
-        ],
-        "Cognition": [{
-                "title": "Association of mediterranean diet with mild cognitive impairment and Alzheimer's disease: a systematic review and meta-analysis.",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3946820/",
-                "year": 2014,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "While the overall number of studies is small, pooled results suggest that a higher adherence to the MeDi is associated with a reduced risk of developing MCI and AD, and a reduced risk of progressing from MCI to AD. Further prospective-cohort studies with longer follow-up and randomized controlled trials are warranted to consolidate the evidence."
-            },
-            {
-                "title": "Brain foods: the effects of nutrients on brain function",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2805706/",
-                "year": 2010,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "We now know that particular nutrients influence cognition by acting on molecular systems or cellular processes that are vital for maintaining cognitive function. This raises the exciting possibility that dietary manipulations are a viable strategy for enhancing cognitive abilities and protecting the brain from damage, promoting repair and counteracting the effects of aging"
-            },
-            {
-                "title": "Neuroprotective Effect of Natural Products Against Alzheimer’s Disease",
-                "url": "https://link.springer.com/article/10.1007%2Fs11064-012-0799-9",
-                "year": 2012,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "Accumulated evidence suggests that naturally occurring phyto-compounds, such as polyphenolic antioxidants found in fruits, vegetables, herbs and nuts, may potentially hinder neurodegeneration, and improve memory and cognitive function. ... The neuroprotective effects of various naturally occurring compounds in AD is evaluating in this review."
-            },
-            {
-                "title": "A possible role for lutein and zeaxanthin in cognitive function in the elderly",
-                "url": "http://ajcn.nutrition.org/content/96/5/1161S.long",
-                "year": 2012,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "Oxidative damage and inflammation have been implicated in cognitive decline in the elderly. Epidemiologic evidence to date suggests that dietary carotenoids may be beneficial in cognitive health. ... Our cross-sectional and intervention studies find that increased xanthophyll status is related to better cognitive performance in the elderly. "
-            },
-            {
-                "title": "Fruit, vegetables and prevention of cognitive decline or dementia: a systematic review of cohort studies.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/22836704",
-                "year": 2012,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "Increased intake of vegetables is associated with a lower risk of dementia and slower rates of cognitive decline in older age. Yet, evidence that this association is also valid for high fruit consumption is lacking."
-            },
-            {
-                "title": "Nutritional modulation of cognitive function and mental health.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/23517914",
-                "year": 2012,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "We provide a model for the pathways by which food components provided by a Mediterranean-style diet can facilitate healthy brain function. We then review evidence for the role of selected nutrients/food components - antioxidants, omega-3 fatty acids and B vitamins - in the brain and, hence, modulation of cognitive function and mental health."
-            },
-            {
-                "title": "Food for thought: the role of dietary flavonoids in enhancing human memory, learning and neuro-cognitive performance: Symposium on ‘Diet and mental health’",
-                "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/BAA7D30D89D0CF9694A2565C47CA8BF2/S0029665108007088a.pdf/food_for_thought_the_role_of_dietary_flavonoids_in_enhancing_human_memory_learning_and_neurocognitive_performance.pdf",
-                "year": 2007,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "Emerging evidence suggests that dietary-derived flavonoids have the potential to improve human memory and neuro-cognitive performance via their ability to protect vulnerableneurons, enhance existing neuronal function and stimulate neuronal regeneration ... The presentreview explores the potential of flavonoids and their metabolite forms to promote memory andlearning through their interactions with neuronal signalling pathways pivotal in controlling LTPand memory in human subjects."
-            },
-            {
-                "title": "The incidence of dementia and intake of animal products: preliminary findings from the Adventist Health Study.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/8327020",
-                "year": 1993,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "The matched subjects who ate meat (including poultry and fish) were more than twice as likely to become demented as their vegetarian counterparts (relative risk 2.18, p = 0.065) and the discrepancy was further widened (relative risk 2.99, p = 0.048) when past meat consumption was taken into account ... There was a trend towards delayed onset of dementia in vegetarians in both substudies"
-            },
-            {
-                "title": "Western Diet Consumption and Cognitive Impairment: Links to Hippocampal Dysfunction and Obesity",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3056912/",
-                "year": 2012,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "The present paper summarizes research showing that Western diet intake is associated with cognitive impairment ... a model is described proposing that Western diet consumption contributes to the development of excessive food intake and obesity, in part, by interfering with a type of hippocampal-dependent memory inhibition that is critical in the ability of animals to refrain from responding to environmental cues associated with food, and ultimately from consuming energy intake in excess of that driven solely by caloric need."
-            },
-            {
-                "title": "Brain rust: recent discoveries on the role of oxidative stress in neurodegenerative diseases.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/22583954",
-                "year": 2012,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "The interaction of genes with their environment, may explain ND [neurodegenerative diseases]"
-            },
-            {
-                "title": "The longer-term impacts of Western diet on human cognition and the brain.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/23291218",
-                "year": 2013,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "Animal work over the last three decades has generated a convincing body of evidence that a Western diet - one high in saturated fat and refined carbohydrates (HFS diet) - can damage various brain systems ... While human research data is still at an early stage, there is evidence of an association between HFS diet and impaired cognitive function. Based upon the animal data, and a growing understanding of how HFS diets can disrupt brain function, we further suggest that there is a causal link running from HFS diet to impaired brain function in humans, and that HFS diets also contribute to the development of neurodegenerative conditions."
-            },
-            {
-                "title": "Dietary Patterns, Cognitive Decline, and Dementia: A Systematic Review",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4352174/",
-                "year": 2015,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "The results suggest that better adherence to a Mediterranean diet is associated with less cognitive decline, dementia, or Alzheimer disease ... Other healthy dietary patterns, derived both a priori ... and a posteriori ..., were shown to be associated with reduced cognitive decline and/or a reduced risk of dementia ... More conclusive evidence is needed to reach more targeted and detailed guidelines to prevent or postpone cognitive decline."
-            }
-        ],
-        "Mental Health": [{
-                "title": "A Prospective Study of Diet Quality and Mental Health in Adolescents.",
-                "url": "http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0024805",
-                "year": 2011,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "There were cross-sectional, dose response relationships identified between measures of both healthy (positive) and unhealthy (inverse) diets and scores on the emotional subscale of the Pediatric Quality of Life Inventory (PedsQL), where higher scores mean better mental health, before and after adjustments for age, gender, socio-economic status, dieting behaviours, body mass index and physical activity."
-            },
-            {
-                "title": "Diet and mental health in the Arctic: is diet an important risk factor for mental health in circumpolar peoples? - a review",
-                "url": "http://www.tandfonline.com/doi/abs/10.3402/ijch.v62i3.17560",
-                "year": 2011,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "The change in traditional diets has already led to increased health problems, such as obesity, cardiovascular disease, and diabetes, while the mental health of circumpolar peoples has also declined substantially during the same time period. The decline in mental health is characterized by increased rates of depression, seasonal affective disorder, anxiety, and suicide, that now often occur at higher rates than in lower-latitude populations."
-            },
-            {
-                "title": "Relationship Between Diet and Mental Health in Children and Adolescents: A Systematic Review",
-                "url": "http://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2014.302110",
-                "year": 2014,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "We found evidence of a significant, cross-sectional relationship between unhealthy dietary patterns and poorer mental health in children and adolescents. We observed a consistent trend for the relationship between good-quality diet and better mental health and some evidence for the reverse. "
-            },
-            {
-                "title": "The Association Between Habitual Diet Quality and the Common Mental Disorders in Community-Dwelling Adults: The Hordaland Health Study",
-                "url": "http://journals.lww.com/psychosomaticmedicine/Abstract/2011/07000/The_Association_Between_Habitual_Diet_Quality_and.9.aspx",
-                "year": 2011,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "This cross-sectional study included 5731 population-based men and women aged 46 to 49 and 70 to 74 years. ... In this study, those with better quality diets were less likely to be depressed, whereas a higher intake of processed and unhealthy foods was associated with increased anxiety."
-            }
-        ],
-        "migraine": [{
-                "title": "Nutrition intervention for migraine: a randomized crossover trial",
-                "url": "https://link.springer.com/content/pdf/10.1186%2F1129-2377-15-69.pdf",
-                "year": 2014,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "Worst headache pain in last 2 weeks, as measured by visual analog scale, was initially 6.4/10 cm (SD2.1 cm), and declined 2.1 cm during the diet period and 0.7 cm during the supplement period (p=0.03). Averageheadache intensity (0–10 scale) was initially 4.2 (SD 1.4) per week, and this declined by 1.0 during the diet periodand by 0.5 during the supplement period (p=0.20). Average headache frequency was initially 2.3 (SD 1.8) per week,and this declined by 0.3 during the diet period and by 0.4 during the supplement period (p=0.61). "
-            },
-            {
-                "title": "Is Migraine Food Allergy?: A Double-blind Controlled Trial of Oligoantigenic Diet Treatment",
-                "url": "http://www.sciencedirect.com/science/article/pii/S0140673683908668?_rdoc=1&_fmt=high&_origin=gateway&_docanchor=&md5=b8429449ccfc9c30159a5f9aeaa92ffb",
-                "year": 1983,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "93% of 88 children with severe frequent migraine recovered on oligoantigenic diets; the causative foods were identified by sequential reintroduction, and the role of the foods provoking migraine was established by a double-blind controlled trial in 40 of the children"
-            },
-            {
-                "title": "Diet restriction in migraine, based on IgG against foods: A clinical double-blind, randomised, cross-over trial",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2899772/",
-                "year": 2010,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "The average count of reactions with abnormally high titre was 24 ± 11 against 266 foods. Compared to baseline, there was a statistically significant reduction in the number of headache days (from 10.5 ± 4.4 to 7.5 ± 3.7; P < 0.001) and number of migraine attacks (from 9.0 ± 4.4 to 6.2 ± 3.8; P < 0.001) in the elimination diet period."
-            },
-            {
-                "title": "The diet factor in pediatric and adolescent migraine",
-                "url": "http://www.sciencedirect.com/science/article/pii/S0887899402004666",
-                "year": 2003,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": " list of foods, beverages, and additives that trigger migraine includes cheese, chocolate, citrus fruits, hot dogs, monosodium glutamate, aspartame, fatty foods, ice cream, caffeine withdrawal, and alcoholic drinks, especially red wine and beer. ... A well-balanced diet is encouraged, with avoidance of fasting or skipped meals."
-            },
-            {
-                "title": "The prevalence of diet-induced migraine",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/6498931",
-                "year": 1984,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "Nineteen percent of about 490 patients with classical or common migraine reported that headaches can be precipitated by chocolate, 18% by cheese and 11% by citrus fruit, and a highly significant majority of these patients were sensitive to all three foods. ... Patients with affected relatives were significantly more likely to report sensitivity to alcohol and chocolate; sensitivity to cheese and citrus fruit was less strongly related "
-            }
-        ],
-        "diabetes": [{
-                "title": "Differential acute postprandial effects of processed meat and isocaloric vegan meals on the gastrointestinal hormone response in subjects suffering from type 2 diabetes and healthy controls: a randomized crossover study.",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4164634/",
-                "year": 2014,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "Our results suggest that the diet composition and the energy content, rather than the carbohydrate count, should be important considerations for dietary management and demonstrate that processed meat consumption is accompanied by impaired GIH responses and increased oxidative stress marker levels in diabetic patients."
-            },
-            {
-                "title": "Dietary intake of carbohydrates and risk of type 2 diabetes: the European Prospective Investigation into Cancer-Norfolk study.",
-                "url": "https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/dietary-intake-of-carbohydrates-and-risk-of-type-2-diabetes-the-european-prospective-investigation-into-cancernorfolk-study/CA456C1DECFA93B083A153FE85076848",
-                "pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/CA456C1DECFA93B083A153FE85076848/S0007114513002298a.pdf/dietary_intake_of_carbohydrates_and_risk_of_type_2_diabetes_the_european_prospective_investigation_into_cancernorfolk_study.pdf",
-                "year": 2013,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "Incident cases of diabetes (n 749) were identified and compared with a randomly selected subcohort of 3496 participants aged 40–79 years ... The replacement of 5 % energy intake from SFA [saturated fatty acids] with an isoenergetic amount of fructose was associated with a 30% lower diabetes risk (HR 0·69, 95 % CI 0·50, 0·96) ..."
-            },
-            {
-                "title": "Carbohydrate quantity and quality and risk of type 2 diabetes in the European Prospective Investigation into Cancer and Nutrition-Netherlands (EPIC-NL) study.",
-                "url": "http://ajcn.nutrition.org/content/92/4/905.long",
-                "year": 2010,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "A prospective cohort study was conducted in 37,846 participants ... Dietary GL [glycemic load] was associated with an increased diabetes risk ... GI [gylcemic index] tended to increase diabetes risk ... Dietary fiber was inversely associated with diabetes risk ... Of the carbohydrate subtypes, only starch was related to increased diabetes risk"
-            },
-            {
-                "title": "The EPIC-InterAct Study: A Study of the Interplay between Genetic and Lifestyle Behavioral Factors on the Risk of Type 2 Diabetes in European Populations",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4218968/",
-                "year": 2014,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "The study confirmed that adherence to specific dietary patterns, commonly characterised by high intake of fruits or vegetables and low intake of processed meat, sugar-sweetened beverages, and refined grains, may lower type 2 diabetes risk."
-            },
-            {
-                "title": "Dietary fibre and incidence of type 2 diabetes in eight European countries: the EPIC-InterAct Study and a meta-analysis of prospective studies.",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4472947",
-                "year": 2015,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "The overall evidence indicates that the intake of total and cereal fibre is inversely related to the risk of type 2 diabetes. The results of the EPIC-InterAct Study suggest that the association may be partially explained by body weight."
-            },
-            {
-                "title": "Carbohydrates, dietary fiber, and incident type 2 diabetes in older women",
-                "url": "http://ajcn.nutrition.org/content/71/4/921.full",
-                "year": 2000,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "Total grain, whole-grain, total dietary fiber, cereal fiber, and dietary magnesium intakes showed strong inverse associations with incidence of diabetes after adjustment for potential nondietary confounding variables"
-            },
-            {
-                "title": "Glycemic Index and Dietary Fiber and the Risk of Type 2 Diabetes",
-                "url": "http://care.diabetesjournals.org/content/27/11/2701",
-                "year": 2004,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "This was a prospective study of 36,787 men and women ... Intakes of carbohydrate (OR per 200 g/day 0.58, 0.36–0.95), sugars (OR per 100 g/day 0.61, 0.47–0.79), and magnesium (OR per 500 mg/day 0.62, 0.43–0.90) were inversely associated with incidence of diabetes, whereas intake of starch (OR per 100 g/day 1.47, 1.06–2.05) and dietary GI (OR per 10 units 1.32, 1.05–1.66) were positively associated with diabetes. These relationships were attenuated after adjustment for BMI and waist-to-hip ratio."
-            },
-            {
-                "title": "A Very-Low-Fat Vegan Diet Increases Intake of Protective Dietary Factors and Decreases Intake of Pathogenic Dietary Factors",
-                "url": "http://www.sciencedirect.com/science/article/pii/S0002822307020731",
-                "year": 2007,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "Ninety-three early-stage prostate cancer patients participated in a randomized controlled trial and were assigned to a very-low-fat (10% fat) vegan diet supplemented with soy protein and lifestyle changes or to usual care. ... Analyses of changes in dietary intake of macronutrients, vitamins, minerals, carotenoids, and isoflavones from baseline to 1 year showed significantly increased intake of most protective dietary factors (eg, fiber increased from a mean of 31 to 59 g/day, lycopene increased from 8,693 to 34,464 μg/day) and significantly decreased intake of most pathogenic dietary factors (eg, saturated fatty acids decreased from 20 to 5 g/day, cholesterol decreased from 200 to 10 mg/day) in the intervention group compared to controls"
-            },
-            {
-                "title": "Chronic inflammation in fat plays a crucial role in the development of obesity-related insulin resistance",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC296998/",
-                "year": 2003,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "Increasing evidence from human population studies and animal research has established correlative as well as causative links between chronic inflammation and insulin resistance ... we show that many inflammation and macrophage-specific genes are dramatically upregulated in white adipose tissue (WAT) in mouse models of genetic and high-fat diet-induced obesity (DIO). ... We propose that obesity-related insulin resistance is, at least in part, a chronic inflammatory disease initiated in adipose tissue."
-            },
-            {
-                "title": "Vegetarian diets and glycemic control in diabetes: a systematic review and meta-analysis",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4221319/",
-                "year": 2014,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "Consumption of vegetarian diets was associated with a significant reduction in HbA1c [−0.39 percentage point; 95% confidence interval (CI), −0.62 to −0.15; P=0.001; I2=3.0; P for heterogeneity =0.389], and a non-significant reduction in fasting blood glucose concentration (−0.36 mmol/L; 95% CI, −1.04 to 0.32; P=0.301; I2=0; P for heterogeneity =0.710), compared with consumption of comparator diets."
-            },
-            {
-                "title": "Vegetarian and vegan diets in type 2 diabetes management",
-                "url": "http://onlinelibrary.wiley.com/doi/10.1111/j.1753-4887.2009.00198.x/full",
-                "year": 2009,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "In clinical trials in individuals with type 2 diabetes, low-fat vegan diets improve glycemic control to a greater extent than conventional diabetes diets"
-            },
-            {
-                "title": "Vegetarian and vegan diets in type 2 diabetes management",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/19386029",
-                "year": 2009,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "In clinical trials in individuals with type 2 diabetes, low-fat vegan diets improve glycemic control to a greater extent than conventional diabetes diets"
-            },
-            {
-                "title": "Type of Vegetarian Diet, Body Weight, and Prevalence of Type 2 Diabetes",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/19386029",
-                "year": 2009,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "The study population comprised 22,434 men and 38,469 women...The 5-unit BMI difference between vegans and nonvegetarians indicates a substantial potential of vegetarianism to protect against obesity. Increased conformity to vegetarian diets protected against risk of type 2 diabetes after lifestyle characteristics and BMI were taken into account. Pesco- and semi-vegetarian diets afforded intermediate protection."
-            },
-            {
-                "title": "Vegetarian diets and incidence of diabetes in the Adventist Health Study",
-                "url": "http://www.sciencedirect.com/science/article/pii/S0939475311001700",
-                "year": 2011,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "Participants were 15,200 men and 26,187 women...who were free of diabetes. ... Vegetarian diets (vegan, lacto ovo, semi-) were associated with a substantial and independent reduction in diabetes incidence. In Blacks the dimension of the protection associated with vegetarian diets was as great as the excess risk associated with Black ethnicity."
-            },
-            {
-                "title": "Type 2 diabetes and the vegetarian diet.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/12936955",
-                "year": 2003,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "The vegetarian diet, therefore, contains a portfolio of natural products and food forms of benefit for both the carbohydrate and lipid abnormalities in diabetes. It is anticipated that their combined use in vegetarian diets will produce very significant metabolic advantages for the prevention and treatment of diabetes and its complications."
-            },
-            {
-                "title": "Effects of Vegetarian Diets on Blood Lipids: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/26508743",
-                "year": 2015,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "This systematic review and meta-analysis provides evidence that vegetarian diets effectively lower blood concentrations of total cholesterol, low-density lipoprotein cholesterol, high-density lipoprotein cholesterol, and non-high-density lipoprotein cholesterol. Such diets could be a useful nonpharmaceutical means of managing dyslipidemia, especially hypercholesterolemia."
-            },
-            {
-                "title": "A low-fat vegan diet improves glycemic control and cardiovascular risk factors in a randomized clinical trial in individuals with type 2 diabetes.",
-                "url": "http://care.diabetesjournals.org/content/29/8/1777.long",
-                "year": 2006,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "Individuals with type 2 diabetes (n = 99) were randomly assigned to a low-fat vegan diet (n = 49) or a diet following the American Diabetes Association (ADA) guidelines (n = 50) ... Both a low-fat vegan diet and a diet based on ADA guidelines improved glycemic and lipid control in type 2 diabetic patients. These improvements were greater with a low-fat vegan diet."
-            },
-            {
-                "title": "Effect of a Brown Rice Based Vegan Diet and Conventional Diabetic Diet on Glycemic Control of Patients with Type 2 Diabetes: A 12-Week Randomized Clinical Trial.",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4890770/",
-                "year": 2016,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "Although both groups showed significant reductions in HbA1C levels, the reductions were larger in the vegan group than in the conventional group (-0.5% vs. -0.2%; p-for-interaction = 0.017). When only considering participants with high compliance, the difference in HbA1c level reduction between the groups was found to be larger (-0.9% vs. -0.3%). The beneficial effect of vegan diets was noted even after adjusting for changes in total energy intake or waist circumference over the 12 weeks."
-            }
-        ],
-        "Addiction": [{
-                "title": "Intense Sweetness Surpasses Cocaine Reward",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1931610/",
-                "year": 2007,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "Our findings clearly demonstrate that intense sweetness can surpass cocaine reward, even in drug-sensitized and -addicted [rats]"
-            },
-            {
-                "title": "From Passive Overeating to “Food Addiction”: A Spectrum of Compulsion and Severity",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3901973/",
-                "year": 2013,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "In conclusion, as we have seen in this review, an increasing number of scientists and clinicians subscribe to the view that compulsive overeating—a quintessentially defining feature of BED—shares pronounced similarities with conventional addictions like substance abuse [60, 211, 240, 241]. Not surprisingly, such discussions have inspired cautious conclusions that some forms of excessive overeating are most appropriately viewed as an addiction disorder"
-            },
-            {
-                "title": "Binge Eating Disorder and Food Addiction",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3671377/",
-                "year": 2013,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "Binge eating disorder (BED) shares many characteristics with addictive behaviors (e.g., diminished control, continued use despite negative consequences), and a body of scientific literature is building to support addiction conceptualizations of problematic eating. Despite similarities, BED and “food addiction” may represent unique yet overlapping conditions"
-            },
-            {
-                "title": "Symposium Overview—Food Addiction: Fact or Fiction?",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2714380/",
-                "year": 2009,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "Taken together, the articles from this symposium provide evidence that neurological similarities exist in the response of humans (6) and rats (7,9) to foods and to drugs. Two of the reports (6,7), as well as our own work (14–16), suggest that even highly palatable food is not addictive in and of itself. Rather, it is the manner in which the food is presented (i.e., intermittently) and consumed (i.e., repeated, intermittent “gorging”) that appears to entrain the addiction-like process"
-            },
-            {
-                "title": "Is food addiction a valid and useful concept?",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3561707/",
-                "year": 2013,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "While our starting point is that any reasonably comprehensive review must conclude that FA is a rough and incomplete descriptive phenomenon that is unsupported by existing evidence, such a perspective represents a starting point rather than a conclusion."
-            }
-        ],
-        "Cardiovascular Disease": [{
-                "title": "Plant-based foods and prevention of cardiovascular disease: an overview",
-                "url": "http://ajcn.nutrition.org/content/78/3/544S.long",
-                "year": 2003,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "Evidence from prospective cohort studies indicates that a high consumption of plant-based foods such as fruit and vegetables, nuts, and whole grains is associated with a significantly lower risk of coronary artery disease and stroke...Such diets, which also have many other health benefits, deserve more emphasis in dietary recommendations to prevent chronic diseases."
-            }, {
-                "title": "A plant-based diet and coronary artery disease: a mandate for effective therapy",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5466936/",
-                "year": 2017,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "After 12 years, we reviewed the CVD events of our 18 adherent patients. During the eight years prior to entering our study, while in the care of expert cardiologists, they had sustained 49 cardiac events, which was indicative of disease progression. In contrast, 17 of the 18 patients sustained no further events during the 12 years they spent in our study"
-            }, {
-                "title": "A way to reverse CAD?",
-                "url": "http://www.mdedge.com/jfponline/article/83345/cardiology/way-reverse-cad",
-                "year": 2014,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "Of the 198 patients with CVD, 177 (89%) were adherent. Major cardiac events judged to be recurrent disease totaled one stroke in the adherent cardiovascular participants—a recurrent event rate of .6%, significantly less than reported by other studies of plant-based nutrition therapy. Thirteen of 21 (62%) nonadherent participants experienced adverse events."
-            },
-            {
-                "title": "Diet, lifestyle, and the etiology of coronary artery disease: the Cornell China study.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/9860369",
-                "year": 1998,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "Investigators collected and analyzed mortality data for >50 diseases, including 7 different cancers, from 65 counties and 130 villages in rural mainland China ... The combined coronary artery disease mortality rates for both genders in rural China were inversely associated with the frequency of intake of green vegetables and plasma erythrocyte monounsaturated fatty acids, but positively associated with a combined index of salt intake plus urinary sodium and plasma apolipoprotein B. These apolipoproteins, in turn, are positively associated with animal protein intake and the frequency of meat intake and inversely associated with plant protein, legume, and light-colored vegetable intake."
-            },
-            {
-                "title": "A Plant-Based Diet, Atherogenesis, and Coronary Artery Disease Prevention",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4315380/",
-                "year": 2015,
-                "is_meta": true,
-                "availability": "abstract",
-                "quote": "We suggest that a shift toward a plant-based diet may confer protective effects against atherosclerotic CAD by increasing endothelial protective factors in the circulation while reducing factors that are injurious to endothelial cells ... This review provides a mechanistic perspective of the evidence for protection by a plant-based diet against atherosclerotic CAD."
-            },
-            {
-                "title": "Mortality from Circulatory Diseases in Norway 1940-1945",
-                "url": "http://www.sciencedirect.com/science/article/pii/S014067365191210X?_rdoc=1&_fmt=high&_origin=gateway&_docanchor=&md5=b8429449ccfc9c30159a5f9aeaa92ffb&ccp=y",
-                "year": 1951,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": ""
-            }
-        ]
-    },
-    "ingredients": {
-        "soy": [],
-        "dairy": [{
-                "title": "Hormones in Dairy Foods and Their Impact on Public Health - A Narrative Review Article",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4524299/",
-                "year": 2015,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "The collected data from other researchers and our own data are indicating that the presence of steroid hormones in dairy products could be counted as an important risk factor for various cancers in humans."
-            },
-            {
-                "title": "Milk Intake and Total Dairy Consumption: Associations with Early Menarche in NHANES 1999-2004",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2530923/",
-                "year": 2011,
-                "is_meta": false,
-                "availability": "full",
-                "quote": "There is some evidence that greater milk intake is associated with an increased risk of early menarche, or a lower age at menarche."
-            }, {
-                "title": "Milk intake and risk of mortality and fractures in women and men: cohort studies",
-                "url": "http://www.bmj.com/content/349/bmj.g6015",
-                "year": 2014,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "Two large Swedish cohorts, one with 61 433 women (39-74 years at baseline 1987-90) and one with 45 339 men (45-79 years at baseline 1997), were administered food frequency questionnaires ... High milk intake was associated with higher mortality in one cohort of women and in another cohort of men, and with higher fracture incidence in women"
-            }, {
-                "title": "Milk Consumption and Mortality from All Causes, Cardiovascular Disease, and Cancer: A Systematic Review and Meta-Analysis",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4586558/",
-                "year": 2015,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "The range of non-fermented and fermented milk consumption and the shape of the associations between milk consumption and mortality differed considerably between studies ...  we observed no consistent association between milk consumption and all-cause or cause-specific mortality."
-            }, {
-                "title": "Case-control study of risk factors for hip fractures in the elderly.",
-                "url": "https://www.ncbi.nlm.nih.gov/pubmed/8154473",
-                "year": 1994,
-                "is_meta": false,
-                "availability": "abstract",
-                "quote": "There were 416 subjects ... Consumption of dairy products, particularly at age 20 years, was associated with an increased risk of hip fracture in old age."
-            },
-            {
-                "title": "A Milk Protein, Casein, as a Proliferation Promoting Factor in Prostate Cancer Cells",
-                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4524299/",
-                "year": 2015,
-                "is_meta": true,
-                "availability": "full",
-                "quote": "α-Casein and total casein did not affect the proliferations of RWPE1, HEK293, A459, SNU484, MCF7, HEK293, or RWPE1 cells. However, PC3 cells treated with 1 mg/mL of α-casein and casein showed increased proliferation (228% and 166%, respectively), and the proliferation of LNCaP cells was also enhanced by 134% and 142%, respectively"
-            }
-        ]
+[{
+        "title": "Empirical analyses of the influence of diet on human concentrations of persistent organic pollutants: a systematic review of all studies conducted in Spain.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/21683445",
+        "year": 2011,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "pollution",
+        "quote": "The most consistent association was between fish consumption and PCBs and HCB, followed by dairy products and PCBs. A few studies observed a relationship between meat and some POPs, whilst intake of vegetables, fruits and cereals was rarely related to POP levels. "
+    }, {
+        "title": "Calcium intake and bone mineral density: systematic review and meta-analysis",
+        "url": "http://www.bmj.com/content/351/bmj.h4183",
+        "year": 2015,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "calcium,bones",
+        "quote": "Increasing calcium intake from dietary sources or by taking calcium supplements produces small non-progressive increases in BMD, which are unlikely to lead to a clinically significant reduction in risk of fracture."
+    }, {
+        "title": "Vitamin A intake and osteoporosis: a clinical review.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/15671709",
+        "year": 2004,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "vitamin a,bones",
+        "quote": "There is a graded increase in relative risk of hip fracture with increasing retinol intake, attributable primarily to retinol (either from diet or supplements) but not beta-carotene intake. Higher serum retinol levels are associated with higher risk of any fracture and with higher risk of hip fracture, whereas there is no evidence of harm associated with beta-carotene intake."
+    }, {
+        "title": "Retinoid Receptors in Bone and Their Role in Bone Remodeling",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4356160/",
+        "year": 2015,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "vitamin a,bones",
+        "quote": "It has been known for many years that hypervitaminosis A promotes skeleton fragility by increasing osteoclast formation and decreasing cortical bone mass. Some epidemiological studies have suggested that increased intake of vitamin A and increased serum levels of retinoids may decrease bone mineral density and increase fracture rate, but the literature on this is not conclusive. "
+    }, {
+        "title": "The acute and chronic toxic effects of vitamin A.",
+        "url": "http://ajcn.nutrition.org/content/83/2/191.full",
+        "year": 2006,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "vitamin a,bones",
+        "quote": "Osteoporosis and hip fracture are associated with preformed vitamin A intakes that are only twice the current RDA. Assessing vitamin A status in persons with subtoxicity or toxicity is complicated because serum retinol concentrations are nonsensitive indicators in this range of liver vitamin A reserves"
+    }, {
+        "title": "Excess retinol intake may explain the high incidence of osteoporosis in northern Europe.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/10439632",
+        "year": 1999,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "vitamin a,bones",
+        "quote": "An epidemiologic study of postmenopausal women in Sweden revealed that a chronic excess of retinol intake (> 1.5 mg/day) decreased bone mineral density and increased hip fracture risk. ... Retinol in fortified milk could explain also the association of high calcium intake and hip fracture incidence in northern Europe"
+    }, {
+        "title": "High dietary intake of retinol leads to bone marrow hypoxia and diaphyseal endosteal mineralization in rats",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/17972437",
+        "year": 2010,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "vitamin a,bones",
+        "quote": "Together these novel findings suggest that a rapid primary effect of excess retinol on bone tissue is the impairment of endosteal/marrow blood flow leading to hypoxia and pathological endosteal mineralization."
+    }, {
+        "title": "Vitamins and bone health: beyond calcium and vitamin D",
+        "url": "http://onlinelibrary.wiley.com/doi/10.1111/j.1753-4887.2011.00372.x/full",
+        "year": 2011,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "vitamin a,bones",
+        "quote": "Studies of vitamin A showed inconsistent results. Excessive, as well as insufficient, levels of retinol intake may be associated with compromised bone health. "
+    }, {
+        "title": "Serum Retinol Levels and the Risk of Fracture",
+        "url": "http://www.nejm.org/doi/full/10.1056/nejmoa021171#t=articleTop",
+        "year": 2003,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "vitamin a,bones",
+        "quote": "Men with retinol levels in the 99th percentile (>103.12 μg per deciliter [3.60 μmol per liter]) had an overall risk of fracture that exceeded the risk among men with lower levels by a factor of seven (P<0.001). The level of serum beta carotene was not associated with the risk of fracture."
+    }, {
+        "title": "Excessive Dietary Intake of Vitamin A Is Associated with Reduced Bone Mineral Density and Increased Risk for Hip Fracture",
+        "url": "http://annals.org/aim/article-abstract/712324/excessive-dietary-intake-vitamin-associated-reduced-bone-mineral-density-increased",
+        "year": 1998,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "vitamin a,bones",
+        "quote": "retinol intake was negatively associated with bone mineral density. For every 1-mg increase in daily intake of retinol, risk for hip fracture increased by 68% "
+    }, {
+        "title": "Role of “Western Diet” in Inflammatory Autoimmune Diseases",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4034518/",
+        "year": 2015,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "inflammation",
+        "quote": "nutritional patterns collectively termed the “Western diet”, including high-fat and cholesterol, high-protein, high-sugar, and excess salt intake, as well as frequent consumption of processed and ‘fast foods’, promote obesity, metabolic syndrome, and cardiovascular disease ... numerous positive experimental results across different disease entities encourage further exploration of the cellular and molecular immunological basis underlying nutritional control of autoimmunity. It is current knowledge that nutrition, the intestinal microbiota, the gut mucosal immune system, and autoimmune pathology are deeply intertwined."
+    }, {
+        "title": "Low-grade inflammation, diet composition and health: current research evidence and its translation",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4579563/",
+        "year": 2015,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "autoimmune,inflammation",
+        "quote": "There is a substantial amount of evidence to suggest that many foods, nutrients and non-nutrient food components modulate inflammation both acutely and chronically ... elevated unresolved chronic inflammation is a core perturbation in a range of chronic diseases and is an important determinant of the pathological impact of excess adiposity"
+    }, {
+        "title": "Stress, Food, and Inflammation: Psychoneuroimmunology and Nutrition at the Cutting Edge",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2868080/#S1title",
+        "year": 2010,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "inflammation",
+        "quote": "Inflammation is the common link among the leading causes of death. Inflammation is the common link among the leading causes of death. Mechanistic studies have shown how various dietary components can modulate key pathways to inflammation including sympathetic activity, oxidative stress, transcription factor nuclear factor kappa B (NF-κB) activation, and proinflammatory cytokine production ... Diets that promote inflammation are high in refined starches, sugar, saturated and trans-fats, and low in omega-3 fatty acids, natural antioxidants and fiber from fruits, vegetables, and whole grains"
+    }, {
+        "title": "A red meat-derived glycan promotes inflammation and cancer progression.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4299224/",
+        "year": 2015,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "inflammation",
+        "quote": "the nonhuman sialic acid N-glycolylneuraminic acid (Neu5Gc), showing that it is highly and selectively enriched in red meat. The bound form of Neu5Gc is bioavailable, undergoing metabolic incorporation into human tissues, despite being a foreign antigen. ... when human-like Neu5Gc-deficient mice were fed bioavailable Neu5Gc and challenged with anti-Neu5Gc antibodies, they developed evidence of systemic inflammation ... our data provide an unusual mechanistic explanation for the epidemiological association between red meat consumption and carcinoma risk."
+    }, {
+        "title": "Meat intake and mortality: a prospective study of over half a million people",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2803089/",
+        "year": 2010,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "overview",
+        "quote": "Red and processed meat intakes were associated with modest increases in total mortality, cancer mortality and CVD mortality."
+    }, {
+        "title": "Diet-induced metabolic acidosis",
+        "url": "http://www.sciencedirect.com/science/article/pii/S0261561411000604",
+        "year": 2011,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "overview,bones",
+        "quote": "The modern Western-type diet is deficient in fruits and vegetables and contains excessive animal products, generating the accumulation of non-metabolizable anions and a lifespan state of overlooked metabolic acidosis, whose magnitude increases progressively with aging ...These adaptive processes lower the urine pH and induce an extensive change in urine composition, including hypocitraturia, hypercalciuria, and nitrogen and phosphate wasting. Low urine pH predisposes to uric acid stone formation. Hypocitraturia and hypercalciuria are risk factors for calcium stone disease. Even a very mild degree of metabolic acidosis induces skeletal muscle resistance to the insulin action and dietary acid load may be an important variable in predicting the metabolic abnormalities and the cardiovascular risk of the general population"
+    }, {
+        "title": "Health Implications of a Vegetarian Diet",
+        "url": "http://journals.sagepub.com/doi/abs/10.1177/1559827611425762",
+        "year": 2011,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "overview",
+        "quote": "There is now a significant amount of research that demonstrates the health benefits of vegetarian and plant-based diets"
+    }, {
+        "title": "Nutritional Update for Physicians: Plant-Based Diets",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3662288/",
+        "year": 2013,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "overview",
+        "quote": "Healthy eating may be best achieved with a plant-based diet...They may also reduce the number of medications needed to treat chronic diseases and lower ischemic heart disease mortality rates. Physicians should consider recommending a plant-based diet to all their patients, especially those with high blood pressure, diabetes, cardiovascular disease, or obesity."
+    }, {
+        "title": "Vegetarian diets, low-meat diets and health: a review",
+        "url": "https://www.cambridge.org/core/journals/public-health-nutrition/article/vegetarian-diets-low-meat-diets-and-health-a-review/CFE7D0A7ADA80651A3DC03892287BABA",
+        "year": 2012,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "overview",
+        "quote": "Both vegetarian diets and prudent diets allowing small amounts of red meat are associated with reduced risk of diseases...Evidence linking red meat intake, particularly processed meat, and increased risk of CHD, cancer and type 2 diabetes is convincing and provides indirect support for consumption of a plant-based diet."
+    }, {
+        "title": "Vegetarian, vegan diets and multiple health outcomes: A systematic review with meta-analysis of observational studies",
+        "url": "http://www.tandfonline.com/doi/abs/10.1080/10408398.2016.1138447",
+        "year": 2016,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "overview",
+        "quote": "This comprehensive meta-analysis reports a significant protective effect of a vegetarian diet versus the incidence and/or mortality from ischemic heart disease (−25%) and incidence from total cancer (−8%). Vegan diet conferred a significant reduced risk (−15%) of incidence from total cancer"
+    }, {
+        "title": "Plant-derived immunomodulators: an insight on their preclinical evaluation and clinical trials",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4548092/",
+        "year": 2015,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "overview,plants",
+        "quote": "The present review will give an overview of widely investigated plant-derived compounds (curcumin, resveratrol, epigallocatechol-3-gallate, quercetin, colchicine, capsaicin, andrographolide, and genistein) which have exhibited potent effects on cellular and humoral immune functions in pre-clinical investigations and will highlight their clinical potential."
+    }, {
+        "title": "Vegetarian diet: panacea for modern lifestyle diseases?",
+        "url": "https://academic.oup.com/qjmed/article/92/9/531/1520534/Vegetarian-diet-panacea-for-modern-lifestyle",
+        "year": 1999,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "overview",
+        "quote": "review the beneficial and adverse effects of vegetarian diets in various medical conditions"
+    }, {
+        "title": "Health effects of vegan diets",
+        "url": "http://ajcn.nutrition.org/content/89/5/1627S.long",
+        "year": 2009,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "overview",
+        "quote": "Vegans are thinner, have lower serum cholesterol and blood pressure, and enjoy a lower risk of CVD"
+    }, {
+        "title": "Vegetarian Diets: What Are the Advantages?",
+        "url": "https://www.karger.com/Article/Abstract/83787",
+        "year": 2004,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "overview",
+        "quote": "The benefits arise from lower intakes of saturated fat, cholesterol and animal protein as well as higher intakes of complex carbohydrates, dietary fiber, magnesium, folic acid, vitamin C and E, carotenoids and other phytochemicals."
+    }, {
+        "title": "Accruing evidence on benefits of adherence to the Mediterranean diet on health: an updated systematic review and meta-analysis",
+        "url": "http://ajcn.nutrition.org/content/92/5/1189.long",
+        "year": 2010,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "overview",
+        "quote": "This updated meta-analysis confirms, in a larger number of subjects and studies, the significant and consistent protection provided by adherence to the Mediterranean diet in relation to the occurrence of major chronic degenerative diseases."
+    }, {
+        "title": "Food, Nutrition, Physical Activity, and the Prevention of Cancer: a Global Perspective (page 67: grains/cereals. 75: veges, fruits, nuts, seeds, legumes, herbs, spices. 116: meat, poultry, fish, eggs. 129: milk, dairy. 135: Fat, Oil. 141: salty, sugary foods. 157: alcohol)",
+        "url": "http://www.aicr.org/assets/docs/pdf/reports/Second_Expert_Report.pdf",
+        "year": 2007,
+        "is_meta": true,
+        "tags": "cancer",
+        "availability": "full"
+    }, {
+        "title": "Cancer preventive effects of flavonoids—a review",
+        "url": "http://www.sciencedirect.com/science/article/pii/S0753332202001865",
+        "year": 2002,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "cancer",
+        "quote": "experimental studies have provided growing evidence for the beneficial action of flavonoids on multiple cancer-related biological pathways (carcinogen bioactivation, cell-signaling, cell cycle regulation, angiogenesis, oxidative stress, inflammation). Although the epidemiologic data on flavonoids and cancer are still limited and conflicting, some protective associations have been suggested for flavonoid-rich foods (soy and premenopausal breast cancer; green tea and stomach cancer; onion and lung cancer)."
+    }, {
+        "title": "Reduced cancer risk in vegetarians: an analysis of recent reports",
+        "url": "http://www.aicr.org/assets/docs/pdf/reports/Second_Expert_Report.pdf",
+        "year": 2011,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "cancer",
+        "quote": "Most large prospective observational studies show that vegetarian diets are at least modestly cancer protective (10%–12% reduction in overall cancer risk) although results for specific cancers are less clear. No long-term randomized clinical trials have been conducted to address this relationship. However, a broad body of evidence links specific plant foods such as fruits and vegetables, plant constituents such as fiber, antioxidants and other phytochemicals, and achieving and maintaining a healthy weight to reduced risk of cancer diagnosis and recurrence. Also, research links the consumption of meat, especially red and processed meats, to increased risk of several types of cancer"
+    }, {
+        "title": "Cancer is a Preventable Disease that Requires Major Lifestyle Changes",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2515569/",
+        "year": 2008,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "cancer",
+        "quote": "Only 5–10% of all cancer cases can be attributed to genetic defects, whereas the remaining 90–95% have their roots in the environment and lifestyle. The lifestyle factors include cigarette smoking, diet (fried foods, red meat), alcohol, sun exposure, environmental pollutants, infections, stress, obesity, and physical inactivity. The evidence indicates that of all cancer-related deaths, almost 25–30% are due to tobacco, as many as 30–35% are linked to diet, about 15–20% are due to infections, and the remaining percentage are due to other factors"
+    }, {
+        "title": "The role of diet in breast and prostate cancer survival.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/17684809",
+        "year": 2007,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "cancer",
+        "quote": "However, diet plays an important role in cancer prevention and survival and may also be implicated in racial and ethnic disparities. ... A plant-based diet, generally low in fat and high in fiber, may offer survival benefits for both breast and prostate cancer. Further research is required to establish effective interventions that promote healthy dietary choices that enhance cancer survival."
+    }, {
+        "title": "A Very-Low-Fat Vegan Diet Increases Intake of Protective Dietary Factors and Decreases Intake of Pathogenic Dietary Factors",
+        "url": "http://www.sciencedirect.com/science/article/pii/S0002822307020731",
+        "year": 2007,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "cancer",
+        "quote": "Ninety-three early-stage prostate cancer patients participated in a randomized controlled trial and were assigned to a very-low-fat (10% fat) vegan diet supplemented with soy protein and lifestyle changes or to usual care. ... Analyses of changes in dietary intake of macronutrients, vitamins, minerals, carotenoids, and isoflavones from baseline to 1 year showed significantly increased intake of most protective dietary factors (eg, fiber increased from a mean of 31 to 59 g/day, lycopene increased from 8,693 to 34,464 μg/day) and significantly decreased intake of most pathogenic dietary factors (eg, saturated fatty acids decreased from 20 to 5 g/day, cholesterol decreased from 200 to 10 mg/day) in the intervention group compared to controls"
+    }, {
+        "title": "The role of diet and physical activity in breast, colorectal, and prostate cancer survivorship: a review of the literature",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3251953/",
+        "year": 2011,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "cancer",
+        "quote": "Evidence from observational studies suggests that a low-fat, high-fibre diet might be protective against cancer recurrence and progression. However, there is a paucity of RCTs substantiating this. There is more support for physical activity, with a dose response for better outcomes. ... evidence suggests that the mechanism of benefit from diet and physical activity pertains to body weight, with excess body weight being a risk factor"
+    }, {
+        "title": "Clinical events in prostate cancer lifestyle trial: results from two years of follow-up.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/18602144",
+        "year": 2008,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "cancer",
+        "quote": "The patients in the experimental arm were encouraged to adopt a low-fat, plant-based diet, to exercise and practice stress management, and to attend group support sessions ... Patients with early-stage prostate cancer choosing active surveillance might be able to avoid or delay conventional treatment for at least 2 years by making changes in their diet and lifestyle."
+    }, {
+        "title": "Cancer Prevention and Treatment by Wholistic Nutrition",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5646698/",
+        "year": 2017,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "cancer",
+        "quote": "the promotion of cancer growth and development in laboratory animals initiated by a powerful mutagen/carcinogen can be repetitively turned on and off by non-mutagenic mechanisms, even completely, by modifying the consumption of protein at relevant levels of intake. ... This suggests that ultimate cancer development is primarily a nutrition-responsive disease rather than a genetic disease, with the understanding that nutrition is a comprehensive, wholistic biological effect that reflects the natural contents of nutrients and related substances in whole, intact food. "
+    }, {
+        "title": "Effects of a low-fat, high-fiber diet and exercise program on breast cancer risk factors in vivo and tumor cell growth and apoptosis in vitro.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/16965238",
+        "year": 2006,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "cancer",
+        "quote": "These results show that a very-low-fat, high-fiber diet combined with daily exercise results in major reductions in risk factors for BCa while subjects remained overweight/obese"
+    }, {
+        "title": "Intensive lifestyle changes may affect the progression of prostate cancer.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/16094059",
+        "year": 2005,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "cancer",
+        "quote": "Intensive lifestyle changes may affect the progression of early, low grade prostate cancer in men. Further studies and longer term followup are warranted."
+    }, {
+        "title": "Fasting followed by vegetarian diet in patients with rheumatoid arthritis: a systematic review",
+        "url": "http://www.tandfonline.com/doi/abs/10.1080/030097401750065256",
+        "year": 2009,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "arthritis",
+        "quote": "available evidence suggests that fasting followed by vegetarian diets might be useful in the treatment of RA"
+    }, {
+        "title": "Effectiveness and Safety of Dietary Interventions for Rheumatoid Arthritis: A Systematic Review of Randomized Controlled Trials",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/20430134",
+        "year": 2010,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "arthritis",
+        "quote": "The effects of dietary manipulation...on rheumatoid arthritis are still uncertain"
+    }, {
+        "title": "Is There a Role for Diet in the Therapy of Rheumatoid Arthritis?",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/20430134",
+        "year": 2016,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "arthritis",
+        "quote": "Given the complexity of studying the relationship between diet and RA disease activity, we highlight areas deserving further study before specific recommendations can be made to RA patients."
+    }, {
+        "title": "Rheumatoid arthritis treated with vegetarian diets",
+        "url": "http://m.ajcn.nutrition.org/content/70/3/594s.short",
+        "year": 1999,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "arthritis",
+        "quote": "the results show that some patients with RA can benefit from a fasting period followed by a vegetarian diet"
+    }, {
+        "title": "Whole-Foods, Plant-Based Diet Alleviates the Symptoms of Osteoarthritis",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4359818/",
+        "year": 2015,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "arthritis",
+        "quote": "results suggest that a whole-foods, plant-based diet significantly improves self-assessed measures of functional status among osteoarthritis patients"
+    }, {
+        "title": "Faecal microbial flora and disease activity in rheumatoid arthritis during a vegan diet.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/9117178",
+        "year": 1997,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "arthritis",
+        "quote": "a vegan diet changes the faecal microbial flora in RA patients, and changes in the faecal flora are associated with improvement in RA activity."
+    }, {
+        "title": "Uncooked vegan diet, rich in lactobacilli, decreased subjective symptoms of rheumatoid arthritis",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/9566667",
+        "year": 1998,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "arthritis",
+        "quote": "results showed that an uncooked vegan diet, rich in lactobacilli, decreased subjective symptoms of rheumatoid arthritis"
+    }, {
+        "title": "Effects of a Very Low-Fat, Vegan Diet in Subjects with Rheumatoid Arthritis",
+        "url": "http://online.liebertpub.com/doi/abs/10.1089/107555302753507195",
+        "year": 2004,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "arthritis",
+        "quote": "This study showed that patients with moderate-to-severe RA, who switch to a very low-fat, vegan diet can experience significant reductions in RA symptoms."
+    }, {
+        "title": "An Examination of Diet for the Maintenance of Remission in Inflammatory Bowel Disease",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/9566667",
+        "year": 2017,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "ibd",
+        "quote": "Pre-illness studies in IBD and intervention trials provide convincing evidence that a plant-based diet, with increased consumption of fruit/vegetables and less red meat intake could be suggested to patients with IBD in remission."
+    }, {
+        "title": "European Crohn’s and Colitis Organisation Topical Review on Environmental Factors in IBD",
+        "url": "https://academic.oup.com/ecco-jcc/article/2756096#94142366#94142400",
+        "year": 2017,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "ibd",
+        "quote": "in several animal models, high-fat/high-sugar diet, gluten, red meat, maltodextrin, and emulsifiers may induce or accelerate intestinal inflammation. Certain dietary fibres and soy protein might be beneficial...Presumably diet alone is inadequate to cause IBD, but there is evidence for a gene/diet interaction"
+    }, {
+        "title": "Diet as a Trigger or Therapy for Inflammatory Bowel Diseases.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/27793606",
+        "year": 2017,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "ibd",
+        "quote": "epidemiology studies have indicated that diets high in animal fat and low in fruits and vegetables are the most common pattern associated with an increased risk of IBD"
+    }, {
+        "title": "The Role of Diet in Inflammatory Bowel Disease.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/28397133",
+        "year": 2017,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "ibd",
+        "quote": "Until several ongoing clinical trials are completed, a reasonable approach to dietary recommendations for patients with IBD is to propose a well-balanced, healthy (low-fat, low-sugar) diet prepared from fresh ingredients, such as the Mediterranean diet, with exclusions of self-identified foods that worsen or trigger IBD-related symptoms."
+    }, {
+        "title": "Research Gaps in Diet and Nutrition in Inflammatory Bowel Disease. A Topical Review by D-ECCO Working Group [Dietitians of ECCO]",
+        "url": "https://academic.oup.com/ecco-jcc/article/doi/10.1093/ecco-jcc/jjx109/4080183/Research-Gaps-in-Diet-and-Nutrition-in",
+        "year": 2017,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "ibd",
+        "quote": "Evidence now proposes that whereas human genetics are important, they explain only a small fraction of the risk of developing the disease...The aim of this topical review was to extensively review the literature on the role of diet and nutrition in the aetiology and management of IBD and set the agenda for future research."
+    }, {
+        "title": "Is a low FODMAP diet beneficial for patients with inflammatory bowel disease? A meta-analysis and systematic review",
+        "url": "https://academic.oup.com/ecco-jcc/article/doi/10.1093/ecco-jcc/jjx109/4080183/Research-Gaps-in-Diet-and-Nutrition-in",
+        "year": 2017,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "ibd",
+        "quote": "The present meta-analysis offers proof to support that a low FODMAP diet is beneficial for reducing gastrointestinal symptoms in patients with quiescent IBD. With the inherent limitations, the findings of this analysis remain to be confirmed"
+    }, {
+        "title": "What Diet Can and Cannot Do: Role of Diet in Inflammatory Bowel Disease",
+        "url": "https://www.karger.com/Article/FullText/445392",
+        "year": 2016,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "ibd",
+        "quote": "The incidence of inflammatory bowel disease (IBD) is steadily in the rise in Western as well as in developing countries paralleling the increase of westernized diets, characterized by high protein and fat as well as excessive sugar intake, with less vegetables and fiber."
+    }, {
+        "title": "Environmental risk factors for inflammatory bowel diseases: Evidence based literature review",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4945988/",
+        "year": 2016,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "ibd",
+        "quote": "This article critically reviews the current evidence on environmental risk factors for IBD and proposes directions for future research."
+    }, {
+        "title": "The Impact of Dietary Interventions on the Symptoms of Inflammatory Bowel Disease: A Systematic Review.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/25569442",
+        "year": 2016,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "ibd",
+        "quote": "Exclusion diets and the low FODMAP diet are two areas identified in this review that show promise for having therapeutic benefits for patients with IBD."
+    }, {
+        "title": "A mechanistic review on plant-derived natural compounds as dietary supplements for prevention of inflammatory bowel disease",
+        "url": "http://www.tandfonline.com/doi/abs/10.1586/17474124.2016.1145546",
+        "year": 2016,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "ibd",
+        "quote": "In conclusion, natural products can be considered as dietary supplements with therapeutic potential for IBD, provided that their safety and efficacy is confirmed in future well-designed clinical trials with adequate sample size."
+    }, {
+        "title": "Does a diet low in FODMAPs reduce symptoms associated with functional gastrointestinal disorders? A comprehensive systematic review and meta-analysis",
+        "url": "https://link.springer.com/article/10.1007/s00394-015-0922-1",
+        "year": 2015,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "ibd",
+        "quote": "The present meta-analysis supports the efficacy of a low FODMAP diet in the treatment of functional gastrointestinal symptoms"
+    }, {
+        "title": "Diet and Inflammatory Bowel Disease",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4843040/",
+        "year": 2015,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "ibd",
+        "quote": "the low-FODMAP diet and the IBD-AID, seem to be reasonably balanced and sound without causing weight loss in ill IBD patients."
+    }, {
+        "title": "Epidemiology and risk factors for IBD",
+        "url": "https://www.nature.com/nrgastro/journal/v12/n4/full/nrgastro.2015.34.html",
+        "year": 2015,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "ibd",
+        "quote": "Established high-prevalence populations of IBD in North America and Europe experienced the steepest increase in incidence towards the second half of the twentieth century. Furthermore, populations previously considered 'low risk' (such as in Japan and India) are witnessing an increase in incidence..."
+    }, {
+        "title": "Diet and Inflammatory Bowel Disease: Review of Patient-Targeted Recommendations",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4021001/",
+        "year": 2015,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "ibd",
+        "quote": "essentially all food groups- fruits, vegetables, meats, and grains- have been noted by patient self-report to exacerbate symptoms and do not provide generalizable information for other patients with IBD. Rather, patients may be instructed to be aware of their diet through food diaries and their symptoms and make modifications specific to the individual patient"
+    }, {
+        "title": "Dietary intake and risk of developing inflammatory bowel disease: a systematic review of the literature.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/16534521",
+        "year": 2011,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "ibd",
+        "quote": "High dietary intakes of total fats, PUFAs, omega-6 fatty acids, and meat were associated with an increased risk of CD and UC. High fiber and fruit intakes were associated with decreased CD risk, and high vegetable intake was associated with decreased UC risk."
+    }, {
+        "title": "A prospective study of long-term intake of dietary fiber and risk of Crohn's disease and ulcerative colitis.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/16534521",
+        "year": 2011,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "ibd",
+        "quote": "data from 170,776 women, followed up over 26 years...[shows] long-term intake of dietary fiber, particularly from fruit, is associated with lower risk of CD but not UC."
+    }, {
+        "title": "Epidemiologic analysis of Crohn disease in Japan: increased dietary intake of n-6 polyunsaturated fatty acids and animal protein relates to the increased incidence of Crohn disease in Japan.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/16534521",
+        "year": 1996,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "ibd",
+        "quote": "increased incidence of Crohn disease was strongly (P < 0.001) correlated with increased dietary intake of total fat (r = 0.919). animal fat (r = 0.880), n-6 polyunsaturated fatty acids (r = 0.883), animal protein (r = 0.908), milk protein (r = 0.924), and the ratio of n-6 to n-3 fatty acid intake (r = 0.792)...and was inversely correlated with intake of vegetable protein (r = -0.941, P < 0.001)."
+    }, {
+        "title": "Animal protein intake and risk of inflammatory bowel disease: The E3N prospective study.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/20461067",
+        "year": 2010,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "ibd",
+        "quote": "Among 67,581 participants...High total protein intake, specifically animal protein, was associated with a significantly increased risk of IBD...high consumption of meat or fish but not of eggs or dairy products was associated with IBD risk."
+    }, {
+        "title": "High Amount of Dietary Fiber Not Harmful But Favorable for Crohn Disease",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4315379/",
+        "year": 2015,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "ibd",
+        "quote": "Although the precise mechanism is to be determined, epidemiology provides convincing evidence that a plant-based diet is a healthy diet providing therapeutic and/or preventive effects against current major chronic diseases.22–24 Available data suggest the rationale to use dietary fiber in the treatment of IBD."
+    }, {
+        "title": "The BROAD study: A randomised controlled trial using a whole food plant-based diet in the community for obesity, ischaemic heart disease or diabetes.",
+        "url": "https://www.nature.com/nutd/journal/v7/n3/full/nutd20173a.html",
+        "year": 2017,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "weight",
+        "quote": "This programme led to significant improvements in BMI, cholesterol and other risk factors. To the best of our knowledge, this research has achieved greater weight loss at 6 and 12 months than any other trial that does not limit energy intake or mandate regular exercise."
+    }, {
+        "title": "Weight gain over 5 years in 21,966 meat-eating, fish-eating, vegetarian, and vegan men and women in EPIC-Oxford",
+        "url": "https://www.nature.com/ijo/journal/v30/n9/full/0803305a.html",
+        "year": 2006,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "weight",
+        "quote": "Lowest weight gain was seen among those who, during follow-up, had changed to a diet containing fewer animal food"
+    }, {
+        "title": "Metabolically Healthy Obese and Incident Cardiovascular Disease Events Among 3.5 Million Men and Women.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/28911506",
+        "year": 2017,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "weight",
+        "quote": "During a mean follow-up of 5.4 years, obese individuals with no metabolic abnormalities had a higher risk of CHD (multivariate-adjusted hazard ratio [HR]: 1.49; 95% confidence interval [CI]: 1.45 to 1.54), cerebrovascular disease (HR: 1.07; 95% CI: 1.04 to 1.11), and heart failure (HR: 1.96; 95% CI: 1.86 to 2.06) compared with normal weight individuals with 0 metabolic abnormalities"
+    }, {
+        "title": "A Systematic Review and Meta-Analysis of Changes in Body Weight in Clinical Trials of Vegetarian Diets",
+        "url": "http://www.sciencedirect.com/science/article/pii/S2212267214017638",
+        "year": 2014,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "weight",
+        "quote": "The prescription of vegetarian diets reduces mean body weight, suggesting potential value for prevention and management of weight-related conditions."
+    }, {
+        "title": "Vegetarian Diets and Weight Status",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/16673753",
+        "year": 2006,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "weight",
+        "quote": "Vegetarian diets are associated with reduced body weight, lower incidence of certain chronic disease, and lower medical costs compared with non-vegetarian diets"
+    }, {
+        "title": "The effects of a low-fat, plant-based dietary intervention on body weight, metabolism, and insulin sensitivity.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/16164885",
+        "year": 2005,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "weight",
+        "quote": "Adoption of a low-fat, vegan diet was associated with significant weight loss in overweight postmenopausal women, despite the absence of prescribed limits on portion size or energy intake."
+    }, {
+        "title": "Changing perceptions of hunger on a high nutrient density diet",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2988700/",
+        "year": 2010,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "weight",
+        "quote": "768 participants primarily living in the United States who had changed their dietary habits from a low micronutrient to a high micronutrient diet...Highly significant differences were found between the two diets in relation to all physical and emotional symptoms as well as the location of hunger. Hunger was not an unpleasant experience while on the high nutrient density diet, was well tolerated and occurred with less frequency even when meals were skipped."
+    }, {
+        "title": "A two-year randomized weight loss trial comparing a vegan diet to a more moderate low-fat diet.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2988700/",
+        "year": 2007,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "weight",
+        "quote": "Individuals in the vegan group lost more weight than those in the NCEP group at 1 year [-4.9 (-0.5, -8.0) kg vs. -1.8 (0.8, -4.3); p < 0.05] and at 2 years [-3.1 (0.0, -6.0) kg vs. -0.8 (3.1, -4.2) kg; p < 0.05]. "
+    }, {
+        "title": "A multicenter randomized controlled trial of a plant-based nutrition program to reduce body weight and cardiovascular risk in the corporate setting: the GEICO study.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/23695207",
+        "year": 2013,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "weight",
+        "quote": "An 18-week dietary intervention using a low-fat plant-based diet in a corporate setting improves body weight, plasma lipids, and, in individuals with diabetes, glycemic control."
+    }, {
+        "title": "A Two-Year Randomized Weight Loss Trial Comparing a Vegan Diet to a More Moderate Low-Fat Diet",
+        "url": "http://onlinelibrary.wiley.com/doi/10.1038/oby.2007.270/full",
+        "year": 2007,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "weight",
+        "quote": "Individuals in the vegan group lost more weight than those in the NCEP group at 1 year [−4.9 (−0.5, −8.0) kg vs. −1.8 (0.8, −4.3); p < 0.05] and at 2 years [−3.1 (0.0, −6.0) kg vs. −0.8 (3.1, −4.2) kg; p < 0.05]."
+    }, {
+        "title": "Dietary Fiber and Bacterial SCFA Enhance Oral Tolerance and Protect against Food Allergy through Diverse Cellular Pathways",
+        "url": "http://www.cell.com/cell-reports/fulltext/S2211-1247(16)30630-1?_returnURL=http%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2211124716306301%3Fshowall%3Dtrue",
+        "year": 2014,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "allergy",
+        "quote": "Dietary elements, including fiber and vitamin A, therefore regulate numerous protective pathways in the gastrointestinal tract [of mice], necessary for immune non-responsiveness to food antigens."
+    }, {
+        "title": "Effects of Fruit and Vegetable Consumption on Risk of Asthma, Wheezing and Immune Responses: A Systematic Review and Meta-Analysis",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5409680/",
+        "year": 2017,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "allergy",
+        "quote": "Most of the studies (n = 30) reported beneficial associations of fruit and vegetable consumption with risk of asthma and/or respiratory function, while eight studies found no significant relationship. Some studies (n = 20) reported mixed results, as they found a negative association between fruit only or vegetable only, and asthma.  In addition, the meta-analyses in both adults and children showed inverse associations between fruit intake and risk of prevalent wheeze and asthma severity (p < 0.05). Likewise, vegetable intake was negatively associated with risk of prevalent asthma (p < 0.05). Seven studies examined immune responses in relation to fruit and vegetable intake in asthma, with n = 6 showing a protective effect against either systemic or airway inflammation. "
+    }, {
+        "title": "Multiple Sclerosis and Nutrition",
+        "url": "https://jamanetwork.com/journals/jamaneurology/article-abstract/573287",
+        "year": 1974,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "ms",
+        "quote": "Prevalence of MS in many countries was correlated with average daily per capita consumption of fats and oils, protein, and calories, including calories of animal origin. Of these dietary factors, only calories of animal origin and fats and oils correlated significantly with MS prevalence. When the latter two were combined (animal-fats), a significant correlation with MS prevalence of.70 resulted, suggesting that increased consumption of animal-fat may be associated with MS."
+    }, {
+        "title": "Nutrition Facts in Multiple Sclerosis",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4342365/",
+        "year": 2015,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "ms",
+        "quote": "Here we show that dietary factors and lifestyle may exacerbate or ameliorate MS symptoms by modulating the inflammatory status ... What increases inflammation are hypercaloric Western-style diets, characterized by high salt, animal fat, red meat, sugar-sweetened drinks, fried food, low fiber, and lack of physical exercise. The persistence of this type of diet upregulates the metabolism of human cells toward biosynthetic pathways including those of proinflammatory molecules and also leads to a dysbiotic gut microbiota, alteration of intestinal immunity, and low-grade systemic inflammation. Conversely, exercise and low-calorie diets based on the assumption of vegetables, fruit, legumes, fish, prebiotics, and probiotics act on nuclear receptors and enzymes that upregulate oxidative metabolism, downregulate the synthesis of proinflammatory molecules, and restore or maintain a healthy symbiotic gut microbiota."
+    }, {
+        "title": "Complementary and alternative medicine for the treatment of multiple sclerosis",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2901236/",
+        "year": 2008,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "ms",
+        "quote": "Surveys suggest that up to 70% of people with MS have tried one or more CAM treatment for their MS ... The most promising among CAM therapies that warrant further investigation are a low-fat diet, omega-3 fatty acids, lipoic acid and vitamin D supplementation as potential anti-inflammatory and neuroprotective agents"
+    }, {
+        "title": "Milk Intake and Total Dairy Consumption: Associations with Early Menarche in NHANES 1999-2004",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2530923/",
+        "year": 2011,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "puberty,milk",
+        "quote": "There is some evidence that greater milk intake is associated with an increased risk of early menarche, or a lower age at menarche."
+    }, {
+        "title": "Percent Body Fat at Age 5 Predicts Earlier Pubertal Development Among Girls at Age 9",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2530923/",
+        "year": 2008,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "puberty,weight",
+        "quote": "Girls with higher weight status in early childhood were more likely to exhibit earlier pubertal development relative to peers at 9 years, indicating that weight status preceded pubertal timing in girls."
+    }, {
+        "title": "Effects of Environmental Endocrine Disruptors on Pubertal Development",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3065309/",
+        "year": 2011,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "puberty,milk",
+        "quote": "[Dioxins] may be transferred to humans from animal meat or milk ... To date, various EDs have been shown to exert unwanted effects on pubertal development. It is possible that there are numerous other chemicals with potential harmful effects on pubertal development. Future population-based studies are warranted for further investigation."
     }
-}
+
+    , {
+        "title": "Lupus erythematosus and nutrition: a review of the literature.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/11070144",
+        "year": 2000,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "lupus",
+        "quote": "Aggravating substances appear to include excess calories, excess protein, high fat (especially saturated and omega-6 polyunsaturated fatty acids), zinc, iron, and L-canavanine found in alfalfa tablets. Possible beneficial dietary compounds include vitamin E, vitamin A (beta-carotene), selenium, fish oils (omega-3 polyunsaturated fatty acids), evening primrose oil, flaxseed, a plant herb (Tripterygium wilfordii), dehydroepiandrosterone, and calcium plus vitamin D (if taking corticosteroids) ... No large-scale studies have been performed with LE patients to substantiate the benefit, if any, of these individual dietary interventions"
+    }, {
+        "title": "Effect of vegetarian diet on systemic lupus erythematosus.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/1349403",
+        "year": 1992,
+        "is_meta": false,
+        "tags": "lupus",
+        "availability": "paywall"
+    }, {
+        "title": "Apigenin, a non-mutagenic dietary flavonoid, suppresses lupus by inhibiting autoantigen presentation for expansion of autoreactive Th1 and Th17 cells",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2688212/",
+        "year": 2009,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "lupus",
+        "quote": "Apigenin therapy of SNF1 mice with established lupus suppressed serum levels of pathogenic autoantibodies to nuclear antigens up to 97% and markedly delayed development of severe glomerulonephritis"
+    }, {
+        "title": "Association of mediterranean diet with mild cognitive impairment and Alzheimer's disease: a systematic review and meta-analysis.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3946820/",
+        "year": 2014,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "cognition",
+        "quote": "While the overall number of studies is small, pooled results suggest that a higher adherence to the MeDi is associated with a reduced risk of developing MCI and AD, and a reduced risk of progressing from MCI to AD. Further prospective-cohort studies with longer follow-up and randomized controlled trials are warranted to consolidate the evidence."
+    }, {
+        "title": "Brain foods: the effects of nutrients on brain function",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2805706/",
+        "year": 2010,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "cognition",
+        "quote": "We now know that particular nutrients influence cognition by acting on molecular systems or cellular processes that are vital for maintaining cognitive function. This raises the exciting possibility that dietary manipulations are a viable strategy for enhancing cognitive abilities and protecting the brain from damage, promoting repair and counteracting the effects of aging"
+    }, {
+        "title": "Neuroprotective Effect of Natural Products Against Alzheimer’s Disease",
+        "url": "https://link.springer.com/article/10.1007%2Fs11064-012-0799-9",
+        "year": 2012,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "cognition",
+        "quote": "Accumulated evidence suggests that naturally occurring phyto-compounds, such as polyphenolic antioxidants found in fruits, vegetables, herbs and nuts, may potentially hinder neurodegeneration, and improve memory and cognitive function. ... The neuroprotective effects of various naturally occurring compounds in AD is evaluating in this review."
+    }, {
+        "title": "A possible role for lutein and zeaxanthin in cognitive function in the elderly",
+        "url": "http://ajcn.nutrition.org/content/96/5/1161S.long",
+        "year": 2012,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "cognition",
+        "quote": "Oxidative damage and inflammation have been implicated in cognitive decline in the elderly. Epidemiologic evidence to date suggests that dietary carotenoids may be beneficial in cognitive health. ... Our cross-sectional and intervention studies find that increased xanthophyll status is related to better cognitive performance in the elderly. "
+    }, {
+        "title": "Fruit, vegetables and prevention of cognitive decline or dementia: a systematic review of cohort studies.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/22836704",
+        "year": 2012,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "cognition",
+        "quote": "Increased intake of vegetables is associated with a lower risk of dementia and slower rates of cognitive decline in older age. Yet, evidence that this association is also valid for high fruit consumption is lacking."
+    }, {
+        "title": "Nutritional modulation of cognitive function and mental health.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/23517914",
+        "year": 2012,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "cognition",
+        "quote": "We provide a model for the pathways by which food components provided by a Mediterranean-style diet can facilitate healthy brain function. We then review evidence for the role of selected nutrients/food components - antioxidants, omega-3 fatty acids and B vitamins - in the brain and, hence, modulation of cognitive function and mental health."
+    }, {
+        "title": "Food for thought: the role of dietary flavonoids in enhancing human memory, learning and neuro-cognitive performance: Symposium on ‘Diet and mental health’",
+        "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/BAA7D30D89D0CF9694A2565C47CA8BF2/S0029665108007088a.pdf/food_for_thought_the_role_of_dietary_flavonoids_in_enhancing_human_memory_learning_and_neurocognitive_performance.pdf",
+        "year": 2007,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "cognition",
+        "quote": "Emerging evidence suggests that dietary-derived flavonoids have the potential to improve human memory and neuro-cognitive performance via their ability to protect vulnerableneurons, enhance existing neuronal function and stimulate neuronal regeneration ... The presentreview explores the potential of flavonoids and their metabolite forms to promote memory andlearning through their interactions with neuronal signalling pathways pivotal in controlling LTPand memory in human subjects."
+    }, {
+        "title": "The incidence of dementia and intake of animal products: preliminary findings from the Adventist Health Study.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/8327020",
+        "year": 1993,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "cognition,dementia",
+        "quote": "The matched subjects who ate meat (including poultry and fish) were more than twice as likely to become demented as their vegetarian counterparts (relative risk 2.18, p = 0.065) and the discrepancy was further widened (relative risk 2.99, p = 0.048) when past meat consumption was taken into account ... There was a trend towards delayed onset of dementia in vegetarians in both substudies"
+    }, {
+        "title": "Western Diet Consumption and Cognitive Impairment: Links to Hippocampal Dysfunction and Obesity",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3056912/",
+        "year": 2012,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "cognition",
+        "quote": "The present paper summarizes research showing that Western diet intake is associated with cognitive impairment ... a model is described proposing that Western diet consumption contributes to the development of excessive food intake and obesity, in part, by interfering with a type of hippocampal-dependent memory inhibition that is critical in the ability of animals to refrain from responding to environmental cues associated with food, and ultimately from consuming energy intake in excess of that driven solely by caloric need."
+    }, {
+        "title": "Brain rust: recent discoveries on the role of oxidative stress in neurodegenerative diseases.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/22583954",
+        "year": 2012,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "cognition",
+        "quote": "The interaction of genes with their environment, may explain ND [neurodegenerative diseases]"
+    }, {
+        "title": "The longer-term impacts of Western diet on human cognition and the brain.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/23291218",
+        "year": 2013,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "cognition",
+        "quote": "Animal work over the last three decades has generated a convincing body of evidence that a Western diet - one high in saturated fat and refined carbohydrates (HFS diet) - can damage various brain systems ... While human research data is still at an early stage, there is evidence of an association between HFS diet and impaired cognitive function. Based upon the animal data, and a growing understanding of how HFS diets can disrupt brain function, we further suggest that there is a causal link running from HFS diet to impaired brain function in humans, and that HFS diets also contribute to the development of neurodegenerative conditions."
+    }, {
+        "title": "Dietary Patterns, Cognitive Decline, and Dementia: A Systematic Review",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4352174/",
+        "year": 2015,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "cognition",
+        "quote": "The results suggest that better adherence to a Mediterranean diet is associated with less cognitive decline, dementia, or Alzheimer disease ... Other healthy dietary patterns, derived both a priori ... and a posteriori ..., were shown to be associated with reduced cognitive decline and/or a reduced risk of dementia ... More conclusive evidence is needed to reach more targeted and detailed guidelines to prevent or postpone cognitive decline."
+    }, {
+        "title": "A Prospective Study of Diet Quality and Mental Health in Adolescents.",
+        "url": "http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0024805",
+        "year": 2011,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "mental health",
+        "quote": "There were cross-sectional, dose response relationships identified between measures of both healthy (positive) and unhealthy (inverse) diets and scores on the emotional subscale of the Pediatric Quality of Life Inventory (PedsQL), where higher scores mean better mental health, before and after adjustments for age, gender, socio-economic status, dieting behaviours, body mass index and physical activity."
+    }, {
+        "title": "Diet and mental health in the Arctic: is diet an important risk factor for mental health in circumpolar peoples? - a review",
+        "url": "http://www.tandfonline.com/doi/abs/10.3402/ijch.v62i3.17560",
+        "year": 2011,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "mental health",
+        "quote": "The change in traditional diets has already led to increased health problems, such as obesity, cardiovascular disease, and diabetes, while the mental health of circumpolar peoples has also declined substantially during the same time period. The decline in mental health is characterized by increased rates of depression, seasonal affective disorder, anxiety, and suicide, that now often occur at higher rates than in lower-latitude populations."
+    }, {
+        "title": "Relationship Between Diet and Mental Health in Children and Adolescents: A Systematic Review",
+        "url": "http://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2014.302110",
+        "year": 2014,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "mental health",
+        "quote": "We found evidence of a significant, cross-sectional relationship between unhealthy dietary patterns and poorer mental health in children and adolescents. We observed a consistent trend for the relationship between good-quality diet and better mental health and some evidence for the reverse. "
+    }, {
+        "title": "The Association Between Habitual Diet Quality and the Common Mental Disorders in Community-Dwelling Adults: The Hordaland Health Study",
+        "url": "http://journals.lww.com/psychosomaticmedicine/Abstract/2011/07000/The_Association_Between_Habitual_Diet_Quality_and.9.aspx",
+        "year": 2011,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "mental health",
+        "quote": "This cross-sectional study included 5731 population-based men and women aged 46 to 49 and 70 to 74 years. ... In this study, those with better quality diets were less likely to be depressed, whereas a higher intake of processed and unhealthy foods was associated with increased anxiety."
+    }, {
+        "title": "Nutrition intervention for migraine: a randomized crossover trial",
+        "url": "https://link.springer.com/content/pdf/10.1186%2F1129-2377-15-69.pdf",
+        "year": 2014,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "migraine",
+        "quote": "Worst headache pain in last 2 weeks, as measured by visual analog scale, was initially 6.4/10 cm (SD2.1 cm), and declined 2.1 cm during the diet period and 0.7 cm during the supplement period (p=0.03). Averageheadache intensity (0–10 scale) was initially 4.2 (SD 1.4) per week, and this declined by 1.0 during the diet periodand by 0.5 during the supplement period (p=0.20). Average headache frequency was initially 2.3 (SD 1.8) per week,and this declined by 0.3 during the diet period and by 0.4 during the supplement period (p=0.61). "
+    }, {
+        "title": "Is Migraine Food Allergy?: A Double-blind Controlled Trial of Oligoantigenic Diet Treatment",
+        "url": "http://www.sciencedirect.com/science/article/pii/S0140673683908668?_rdoc=1&_fmt=high&_origin=gateway&_docanchor=&md5=b8429449ccfc9c30159a5f9aeaa92ffb",
+        "year": 1983,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "migraine",
+        "quote": "93% of 88 children with severe frequent migraine recovered on oligoantigenic diets; the causative foods were identified by sequential reintroduction, and the role of the foods provoking migraine was established by a double-blind controlled trial in 40 of the children"
+    }, {
+        "title": "Diet restriction in migraine, based on IgG against foods: A clinical double-blind, randomised, cross-over trial",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2899772/",
+        "year": 2010,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "migraine",
+        "quote": "The average count of reactions with abnormally high titre was 24 ± 11 against 266 foods. Compared to baseline, there was a statistically significant reduction in the number of headache days (from 10.5 ± 4.4 to 7.5 ± 3.7; P < 0.001) and number of migraine attacks (from 9.0 ± 4.4 to 6.2 ± 3.8; P < 0.001) in the elimination diet period."
+    }, {
+        "title": "The diet factor in pediatric and adolescent migraine",
+        "url": "http://www.sciencedirect.com/science/article/pii/S0887899402004666",
+        "year": 2003,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "migraine",
+        "quote": " list of foods, beverages, and additives that trigger migraine includes cheese, chocolate, citrus fruits, hot dogs, monosodium glutamate, aspartame, fatty foods, ice cream, caffeine withdrawal, and alcoholic drinks, especially red wine and beer. ... A well-balanced diet is encouraged, with avoidance of fasting or skipped meals."
+    }, {
+        "title": "The prevalence of diet-induced migraine",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/6498931",
+        "year": 1984,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "migraine",
+        "quote": "Nineteen percent of about 490 patients with classical or common migraine reported that headaches can be precipitated by chocolate, 18% by cheese and 11% by citrus fruit, and a highly significant majority of these patients were sensitive to all three foods. ... Patients with affected relatives were significantly more likely to report sensitivity to alcohol and chocolate; sensitivity to cheese and citrus fruit was less strongly related "
+    }, {
+        "title": "Differential acute postprandial effects of processed meat and isocaloric vegan meals on the gastrointestinal hormone response in subjects suffering from type 2 diabetes and healthy controls: a randomized crossover study.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4164634/",
+        "year": 2014,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "diabetes",
+        "quote": "Our results suggest that the diet composition and the energy content, rather than the carbohydrate count, should be important considerations for dietary management and demonstrate that processed meat consumption is accompanied by impaired GIH responses and increased oxidative stress marker levels in diabetic patients."
+    }, {
+        "title": "Dietary intake of carbohydrates and risk of type 2 diabetes: the European Prospective Investigation into Cancer-Norfolk study.",
+        "url": "https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/dietary-intake-of-carbohydrates-and-risk-of-type-2-diabetes-the-european-prospective-investigation-into-cancernorfolk-study/CA456C1DECFA93B083A153FE85076848",
+        "pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/CA456C1DECFA93B083A153FE85076848/S0007114513002298a.pdf/dietary_intake_of_carbohydrates_and_risk_of_type_2_diabetes_the_european_prospective_investigation_into_cancernorfolk_study.pdf",
+        "year": 2013,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "diabetes",
+        "quote": "Incident cases of diabetes (n 749) were identified and compared with a randomly selected subcohort of 3496 participants aged 40–79 years ... The replacement of 5 % energy intake from SFA [saturated fatty acids] with an isoenergetic amount of fructose was associated with a 30% lower diabetes risk (HR 0·69, 95 % CI 0·50, 0·96) ..."
+    }, {
+        "title": "Carbohydrate quantity and quality and risk of type 2 diabetes in the European Prospective Investigation into Cancer and Nutrition-Netherlands (EPIC-NL) study.",
+        "url": "http://ajcn.nutrition.org/content/92/4/905.long",
+        "year": 2010,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "diabetes",
+        "quote": "A prospective cohort study was conducted in 37,846 participants ... Dietary GL [glycemic load] was associated with an increased diabetes risk ... GI [gylcemic index] tended to increase diabetes risk ... Dietary fiber was inversely associated with diabetes risk ... Of the carbohydrate subtypes, only starch was related to increased diabetes risk"
+    }, {
+        "title": "The EPIC-InterAct Study: A Study of the Interplay between Genetic and Lifestyle Behavioral Factors on the Risk of Type 2 Diabetes in European Populations",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4218968/",
+        "year": 2014,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "diabetes",
+        "quote": "The study confirmed that adherence to specific dietary patterns, commonly characterised by high intake of fruits or vegetables and low intake of processed meat, sugar-sweetened beverages, and refined grains, may lower type 2 diabetes risk."
+    }, {
+        "title": "Dietary fibre and incidence of type 2 diabetes in eight European countries: the EPIC-InterAct Study and a meta-analysis of prospective studies.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4472947",
+        "year": 2015,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "diabetes",
+        "quote": "The overall evidence indicates that the intake of total and cereal fibre is inversely related to the risk of type 2 diabetes. The results of the EPIC-InterAct Study suggest that the association may be partially explained by body weight."
+    }, {
+        "title": "Carbohydrates, dietary fiber, and incident type 2 diabetes in older women",
+        "url": "http://ajcn.nutrition.org/content/71/4/921.full",
+        "year": 2000,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "diabetes",
+        "quote": "Total grain, whole-grain, total dietary fiber, cereal fiber, and dietary magnesium intakes showed strong inverse associations with incidence of diabetes after adjustment for potential nondietary confounding variables"
+    }, {
+        "title": "Glycemic Index and Dietary Fiber and the Risk of Type 2 Diabetes",
+        "url": "http://care.diabetesjournals.org/content/27/11/2701",
+        "year": 2004,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "diabetes",
+        "quote": "This was a prospective study of 36,787 men and women ... Intakes of carbohydrate (OR per 200 g/day 0.58, 0.36–0.95), sugars (OR per 100 g/day 0.61, 0.47–0.79), and magnesium (OR per 500 mg/day 0.62, 0.43–0.90) were inversely associated with incidence of diabetes, whereas intake of starch (OR per 100 g/day 1.47, 1.06–2.05) and dietary GI (OR per 10 units 1.32, 1.05–1.66) were positively associated with diabetes. These relationships were attenuated after adjustment for BMI and waist-to-hip ratio."
+    }, {
+        "title": "A Very-Low-Fat Vegan Diet Increases Intake of Protective Dietary Factors and Decreases Intake of Pathogenic Dietary Factors",
+        "url": "http://www.sciencedirect.com/science/article/pii/S0002822307020731",
+        "year": 2007,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "diabetes",
+        "quote": "Ninety-three early-stage prostate cancer patients participated in a randomized controlled trial and were assigned to a very-low-fat (10% fat) vegan diet supplemented with soy protein and lifestyle changes or to usual care. ... Analyses of changes in dietary intake of macronutrients, vitamins, minerals, carotenoids, and isoflavones from baseline to 1 year showed significantly increased intake of most protective dietary factors (eg, fiber increased from a mean of 31 to 59 g/day, lycopene increased from 8,693 to 34,464 μg/day) and significantly decreased intake of most pathogenic dietary factors (eg, saturated fatty acids decreased from 20 to 5 g/day, cholesterol decreased from 200 to 10 mg/day) in the intervention group compared to controls"
+    }, {
+        "title": "Chronic inflammation in fat plays a crucial role in the development of obesity-related insulin resistance",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC296998/",
+        "year": 2003,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "diabetes",
+        "quote": "Increasing evidence from human population studies and animal research has established correlative as well as causative links between chronic inflammation and insulin resistance ... we show that many inflammation and macrophage-specific genes are dramatically upregulated in white adipose tissue (WAT) in mouse models of genetic and high-fat diet-induced obesity (DIO). ... We propose that obesity-related insulin resistance is, at least in part, a chronic inflammatory disease initiated in adipose tissue."
+    }, {
+        "title": "Vegetarian diets and glycemic control in diabetes: a systematic review and meta-analysis",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4221319/",
+        "year": 2014,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "diabetes",
+        "quote": "Consumption of vegetarian diets was associated with a significant reduction in HbA1c [−0.39 percentage point; 95% confidence interval (CI), −0.62 to −0.15; P=0.001; I2=3.0; P for heterogeneity =0.389], and a non-significant reduction in fasting blood glucose concentration (−0.36 mmol/L; 95% CI, −1.04 to 0.32; P=0.301; I2=0; P for heterogeneity =0.710), compared with consumption of comparator diets."
+    }, {
+        "title": "Vegetarian and vegan diets in type 2 diabetes management",
+        "url": "http://onlinelibrary.wiley.com/doi/10.1111/j.1753-4887.2009.00198.x/full",
+        "year": 2009,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "diabetes",
+        "quote": "In clinical trials in individuals with type 2 diabetes, low-fat vegan diets improve glycemic control to a greater extent than conventional diabetes diets"
+    }, {
+        "title": "Vegetarian and vegan diets in type 2 diabetes management",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/19386029",
+        "year": 2009,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "diabetes",
+        "quote": "In clinical trials in individuals with type 2 diabetes, low-fat vegan diets improve glycemic control to a greater extent than conventional diabetes diets"
+    }, {
+        "title": "Type of Vegetarian Diet, Body Weight, and Prevalence of Type 2 Diabetes",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/19386029",
+        "year": 2009,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "diabetes",
+        "quote": "The study population comprised 22,434 men and 38,469 women...The 5-unit BMI difference between vegans and nonvegetarians indicates a substantial potential of vegetarianism to protect against obesity. Increased conformity to vegetarian diets protected against risk of type 2 diabetes after lifestyle characteristics and BMI were taken into account. Pesco- and semi-vegetarian diets afforded intermediate protection."
+    }, {
+        "title": "Vegetarian diets and incidence of diabetes in the Adventist Health Study",
+        "url": "http://www.sciencedirect.com/science/article/pii/S0939475311001700",
+        "year": 2011,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "diabetes",
+        "quote": "Participants were 15,200 men and 26,187 women...who were free of diabetes. ... Vegetarian diets (vegan, lacto ovo, semi-) were associated with a substantial and independent reduction in diabetes incidence. In Blacks the dimension of the protection associated with vegetarian diets was as great as the excess risk associated with Black ethnicity."
+    }, {
+        "title": "Type 2 diabetes and the vegetarian diet.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/12936955",
+        "year": 2003,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "diabetes",
+        "quote": "The vegetarian diet, therefore, contains a portfolio of natural products and food forms of benefit for both the carbohydrate and lipid abnormalities in diabetes. It is anticipated that their combined use in vegetarian diets will produce very significant metabolic advantages for the prevention and treatment of diabetes and its complications."
+    }, {
+        "title": "Effects of Vegetarian Diets on Blood Lipids: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/26508743",
+        "year": 2015,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "diabetes",
+        "quote": "This systematic review and meta-analysis provides evidence that vegetarian diets effectively lower blood concentrations of total cholesterol, low-density lipoprotein cholesterol, high-density lipoprotein cholesterol, and non-high-density lipoprotein cholesterol. Such diets could be a useful nonpharmaceutical means of managing dyslipidemia, especially hypercholesterolemia."
+    }, {
+        "title": "A low-fat vegan diet improves glycemic control and cardiovascular risk factors in a randomized clinical trial in individuals with type 2 diabetes.",
+        "url": "http://care.diabetesjournals.org/content/29/8/1777.long",
+        "year": 2006,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "diabetes",
+        "quote": "Individuals with type 2 diabetes (n = 99) were randomly assigned to a low-fat vegan diet (n = 49) or a diet following the American Diabetes Association (ADA) guidelines (n = 50) ... Both a low-fat vegan diet and a diet based on ADA guidelines improved glycemic and lipid control in type 2 diabetic patients. These improvements were greater with a low-fat vegan diet."
+    }, {
+        "title": "Effect of a Brown Rice Based Vegan Diet and Conventional Diabetic Diet on Glycemic Control of Patients with Type 2 Diabetes: A 12-Week Randomized Clinical Trial.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4890770/",
+        "year": 2016,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "diabetes",
+        "quote": "Although both groups showed significant reductions in HbA1C levels, the reductions were larger in the vegan group than in the conventional group (-0.5% vs. -0.2%; p-for-interaction = 0.017). When only considering participants with high compliance, the difference in HbA1c level reduction between the groups was found to be larger (-0.9% vs. -0.3%). The beneficial effect of vegan diets was noted even after adjusting for changes in total energy intake or waist circumference over the 12 weeks."
+    }, {
+        "title": "Intense Sweetness Surpasses Cocaine Reward",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1931610/",
+        "year": 2007,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "addiction",
+        "quote": "Our findings clearly demonstrate that intense sweetness can surpass cocaine reward, even in drug-sensitized and -addicted [rats]"
+    }, {
+        "title": "From Passive Overeating to “Food Addiction”: A Spectrum of Compulsion and Severity",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3901973/",
+        "year": 2013,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "addiction",
+        "quote": "In conclusion, as we have seen in this review, an increasing number of scientists and clinicians subscribe to the view that compulsive overeating—a quintessentially defining feature of BED—shares pronounced similarities with conventional addictions like substance abuse [60, 211, 240, 241]. Not surprisingly, such discussions have inspired cautious conclusions that some forms of excessive overeating are most appropriately viewed as an addiction disorder"
+    }, {
+        "title": "Binge Eating Disorder and Food Addiction",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3671377/",
+        "year": 2013,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "addiction",
+        "quote": "Binge eating disorder (BED) shares many characteristics with addictive behaviors (e.g., diminished control, continued use despite negative consequences), and a body of scientific literature is building to support addiction conceptualizations of problematic eating. Despite similarities, BED and “food addiction” may represent unique yet overlapping conditions"
+    }, {
+        "title": "Symposium Overview—Food Addiction: Fact or Fiction?",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2714380/",
+        "year": 2009,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "addiction",
+        "quote": "Taken together, the articles from this symposium provide evidence that neurological similarities exist in the response of humans (6) and rats (7,9) to foods and to drugs. Two of the reports (6,7), as well as our own work (14–16), suggest that even highly palatable food is not addictive in and of itself. Rather, it is the manner in which the food is presented (i.e., intermittently) and consumed (i.e., repeated, intermittent “gorging”) that appears to entrain the addiction-like process"
+    }, {
+        "title": "Is food addiction a valid and useful concept?",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3561707/",
+        "year": 2013,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "addiction",
+        "quote": "While our starting point is that any reasonably comprehensive review must conclude that FA is a rough and incomplete descriptive phenomenon that is unsupported by existing evidence, such a perspective represents a starting point rather than a conclusion."
+    }, {
+        "title": "Plant-based foods and prevention of cardiovascular disease: an overview",
+        "url": "http://ajcn.nutrition.org/content/78/3/544S.long",
+        "year": 2003,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "cvd",
+        "quote": "Evidence from prospective cohort studies indicates that a high consumption of plant-based foods such as fruit and vegetables, nuts, and whole grains is associated with a significantly lower risk of coronary artery disease and stroke...Such diets, which also have many other health benefits, deserve more emphasis in dietary recommendations to prevent chronic diseases."
+    }, {
+        "title": "A plant-based diet and coronary artery disease: a mandate for effective therapy",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5466936/",
+        "year": 2017,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "cvd",
+        "quote": "After 12 years, we reviewed the CVD events of our 18 adherent patients. During the eight years prior to entering our study, while in the care of expert cardiologists, they had sustained 49 cardiac events, which was indicative of disease progression. In contrast, 17 of the 18 patients sustained no further events during the 12 years they spent in our study"
+    }, {
+        "title": "A way to reverse CAD?",
+        "url": "http://www.mdedge.com/jfponline/article/83345/cardiology/way-reverse-cad",
+        "year": 2014,
+        "is_meta": false,
+        "availability": "full",
+        "tags": "cvd",
+        "quote": "Of the 198 patients with CVD, 177 (89%) were adherent. Major cardiac events judged to be recurrent disease totaled one stroke in the adherent cardiovascular participants—a recurrent event rate of .6%, significantly less than reported by other studies of plant-based nutrition therapy. Thirteen of 21 (62%) nonadherent participants experienced adverse events."
+    }, {
+        "title": "Diet, lifestyle, and the etiology of coronary artery disease: the Cornell China study.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/9860369",
+        "year": 1998,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "cvd",
+        "quote": "Investigators collected and analyzed mortality data for >50 diseases, including 7 different cancers, from 65 counties and 130 villages in rural mainland China ... The combined coronary artery disease mortality rates for both genders in rural China were inversely associated with the frequency of intake of green vegetables and plasma erythrocyte monounsaturated fatty acids, but positively associated with a combined index of salt intake plus urinary sodium and plasma apolipoprotein B. These apolipoproteins, in turn, are positively associated with animal protein intake and the frequency of meat intake and inversely associated with plant protein, legume, and light-colored vegetable intake."
+    }, {
+        "title": "A Plant-Based Diet, Atherogenesis, and Coronary Artery Disease Prevention",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4315380/",
+        "year": 2015,
+        "is_meta": true,
+        "availability": "abstract",
+        "tags": "cvd",
+        "quote": "We suggest that a shift toward a plant-based diet may confer protective effects against atherosclerotic CAD by increasing endothelial protective factors in the circulation while reducing factors that are injurious to endothelial cells ... This review provides a mechanistic perspective of the evidence for protection by a plant-based diet against atherosclerotic CAD."
+    }, {
+        "title": "Mortality from Circulatory Diseases in Norway 1940-1945",
+        "url": "http://www.sciencedirect.com/science/article/pii/S014067365191210X?_rdoc=1&_fmt=high&_origin=gateway&_docanchor=&md5=b8429449ccfc9c30159a5f9aeaa92ffb&ccp=y",
+        "year": 1951,
+        "is_meta": false,
+        "tags": "cvd",
+        "availability": "abstract",
+        "quote": ""
+    }, {
+        "title": "Hormones in Dairy Foods and Their Impact on Public Health - A Narrative Review Article",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4524299/",
+        "year": 2015,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "milk,cancer",
+        "quote": "The collected data from other researchers and our own data are indicating that the presence of steroid hormones in dairy products could be counted as an important risk factor for various cancers in humans."
+    }, {
+        "title": "Milk intake and risk of mortality and fractures in women and men: cohort studies",
+        "url": "http://www.bmj.com/content/349/bmj.g6015",
+        "year": 2014,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "milk,bones",
+        "quote": "Two large Swedish cohorts, one with 61 433 women (39-74 years at baseline 1987-90) and one with 45 339 men (45-79 years at baseline 1997), were administered food frequency questionnaires ... High milk intake was associated with higher mortality in one cohort of women and in another cohort of men, and with higher fracture incidence in women"
+    }, {
+        "title": "Milk Consumption and Mortality from All Causes, Cardiovascular Disease, and Cancer: A Systematic Review and Meta-Analysis",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4586558/",
+        "year": 2015,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "milk",
+        "quote": "The range of non-fermented and fermented milk consumption and the shape of the associations between milk consumption and mortality differed considerably between studies ...  we observed no consistent association between milk consumption and all-cause or cause-specific mortality."
+    }, {
+        "title": "Case-control study of risk factors for hip fractures in the elderly.",
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/8154473",
+        "year": 1994,
+        "is_meta": false,
+        "availability": "abstract",
+        "tags": "milk,bones",
+        "quote": "There were 416 subjects ... Consumption of dairy products, particularly at age 20 years, was associated with an increased risk of hip fracture in old age."
+    }, {
+        "title": "A Milk Protein, Casein, as a Proliferation Promoting Factor in Prostate Cancer Cells",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4524299/",
+        "year": 2015,
+        "is_meta": true,
+        "availability": "full",
+        "tags": "milk,cancer",
+        "quote": "α-Casein and total casein did not affect the proliferations of RWPE1, HEK293, A459, SNU484, MCF7, HEK293, or RWPE1 cells. However, PC3 cells treated with 1 mg/mL of α-casein and casein showed increased proliferation (228% and 166%, respectively), and the proliferation of LNCaP cells was also enhanced by 134% and 142%, respectively"
+    }
+]
