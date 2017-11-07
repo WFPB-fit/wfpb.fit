@@ -1,0 +1,11 @@
+<h3><%= link_to study.title,study.url %> </h3>
+
+<p>
+    <%= study.year%>, 
+    <%= 'meta-analysis' if study.is_meta %>, 
+    <%= "Availabiility: #{study.availability}" %> 
+</p>
+
+<blockquote>
+    <%= study.quote %> 
+</blockquote>

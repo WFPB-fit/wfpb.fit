@@ -5,6 +5,19 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+#Preprocess JSON data
+#create an easy-to-use hash out of the health studies
+config[:health] = {}
+for study in data.health do
+  tags = study.tags.downcase.split(',') #split up the tags
+  for tag in tags do #add study to the hash under each one of its tags
+    studies = config[:health].fetch(tag,[])
+    studies.push(study)
+    config[:health][tag] = studies
+  end
+end
+print config[:health]
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
@@ -31,11 +44,10 @@ page '/*.txt', layout: false
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
 
-helpers do
-  def some_helper
-    'Helping'
-  end
-end
+# helpers do
+#   def help
+#   end
+# end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
