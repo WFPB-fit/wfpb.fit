@@ -113,13 +113,15 @@
             "name": "70% Lean Beef",
             "sat": 11,
             "poly": 0.7,
-            "mono": 13
+            "mono": 13,
+            "trans":1.8
         },
         {
             "name": "85% Lean Beef",
             "sat": 6,
             "poly": 0.5,
-            "mono": 7
+            "mono": 7,
+            "trans":1.1
         },
         {
             "name": "70% Lean Beef",
@@ -143,7 +145,8 @@
             "name": "Ground Turkey",
             "sat": 2.7,
             "poly": 2.9,
-            "mono": 3.5
+            "mono": 3.5,
+            "trans":0.1
         },
         {
             "name": "Chicken Breast",
@@ -333,7 +336,8 @@
             "name": "Canola",
             "sat": 7,
             "poly": 28,
-            "mono": 63
+            "mono": 63,
+            "trans":0.4
         },
         {
             "name": "Peanut",
