@@ -9,7 +9,7 @@ export default class Study extends Component {
 		arr = arr.map(Study.capitalize);
 		return arr.join(' ');
 	}
-	static capitalize(string){
+	static capitalize(string) {
 		return string.charAt(0).toUpperCase() + string.slice(1);
 	}
 	render() {
@@ -23,7 +23,7 @@ export default class Study extends Component {
 		if (study.is_meta) {
 			studyType = `Meta Analysis`;
 		}
-		let tags = study.tags.split(',').join(', ');
+		let tags = study.tags.join(', ');
 		tags = Study.titleize(tags);
 
 		return (
