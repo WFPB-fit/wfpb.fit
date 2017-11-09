@@ -1,8 +1,8 @@
 import { h, Component } from 'preact';
 import { Router } from 'preact-router';
 
-import Header from './header';
-import Home from '../routes/home';
+import Header from './header/index.jsx';
+import Home from '../routes/home/index.jsx';
 
 export default class App extends Component {
 

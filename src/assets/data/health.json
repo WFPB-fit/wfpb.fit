@@ -337,12 +337,13 @@
         "tags": "overview",
         "quote": "This updated meta-analysis confirms, in a larger number of subjects and studies, the significant and consistent protection provided by adherence to the Mediterranean diet in relation to the occurrence of major chronic degenerative diseases."
     }, {
-        "title": "Food, Nutrition, Physical Activity, and the Prevention of Cancer: a Global Perspective (page 67: grains/cereals. 75: veges, fruits, nuts, seeds, legumes, herbs, spices. 116: meat, poultry, fish, eggs. 129: milk, dairy. 135: Fat, Oil. 141: salty, sugary foods. 157: alcohol)",
+        "title": "Food, Nutrition, Physical Activity, and the Prevention of Cancer: a Global Perspective",
         "url": "http://www.aicr.org/assets/docs/pdf/reports/Second_Expert_Report.pdf",
         "year": 2007,
         "is_meta": true,
         "tags": "cancer",
-        "availability": "full"
+        "availability": "full",
+        "quote":"page 67: grains/cereals. 75: veges, fruits, nuts, seeds, legumes, herbs, spices. 116: meat, poultry, fish, eggs. 129: milk, dairy. 135: Fat, Oil. 141: salty, sugary foods. 157: alcohol"
     }, {
         "title": "Cancer preventive effects of flavonoids—a review",
         "url": "http://www.sciencedirect.com/science/article/pii/S0753332202001865",

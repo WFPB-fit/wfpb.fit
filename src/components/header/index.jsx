@@ -25,12 +25,6 @@ export default class Header extends Component {
 						</Toolbar.Section>
 					</Toolbar.Row>
 				</Toolbar>
-				<Dialog ref={dialog=>{this.dialog=dialog;}}>
-          <Dialog.Header>Settings</Dialog.Header>
-          <Dialog.Footer>
-            <Dialog.FooterButton accept={true}>okay</Dialog.FooterButton>
-          </Dialog.Footer>
-        </Dialog>
 			</div>
 		);
 	}
