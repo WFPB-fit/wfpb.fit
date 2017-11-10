@@ -34,6 +34,31 @@
 			"quote":"The world’s agricultural systems face an uphill struggle in feeding a projected nine to ten billion people by 2050. Climate change introduces a significant hurdle in this struggle."
 		},
 		{
+			"title": "Mitigating the greenhouse gas emissions embodied in food through realistic consumer choices",
+			"url": "http://www.sciencedirect.com/science/article/pii/S0301421513009701",
+			"year": 2013,
+			"is_meta": false,
+			"availability": "abstract",
+			"quote":"[In the UK] By far the largest potential reduction in GHG emissions is achieved by eliminating meat from the diet (35% reduction), followed by changing from carbon-intensive lamb and beef to less carbon-intensive pork and chicken (18% reduction). ... We show how combinations of consumer actions can easily lead to reductions of 25% in food related GHG emissions. If such changes were adopted by the entire UK population this would be equivalent to a 71% reduction in the exhaust pipe emissions of CO2 from the entire UK passenger car fleet (which totalled 71 Mt CO2e year−1 in 2009)."
+		},
+		{
+			"title": "The importance of reduced meat and dairy consumption for meeting stringent climate change targets",
+			"url": "https://link.springer.com/article/10.1007/s10584-014-1104-5",
+			"year": 2014,
+			"is_meta": true,
+			"availability": "full",
+			"quote":"We conclude that reduced ruminant meat and dairy consumption will be indispensable for reaching the 2 °C target with a high probability"
+		},
+		{
+			"title": "Global climate targets and future consumption level: an evaluation of the required GHG intensity",
+			"url": "http://iopscience.iop.org/article/10.1088/1748-9326/8/1/014016/meta",
+			"pdf":"http://iopscience.iop.org/article/10.1088/1748-9326/8/1/014016/pdf",
+			"year": 2013,
+			"is_meta": true,
+			"availability": "full",
+			"quote":"To reach the 2 °C climate target (2.1 tCO2-eq. per capita in 2050), the GHG emission intensity of consumption has to be reduced by a factor of 5 in 2050. ... For animal food and air travel, reaching the GHG intensity targets with product modifications alone will be challenging and therefore structural changes in consumption patterns might be needed."
+		},
+		{
 			"title": "Impacts of Biodiversity Loss on Ocean Ecosystem Services",
 			"url": "https://www3.epa.gov/region1/npdes/schillerstation/pdfs/AR-024.pdf",
 			"year": 2006,
