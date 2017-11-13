@@ -1,4 +1,4 @@
-import { h, Component } from 'preact';
+import React, { Component } from 'react';
 // import style from './style';
 import Study from '../study/index.jsx';
 import FilterTable from '../filterTable/index.jsx';
@@ -44,10 +44,10 @@ export default class Studies extends Component {
 
 		return (
 			<div>
-				<FilterTable
+				{/* <FilterTable
 					research={studies}
 					tags={approvedTags}
-				/>
+				/> */}
 				{studyComponents}
 			</div>
 		);

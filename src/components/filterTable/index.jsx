@@ -1,5 +1,5 @@
-import { h, Component } from 'preact';
-import style from './style';
+import React, { Component } from 'react';
+import style from './style.css';
 import Card from 'preact-material-components/Card';
 
 import Checkbox from 'preact-material-components/Checkbox';
@@ -11,6 +11,8 @@ import LayoutGrid from 'preact-material-components/LayoutGrid';
 import 'preact-material-components/LayoutGrid/style.css';
 import Textfield from 'preact-material-components/Textfield';
 import 'preact-material-components/Textfield/style.css';
+import Select from 'react-select';
+import 'react-select/dist/react-select.css';
 
 export default class FilterTable extends Component {
 	clickCheckbox(event) {
@@ -85,10 +87,27 @@ export default class FilterTable extends Component {
 			</div>
 		);
 
+		let options = [
+			{ value: 'one', label: 'One' },
+			{ value: 'two', label: 'Two' }
+		];
+
+		function logChange(val) {
+			console.log('Selected: ', val);
+		}
+
+
 		return (
 			<div class={style.home}>
 				<Card>
 					<Card.Primary>
+						<Select
+							name="form-field-name"
+							value="one"
+							options={options}
+							onChange={logChange}
+							multi
+						/>
 						<Formfield>
 							<div>
 								<Textfield multiline={false} label="Min Year" />
