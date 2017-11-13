@@ -9,6 +9,8 @@ import Button from 'preact-material-components/Button';
 import 'preact-material-components/Button/style.css';
 import LayoutGrid from 'preact-material-components/LayoutGrid';
 import 'preact-material-components/LayoutGrid/style.css';
+import Textfield from 'preact-material-components/Textfield';
+import 'preact-material-components/Textfield/style.css';
 
 export default class FilterTable extends Component {
 	clickCheckbox(event) {
@@ -47,7 +49,7 @@ export default class FilterTable extends Component {
 	render() {
 		let CheckBoxes = this.props.tags.map((tag) => (
 			//filter out un-approved studies
-			<LayoutGrid.Cell cols="3" key={tag} >
+			<LayoutGrid.Cell cols="3" key={tag} align="middle" >
 				<div style="white-space:nowrap">
 					<Checkbox
 						onChange={this.clickCheckbox}
@@ -88,6 +90,11 @@ export default class FilterTable extends Component {
 				<Card>
 					<Card.Primary>
 						<Formfield>
+							<div>
+								<Textfield multiline={false} label="Min Year" />
+								<Textfield multiline={false} label="Max Year" />
+							</div>
+
 							{CheckBoxes}
 						</Formfield>
 					</Card.Primary>
