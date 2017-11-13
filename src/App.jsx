@@ -8,17 +8,21 @@ import {
 // import './App.css';
 import Header from './components/header/index';
 import Home from './routes/home/index';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 export default class App extends Component {
 
 	render() {
 		return (
-			<div id="app">
-				<Header />
-				<Router onChange={this.handleRoute}>
-					<Route exact path="/" component={Home} />
-				</Router>
-			</div>
+
+			<MuiThemeProvider>
+				<div id="app">
+					<Header />
+					<Router onChange={this.handleRoute}>
+						<Route exact path="/" component={Home} />
+					</Router>
+				</div>
+			</MuiThemeProvider>
 		);
 	}
 	// render() {

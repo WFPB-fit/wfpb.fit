@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Card from 'preact-material-components/Card';
-import 'preact-material-components/Card/style.css';
+import { Card, CardHeader, CardText } from 'material-ui/Card';
 import style from './style.css';
+import styled from 'styled-components';
 
 export default class Study extends Component {
 	static titleize(string) {
@@ -13,6 +13,7 @@ export default class Study extends Component {
 		return string.charAt(0).toUpperCase() + string.slice(1);
 	}
 	render() {
+		console.log(style)
 		const study = this.props.study;
 
 		let pdf = '';
@@ -26,17 +27,23 @@ export default class Study extends Component {
 		let tags = study.tags.join(', ');
 		tags = Study.titleize(tags);
 
+		const title = (<a href={`${study.url}`}>{Study.titleize(study.title)}</a>);
+		const subtitle = `${study.year} - ${Study.titleize(study.availability)} - ${studyType} ${pdf} - ${tags}`
+		const StyledCard = styled(Card) `
+		width:80%;
+		margin:5px auto;
+`;
 		return (
-			<div class={style.home}>
-				<Card>
-					<Card.Primary>
-						<Card.Title><a href={`${study.url}`}>{Study.titleize(study.title)}</a></Card.Title>
-						<Card.Subtitle>{study.year} - {Study.titleize(study.availability)} - {studyType} {pdf} - {tags}</Card.Subtitle>
-					</Card.Primary>
-					<Card.SupportingText>
+			<div className={style.home}>
+				<StyledCard >
+					<CardHeader
+						title={title}
+						subtitle={subtitle}
+					/>
+					<CardText>
 						<blockquote>{study.quote}</blockquote>
-					</Card.SupportingText>
-				</Card>
+					</CardText>
+				</StyledCard>
 			</div>
 		);
 	}

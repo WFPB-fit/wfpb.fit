@@ -1,18 +1,10 @@
 import React, { Component } from 'react';
 import style from './style.css';
-import Card from 'preact-material-components/Card';
-
-import Checkbox from 'preact-material-components/Checkbox';
-import Formfield from 'preact-material-components/Formfield';
-import 'preact-material-components/Checkbox/style.css';
-import Button from 'preact-material-components/Button';
-import 'preact-material-components/Button/style.css';
-import LayoutGrid from 'preact-material-components/LayoutGrid';
-import 'preact-material-components/LayoutGrid/style.css';
-import Textfield from 'preact-material-components/Textfield';
-import 'preact-material-components/Textfield/style.css';
+import { Card, CardActions, CardHeader, CardText } from 'material-ui/Card';
+import FlatButton from 'material-ui/FlatButton';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
+import TextField from 'material-ui/TextField';
 
 export default class FilterTable extends Component {
 	clickCheckbox(event) {
@@ -33,26 +25,39 @@ export default class FilterTable extends Component {
 		this.setState({ checkedTags: tagsCopy });
 	}
 	clearAll() {
-		this.setState({ checkedTags: [] });
+		this.setState({ selectedTags: [] });
 	}
-	addAll() {
-		this.setState({ checkedTags: this.props.tags });
+	addAll(props = this.props) {
+		this.setState({ selectedTags: props.tags });
 	}
-	constructor(props) {
-		super(props);
+	constructor() {
+		super();
 		//bind 'this'
 		this.clickCheckbox = this.clickCheckbox.bind(this);
 		this.addAll = this.addAll.bind(this);
 		this.clearAll = this.clearAll.bind(this);
-
-		//set initial state values
-		this.state.checkedTags = props.tags;
+		this.handleSelectChange = this.handleSelectChange.bind(this);
+    this.state = {
+			value: [],
+			selectedTags:[]
+    };
 	}
+	componentWillReceiveProps(newProps) {
+		this.addAll(newProps);
+	}
+
+	handleSelectChange(value) {
+		console.log(value)
+		this.setState(prevState => ({
+			selectedTags: value
+		}));
+	}
+
 	render() {
 		let CheckBoxes = this.props.tags.map((tag) => (
 			//filter out un-approved studies
-			<LayoutGrid.Cell cols="3" key={tag} align="middle" >
-				<div style="white-space:nowrap">
+			<div key={tag} >
+				{/* <div style="white-space:nowrap">
 					<Checkbox
 						onChange={this.clickCheckbox}
 						id={tag}
@@ -61,29 +66,16 @@ export default class FilterTable extends Component {
 					<label for={tag}>
 						{tag}
 					</label>
-				</div>
-			</LayoutGrid.Cell >
+				</div> */}
+			</div >
 		));
-		CheckBoxes = (<LayoutGrid>
-			<LayoutGrid.Inner>
-				{CheckBoxes}
-			</LayoutGrid.Inner>
-		</LayoutGrid>);
 
 		let Ui = (
 			<div
-				class={style.btn}
+				className={style.btn}
 			>
-				<Button ripple raised
-					onClick={this.addAll}
-				>
-					All
-				</Button>
-				<Button ripple raised
-					onClick={this.clearAll}
-				>
-					None
-				</Button>
+				<FlatButton label="All" onClick={this.addAll} />
+				<FlatButton label="None" onClick={this.clearAll} />
 			</div>
 		);
 
@@ -92,34 +84,35 @@ export default class FilterTable extends Component {
 			{ value: 'two', label: 'Two' }
 		];
 
-		function logChange(val) {
-			console.log('Selected: ', val);
-		}
-
-
 		return (
-			<div class={style.home}>
+			<div className={style.home}>
 				<Card>
-					<Card.Primary>
+					<CardHeader
+						title="Search"
+					/>
+					<CardText>
 						<Select
 							name="form-field-name"
-							value="one"
+							value={this.state.value}
+							onChange={this.handleSelectChange}
 							options={options}
-							onChange={logChange}
+							joinValues
 							multi
 						/>
-						<Formfield>
-							<div>
-								<Textfield multiline={false} label="Min Year" />
-								<Textfield multiline={false} label="Max Year" />
-							</div>
+						<div>
+							<TextField
+								hintText="Min Year"
+							/>
+							<TextField
+								hintText="Max Year"
+							/>
+						</div>
 
-							{CheckBoxes}
-						</Formfield>
-					</Card.Primary>
-					<Card.SupportingText>
+						{CheckBoxes}
+					</CardText>
+					<CardActions>
 						{Ui}
-					</Card.SupportingText>
+					</CardActions>
 				</Card>
 			</div>
 		);

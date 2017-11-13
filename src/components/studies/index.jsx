@@ -44,10 +44,10 @@ export default class Studies extends Component {
 
 		return (
 			<div>
-				{/* <FilterTable
+				<FilterTable
 					research={studies}
 					tags={approvedTags}
-				/> */}
+				/>
 				{studyComponents}
 			</div>
 		);
