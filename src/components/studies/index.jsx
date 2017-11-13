@@ -1,6 +1,7 @@
 import { h, Component } from 'preact';
 // import style from './style';
 import Study from '../study/index.jsx';
+import FilterTable from '../filterTable/index.jsx';
 
 export default class Studies extends Component {
 	static preprocessStudies(studies) {
@@ -12,10 +13,10 @@ export default class Studies extends Component {
 		});
 	}
 
-	static getAllTags(studies){
+	static getAllTags(studies) {
 		let tags = new Set();
-		for (const study of studies){
-			for (const tag of study.tags){
+		for (const study of studies) {
+			for (const tag of study.tags) {
 				tags.add(tag);
 			}
 		}
@@ -27,8 +28,8 @@ export default class Studies extends Component {
 		const approvedTags = Studies.getAllTags(studies);
 		let studyComponents = studies.reduce((allStudies, study) => {
 			//filter out un-approved studies
-			for (const tag of study.tags){
-				if (approvedTags.includes(tag)){
+			for (const tag of study.tags) {
+				if (approvedTags.includes(tag)) {
 					allStudies.push(
 						<Study
 							study={study}
@@ -43,6 +44,10 @@ export default class Studies extends Component {
 
 		return (
 			<div>
+				<FilterTable
+					research={studies}
+					tags={approvedTags}
+				/>
 				{studyComponents}
 			</div>
 		);
