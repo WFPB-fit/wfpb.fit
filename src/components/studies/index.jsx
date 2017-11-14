@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Study from '../study/index.jsx';
-import FilterTable from '../filterTable/index.jsx';
+import Filter from './filter';
+import titleize from '../../utils/titleize';
 
 export default class Studies extends Component {
 	static preprocessStudies(studies) {
@@ -10,6 +11,16 @@ export default class Studies extends Component {
 			study.id = indx;
 			return study;
 		});
+	}
+
+	static convertTagsToSelectValueObject(tags) {
+		let newTags = [];
+		for (const tag of tags) {
+			newTags.push(
+				{ value: tag, label: titleize(tag) }
+			);
+		}
+		return newTags;
 	}
 
 	static getAllTags(studies) {
@@ -22,13 +33,30 @@ export default class Studies extends Component {
 		return Array.from(tags);
 	}
 
-	render() {
+	constructor(props) {
+		super(props);
+
+		//bind this
+		this.filter = this.filter.bind(this);
+
+		//initialize vars
 		let studies = Studies.preprocessStudies(this.props.research);
-		const approvedTags = Studies.getAllTags(studies);
-		let studyComponents = studies.reduce((allStudies, study) => {
+		const allTagsArray = Studies.getAllTags(studies);
+		const selectedTags = Studies.convertTagsToSelectValueObject(allTagsArray);
+		this.state = {
+			studies:studies,
+			allTagsArray:allTagsArray,
+			selectedTags:selectedTags,
+			minYear: 1900,
+			maxYear: (new Date()).getFullYear()
+		};
+	}
+
+	render() {
+		let studyComponents = this.state.studies.reduce((allStudies, study) => {
 			//filter out un-approved studies
 			for (const tag of study.tags) {
-				if (approvedTags.includes(tag)) {
+				if (this.state.allTagsArray.includes(tag)) {
 					allStudies.push(
 						<Study
 							study={study}
@@ -43,9 +71,13 @@ export default class Studies extends Component {
 
 		return (
 			<div>
-				<FilterTable
-					research={studies}
-					tags={approvedTags}
+				<Filter
+					research={this.state.studies}
+					minYear={this.state.minYear}
+					maxYear={this.state.maxYear}
+					selectedTags={this.state.selectedTags}
+					allTags={this.state.selectedTags}
+					filterSubmitted={this.filter}
 				/>
 				{studyComponents}
 			</div>
