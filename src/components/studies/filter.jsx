@@ -8,40 +8,29 @@ import TextField from 'material-ui/TextField';
 
 export default class Filter extends Component {
 	clearAll() {
-		this.setState({selectedTags: []});
+		this.handleSelectChange([]);
 	}
 	addAll() {
-		this.setState({selectedTags: this.props.allTags});
-	}
-	handleSelectChange(value){
-		this.setState({selectedTags:value});
+		this.handleSelectChange(this.props.allTags);
 	}
 
+	//this component needs to handle select state (instead of passing it up like a regular controlled component)
+	//due to quirks of the underlying component code. Pass it up after handling it
+	handleSelectChange(value) {
+		this.setState({ selectedTags: value });
+		this.props.handleSelectChange(value);
+	}
 	constructor(props) {
 		super(props);
 		//bind fucntions to this class
 		this.addAll = this.addAll.bind(this);
 		this.clearAll = this.clearAll.bind(this);
-		this.handleInputChange = this.handleInputChange.bind(this);
 		this.handleSelectChange = this.handleSelectChange.bind(this);
 
 		//initialize vars
 		this.state = {
-			selectedTags: this.props.selectedTags,
-			minYear:this.props.minYear,
-			maxYear:this.props.maxYear
-		}
-	}
-
-	handleInputChange(event) {
-		const target = event.target;
-		const value = target.type === 'checkbox' ? target.checked : target.value;
-		const name = target.name;
-
-		this.setState({
-			[name]: value
-		});
-		console.log(this.state)
+			selectedTags: this.props.selectedTags
+		};
 	}
 
 	render() {
@@ -64,20 +53,20 @@ export default class Filter extends Component {
 							<TextField
 								hintText="Min Year"
 								type="number"
-								defaultValue={this.state.minYear}
-								onChange={this.handleInputChange}
+								defaultValue={this.props.minYear}
+								onChange={this.props.handleMinYearChange}
 							/>
 							<TextField
 								hintText="Max Year"
 								type="number"
-								defaultValue={this.state.maxYear}
-								onChange={this.handleInputChange}
+								defaultValue={this.props.maxYear}
+								onChange={this.props.handleMaxYearChange}
 							/>
 						</div>
 					</CardText>
 					<CardActions>
-						<RaisedButton label="Submit" primary onClick={this.props.filterSubmitted(this.state)} />
-						<FlatButton label="All" onClick={this.addAll} />
+						<RaisedButton label="Submit" primary onClick={this.props.filterSubmitted} />
+						<FlatButton label="All Tags" onClick={this.addAll} />
 						<FlatButton label="None" onClick={this.clearAll} />
 					</CardActions>
 				</Card>
