@@ -7,9 +7,6 @@ import 'react-select/dist/react-select.css';
 import TextField from 'material-ui/TextField';
 
 export default class Filter extends Component {
-	clearAll() {
-		this.handleSelectChange([]);
-	}
 	addAll() {
 		this.handleSelectChange(this.props.allTags);
 	}
@@ -67,7 +64,6 @@ export default class Filter extends Component {
 					<CardActions>
 						<RaisedButton label="Submit" primary onClick={this.props.filterSubmitted} />
 						<FlatButton label="All Tags" onClick={this.addAll} />
-						<FlatButton label="None" onClick={this.clearAll} />
 					</CardActions>
 				</Card>
 			</div>
