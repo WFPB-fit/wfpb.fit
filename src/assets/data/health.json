@@ -69,7 +69,7 @@
 		"year": 1970,
 
 		"availability": "abstract",
-		"tags": "ms",
+		"tags": "multiple sclerosis",
 		"quote": "This study indicated that, in all probability, MS is caused largely by consumption of saturated animal fat."
 	}, {
 		"title": "Effect of low saturated fat diet in early and late cases of multiple sclerosis.",
@@ -77,7 +77,7 @@
 		"year": 1990,
 
 		"availability": "abstract",
-		"tags": "ms",
+		"tags": "multiple sclerosis",
 		"quote": "144 multiple sclerosis patients took a low-fat diet for 34 years ... patients who adhered to the prescribed diet (less than or equal to 20 g fat/day) showed significantly less deterioration and much lower death rates than did those who consumed more fat than prescribed (greater than 20 g fat/day). The greatest benefit was seen in those with minimum disability at the start of the trial; in this group, when those who died from non-MS diseases were excluded from the analysis, 95% survived and remained physically active."
 	},
 	{
@@ -86,7 +86,7 @@
 		"year": 2010,
 		"type": "meta",
 		"availability": "abstract",
-		"tags": "et",
+		"tags": "essential tremor",
 		"quote": "Essential tremor (ET) is a widespread, pre-dominantly late-life neurological disease that affects 4% of individuals aged 40 yr and older, and an estimated 20% or more of individuals in their 90s and older. As such, it is one of the most common neurological diseases."
 	},
 	{
@@ -95,7 +95,7 @@
 		"year": 2012,
 
 		"availability": "full",
-		"tags": "et,pollution",
+		"tags": "essential tremor,pollution",
 		"quote": "Blood harmane concentration was elevated in ET cases compared to controls when re-assessed at a second time point several years later, indicating what seems to be a stable association between this environmental toxin and ET. ... Humans may be exposed to low levels of harmane through a variety of foods, including vegetables and meat, with concentrations in animal protein considered to be among the highest. Harmane and other β-carboline alkaloids are found in particularly high ng/gm concentrations in beef, chicken and pork, and cooking leads to furthermore increased concentrations"
 	},
 	{
@@ -105,7 +105,7 @@
 
 		"availability": "full",
 		"pdf": "https://watermark.silverchair.com/dys137.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAaEwggGdBgkqhkiG9w0BBwagggGOMIIBigIBADCCAYMGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQM-IFN9YxgK8Ib6d4aAgEQgIIBVGGG8gQfNRlQKvxlhNme5Y-D_pnmN_Os14U3KIidxgPnt_6U0yAlypAtiDrmo1P1KWm8xsuT2DxN4_9C_yjxyt-N6sDy9J-97Vq84YFlHDu8fxWXAxg1nIpOgFhVlnezA21LryKNP337e_JW75bg9xFK3DBWC2svufNMmlcLeCDMrtU1rLwaWXFOVaxfLH9vGX4OF59cuhk6bAnM7g_DGzyAvJw5P0rpAY-Ef2dZhNq_Qr-8lPA1urcB3HjBpyuBEZS8_AC4ysRLQQ6f_XpHgpZuCsIXtgB2Xs8OjzI2cz1YYfYCvd-Og-8ST9_Pz1Ts86KQBbICwJ0jpljO-pMfsNDsZty7n2OZGRuR7pXYpBNqQaEBfufuXyntpvjeyHrInRMsF2lbh8VRdH-fXYMEorix0lmylynMdD-uAWuJnCABrJbAtgz4nsFf-hpxYD4TX5pKE1c",
-		"tags": "cvd",
+		"tags": "cardiovascular disease",
 		"quote": "In the African population of Uganda coronary heart disease is almost non-existent ... In the Asian community, on the other hand, coronary heart disease is a major problem. ... [In African population] The staple foods, green plantain and sweet potatoes, are steamed in banana leaves; cassava, yams, maize, and millet are also staple commodities in particular of the non-Baganda groups, while pumpkins, tomatoes, and green leafy vegetables are taken by all. The adequacy of protein in the diet depends almost entirely on the extent to which pulses, groundnuts, and cereals are used. ... [Asian] community is on the whole economically prosperous as compared with the Africans ... [In Hindus] eggs are eaten in small quantities in most families, especially by the men. The Muslim diet differs in that meat, fish, and poultry are taken and eggs are more freely used. ... this particular survey the average estimated quantities of fats taken per person weekly are: 1 lb (454 g) cottonseed oil; ½ – ¾ lb. (230-340 g) ghee; ¼ lb. (114 g) butter; 6–8 pints milk; and 1 oz (30 g) cheese. It is evident that fats and oils provide a large proportion of the total caloric intake."
 	},
 	{
@@ -114,7 +114,7 @@
 		"year": 2010,
 
 		"availability": "full",
-		"tags": "et,pollution",
+		"tags": "essential tremor,pollution",
 		"quote": "Blood harmane and lead concentrations separately correlated with total tremor scores. Participants with high blood concentrations of both toxicants had the highest tremor scores, suggesting an additive effect of these toxicants on tremor severity. ... Several other correlations were noted, including an association between daily animal protein consumption and blood harmane concentrations"
 	},
 	{
@@ -132,7 +132,7 @@
 		"year": 2001,
 		"type": "meta",
 		"availability": "abstract",
-		"tags": "cvd",
+		"tags": "cardiovascular disease",
 		"quote": "The world's advanced countries have easy access to plentiful high-fat food; ironically, it is this rich diet that produces atherosclerosis. In the world's poorer nations, many people subsist on a primarily plant-based diet, which is far healthier, especially in terms of heart disease. ... compelling data from nutritional studies, population surveys, and interventional studies support the effectiveness of a plant-based diet and aggressive lipid lowering to arrest, prevent, and selectively reverse heart disease. In essence, this is an offensive strategy."
 	},
 	{
@@ -141,7 +141,7 @@
 		"year": 2008,
 
 		"availability": "full",
-		"tags": "et,pollution",
+		"tags": "essential tremor,pollution",
 		"quote": "In an adjusted logistic regression analysis in males, higher total current meat consumption was associated with ET (OR = 1.006, p = 0.04, i.e., with 10 additional g/day of meat, odds of ET increased by 6%). Male cases had higher odds of being in the highest than lowest quartile of total current meat consumption (adjusted OR = 21.36, p = 0.001). "
 	},
 	{
@@ -150,7 +150,7 @@
 		"year": 2007,
 
 		"availability": "full",
-		"tags": "et,pollution",
+		"tags": "essential tremor,pollution",
 		"quote": "Mean (± SD) harmane concentration was 5.63 (± 6.63) ng/g; harmane concentration was highest in chicken (8.48 ± 9.86 ng/g) and lowest in beef steak (3.80 ± 3.6 ng/g). Harmane concentration was higher than that of the other HCAs and significantly correlated with PhIP concentration ... There was some correlation between meat doneness and harmane concentration, although this correlation was less robust than that observed for PhIP. "
 	},
 	{
@@ -159,7 +159,7 @@
 		"year": 2012,
 
 		"availability": "full",
-		"tags": "et,pollution",
+		"tags": "essential tremor,pollution",
 		"quote": "Blood harmane concentration was elevated in ET cases compared to controls when re-assessed at a second time point several years later, indicating what seems to be a stable association between this environmental toxin and ET. ... Humans may be exposed to low levels of harmane through a variety of foods, including vegetables and meat, with concentrations in animal protein considered to be among the highest. Harmane and other β-carboline alkaloids are found in particularly high ng/gm concentrations in beef, chicken and pork, and cooking leads to furthermore increased concentrations"
 	}, {
 		"title": "Lavender essential oil in the treatment of migraine headache: a placebo-controlled clinical trial.",
@@ -287,7 +287,7 @@
 		"year": 2011,
 		"type": "meta",
 		"availability": "abstract",
-		"tags": "ms",
+		"tags": "multiple sclerosis",
 		"quote": "Present data reveal that healthy dietary molecules have a pleiotropic role and are able to change cell metabolism from anabolism to catabolism and down-regulate inflammation by interacting with enzymes, nuclear receptors and transcriptional factors. The control of gut dysbiosis and the combination of hypo-caloric, low-fat diets with specific vitamins, oligoelements and dietary integrators, including fish oil and polyphenols, may slow-down the progression of the disease and ameliorate the wellness of MS patients."
 	}, {
 		"title": "Nutritional Update for Physicians: Plant-Based Diets",
@@ -608,7 +608,7 @@
 		"type": "meta",
 		"availability": "abstract",
 		"tags": "ibd",
-		"quote": "The present meta-analysis supports the efficacy of a low FODMAP diet in the treatment of functional gastrointestinal symptoms"
+		"quote": "The present meta-analysis supports the efficacy of a low FODMAP diet in the treatment of functional gastrointestinal symptomultiple sclerosis"
 	}, {
 		"title": "Diet and Inflammatory Bowel Disease",
 		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4843040/",
@@ -775,7 +775,7 @@
 		"year": 1974,
 		"type": "meta",
 		"availability": "abstract",
-		"tags": "ms",
+		"tags": "multiple sclerosis",
 		"quote": "Prevalence of MS in many countries was correlated with average daily per capita consumption of fats and oils, protein, and calories, including calories of animal origin. Of these dietary factors, only calories of animal origin and fats and oils correlated significantly with MS prevalence. When the latter two were combined (animal-fats), a significant correlation with MS prevalence of.70 resulted, suggesting that increased consumption of animal-fat may be associated with MS."
 	}, {
 		"title": "Nutrition Facts in Multiple Sclerosis",
@@ -783,7 +783,7 @@
 		"year": 2015,
 		"type": "meta",
 		"availability": "full",
-		"tags": "ms",
+		"tags": "multiple sclerosis",
 		"quote": "Here we show that dietary factors and lifestyle may exacerbate or ameliorate MS symptoms by modulating the inflammatory status ... What increases inflammation are hypercaloric Western-style diets, characterized by high salt, animal fat, red meat, sugar-sweetened drinks, fried food, low fiber, and lack of physical exercise. The persistence of this type of diet upregulates the metabolism of human cells toward biosynthetic pathways including those of proinflammatory molecules and also leads to a dysbiotic gut microbiota, alteration of intestinal immunity, and low-grade systemic inflammation. Conversely, exercise and low-calorie diets based on the assumption of vegetables, fruit, legumes, fish, prebiotics, and probiotics act on nuclear receptors and enzymes that upregulate oxidative metabolism, downregulate the synthesis of proinflammatory molecules, and restore or maintain a healthy symbiotic gut microbiota."
 	}, {
 		"title": "Complementary and alternative medicine for the treatment of multiple sclerosis",
@@ -791,7 +791,7 @@
 		"year": 2008,
 		"type": "meta",
 		"availability": "full",
-		"tags": "ms",
+		"tags": "multiple sclerosis",
 		"quote": "Surveys suggest that up to 70% of people with MS have tried one or more CAM treatment for their MS ... The most promising among CAM therapies that warrant further investigation are a low-fat diet, omega-3 fatty acids, lipoic acid and vitamin D supplementation as potential anti-inflammatory and neuroprotective agents"
 	}, {
 		"title": "Milk Intake and Total Dairy Consumption: Associations with Early Menarche in NHANES 1999-2004",
@@ -1201,7 +1201,7 @@
 		"year": 2003,
 		"type": "meta",
 		"availability": "full",
-		"tags": "cvd",
+		"tags": "cardiovascular disease",
 		"quote": "Evidence from prospective cohort studies indicates that a high consumption of plant-based foods such as fruit and vegetables, nuts, and whole grains is associated with a significantly lower risk of coronary artery disease and stroke...Such diets, which also have many other health benefits, deserve more emphasis in dietary recommendations to prevent chronic diseases."
 	}, {
 		"title": "A plant-based diet and coronary artery disease: a mandate for effective therapy",
@@ -1209,7 +1209,7 @@
 		"year": 2017,
 
 		"availability": "full",
-		"tags": "cvd",
+		"tags": "cardiovascular disease",
 		"quote": "After 12 years, we reviewed the CVD events of our 18 adherent patients. During the eight years prior to entering our study, while in the care of expert cardiologists, they had sustained 49 cardiac events, which was indicative of disease progression. In contrast, 17 of the 18 patients sustained no further events during the 12 years they spent in our study"
 	}, {
 		"title": "A way to reverse CAD?",
@@ -1217,7 +1217,7 @@
 		"year": 2014,
 
 		"availability": "full",
-		"tags": "cvd",
+		"tags": "cardiovascular disease",
 		"quote": "Of the 198 patients with CVD, 177 (89%) were adherent. Major cardiac events judged to be recurrent disease totaled one stroke in the adherent cardiovascular participants—a recurrent event rate of .6%, significantly less than reported by other studies of plant-based nutrition therapy. Thirteen of 21 (62%) nonadherent participants experienced adverse events."
 	}, {
 		"title": "Diet, lifestyle, and the etiology of coronary artery disease: the Cornell China study.",
@@ -1225,7 +1225,7 @@
 		"year": 1998,
 
 		"availability": "abstract",
-		"tags": "cvd",
+		"tags": "cardiovascular disease",
 		"quote": "Investigators collected and analyzed mortality data for >50 diseases, including 7 different cancers, from 65 counties and 130 villages in rural mainland China ... The combined coronary artery disease mortality rates for both genders in rural China were inversely associated with the frequency of intake of green vegetables and plasma erythrocyte monounsaturated fatty acids, but positively associated with a combined index of salt intake plus urinary sodium and plasma apolipoprotein B. These apolipoproteins, in turn, are positively associated with animal protein intake and the frequency of meat intake and inversely associated with plant protein, legume, and light-colored vegetable intake."
 	}, {
 		"title": "A Plant-Based Diet, Atherogenesis, and Coronary Artery Disease Prevention",
@@ -1233,14 +1233,14 @@
 		"year": 2015,
 		"type": "meta",
 		"availability": "abstract",
-		"tags": "cvd",
+		"tags": "cardiovascular disease",
 		"quote": "We suggest that a shift toward a plant-based diet may confer protective effects against atherosclerotic CAD by increasing endothelial protective factors in the circulation while reducing factors that are injurious to endothelial cells ... This review provides a mechanistic perspective of the evidence for protection by a plant-based diet against atherosclerotic CAD."
 	}, {
 		"title": "Mortality from Circulatory Diseases in Norway 1940-1945",
 		"url": "http://www.sciencedirect.com/science/article/pii/S014067365191210X?_rdoc=1&_fmt=high&_origin=gateway&_docanchor=&md5=b8429449ccfc9c30159a5f9aeaa92ffb&ccp=y",
 		"year": 1951,
 
-		"tags": "cvd",
+		"tags": "cardiovascular disease",
 		"availability": "abstract",
 		"quote": ""
 	}, {

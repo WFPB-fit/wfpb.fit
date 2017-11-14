@@ -4,24 +4,16 @@ import Filter from './filter';
 import titleize from '../../utils/titleize';
 
 export default class Studies extends Component {
-	static preprocessStudies(studies) {
-		return studies.map((study, indx) => {
-			let tags = study.tags;
-			study.tags = tags.split(',');
-			study.id = indx;
-			return study;
-		});
+	static convertTagsToSelectValueObject(tags) {
+		let newTags = [];
+		for (const tag of tags) {
+			newTags.push(
+				{ value: tag, label: titleize(tag) }
+			);
+		}
+		return newTags;
 	}
 
-	// static convertTagsToSelectValueObject(tags) {
-	// 	let newTags = [];
-	// 	for (const tag of tags) {
-	// 		newTags.push(
-	// 			{ value: tag, label: titleize(tag) }
-	// 		);
-	// 	}
-	// 	return newTags;
-	// }
 	static selectableTagsToArray(selectable) {
 		let tags = [];
 		for (const option of selectable) {
@@ -30,21 +22,26 @@ export default class Studies extends Component {
 		return tags;
 	}
 
-	static getAllSelectableTags(studies) {
-		let uniqueTags = new Set();
-		for (const study of studies) {
-			for (const tag of study.tags) {
-				uniqueTags.add(tag);
-			}
-		}
-		let tags = [];
-		for (const tag of uniqueTags) {
-			tags.push(
-				{ value: tag, label: titleize(tag) }
-			);
-		}
-		return tags;
+	static numCommonElements(arr1, arr2) {
+		const intersect = arr1.filter(x => arr2.includes(x));//[...set1].filter(x=> set2.has(x));
+		return intersect.length;
 	}
+
+	// static getAllSelectableTags(studies) {
+	// 	let uniqueTags = new Set();
+	// 	for (const study of studies) {
+	// 		for (const tag of study.tags) {
+	// 			uniqueTags.add(tag);
+	// 		}
+	// 	}
+	// 	let tags = [];
+	// 	for (const tag of uniqueTags) {
+	// 		tags.push(
+	// 			{ value: tag, label: titleize(tag) }
+	// 		);
+	// 	}
+	// 	return tags;
+	// }
 
 	submitFilters() {
 		let stateCopy = Object.assign({}, this.state);
@@ -54,10 +51,10 @@ export default class Studies extends Component {
 	}
 
 	handleMinYearChange(event) {
-		this.inputFilters.minYear = parseInt(event.target.value,10);
+		this.inputFilters.minYear = parseInt(event.target.value, 10);
 	}
 	handleMaxYearChange(event) {
-		this.inputFilters.maxYear = parseInt(event.target.value,10);
+		this.inputFilters.maxYear = parseInt(event.target.value, 10);
 	}
 
 	handleSelectChange(value) {
@@ -75,8 +72,11 @@ export default class Studies extends Component {
 		// this.filterStudy = this.filterStudy.bind(this);
 
 		//initialize vars
-		let studies = Studies.preprocessStudies(this.props.research);
-		this.selectableTags = Studies.getAllSelectableTags(studies);
+		let studies = (this.props.research).filter(study => {
+			return Studies.numCommonElements(study.tags, props.tags) > 0;
+		});
+
+		this.selectableTags = Studies.convertTagsToSelectValueObject(this.props.tags);//Studies.getAllSelectableTags(studies);
 		this.state = {
 			studies: studies,
 			selectedTags: this.selectableTags,
@@ -94,23 +94,19 @@ export default class Studies extends Component {
 		//filter out un-wanted studies
 		const selectedTags = Studies.selectableTagsToArray(this.state.selectedTags);
 		let studies = this.state.studies.filter((study) => {
-			let studyTagIncluded = false;
-			for (const tag of study.tags) {
-				studyTagIncluded = selectedTags.includes(tag);
-				if (studyTagIncluded) break;
-			}
+			let studyTagIncluded = Studies.numCommonElements(study.tags, selectedTags) > 0;
 			const properYear = study.year <= this.state.maxYear && study.year >= this.state.minYear;
 			return studyTagIncluded && properYear;
 		});
 		//sort studies by strength
 		const studyTypeScore = {
-			'report':3,
-			'meta':2
+			'report': 3,
+			'meta': 2
 		}
-		studies.sort((a,b)=>{
+		studies.sort((a, b) => {
 			const aVal = studyTypeScore[a.type] || 1;
 			const bVal = studyTypeScore[b.type] || 1;
-			return bVal-aVal || b.year - a.year;
+			return bVal - aVal || b.year - a.year;
 		});
 		//create components from studies
 		let studyComponents = studies.map((x) =>
