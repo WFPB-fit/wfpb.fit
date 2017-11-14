@@ -3,40 +3,39 @@ import {
 	BrowserRouter as Router,
 	Route
 } from 'react-router-dom';
-
-// import logo from './logo.svg';
-// import './App.css';
 import Header from './components/header/index';
-import Home from './routes/home/index';
+import Home from './routes/home';
+import Externalities from './routes/externalities';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import studies from './assets/data/studies.json';
 
 export default class App extends Component {
+	static preprocessStudies(studies) {
+		return studies.map((study, indx) => {
+			study.tags = study.tags.split(',');
+			study.id = indx;
+			return study;
+		});
+	}
+	constructor(props) {
+		super(props);
+		window.globalAppData = {}; //too small of an App to require Redux
+		window.globalAppData.studies = App.preprocessStudies(studies);
+	}
 
 	render() {
 		return (
-
 			<MuiThemeProvider>
 				<div id="app">
 					<Header />
-					<Router onChange={this.handleRoute}>
-						<Route exact path="/" component={Home} />
+					<Router >
+						<div>
+							<Route exact path="/" component={Home} />
+							<Route exact path="/externalities" component={Externalities} />
+						</div>
 					</Router>
 				</div>
 			</MuiThemeProvider>
 		);
 	}
-	// render() {
-	//   return (
-	//     <div className="App">
-	//       <header className="App-header">
-	//         <img src={logo} className="App-logo" alt="logo" />
-	//         <h1 className="App-title">Welcome to React</h1>
-	//       </header>
-	//       <p className="App-intro">
-	//         To get started, edit <code>src/App.js</code> and save to reload.
-	//       </p>
-	//     </div>
-	//   );
-	// }
 }
-

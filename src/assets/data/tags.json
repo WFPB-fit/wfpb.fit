@@ -1,5 +1,6 @@
 {
-	"disease": ["pollution", "bones", "overview", "cancer", "multiple sclerosis", "essential tremor", " cardiovascular disease", " teeth", " migraine", " inflammation", " autoimmune", " arthritis", "inflammatory bowel disease", "weight", "allergy", "puberty", "lupus", "cognition", "dementia", "mental health", "diabetes", "addition"],
+	"disease": ["pollution", "bones", "plant-based diet", "cancer", "multiple sclerosis", "essential tremor", " cardiovascular disease", " teeth", " migraine", " inflammation", " autoimmune", " arthritis", "inflammatory bowel disease", "weight", "allergy", "puberty", "lupus", "cognition", "dementia", "mental health", "diabetes", "addition"],
 	"food": ["milk", "flaxseed", "plants"],
-	"nutrients": ["calcium", "ala", "vitamin a","fat","trans fat"]
+	"nutrients": ["calcium", "ala", "vitamin a","fat","trans fat"],
+	"environment":["climate", "deforestation", "meat production", "agriculture", "ocean", "biodiversity"]
 }

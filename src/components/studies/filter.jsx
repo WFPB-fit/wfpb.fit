@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card,CardTitle, CardActions, CardText } from 'material-ui/Card';
+import { Card, CardTitle, CardActions, CardText } from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import RaisedButton from 'material-ui/RaisedButton';
 import Select from 'react-select';
@@ -33,9 +33,9 @@ export default class Filter extends Component {
 		return (
 			<div>
 				<Card>
-						<CardTitle
-							title="Search"
-						/>
+					<CardTitle
+						title="Search"
+					/>
 					<CardText>
 						<Select
 							name="form-field-name"
@@ -45,6 +45,8 @@ export default class Filter extends Component {
 							joinValues
 							multi
 						/>
+						<FlatButton label="All Tags" onClick={this.addAll} />
+
 						<div>
 							<h3>Years </h3>
 							<TextField
@@ -66,7 +68,6 @@ export default class Filter extends Component {
 					</CardText>
 					<CardActions>
 						<RaisedButton label="Submit" primary onClick={this.props.filterSubmitted} />
-						<FlatButton label="All Tags" onClick={this.addAll} />
 					</CardActions>
 				</Card>
 			</div>
