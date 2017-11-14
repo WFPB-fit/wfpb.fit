@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import style from './style';
 import Study from '../study/index.jsx';
 import FilterTable from '../filterTable/index.jsx';
 

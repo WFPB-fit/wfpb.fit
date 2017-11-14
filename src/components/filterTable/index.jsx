@@ -1,91 +1,58 @@
 import React, { Component } from 'react';
-import style from './style.css';
 import { Card, CardActions, CardHeader, CardText } from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
 import TextField from 'material-ui/TextField';
+import titleize from '../../utils/titleize';
+// import titleize from '../../utils/titleize'
 
 export default class FilterTable extends Component {
-	clickCheckbox(event) {
-		const cb = event.target;
-		const checked = cb.checked;
-		const tag = cb.id;
-		let tagsCopy = Object.assign({}, this.state.checkedTags);
-		const tagIncludedInState = this.state.checkedTags.includes(tag);
-
-		// add tag if needed
-		if (tagIncludedInState && !checked) {
-			tagsCopy.add(tag);
+	static convertTagsToSelectValueObject(tags){
+		let newTags = [];
+		for (const tag of tags){
+			newTags.push(
+				{ value: tag, label: titleize(tag) }
+			);
 		}
-		else if (!tagIncludedInState && checked) {
-			tagsCopy.delete(tag);
-		}
-
-		this.setState({ checkedTags: tagsCopy });
+		return newTags;
 	}
+
 	clearAll() {
 		this.setState({ selectedTags: [] });
 	}
-	addAll(props = this.props) {
-		this.setState({ selectedTags: props.tags });
+	addAll() {
+		const tags = FilterTable.convertTagsToSelectValueObject(this.props.tags)
+		this.setState({ selectedTags: tags });
 	}
-	constructor() {
-		super();
-		//bind 'this'
-		this.clickCheckbox = this.clickCheckbox.bind(this);
+	constructor(props) {
+		super(props);
+		//bind fucntions to this class
 		this.addAll = this.addAll.bind(this);
 		this.clearAll = this.clearAll.bind(this);
 		this.handleSelectChange = this.handleSelectChange.bind(this);
+
+		//initialize vars
     this.state = {
 			value: [],
-			selectedTags:[]
-    };
-	}
-	componentWillReceiveProps(newProps) {
-		this.addAll(newProps);
+			selectedTags:FilterTable.convertTagsToSelectValueObject(props.tags)
+		};
 	}
 
 	handleSelectChange(value) {
-		console.log(value)
-		this.setState(prevState => ({
-			selectedTags: value
-		}));
+		this.setState({selectedTags: value})
 	}
 
 	render() {
-		let CheckBoxes = this.props.tags.map((tag) => (
-			//filter out un-approved studies
-			<div key={tag} >
-				{/* <div style="white-space:nowrap">
-					<Checkbox
-						onChange={this.clickCheckbox}
-						id={tag}
-						checked={this.state.checkedTags.includes(tag)}
-					/>
-					<label for={tag}>
-						{tag}
-					</label>
-				</div> */}
-			</div >
-		));
-
 		let Ui = (
-			<div
-				className={style.btn}
-			>
+			<div>
 				<FlatButton label="All" onClick={this.addAll} />
 				<FlatButton label="None" onClick={this.clearAll} />
 			</div>
 		);
 
-		let options = [
-			{ value: 'one', label: 'One' },
-			{ value: 'two', label: 'Two' }
-		];
-
 		return (
-			<div className={style.home}>
+			<div>
 				<Card>
 					<CardHeader
 						title="Search"
@@ -93,9 +60,9 @@ export default class FilterTable extends Component {
 					<CardText>
 						<Select
 							name="form-field-name"
-							value={this.state.value}
+							value={this.state.selectedTags}
 							onChange={this.handleSelectChange}
-							options={options}
+							options={FilterTable.convertTagsToSelectValueObject(this.props.tags)}
 							joinValues
 							multi
 						/>
@@ -107,8 +74,6 @@ export default class FilterTable extends Component {
 								hintText="Max Year"
 							/>
 						</div>
-
-						{CheckBoxes}
 					</CardText>
 					<CardActions>
 						{Ui}
