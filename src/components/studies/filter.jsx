@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardActions, CardHeader, CardText } from 'material-ui/Card';
+import { Card,CardTitle, CardActions, CardText } from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import RaisedButton from 'material-ui/RaisedButton';
 import Select from 'react-select';
@@ -33,9 +33,9 @@ export default class Filter extends Component {
 		return (
 			<div>
 				<Card>
-					<CardHeader
-						title="Search"
-					/>
+						<CardTitle
+							title="Search"
+						/>
 					<CardText>
 						<Select
 							name="form-field-name"
@@ -46,12 +46,16 @@ export default class Filter extends Component {
 							multi
 						/>
 						<div>
+							<h3>Years </h3>
 							<TextField
 								hintText="Min Year"
 								type="number"
 								defaultValue={this.props.minYear}
 								onChange={this.props.handleMinYearChange}
 							/>
+
+							<span> - </span>
+
 							<TextField
 								hintText="Max Year"
 								type="number"
