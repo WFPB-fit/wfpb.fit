@@ -21,7 +21,6 @@ export default class Filter extends Component {
 		super(props);
 		//bind fucntions to this class
 		this.addAll = this.addAll.bind(this);
-		this.clearAll = this.clearAll.bind(this);
 		this.handleSelectChange = this.handleSelectChange.bind(this);
 
 		//initialize vars

@@ -102,6 +102,16 @@ export default class Studies extends Component {
 			const properYear = study.year <= this.state.maxYear && study.year >= this.state.minYear;
 			return studyTagIncluded && properYear;
 		});
+		//sort studies by strength
+		const studyTypeScore = {
+			'report':3,
+			'meta':2
+		}
+		studies.sort((a,b)=>{
+			const aVal = studyTypeScore[a.type] || 1;
+			const bVal = studyTypeScore[b.type] || 1;
+			return bVal-aVal || b.year - a.year;
+		});
 		//create components from studies
 		let studyComponents = studies.map((x) =>
 			(

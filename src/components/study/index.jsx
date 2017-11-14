@@ -8,18 +8,17 @@ export default class Study extends Component {
 		const study = this.props.study;
 
 		let pdf = '';
+		let pdfPrefix = '';
 		if (study.pdf) {
-			pdf = `- <a href=${study.url}>PDF</a>`;
+			pdf = <a href={study.pdf}>PDF</a>
+			pdfPrefix = '- ';
 		}
-		let studyType = 'Study';
-		if (study.is_meta) {
-			studyType = `Meta Analysis`;
-		}
+		let studyType = titleize(study.type || 'Study');
 		let tags = study.tags.join(', ');
 		tags = titleize(tags);
 
 		const title = (<a href={`${study.url}`}>{titleize(study.title)}</a>);
-		const subtitle = `${study.year} - ${titleize(study.availability)} - ${studyType} ${pdf} - ${tags}`
+		const subtitle = <span>{study.year} - { titleize(study.availability)} - {studyType} {pdfPrefix}{pdf} - {tags}</span>
 		const StyledCard = styled(Card) `
 		width:80%;
 		margin:5px auto;
