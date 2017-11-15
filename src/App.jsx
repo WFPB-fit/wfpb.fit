@@ -4,7 +4,7 @@ import {
 	Route, Switch
 } from 'react-router-dom';
 import Header from './components/header/index';
-import Home from './routes/home';
+import Health from './routes/health';
 import Externalities from './routes/externalities';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import studies from './assets/data/studies.json';
@@ -31,7 +31,7 @@ export default class App extends Component {
 						<div>
 							<Header />
 							<Switch>
-								<Route exact path="/" component={Home} />
+								<Route path="/health" component={Health} />
 								<Route path="/externalities" component={Externalities} />
 							</Switch>
 						</div>
