@@ -39,7 +39,7 @@ export default class Header extends Component {
 		return (
 			<div>
 				<AppBar
-					title="Title"
+					title={window.globalAppData.appName}
 					// onTitleTouchTap={handleTouchTap}
 					onLeftIconButtonTouchTap={this.toggleDrawer}
 				/>
@@ -47,6 +47,12 @@ export default class Header extends Component {
 					docked={false}
 					onRequestChange={(drawerOpen) => this.setState({ drawerOpen })}
 					open={this.state.drawerOpen}>
+					<AppBar
+						showMenuIconButton={false}
+						title={window.globalAppData.appName}
+						// onTitleTouchTap={handleTouchTap}
+						onLeftIconButtonTouchTap={this.toggleDrawer}
+					/>
 					<Menu>
 						<NoScrollMI
 							containerElement={<Link to="/" />}

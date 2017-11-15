@@ -9,6 +9,10 @@ export default class Resource extends Component {
 		if (resource.pdf) pdf = <a href={resource.pdf}>PDF</a>;
 		return pdf;
 	}
+	static youtubeID(url) {
+		let vIndex = url.indexOf('v=');
+		return url.substring(vIndex + 2);
+	}
 	static getAvailability(resource) {
 		let av = null;
 		if (resource.availability) av = titleize(resource.availability);
@@ -29,12 +33,26 @@ export default class Resource extends Component {
 		}
 		return rating;
 	}
+	static getEmbeddedYoutubeCode(url) {
+		if (url.indexOf('youtube.com') < 0) {
+			return null;
+		}
+		// const id = Resource.youtubeID(url);
+		// const StyledFrame = styled.iframe`
+		// width:100%;
+		// max-width:420px;
+		// height:240px;
+		// display:block;
+		// margin:5px auto;
+		// `;
+		// return <StyledFrame src={`https://www.youtube.com/embed/${id}`} />
+		return null;
+	}
 	static getTags(resource) {
 		return titleize(resource.tags.join(', '));
 	}
 	render() {
 		const resource = this.props.resource;
-console.log(resource)
 		const pdf = Resource.getPdf(resource);
 		const availability = Resource.getAvailability(resource);
 		const type = Resource.getType(resource);
@@ -43,13 +61,14 @@ console.log(resource)
 		const title = (<a href={`${resource.url}`}>{titleize(resource.title)}</a>);
 		const metaData = [resource.year, rating, availability, type, pdf, tags]
 			.filter((el) => el) //filter out falsy values like null
-			.map(t => <span>{t}</span>) //wrap everything in a span
+			.map((t, i) => <span key={i} >{t}</span>) //wrap everything in a span
 			.reduce((prev, curr) => [prev, ' - ', curr]); //add delimiter
 
+		const youtubeCode = Resource.getEmbeddedYoutubeCode(resource.url);
 		const StyledCard = styled(Card) `
 		width:80%;
 		margin:5px auto;
-`;
+		`;
 		return (
 			<StyledCard >
 				<CardHeader
@@ -58,6 +77,7 @@ console.log(resource)
 				/>
 				<CardText>
 					<blockquote>{resource.quote || resource.summary}</blockquote>
+					{youtubeCode}
 				</CardText>
 			</StyledCard>
 		);

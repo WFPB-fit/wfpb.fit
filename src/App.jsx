@@ -26,6 +26,7 @@ export default class App extends Component {
 
 		//simple global data container
 		window.globalAppData = {
+			appName: 'Plant-Based Diet',
 			studies: App.preprocessResources(studyData),
 			learnMore: {
 				documentaries: App.preprocessResources(learnMoreData.documentaries),
@@ -33,6 +34,7 @@ export default class App extends Component {
 				books: App.preprocessResources(learnMoreData.books),
 			}
 		};
+		document.title = window.globalAppData.appName;
 	}
 
 	render() {
