@@ -321,7 +321,23 @@
 		"availability": "full",
 		"tags": "physicians",
 		"quote": "Most schools (103/109) required some form of nutrition education. Of the 105 schools answering questions about courses and contact hours, only 26 (25%) required a dedicated nutrition course; in 2004, 32 (30%) of 106 schools did. Overall, medical students received 19.6 contact hours of nutrition instruction during their medical school careers (range: 0–70 hours); the average in 2004 was 22.3 hours. Only 28 (27%) of the 105 schools met the minimum 25 required hours set by the National Academy of Sciences; in 2004, 40 (38%) of 104 schools did so."
-	}, {
+	},{
+		"title": "Fattening Fasting: Hungry Grocery Shoppers Buy More Calories, Not More Food",
+		"url": "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/1685889",
+		"year": 2013,
+		"type": "study",
+		"availability": "full",
+		"tags": "taste",
+		"quote":"hungry laboratory participants chose a higher number of higher-calorie products [t66 = 2.02; P = .05], but there were no differences between conditions in the number of lower-calorie choices (P > .50) and the total number of food items they selected was similar (P = .10). This same trend was found across individual product categories "
+		},{
+		"title": "Pre-sliced fruit in school cafeterias: children's selection and intake.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/23597811",
+		"year": 2013,
+		"type": "study",
+		"availability": "abstract",
+		"tags": "taste",
+		"quote":"Schools that used fruit slicers to pre-slice fruit increased average daily apple sales by 71% compared to control schools (p<0.01). The percentage of students who selected apples and ate more than half increased by 73% (p=0.02) at schools that served pre-sliced fruit, and the percentage that wasted half or more decreased by 48% (p=0.03)."
+		}, {
 		"title": "Physician Nutrition Education",
 		"url": "http://journals.sagepub.com/doi/abs/10.1177/0884533614525212",
 		"year": 2010,
