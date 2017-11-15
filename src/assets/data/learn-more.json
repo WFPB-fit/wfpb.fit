@@ -1,0 +1,474 @@
+{
+	"documentaries": [{
+			"title": "Eating You Alive",
+			"url": "https://www.eatingyoualive.com/",
+			"year": 2016,
+			"rating": 8.7,
+			"tags": "health",
+			"summary": "The connection between American dietary habits and the rise of chronic diseases."
+		},
+		{
+			"title": "Fat, Sick and Nearly Dead",
+			"url": "https://www.fatsickandnearlydead.com/",
+			"year": 2010,
+			"rating": 7.6,
+			"tags": "health",
+			"summary": "Morbidly obese and stricken with an autoimmune disease, a man endeavors to drink only fruit and vegetable juice for 60 days in an effort to lose weight and reclaim his health."
+		},
+		{
+			"title": "Food, Inc.",
+			"url": "https://en.wikipedia.org/wiki/Food,_Inc.",
+			"year": 2008,
+			"rating": 7.8,
+			"tags": "agribusiness,environment",
+			"summary": "Morbidly obese and stricken with an autoimmune disease, a man endeavors to drink only fruit and vegetable juice for 60 days in an effort to lose weight and reclaim his health."
+		},
+		{
+			"title": "Simply Raw: Reversing Diabetes in 30 Days",
+			"url": "https://www.youtube.com/watch?v=2pjkC71exKU",
+			"year": 2009,
+			"rating": 7.7,
+			"tags": "health",
+			"summary": "Six people with diabetes switch to a diet of vegan, organic and uncooked food to reverse the disease without medication."
+		},
+		{
+			"title": "Vegucated",
+			"url": "http://www.getvegucated.com/",
+			"year": 2011,
+			"rating": 7.2,
+			"tags": "health",
+			"summary": "It follows three meat- and cheese-loving New Yorkers who agree to adopt a vegan diet for six weeks"
+		},
+		{
+			"title": "PlantPure Nation",
+			"url": "https://www.plantpurenation.com/",
+			"year": 2015,
+			"rating": 7.7,
+			"tags": "health",
+			"summary": "Three people try to start a pilot program to document the health benefits of a plant-based diet."
+		},
+		{
+			"title": "Henry: One Man's Way",
+			"url": "https://www.youtube.com/watch?v=0Kip4XVDYlE",
+			"year": 1996,
+			"rating": 7.8,
+			"tags": "animals",
+			"summary": "A documentary by vegan philosopher Peter Singer."
+		},
+		{
+			"title": "Peaceable Kingdom",
+			"url": "http://www.peaceablekingdomfilm.org/",
+			"year": 2004,
+			"rating": 8.6,
+			"tags": "animals",
+			"summary": "Animal rescuers and activists battle against the cruelties of industrial farming."
+		},
+		{
+			"title": "Land Of Hope and Glory: UK Animal Farming",
+			"url": "https://www.landofhopeandglory.org/",
+			"year": 2006,
+			"tags": "animals,agribusiness",
+			"summary": "Through Land of Hope and Glory we aim to show the truth behind UK land animal farming by featuring the most up to date investigations as well as never before seen undercover footage, with a total of approximately 100 UK facilities featured throughout the film."
+		},
+		{
+			"title": "Land Of Hope and Glory: UK Animal Farming",
+			"url": "https://www.landofhopeandglory.org/",
+			"year": 2006,
+			"tags": "animals,agribusiness",
+			"summary": "Through Land of Hope and Glory we aim to show the truth behind UK land animal farming by featuring the most up to date investigations as well as never before seen undercover footage, with a total of approximately 100 UK facilities featured throughout the film."
+		},
+		{
+			"title": "Behind the Mask: The Story of the People Who Risk Everything to Save Animals",
+			"url": "https://www.youtube.com/watch?v=FfKXq9BL29o",
+			"year": 2006,
+			"rating": 7.6,
+			"tags": "animals",
+			"summary": "2006 documentary film about the Animal Liberation Front (ALF). It took three years of filming, interviewing, and editing to complete. The movie was created by animal-rights lawyer Shannon Keith, who owns Uncaged Films and ARME (Animal Rescue, Media & Education). The documentary was produced in response to a perceived bias in the mainstream media against the animal rights movement."
+		},
+		{
+			"title": "Speciesism: The Movie",
+			"url": "https://speciesismthemovie.com/",
+			"year": 2013,
+			"rating": 8.4,
+			"tags": "animals",
+			"summary": "Filmmaker Mark Devries investigates factories that raise animals for consumption."
+		},
+		{
+			"title": "Speciesism: The Movie",
+			"url": "http://www.nationearth.com/",
+			"year": 2005,
+			"rating": 8.7,
+			"tags": "animals",
+			"summary": "Filmmaker Shaun Monson exposes the suffering endured by animals at factory farms, research labs, puppy mills and more."
+		},
+		{
+			"title": "The Ghosts In Our Machine",
+			"url": "http://www.theghostsinourmachine.com/",
+			"year": 2013,
+			"rating": 8.3,
+			"tags": "animals",
+			"summary": "Activist and photojournalist Jo-Ann McArthur uses her camera to document the plight of abused and exploited animals and advocate for their rights as sentient beings."
+		},
+		{
+			"title": "Unlocking the Cage",
+			"url": "http://www.theghostsinourmachine.com/",
+			"year": 2016,
+			"rating": 7,
+			"tags": "animals",
+			"summary": "Lawyer Steven Wise and the Nonhuman Rights Project file lawsuits to give animals such as chimpanzees, whales, dolphins and elephants limited personhood rights."
+		},
+		{
+			"title": "Fed Up",
+			"url": "http://fedupmovie.com/",
+			"year": 2014,
+			"rating": 7.7,
+			"tags": "health,agribusiness",
+			"summary": "Filmmaker Stephanie Soechtig and journalist Katie Couric investigate how the American food industry may be responsible for more sickness than previously realized."
+		},
+		{
+			"title": "Ingredients",
+			"url": "http://www.ingredientsfilm.com/",
+			"year": 2009,
+			"rating": 6.7,
+			"tags": "agribusiness",
+			"summary": "Ingredients: The Local Food Movement Takes Root is a 2009 documentary film about the shortcomings of America's industrialized food system against a rising local food movement, whose proponents are shrinking the gap between farmland and dinner table."
+		},
+		{
+			"title": "Hungry for Change",
+			"url": "http://www.ingredientsfilm.com/",
+			"year": 2012,
+			"rating": 7.5,
+			"tags": "agribusiness,health",
+			"summary": "Filmmakers James Colquhoun, Laurentine Ten Bosch and Carlo Ledesma expose the diet industry's deceptive strategies designed to keep people from losing and keeping off weight."
+		},
+		{
+			"title": "The Meat Lobby: Big Business Against Health?",
+			"url": "https://www.youtube.com/watch?v=QuhHaGciXVo",
+			"year": 2016,
+			"tags": "agribusiness,health",
+			"summary": "In 2015, the WHO listed one of the additives in processed meats as carcinogenic. That same additive was nearly banned in America in the 1970s - until lobbying from the meat industry discredited the scientists. We reveal how, to impede or halt regulations on certain additives, food industry lobbies have been working in the shadows for decades."
+		},
+		{
+			"title": "Cowspiracy: The Sustainability Secret",
+			"url": "http://www.cowspiracy.com/",
+			"rating": 8.4,
+			"year": 2014,
+			"tags": "agribusiness,environment",
+			"summary": "Filmmakers Kip Andersen and Keegan Kuhn address the effects of cattle on the environment."
+		},
+		{
+			"title": "Racing Extinction",
+			"url": "http://racingextinction.com/",
+			"rating": 8.3,
+			"year": 2015,
+			"tags": "environment",
+			"summary": "Filmmaker Louie Psihoyos, along with activists, scientists and others, draws attention to mankind's role in a potential loss of at least half of the world's species."
+		},
+		{
+			"title": "The Cove",
+			"url": "http://www.thecovemovie.com/",
+			"rating": 8.5,
+			"year": 2009,
+			"tags": "animals",
+			"summary": "In Taiji, Japan, local fishermen hide a gruesome secret: the capture and slaughter of dolphins. Activist Ric O'Barry, who trained dolphins for the \"Flipper\" TV series, joins forces with filmmaker Louis Psihoyos and the Ocean Preservation Society to expose the brutal practice, risking life and limb in the process."
+		},
+		{
+			"title": "The End of the Line: How Overfishing Is Changing the World and What We Eat",
+			"url": "https://en.wikipedia.org/wiki/The_End_of_the_Line:_How_Overfishing_Is_Changing_the_World_and_What_We_Eat",
+			"rating": 7.5,
+			"year": 2009,
+			"tags": "animals,environment,agribusiness",
+			"summary": "Rupert Murray's acclaimed film looking at the consequences of unchecked, unregulated sea fishing across the globe. It is not a film about what might happen, it is a film about what has happened. The collapse of the cod population saw the end of 40,000 jobs, the bluefin tuna is being hunted to extinction, and it takes five kilos of anchovies to produce one fish farmed salmon."
+		},
+		{
+			"title": "Planet Ocean",
+			"url": "https://www.youtube.com/watch?v=eH1s9GCqPKo",
+			"rating": 7.9,
+			"year": 2012,
+			"tags": "environment",
+			"summary": "Underwater cinematographers explore the bonds between humanity and the ocean."
+		},
+		{
+			"title": "An Inconvenient Truth",
+			"url": "https://en.wikipedia.org/wiki/An_Inconvenient_Truth",
+			"rating": 7.5,
+			"year": 2006,
+			"tags": "environment",
+			"summary": "Filmmaker Davis Guggenheim follows Al Gore on the lecture circuit, as the former presidential candidate campaigns to raise public awareness of the dangers of global warming and calls for immediate action to curb its destructive effects on the environment."
+		},
+		{
+			"title": "An Inconvenient Sequel",
+			"url": "https://en.wikipedia.org/wiki/An_Inconvenient_Sequel:_Truth_to_Power",
+			"rating": 5.8,
+			"year": 2017,
+			"tags": "environment",
+			"summary": "Former Vice President Al Gore continues his tireless fight, traveling around the world to train an army of activists and influence international climate policy. Cameras follow him behind the scenes -- in moments both private and public, funny and poignant -- as he pursues the inspirational idea that while the stakes have never been higher, the perils of climate change can be overcome with human ingenuity and passion."
+		},
+		{
+			"title": "Meet Your Meat",
+			"url": "https://www.peta.org/videos/meet-your-meat/",
+			"year": 2002,
+			"rating": 8,
+			"tags": "animals",
+			"summary": "Meet Your Meat is a 2002 documentary about factory farming created by People for the Ethical Treatment of Animals, narrated by Alec Baldwin, and directed by Bruce Friedrich and Cem Akin"
+		},
+		{
+			"title": "Lucent",
+			"url": "https://www.youtube.com/watch?v=KArL5YjaL5U",
+			"year": 2014,
+			"rating": 8.2,
+			"tags": "animals",
+			"summary": "Through a combination of hand-held and hidden camera footage, Lucent explores the darker side of Australia's pig farming industry, highlighting the day-to-day cruelty accepted by the industry as standard practice."
+		},
+		{
+			"title": "Food Choices",
+			"url": "http://www.foodchoicesmovie.com/",
+			"year": 2016,
+			"rating": 7.4,
+			"tags": "health,environment,animals",
+			"summary": "This documentary follows filmmaker Michal Siewierski as he explores the impact that food choice has on people's health, the health of our planet and on the lives of other species sharing our world."
+		},
+		{
+			"title": "Got the Facts on Milk?",
+			"url": "http://www.imdb.com/title/tt1065086/",
+			"year": 2011,
+			"rating": 7.1,
+			"tags": "health,environment,animals",
+			"summary": "A comical fast paced feature documentary, that questions the health benefits of milk."
+		},
+		{
+			"title": "Planeat",
+			"url": "http://planeat.tv/",
+			"year": 2010,
+			"rating": 7.5,
+			"tags": "health",
+			"summary": "This documentary film discusses whether it is time to re-examine the love affair with meat and dairy."
+		}
+	],
+	"videos": [{
+		"title": "Foods for Protecting the Body and Mind",
+		"url": "https://www.youtube.com/watch?v=BnHYHjchn6w",
+		"year": 2015,
+		"tags": "health",
+		"summary": "Filmmaker Kip Andersen uncovers the secret to preventing and even reversing chronic diseases, and he investigates why the nation's leading health organizations doesn't want people to know about it."
+	}, {
+		"title": "Food as Medicine: Preventing & Treating the Most Dreaded Diseases with Diet",
+		"url": "https://nutritionfacts.org/video/food-as-medicine/",
+		"year": 2015,
+		"tags": "health",
+		"summary": "Dr. Greger has scoured the world’s scholarly literature on clinical nutrition and developed this new presentation based on the latest in cutting edge research exploring the role diet may play in preventing, arresting, and even reversing some of our most feared causes of death and disability."
+	}, {
+		"title": "HOW NOT TO DIE: The Role of Diet in Preventing, Arresting, & Reversing Our Top 15 Killers",
+		"url": "https://nutritionfacts.org/video/how-not-to-die/",
+		"year": 2016,
+		"tags": "health",
+		"summary": "Dr. Greger has scoured the world’s scholarly literature on clinical nutrition and developed this new presentation based on the latest in cutting edge research exploring the role diet may play in preventing, arresting, and even reversing some of our most feared causes of death and disability."
+	}, {
+		"title": "Dr. Michael Greger: \"How Not To Die\" | Talks at Google",
+		"url": "https://www.youtube.com/watch?v=7rNY7xKyGCQ",
+		"year": 2016,
+		"tags": "health",
+		"summary": "In this “best-of” compilation of his last four year-in-review presentations, Dr. Greger explains what we can do about the #1 cause of death and disability: our diet."
+	}],
+	"books": [{
+			"title": "The Starch Solution: Eat the Foods You Love, Regain Your Health, and Lose the Weight for Good!",
+			"url": "https://www.amazon.com/Starch-Solution-Regain-Health-Weight/dp/1623360277",
+			"year": 2012,
+			"rating": 4.2,
+			"tags": "health",
+			"summary": "Bestselling author John A. McDougall and his kitchen-savvy wife, Mary, prove that a starch-rich diet can actually help you lose weight, prevent a variety of ills, and even cure common diseases. By fueling your body primarily with carbohydrates rather than proteins and fats, you will feel satisfied, boost energy, and look and feel your best."
+		},
+		{
+			"title": "Eat to Live: The Amazing Nutrient Rich Program for Fast and Sustained Weight Loss",
+			"url": "https://www.amazon.com/Whole-Rethinking-Nutrition-Colin-Campbell/dp/1939529840",
+			"year": 2003,
+			"rating": 4.1,
+			"tags": "health",
+			"summary": "Eat to Live: The Amazing Nutrient-Rich Program for Fast and Sustained Weight Loss is a book written in 2003 by Dr. Joel Fuhrman, which he revised in 2011. The book offers a formula: health = nutrients / calories"
+		},
+		{
+			"title": "Whole: Rethinking the Science of Nutrition",
+			"url": "https://www.amazon.com/Eat-Live-Amazing-Nutrient-Rich-Sustained/dp/031612091X",
+			"year": 2013,
+			"rating": 3.9,
+			"tags": "health",
+			"summary": "Whole is an eye-opening, paradigm-changing journey through cutting-edge thinking on nutrition, a scientific tour de force with powerful implications for our health and for our world."
+		},
+		{
+			"title": "The China Study: The Most Comprehensive Study of Nutrition Ever Conducted And the Startling Implications for Diet, Weight Loss, And Long-term Health ",
+			"url": "https://www.amazon.com/China-Study-Comprehensive-Nutrition-Implications/dp/1932100660",
+			"year": 2005,
+			"rating": 4.2,
+			"tags": "health",
+			"summary": "The China Study is not a diet book. Dr. Campbell cuts through the haze of misinformation and delivers an insightful message to anyone living with cancer, diabetes, heart disease, obesity, and those concerned with the effects of aging."
+		},
+		{
+			"title": "The Low-Carb Fraud",
+			"url": "https://www.amazon.com/Low-Carb-Fraud-T-Colin-Campbell/dp/1940363098",
+			"year": 2014,
+			"rating": 3.8,
+			"tags": "health",
+			"summary": "In The Low-Carb Fraud, longtime leader in the nutritional science field T. Colin Campbell (author of The China Study and Whole) outlines where (and how) the low-carb proponents get it wrong: where the belief that carbohydrates are bad came from, and why it persists despite all the evidence to the contrary. The foods we misleadingly refer to as “carbs” aren’t all created equal—and treating them that way has major consequences for our nutritional well-being."
+		},
+		{
+			"title": "How Not to Die: Discover the Foods Scientifically Proven to Prevent and Reverse Disease",
+			"url": "https://www.amazon.com/How-Not-Die-Discover-Scientifically/dp/1250066115",
+			"year": 2015,
+			"rating": 4.5,
+			"tags": "health",
+			"summary": "In How Not to Die, Dr. Michael Greger, the internationally-renowned nutrition expert, physician, and founder of NutritionFacts.org, examines the fifteen top causes of premature death in America--heart disease, various cancers, diabetes, Parkinson's, high blood pressure, and more--and explains how nutritional and lifestyle interventions can sometimes trump prescription pills and other pharmaceutical and surgical approaches to help prevent and reverse these diseases, freeing us to live healthier lives."
+		},
+		{
+			"title": "In Defense of Food: An Eater's Manifesto",
+			"url": "https://www.amazon.com/How-Not-Die-Discover-Scientifically/dp/1250066115",
+			"year": 2008,
+			"rating": 4.1,
+			"tags": "health",
+			"summary": "What to eat, what not to eat, and how to think about health: a manifesto for our times "
+		},
+		{
+			"title": "Forks Over Knives: The Cookbook",
+			"url": "https://www.amazon.com/Forks-Over-Knives-Cookbook-Plant-Based/dp/1615190619",
+			"year": 2012,
+			"rating": 4.1,
+			"tags": "health",
+			"summary": "A whole-foods, plant-based diet that has never been easier or tastier—learn to cook the Forks Over Knives way with more than 300 recipes for every day!"
+		},
+		{
+			"title": "Eat and Run: My Unlikely Journey to Ultramarathon Greatness",
+			"url": "https://www.amazon.com/Eat-Run-Unlikely-Ultramarathon-Greatness/dp/0544002318",
+			"year": 2012,
+			"rating": 4,
+			"tags": "health",
+			"summary": "For nearly two decades, Scott Jurek has been a dominant force—and darling—in the grueling and growing sport of ultrarunning. Until recently he held the American 24-hour record and he was one of the elite runners profiled in the runaway bestseller Born to Run. In Eat and Run, Jurek opens up about his life and career as a champion athlete with a plant-based diet and inspires runners at every level."
+		},
+		{
+			"title": "The Omnivore's Dilemma",
+			"url": "https://www.amazon.com/Omnivores-Dilemma-Natural-History-Meals/dp/0143038583",
+			"year": 2006,
+			"rating": 4.2,
+			"tags": "health,agribusiness",
+			"summary": "It is a nonfiction book written by American author Michael Pollan published in 2006. In the book, Pollan asks the seemingly straightforward question of what we should have for dinner"
+		},
+		{
+			"title": "Food Politics: How the Food Industry Influences Nutrition & Health, Revised and Expanded Edition",
+			"url": "https://www.amazon.com/Food-Politics-Influences-Nutrition-California/dp/0520254031",
+			"year": 2014,
+			"rating": 4,
+			"tags": "agribusiness",
+			"summary": "An investigative journalist takes you inside the corporate meat industry—a shocking, in-depth report every American should read.How much do you know about the meat on your dinner plate?"
+		},
+		{
+			"title": "Meatonomics: How the Rigged Economics of Meat and Dairy Make You Consume Too Much–and How to Eat Better, Live Longer, and Spend Smarter",
+			"url": "https://www.amazon.com/Food-Politics-Influences-Nutrition-California/dp/0520254031",
+			"year": 2013,
+			"rating": 4.2,
+			"tags": "agribusiness,health",
+			"summary": "Few consumers are aware of the economic forces behind the production of meat, fish, eggs, and dairy. Yet omnivore and herbivore alike, the forces of meatonomics affect us in many ways."
+		},
+		{
+			"title": "The Chain: Farm, Factory, and the Fate of Our Food",
+			"url": "https://www.amazon.com/Chain-Farm-Factory-Fate-Food/dp/0062288768",
+			"year": 2014,
+			"rating": 3.9,
+			"tags": "agribusiness,health,animals",
+			"summary": "On the production line in American packinghouses, there is one cardinal rule: the chain never slows. Under pressure to increase supply, the supervisors of meat processing plants have routinely accelerated production, leading to inhumane conditions, increased accidents, and food of questionable, often dangerous quality. In The Chain, acclaimed journalist Ted Genoways uses the story of Hormel Foods and its most famous product, Spam—a recession-era staple—to probe the state of the meatpacking industry"
+		},
+		{
+			"title": "The Humane Economy",
+			"url": "https://www.amazon.com/Humane-Economy-Innovators-Enlightened-Transforming/dp/0062389645",
+			"year": 2016,
+			"rating": 4.2,
+			"tags": "agribusiness,animals",
+			"summary": "A major new exploration of the economics of animal exploitation and a practical roadmap for how we can use the marketplace to promote the welfare of all living creatures"
+		},
+		{
+			"title": "The Food Revolution: How Your Diet Can Help Save Your Life and Our World",
+			"url": "https://www.amazon.com/Food-Revolution-Your-Diet-World/dp/1573244872",
+			"year": 2010,
+			"rating": 4.3,
+			"tags": "environment,health,agribusiness",
+			"summary": "First published in 2001, The Food Revolution is still one of the most frequently cited and talked about books of the food-politics revolution. It was one of the very first books to discuss the negative health effects of eating genetically modified foods and animal products of all kinds, to expose the dangers inherent in our factory farming system, and to advocate a complete plant-based diet."
+		},
+		{
+			"title": "The Ethics of What We Eat: Why Our Food Choices Matter",
+			"url": "https://www.amazon.com/Ethics-What-We-Eat-Choices/dp/1594866872",
+			"year": 2007,
+			"rating": 4.1,
+			"tags": "animals,agribusiness",
+			"summary": "Peter Singer, the groundbreaking ethicist whom The New Yorker calls the most influential philosopher alive teams up again with Jim Mason, his coauthor on the acclaimed Animal Factories, to set their critical sights on the food we buy and eat: where it comes from, how it is produced, and whether it was raised humanely."
+		},
+		{
+			"title": "Some We Love, Some We Hate, Some We Eat: Why It's So Hard to Think Straight About Animals",
+			"url": "https://www.amazon.com/Some-We-Love-Hate-Eat/dp/0061730858",
+			"year": 2010,
+			"rating": 3.8,
+			"tags": "animals,agribusiness",
+			"summary": "Hal Herzog, a maverick scientist and leader in the field of anthrozoology offers a controversial, thought-provoking, and unprecedented exploration of the psychology behind the inconsistent and often paradoxical ways we think, feel, and behave towards animals. "
+		},
+		{
+			"title": "The Case for Animal Rights",
+			"url": "https://www.amazon.com/Case-Animal-Rights-Tom-Regan/dp/0520243862",
+			"year": 1983,
+			"rating": 4.2,
+			"tags": "animals,agribusiness",
+			"summary": "The Case for Animal Rights is a 1983 book by the American philosopher Tom Regan, in which the author argues that at least some kinds of non-human animals have moral rights because they are the \"subjects-of-a-life,\" and that these rights adhere to them whether or not they are recognized"
+		},
+		{
+			"title": "First Bite: How We Learn to Eat",
+			"url": "https://www.amazon.com/First-Bite-How-Learn-Eat/dp/0465064981",
+			"year": 2015,
+			"rating": 3.8,
+			"tags": "health",
+			"summary": "We are not born knowing what to eat; as omnivores it is something we each have to figure out for ourselves. From childhood onward, we learn how big a “portion” is and how sweet is too sweet. We learn to enjoy green vegetables—or not. But how does this education happen? What are the origins of taste?"
+		},
+		{
+			"title": "Meathooked: The History and Science of Our 2.5-Million-Year Obsession with Meat",
+			"url": "https://www.amazon.com/Meathooked-History-Science-2-5-Million-Year-Obsession/dp/0465036627",
+			"year": 2016,
+			"rating": 3.9,
+			"tags": "health",
+			"summary": "One of the great science and health revelations of our time is the danger posed by meat-eating. Every day, it seems, we are warned about the harm producing and consuming meat can do to the environment and our bodies. Many of us have tried to limit how much meat we consume, and many of us have tried to give it up altogether. But it is not easy to resist the smoky, cured, barbequed, and fried delights that tempt us. What makes us crave animal protein, and what makes it so hard to give up? And if consuming meat is truly unhealthy for human beings, why didn't evolution turn us all into vegetarians in the first place?"
+		},
+		{
+			"title": "The Cheese Trap: How Breaking a Surprising Addiction Will Help You Lose Weight, Gain Energy, and Get Healthy",
+			"url": "https://www.amazon.com/Cheese-Trap-Breaking-Surprising-Addiction/dp/1455594687",
+			"year": 2017,
+			"rating": 4.2,
+			"tags": "health",
+			"summary": "We've been told that dairy does a body good, but the truth is that cheese can be dangerous. Loaded with calories, fat, and cholesterol, cheese can make you gain weight and leads to a host of health problems like high blood pressure and arthritis. Worse, it contains mild opiates that make it additive, triggering the same brain receptors as heroin and morphine. In THE CHEESE TRAP, Dr. Neal Barnard presents a comprehensive program to help readers break free of their cheese addiction so they can lose weight, boost energy, and improve their overall health"
+		},
+		{
+			"title": "The Meat Racket: The Secret Takeover of America’s Food Business",
+			"url": "https://www.amazon.com/Food-Politics-Influences-Nutrition-California/dp/0520254031",
+			"year": 2007,
+			"rating": 3.9,
+			"tags": "health,agribusiness",
+			"summary": "An accessible and balanced account, Food Politics laid the groundwork for today's food revolution and changed the way we respond to food industry marketing practices"
+		},
+		{
+			"title": "The Case Against Sugar",
+			"url": "https://www.amazon.com/Case-Against-Sugar-Gary-Taubes/dp/0307701646",
+			"year": 2016,
+			"rating": 3.9,
+			"tags": "health,agribusiness",
+			"summary": "From the best-selling author of Why We Get Fat, a groundbreaking, eye-opening exposé that makes the convincing case that sugar is the tobacco of the new millennium: backed by powerful lobbies, entrenched in our lives, and making us very sick."
+		},
+		{
+			"title": "Healthy Eating, Healthy World: Unleashing the Power of Plant-Based Nutrition",
+			"url": "https://www.amazon.com/Healthy-Eating-World-Unleashing-Plant-Based/dp/1936661047",
+			"year": 2011,
+			"rating": 4.2,
+			"tags": "health,environment,animals",
+			"summary": "This book is all about the single most powerful move that humans can make to promote health, reduce obesity, lower the cost of health care, nurture our fragile environment, conserve our energy resources, feed the world's steadily growing population, and greatly reduce the suffering of animals in factory farms all over the world. As Dr. T. Colin Campbell says, \"It turns out that if we eat the way that promotes the best health for ourselves, we also promote the best health for the planet.\""
+		},
+		{
+			"title": "Prevent and Reverse Heart Disease: The Revolutionary, Scientifically Proven, Nutrition-Based Cure",
+			"url": "https://www.amazon.com/Prevent-Reverse-Heart-Disease-Nutrition-Based/dp/1583333002",
+			"year": 2007,
+			"rating": 4.4,
+			"tags": "health",
+			"summary": "The New York Times bestselling guide to the lifesaving diet that can both prevent and help reverse the effects of heart disease. Based on the groundbreaking results of his twenty-year nutritional study, Prevent and Reverse Heart Disease by Dr. Caldwell Esselstyn  illustrates that a plant-based, oil-free diet can not only prevent the progression of heart disease but can also reverse its effects."
+		}
+	]
+}

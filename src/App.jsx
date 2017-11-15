@@ -4,23 +4,35 @@ import {
 	Route, Switch
 } from 'react-router-dom';
 import Header from './components/header/index';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
+import studyData from './assets/data/studies.json';
+import learnMoreData from './assets/data/learn-more.json';
+
 import Health from './routes/health';
 import Externalities from './routes/externalities';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import studies from './assets/data/studies.json';
+import LearnMore from './routes/learn-more';
 
 export default class App extends Component {
-	static preprocessStudies(studies) {
-		return studies.map((study, indx) => {
-			study.tags = study.tags.split(',');
-			study.id = indx;
-			return study;
+	static preprocessResources(resources) {
+		return resources.map((resource, indx) => {
+			resource.tags = resource.tags.split(',');
+			resource.id = indx;
+			return resource;
 		});
 	}
 	constructor(props) {
 		super(props);
-		window.globalAppData = {}; //too small of an App to require Redux
-		window.globalAppData.studies = App.preprocessStudies(studies);
+
+		//simple global data container
+		window.globalAppData = {
+			studies: App.preprocessResources(studyData),
+			learnMore: {
+				documentaries: App.preprocessResources(learnMoreData.documentaries),
+				videos: App.preprocessResources(learnMoreData.videos),
+				books: App.preprocessResources(learnMoreData.books),
+			}
+		};
 	}
 
 	render() {
@@ -33,6 +45,7 @@ export default class App extends Component {
 							<Switch>
 								<Route path="/health" component={Health} />
 								<Route path="/externalities" component={Externalities} />
+								<Route path="/learn-more" component={LearnMore} />
 							</Switch>
 						</div>
 					</Router>

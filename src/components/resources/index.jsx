@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Study from '../study/index.jsx';
+import Resource from '../resource/index.jsx';
 import Filter from './filter';
 import titleize from '../../utils/titleize';
 
-export default class Studies extends Component {
+export default class Resources extends Component {
 	static convertTagsToSelectValueObject(tags) {
 		let newTags = [];
 		for (const tag of tags) {
@@ -27,21 +27,15 @@ export default class Studies extends Component {
 		return intersect.length;
 	}
 
-	// static getAllSelectableTags(studies) {
-	// 	let uniqueTags = new Set();
-	// 	for (const study of studies) {
-	// 		for (const tag of study.tags) {
-	// 			uniqueTags.add(tag);
-	// 		}
-	// 	}
-	// 	let tags = [];
-	// 	for (const tag of uniqueTags) {
-	// 		tags.push(
-	// 			{ value: tag, label: titleize(tag) }
-	// 		);
-	// 	}
-	// 	return tags;
-	// }
+	static allResourcesTags(resources) {
+		let uniqueTags = new Set();
+		for (const resource of resources) {
+			for (const tag of resource.tags) {
+				uniqueTags.add(tag);
+			}
+		}
+		return Array.from(uniqueTags);
+	}
 
 	submitFilters() {
 		let stateCopy = Object.assign({}, this.state);
@@ -69,16 +63,21 @@ export default class Studies extends Component {
 		this.handleSelectChange = this.handleSelectChange.bind(this);
 		this.handleMinYearChange = this.handleMinYearChange.bind(this);
 		this.handleMaxYearChange = this.handleMaxYearChange.bind(this);
-		// this.filterStudy = this.filterStudy.bind(this);
 
 		//initialize vars
-		let studies = (this.props.research).filter(study => {
-			return Studies.numCommonElements(study.tags, props.tags) > 0;
+		let tags = this.props.tags;
+		if (!this.props.tags) {
+			tags = Resources.allResourcesTags(this.props.research);
+		}
+		this.selectableTags = Resources.convertTagsToSelectValueObject(tags);
+
+		let resources = (this.props.research).filter(resource => {
+			return Resources.numCommonElements(resource.tags, tags) > 0;
 		});
 
-		this.selectableTags = Studies.convertTagsToSelectValueObject(this.props.tags);//Studies.getAllSelectableTags(studies);
+
 		this.state = {
-			studies: studies,
+			resources: resources,
 			selectedTags: this.selectableTags,
 			minYear: 1900,
 			maxYear: (new Date()).getFullYear()
@@ -91,28 +90,28 @@ export default class Studies extends Component {
 	}
 
 	render() {
-		//filter out un-wanted studies
-		const selectedTags = Studies.selectableTagsToArray(this.state.selectedTags);
-		let studies = this.state.studies.filter((study) => {
-			let studyTagIncluded = Studies.numCommonElements(study.tags, selectedTags) > 0;
-			const properYear = study.year <= this.state.maxYear && study.year >= this.state.minYear;
-			return studyTagIncluded && properYear;
+		//filter out un-wanted resources
+		const selectedTags = Resources.selectableTagsToArray(this.state.selectedTags);
+		let resources = this.state.resources.filter((resource) => {
+			let resourceTagIncluded = Resources.numCommonElements(resource.tags, selectedTags) > 0;
+			const properYear = resource.year <= this.state.maxYear && resource.year >= this.state.minYear;
+			return resourceTagIncluded && properYear;
 		});
-		//sort studies by strength
-		const studyTypeScore = {
+		//sort resources by strength
+		const resourceTypeScore = {
 			'report': 3,
 			'meta': 2
 		}
-		studies.sort((a, b) => {
-			const aVal = studyTypeScore[a.type] || 1;
-			const bVal = studyTypeScore[b.type] || 1;
+		resources.sort((a, b) => {
+			const aVal = resourceTypeScore[a.type] || 1;
+			const bVal = resourceTypeScore[b.type] || 1;
 			return bVal - aVal || b.year - a.year;
 		});
-		//create components from studies
-		let studyComponents = studies.map((x) =>
+		//create components from resources
+		let resourceComponents = resources.map((x) =>
 			(
-				<Study
-					study={x}
+				<Resource
+					resource={x}
 					key={x.id}
 				/>
 			)
@@ -121,7 +120,7 @@ export default class Studies extends Component {
 		return (
 			<div>
 				<Filter
-					research={this.state.studies}
+					research={this.state.resources}
 					minYear={this.inputFilters.minYear}
 					maxYear={this.inputFilters.maxYear}
 					selectedTags={this.inputFilters.selectedTags}
@@ -131,7 +130,7 @@ export default class Studies extends Component {
 					allTags={this.selectableTags}
 					filterSubmitted={this.submitFilters}
 				/>
-				{studyComponents}
+				{resourceComponents}
 			</div>
 		);
 	}
