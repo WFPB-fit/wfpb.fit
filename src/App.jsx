@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
 	BrowserRouter as Router,
-	Route
+	Route, Switch
 } from 'react-router-dom';
 import Header from './components/header/index';
 import Home from './routes/home';
@@ -27,11 +27,13 @@ export default class App extends Component {
 		return (
 			<MuiThemeProvider>
 				<div id="app">
-					<Header />
 					<Router >
 						<div>
-							<Route exact path="/" component={Home} />
-							<Route exact path="/externalities" component={Externalities} />
+							<Header />
+							<Switch>
+								<Route exact path="/" component={Home} />
+								<Route path="/externalities" component={Externalities} />
+							</Switch>
 						</div>
 					</Router>
 				</div>
