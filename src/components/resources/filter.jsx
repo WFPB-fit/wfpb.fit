@@ -34,7 +34,7 @@ export default class Filter extends Component {
 			<div>
 				<Card>
 					<CardTitle
-						title="Search"
+						title="Filter"
 					/>
 					<CardText>
 						<Select

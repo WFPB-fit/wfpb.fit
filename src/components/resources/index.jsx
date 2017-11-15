@@ -11,7 +11,8 @@ export default class Resources extends Component {
 				{ value: tag, label: titleize(tag) }
 			);
 		}
-		return newTags;
+		const sortedTags = newTags.sort((a,b)=> a.value > b.value);
+		return sortedTags;
 	}
 
 	static selectableTagsToArray(selectable) {
