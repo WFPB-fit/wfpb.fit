@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 
 export function preprocess(resources) {
@@ -40,3 +41,16 @@ export function joinMetaData(arr) {
 export function getTitleized(val) {
 	return (val) ? titleize(val) : null;
 }
+
+export let CenteredDiv = styled.div`
+width:95%;
+@media (min-width: 700px) {
+	width:80%;
+}
+margin:0 auto;
+max-width:1000px;
+
+& p,h3 {
+	text-align:center;
+}
+`;

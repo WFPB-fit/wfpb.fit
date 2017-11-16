@@ -50,7 +50,6 @@ export default class Resource extends Component {
 
 		const youtubeCode = Resource.getEmbeddedYoutubeCode(resource.url);
 		const StyledCard = styled(Card) `
-		width:80%;
 		margin:5px auto;
 		`;
 		return (

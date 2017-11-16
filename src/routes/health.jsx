@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Resources from '../components/resources/index.jsx';
 import tags from '../assets/data/tags.json';
-import {Tabs, Tab} from 'material-ui/Tabs';
+import { Tabs, Tab } from 'material-ui/Tabs';
 
 export default class Health extends Component {
 	render() {
