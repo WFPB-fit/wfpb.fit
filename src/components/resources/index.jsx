@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Resource from '../resource/index.jsx';
 import Filter from './filter';
-import titleize from '../../utils/titleize';
+import {titleize,numCommonElements} from '../../utils.jsx';
 
 export default class Resources extends Component {
 	static convertTagsToSelectValueObject(tags) {
@@ -21,11 +21,6 @@ export default class Resources extends Component {
 			tags.push(option.value);
 		}
 		return tags;
-	}
-
-	static numCommonElements(arr1, arr2) {
-		const intersect = arr1.filter(x => arr2.includes(x));//[...set1].filter(x=> set2.has(x));
-		return intersect.length;
 	}
 
 	static allResourcesTags(resources) {
@@ -73,9 +68,8 @@ export default class Resources extends Component {
 		this.selectableTags = Resources.convertTagsToSelectValueObject(tags);
 
 		let resources = (this.props.research).filter(resource => {
-			return Resources.numCommonElements(resource.tags, tags) > 0;
+			return numCommonElements(resource.tags, tags) > 0;
 		});
-
 
 		this.state = {
 			resources: resources,
@@ -94,7 +88,7 @@ export default class Resources extends Component {
 		//filter out un-wanted resources
 		const selectedTags = Resources.selectableTagsToArray(this.state.selectedTags);
 		let resources = this.state.resources.filter((resource) => {
-			let resourceTagIncluded = Resources.numCommonElements(resource.tags, selectedTags) > 0;
+			let resourceTagIncluded = numCommonElements(resource.tags, selectedTags) > 0;
 			const properYear = resource.year <= this.state.maxYear && resource.year >= this.state.minYear;
 			return resourceTagIncluded && properYear;
 		});

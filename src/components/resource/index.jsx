@@ -1,40 +1,24 @@
 import React, { Component } from 'react';
 import { Card, CardHeader, CardText } from 'material-ui/Card';
 import styled from 'styled-components';
-import titleize from '../../utils/titleize'
+import { titleize, getLink, joinMetaData, getTitleized } from '../../utils.jsx';
 
 export default class Resource extends Component {
-	static getPdf(resource) {
-		let pdf = null;
-		if (resource.pdf) pdf = <a href={resource.pdf}>PDF</a>;
-		return pdf;
-	}
 	static youtubeID(url) {
 		let vIndex = url.indexOf('v=');
 		return url.substring(vIndex + 2);
 	}
-	static getAvailability(resource) {
-		let av = null;
-		if (resource.availability) av = titleize(resource.availability);
-		return av;
-	}
-	static getType(resource) {
-		let type = null;
-		if (resource.type) type = titleize(resource.type);
-		return type;
-	}
-	static getRating(resource) {
-		let rating = resource.rating;
+	static getRating(rating) {
 		if (rating && rating > 5 && rating <= 10) {
-			rating = `${resource.rating} / 10`
+			rating = `${rating} / 10`
 		}
 		else if (rating && rating < 5) {
-			rating = `${resource.rating} / 5`
+			rating = `${rating} / 5`
 		}
 		return rating;
 	}
 	static getEmbeddedYoutubeCode(url) {
-		if (url.indexOf('youtube.com') < 0) {
+		if (!url || url.indexOf('youtube.com') < 0) {
 			return null;
 		}
 		// const id = Resource.youtubeID(url);
@@ -48,21 +32,21 @@ export default class Resource extends Component {
 		// return <StyledFrame src={`https://www.youtube.com/embed/${id}`} />
 		return null;
 	}
-	static getTags(resource) {
-		return titleize(resource.tags.join(', '));
+	static getTags(tags) {
+		return (tags) ? titleize(tags.join(', ')) : null;
 	}
 	render() {
 		const resource = this.props.resource;
-		const pdf = Resource.getPdf(resource);
-		const availability = Resource.getAvailability(resource);
-		const type = Resource.getType(resource);
-		const tags = Resource.getTags(resource);
-		const rating = Resource.getRating(resource);
-		const title = (<a href={`${resource.url}`}>{titleize(resource.title)}</a>);
-		const metaData = [resource.year, rating, availability, type, pdf, tags]
-			.filter((el) => el) //filter out falsy values like null
-			.map((t, i) => <span key={i} >{t}</span>) //wrap everything in a span
-			.reduce((prev, curr) => [prev, ' - ', curr]); //add delimiter
+		const pdf = getLink(resource.pdf, "PDF");
+		const availability = getTitleized(resource.availability);
+		const type = getTitleized(resource.type);
+		const tags = Resource.getTags(resource.tags);
+		const rating = Resource.getRating(resource.rating);
+		const title = getLink(resource.url, titleize(resource.title || '')) || titleize(resource.name);
+		const books = getLink(resource.books, "Books");
+		const website = getLink(resource.url, "Website");
+
+		const metaData = joinMetaData([resource.year, books, website, rating, availability, type, pdf, tags]);
 
 		const youtubeCode = Resource.getEmbeddedYoutubeCode(resource.url);
 		const StyledCard = styled(Card) `
@@ -76,7 +60,7 @@ export default class Resource extends Component {
 					subtitle={metaData}
 				/>
 				<CardText>
-					<blockquote>{resource.quote || resource.summary}</blockquote>
+					{resource.quote || resource.summary}
 					{youtubeCode}
 				</CardText>
 			</StyledCard>

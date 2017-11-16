@@ -1,0 +1,62 @@
+{
+	"doctors": [{
+		"name": "T. Colin Campbell",
+		"books": "https://www.amazon.com/T.-Colin-Campbell/e/B001K7QPBA",
+		"website": "http://nutritionstudies.org/",
+		"summary": "American biochemist who specializes in the effect of nutrition on long-term health. He is the Jacob Gould Schurman Professor Emeritus of Nutritional Biochemistry at Cornell University."
+	}, {
+		"name": "Michael Greger",
+		"books": "https://www.amazon.com/Michael-Greger/e/B001K892OG",
+		"summary": "American physician, author, and professional speaker on public health issues, particularly the benefits of a whole foods, plant-based, healthy diet and the harms of eating animal products.",
+		"url": "https://www.drmcdougall.com/"
+	}, {
+		"name": "Michael Klaper",
+		"books": "https://www.amazon.com/Michael-Klaper/e/B00J4R7ZEE",
+		"summary": "American physician, author, and veganism advocate",
+		"url": "https://doctorklaper.com/"
+	}, {
+		"name": "Terry Shintani",
+		"books": "https://www.amazon.com/s/ref=dp_byline_sr_book_1?ie=UTF8&text=Terry+Shintani&search-alias=books&field-author=Terry+Shintani&sort=relevancerank",
+		"summary": "American physician, attorney, nutritionist, professor, author, lecturer, radio show host and community advocate in Hawaii. ",
+		"url": "http://www.drshintani.com/about"
+	}, {
+		"name": "Gabriel Cousens",
+		"books": "https://www.amazon.com/Gabriel-Cousens/e/B000APJBV4/ref=sr_ntt_srch_lnk_5?qid=1510798776&sr=1-5",
+		"summary": "Gabriel Cousens is an American physician M.D., homeopath, and spiritual writer who practices holistic medicine.",
+		"url": "http://treeoflifecenterus.com/"
+	}, {
+		"name": "Herbert M. Shelton",
+		"books": "https://www.amazon.com/Gabriel-Cousens/e/B000APJBV4/ref=sr_ntt_srch_lnk_5?qid=1510798776&sr=1-5",
+		"summary": " American naturopath, alternative medicine advocate, author, pacifist, vegetarian, and a supporter of rawism and fasting. Shelton was nominated by the American Vegetarian Party to run as its candidate for President of the United States in 1956.",
+		"url": "https://en.wikipedia.org/wiki/Herbert_M._Shelton"
+	}, {
+		"name": "Milton Mills",
+		"summary": "Critical Care Physician, Inova Fairfax Hospital - Member of the Board of Directors, Plant-based Prevention Of Disease, Inc."
+	}, {
+		"name": "Kim A. Williams Sr.",
+		"summary": "American cardiologist. He is a Fellow of the American College of Cardiology and served as its president 2015–2016. He is currently a trustee of the organization."
+	}, {
+		"name": "Dean Ornish",
+		"books": "https://www.amazon.com/Dean-Ornish-MD/e/B000APT53I",
+		"summary": "American physician and researcher. He is the president and founder of the nonprofit Preventive Medicine Research Institute in Sausalito, California and a Clinical Professor of Medicine at the University of California, San Francisco. ",
+		"url": "https://www.ornish.com/"
+	}, {
+		"name": "John A. McDougall",
+		"books": "https://www.amazon.com/John-A.-McDougall/e/B001IZVGHW",
+		"summary": "American physician and author",
+		"url": "https://www.drmcdougall.com/"
+	}, {
+		"name": "Neal Barnard",
+		"books": "https://www.amazon.com/Neal%20D.%20Barnard/e/B001ILHHG0/ref=la_B001ILHHG0_pg_3?rh=n%3A283155%2Cp_82%3AB001ILHHG0&page=3&sort=author-pages-popularity-rank&ie=UTF8&qid=1510798053",
+		"summary": "American author, clinical researcher, and founding president of the Physicians Committee for Responsible Medicine. ",
+		"url": "https://www.pcrm.org/media/experts/neal-barnard"
+	}],
+	"celebrities": "Arnold Schwarzenegger, Bill Clinton, Al Gore, Pamela Anderson, James Cameron, Penn Jillette, Ellen Degeneres, Olivia Wilde, Beyonce, Natalie Portman, Jennifer Lopez, Ariana Grande, Jaoquin Pheonix, Carrie Underwood, Miley Cyrus, Peter Dinklage, Jared Leto, Jason Mraz, Alicia Silverstone, Alex Baldwin, Lea Michele, Dax Shepard, Kristen Bell, Portia de Rossi, Brad Pitt, Russell Brand, Tobey Maguire, Woody Harrelson, Ellen Page, Liam Hemsworth, Mayim Bialik, Casey Affleck, Moby, Russell Simmons, Sia, Stevie Wonder, RZA,  Wacka Flocka Flame, Evanna Lynch, Travis Barker, Mya, Mike Tyson, John Sally, Chris Evans",
+	"athletes": {
+		"endurance": "Scott Jurek, Carl Lewis, Rich Roll, Fiona Oakes, Harvey Lewis, Kate Ziegler, Jack Lindquist, Jason Lester, Brendan Brazier, Molly Cameron, Christine Vardaros, Dave Zabriskie",
+		"fighting": "Mac Danzig, David Meyer, Cam Awesome, James Southwood, Nate Diaz, Jake Shields, Georgi Karakhanyan, Timothy Bradley, Steph Goyne, Nick Diaz",
+		"lifting": "Patrik Baboumian, Kendrick Farris, Alex Dargatz, Torre Washington, Julia Hubbard, Amansa Riester, Derek Tresize, Joel Kirkillis, Steph Davis, Sara Lee",
+		"Sports": "Tony Gonzalez, Ed Templeton, Damian Lillard, Kyrie Irving, Billie Jean King, Venus Williams, Joe Namath, Robert Parish, Ricky Williams, David Carter, Jermain Defoe"
+	},
+	"animals": "Elephant, Gorilla, Rhino, Kangaroo, Hippo, Manatee, Bison, Wildebeest, Yak, Buffalo, Bulls/Cows/Ox, Horse, Donkey,  Deer, Elk, Moose, MegaBats, Giraffes, Cassowary"
+}

@@ -8,30 +8,25 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import studyData from './assets/data/studies.json';
 import learnMoreData from './assets/data/learn-more.json';
+import {preprocess} from './utils.jsx';
 
 import Health from './routes/health';
 import Externalities from './routes/externalities';
+import Endorsements from './routes/endorsements';
 import LearnMore from './routes/learn-more';
 
 export default class App extends Component {
-	static preprocessResources(resources) {
-		return resources.map((resource, indx) => {
-			resource.tags = resource.tags.split(',');
-			resource.id = indx;
-			return resource;
-		});
-	}
 	constructor(props) {
 		super(props);
 
 		//simple global data container
 		window.globalAppData = {
 			appName: 'Plant-Based Diet',
-			studies: App.preprocessResources(studyData),
+			studies: preprocess(studyData),
 			learnMore: {
-				documentaries: App.preprocessResources(learnMoreData.documentaries),
-				videos: App.preprocessResources(learnMoreData.videos),
-				books: App.preprocessResources(learnMoreData.books),
+				documentaries: preprocess(learnMoreData.documentaries),
+				videos: preprocess(learnMoreData.videos),
+				books: preprocess(learnMoreData.books),
 			}
 		};
 		document.title = window.globalAppData.appName;
@@ -48,6 +43,7 @@ export default class App extends Component {
 								<Route path="/health" component={Health} />
 								<Route path="/externalities" component={Externalities} />
 								<Route path="/learn-more" component={LearnMore} />
+								<Route path="/endorsements" component={Endorsements} />
 							</Switch>
 						</div>
 					</Router>
