@@ -36,7 +36,6 @@ export default class Resources extends Component {
 	submitFilters() {
 		let stateCopy = Object.assign({}, this.state);
 		const newState = Object.assign(stateCopy, this.inputFilters);
-		console.log(this.inputFilters)
 		this.setState(newState);
 	}
 
@@ -92,10 +91,14 @@ export default class Resources extends Component {
 			const properYear = resource.year <= this.state.maxYear && resource.year >= this.state.minYear;
 			return resourceTagIncluded && properYear;
 		});
+		console.log(window.globalAppData.studies)
+
 		//sort resources by strength
 		const resourceTypeScore = {
-			'report': 3,
-			'meta': 2
+			'research report': 3,
+			'meta analysis': 2,
+			'study':1,
+			'article':0
 		}
 		resources.sort((a, b) => {
 			const aVal = resourceTypeScore[a.type] || 1;

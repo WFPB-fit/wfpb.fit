@@ -44,7 +44,7 @@ export default class Resource extends Component {
 		const rating = Resource.getRating(resource.rating);
 		const title = getLink(resource.url, titleize(resource.title || '')) || titleize(resource.name);
 		const books = getLink(resource.books, "Books");
-		const website = getLink(resource.url, "Website");
+		const website = getLink(resource.website, "Website");
 
 		const metaData = joinMetaData([resource.year, books, website, rating, availability, type, pdf, tags]);
 
