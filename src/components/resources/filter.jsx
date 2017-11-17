@@ -68,6 +68,7 @@ export default class Filter extends Component {
 					</CardText>
 					<CardActions>
 						<RaisedButton label="Submit" primary onClick={this.props.filterSubmitted} />
+						<p>{this.props.count} resources</p>
 					</CardActions>
 				</Card>
 			</div>

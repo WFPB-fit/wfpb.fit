@@ -762,6 +762,126 @@
 		"tags": "weight",
 		"quote": "Lowest weight gain was seen among those who, during follow-up, had changed to a diet containing fewer animal food"
 	}, {
+		"title": "Cholesterol and breast cancer development.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/22867847",
+		"year": 2012,
+		"type": "meta analysis",
+		"availability": "abstract",
+		"tags": "cholesterol,cancer",
+		"quote": "Among the environmental factors believed to be responsible for this phenomenon, cholesterol has recently received considerable attention.  ... The recognition of cholesterol as a factor contributing to breast cancer development identifies cholesterol and its metabolism as novel targets for cancer therapy."
+	}, {
+		"title": "Total Cholesterol and Cancer Risk in a Large Prospective Study in Korea",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3082977/",
+		"year": 2011,
+		"type": "study",
+		"availability": "full",
+		"tags": "cholesterol,cancer",
+		"quote": "In this large prospective study, we found that total cholesterol was associated with the risk of several different cancers, although these relationships differed markedly by cancer site."
+	}, {
+		"title": "Effect of diet and exercise on serum insulin, IGF-I, and IGFBP-1 levels and growth of LNCaP cells in vitro (United States).",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/12588089",
+		"year": 2002,
+		"type": "study",
+		"availability": "full",
+		"tags": "fat,cancer",
+		"quote": "A low-fat diet and exercise intervention induces in-vivo changes in the circulating IGF axis and is associated with reduced growth and enhanced apoptosis/necrosis of LNCaP tumor cells in vitro."
+	}, {
+		"title": "Vegetarian and vegan diets in type 2 diabetes management.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/19386029/",
+		"year": 2009,
+		"type": "meta analysis",
+		"availability": "abstract",
+		"tags": "diabetes",
+		"quote": "Vegetarian and vegan diets offer significant benefits for diabetes management. In observational studies, individuals following vegetarian diets are about half as likely to develop diabetes, compared with non-vegetarians. In clinical trials in individuals with type 2 diabetes, low-fat vegan diets improve glycemic control to a greater extent than conventional diabetes diets. "
+	}, {
+		"title": "Taiwanese Vegetarians and Omnivores: Dietary Composition, Prevalence of Diabetes and IFG",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/19386029/",
+		"year": 2009,
+		"type": "study",
+		"availability": "full",
+		"tags": "diabetes",
+		"quote": "We found a strong protective association between Taiwanese vegetarian diet and diabetes/IFG, after controlling for various potential confounders and risk factors."
+	}, {
+		"title": "Fatty acids and glucolipotoxicity in the pathogenesis of Type 2 diabetes.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/18481955",
+		"year": 2008,
+		"type": "meta analysis",
+		"availability": "abstract",
+		"tags": "diabetes,weight,saturated fat",
+		"quote": "Western diets rich in saturated fats cause obesity and insulin resistance, and increase levels of circulating NEFAs [non-esterified ('free') fatty acids]. In addition, they contribute to beta-cell failure in genetically predisposed individuals. NEFAs cause beta-cell apoptosis and may thus contribute to progressive beta-cell loss in Type 2 diabetes. "
+	}, {
+		"title": "Lipotoxicity: Effects of Dietary Saturated and Transfatty Acids",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3572653/",
+		"year": 2013,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "trans fat,saturated fat,fat,inflammation",
+		"quote": "The saturated and transfatty acids favor a proinflammatory state leading to insulin resistance. These fatty acids can be involved in several inflammatory pathways, contributing to disease progression in chronic inflammation, autoimmunity, allergy, cancer, atherosclerosis, hypertension, and heart hypertrophy as well as other metabolic and degenerative diseases. As a consequence, lipotoxicity may occur in several target organs by direct effects, represented by inflammation pathways, and through indirect effects, including an important alteration in the gut microbiota associated with endotoxemia."
+	}, {
+		"title": "Differential effects of monounsaturated, polyunsaturated and saturated fat ingestion on glucose-stimulated insulin secretion, sensitivity and clearance in overweight and obese, non-diabetic humans.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/16596361",
+		"year": 2006,
+		"type": "study",
+		"availability": "full",
+		"tags": "saturated fat,fat,mufa,pufa",
+		"quote": "Oral ingestion of fats with differing degrees of saturation resulted in different effects on insulin secretion and action. PUFA ingestion resulted in an absolute reduction in insulin secretion and SFA ingestion induced insulin resistance. Failure of insulin secretion to compensate for insulin resistance implies impaired beta cell function in the SFA study."
+	}, {
+		"title": "Long-term low-calorie low-protein vegan diet and endurance exercise are associated with low cardiometabolic risk.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/17518696",
+		"year": 2007,
+		"type": "study",
+		"availability": "abstract",
+		"tags": "saturated fat,fat,mufa,pufa",
+		"quote": "Long-term consumption of a low-calorie low-protein vegan diet or regular endurance exercise training is associated with low cardiometabolic risk. Moreover, our data suggest that specific components of a low-calorie low-protein vegan diet provide additional beneficial effects on blood pressure."
+	}, {
+		"title": "Relation between progression and regression of atherosclerotic left main coronary artery disease and serum cholesterol levels as assessed with serial long-term (> or =12 months) follow-up intravascular ultrasound.",
+		"url": "http://circ.ahajournals.org/content/108/22/2757.long",
+		"year": 2003,
+		"type": "study",
+		"availability": "abstract",
+		"tags": "cholesterol,cardiovascular disease",
+		"quote": "There is a positive linear relation between LDL cholesterol and annual changes in plaque size, with an LDL value of 75 mg/dL predicting, on average, no plaque progression. HDL cholesterol shows an inverse relation with annual changes in plaque size."
+	}, {
+		"title": "Effect of ingestion of meat on plasma cholesterol of vegetarians.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/7019459",
+		"year": 1981,
+		"type": "study",
+		"availability": "abstract",
+		"tags": "cholesterol,cardiovascular disease",
+		"quote": "In a controlled trial, 21 strict vegetarians were studied prospectively for eight weeks: a two-week control period of the usual vegetarian diet was followed by four weeks, during which 250 g of beef was added isocalorically to the daily vegetarian diet and then by two weeks of the control diet. Plasma high-density lipoprotein-cholesterol did not change during the study, whereas plasma total cholesterol rose significantly by 19% at the end of the meat-eating period. Systolic blood pressure (BP) increased significantly during the meat eating by 3% over control values, whereas diastolic BP showed no major changes."
+	}, {
+		"title": "Optimal low-density lipoprotein is 50 to 70 mg/dl: Lower is better and physiologically normal",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/7019459",
+		"year": 2004,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "cholesterol",
+		"quote": "The normal low-density lipoprotein (LDL) cholesterol range is 50 to 70 mg/dl for native hunter-gatherers, healthy human neonates, free-living primates, and other wild mammals (all of whom do not develop atherosclerosis). Randomized trial data suggest atherosclerosis progression and coronary heart disease events are minimized when LDL is lowered to <70 mg/dl. No major safety concerns have surfaced in studies that lowered LDL to this range of 50 to 70 mg/dl. The current guidelines setting the target LDL at 100 to 115 mg/dl may lead to substantial undertreatment in high-risk individuals."
+	}, {
+		"title": "A high-fat diet coordinately downregulates genes required for mitochondrial oxidative phosphorylation in skeletal muscle.",
+		"url": "http://diabetes.diabetesjournals.org/content/54/7/1926.long",
+		"year": 2006,
+		"type": "study",
+		"availability": "full",
+		"tags": "diabetes,fat",
+		"quote": "Combined, these results suggest a mechanism whereby HFD [high fat diet] downregulates genes necessary for OXPHOS and mitochondrial biogenesis. These changes mimic those observed in diabetes and insulin resistance and, if sustained, may result in mitochondrial dysfunction in the prediabetic/insulin-resistant state."
+	}, {
+		"title": "Type of Vegetarian Diet, Body Weight, and Prevalence of Type 2 Diabetes",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2671114/",
+		"year": 2009,
+		"type": "study",
+		"availability": "full",
+		"tags": "diabetes,weight,plant-based diet",
+		"quote": "The 5-unit BMI difference between vegans and nonvegetarians indicates a substantial potential of vegetarianism to protect against obesity. Increased conformity to vegetarian diets protected against risk of type 2 diabetes after lifestyle characteristics and BMI were taken into account. Pesco- and semi-vegetarian diets afforded intermediate protection."
+	}, {
+		"title": "Cancer incidence in vegetarians: results from the European Prospective Investigation into Cancer and Nutrition (EPIC-Oxford).",
+		"url": "http://ajcn.nutrition.org/content/89/5/1620S.long",
+		"year": 2009,
+		"type": "study",
+		"availability": "full",
+		"tags": "cancer",
+		"quote": "The overall cancer incidence rates of both the vegetarians and the nonvegetarians in this study are low compared with national rates. Within the study, the incidence of all cancers combined was lower among vegetarians than among meat eaters, but the incidence of colorectal cancer was higher in vegetarians than in meat eaters."
+	}, {
 		"title": "Metabolically Healthy Obese and Incident Cardiovascular Disease Events Among 3.5 Million Men and Women.",
 		"url": "https://www.ncbi.nlm.nih.gov/pubmed/28911506",
 		"year": 2017,
@@ -881,7 +1001,23 @@
 		"availability": "full",
 		"tags": "plant-based diet",
 		"quote": "The vegan gut profile appears to be unique in several characteristics, including a reduced abundance of pathobionts and a greater abundance of protective species. Reduced levels of inflammation may be the key feature linking the vegan gut microbiota with protective health effects. However, it is still unclear whether a therapeutic vegan diet can be prescribed to alter the gut microflora for long-term health benefits."
-	}, {
+	},  {
+		"title": "A low-fat vegan diet and a conventional diabetes diet in the treatment of type 2 diabetes: a randomized, controlled, 74-wk clinical trial",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2677007/",
+		"year": 2009,
+		"type": "study",
+		"availability": "full",
+		"tags": "plant-based diet",
+		"quote":"Both diets were associated with sustained reductions in weight and plasma lipid concentrations. In an analysis controlling for medication changes, a low-fat vegan diet appeared to improve glycemia and plasma lipids more than did conventional diabetes diet recommendations. Whether the observed differences provide clinical benefit for the macro- or microvascular complications of diabetes remains to be established. "
+		}, {
+		"title": "High compliance with dietary recommendations in a cohort of meat eaters, fish eaters, vegetarians, and vegans: results from the European Prospective Investigation into Cancer and Nutrition–Oxford study",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4844163/",
+		"year": 2016,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "plant-based diet",
+		"quote":"Highly significant differences were found in estimated nutrient intakes between meat eaters and vegans, with fish eaters and vegetarians usually having intermediate values. Meat eaters had the highest energy intakes, followed by fish eaters and vegetarians, whereas vegans had the lowest intakes. Vegans had the highest intakes of polyunsaturated fatty acids, dietary fiber, vitamins C and E, folate, magnesium, iron, and copper. Meat eaters had the highest intake of saturated fatty acids, protein, vitamin B2, vitamin B12, vitamin D, zinc, and iodine. Fish eaters had the highest intakes of calcium and selenium. ... The results suggested a high prevalence of inadequacy for dietary vitamin B12 and iodine in vegans."
+		},  {
 		"title": "Perceived protein needs and measured protein intake in collegiate male athletes: an observational study",
 		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3133534/",
 		"year": 2011,
@@ -1163,11 +1299,139 @@
 	}, {
 		"title": "Dairy Is Bad for Humans, Cows and the Planet: So Why Are Public Schools Required to Offer Milk With Every Meal?",
 		"url": "https://www.alternet.org/food/dairy-bad-humans-cows-and-environment-government-wants-kids-drink-it",
-		"type":"article",
+		"type": "article",
 		"availability": "full",
 		"year": 2017,
 		"tags": "milk,environment,saturated fat,politics",
-		"quote":"Milk and other dairy products are the No. 1 source of artery-clogging saturated fat in the American diet, contributing to heart disease, type 2 diabetes and Alzheimer’s disease. Studies have also linked dairy products to an increased risk of breast, ovarian and prostate cancers. ... Producing just a single gallon of milk requires 880 gallons of water. That’s nearly 55 gallons per cup. ... Industrial dairy cows suffer a life filled with illness, with one out of every 10 cows in a herd prematurely dying every year. Given natural conditions like healthy food and outdoor exercise, cows have an average lifespan of 20 years. ... Schools account for about 7 to 8 percent of all milk sales. Knowing it’s a must-win market, the dairy industry uses its money and lobbying power to convince us that milk is an essential part of children’s diets. And it works."
+		"quote": "Milk and other dairy products are the No. 1 source of artery-clogging saturated fat in the American diet, contributing to heart disease, type 2 diabetes and Alzheimer’s disease. Studies have also linked dairy products to an increased risk of breast, ovarian and prostate cancers. ... Producing just a single gallon of milk requires 880 gallons of water. That’s nearly 55 gallons per cup. ... Industrial dairy cows suffer a life filled with illness, with one out of every 10 cows in a herd prematurely dying every year. Given natural conditions like healthy food and outdoor exercise, cows have an average lifespan of 20 years. ... Schools account for about 7 to 8 percent of all milk sales. Knowing it’s a must-win market, the dairy industry uses its money and lobbying power to convince us that milk is an essential part of children’s diets. And it works."
+	}, {
+		"title": "The System Supplying America's Chickens Pits Farmer Vs. Farmer",
+		"url": "https://www.npr.org/sections/thesalt/2014/02/20/279040721/the-system-that-supplies-our-chickens-pits-farmer-against-farmer",
+		"type": "article",
+		"availability": "full",
+		"year": 2014,
+		"tags": "agribusiness",
+		"quotes": "some people involved in contract farming say it doesn't benefit everyone. ... Building the chicken houses will cost a million dollars, which means taking on a mountain of debt. ... you discover that there are expenses the brochure didn't really mention, such as repairs, a tractor and additional labor. That can eat up your profit. ... there's the uncertainty created by the tournament ... But once you owe all that money, he says, you're stuck, because those loans are secured by the land on your farm, or by your home. ... contract farming is still expanding. It's now the way that most pork is produced, too."
+	}, {
+		"title": "Journalist: Tyson's 'chickenization' of meat industry turns farmers into serfs",
+		"url": "https://www.splendidtable.org/story/journalist-tysons-chickenization-of-meat-industry-turns-farmers-into-serfs",
+		"type": "article",
+		"availability": "full",
+		"year": 2014,
+		"tags": "agribusiness",
+		"quote": "By controlling all stages of meat production from the hatchery to the slaughterhouse, Leonard says the companies have taken power away from farmers, cut production and reported record profits. Today, just two companies make about 40 percent of the chicken in the U.S. ... You'll have a farmer who will borrow maybe $500,000, maybe as much as $2 million, to build a large industrial footprint of these kinds of factory farms where they can raise 25,000 chickens in a single barn. But for all the size, scale and sophistication of these farms, the farmer never owns the actual chickens that are put into these barns. The farmer contracts with a company like Tyson, and Tyson will come and deliver birds and deliver feed. The farmer is paid to raise animals. The farmers have almost no control over the most important things in the operation. The farmer has no control over what quality of chicks are delivered to the farm, whether they are healthy or not. The farmer doesn't control what kind of feed is delivered to the farm. So essentially they end up taking orders from a big company like Tyson Foods in the same way a serf might be tied to a lord many, many years ago."
+	}, {
+		"title": "The US meat industry’s wildly successful, 40-year crusade to keep its hold on the American diet",
+		"url": "https://qz.com/523255/the-us-meat-industrys-wildly-successful-40-year-crusade-to-keep-its-hold-on-the-american-diet/",
+		"type": "article",
+		"availability": "full",
+		"year": 2015,
+		"tags": "agribusiness",
+		"quote": "Beef alone is a $95 billion-a-year business, according to the USDA. And the North American Meat Institute (NAMI) estimates that, in total, the meat industry contributes about $894 billion to the US economy. That size translates into political influence ... While the USDA is tasked with regulating the meat industry, it also has a role in promoting it. This tension plays out every time the US government wants to give out dietary advice—and the results generally wind up favoring the industry. ... the panel’s advice to eat less of specifically red and processed meat has run into the same industry objections ... [industry] Attack the scientific methodology used by those recommending a drop in consumption."
+	}, {
+		"title": "Where’s the beef? When meat’s in trouble, lobbying expands",
+		"url": "https://www.opensecrets.org/news/2017/03/wheres-the-beef-meat-lobby/",
+		"type": "article",
+		"availability": "full",
+		"year": 2017,
+		"tags": "agribusiness,environment",
+		"quote": "Americans cut their beef consumption by 19 percent between 2005 and 2014 ... That drop in beef intake was the main contributor to a 10 percent reduction in the amount of climate-warming pollution Americans caused through their diets ... “roughly equivalent to the annual pollution of 57 million car tailpipes.” ... In the lead [of lobbying pay] was the dairy industry, which spent more than $6 million lobbying in 2016. It almost doubled the lobbying payments of the livestock industry, and more than quadrupled those of poultry and eggs. ... Last year, the group [National Pork Producers Council] spent more than $1.6 million lobbying on bills addressing issues like water quality and antibiotics."
+	}, {
+		"title": "JBS, World's Largest Meat Company, Mired In Multiple Corruption Scandals In Brazil",
+		"url": "http://harvestpublicmedia.org/post/jbs-worlds-largest-meat-company-mired-multiple-corruption-scandals-brazil",
+		"type": "article",
+		"availability": "full",
+		"year": 2014,
+		"tags": "agribusiness",
+		"quote": "As of 2014, JBS’s U.S. subsidiary held a 22 percent market-share in U.S. beef processing and an 18 percent market-share in poultry processing. ... Secretly recorded tapes surfaced in May of Brazil’s president, Michel Temer, allegedly discussing bribing a former legislator. The tapes were recorded by JBS chairman Joesley Batista and came to light when he and his brother, Wesley Batista, signed a leniency agreement with federal prosecutors and agreed to have JBS’s holding company pay a $3.2 billion fine."
+	}, {
+		"title": "Food Lobbies, the Food Pyramid, and U.S. Nutrition Policy",
+		"url": "http://journals.sagepub.com/doi/abs/10.2190/32F2-2PFB-MEG7-8HPU?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%3dpubmed",
+		"type": "meta analysis",
+		"availability": "abstract",
+		"year": 1993,
+		"tags": "agribusiness",
+		"quote": "[USDA guideline change ]was only the latest in a long series of industry attempts to influence federal dietary recommendations. ... Since 1977, for example, under pressure from meat producers, federal dietary advice has evolved from “decrease consumption of meat” to “have two or three (daily) servings.” Thus, this recent incident also highlights the inherent conflict of interest in the Department of Agriculture's dual mandates to promote U.S. agricultural products and to advise the public about healthy food choices."
+	}, {
+		"title": "Vegetarian diets and the incidence of cancer in a low-risk population.",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3565018/",
+		"type": "study",
+		"availability": "full",
+		"year": 2014,
+		"tags": "cancer",
+		"quote": "The multivariate HR of overall cancer risk among vegetarians compared to non-vegetarians was statistically significant (HR=0.92; 95%CI: 0.85, 0.99) for both genders combined. Also, a statistically significant association was found between vegetarian diet and cancers of the gastrointestinal tract (HR=0.76; 95%CI: 0.63, 0.90). When analyzing the association of specific vegetarian dietary patterns, vegan diets showed statistically significant protection for overall cancer incidence (HR=0.84; 95%CI: 0.72, 0.99) in both genders combined and for female-specific cancers (HR=0.66; 95%CI: 0.47, 0.92). Lacto-ovo-vegetarians appeared to be associated with decreased risk of cancers of the gastrointestinal system (HR=0.75; 95%CI: 0.60, 0.92)."
+	}, {
+		"title": "A review of methionine dependency and the role of methionine restriction in cancer growth control and life-span extension.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/22342103",
+		"type": "study",
+		"availability": "abstract",
+		"year": 2012,
+		"tags": "protein,methionine,cancer",
+		"quote": "Restriction of methionine may be an important strategy in cancer growth control particularly in cancers that exhibit dependence on methionine for survival and proliferation. ... Several animal studies utilizing a methionine restricted diet have reported inhibition of cancer growth and extension of a healthy life-span. In humans, vegan diets, which can be low in methionine, may prove to be a useful nutritional strategy in cancer growth control. "
+	}, {
+		"title": "The low-methionine content of vegan diets may make methionine restriction feasible as a life extension strategy.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/18789600",
+		"type": "study",
+		"availability": "abstract",
+		"year": 2009,
+		"tags": "protein,methionine",
+		"quote": "The multivariate HR of overall cancer risk among vegetarians compared to non-vegetarians was statistically significant (HR=0.92; 95%CI: 0.85, 0.99) for both genders combined. Also, a statistically significant association was found between vegetarian diet and cancers of the gastrointestinal tract (HR=0.76; 95%CI: 0.63, 0.90). When analyzing the association of specific vegetarian dietary patterns, vegan diets showed statistically significant protection for overall cancer incidence (HR=0.84; 95%CI: 0.72, 0.99) in both genders combined and for female-specific cancers (HR=0.66; 95%CI: 0.47, 0.92). Lacto-ovo-vegetarians appeared to be associated with decreased risk of cancers of the gastrointestinal system (HR=0.75; 95%CI: 0.60, 0.92)."
+	}, {
+		"title": "Relevance of protein fermentation to gut health.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/22121108",
+		"type": "meta analysis",
+		"availability": "abstract",
+		"year": 2012,
+		"tags": "protein",
+		"quote": "It is generally accepted that carbohydrate fermentation results in beneficial effects for the host because of the generation of short chain fatty acids, whereas protein fermentation is considered detrimental for the host's health. Protein fermentation mainly occurs in the distal colon, when carbohydrates get depleted and results in the production of potentially toxic metabolites such as ammonia, amines, phenols and sulfides."
+	}, {
+		"title": "The Politics of Meat: A look at the meat industry's influence on Capitol Hill",
+		"url": "http://www.pbs.org/wgbh/pages/frontline/shows/meat/politics/",
+		"type": "article",
+		"availability": "full",
+		"year": 2014,
+		"tags": "agribusiness",
+		"quote": "The meat industry in the United States is a powerful political force, both in the legislative and the regulatory arena ... Instead of spreading lots of money around to many different lawmakers in an attempt to gain access and influence -- the traditional method used by many large corporations -- the meat industry targets their approach to a small number of key lawmakers and regulators that have a direct impact on their business interests."
+	}, {
+		"title": "Close to the Bone: The Fight Over Transparency in the Meat Industry",
+		"url": "https://www.nytimes.com/interactive/2016/10/09/magazine/meat-industry-transparency-fight.html",
+		"type": "article",
+		"availability": "full",
+		"year": 2016,
+		"tags": "agribusiness",
+		"quote": "Beef commands a premium if it is labeled “grass-fed” or “naturally raised,” but the Department of Agriculture withdrew oversight of those terms in January and no longer verifies such claims. Even in cases where the U.S.D.A. does certify labels, the rules can be slippery. The term “humanely raised,” for example, has no standard definition, and the U.S.D.A. does not conduct site visits to confirm enforcement for those approved to use the label. ... Large [meat] producers successfully lobbied Congress to create a “checkoff” program, which imbued private industry with the power, via the U.S.D.A., to collect a percentage of all beef and pork sales to be used for the general promotion of eating meat. ...  Thus began an era in which U.S.D.A. officials began to view themselves as partnering with industry, rather than monitoring it. "
+	}, {
+		"title": "Experts Say Lobbying Skewed the U.S. Dietary Guidelines",
+		"url": "http://time.com/4130043/lobbying-politics-dietary-guidelines/",
+		"type": "article",
+		"availability": "full",
+		"year": 2016,
+		"tags": "agribusiness",
+		"quote": "a number of leading nutrition experts—including some tasked by the government to advise it on the latest research—say the guidelines are influenced too much by food manufacturers, food producers, and special interest groups. As a result, many experts say some of the government’s diet advice continues to promulgate out-of-date research from years past. ... Some experts disagree [with recommendation of 'healthy' red meat], telling TIME that the discrepancies between the Advisory Committee’s report and the final guidelines are evidence that USDA and HHS do not rely on science to form their nutrition policies."
+	}, {
+		"title": "LESS BEEF, LESS CARBON: AMERICANS SHRINK THEIR DIET-RELATED CARBON FOOTPRINT BY 10 PERCENT BETWEEN 2005 AND 2014",
+		"url": "https://www.nrdc.org/sites/default/files/less-beef-less-carbon-ip.pdf",
+		"type": "research report",
+		"availability": "full",
+		"year": 2017,
+		"tags": "environment",
+		"quote": "Between 2005 and 2014, Americans cut their per-capita diet-related climate-warming pollution by approximately 10 percent. Based on NRDC’s calculations, these changes cumulatively avoided approximately 271 million metric tons (MMT) of climate-warming pollution. This was roughly equivalent to the annual pollution of 57 million car tailpipes, with most of these cuts in emissions due to reduced beef consumption"
+	}, {
+		"title": "Growing Greenhouse Gas Emissions Due to Meat Production",
+		"url": "https://na.unep.net/geas/getUNEPPageWithArticleIDScript.php?article_id=92",
+		"type": "research report",
+		"availability": "full",
+		"year": 2012,
+		"tags": "environment",
+		"quote": "Both intensive (industrial) and non-intensive (traditional) forms of meat production result in the release of greenhouse gases (GHGs). As meat supply and consumption increase around the world, more sustainable food systems must be encouraged."
+	}, {
+		"title": "Greenhouse Gas Emissions Due to Meat Production in the Last Fifty Years",
+		"url": "https://link.springer.com/chapter/10.1007/978-3-319-32059-5_2",
+		"type": "study",
+		"availability": "abstract",
+		"year": 2016,
+		"tags": "environment",
+		"quote": "We find that during the last 50 years, global greenhouse gas (GHG) emissions released from beef cattle, pork and chickens increased by 59 %, 89 % and 461 % respectively."
 	},
 	{
 		"title": "Organic Foods: Health and Environmental Advantages and Disadvantages",
@@ -1467,7 +1731,7 @@
 		"tags": "milk,cancer",
 		"quote": "The collected data from other researchers and our own data are indicating that the presence of steroid hormones in dairy products could be counted as an important risk factor for various cancers in humans."
 	}, {
-		"title": "Milk intake and risk of mortality and fractures in women and men: cohort studies",
+		"title": "Milk intake and risk of mortality and fractures in women and men: cohort studies.",
 		"url": "http://www.bmj.com/content/349/bmj.g6015",
 		"year": 2014,
 		"type": "study",
@@ -1483,6 +1747,30 @@
 		"tags": "milk",
 		"quote": "The range of non-fermented and fermented milk consumption and the shape of the associations between milk consumption and mortality differed considerably between studies ...  we observed no consistent association between milk consumption and all-cause or cause-specific mortality."
 	}, {
+		"title": "Low-carbohydrate diets and all-cause and cause-specific mortality: Two cohort Studies",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2989112/",
+		"year": 2011,
+		"type": "study",
+		"availability": "full",
+		"tags": "plant-based diet,low carb",
+		"quote":"A low-carbohydrate diet based on animal sources was associated with higher all-cause mortality in both men and women, whereas a vegetable-based low-carbohydrate diet was associated with lower all-cause and cardiovascular disease mortality rates."
+		}, {
+			"title": "Comparison of Nutritional Quality of the Vegan, Vegetarian, Semi-Vegetarian, Pesco-Vegetarian and Omnivorous Diet",
+			"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3967195/",
+			"year": 2014,
+			"type": "study",
+			"availability": "full",
+			"tags": "plant-based diet",
+			"quote":"The most restricted diet, i.e., the vegan diet, had the lowest total energy intake, better fat intake profile, lowest protein and highest dietary fiber intake in contrast to the omnivorous diet. Calcium intake was lowest for the vegans and below national dietary recommendations. The vegan diet received the highest index values and the omnivorous the lowest for HEI-2010 and MDS. Typical aspects of a vegan diet (high fruit and vegetable intake, low sodium intake, and low intake of saturated fat) contributed substantially to the total score, independent of the indexing system used. "
+			}, {
+				"title": "Beyond Meatless, the Health Effects of Vegan Diets: Findings from the Adventist Cohorts",
+				"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4073139/",
+				"year": 2014,
+				"type": "meta analysis",
+				"availability": "full",
+				"tags": "plant-based diet",
+				"quote":"Vegetarian diets confer protection against cardiovascular diseases, cardiometabolic risk factors, some cancers and total mortality. Compared to lacto-ovo-vegetarian diets, vegan diets seem to offer additional protection for obesity, hypertension, type-2 diabetes, and cardiovascular mortality. Males experience greater health benefits than females."
+				}, {
 		"title": "Case-control study of risk factors for hip fractures in the elderly.",
 		"url": "https://www.ncbi.nlm.nih.gov/pubmed/8154473",
 		"year": 1994,

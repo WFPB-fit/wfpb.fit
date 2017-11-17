@@ -126,6 +126,7 @@ export default class Resources extends Component {
 					handleSelectChange={this.handleSelectChange}
 					allTags={this.selectableTags}
 					filterSubmitted={this.submitFilters}
+					count={resources.length}
 				/>
 				{resourceComponents}
 			</div>

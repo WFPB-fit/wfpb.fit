@@ -13,6 +13,12 @@ export default class Externalities extends Component {
 						tags={tags.environment}
 					/>
 				</Tab>
+				<Tab label="Agribusiness" >
+					<Resources
+						research={window.globalAppData.studies}
+						tags={['agribusiness']}
+					/>
+				</Tab>
 			</Tabs>
 		);
 	}
