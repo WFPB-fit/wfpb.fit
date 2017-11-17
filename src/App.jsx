@@ -28,6 +28,7 @@ export default class App extends Component {
 				documentaries: preprocess(learnMoreData.documentaries),
 				videos: preprocess(learnMoreData.videos),
 				books: preprocess(learnMoreData.books),
+				wikipedia: preprocess(learnMoreData.wikipedia),
 			}
 		};
 		document.title = window.globalAppData.appName; //set tab title

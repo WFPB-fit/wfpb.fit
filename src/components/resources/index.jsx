@@ -88,10 +88,9 @@ export default class Resources extends Component {
 		const selectedTags = Resources.selectableTagsToArray(this.state.selectedTags);
 		let resources = this.state.resources.filter((resource) => {
 			let resourceTagIncluded = numCommonElements(resource.tags, selectedTags) > 0;
-			const properYear = resource.year <= this.state.maxYear && resource.year >= this.state.minYear;
+			const properYear = !resource.year || (resource.year <= this.state.maxYear && resource.year >= this.state.minYear);
 			return resourceTagIncluded && properYear;
 		});
-		console.log(window.globalAppData.studies)
 
 		//sort resources by strength
 		const resourceTypeScore = {

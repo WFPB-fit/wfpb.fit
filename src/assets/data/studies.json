@@ -1145,6 +1145,47 @@
 		"tags": "mental health",
 		"quote": "This cross-sectional study included 5731 population-based men and women aged 46 to 49 and 70 to 74 years. ... In this study, those with better quality diets were less likely to be depressed, whereas a higher intake of processed and unhealthy foods was associated with increased anxiety."
 	}, {
+		"title": "2015 Pesticide Residues in Fresh Produce: California's Pesticide Regulatory Program",
+		"url": "http://www.cdpr.ca.gov/docs/enforce/residue/resi2015/rsfr2015.htm",
+		"year": 2015,
+		"type": "research report",
+		"availability": "full",
+		"tags": "pesticides",
+		"quote": "In each of the years from 2010 to 2015, more than 93 percent of produce samples collected by DPR had no detected pesticide residues or pesticide residues well below U.S EPA tolerances. Pesticide residues that are found are usually at levels of a fraction of a ppm. In most years, less than 4 percent of all the samples analyzed have illegal pesticide residues."
+	}, {
+		"title": "Prenatal Exposure to Organophosphate Pesticides and IQ in 7-Year-Old Children",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3237357/",
+		"year": 2011,
+		"type": "study",
+		"availability": "full",
+		"tags": "pesticides",
+		"quote": "Prenatal but not postnatal urinary DAP [a pesticide] concentrations were associated with poorer intellectual development in 7-year-old children. Maternal urinary DAP concentrations in the present study were higher but nonetheless within the range of levels measured in the general U.S. population."
+	}, {
+		"title": "Dairy Is Bad for Humans, Cows and the Planet: So Why Are Public Schools Required to Offer Milk With Every Meal?",
+		"url": "https://www.alternet.org/food/dairy-bad-humans-cows-and-environment-government-wants-kids-drink-it",
+		"type":"article",
+		"availability": "full",
+		"year": 2017,
+		"tags": "milk,environment,saturated fat,politics",
+		"quote":"Milk and other dairy products are the No. 1 source of artery-clogging saturated fat in the American diet, contributing to heart disease, type 2 diabetes and Alzheimer’s disease. Studies have also linked dairy products to an increased risk of breast, ovarian and prostate cancers. ... Producing just a single gallon of milk requires 880 gallons of water. That’s nearly 55 gallons per cup. ... Industrial dairy cows suffer a life filled with illness, with one out of every 10 cows in a herd prematurely dying every year. Given natural conditions like healthy food and outdoor exercise, cows have an average lifespan of 20 years. ... Schools account for about 7 to 8 percent of all milk sales. Knowing it’s a must-win market, the dairy industry uses its money and lobbying power to convince us that milk is an essential part of children’s diets. And it works."
+	},
+	{
+		"title": "Organic Foods: Health and Environmental Advantages and Disadvantages",
+		"url": "http://pediatrics.aappublications.org/content/130/5/e1406",
+		"year": 2012,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "pesticides",
+		"quote": "organic diets have been convincingly demonstrated to expose consumers to fewer pesticides associated with human disease. ... However, current evidence does not support any meaningful nutritional benefits or deficits from eating organic compared with conventionally grown foods, and there are no well-powered human studies that directly demonstrate health benefits or disease protection as a result of consuming an organic diet. ... Although organic foods regularly command a significant price premium, well-designed farming studies demonstrate that costs can be competitive and yields comparable to those of conventional farming techniques."
+	}, {
+		"title": "Dirty Dozen and Clean Fifteen: EWG's 2017 Shopper's Guide to Pesticides in Produce",
+		"url": "https://www.ewg.org/foodnews/summary.php",
+		"year": 2017,
+		"type": "research report",
+		"availability": "full",
+		"tags": "pesticides",
+		"quote": "More than 98 percent of samples of strawberries, spinach, peaches, nectarines, cherries and apples tested positive for residue of at least one pesticide. ... More than 80 percent of pineapples, papayas, asparagus, onions and cabbage had no pesticide residues."
+	}, {
 		"title": "Nutrition intervention for migraine: a randomized crossover trial",
 		"url": "https://link.springer.com/content/pdf/10.1186%2F1129-2377-15-69.pdf",
 		"year": 2014,

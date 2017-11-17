@@ -21,6 +21,11 @@ export default class LearnMore extends Component {
 						research={window.globalAppData.learnMore.videos}
 					/>
 				</Tab>
+				<Tab label="Wikipedia" >
+					<Resources
+						research={window.globalAppData.learnMore.wikipedia}
+					/>
+				</Tab>
 			</Tabs>
 		);
 	}
