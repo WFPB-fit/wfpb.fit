@@ -1,6 +1,6 @@
 {
 	"disease": ["pollution","antibiotic resistance", "physicians", "bones", "plant-based diet", "cancer", "multiple sclerosis", "essential tremor", "cardiovascular disease", "teeth", "migraine", "inflammation", "autoimmune", "arthritis", "inflammatory bowel disease", "weight", "allergy", "puberty", "lupus", "cognition", "dementia", "mental health", "diabetes", "addition"],
 	"food": ["milk", "flaxseed", "taste","plants"],
-	"nutrients": ["calcium", "ala", "vitamin a","fat","trans fat","saturated fat","protein"],
+	"nutrients": ["calcium", "ala", "vitamin a","fat","trans fat","saturated fat","protein","chloesterol"],
 	"environment":["climate", "deforestation", "meat production", "agriculture", "ocean", "biodiversity"]
 }

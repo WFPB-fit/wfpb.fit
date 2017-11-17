@@ -94,8 +94,8 @@
 			"summary": "Filmmaker Mark Devries investigates factories that raise animals for consumption."
 		},
 		{
-			"title": "Speciesism: The Movie",
-			"url": "http://www.nationearth.com/",
+			"title": "Earthlings",
+			"url": "https://vimeo.com/209647801",
 			"year": 2005,
 			"rating": 8.7,
 			"tags": "animals",
@@ -252,6 +252,42 @@
 		"tags": "health",
 		"summary": "Filmmaker Kip Andersen uncovers the secret to preventing and even reversing chronic diseases, and he investigates why the nation's leading health organizations doesn't want people to know about it."
 	}, {
+		"title": "Shocking Footage: Chicks Ground Up Alive",
+		"url": "https://www.youtube.com/watch?v=6WiAQ8zRars",
+		"year": 2016,
+		"tags": "animals",
+		"summary": "A PETA exposé of a massive hatchery operated by Sanderson Farms, Inc., which supplies chicken meat to Asia, the Middle East, and elsewhere, reveals shocking footage showing unwanted chicks who were born alone and left to languish before finally being ground up alive."
+	}, {
+		"title": "The White Cow (with Slaugherhouse Footage)",
+		"url": "https://www.youtube.com/watch?v=o7RvmHPQ0i0",
+		"year": 2017,
+		"tags": "animals",
+		"summary": "This is an alternate version of our co-founder, Dr. Sofia Pineda Ochoa, recounting her experience at a slaughterhouse."
+	}, {
+		"title": "The Free Range Myth – Here’s Why It’s A Lie",
+		"url": "https://www.youtube.com/watch?v=zo3RKc1ofnc",
+		"year": 2015,
+		"tags": "animals",
+		"summary":"“Cage-free” conveys a similar impression of hens living “free” as nature intended. What are the realities behind “free-range” and “cage-free” labels?"
+		}, {
+			"title": "pig slaughter machine",
+			"url": "https://www.youtube.com/watch?v=tQ7ELpy2M2E",
+			"year": 2017,
+			"tags": "animals",
+			"summary":"Qingdao TENT Machinery CO LTD is specialized in food machinery for many years,if you interested in our machine ,fell free to contact me."
+			}, {
+				"title": "Pig slaughter- Comparison of different stunning methods used",
+				"url": "https://www.youtube.com/watch?v=adtjQDW9rVE",
+				"year": 2014,
+				"tags": "animals",
+				"summary":"Comparison of different stunning methods used"
+				}, {
+		"title": "GRAPHIC CONTENT: Spycam footage exposes shocking slaughterhouse cruelty Sheep",
+		"url": "https://www.youtube.com/watch?v=D_2j15tt7fo",
+		"year": 2015,
+		"tags": "animals",
+		"summary":"Sheep are punched, kicked and thrown onto a conveyor belt in secretly recorded video in a north Yorkshire slaughterhouse."
+		}, {
 		"title": "Food as Medicine: Preventing & Treating the Most Dreaded Diseases with Diet",
 		"url": "https://www.youtube.com/watch?v=d0IhZ-R1O8g",
 		"year": 2015,
@@ -529,7 +565,7 @@
 			"title": "United States Senate Select Committee on Nutrition and Human Needs",
 			"tags": "diet,agribusiness",
 			"url": "https://en.wikipedia.org/wiki/United_States_Senate_Select_Committee_on_Nutrition_and_Human_Needs",
-			"quote":"The committee's \"eat less\" recommendations triggered strong negative reactions from the cattle, dairy, egg, and sugar industries, including from McGovern's home state ... Under heavy pressure, the committee held further hearings, and issued a revised set of guidelines in late 1977 which adjusted some of the advice regarding salt and cholesterol and watered down the wording regarding meat consumption"
+			"quote": "The committee's \"eat less\" recommendations triggered strong negative reactions from the cattle, dairy, egg, and sugar industries, including from McGovern's home state ... Under heavy pressure, the committee held further hearings, and issued a revised set of guidelines in late 1977 which adjusted some of the advice regarding salt and cholesterol and watered down the wording regarding meat consumption"
 		},
 		{
 			"title": "Environmental impact of meat production",
