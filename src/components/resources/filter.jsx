@@ -4,7 +4,6 @@ import FlatButton from 'material-ui/FlatButton';
 import RaisedButton from 'material-ui/RaisedButton';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
-// import TextField from 'material-ui/TextField';
 import SelectField from 'material-ui/SelectField';
 import MenuItem from 'material-ui/MenuItem';
 
@@ -67,22 +66,6 @@ export default class Filter extends Component {
 								<MenuItem value={'availability'} primaryText="Availability" />
 								<MenuItem value={'type'} primaryText="Resource Type" />
 							</SelectField>
-							{/* <h3>Years </h3>
-							<TextField
-								hintText="Min Year"
-								type="number"
-								defaultValue={this.props.minYear}
-								onChange={this.props.handleMinYearChange}
-							/>
-
-							<span> - </span>
-
-							<TextField
-								hintText="Max Year"
-								type="number"
-								defaultValue={this.props.maxYear}
-								onChange={this.props.handleMaxYearChange}
-							/> */}
 						</div>
 					</CardText>
 					<CardActions>

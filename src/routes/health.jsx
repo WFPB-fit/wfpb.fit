@@ -11,16 +11,19 @@ export default class Health extends Component {
 				<Tab label="Disease" >
 					<Resources
 						research={filterStudiesByTags(window.globalAppData.studies, tags.disease)}
+						tags ={tags.disease}
 					/>
 				</Tab>
 				<Tab label="Food" >
 					<Resources
 						research={filterStudiesByTags(window.globalAppData.studies, tags.food)}
+						tags ={tags.food}
 					/>
 				</Tab>
 				<Tab label="Nutrients" >
 					<Resources
 						research={filterStudiesByTags(window.globalAppData.studies, tags.nutrients)}
+						tags ={tags.nutrients}
 					/>
 				</Tab>
 			</Tabs>

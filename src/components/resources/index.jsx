@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Resource from '../resource/index.jsx';
 import Filter from './filter';
-import { titleize, numCommonElements } from '../../utils.jsx';
+import { titleize, filterStudiesByTags } from '../../utils.jsx';
 
 export default class Resources extends Component {
 	static convertTagsToSelectValueObject(tags) {
@@ -68,7 +68,10 @@ export default class Resources extends Component {
 		this.sortResources = this.sortResources.bind(this);
 
 		//initialize vars
-		let tags = Resources.allResourcesTags(this.props.research);
+		let tags = this.props.tags;
+		if (!this.props.tags) {
+			tags = Resources.allResourcesTags(this.props.research);
+		}
 		this.selectableTags = Resources.convertTagsToSelectValueObject(tags);
 
 		this.state = {
@@ -97,33 +100,26 @@ export default class Resources extends Component {
 		//filter out un-wanted resources
 		const selectedTags = Resources.selectableTagsToArray(this.state.selectedTags);
 
-		let resources = this.state.resources.filter((resource) => {
-			return numCommonElements(resource.tags, selectedTags) > 0;
-		});
-
+		let resources = filterStudiesByTags(this.state.resources, selectedTags);
 		resources.sort(this.sortResources);
-
-		//create components from resources
-		let resourceComponents = resources.map((x) =>
-			(
-				<Resource
-					resource={x}
-					key={x.id}
-				/>
-			)
-		);
 
 		return (
 			<div>
 				<Filter
-					research={this.state.resources}
 					handleFormFieldChange={this.handleFormFieldChange}
 					selectedTags={this.inputFilters.selectedTags}
 					allTags={this.selectableTags}
 					filterSubmitted={this.submitFilters}
 					count={resources.length}
 				/>
-				{resourceComponents}
+				{
+					resources.map((x) => (
+						<Resource
+							resource={x}
+							key={x.id}
+						/>
+					))
+				}
 			</div>
 		);
 	}
