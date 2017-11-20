@@ -44,9 +44,19 @@ export default class Resources extends Component {
 	}
 
 	sortResources(a, b) {
-		const aVal = this.resourceTypeScore[a.type] || 1;
-		const bVal = this.resourceTypeScore[b.type] || 1;
-		return bVal - aVal || b.year - a.year;
+		let aVal = a[this.state.sortBy] || 1;
+		let bVal = b[this.state.sortBy] || 1;
+
+		if(this.state.sortBy === 'type'){
+			aVal = this.typeScore[aVal] || 1;
+			bVal = this.typeScore[bVal] || 1;
+		}
+		else if(this.state.sortBy === 'availability'){
+			aVal = this.availabilityScore[aVal] || 10;
+			bVal = this.availabilityScore[bVal] || 10;
+		}
+
+		return bVal - aVal;
 	}
 
 	constructor(props) {
@@ -77,11 +87,16 @@ export default class Resources extends Component {
 			selectedTags: this.state.selectedTags,
 			sortBy: 'year'
 		};
-		this.resourceTypeScore = {
+		this.typeScore = {
 			'research report': 3,
 			'meta analysis': 2,
 			'study': 1,
 			'article': 0
+		}
+		this.availabilityScore = {
+			'full': 3,
+			'abstract': 2,
+			'paywall': 1
 		}
 	}
 
