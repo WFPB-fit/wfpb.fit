@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Resource from '../resource/index.jsx';
 import Filter from './filter';
-import {titleize,numCommonElements} from '../../utils.jsx';
+import { titleize, numCommonElements } from '../../utils.jsx';
 
 export default class Resources extends Component {
 	static convertTagsToSelectValueObject(tags) {
@@ -11,7 +11,7 @@ export default class Resources extends Component {
 				{ value: tag, label: titleize(tag) }
 			);
 		}
-		const sortedTags = newTags.sort((a,b)=> a.value > b.value);
+		const sortedTags = newTags.sort((a, b) => a.value > b.value);
 		return sortedTags;
 	}
 
@@ -39,15 +39,14 @@ export default class Resources extends Component {
 		this.setState(newState);
 	}
 
-	handleMinYearChange(event) {
-		this.inputFilters.minYear = parseInt(event.target.value, 10);
-	}
-	handleMaxYearChange(event) {
-		this.inputFilters.maxYear = parseInt(event.target.value, 10);
+	handleFormFieldChange(name, value) {
+		this.inputFilters[name] = value;
 	}
 
-	handleSelectChange(value) {
-		this.inputFilters.selectedTags = value;
+	sortResources(a, b) {
+		const aVal = this.resourceTypeScore[a.type] || 1;
+		const bVal = this.resourceTypeScore[b.type] || 1;
+		return bVal - aVal || b.year - a.year;
 	}
 
 	constructor(props) {
@@ -55,9 +54,8 @@ export default class Resources extends Component {
 
 		//bind this
 		this.submitFilters = this.submitFilters.bind(this);
-		this.handleSelectChange = this.handleSelectChange.bind(this);
-		this.handleMinYearChange = this.handleMinYearChange.bind(this);
-		this.handleMaxYearChange = this.handleMaxYearChange.bind(this);
+		this.handleFormFieldChange = this.handleFormFieldChange.bind(this);
+		this.sortResources = this.sortResources.bind(this);
 
 		//initialize vars
 		let tags = this.props.tags;
@@ -73,37 +71,31 @@ export default class Resources extends Component {
 		this.state = {
 			resources: resources,
 			selectedTags: this.selectableTags,
-			minYear: 1900,
-			maxYear: (new Date()).getFullYear()
+			sortBy: 'year'
 		};
 		this.inputFilters = {
 			selectedTags: this.state.selectedTags,
-			minYear: this.state.minYear,
-			maxYear: this.state.maxYear
+			sortBy: 'year'
 		};
+		this.resourceTypeScore = {
+			'research report': 3,
+			'meta analysis': 2,
+			'study': 1,
+			'article': 0
+		}
 	}
 
 	render() {
 		//filter out un-wanted resources
 		const selectedTags = Resources.selectableTagsToArray(this.state.selectedTags);
+
 		let resources = this.state.resources.filter((resource) => {
 			let resourceTagIncluded = numCommonElements(resource.tags, selectedTags) > 0;
-			const properYear = !resource.year || (resource.year <= this.state.maxYear && resource.year >= this.state.minYear);
-			return resourceTagIncluded && properYear;
+			return resourceTagIncluded;
 		});
 
-		//sort resources by strength
-		const resourceTypeScore = {
-			'research report': 3,
-			'meta analysis': 2,
-			'study':1,
-			'article':0
-		}
-		resources.sort((a, b) => {
-			const aVal = resourceTypeScore[a.type] || 1;
-			const bVal = resourceTypeScore[b.type] || 1;
-			return bVal - aVal || b.year - a.year;
-		});
+		resources.sort(this.sortResources);
+
 		//create components from resources
 		let resourceComponents = resources.map((x) =>
 			(
@@ -118,12 +110,8 @@ export default class Resources extends Component {
 			<div>
 				<Filter
 					research={this.state.resources}
-					minYear={this.inputFilters.minYear}
-					maxYear={this.inputFilters.maxYear}
+					handleFormFieldChange={this.handleFormFieldChange}
 					selectedTags={this.inputFilters.selectedTags}
-					handleMinYearChange={this.handleMinYearChange}
-					handleMaxYearChange={this.handleMaxYearChange}
-					handleSelectChange={this.handleSelectChange}
 					allTags={this.selectableTags}
 					filterSubmitted={this.submitFilters}
 					count={resources.length}
