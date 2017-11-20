@@ -18,6 +18,10 @@ export default class Header extends Component {
 		this.state = {
 			drawerOpen: false
 		};
+		this.BottomMenu = styled(Menu) `
+		bottom:0;
+		position:absolute;
+		`;
 	}
 	toggleDrawer() {
 		this.setState({ drawerOpen: !this.state.drawerOpen });
@@ -27,15 +31,6 @@ export default class Header extends Component {
 	}
 
 	render() {
-		const NoScrollMI = styled(MenuItem) `
-		max-width: 100vw;
-		box-sizing:border-box;
-		overflow:hidden;
-		`;
-		const BottomMenu = styled(Menu) `
-		bottom:0;
-		position:absolute;
-		`;
 		return (
 			<div>
 				<AppBar
@@ -53,50 +48,54 @@ export default class Header extends Component {
 						// onTitleTouchTap={handleTouchTap}
 						onLeftIconButtonTouchTap={this.toggleDrawer}
 					/>
-					<Menu>
-						<NoScrollMI
+					<Menu
+						autoWidth={false}
+					>
+						<MenuItem
 							containerElement={<Link to="/" />}
 							primaryText="Home"
 							onClick={this.closeDrawer}
 						/>
-						<NoScrollMI
+						<MenuItem
 							containerElement={<Link to="/health" />}
 							primaryText="Health"
 							onClick={this.closeDrawer}
 						/>
-						<NoScrollMI
+						<MenuItem
 							containerElement={<Link to="/externalities" />}
 							primaryText="Externalities"
 							onClick={this.closeDrawer}
 						/>
-						<NoScrollMI
+						<MenuItem
 							containerElement={<Link to="/foods" />}
 							primaryText="Foods"
 							onClick={this.closeDrawer}
 						/>
-						<NoScrollMI
+						<MenuItem
 							containerElement={<Link to="/how-to" />}
 							primaryText="How To"
 							onClick={this.closeDrawer}
 						/>
-						<NoScrollMI
+						<MenuItem
 							containerElement={<Link to="/learn-more" />}
 							primaryText="Learn More"
 							onClick={this.closeDrawer}
 						/>
-						<NoScrollMI
+						<MenuItem
 							containerElement={<Link to="/endorsements" />}
 							primaryText="Endorsements"
 							onClick={this.closeDrawer}
 						/>
 					</Menu>
-					<BottomMenu>
-						<NoScrollMI
+					<this.BottomMenu
+						autoWidth={false}
+					>
+						<MenuItem
 							containerElement={<Link to="/donate" />}
 							primaryText="Donate"
 							onClick={this.closeDrawer}
 						/>
-					</BottomMenu>
+					</this.BottomMenu>
 				</Drawer>
 			</div>
 		);
