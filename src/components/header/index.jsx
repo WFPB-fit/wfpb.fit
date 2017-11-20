@@ -18,9 +18,12 @@ export default class Header extends Component {
 		this.state = {
 			drawerOpen: false
 		};
-		this.BottomMenu = styled(Menu) `
-		bottom:0;
+		this.StyledMenu = styled(Menu)`
 		position:absolute;
+		width:100%;
+		`;
+		this.BottomMenu = styled(this.StyledMenu) `
+		bottom:0;
 		`;
 	}
 	toggleDrawer() {
@@ -48,7 +51,7 @@ export default class Header extends Component {
 						// onTitleTouchTap={handleTouchTap}
 						onLeftIconButtonTouchTap={this.toggleDrawer}
 					/>
-					<Menu
+					<this.StyledMenu
 						autoWidth={false}
 					>
 						<MenuItem
@@ -86,7 +89,7 @@ export default class Header extends Component {
 							primaryText="Endorsements"
 							onClick={this.closeDrawer}
 						/>
-					</Menu>
+					</this.StyledMenu>
 					<this.BottomMenu
 						autoWidth={false}
 					>

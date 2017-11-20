@@ -1,27 +1,33 @@
 import React, { Component } from 'react';
-import Resources from '../components/resources/index.jsx';
 import tags from '../assets/data/tags.json';
-import { Tabs, Tab } from 'material-ui/Tabs';
 import { filterStudiesByTags } from '../utils.jsx';
+import TabsDisplay from '../components/tabsDisplay/index.jsx';
 
 export default class Externalities extends Component {
-	render() {
+	constructor(props) {
+		super(props);
 		const agribusinessTags = ['agribusiness'];
+
+		this.tabs = [{
+			label: 'Environment',
+			tags: tags.environment,
+			resources: filterStudiesByTags(window.globalAppData.studies, tags.environment),
+			position: 0
+		}, {
+			label: 'Agribusiness',
+			tags: agribusinessTags,
+			resources: filterStudiesByTags(window.globalAppData.studies, agribusinessTags),
+			position: 1
+		}
+		];
+	}
+	render() {
 		return (
-			<Tabs>
-				<Tab label="Environment" >
-					<Resources
-						research={filterStudiesByTags(window.globalAppData.studies, tags.environment)}
-						tags={tags.environment}
-					/>
-				</Tab>
-				<Tab label="Agribusiness" >
-					<Resources
-						research={filterStudiesByTags(window.globalAppData.studies, agribusinessTags)}
-						tags = {agribusinessTags}
-					/>
-				</Tab>
-			</Tabs>
+			<TabsDisplay
+				tabs={this.tabs}
+				location={this.props.location}
+				history={this.props.history}
+			/>
 		);
 	}
 }

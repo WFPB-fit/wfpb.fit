@@ -1,32 +1,35 @@
 import React, { Component } from 'react';
-import Resources from '../components/resources/index.jsx';
-import {Tabs, Tab} from 'material-ui/Tabs';
+import TabsDisplay from '../components/tabsDisplay/index.jsx';
 
-export default class LearnMore extends Component {
+export default class Health extends Component {
+	constructor(props) {
+		super(props);
+		this.tabs = [{
+			label: 'Documentaries',
+			resources: window.globalAppData.learnMore.documentaries,
+			position: 0
+		}, {
+			label: 'Books',
+			resources: window.globalAppData.learnMore.books,
+			position: 1
+		}, {
+			label: 'Videos',
+			resources: window.globalAppData.learnMore.videos,
+			position: 2
+		},{
+			label: 'Wikipedia',
+			resources: window.globalAppData.learnMore.wikipedia,
+			position: 3
+		},
+		];
+	}
 	render() {
 		return (
-			<Tabs>
-				<Tab label="Documentaries" >
-					<Resources
-						research={window.globalAppData.learnMore.documentaries}
-					/>
-				</Tab>
-				<Tab label="Books" >
-					<Resources
-						research={window.globalAppData.learnMore.books}
-					/>
-				</Tab>
-				<Tab label="Videos" >
-					<Resources
-						research={window.globalAppData.learnMore.videos}
-					/>
-				</Tab>
-				<Tab label="Wikipedia" >
-					<Resources
-						research={window.globalAppData.learnMore.wikipedia}
-					/>
-				</Tab>
-			</Tabs>
+			<TabsDisplay
+				tabs={this.tabs}
+				location={this.props.location}
+				history={this.props.history}
+			/>
 		);
 	}
 }
