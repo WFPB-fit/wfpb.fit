@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Resources from '../components/resources/index.jsx';
 import tags from '../assets/data/tags.json';
 import { Tabs, Tab } from 'material-ui/Tabs';
+import { filterStudiesByTags } from '../utils.jsx';
 
 export default class Health extends Component {
 	render() {
@@ -9,20 +10,17 @@ export default class Health extends Component {
 			<Tabs>
 				<Tab label="Disease" >
 					<Resources
-						research={window.globalAppData.studies}
-						tags={tags.disease}
+						research={filterStudiesByTags(window.globalAppData.studies, tags.disease)}
 					/>
 				</Tab>
 				<Tab label="Food" >
 					<Resources
-						research={window.globalAppData.studies}
-						tags={tags.food}
+						research={filterStudiesByTags(window.globalAppData.studies, tags.food)}
 					/>
 				</Tab>
 				<Tab label="Nutrients" >
 					<Resources
-						research={window.globalAppData.studies}
-						tags={tags.nutrients}
+						research={filterStudiesByTags(window.globalAppData.studies, tags.nutrients)}
 					/>
 				</Tab>
 			</Tabs>

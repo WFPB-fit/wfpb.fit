@@ -47,11 +47,11 @@ export default class Resources extends Component {
 		let aVal = a[this.state.sortBy] || 1;
 		let bVal = b[this.state.sortBy] || 1;
 
-		if(this.state.sortBy === 'type'){
+		if (this.state.sortBy === 'type') {
 			aVal = this.typeScore[aVal] || 1;
 			bVal = this.typeScore[bVal] || 1;
 		}
-		else if(this.state.sortBy === 'availability'){
+		else if (this.state.sortBy === 'availability') {
 			aVal = this.availabilityScore[aVal] || 10;
 			bVal = this.availabilityScore[bVal] || 10;
 		}
@@ -68,18 +68,11 @@ export default class Resources extends Component {
 		this.sortResources = this.sortResources.bind(this);
 
 		//initialize vars
-		let tags = this.props.tags;
-		if (!this.props.tags) {
-			tags = Resources.allResourcesTags(this.props.research);
-		}
+		let tags = Resources.allResourcesTags(this.props.research);
 		this.selectableTags = Resources.convertTagsToSelectValueObject(tags);
 
-		let resources = (this.props.research).filter(resource => {
-			return numCommonElements(resource.tags, tags) > 0;
-		});
-
 		this.state = {
-			resources: resources,
+			resources: this.props.research,
 			selectedTags: this.selectableTags,
 			sortBy: 'year'
 		};
@@ -105,8 +98,7 @@ export default class Resources extends Component {
 		const selectedTags = Resources.selectableTagsToArray(this.state.selectedTags);
 
 		let resources = this.state.resources.filter((resource) => {
-			let resourceTagIncluded = numCommonElements(resource.tags, selectedTags) > 0;
-			return resourceTagIncluded;
+			return numCommonElements(resource.tags, selectedTags) > 0;
 		});
 
 		resources.sort(this.sortResources);

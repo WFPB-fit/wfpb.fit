@@ -42,6 +42,12 @@ export function getTitleized(val) {
 	return (val) ? titleize(val) : null;
 }
 
+export function filterStudiesByTags(studies,tags){
+	return studies.filter(resource => {
+		return numCommonElements(resource.tags, tags) > 0;
+	});
+}
+
 export let CenteredDiv = styled.div`
 width:95%;
 @media (min-width: 700px) {
