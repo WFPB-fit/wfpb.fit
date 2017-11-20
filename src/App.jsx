@@ -16,6 +16,8 @@ import Externalities from './routes/externalities';
 import Endorsements from './routes/endorsements';
 import LearnMore from './routes/learn-more';
 
+// import ndb from 'nutrient-database';
+
 export default class App extends Component {
 	constructor(props) {
 		super(props);
