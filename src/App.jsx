@@ -10,13 +10,12 @@ import studyData from './assets/data/studies.json';
 import learnMoreData from './assets/data/learn-more.json';
 import { preprocess, CenteredDiv } from './utils.jsx';
 
+import Home from './routes/home';
+import Food from './routes/food';
 import Health from './routes/health';
 import Externalities from './routes/externalities';
 import Endorsements from './routes/endorsements';
 import LearnMore from './routes/learn-more';
-
-import DataVis from './components/foodAnalysis/index.jsx';
-import Pie from './components/foodAnalysis/pie.jsx';
 
 export default class App extends Component {
 	constructor(props) {
@@ -44,10 +43,14 @@ export default class App extends Component {
 					<Router >
 						<div>
 							<Header />
-							<Pie />
+							{/* <PieChart x={100} y={100} outerRadius={100} innerRadius={50}
+								data={[{ value: 92 - 34, label: 'Code lines' },
+								{ value: 34, label: 'Empty lines' }]} /> */}
 							<Switch>
 								<CenteredDiv>
+									<Route exact path="/" component={Home} />
 									<Route path="/health" component={Health} />
+									<Route path="/food" component={Food} />
 									<Route path="/externalities" component={Externalities} />
 									<Route path="/learn-more" component={LearnMore} />
 									<Route path="/endorsements" component={Endorsements} />

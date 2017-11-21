@@ -70,7 +70,7 @@ export default class Header extends Component {
 							onClick={this.closeDrawer}
 						/>
 						<MenuItem
-							containerElement={<Link to="/foods" />}
+							containerElement={<Link to="/food" />}
 							primaryText="Foods"
 							onClick={this.closeDrawer}
 						/>

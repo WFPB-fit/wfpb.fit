@@ -1,13 +1,10 @@
 import oldNutritionData from '../../assets/data/nutrition.json';
 import foods from '../../assets/data/foods.json';
-import FullNutritionInfo from '../../assets/data/fullNutritionInfo.json';
-import * as d3 from 'd3';
 
-export default class DataVis {
-
+export default class FetchData {
 	static async getFDAData(foods, filepath = '../../assets/data/food_nutrients.json') {
 		const key = 'PwVSjgNYYAwZ9M4txUxNlFjh44kCgQcrhPPR4X8c';
-		const type = 'b'; //f for full, b for basic
+		const type = 'f'; //f for full, b for basic
 		foods = foods.map(function (x) {
 			return 'ndbno=' + x;
 		}).join('&');
@@ -24,7 +21,7 @@ export default class DataVis {
 	}
 
 
-
+	//gets all data from FDA and prints JSON to console
 	static async getFullNutritionInfo() {
 		let data = foods;
 		let ids = foods.map((x) => {
@@ -46,7 +43,7 @@ export default class DataVis {
 		//get nutrient info
 		while (ids.length > 0) {
 			const numRequestedIDS = Math.min(ids.length, 50);
-			let fdaFoodInfo = await DataVis.getFDAData(ids.slice(0, numRequestedIDS));
+			let fdaFoodInfo = await FetchData.getFDAData(ids.slice(0, numRequestedIDS));
 			console.log(fdaFoodInfo);
 			mergeData(data, fdaFoodInfo);
 			ids = ids.slice(numRequestedIDS);
@@ -87,7 +84,8 @@ export default class DataVis {
 			return {
 				name: x.name.toLowerCase(),
 				tags: x.tags,
-				id: id
+				id: id,
+				url:x.source
 			}
 		});
 		console.log(JSON.stringify(a))
