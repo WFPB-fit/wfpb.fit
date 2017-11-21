@@ -1,0 +1,217 @@
+[{
+	"name": "sardine",
+	"tags": "fish",
+	"id": "15088"
+}, {
+	"name": "mackerel",
+	"tags": "fish",
+	"id": "15047"
+}, {
+	"name": "trout",
+	"tags": "fish",
+	"id": "15240"
+}, {
+	"name": "herring",
+	"tags": "fish",
+	"id": "15040"
+}, {
+	"name": "tuna",
+	"tags": "fish",
+	"id": "15118"
+}, {
+	"name": "cod",
+	"tags": "fish",
+	"id": "15016"
+}, {
+	"name": "salmon",
+	"tags": "fish",
+	"id": "15212"
+}, {
+	"name": "milk (2%)",
+	"tags": "dairy,milk",
+	"id": "01174"
+}, {
+	"name": "milk (skim/nonfat)",
+	"tags": "dairy,milk",
+	"id": "01151"
+}, {
+	"name": "yogurt (nonfat greek)",
+	"tags": "dairy,yogurt",
+	"id": "01256"
+}, {
+	"name": "yogurt (frozen vanilla)",
+	"tags": "dairy,yogurt",
+	"id": "19293"
+}, {
+	"name": "cheese (cheddar)",
+	"tags": "dairy,cheese",
+	"id": "01009"
+}, {
+	"name": "cheese (swiss)",
+	"tags": "dairy,cheese",
+	"id": "01040"
+}, {
+	"name": "cheese (parmesan)",
+	"tags": "dairy,cheese",
+	"id": "01032"
+}, {
+	"name": "cheese (mozzarella",
+	"tags": "dairy,cheese",
+	"id": "43597"
+}, {
+	"name": "cheese (feta)",
+	"tags": "dairy,cheese",
+	"id": "01019"
+}, {
+	"name": "milk (soy)",
+	"tags": "milk,soy",
+	"id": "16120"
+}, {
+	"name": "yogurt (soy/tofu)",
+	"tags": "yogurt,soy",
+	"id": "43476"
+}, {
+	"name": "milk (rice)",
+	"tags": "milk,rice",
+	"id": "14639"
+}, {
+	"name": "egg",
+	"tags": "egg,meat",
+	"id": "01128"
+}, {
+	"name": "70% lean beef",
+	"tags": "meat,beef",
+	"id": "13496"
+}, {
+	"name": "85% lean beef",
+	"tags": "meat,beef",
+	"id": "23569"
+}, {
+	"name": "ground turkey",
+	"tags": "meat,poultry",
+	"id": "05306"
+}, {
+	"name": "chicken breast",
+	"tags": "meat,poultry",
+	"id": "05326"
+}, {
+	"name": "tofu",
+	"tags": "vegetable,soy",
+	"id": "16427"
+}, {
+	"name": "bell pepper",
+	"tags": "vegetable",
+	"id": "11333"
+}, {
+	"name": "cuccumber",
+	"tags": "vegetable",
+	"id": "11205"
+}, {
+	"name": "tomato",
+	"tags": "vegetable",
+	"id": "11529"
+}, {
+	"name": "edamame",
+	"tags": "vegetable",
+	"id": "11212"
+}, {
+	"name": "olive",
+	"tags": "vegetable",
+	"id": "09193"
+}, {
+	"name": "avocado",
+	"tags": "vegetable",
+	"id": "09037"
+}, {
+	"name": "rice (brown)",
+	"tags": "starch",
+	"id": "20037"
+}, {
+	"name": "white bread",
+	"tags": "starch",
+	"id": "18069"
+}, {
+	"name": "sweet potato",
+	"tags": "starch",
+	"id": "11507"
+}, {
+	"name": "potato",
+	"tags": "starch",
+	"id": "11352"
+}, {
+	"name": "whole wheat bread",
+	"tags": "starch",
+	"id": "18075"
+}, {
+	"name": "flaxseed",
+	"tags": "seed",
+	"id": "12220"
+}, {
+	"name": "walnut",
+	"tags": "nut",
+	"id": "12155"
+}, {
+	"name": "sunflower seeds",
+	"tags": "seed",
+	"id": "12036"
+}, {
+	"name": "pistachio",
+	"tags": "seed,nut",
+	"id": "12151"
+}, {
+	"name": "pine nut",
+	"tags": "nut",
+	"id": "12147"
+}, {
+	"name": "brazil nut",
+	"tags": "nut",
+	"id": "12078"
+}, {
+	"name": "cashew",
+	"tags": "seed,nut",
+	"id": "12087"
+}, {
+	"name": "pumpkin seed",
+	"tags": "seed",
+	"id": "12163"
+}, {
+	"name": "sesame",
+	"tags": "seed",
+	"id": "12023"
+}, {
+	"name": "chia",
+	"tags": "seed,nut",
+	"id": "12006"
+}, {
+	"name": "almond",
+	"tags": "seed,nut",
+	"id": "12061"
+}, {
+	"name": "sunflower",
+	"tags": "oil",
+	"id": "04545"
+}, {
+	"name": "cocconut",
+	"tags": "oil",
+	"id": "04047"
+}, {
+	"name": "palm",
+	"tags": "oil",
+	"id": "04055"
+}, {
+	"name": "lard",
+	"tags": "oil",
+	"id": "04002"
+}, {
+	"name": "olive",
+	"tags": "oil",
+	"id": "04053"
+}, {
+	"name": "canola",
+	"tags": "oil",
+	"id": "04582"
+}, {
+	"name": "peanut",
+	"tags": "oil",
+	"id": "04042"
+}]

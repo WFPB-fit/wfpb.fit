@@ -38,7 +38,7 @@
             "poly": 4.79
         },
         "tags": "fish",
-        "trans": "https://ndb.nal.usda.gov/ndb/foods/show/4522?fgcd=Finfish+and+Shellfish+Products&manu=&lfacet=&format=&count=&max=50&offset=0&sort=default&order=asc&qlookup=&ds=&qt=&qp=&qa=&qn=&q=&ing="
+        "source": "https://ndb.nal.usda.gov/ndb/foods/show/4522?fgcd=Finfish+and+Shellfish+Products&manu=&lfacet=&format=&count=&max=50&offset=0&sort=default&order=asc&qlookup=&ds=&qt=&qp=&qa=&qn=&q=&ing="
     },
     {
         "name": "Tuna",

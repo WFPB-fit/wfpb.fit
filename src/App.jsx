@@ -5,7 +5,6 @@ import {
 } from 'react-router-dom';
 import Header from './components/header/index';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-// import Paper from 'material-ui/Paper';
 
 import studyData from './assets/data/studies.json';
 import learnMoreData from './assets/data/learn-more.json';
@@ -16,7 +15,8 @@ import Externalities from './routes/externalities';
 import Endorsements from './routes/endorsements';
 import LearnMore from './routes/learn-more';
 
-// import ndb from 'nutrient-database';
+import DataVis from './components/foodAnalysis/index.jsx';
+import Pie from './components/foodAnalysis/pie.jsx';
 
 export default class App extends Component {
 	constructor(props) {
@@ -36,6 +36,7 @@ export default class App extends Component {
 		document.title = window.globalAppData.appName; //set tab title
 	}
 
+
 	render() {
 		return (
 			<MuiThemeProvider>
@@ -43,6 +44,7 @@ export default class App extends Component {
 					<Router >
 						<div>
 							<Header />
+							<Pie />
 							<Switch>
 								<CenteredDiv>
 									<Route path="/health" component={Health} />
