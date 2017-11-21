@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { LineChart, CartesianGrid, Line, Legend, Tooltip, XAxis, YAxis } from 'recharts';
 import FullNutritionInfo from '../assets/data/nutrition/fullNutritionInfo.json';
 import FetchData from '../components/foodAnalysis/fetchData.js';
+import exampleFDAdata from '../assets/data/nutrition/exampleFDA.json';
 
 export default class Home extends Component {
 	constructor(props) {
@@ -9,8 +10,8 @@ export default class Home extends Component {
 		this.state = {
 			data: [{ ttt: 'a', asd: 12 }, { ttt: 'b', asd: 32 }, { ttt: 'c', asd: 55 },]
 		}
-		FetchData.convertNutritionJson();
 		console.log(FullNutritionInfo)
+		console.log(exampleFDAdata)
 		// FetchData.getFullNutritionInfo();
 	}
 	render() {

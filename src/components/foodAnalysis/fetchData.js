@@ -1,5 +1,5 @@
-import oldNutritionData from '../../assets/data/nutrition.json';
 import foods from '../../assets/data/foods.json';
+import NutrientGroups from '../../assets/data/nutrientGroups.json';
 
 export default class FetchData {
 	static async getFDAData(foods, filepath = '../../assets/data/food_nutrients.json') {
@@ -20,6 +20,52 @@ export default class FetchData {
 		})
 	}
 
+	static normalizeNutrientTo100g(nutrient) {
+		const m = nutrient.measures[0];
+		let eqv = m.eqv;
+		if (m.eunit !== 'g') {
+			console.error('Not grams, actually ' + m.eunit);
+		}
+		return 100 / (m.eqv / m.value);
+	}
+
+
+	getSumNutrients(food, ids) {
+		return food.nutrients.reduce(function (accumulator, currNutrient) {
+			let currentValue = 0;
+			const id = currNutrient.nutrient_id;
+			const idInIdsArray = Array.isArray(ids) && ids.includes(currNutrient.nutrient_id);
+			const idInIdsObj = ids.min && ids.max && id >= ids.min && id <= ids.max;
+			if (idInIdsArray || idInIdsObj) currentValue = currNutrient.amount;
+			return accumulator + currentValue;
+		}.bind(this));
+	}
+
+	static MergeFoodsAndFDA(foodsData, FDA) {
+		return foodsData.map((x) => {
+			//find corresponding FDA food for each foodsData food, if it exists
+			for (const item of FDA.foods) {
+				const food = item.food;
+				console.log(food)
+				// console.log(JSON.stringify(food))
+				if (food.desc.ndbno === x.id) {
+					let newFood = x;
+					// newFood = Object.assign(newFood, item.food); //merge all FDA data
+					//only copy over the nutrients data, and only some of the nutrients data
+					for (let i = 0; i < food.nutrients.length; i++) {
+						let n = food.nutrients[i];
+						const normalizedMeasure = FetchData.normalizeNutrientTo100g(n);
+						delete n.measures;
+						n.amount = normalizedMeasure;
+					}
+					newFood = Object.assign(newFood, food.nutrients);
+					return newFood;
+				}
+			}
+			return x;
+
+		})
+	}
 
 	//gets all data from FDA and prints JSON to console
 	static async getFullNutritionInfo() {
@@ -28,66 +74,16 @@ export default class FetchData {
 			return x.id;
 		});
 
-		let mergeData = function (nutData, fdaData) {
-			return nutData.map((x) => {
-				for (const item of fdaData.foods) {
-					console.log(item.food)
-					if (item.food.desc.ndbno === x.id) {
-						return Object.assign(x, item.food);
-					}
-				}
-				return x;
-			});
-		}
-
 		//get nutrient info
 		while (ids.length > 0) {
 			const numRequestedIDS = Math.min(ids.length, 50);
 			let fdaFoodInfo = await FetchData.getFDAData(ids.slice(0, numRequestedIDS));
-			console.log(fdaFoodInfo);
-			mergeData(data, fdaFoodInfo);
+			data = FetchData.MergeFoodsAndFDA(data, fdaFoodInfo); //merge info from foods.json
+			//delete unneeded info
 			ids = ids.slice(numRequestedIDS);
 		}
 
 		console.log(JSON.stringify(data))
 		return data;
-	}
-
-	static convertNutritionJson() { //convenience fn for transforming some of my data around
-		const getSubStr = function (src, firstStr, lastStr) {
-			const i = src.indexOf(firstStr);
-			const q = src.indexOf(lastStr, i);
-			return src.substring(i + firstStr.length, q);
-		}
-
-		const getId = function (src) {
-			let id = getSubStr(src, 'qlookup=', '&');
-
-			//some of the URLs don't have the ID right, handle special cases:
-			if (id === 'egg') id = '01128';
-			else if (id === '70%25') id = '13496';
-			else if (id === '85%25') id = '23569';
-			else if (id === 'ground+turkey') id = '05306';
-			else if (id === 'chicken+breast') id = '05326';
-			else if (id === '') {
-				let show = getSubStr(src, 'show/', '?');
-				if (show === '4529') id = '15047';
-				else if (show === '4529') id = '15047';
-				else if (show === '4522') id = '15040';
-				else if (show === '4498') id = '15016';
-			}
-			return id;
-		};
-
-		let a = oldNutritionData.map((x) => {
-			let id = getId(x.source);
-			return {
-				name: x.name.toLowerCase(),
-				tags: x.tags,
-				id: id,
-				url:x.source
-			}
-		});
-		console.log(JSON.stringify(a))
 	}
 }
