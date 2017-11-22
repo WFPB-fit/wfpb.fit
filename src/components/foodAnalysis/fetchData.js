@@ -22,7 +22,7 @@ export default class FetchData {
 
 	static GetRelevantNutrients(nutrients) {
 		let newNutrients = {
-			sums: {},
+			sums: [],
 			individuals: {}
 		};
 
@@ -54,7 +54,10 @@ export default class FetchData {
 
 			//add the discovered nutrients to relevant positions in newNutrients
 			if (typeof relevantNutrients === 'number') {
-				newNutrients.sums[groupName] = relevantNutrients;
+				newNutrients.sums.push({
+					name: groupName,
+					val: relevantNutrients
+				});
 			} else {
 				newNutrients.individuals[groupName] = relevantNutrients;
 			}
@@ -66,7 +69,10 @@ export default class FetchData {
 			const sum = newNutrients.individuals[groupName].reduce(function (total, nutrient) {
 				return total + nutrient.valPer100g;
 			}, 0);
-			newNutrients.sums[groupName] = sum;
+			newNutrients.sums.push({
+				name: groupName,
+				val: sum
+			});
 		}
 		return newNutrients;
 	}

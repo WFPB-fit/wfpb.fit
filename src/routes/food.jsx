@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { LineChart, CartesianGrid, Line, Legend, Tooltip, XAxis, YAxis } from 'recharts';
+import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend } from 'recharts';
 import FullNutritionInfo from '../assets/data/nutrition/fullNutritionInfo.json';
 import FetchData from '../components/foodAnalysis/fetchData.js';
 import exampleFDAdata from '../assets/data/nutrition/exampleFDA.json';
@@ -15,19 +15,15 @@ export default class Home extends Component {
 		// FetchData.getFullNutritionInfo();
 	}
 	render() {
-		let getVal = (x)=>{return x.asd;}
-		let getName = (x)=>{return x.ttt;}
-		let getStroke = (x)=>{return "#8884d8";}
+		const nNum = 20;
 		return (
-			<LineChart width={730} height={250} data={this.state.data}
-				margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
-				<CartesianGrid strokeDasharray="3 3" />
-				<XAxis dataKey={getName} />
-				<YAxis />
-				<Tooltip />
+			<RadarChart outerRadius={90} width={730} height={250} data={FullNutritionInfo[nNum].nutrients.sums}>
+				<PolarGrid />
+				<PolarAngleAxis dataKey="name" />
+				<PolarRadiusAxis angle={30} domain={[0, 150]} />
+				<Radar name={FullNutritionInfo[nNum].name} dataKey="val" stroke="#8884d8" fill="#8884d8" fillOpacity={0.2} />
 				<Legend />
-				<Line type="monotone" dataKey={getVal} stroke="#8884d8" />
-			</LineChart>
+			</RadarChart>
 		);
 	}
 }
