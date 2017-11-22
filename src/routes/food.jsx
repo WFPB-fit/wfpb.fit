@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend } from 'recharts';
+import {
+	Legend, Tooltip, XAxis, YAxis, ZAxis, CartesianGrid,
+	RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar,
+	LineChart, Scatter, ScatterChart
+} from 'recharts';
 import { titleize, getRandomColor } from '../utils/GeneralUtils.jsx';
 import FullNutritionInfo from '../assets/data/nutrition/fullNutritionInfo.json';
 // import exampleFDAdata from '../assets/data/nutrition/exampleFDA.json';
@@ -12,9 +16,14 @@ import 'react-select/dist/react-select.css';
 console.log(FullNutritionInfo)
 
 export default class Food extends Component {
-	static getCarbohydrateVal(food) { return food.nutrients.energy.carbs; }
-	static getProteinVal(food) { return food.nutrients.energy.protein; }
-	static getFatVal(food) { return food.nutrients.energy.fat; }
+	static foodToCarb(food) { return food.nutrients.energy.carbs; }
+	static foodToProtein(food) { return food.nutrients.energy.protein; }
+	static foodToFat(food) { return food.nutrients.energy.fat; }
+	static mapObjToXY(obj) {
+		return Object.keys(obj).map(function (key, index) {
+			return { x: key, y: obj[key] };
+		});
+	}
 
 	static convertFoodsToSelectObjects(foods) {
 		const optns = foods.map((x) => { return { value: x.name, label: titleize(x.name) } });
@@ -22,11 +31,43 @@ export default class Food extends Component {
 		return alphaOptions;
 	}
 
-	getEnergyBreakdownChart(){
+	getEnergyBreakdownScatterChart() {
+		// const energyFoodData = this.state.selectedFoods.map((selectedFood) => {
+		// 	// const f = { name: selectedFood.label };
+		// 	// const food = this.indexedFoods[selectedFood.value];
+		// 	// return Object.assign(f, food.nutrients.energy);
+		// 	const food = this.indexedFoods[selectedFood.value];
+		// 	return { name: selectedFood.label, data: Food.mapObjToXY(food.nutrients.energy) };
+		// });
+		const scatters = this.state.selectedFoods.map((selectedFood) => {
+			let food = this.indexedFoods[selectedFood.value];
+			let data = Food.mapObjToXY(food.nutrients.energy);
+			return (
+				<Scatter
+					key={selectedFood.label}
+					name={selectedFood.label}
+					data={data}
+					fill={getRandomColor()}
+					line
+					shape="cross" />
+			);
+		});
+		return (
+			<ScatterChart width={600} height={400} margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
+				<XAxis  dataKey='x' name='Macro' />
+				<YAxis type="number" dataKey={'y'} name='Grams' unit='g' />
+				<CartesianGrid />
+				<Tooltip cursor={{ strokeDasharray: '3 3' }} />
+				<Legend />
+				{scatters}
+			</ScatterChart >
+		);
+	}
+	getEnergyBreakdownRadialChart() {
 		const energy = [
-			this.getSelectedFoodNutrientRechartData('Carbohydrates', Food.getCarbohydrateVal),
-			this.getSelectedFoodNutrientRechartData('Fat', Food.getFatVal),
-			this.getSelectedFoodNutrientRechartData('Protein', Food.getProteinVal)
+			this.getSelectedFoodNutrientRechartData('Carbohydrates', Food.foodToCarb),
+			this.getSelectedFoodNutrientRechartData('Fat', Food.foodToFat),
+			this.getSelectedFoodNutrientRechartData('Protein', Food.foodToProtein)
 		];
 		const radars = this.state.selectedFoods.map((selectedFood) => {
 			const color = getRandomColor();
@@ -92,7 +133,7 @@ export default class Food extends Component {
 					joinValues
 					multi
 				/>
-				{this.getEnergyBreakdownChart()}
+				{this.getEnergyBreakdownScatterChart()}
 			</div>
 		);
 	}
