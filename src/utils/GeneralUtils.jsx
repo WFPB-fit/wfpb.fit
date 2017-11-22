@@ -20,6 +20,15 @@ function capitalize(string) {
 	return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
+export function getRandomColor() { //https://stackoverflow.com/questions/1484506/random-color-generator
+	var letters = '0123456789ABCDEF';
+	var color = '#';
+	for (var i = 0; i < 6; i++) {
+		color += letters[Math.floor(Math.random() * 16)];
+	}
+	return color;
+}
+
 export function numCommonElements(arr1, arr2) {
 	const intersect = arr1.filter(x => arr2.includes(x)); //[...set1].filter(x=> set2.has(x));
 	return intersect.length;
@@ -42,7 +51,7 @@ export function getTitleized(val) {
 	return (val) ? titleize(val) : null;
 }
 
-export function filterStudiesByTags(studies,tags){
+export function filterStudiesByTags(studies, tags) {
 	return studies.filter(resource => {
 		return numCommonElements(resource.tags, tags) > 0;
 	});

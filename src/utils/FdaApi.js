@@ -71,62 +71,80 @@ export default class FdaApi {
 
 		//arrange data for consumption
 		let omega3 = newNutrients.individuals.omega3 || [];
-		newNutrients.fats = [{
-				name: 'saturated',
-				valPer100g: sums.saturated
-			},
-			{
-				name: 'monounsaturated',
-				valPer100g: sums.monounsaturated
-			},
-			{
-				name: 'polyunsaturated',
-				valPer100g: sums.polyunsaturated
-			},
-			{
-				name: 'omega3',
-				valPer100g: omega3.reduce(sumNutrients, 0)
-			},
-			{
-				name: 'trans',
-				valPer100g: sums.trans
-			}
-		];
-		newNutrients.energy = [
-			// {
-			// 	name: 'calories',
-			// 	valPer100g: sums.calories
-			// },
-			{
-				name: 'protein',
-				valPer100g: sums.protein
-			},
-			{
-				name: 'carbohydrates',
-				valPer100g: sums.carbs
-			},
-			{
-				name: 'fat',
-				valPer100g: totalFat
-			},
-		];
-		newNutrients.misc = [{
-				name: 'cholesterol',
-				valPer100g: sums.cholesterol
-			},
-			{
-				name: 'fiber',
-				valPer100g: sums.fiber
-			},
-			{
-				name: 'carotenoids',
-				valPer100g: carotenoids
-			},
-			{
-				name: 'flavonoids',
-				valPer100g: flavonoids
-			},
-		];
+		newNutrients.fats = {
+			saturated: sums.saturated,
+			monounsaturated: sums.monounsaturated,
+			polyunsaturated: sums.polyunsaturated,
+			trans: sums.trans,
+			omega3: omega3.reduce(sumNutrients, 0),
+		};
+		newNutrients.energy = {
+			protein: sums.protein,
+			carbs: sums.carbs,
+			fat: totalFat,
+		};
+		newNutrients.misc = {
+			cholesterol: sums.cholesterol,
+			fiber: sums.fiber,
+			carotenoids: carotenoids,
+			flavonoids: flavonoids
+		};
+		// newNutrients.fats = [{
+		// 		name: 'saturated',
+		// 		valPer100g: sums.saturated
+		// 	},
+		// 	{
+		// 		name: 'monounsaturated',
+		// 		valPer100g: sums.monounsaturated
+		// 	},
+		// 	{
+		// 		name: 'polyunsaturated',
+		// 		valPer100g: sums.polyunsaturated
+		// 	},
+		// 	{
+		// 		name: 'omega3',
+		// 		valPer100g: omega3.reduce(sumNutrients, 0)
+		// 	},
+		// 	{
+		// 		name: 'trans',
+		// 		valPer100g: sums.trans
+		// 	}
+		// ];
+		// newNutrients.energy = [
+		// 	// {
+		// 	// 	name: 'calories',
+		// 	// 	valPer100g: sums.calories
+		// 	// },
+		// 	{
+		// 		name: 'protein',
+		// 		valPer100g: sums.protein
+		// 	},
+		// 	{
+		// 		name: 'carbohydrates',
+		// 		valPer100g: sums.carbs
+		// 	},
+		// 	{
+		// 		name: 'fat',
+		// 		valPer100g: totalFat
+		// 	},
+		// ];
+		// newNutrients.misc = [{
+		// 		name: 'cholesterol',
+		// 		valPer100g: sums.cholesterol
+		// 	},
+		// 	{
+		// 		name: 'fiber',
+		// 		valPer100g: sums.fiber
+		// 	},
+		// 	{
+		// 		name: 'carotenoids',
+		// 		valPer100g: carotenoids
+		// 	},
+		// 	{
+		// 		name: 'flavonoids',
+		// 		valPer100g: flavonoids
+		// 	},
+		// ];
 
 		//finally, turn the big array into an indexed hash
 		return newNutrients;
