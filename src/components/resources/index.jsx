@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Resource from '../resource/index.jsx';
 import Filter from './filter';
-import { titleize, filterStudiesByTags } from '../../utils.jsx';
+import { titleize, filterStudiesByTags } from '../../utils/GeneralUtils.jsx';
 
 export default class Resources extends Component {
 	static convertTagsToSelectValueObject(tags) {
@@ -11,7 +11,7 @@ export default class Resources extends Component {
 				{ value: tag, label: titleize(tag) }
 			);
 		}
-		const sortedTags = newTags.sort((a, b) => a.value > b.value);
+		const sortedTags = newTags.sort((a, b) => a.value.localeCompare(b.value));
 		return sortedTags;
 	}
 

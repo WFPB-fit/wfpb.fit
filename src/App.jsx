@@ -8,7 +8,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import studyData from './assets/data/studies.json';
 import learnMoreData from './assets/data/learn-more.json';
-import { preprocess, CenteredDiv } from './utils.jsx';
+import { preprocess, CenteredDiv } from './utils/GeneralUtils.jsx';
 
 import Home from './routes/home';
 import Food from './routes/food';

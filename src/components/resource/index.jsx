@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Card, CardHeader, CardText } from 'material-ui/Card';
 import styled from 'styled-components';
-import { titleize, getLink, joinMetaData, getTitleized } from '../../utils.jsx';
+import { titleize, getLink, joinMetaData, getTitleized } from '../../utils/GeneralUtils.jsx';
 
 export default class Resource extends Component {
 	static youtubeID(url) {

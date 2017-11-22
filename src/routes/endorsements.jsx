@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Resource from '../components/resource/index.jsx';
-import { preprocess } from '../utils.jsx';
+import { preprocess } from '../utils/GeneralUtils.jsx';
 import endorsements from '../assets/data/endorsements.json';
 import styled from 'styled-components';
 import TabsDisplay from '../components/tabsDisplay/index.jsx';

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import tags from '../assets/data/tags.json';
-import { filterStudiesByTags } from '../utils.jsx';
+import { filterStudiesByTags } from '../utils/GeneralUtils.jsx';
 import TabsDisplay from '../components/tabsDisplay/index.jsx';
 
 export default class Health extends Component {
