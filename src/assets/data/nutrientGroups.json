@@ -1,16 +1,40 @@
 {
-	"vitamins": [401, 404, 405, 406, 410, 415, 417, 421, 454, 418, 321, 322, 334, 337, 338, 323, 341, 342, 343, 328, 324, 430],
-	"minerals": [301, 303, 304, 305, 306, 307, 309, 312, 315, 317, 313],
-	"omega3": [619, 629, 631, 621],
-	"lipids": {
-		"mufa": 645,
-		"pufa": 646,
-		"sfa": 606,
-		"trans": 605,
-		"cholesterol":601
+	"vitamins": {
+		"ids":{
+			"excluded":[417,320,319,318,328,573,578]
+		},
+		"groups":["Vitamins"]
 	},
-	"amino":{"min":501,"max":521},
-	"proanthocyanidin":{"min":734,"max":738},
-	"anthocyanidin":{},
-	"flavenoid":[713, 716,715,714,713,711,710,789,788,786,773,770]
+	"carotenoids": {
+		"ids":{
+			"included":[321,322,334,337,338]
+		}
+	},
+	"minerals": {
+		"groups":["Minerals"]
+	},
+	"amino": {
+		"groups":["Amino Acids"]
+	},
+	"flavonoids": {
+		"ids":{
+			"included":[],
+			"excluded":[713]
+		},
+		"groups":["Proanthocyanidin","Anthocyanidins","Isoflavones","Flavonols","Flavones","Flavan-3-ols"]
+	},
+	"omega3": {
+		"ids":{
+			"included":[619, 629, 631, 621]
+		}
+	},
+	"monounsaturated": 645,
+	"polyunsaturated": 646,
+	"saturated": 606,
+	"trans": 605,
+	"cholesterol": 601,
+	"fiber": 291,
+	"carbs": 205,
+	"calories": 208,
+	"protein": 203
 }

@@ -20,25 +20,55 @@ export default class FetchData {
 		})
 	}
 
-	static normalizeNutrientTo100g(nutrient) {
-		const m = nutrient.measures[0];
-		let eqv = m.eqv;
-		if (m.eunit !== 'g') {
-			console.error('Not grams, actually ' + m.eunit);
+	static GetRelevantNutrients(nutrients) {
+		let newNutrients = {
+			sums: {},
+			individuals: {}
+		};
+
+		for (const groupName in NutrientGroups) {
+			let relevantNutrients = [];
+			const groupFilterData = NutrientGroups[groupName];
+			const groups = groupFilterData.groups || [];
+			const ids = groupFilterData.ids || {};
+			const includedIds = ids.included || [];
+			const excludedIds = ids.excluded || [];
+
+			//find all nutrients that match filter criteria, and add to newNutrients
+			for (const n of nutrients) {
+				const nId = n.nutrient_id;
+
+				//determine if nutrient matches filtering params
+				if (typeof groupFilterData === 'number' && nId === groupFilterData) {
+					relevantNutrients = n.value;
+					break; //exit loop early, we have found the 1 relevant nutrient
+				} else {
+					const inGroup = !excludedIds.includes(nId) && (groups.includes(n.group) || includedIds.includes(nId));
+					if (inGroup) relevantNutrients.push({
+						id: nId,
+						valPer100g: n.value,
+						name: n.name
+					})
+				}
+			}
+
+			//add the discovered nutrients to relevant positions in newNutrients
+			if (typeof relevantNutrients === 'number') {
+				newNutrients.sums[groupName] = relevantNutrients;
+			} else {
+				newNutrients.individuals[groupName] = relevantNutrients;
+			}
 		}
-		return 100 / (m.eqv / m.value);
-	}
 
+		console.log(newNutrients)
 
-	getSumNutrients(food, ids) {
-		return food.nutrients.reduce(function (accumulator, currNutrient) {
-			let currentValue = 0;
-			const id = currNutrient.nutrient_id;
-			const idInIdsArray = Array.isArray(ids) && ids.includes(currNutrient.nutrient_id);
-			const idInIdsObj = ids.min && ids.max && id >= ids.min && id <= ids.max;
-			if (idInIdsArray || idInIdsObj) currentValue = currNutrient.amount;
-			return accumulator + currentValue;
-		}.bind(this));
+		for (const groupName in newNutrients.individuals) {
+			const sum = newNutrients.individuals[groupName].reduce(function (total, nutrient) {
+				return total + nutrient.valPer100g;
+			}, 0);
+			newNutrients.sums[groupName] = sum;
+		}
+		return newNutrients;
 	}
 
 	static MergeFoodsAndFDA(foodsData, FDA) {
@@ -46,24 +76,14 @@ export default class FetchData {
 			//find corresponding FDA food for each foodsData food, if it exists
 			for (const item of FDA.foods) {
 				const food = item.food;
-				console.log(food)
+				// console.log(food)
 				// console.log(JSON.stringify(food))
 				if (food.desc.ndbno === x.id) {
-					let newFood = x;
-					// newFood = Object.assign(newFood, item.food); //merge all FDA data
-					//only copy over the nutrients data, and only some of the nutrients data
-					for (let i = 0; i < food.nutrients.length; i++) {
-						let n = food.nutrients[i];
-						const normalizedMeasure = FetchData.normalizeNutrientTo100g(n);
-						delete n.measures;
-						n.amount = normalizedMeasure;
-					}
-					newFood = Object.assign(newFood, food.nutrients);
-					return newFood;
+					x.nutrients = FetchData.GetRelevantNutrients(food.nutrients)
+					return x;
 				}
 			}
 			return x;
-
 		})
 	}
 
