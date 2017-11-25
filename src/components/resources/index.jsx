@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Resource from '../resource/index.jsx';
 import Filter from './filter';
-import { titleize, filterStudiesByTags } from '../../utils/GeneralUtils.jsx';
+import { titleize } from '../../utils/GeneralUtils.jsx';
 
 export default class Resources extends Component {
 	static convertTagsToSelectValueObject(tags) {
@@ -66,6 +66,7 @@ export default class Resources extends Component {
 		this.submitFilters = this.submitFilters.bind(this);
 		this.handleFormFieldChange = this.handleFormFieldChange.bind(this);
 		this.sortResources = this.sortResources.bind(this);
+		this.getStudiesFromSelectedTags = this.getStudiesFromSelectedTags.bind(this);
 
 		//initialize vars
 		let tags = this.props.tags;
@@ -96,12 +97,19 @@ export default class Resources extends Component {
 		}
 	}
 
-	render() {
-		//filter out un-wanted resources
-		const selectedTags = Resources.selectableTagsToArray(this.state.selectedTags);
+	getStudiesFromSelectedTags() {
+		let selectedResources = {};
+		for (const selectedTagObj of this.state.selectedTags) {
+			const tag = selectedTagObj.value;
+			const resources = this.state.resources[tag];
+			console.log(this.state.resources,resources,tag,this.state.selectedTags)
+			for (const r of resources) selectedResources[r.title] = r;
+		}
+		return Object.values(selectedResources).sort(this.sortResources);
+	}
 
-		let resources = filterStudiesByTags(this.state.resources, selectedTags);
-		resources.sort(this.sortResources);
+	render() {
+		const resources = this.getStudiesFromSelectedTags();
 
 		return (
 			<div>

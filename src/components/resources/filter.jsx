@@ -56,7 +56,6 @@ export default class Filter extends Component {
 						<FlatButton label="All Tags" onClick={this.addAll} />
 
 						<div>
-
 							<SelectField
 								floatingLabelText="Sort"
 								value={this.state.sortLabel}

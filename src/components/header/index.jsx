@@ -71,7 +71,7 @@ export default class Header extends Component {
 						/>
 						<MenuItem
 							containerElement={<Link to="/food" />}
-							primaryText="Foods"
+							primaryText="Compare Foods"
 							onClick={this.closeDrawer}
 						/>
 						<MenuItem

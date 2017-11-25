@@ -32,13 +32,6 @@ export default class Food extends Component {
 	}
 
 	getEnergyBreakdownScatterChart() {
-		// const energyFoodData = this.state.selectedFoods.map((selectedFood) => {
-		// 	// const f = { name: selectedFood.label };
-		// 	// const food = this.indexedFoods[selectedFood.value];
-		// 	// return Object.assign(f, food.nutrients.energy);
-		// 	const food = this.indexedFoods[selectedFood.value];
-		// 	return { name: selectedFood.label, data: Food.mapObjToXY(food.nutrients.energy) };
-		// });
 		const scatters = this.state.selectedFoods.map((selectedFood) => {
 			let food = this.indexedFoods[selectedFood.value];
 			let data = Food.mapObjToXY(food.nutrients.energy);
@@ -47,14 +40,14 @@ export default class Food extends Component {
 					key={selectedFood.label}
 					name={selectedFood.label}
 					data={data}
-					fill={getRandomColor()}
+					fill={food.color}
 					line
 					shape="cross" />
 			);
 		});
 		return (
 			<ScatterChart width={600} height={400} margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
-				<XAxis  dataKey='x' name='Macro' />
+				<XAxis  type="category" dataKey='x' name='Macro' />
 				<YAxis type="number" dataKey={'y'} name='Grams' unit='g' />
 				<CartesianGrid />
 				<Tooltip cursor={{ strokeDasharray: '3 3' }} />
@@ -70,7 +63,7 @@ export default class Food extends Component {
 			this.getSelectedFoodNutrientRechartData('Protein', Food.foodToProtein)
 		];
 		const radars = this.state.selectedFoods.map((selectedFood) => {
-			const color = getRandomColor();
+			const color = this.indexedFoods[selectedFood.value].color;
 			return (
 				<Radar
 					name={selectedFood.label}
@@ -101,8 +94,9 @@ export default class Food extends Component {
 
 		//init vars
 		this.allSelectableFoods = Food.convertFoodsToSelectObjects(FullNutritionInfo)
-		this.indexedFoods = FullNutritionInfo.reduce((map, obj) => {
+		this.indexedFoods = FullNutritionInfo.reduce((map, obj) => { //index the foods by their name and add extra props, like color
 			map[obj.name] = obj;
+			obj.color = getRandomColor();
 			return map;
 		}, {});
 		this.state = {
@@ -133,7 +127,7 @@ export default class Food extends Component {
 					joinValues
 					multi
 				/>
-				{this.getEnergyBreakdownScatterChart()}
+				{this.getEnergyBreakdownRadialChart()}
 			</div>
 		);
 	}

@@ -6,8 +6,22 @@ export function preprocess(resources) {
 	return resources.map((resource, indx) => {
 		if (resource.tags) resource.tags = resource.tags.split(',');
 		resource.id = indx;
+
 		return resource;
 	});
+}
+
+export function indexByTags(resources){
+	let indx = {};
+	for(const resource of resources){
+		const tags = resource.tags;
+		for (const tag of tags){ //add resource under each tags index
+			let arr = indx[tag] || [];
+			arr.push(resource);
+			indx[tag] = arr;
+		}
+	}
+	return indx;
 }
 
 export function titleize(string) {
@@ -51,10 +65,16 @@ export function getTitleized(val) {
 	return (val) ? titleize(val) : null;
 }
 
-export function filterStudiesByTags(studies, tags) {
-	return studies.filter(resource => {
-		return numCommonElements(resource.tags, tags) > 0;
-	});
+export function filterStudiesByTags(raw, allowed) { //https://stackoverflow.com/questions/38750705/filter-object-properties-by-key-in-es6
+	return Object.keys(raw)
+  .filter(key => allowed.includes(key))
+  .reduce((obj, key) => {
+    obj[key] = raw[key];
+    return obj;
+  }, {});
+	// return studies.filter(resource => {
+	// 	return numCommonElements(resource.tags, tags) > 0;
+	// });
 }
 
 export let CenteredDiv = styled.div`

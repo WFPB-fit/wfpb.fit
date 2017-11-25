@@ -8,7 +8,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import studyData from './assets/data/studies.json';
 import learnMoreData from './assets/data/learn-more.json';
-import { preprocess, CenteredDiv } from './utils/GeneralUtils.jsx';
+import { preprocess,indexByTags, CenteredDiv } from './utils/GeneralUtils.jsx';
 
 import Home from './routes/home';
 import Food from './routes/food';
@@ -24,12 +24,12 @@ export default class App extends Component {
 		//simple global data container
 		window.globalAppData = {
 			appName: 'Plant-Based Diet',
-			studies: preprocess(studyData),
+			studies: indexByTags(preprocess(studyData)),
 			learnMore: {
-				documentaries: preprocess(learnMoreData.documentaries),
-				videos: preprocess(learnMoreData.videos),
-				books: preprocess(learnMoreData.books),
-				wikipedia: preprocess(learnMoreData.wikipedia),
+				documentaries:  indexByTags(preprocess(learnMoreData.documentaries)),
+				videos:  indexByTags(preprocess(learnMoreData.videos)),
+				books:  indexByTags(preprocess(learnMoreData.books)),
+				wikipedia:  indexByTags(preprocess(learnMoreData.wikipedia)),
 			}
 		};
 		document.title = window.globalAppData.appName; //set tab title
