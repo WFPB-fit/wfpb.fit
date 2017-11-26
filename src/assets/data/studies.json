@@ -54,25 +54,25 @@
 		"type": "meta analysis",
 		"availability": "full",
 		"tags": "flaxseed,ala",
-		"quote":"For every £1 UK consumers spend on food, additional costs of around £1 are incurred. These costs are not paid by the food businesses, nor are they included within the retail price of food. Instead they are passed on to society in a range of hidden ways. In total, production-related costs account for an extra 50p for every £1 spent on food, while the costs of diet-related disease account for an extra 37p."
-		},  {
-			"title": "The Hidden Cost of UK Food",
-			"url": "http://sustainablefoodtrust.org/articles/hidden-cost-uk-food/",
-			"pdf":"http://sustainablefoodtrust.org/wp-content/uploads/2013/04/HCOF-Report-online-version.pdf",
-			"year": 2017,
-			"type": "research report",
-			"availability": "full",
-			"tags": "environment,agribusiness",
-			"quote": "it is possible to advocate a potential pleiotropic effect of ALA beyond the more conventional cholesterol-lowering actions of most cardiovascular drugs. Most importantly, the body of ALA research now argues persuasively for the initiation of careful, randomized, controlled trials of dietary flaxseed and/or ALA in a patient population with symptoms of atherosclerotic heart disease."
-		},  {
-			"title": "No Pasture for Parmesan and Grana Padano Cows",
-			"url": "https://action.ciwf.org.uk//ea-action/action?ea.client.id=119&ea.campaign.id=82237&ea.tracking.id=1174f49c&utm_campaign=dairy&utm_source=shared&utm_medium=link",
-			"year": 2017,
-			"type": "article",
-			"availability": "full",
-			"tags": "animals,agribusiness",
-			"quote":"A recent Compassion in World Farming investigation uncovered cruelty behind Parmigiano Reggiano, also known as Parmesan, and its sister product Grana Padano cheese. We visited a number of Italian farms supplying milk for these cheeses, and found intensive, zero-grazing systems with cows permanently confined indoors."
-			}, {
+		"quote": "For every £1 UK consumers spend on food, additional costs of around £1 are incurred. These costs are not paid by the food businesses, nor are they included within the retail price of food. Instead they are passed on to society in a range of hidden ways. In total, production-related costs account for an extra 50p for every £1 spent on food, while the costs of diet-related disease account for an extra 37p."
+	}, {
+		"title": "The Hidden Cost of UK Food",
+		"url": "http://sustainablefoodtrust.org/articles/hidden-cost-uk-food/",
+		"pdf": "http://sustainablefoodtrust.org/wp-content/uploads/2013/04/HCOF-Report-online-version.pdf",
+		"year": 2017,
+		"type": "research report",
+		"availability": "full",
+		"tags": "environment,agribusiness",
+		"quote": "it is possible to advocate a potential pleiotropic effect of ALA beyond the more conventional cholesterol-lowering actions of most cardiovascular drugs. Most importantly, the body of ALA research now argues persuasively for the initiation of careful, randomized, controlled trials of dietary flaxseed and/or ALA in a patient population with symptoms of atherosclerotic heart disease."
+	}, {
+		"title": "No Pasture for Parmesan and Grana Padano Cows",
+		"url": "https://action.ciwf.org.uk//ea-action/action?ea.client.id=119&ea.campaign.id=82237&ea.tracking.id=1174f49c&utm_campaign=dairy&utm_source=shared&utm_medium=link",
+		"year": 2017,
+		"type": "article",
+		"availability": "full",
+		"tags": "animals,agribusiness",
+		"quote": "A recent Compassion in World Farming investigation uncovered cruelty behind Parmigiano Reggiano, also known as Parmesan, and its sister product Grana Padano cheese. We visited a number of Italian farms supplying milk for these cheeses, and found intensive, zero-grazing systems with cows permanently confined indoors."
+	}, {
 		"title": "Vitamin A intake and osteoporosis: a clinical review.",
 		"url": "https://www.ncbi.nlm.nih.gov/pubmed/15671709",
 		"year": 2004,
@@ -812,7 +812,7 @@
 		"quote": "Vegetarian and vegan diets offer significant benefits for diabetes management. In observational studies, individuals following vegetarian diets are about half as likely to develop diabetes, compared with non-vegetarians. In clinical trials in individuals with type 2 diabetes, low-fat vegan diets improve glycemic control to a greater extent than conventional diabetes diets. "
 	}, {
 		"title": "Taiwanese Vegetarians and Omnivores: Dietary Composition, Prevalence of Diabetes and IFG",
-		"url": "https://www.ncbi.nlm.nih.gov/pubmed/19386029/",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3921224/",
 		"year": 2009,
 		"type": "study",
 		"availability": "full",
@@ -898,6 +898,30 @@
 		"availability": "full",
 		"tags": "cancer",
 		"quote": "The overall cancer incidence rates of both the vegetarians and the nonvegetarians in this study are low compared with national rates. Within the study, the incidence of all cancers combined was lower among vegetarians than among meat eaters, but the incidence of colorectal cancer was higher in vegetarians than in meat eaters."
+	}, {
+		"title": "Dietary intake of meat and meat-derived heterocyclic aromatic amines and their correlation with DNA adducts in female breast tissue.",
+		"url": "https://academic.oup.com/mutage/article-lookup/doi/10.1093/mutage/gen058",
+		"year": 2008,
+		"type": "study",
+		"availability": "full",
+		"tags": "cancer",
+		"quote": "Total HCA [heterocyclic amines] intake (r = 0.33, P = 0.03), consumption of fried meat (r = 0.39, P = 0.01), beef (r = 0.32, P = 0.03) and processed meat (r = 0.51, P = 0.0004) were statistically significantly correlated with the level of DNA adducts [cancer biomarker] in breast tissue."
+	}, {
+		"title": "Content of low density lipoprotein receptors in breast cancer tissue related to survival of patients.",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1339562/",
+		"year": 1986,
+		"type": "study",
+		"availability": "full",
+		"tags": "cancer,cholesterol",
+		"quote": "The LDL receptor content showed an inverse correlation with the survival time. Analysis by a multivariate statistical method showed that the presence of axillary metastasis, content of receptors for oestrogen and LDL, diameter of the tumour, and DNA pattern were all of prognostic value with regard to patient survival."
+	}, {
+		"title": "Cholesterol and breast cancer development.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/22867847",
+		"year": 2012,
+		"type": "meta analysis",
+		"availability": "abstract",
+		"tags": "cancer,cholesterol",
+		"quote": "compelling evidence has been obtained in laboratory studies, and they indicate that cholesterol is capable of regulating proliferation, migration, and signaling pathways in breast cancer. In vivo studies have also indicated that plasma cholesterol levels can regulate tumor growth in mouse models. The recognition of cholesterol as a factor contributing to breast cancer development identifies cholesterol and its metabolism as novel targets for cancer therapy."
 	}, {
 		"title": "Metabolically Healthy Obese and Incident Cardiovascular Disease Events Among 3.5 Million Men and Women.",
 		"url": "https://www.ncbi.nlm.nih.gov/pubmed/28911506",
@@ -1016,8 +1040,16 @@
 		"year": 2014,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "plant-based diet",
+		"tags": "plant-based diet,gut",
 		"quote": "The vegan gut profile appears to be unique in several characteristics, including a reduced abundance of pathobionts and a greater abundance of protective species. Reduced levels of inflammation may be the key feature linking the vegan gut microbiota with protective health effects. However, it is still unclear whether a therapeutic vegan diet can be prescribed to alter the gut microflora for long-term health benefits."
+	}, {
+		"title": "Comparative metabolomics in vegans and omnivores reveal constraints on diet-dependent gut microbiota metabolite production",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4583329/",
+		"year": 2016,
+		"type": "study",
+		"availability": "full",
+		"tags": "gut",
+		"quote": "Plasma metabolome of vegans differed markedly from omnivores but the gut microbiota was surprisingly similar. Unlike prior studies of individuals living in agrarian societies, higher consumption of fermentable substrate in vegans was not associated with higher levels of faecal short chain fatty acids, a finding confirmed in a 10-day controlled feeding experiment. Similarly, the proportion of vegans capable of producing equol, a soy-based gut microbiota metabolite, was less than that was reported in Asian societies despite the high consumption of soy-based products."
 	}, {
 		"title": "A low-fat vegan diet and a conventional diabetes diet in the treatment of type 2 diabetes: a randomized, controlled, 74-wk clinical trial",
 		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2677007/",
@@ -1175,7 +1207,7 @@
 		"year": 2014,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "plant-based diet",
+		"tags": "plant-based diet,fruit,veges",
 		"quote": "Higher consumption of fruit and vegetables was significantly associated with a lower risk of all cause mortality. Pooled hazard ratios of all cause mortality were 0.95 (95% confidence interval 0.92 to 0.98) for an increment of one serving a day of fruit and vegetables (P=0.001), 0.94 (0.90 to 0.98) for fruit (P=0.002), and 0.95 (0.92 to 0.99) for vegetables (P=0.006). There was a threshold around five servings of fruit and vegetables a day, after which the risk of all cause mortality did not reduce further. A significant inverse association was observed for cardiovascular mortality (hazard ratio for each additional serving a day of fruit and vegetables 0.96, 95% confidence interval 0.92 to 0.99), while higher consumption of fruit and vegetables was not appreciably associated with risk of cancer mortality."
 	}, {
 		"title": "Effect of fruit restriction on glycemic control in patients with type 2 diabetes – a randomized trial",
@@ -1183,7 +1215,7 @@
 		"year": 2013,
 		"type": "study",
 		"availability": "full",
-		"tags": "diabetes",
+		"tags": "diabetes,fruit",
 		"quote": "A recommendation to reduce fruit intake as part of standard medical nutrition therapy in overweight patients with newly diagnosed type 2 diabetes resulted in eating less fruit. It had however no effect on HbA1c, weight loss or waist circumference. We recommend that the intake of fruit should not be restricted in patients with type 2 diabetes"
 	}, {
 		"title": "The Healthy Farmland Diet: How Growing Less Corn Would Improve Our Health and Help America’s Heartland (2013)",
@@ -1201,8 +1233,8 @@
 		"type": "meta analysis",
 		"availability": "abstract",
 		"tags": "back pain,cardiovascular disease",
-		"quote":"Post-mortem studies showed an association between atheromatous lesions in the aorta and DD [disk degeneration], as well as between occluded lumbar arteries and life-time LBP [low back pain]. In clinical studies, aortic calcification was associated with LBP, and stenosis of lumbar arteries was associated with both DD and LBP. In epidemiological studies, smoking and high serum cholesterol levels were found to have the most consistent associations with DD and LBP."
-		}, {
+		"quote": "Post-mortem studies showed an association between atheromatous lesions in the aorta and DD [disk degeneration], as well as between occluded lumbar arteries and life-time LBP [low back pain]. In clinical studies, aortic calcification was associated with LBP, and stenosis of lumbar arteries was associated with both DD and LBP. In epidemiological studies, smoking and high serum cholesterol levels were found to have the most consistent associations with DD and LBP."
+	}, {
 		"title": "Disparities in State-Specific Adult Fruit and Vegetable Consumption — United States, 2015",
 		"url": "https://www.cdc.gov/mmwr/volumes/66/wr/mm6645a1.htm?s_cid=mm6645a1_w",
 		"year": 2015,
@@ -1216,7 +1248,7 @@
 		"year": 2016,
 		"type": "study",
 		"availability": "full",
-		"tags": "plant-based diet",
+		"tags": "plant-based diet,fruit,veges",
 		"quote": "In the fully adjusted models, increasing consumption of fruit and vegetables combined was associated with reductions in all-cause mortality, with the highest risk reduction seen up to 7 serves/day or more of fruit and vegetables (P for trend = 0.002, hazard ratio for highest versus lowest consumption quartile: 0.90; 95 % confidence interval: 0.84, 0.97). Separate consumption of fruit and vegetables, as well as consumption of raw or cooked vegetables, were associated with a reduced risk of all-cause mortality in the crude and minimally adjusted models (all P for trend <0.05). With the exception of raw vegetables, these associations remained significant in the fully adjusted models (all P for trend <0.05). Age and sex were significant effect modifiers of the association between fruit and vegetable consumption and all-cause mortality."
 	}, {
 		"title": "Effect of a very-high-fiber vegetable, fruit, and nut diet on serum lipids and colonic function.",
@@ -1224,7 +1256,7 @@
 		"year": 2001,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "plant-based diet",
+		"tags": "plant-based diet,fruit,fiber",
 		"quote": "Compared with the starch-based and low-fat diets, the high-fiber vegetable diet resulted in the largest reduction in low-density lipoprotein (LDL) cholesterol (33% +/- 4%, P <.001) and the greatest fecal bile acid output (1.13 +/- 0.30 g/d, P =.002), fecal bulk (906 +/- 130 g/d, P <.001), and fecal short-chain fatty acid outputs (78 +/- 13 mmol/d, P <.001). Nevertheless, due to the increase in fecal bulk, the actual concentrations of fecal bile acids were lowest on the vegetable diet (1.2 mg/g wet weight, P =.002). Maximum lipid reductions occurred within 1 week. Urinary mevalonic acid excretion increased (P =.036) on the high-vegetable diet reflecting large fecal steroid losses. We conclude that very high-vegetable fiber intakes reduce risk factors for cardiovascular disease and possibly colon cancer. Vegetable and fruit fibers therefore warrant further detailed investigation."
 	}, {
 		"title": "Association of mediterranean diet with mild cognitive impairment and Alzheimer's disease: a systematic review and meta-analysis.",
@@ -1256,8 +1288,97 @@
 		"year": 2012,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "cognition",
+		"tags": "cognition,phytochemicals",
 		"quote": "Oxidative damage and inflammation have been implicated in cognitive decline in the elderly. Epidemiologic evidence to date suggests that dietary carotenoids may be beneficial in cognitive health. ... Our cross-sectional and intervention studies find that increased xanthophyll status is related to better cognitive performance in the elderly. "
+	}, {
+		"title": "Carotenoids and flavonoids contribute to nutritional protection against skin damage from sunlight.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/17914160",
+		"year": 2007,
+		"type": "study",
+		"availability": "abstract",
+		"tags": "skin,phytochemicals",
+		"quote": "Plant constituents such as carotenoids and flavonoids are involved in protection against excess light in plants and contribute to the prevention of UV damage in humans. As micronutrients, they are ingested with the diet and are distributed into light-exposed tissues, such as skin or the eye where they provide systemic photoprotection. beta-Carotene and lycopene prevent UV-induced erythema formation. Likewise, dietary flavanols exhibit photoprotection. After about 10-12 weeks of dietary intervention, a decrease in the sensitivity toward UV-induced erythema was observed in volunteers. "
+	}, {
+		"title": "Dietary Flavonoid Intake and Smoking-Related Cancer Risk: A Meta-Analysis",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3777962/",
+		"year": 2013,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "phytochemicals",
+		"quote": "The protective effects of flavonoids on smoking-related cancer risk varied across studies, but the overall results indicated that intake of dietary flavonoids, especially flavonols, was inversely associated with smoking-related cancer risk. The protective effects of flavonoids on smoking-related cancer risk were more prominent in smokers."
+	}, {
+		"title": "Dietary Intake of Carotenoids and Their Antioxidant and Anti-Inflammatory Effects in Cardiovascular Care",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3893834/",
+		"year": 2013,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "phytochemicals,cardiovascular disease",
+		"quote": "Despite the contradictions, there are many data supporting the anti-inflammatory action of carotenoids and their protective effect on cardiovascular events. The unfavourable findings may arise from the use of synthetic molecules slightly different from natural ones or by the competition between the plasma concentrations of carotenoids synthetically derived and of those normally taken with foods. The current data are promising, although further studies and a better standardization of methods are needed to obtain clearer results."
+	}, {
+		"title": "Anti-inflammatory properties of edible mushrooms: A review.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/29146352",
+		"year": 2018,
+		"type": "meta analysis",
+		"availability": "abstract",
+		"tags": "phytochemicals,mushrooms",
+		"quote": "Mushrooms are rich in anti-inflammatory components, such as polysaccharides, phenolic and indolic compounds, mycosteroids, fatty acids, carotenoids, vitamins, and biometals. Metabolites from mushrooms of the Basidiomycota taxon possess antioxidant, anticancer, and most significantly, anti-inflammatory properties. Recent reports indicate that edible mushroom extracts exhibit favourable therapeutic and health-promoting benefits, particularly in relation to diseases associated with inflammation. In all certainty, edible mushrooms can be referred to as a \"superfood\" and are recommended as a valuable constituent of the daily diet."
+	}, {
+		"title": "Carotenoids as Potential Antioxidant Agents in Stroke Prevention: A Systematic Review",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5625359/",
+		"pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/954A324D3C1B8EE5B2BE2FD07C60112F/S000711451300278Xa.pdf/flavonoid_intake_and_risk_of_cvd_a_systematic_review_and_metaanalysis_of_prospective_cohort_studies.pdf",
+		"year": 2014,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "phytochemicals,cardiovascular disease",
+		"quote": "Recent studies indicated that high dietary intake of six main carotenoids (i.e., lycopene, <- and®-carotene, lutein, zeaxanthin, and astaxanthin) was associated with reduced risk of stroke and other cardiovascular outcomes. However, the main mechanism of the action of these nutrients was not identified, and multiple mechanisms except antioxidant activity were suggested to be involved in the observed beneficial effects. The dietary intake of six major carotenoids should be promoted as this may have a substantial positive effect on stroke prevention and stroke mortality reduction."
+	}, {
+		"title": "Flavonoid intake and risk of CVD: a systematic review and meta-analysis of prospective cohort studies",
+		"url": "https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/flavonoid-intake-and-risk-of-cvd-a-systematic-review-and-meta-analysis-of-prospective-cohort-studies/954A324D3C1B8EE5B2BE2FD07C60112F",
+		"year": 2017,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "phytochemicals,cardiovascular disease",
+		"quote": "The intakes of anthocyanidins (RR 0·89, 95 % CI 0·83, 0·96), proanthocyanidins (RR 0·90, 95 % CI 0·82, 0·98), flavones (RR 0·88, 95 % CI 0·82, 0·96), flavanones (RR 0·88, 95 % CI 0·82, 0·96) and flavan-3-ols (RR 0·87, 95 % CI 0·80, 0·95) were inversely associated with the risk of CVD when comparing the highest and lowest categories of intake. A similar association was observed for flavonol intake and CVD risk. Sensitivity and subgroup analyses further supported this association. The summary RR for CVD for every 10 mg/d increment in flavonol intake was 0·95 (95 % CI 0·91, 0·99). The present systematic review suggests that the dietary intakes of six classes of flavonoids, namely flavonols, anthocyanidins, proanthocyanidins, flavones, flavanones and flavan-3-ols, significantly decrease the risk of CVD."
+	}, {
+		"title": "Flavonoid compounds: a review of anticancer properties and interactions with cis-diamminedichloroplatinum(II)",
+		"url": "https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/flavonoid-intake-and-risk-of-cvd-a-systematic-review-and-meta-analysis-of-prospective-cohort-studies/954A324D3C1B8EE5B2BE2FD07C60112F",
+		"year": 2004,
+		"type": "meta analysis",
+		"availability": "abstract",
+		"tags": "phytochemicals,cancer",
+		"quote": "Flavonoid compounds, especially quercetin and genistein, have antitumor activity. These compounds are cytotoxic to cancer cells but have no or insignificant activity in normal cells. ... cis-DDP (cis-diamminedichloroplatinum(II)) is one of the most effective drugs used for chemotherapy, but its actions are limited by many side effects. Beneficial synergistic effects of flavonoids (e.g., quercetin, genistein, butein, tannic acid) and cis-DDP were found in cis-DDP-sensitive and resistant cancer cells that resulted in a lower toxicity for cis-DDP. "
+	},  {
+		"title": "Relative impact of flavonoid composition, dose and structure on vascular function: A systematic review of randomised controlled trials of flavonoid-rich food products",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/22996837",
+		"year": 2012,
+		"type": "meta analysis",
+		"availability": "abstract",
+		"tags": "phytochemicals,cardiovascular disease",
+		"quote":"Meta-analyses of combined flavonoid subclasses showed significant improvements in FMD [endothelial/vein/blood flow function] (chronic, 0.73% (0.17, 1.30) 14 RCTs; acute, 2.33% (1.58, 3.08) 18 RCTs) and blood pressures (systolic, -1.46 mmHg (-2.38, -0.53) 63 RCTs; diastolic, -1.25 mmHg (-1.82, -0.67) 63 RCTs). Similar benefits were observed for the flavan-3-ol, catechol flavonoids (catechins, quercetin, cyanidin etc.), procyanidins, epicatechin and catechin subgroups. ... The present analysis suggests that flavonoid bioactivity does not follow a classical linear dose-response association and this may have important biological implications."
+		}, {
+		"title": "A review on the dietary flavonoid kaempferol.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/21428901",
+		"year": 2011,
+		"type": "meta analysis",
+		"availability": "abstract",
+		"tags": "phytochemicals",
+		"quote": "Some epidemiological studies have found a positive association between the consumption of foods containing kaempferol and a reduced risk of developing several disorders such as cancer and cardiovascular diseases. Numerous preclinical studies have shown that kaempferol and some glycosides of kaempferol have a wide range of pharmacological activities, including antioxidant, anti-inflammatory, antimicrobial, anticancer, cardioprotective, neuroprotective, antidiabetic, anti-osteoporotic, estrogenic/antiestrogenic, anxiolytic, analgesic and antiallergic activities."
+	}, {
+		"title": "The Carotenoid Pigment Zeaxanthin—A Review",
+		"url": "http://onlinelibrary.wiley.com/doi/10.1111/j.1541-4337.2007.00028.x/full",
+		"year": 2008,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "phytochemicals",
+		"quote": "Zeaxanthin is effective against AMD, cataract, and LDL oxidation, thus emphasizing its use in nutraceutical formulations."
+	}, {
+		"title": "Prooxidant Activity of Polyphenols, Flavonoids, Anthocyanins and Carotenoids: Updated Review of Mechanisms and Catalyzing Metals.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/27241122",
+		"year": 2016,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "phytochemicals",
+		"quote": "Natural antioxidants, including polyphenols, flavonoids, anthocyanins and carotenoids, play an important role in the treatment and prevention of a large number of diseases. However, studies indicate that natural antioxidants can act as prooxidants, which produce free radicals and cause DNA damage and mutagenesis. The prooxidant activity is typically catalyzed by metals, particularly transition metals such as Fe and Cu, present in biological systems. In this article, we aim to review new in vitro and in vivo evidence of the prooxidant activity of phenolics, flavonoids, anthocyanins and carotenoids."
 	}, {
 		"title": "Fruit, vegetables and prevention of cognitive decline or dementia: a systematic review of cohort studies.",
 		"url": "https://www.ncbi.nlm.nih.gov/pubmed/22836704",
@@ -1274,6 +1395,14 @@
 		"availability": "abstract",
 		"tags": "cognition",
 		"quote": "We provide a model for the pathways by which food components provided by a Mediterranean-style diet can facilitate healthy brain function. We then review evidence for the role of selected nutrients/food components - antioxidants, omega-3 fatty acids and B vitamins - in the brain and, hence, modulation of cognitive function and mental health."
+	}, {
+		"title": "Nutritional and greenhouse gas impacts of removing animals from US agriculture",
+		"url": "http://www.pnas.org/content/early/2017/11/15/1707322114.full",
+		"year": 2017,
+		"type": "study",
+		"availability": "full",
+		"tags": "plant-based diet, environment",
+		"quote": "The modeled system without animals increased total food production (23%), altered foods available for domestic consumption, and decreased agricultural US GHGs (28%), but only reduced total US GHG by 2.6 percentage units. Compared with systems with animals, diets formulated for the US population in the plants-only systems had greater excess of dietary energy and resulted in a greater number of deficiencies in essential nutrients."
 	}, {
 		"title": "Food for thought: the role of dietary flavonoids in enhancing human memory, learning and neuro-cognitive performance: Symposium on ‘Diet and mental health’",
 		"url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/BAA7D30D89D0CF9694A2565C47CA8BF2/S0029665108007088a.pdf/food_for_thought_the_role_of_dietary_flavonoids_in_enhancing_human_memory_learning_and_neurocognitive_performance.pdf",
@@ -1442,6 +1571,14 @@
 		"year": 2012,
 		"tags": "protein,methionine,cancer",
 		"quote": "Restriction of methionine may be an important strategy in cancer growth control particularly in cancers that exhibit dependence on methionine for survival and proliferation. ... Several animal studies utilizing a methionine restricted diet have reported inhibition of cancer growth and extension of a healthy life-span. In humans, vegan diets, which can be low in methionine, may prove to be a useful nutritional strategy in cancer growth control. "
+	}, {
+		"title": "Protein methionine content and MDA-lysine adducts are inversely related to maximum life span in the heart of mammals.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/15955547",
+		"type": "study",
+		"availability": "abstract",
+		"year": 2012,
+		"tags": "protein,methionine",
+		"quote": "Oxidation of proteins has been proposed to be one of the basic mechanisms linking oxygen radicals with the basic aging process. ... steady-state levels of markers of different kinds of protein damage--oxidation (glutamic and aminoadipic semialdehydes), mixed glyco- and lipoxidation (carboxymethyl- and carboxyethyllysine), lipoxidation (malondialdehydelysine) and amino acid composition--were measured in the heart of eight mammalian species ranging in maximum life span (MLSP) from 3.5 to 46 years. Oxidation markers were directly correlated with MLSP across species. ... These results reinforce the notion that high longevity in homeothermic vertebrates is achieved in part by constitutively decreasing the sensitivity of both tissue proteins and lipids to oxidative damage. This is obtained by modifying the constituent structural components of proteins and lipids, selecting those less sensitive to oxidative modifications."
 	}, {
 		"title": "The low-methionine content of vegan diets may make methionine restriction feasible as a life extension strategy.",
 		"url": "https://www.ncbi.nlm.nih.gov/pubmed/18789600",
@@ -1861,6 +1998,23 @@
 		"availability": "full",
 		"tags": "plant-based diet",
 		"quote": "It is the position of the American Dietetic Association that appropriately planned vegetarian diets, including total vegetarian or vegan diets, are healthful, nutritionally adequate, and may provide health benefits in the prevention and treatment of certain diseases. ... An evidence- based review showed that vegetarian diets can be nutritionally adequate in pregnancy and result in positive maternal and infant health outcomes. The results of an evidence-based review showed that a vegetarian diet is associated with a lower risk of death from ischemic heart disease. Vegetarians also appear to have lower low-density lipoprotein cholesterol levels, lower blood pressure, and lower rates of hypertension and type 2 diabetes than nonvegetarians. Furthermore, vegetarians tend to have a lower body mass index and lower overall cancer rates. "
+	}, {
+		"title": "Position of the Academy of Nutrition and Dietetics: Vegetarian Diets.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/27886704/",
+		"year": 2016,
+		"type": "research report",
+		"availability": "full",
+		"tags": "plant-based diet",
+		"quote": "These diets are appropriate for all stages of the life cycle, including pregnancy, lactation, infancy, childhood, adolescence, older adulthood, and for athletes. Plant-based diets are more environmentally sustainable than diets rich in animal products because they use fewer natural resources and are associated with much less environmental damage. Vegetarians and vegans are at reduced risk of certain health conditions, including ischemic heart disease, type 2 diabetes, hypertension, certain types of cancer, and obesity. ... Vegans need reliable sources of vitamin B-12, such as fortified foods or supplements."
+	}, {
+		"title": "Dietitians of Canada: Healthy Eating Guidelinesfor Vegans",
+		"url": "https://www.dietitians.ca/Your-Health/Nutrition-A-Z/Vegetarian-Diets/Eating-Guidelines-for-Vegans.aspx",
+		"pdf": "https://www.dietitians.ca/getattachment/c8c30477-aad8-4283-9164-079855fabb6d/FACTSHEET-Guidlines-for-Vegans.pdf.aspx",
+		"year": 2014,
+		"type": "research report",
+		"availability": "full",
+		"tags": "plant-based diet",
+		"quote": "A healthy vegan diet has many health benefits including lower rates of obesity, heart disease, high blood pressure, high blood cholesterol, type 2 diabetes and certain types of cancer.  It may take planning to get enough protein, iron, zinc, calcium, vitamins D and B12 and omega-3 fats from foods or supplements.  A healthy vegan diet can meet all your nutrient needs at any stage of life including when you are pregnant, breastfeeding or for older adults"
 	}, {
 		"title": "A Milk Protein, Casein, as a Proliferation Promoting Factor in Prostate Cancer Cells",
 		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4524299/",
