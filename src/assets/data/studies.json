@@ -448,7 +448,7 @@
 		"year": 2004,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "plant-based diet",
+		"tags": "plant-based diet,fat,cholesterol,fiber,phytochemicals",
 		"quote": "The benefits arise from lower intakes of saturated fat, cholesterol and animal protein as well as higher intakes of complex carbohydrates, dietary fiber, magnesium, folic acid, vitamin C and E, carotenoids and other phytochemicals."
 	}, {
 		"title": "Accruing evidence on benefits of adherence to the Mediterranean diet on health: an updated systematic review and meta-analysis",
@@ -504,7 +504,7 @@
 		"year": 2007,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "cancer",
+		"tags": "cancer,fiber",
 		"quote": "Ninety-three early-stage prostate cancer patients participated in a randomized controlled trial and were assigned to a very-low-fat (10% fat) vegan diet supplemented with soy protein and lifestyle changes or to usual care. ... Analyses of changes in dietary intake of macronutrients, vitamins, minerals, carotenoids, and isoflavones from baseline to 1 year showed significantly increased intake of most protective dietary factors (eg, fiber increased from a mean of 31 to 59 g/day, lycopene increased from 8,693 to 34,464 μg/day) and significantly decreased intake of most pathogenic dietary factors (eg, saturated fatty acids decreased from 20 to 5 g/day, cholesterol decreased from 200 to 10 mg/day) in the intervention group compared to controls"
 	}, {
 		"title": "The role of diet and physical activity in breast, colorectal, and prostate cancer survivorship: a review of the literature",
@@ -536,7 +536,7 @@
 		"year": 2006,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "cancer",
+		"tags": "cancer,fiber",
 		"quote": "These results show that a very-low-fat, high-fiber diet combined with daily exercise results in major reductions in risk factors for BCa while subjects remained overweight/obese"
 	}, {
 		"title": "Intensive lifestyle changes may affect the progression of prostate cancer.",
@@ -544,7 +544,7 @@
 		"year": 2005,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "cancer",
+		"tags": "cancer,fiber",
 		"quote": "Intensive lifestyle changes may affect the progression of early, low grade prostate cancer in men. Further studies and longer term followup are warranted."
 	}, {
 		"title": "Fasting followed by vegetarian diet in patients with rheumatoid arthritis: a systematic review",
@@ -736,7 +736,7 @@
 		"year": 2011,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "ibd",
+		"tags": "ibd,fiber",
 		"quote": "data from 170,776 women, followed up over 26 years...[shows] long-term intake of dietary fiber, particularly from fruit, is associated with lower risk of CD but not UC."
 	}, {
 		"title": "Epidemiologic analysis of Crohn disease in Japan: increased dietary intake of n-6 polyunsaturated fatty acids and animal protein relates to the increased incidence of Crohn disease in Japan.",
@@ -760,7 +760,7 @@
 		"year": 2015,
 		"type": "study",
 		"availability": "full",
-		"tags": "ibd",
+		"tags": "ibd,fiber",
 		"quote": "Although the precise mechanism is to be determined, epidemiology provides convincing evidence that a plant-based diet is a healthy diet providing therapeutic and/or preventive effects against current major chronic diseases.22–24 Available data suggest the rationale to use dietary fiber in the treatment of IBD."
 	}, {
 		"title": "The BROAD study: A randomised controlled trial using a whole food plant-based diet in the community for obesity, ischaemic heart disease or diabetes.",
@@ -1120,7 +1120,7 @@
 		"year": 2014,
 		"type": "study",
 		"availability": "full",
-		"tags": "allergy",
+		"tags": "allergy,fiber",
 		"quote": "Dietary elements, including fiber and vitamin A, therefore regulate numerous protective pathways in the gastrointestinal tract [of mice], necessary for immune non-responsiveness to food antigens."
 	}, {
 		"title": "Effects of Fruit and Vegetable Consumption on Risk of Asthma, Wheezing and Immune Responses: A Systematic Review and Meta-Analysis",
@@ -1347,15 +1347,56 @@
 		"availability": "abstract",
 		"tags": "phytochemicals,cancer",
 		"quote": "Flavonoid compounds, especially quercetin and genistein, have antitumor activity. These compounds are cytotoxic to cancer cells but have no or insignificant activity in normal cells. ... cis-DDP (cis-diamminedichloroplatinum(II)) is one of the most effective drugs used for chemotherapy, but its actions are limited by many side effects. Beneficial synergistic effects of flavonoids (e.g., quercetin, genistein, butein, tannic acid) and cis-DDP were found in cis-DDP-sensitive and resistant cancer cells that resulted in a lower toxicity for cis-DDP. "
-	},  {
+	}, {
 		"title": "Relative impact of flavonoid composition, dose and structure on vascular function: A systematic review of randomised controlled trials of flavonoid-rich food products",
 		"url": "https://www.ncbi.nlm.nih.gov/pubmed/22996837",
 		"year": 2012,
 		"type": "meta analysis",
 		"availability": "abstract",
 		"tags": "phytochemicals,cardiovascular disease",
-		"quote":"Meta-analyses of combined flavonoid subclasses showed significant improvements in FMD [endothelial/vein/blood flow function] (chronic, 0.73% (0.17, 1.30) 14 RCTs; acute, 2.33% (1.58, 3.08) 18 RCTs) and blood pressures (systolic, -1.46 mmHg (-2.38, -0.53) 63 RCTs; diastolic, -1.25 mmHg (-1.82, -0.67) 63 RCTs). Similar benefits were observed for the flavan-3-ol, catechol flavonoids (catechins, quercetin, cyanidin etc.), procyanidins, epicatechin and catechin subgroups. ... The present analysis suggests that flavonoid bioactivity does not follow a classical linear dose-response association and this may have important biological implications."
-		}, {
+		"quote": "Meta-analyses of combined flavonoid subclasses showed significant improvements in FMD [endothelial/vein/blood flow function] (chronic, 0.73% (0.17, 1.30) 14 RCTs; acute, 2.33% (1.58, 3.08) 18 RCTs) and blood pressures (systolic, -1.46 mmHg (-2.38, -0.53) 63 RCTs; diastolic, -1.25 mmHg (-1.82, -0.67) 63 RCTs). Similar benefits were observed for the flavan-3-ol, catechol flavonoids (catechins, quercetin, cyanidin etc.), procyanidins, epicatechin and catechin subgroups. ... The present analysis suggests that flavonoid bioactivity does not follow a classical linear dose-response association and this may have important biological implications."
+	}, {
+		"title": "Quercetin, Inflammation and Immunity",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4808895/",
+		"year": 2016,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "phytochemicals",
+		"quote": "In vitro and some animal models have shown that quercetin, a polyphenol derived from plants, has a wide range of biological actions including anti-carcinogenic, anti-inflammatory and antiviral activities; as well as attenuating lipid peroxidation, platelet aggregation and capillary permeability. ... Nevertheless, further studies are needed to better characterize the mechanisms of action underlying the beneficial effects of quercetin on inflammation and immunity."
+	}, {
+		"title": "Chemistry and Biological Activities of Flavonoids: An Overview",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3891543/",
+		"year": 2013,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "phytochemicals",
+		"quote": "Many flavonoids are shown to have antioxidative activity, free radical scavenging capacity, coronary heart disease prevention, hepatoprotective, anti-inflammatory, and anticancer activities, while some flavonoids exhibit potential antiviral activities. In plant systems, flavonoids help in combating oxidative stress and act as growth regulators."
+	}, {
+		"title": "The effects of flavonoid and other polyphenol consumption on cognitive performance: A systematic research review of human experimental and epidemiological studies",
+		"url": "https://content.iospress.com/articles/nutrition-and-aging/nua002",
+		"pdf": "https://content.iospress.com/download/nutrition-and-aging/nua002?id=nutrition-and-aging%2Fnua002",
+		"year": 2012,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "phytochemicals,cognition",
+		"quote": "Overall, 16 studies reported cognitive benefits following polyphenol consumption. Evidence suggests that consuming additional polyphenols in the diet can lead to cognitive benefits, however, the observed effects were small. Declarative memory and particularly spatial memory appear most sensitive to polyphenol consumption and effects may differ depending on polyphenol source. Polyphenol berry fruit juice consumption was most beneficial for immediate verbal memory, whereas isoflavone based interventions were associated with significant improvements for delayed spatial memory and executive function. Comparison between studies was hampered by methodological inconsistencies. Hence, there was no clear evidence for an association between cognitive outcomes and polyphenol dose response, duration of intervention, or population studied. In conclusion, however, the findings do imply that polyphenol consumption has potential to benefit cognition both acutely and chronically."
+	}, {
+		"title": "Cancer preventive effects of flavonoids--a review.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/12224601",
+		"year": 2002,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "phytochemicals,cancer",
+		"quote": " Many phytochemicals have been shown to be biologically active and they may interact to protect against cancer. In recent years, experimental studies have provided growing evidence for the beneficial action of flavonoids on multiple cancer-related biological pathways (carcinogen bioactivation, cell-signaling, cell cycle regulation, angiogenesis, oxidative stress, inflammation). Although the epidemiologic data on flavonoids and cancer are still limited and conflicting, some protective associations have been suggested for flavonoid-rich foods (soy and premenopausal breast cancer; green tea and stomach cancer; onion and lung cancer)."
+	}, {
+		"title": "Flavonoids, flavonoid-rich foods, and cardiovascular risk: a meta-analysis of randomized controlled trials",
+		"url": "http://ajcn.nutrition.org/content/88/1/38.long",
+		"year": 2008,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "phytochemicals,cardiovascular disease",
+		"quote": "Chocolate increased FMD [endothelial function] after acute (3.99%; 95% CI: 2.86, 5.12; 6 studies) and chronic (1.45%; 0.62, 2.28; 2 studies) intake and reduced systolic (−5.88 mm Hg; −9.55, −2.21; 5 studies) and diastolic (−3.30 mm Hg; −5.77, −0.83; 4 studies) blood pressure. Soy protein isolate (but not other soy products or components) significantly reduced diastolic blood pressure (−1.99 mm Hg; −2.86, −1.12; 9 studies) and LDL cholesterol (−0.19 mmol/L; −0.24, −0.14; 39 studies). Acute black tea consumption increased systolic (5.69 mm Hg; 1.52, 9.86; 4 studies) and diastolic (2.56 mm Hg; 1.03, 4.10; 4 studies) blood pressure. Green tea reduced LDL (−0.23 mmol/L; −0.34, −0.12; 4 studies). For many of the other flavonoids, there was insufficient evidence to draw conclusions about efficacy."
+	}, {
 		"title": "A review on the dietary flavonoid kaempferol.",
 		"url": "https://www.ncbi.nlm.nih.gov/pubmed/21428901",
 		"year": 2011,
@@ -1723,7 +1764,7 @@
 		"year": 2010,
 		"type": "study",
 		"availability": "full",
-		"tags": "diabetes",
+		"tags": "diabetes,fiber",
 		"quote": "A prospective cohort study was conducted in 37,846 participants ... Dietary GL [glycemic load] was associated with an increased diabetes risk ... GI [gylcemic index] tended to increase diabetes risk ... Dietary fiber was inversely associated with diabetes risk ... Of the carbohydrate subtypes, only starch was related to increased diabetes risk"
 	}, {
 		"title": "The EPIC-InterAct Study: A Study of the Interplay between Genetic and Lifestyle Behavioral Factors on the Risk of Type 2 Diabetes in European Populations",
@@ -1747,7 +1788,7 @@
 		"year": 2000,
 		"type": "study",
 		"availability": "full",
-		"tags": "diabetes",
+		"tags": "diabetes,fiber",
 		"quote": "Total grain, whole-grain, total dietary fiber, cereal fiber, and dietary magnesium intakes showed strong inverse associations with incidence of diabetes after adjustment for potential nondietary confounding variables"
 	}, {
 		"title": "Glycemic Index and Dietary Fiber and the Risk of Type 2 Diabetes",
@@ -1755,7 +1796,7 @@
 		"year": 2004,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "diabetes",
+		"tags": "diabetes,fiber",
 		"quote": "This was a prospective study of 36,787 men and women ... Intakes of carbohydrate (OR per 200 g/day 0.58, 0.36–0.95), sugars (OR per 100 g/day 0.61, 0.47–0.79), and magnesium (OR per 500 mg/day 0.62, 0.43–0.90) were inversely associated with incidence of diabetes, whereas intake of starch (OR per 100 g/day 1.47, 1.06–2.05) and dietary GI (OR per 10 units 1.32, 1.05–1.66) were positively associated with diabetes. These relationships were attenuated after adjustment for BMI and waist-to-hip ratio."
 	}, {
 		"title": "A Very-Low-Fat Vegan Diet Increases Intake of Protective Dietary Factors and Decreases Intake of Pathogenic Dietary Factors",
@@ -1971,7 +2012,7 @@
 		"year": 2014,
 		"type": "study",
 		"availability": "full",
-		"tags": "plant-based diet",
+		"tags": "plant-based diet,fiber",
 		"quote": "The most restricted diet, i.e., the vegan diet, had the lowest total energy intake, better fat intake profile, lowest protein and highest dietary fiber intake in contrast to the omnivorous diet. Calcium intake was lowest for the vegans and below national dietary recommendations. The vegan diet received the highest index values and the omnivorous the lowest for HEI-2010 and MDS. Typical aspects of a vegan diet (high fruit and vegetable intake, low sodium intake, and low intake of saturated fat) contributed substantially to the total score, independent of the indexing system used. "
 	}, {
 		"title": "Beyond Meatless, the Health Effects of Vegan Diets: Findings from the Adventist Cohorts",
