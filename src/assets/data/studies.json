@@ -54,8 +54,25 @@
 		"type": "meta analysis",
 		"availability": "full",
 		"tags": "flaxseed,ala",
-		"quote": "it is possible to advocate a potential pleiotropic effect of ALA beyond the more conventional cholesterol-lowering actions of most cardiovascular drugs. Most importantly, the body of ALA research now argues persuasively for the initiation of careful, randomized, controlled trials of dietary flaxseed and/or ALA in a patient population with symptoms of atherosclerotic heart disease."
-	}, {
+		"quote":"For every £1 UK consumers spend on food, additional costs of around £1 are incurred. These costs are not paid by the food businesses, nor are they included within the retail price of food. Instead they are passed on to society in a range of hidden ways. In total, production-related costs account for an extra 50p for every £1 spent on food, while the costs of diet-related disease account for an extra 37p."
+		},  {
+			"title": "The Hidden Cost of UK Food",
+			"url": "http://sustainablefoodtrust.org/articles/hidden-cost-uk-food/",
+			"pdf":"http://sustainablefoodtrust.org/wp-content/uploads/2013/04/HCOF-Report-online-version.pdf",
+			"year": 2017,
+			"type": "research report",
+			"availability": "full",
+			"tags": "environment,agribusiness",
+			"quote": "it is possible to advocate a potential pleiotropic effect of ALA beyond the more conventional cholesterol-lowering actions of most cardiovascular drugs. Most importantly, the body of ALA research now argues persuasively for the initiation of careful, randomized, controlled trials of dietary flaxseed and/or ALA in a patient population with symptoms of atherosclerotic heart disease."
+		},  {
+			"title": "No Pasture for Parmesan and Grana Padano Cows",
+			"url": "https://action.ciwf.org.uk//ea-action/action?ea.client.id=119&ea.campaign.id=82237&ea.tracking.id=1174f49c&utm_campaign=dairy&utm_source=shared&utm_medium=link",
+			"year": 2017,
+			"type": "article",
+			"availability": "full",
+			"tags": "animals,agribusiness",
+			"quote":"A recent Compassion in World Farming investigation uncovered cruelty behind Parmigiano Reggiano, also known as Parmesan, and its sister product Grana Padano cheese. We visited a number of Italian farms supplying milk for these cheeses, and found intensive, zero-grazing systems with cows permanently confined indoors."
+			}, {
 		"title": "Vitamin A intake and osteoporosis: a clinical review.",
 		"url": "https://www.ncbi.nlm.nih.gov/pubmed/15671709",
 		"year": 2004,

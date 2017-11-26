@@ -5,7 +5,7 @@ import { titleize } from '../../utils/GeneralUtils.jsx';
 
 export default class Resources extends Component {
 	static convertTagsToSelectValueObject(tags) {
-		let newTags = tags.map((tag) =>{
+		let newTags = tags.map((tag) => {
 			return { value: tag, label: titleize(tag) };
 		});
 		const sortedTags = newTags.sort((a, b) => a.value.localeCompare(b.value));
@@ -30,10 +30,10 @@ export default class Resources extends Component {
 		return Array.from(uniqueTags);
 	}
 
-	handleSelectedTagsChanged(value){
+	handleSelectedTagsChanged(value) {
 		this.setState({ selectedTags: value });
 	}
-	handleSortByChanged(event,index,sortLabel){
+	handleSortByChanged(event, index, sortLabel) {
 		this.setState({ sortBy: sortLabel });
 	}
 	sortResources(a, b) {
@@ -67,9 +67,14 @@ export default class Resources extends Component {
 			tags = Resources.allResourcesTags(this.props.research);
 		}
 		this.selectableTags = Resources.convertTagsToSelectValueObject(tags);
+		const taggedResources = Object.values(this.props.research);
+		const allResearch = Object.values(taggedResources.reduce((total, currResources) => {
+			for (const r of currResources) total[r.title] = r;
+			return total;
+		}, {}));
+		this.numTotal = allResearch.length;
 
 		this.state = {
-			resources: this.props.research,
 			selectedTags: [],
 			sortBy: 'year'
 		};
@@ -90,7 +95,7 @@ export default class Resources extends Component {
 		let selectedResources = {};
 		for (const selectedTagObj of this.state.selectedTags) {
 			const tag = selectedTagObj.value;
-			const resources = this.state.resources[tag];
+			const resources = this.props.research[tag];
 			if (resources) {
 				for (const r of resources) selectedResources[r.title] = r;
 			} else console.log(`${tag} resources is empty`);
@@ -109,7 +114,8 @@ export default class Resources extends Component {
 					allTags={this.selectableTags}
 					selectedTagsChanged={this.handleSelectedTagsChanged}
 					sortByChanged={this.handleSortByChanged}
-					count={resources.length}
+					numShown={resources.length}
+					numTotal={this.numTotal}
 				/>
 				{
 					resources.map((x) => (
