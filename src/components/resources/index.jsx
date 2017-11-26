@@ -20,16 +20,6 @@ export default class Resources extends Component {
 		return tags;
 	}
 
-	static allResourcesTags(resources) {
-		let uniqueTags = new Set();
-		for (const resource of resources) {
-			for (const tag of resource.tags) {
-				uniqueTags.add(tag);
-			}
-		}
-		return Array.from(uniqueTags);
-	}
-
 	handleSelectedTagsChanged(value) {
 		this.setState({ selectedTags: value });
 	}
@@ -64,7 +54,7 @@ export default class Resources extends Component {
 		//initialize vars
 		let tags = this.props.tags;
 		if (!this.props.tags) {
-			tags = Resources.allResourcesTags(this.props.research);
+			tags = Object.keys(this.props.research);
 		}
 		this.selectableTags = Resources.convertTagsToSelectValueObject(tags);
 		const taggedResources = Object.values(this.props.research);

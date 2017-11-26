@@ -4,6 +4,7 @@ import TabsDisplay from '../components/tabsDisplay/index.jsx';
 export default class Health extends Component {
 	constructor(props) {
 		super(props);
+		console.log(window.globalAppData.learnMore)
 		this.tabs = [{
 			label: 'Documentaries',
 			resources: window.globalAppData.learnMore.documentaries,
