@@ -16,6 +16,7 @@ import Health from './routes/health';
 import Externalities from './routes/externalities';
 import Endorsements from './routes/endorsements';
 import LearnMore from './routes/learn-more';
+import Test from './routes/test';
 
 export default class App extends Component {
 	constructor(props) {
@@ -51,6 +52,7 @@ export default class App extends Component {
 									<Route exact path="/" component={Home} />
 									<Route path="/health" component={Health} />
 									<Route path="/food" component={Food} />
+									<Route path="/test" component={Test} />
 									<Route path="/externalities" component={Externalities} />
 									<Route path="/learn-more" component={LearnMore} />
 									<Route path="/endorsements" component={Endorsements} />
