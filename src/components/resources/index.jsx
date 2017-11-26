@@ -102,8 +102,9 @@ export default class Resources extends Component {
 		for (const selectedTagObj of this.state.selectedTags) {
 			const tag = selectedTagObj.value;
 			const resources = this.state.resources[tag];
-			console.log(this.state.resources,resources,tag,this.state.selectedTags)
-			for (const r of resources) selectedResources[r.title] = r;
+			if (resources) {
+				for (const r of resources) selectedResources[r.title] = r;
+			} else console.log(`${tag} resources is empty`);
 		}
 		return Object.values(selectedResources).sort(this.sortResources);
 	}

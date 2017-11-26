@@ -14,7 +14,7 @@ export default class Health extends Component {
 		}, {
 			label: 'Food',
 			tags: tags.food,
-			resources: filterStudiesByTags(window.globalAppData.studies, tags.disease),
+			resources: filterStudiesByTags(window.globalAppData.studies, tags.food),
 			position: 1
 		}, {
 			label: 'Nutrients',
