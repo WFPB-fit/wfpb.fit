@@ -15,7 +15,7 @@ export function indexByTags(resources){
 	let indx = {};
 	for(const resource of resources){
 		const tags = resource.tags;
-		for (const tag of tags){ //add resource under each tags index
+		for (const tag of tags){ //add indexed resource under each tags index
 			let arr = indx[tag] || [];
 			arr.push(resource);
 			indx[tag] = arr;

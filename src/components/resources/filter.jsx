@@ -9,33 +9,14 @@ import MenuItem from 'material-ui/MenuItem';
 
 export default class Filter extends Component {
 	addAll() {
-		this.handleFilterChange(this.props.allTags);
+		this.props.selectedTagsChanged(this.props.allTags);
 	}
 
-	//this component needs to handle select state (instead of passing it up like a regular controlled component)
-	//due to quirks of the underlying component code. Pass it up after handling it
-	handleFilterChange(value) {
-		this.setState({ selectedTags: value });
-		this.props.handleFormFieldChange('selectedTags', value);
-	}
 	constructor(props) {
 		super(props);
 		//bind fucntions to this class
 		this.addAll = this.addAll.bind(this);
-		this.handleSortFieldChange = this.handleSortFieldChange.bind(this);
-		this.handleFilterChange = this.handleFilterChange.bind(this);
-
-		//initialize vars
-		this.state = {
-			selectedTags: this.props.selectedTags,
-			sortLabel: 'year'
-		};
 	}
-
-	handleSortFieldChange(event, index, sortLabel) {
-		this.setState({ sortLabel });
-		this.props.handleFormFieldChange('sortBy', sortLabel);
-	};
 
 	render() {
 		return (
@@ -47,8 +28,8 @@ export default class Filter extends Component {
 					<CardText>
 						<Select
 							name="form-field-name"
-							value={this.state.selectedTags}
-							onChange={this.handleFilterChange}
+							value={this.props.selectedTags}
+							onChange={this.props.selectedTagsChanged}
 							options={this.props.allTags}
 							joinValues
 							multi
@@ -58,8 +39,8 @@ export default class Filter extends Component {
 						<div>
 							<SelectField
 								floatingLabelText="Sort"
-								value={this.state.sortLabel}
-								onChange={this.handleSortFieldChange}
+								value={this.props.sortBy}
+								onChange={this.props.sortByChanged}
 							>
 								<MenuItem value={'year'} primaryText="Year" />
 								<MenuItem value={'availability'} primaryText="Availability" />
@@ -68,7 +49,6 @@ export default class Filter extends Component {
 						</div>
 					</CardText>
 					<CardActions>
-						<RaisedButton label="Submit" primary onClick={this.props.filterSubmitted} />
 						<p>{this.props.count} resources</p>
 					</CardActions>
 				</Card>

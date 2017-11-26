@@ -5,12 +5,9 @@ import { titleize } from '../../utils/GeneralUtils.jsx';
 
 export default class Resources extends Component {
 	static convertTagsToSelectValueObject(tags) {
-		let newTags = [];
-		for (const tag of tags) {
-			newTags.push(
-				{ value: tag, label: titleize(tag) }
-			);
-		}
+		let newTags = tags.map((tag) =>{
+			return { value: tag, label: titleize(tag) };
+		});
 		const sortedTags = newTags.sort((a, b) => a.value.localeCompare(b.value));
 		return sortedTags;
 	}
@@ -33,16 +30,12 @@ export default class Resources extends Component {
 		return Array.from(uniqueTags);
 	}
 
-	submitFilters() {
-		let stateCopy = Object.assign({}, this.state);
-		const newState = Object.assign(stateCopy, this.inputFilters);
-		this.setState(newState);
+	handleSelectedTagsChanged(value){
+		this.setState({ selectedTags: value });
 	}
-
-	handleFormFieldChange(name, value) {
-		this.inputFilters[name] = value;
+	handleSortByChanged(event,index,sortLabel){
+		this.setState({ sortBy: sortLabel });
 	}
-
 	sortResources(a, b) {
 		let aVal = a[this.state.sortBy] || 1;
 		let bVal = b[this.state.sortBy] || 1;
@@ -63,10 +56,10 @@ export default class Resources extends Component {
 		super(props);
 
 		//bind this
-		this.submitFilters = this.submitFilters.bind(this);
-		this.handleFormFieldChange = this.handleFormFieldChange.bind(this);
 		this.sortResources = this.sortResources.bind(this);
 		this.getStudiesFromSelectedTags = this.getStudiesFromSelectedTags.bind(this);
+		this.handleSelectedTagsChanged = this.handleSelectedTagsChanged.bind(this);
+		this.handleSortByChanged = this.handleSortByChanged.bind(this);
 
 		//initialize vars
 		let tags = this.props.tags;
@@ -77,11 +70,7 @@ export default class Resources extends Component {
 
 		this.state = {
 			resources: this.props.research,
-			selectedTags: this.selectableTags,
-			sortBy: 'year'
-		};
-		this.inputFilters = {
-			selectedTags: this.state.selectedTags,
+			selectedTags: [],
 			sortBy: 'year'
 		};
 		this.typeScore = {
@@ -115,10 +104,11 @@ export default class Resources extends Component {
 		return (
 			<div>
 				<Filter
-					handleFormFieldChange={this.handleFormFieldChange}
-					selectedTags={this.inputFilters.selectedTags}
+					selectedTags={this.state.selectedTags}
+					sortBy={this.state.sortBy}
 					allTags={this.selectableTags}
-					filterSubmitted={this.submitFilters}
+					selectedTagsChanged={this.handleSelectedTagsChanged}
+					sortByChanged={this.handleSortByChanged}
 					count={resources.length}
 				/>
 				{
