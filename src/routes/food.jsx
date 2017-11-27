@@ -10,13 +10,14 @@ import {
 	VictoryChart, VictoryAxis, VictoryLegend, VictoryLabel,
 	VictoryTooltip, VictoryLine, VictoryVoronoiContainer
 } from 'victory';
+import { getLink } from '../utils/GeneralUtils.jsx';
 
 // import FdaApi from '../utils/FdaApi.js';
 // FdaApi.getFullNutritionInfo();
 console.log(FullNutritionInfo)
 
 export default class Food extends Component {
-	static getFoodNutrients(food, nutrientKey) {return food.nutrients[nutrientKey];	}
+	static getFoodNutrients(food, nutrientKey) { return food.nutrients[nutrientKey]; }
 
 	constructor(props) {
 		super(props);
@@ -61,11 +62,7 @@ export default class Food extends Component {
 		return `${d.name}: \n${d.x}: ${formattedVal} ${unit}`
 	}
 
-	createVictoryLineChart(getNutrients, title, nutrientDataKey, w = 200, h = 200) {
-		const selectedFoods = this.state.selectedFoods.map(selectedFood => {
-			return this.indexedFoods[selectedFood.value];
-		}, []);
-
+	createVictoryLineChart(selectedFoods, getNutrients, title, nutrientDataKey, w = 200, h = 200) {
 		const selectDataColor = function (d, active) { return d.color; };
 		const axisStyle = {
 			ticks: { stroke: "grey", size: 3 },
@@ -136,6 +133,10 @@ export default class Food extends Component {
 		);
 	}
 	render() {
+		const selectedFoods = this.state.selectedFoods.map(selectedFood => {
+			return this.indexedFoods[selectedFood.value];
+		}, []);
+
 		return (
 			<div>
 				<Select
@@ -146,11 +147,23 @@ export default class Food extends Component {
 					joinValues
 					multi
 				/>
-				{this.createVictoryLineChart(Food.getFoodNutrients, "Energy", 'energy')}
-				{this.createVictoryLineChart(Food.getFoodNutrients, "Micronutrients", 'misc')}
-				{this.createVictoryLineChart(Food.getFoodNutrients, "Vitamins", 'vitamins')}
-				{this.createVictoryLineChart(Food.getFoodNutrients, "Minerals", 'minerals')}
-				{this.createVictoryLineChart(Food.getFoodNutrients, "Amino Acids", 'amino')}
+				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Energy", 'energy')}
+				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Micronutrients", 'misc')}
+				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Vitamins", 'vitamins')}
+				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Minerals", 'minerals')}
+				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Amino Acids", 'amino')}
+				<h2>Sources</h2>
+				<ul>
+					{
+						selectedFoods.map(food => {
+							return (
+								<li key={food.name}>
+									{getLink(food.src,food.name)}
+								</li>
+							)
+						})
+					}
+				</ul>
 			</div>
 		);
 	}
