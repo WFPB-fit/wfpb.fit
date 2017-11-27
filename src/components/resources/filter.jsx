@@ -49,7 +49,7 @@ export default class Filter extends Component {
 						</div>
 					</CardText>
 					<CardActions>
-						<p>{this.props.numTotal} Total, {this.props.numShown} Displayed</p>
+						<p>{this.props.numShown} / {this.props.numTotal} Displayed</p>
 					</CardActions>
 				</Card>
 			</div>

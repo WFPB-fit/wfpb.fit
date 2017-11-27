@@ -4,27 +4,27 @@ import Filter from './filter';
 import { titleize } from '../../utils/GeneralUtils.jsx';
 
 export default class Resources extends Component {
-	static convertTagsToSelectValueObject(tags) {
+	handleSelectedTagsChanged(value) {
+		this.setState({ selectedTags: value });
+
+		//update URL to match the new tags
+		const newTags = value.map(selectable => selectable.value);
+		const newTagString = (newTags.length > 0) ? `tags=${newTags.join(',')}` : '';
+		console.log(newTags,newTagString)
+		this.props.history.replace({
+			pathname: this.props.match.url,
+			search: newTagString
+		});
+	}
+	handleSortByChanged(event, index, sortLabel) {
+		this.setState({ sortBy: sortLabel });
+	}
+	static tagsToSelectables(tags) {
 		let newTags = tags.map((tag) => {
 			return { value: tag, label: titleize(tag) };
 		});
 		const sortedTags = newTags.sort((a, b) => a.value.localeCompare(b.value));
 		return sortedTags;
-	}
-
-	static selectableTagsToArray(selectable) {
-		let tags = [];
-		for (const option of selectable) {
-			tags.push(option.value);
-		}
-		return tags;
-	}
-
-	handleSelectedTagsChanged(value) {
-		this.setState({ selectedTags: value });
-	}
-	handleSortByChanged(event, index, sortLabel) {
-		this.setState({ sortBy: sortLabel });
 	}
 	sortResources(a, b) {
 		let aVal = a[this.state.sortBy] || 1;
@@ -52,11 +52,26 @@ export default class Resources extends Component {
 		this.handleSortByChanged = this.handleSortByChanged.bind(this);
 
 		//initialize vars
+		//init state first
+		this.state = {
+			selectedTags: [],
+			sortBy: 'year'
+		};
+
+		//find all selectable tags
 		let tags = this.props.tags;
 		if (!this.props.tags) {
 			tags = Object.keys(this.props.research);
 		}
-		this.selectableTags = Resources.convertTagsToSelectValueObject(tags);
+		this.selectableTags = Resources.tagsToSelectables(tags);
+
+		//set initial tags from url params
+		const urlTags = (new URLSearchParams(this.props.location.search).get('tags') || '').split(',');
+		const realUrlTags = urlTags.filter(t => tags.includes(t));
+		const selectableURLTags = Resources.tagsToSelectables(realUrlTags);
+		this.state.selectedTags = selectableURLTags;
+
+		//find number of unique resources
 		const taggedResources = Object.values(this.props.research);
 		const allResearch = Object.values(taggedResources.reduce((total, currResources) => {
 			for (const r of currResources) total[r.title] = r;
@@ -64,10 +79,7 @@ export default class Resources extends Component {
 		}, {}));
 		this.numTotal = allResearch.length;
 
-		this.state = {
-			selectedTags: [],
-			sortBy: 'year'
-		};
+		//determine how sorting will work for different Resource values using the following objects
 		this.typeScore = {
 			'research report': 3,
 			'meta analysis': 2,
