@@ -65,7 +65,7 @@ export default class FdaApi {
 				} else if (!excludedIds.includes(nId) && (groups.includes(n.group) || includedIds.includes(nId))) {
 					let nutrs = newNutrients[groupName] || {};
 					let name = nameSubstitutions[n.name] || n.name
-					nutrs[name] = amount;
+					nutrs[name] = Number(amount.toPrecision(5)); //cut down on final, transmitted data size by limiting to only most siginificant values
 					newNutrients[groupName] = nutrs;
 				}
 			}
@@ -119,13 +119,13 @@ export default class FdaApi {
 	}
 
 	static MergeFoodsAndFDA(foodsData, FDA) {
-		return FDA.map(fdaFoodItem =>{
+		return FDA.map(fdaFoodItem => {
 			const fdaFood = fdaFoodItem.food;
 			const id = fdaFood.desc.ndbno;
 			const customFoodDesc = foodsData[id];
 			return {
 				name: fdaFood.desc.name,
-				nutrients:FdaApi.GetRelevantNutrients(fdaFood.nutrients),
+				nutrients: FdaApi.GetRelevantNutrients(fdaFood.nutrients),
 				src: customFoodDesc.url,
 			}
 		});
