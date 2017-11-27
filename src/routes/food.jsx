@@ -1,96 +1,27 @@
 import React, { Component } from 'react';
-import {
-	Legend, Tooltip, XAxis, YAxis, ZAxis, CartesianGrid,
-	RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar,
-	LineChart, Scatter, ScatterChart
-} from 'recharts';
+
 import { titleize, getRandomColor } from '../utils/GeneralUtils.jsx';
 import FullNutritionInfo from '../assets/data/nutrition/fullNutritionInfo.json';
 // import exampleFDAdata from '../assets/data/nutrition/exampleFDA.json';
 // console.log(exampleFDAdata)
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
+import {
+	VictoryGroup, VictoryChart, VictoryAxis, VictoryLegend,
+	VictoryTheme, VictoryTooltip, VictoryScatter, VictoryLine, VictoryVoronoiContainer
+} from 'victory';
 
 // import FdaApi from '../utils/FdaApi.js';
 // FdaApi.getFullNutritionInfo();
 console.log(FullNutritionInfo)
 
 export default class Food extends Component {
-	static foodToCarb(food) { return food.nutrients.energy.carbs; }
-	static foodToProtein(food) { return food.nutrients.energy.protein; }
-	static foodToFat(food) { return food.nutrients.energy.fat; }
-	static mapObjToXY(obj) {
-		return Object.keys(obj).map(function (key, index) {
-			return { x: key, y: obj[key] };
-		});
-	}
-
-	static convertFoodsToSelectObjects(foods) {
-		const optns = foods.map((x) => { return { value: x.name, label: titleize(x.name) } });
-		const alphaOptions = optns.sort((a, b) => a.value.localeCompare(b.value)); //alphabetize it
-		return alphaOptions;
-	}
-
-	getEnergyBreakdownScatterChart() {
-		const scatters = this.state.selectedFoods.map((selectedFood) => {
-			let food = this.indexedFoods[selectedFood.value];
-			let data = Food.mapObjToXY(food.nutrients.energy);
-			return (
-				<Scatter
-					key={selectedFood.label}
-					name={selectedFood.label}
-					data={data}
-					fill={food.color}
-					line
-					shape="cross" />
-			);
-		});
-		return (
-			<ScatterChart width={600} height={400} margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
-				<XAxis  type="category" dataKey='x' name='Macro' />
-				<YAxis type="number" dataKey={'y'} name='Grams' unit='g' />
-				<CartesianGrid />
-				<Tooltip cursor={{ strokeDasharray: '3 3' }} />
-				<Legend />
-				{scatters}
-			</ScatterChart >
-		);
-	}
-	getEnergyBreakdownRadialChart() {
-		const energy = [
-			this.getSelectedFoodNutrientRechartData('Carbohydrates', Food.foodToCarb),
-			this.getSelectedFoodNutrientRechartData('Fat', Food.foodToFat),
-			this.getSelectedFoodNutrientRechartData('Protein', Food.foodToProtein)
-		];
-		const radars = this.state.selectedFoods.map((selectedFood) => {
-			const color = this.indexedFoods[selectedFood.value].color;
-			return (
-				<Radar
-					name={selectedFood.label}
-					key={selectedFood.value}
-					dataKey={selectedFood.value}
-					stroke={color}
-					fill={color}
-					fillOpacity={0.2}
-				/>
-			)
-		});
-		return (
-			<RadarChart outerRadius={90} width={730} height={250} data={energy} >
-				<PolarGrid />
-				<PolarAngleAxis dataKey="subject" />
-				<PolarRadiusAxis />
-				{radars}
-				<Legend />
-			</RadarChart >
-		);
-	}
-
 	constructor(props) {
 		super(props);
 		//bind functions
+		this.getVictoryData = this.getVictoryData.bind(this);
+		this.selectedFoodsToFoodData = this.selectedFoodsToFoodData.bind(this);
 		this.handleSelectChange = this.handleSelectChange.bind(this);
-		this.getSelectedFoodNutrientRechartData = this.getSelectedFoodNutrientRechartData.bind(this);
 
 		//init vars
 		this.allSelectableFoods = Food.convertFoodsToSelectObjects(FullNutritionInfo)
@@ -106,17 +37,85 @@ export default class Food extends Component {
 	handleSelectChange(value) {
 		this.setState({ selectedFoods: value });
 	}
-	getSelectedFoodNutrientRechartData(nutrientSubjectName, getNutrientValue) {
-		const nutrients = this.state.selectedFoods.reduce((map, selectedFood) => {
-			const food = this.indexedFoods[selectedFood.value];
-			map[selectedFood.value] = getNutrientValue(food);
-			return map;
-		}, {});
-		nutrients.subject = nutrientSubjectName;
-		return nutrients;
+	static convertFoodsToSelectObjects(foods) {
+		const optns = foods.map((x) => { return { value: x.name, label: titleize(x.name) } });
+		const alphaOptions = optns.sort((a, b) => a.value.localeCompare(b.value)); //alphabetize it
+		return alphaOptions;
+	}
+
+	getVictoryData(foodData, name, color) {
+		return Object.keys(foodData).map(key => {
+			return { x: key, y: foodData[key], name: name, color: color };
+		});
+	}
+	selectedFoodsToFoodData() {
+		return this.state.selectedFoods.map(selectedFood => {
+			return this.indexedFoods[selectedFood.value];
+		}, []);
+	}
+
+	createVictoryLineChart(w = 200, h = 200) {
+		const selectedFoods = this.selectedFoodsToFoodData();
+		const selectDataColor = function (d, active) { console.log(d); return d.color; };
+		const chartStyle = {
+			tickLabels: {
+				fontSize: 5,
+				fontFamily: 'inherit',
+				fillOpacity: 1,
+				margin: 0,
+				padding: 0
+			},
+		};
+
+		const lines = selectedFoods.map(food => {
+			return (
+				<VictoryLine
+					data={this.getVictoryData(food.nutrients.energy, food.name, food.color)}
+					style={{
+						data: {
+							stroke: food.color,
+							strokeWidth: (d, active) => { return active ? 4 : 2; }
+						},
+						labels: { fill: food.color }
+					}}
+				/>
+			)
+		});
+
+
+		return (
+			<VictoryChart height={h} width={w}
+				domainPadding={{ y: 10 }}
+				style={{
+					labels: { fontSize: 5 }
+				}
+				}
+				containerComponent={
+					//setup tool tip
+					< VictoryVoronoiContainer
+						dimension="x"
+						labels={(d) => `${d.name}: \n${d.x}: ${d.y}`}
+						labelComponent={
+							< VictoryTooltip
+								cornerRadius={0}
+								flyoutStyle={{ fill: "white" }}
+							/>}
+					/>}
+			>
+				<VictoryLegend x={5} y={h - 20}
+					orientation="horizontal"
+					gutter={5}
+					style={{
+						labels: { fontSize: 8 },
+						data: { stroke: selectDataColor, fill: selectDataColor }
+					}}
+					data={selectedFoods}
+				/>
+				{lines}
+			</VictoryChart >
+		);
 	}
 	render() {
-
 		return (
 			<div>
 				<Select
@@ -127,7 +126,7 @@ export default class Food extends Component {
 					joinValues
 					multi
 				/>
-				{this.getEnergyBreakdownRadialChart()}
+				{this.createVictoryLineChart()}
 			</div>
 		);
 	}
