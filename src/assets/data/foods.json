@@ -1,271 +1,367 @@
-[{
-	"name": "sardine",
-	"tags": "fish",
-	"id": "15088",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/4570?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=15088&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "mackerel",
-	"tags": "fish",
-	"id": "15047",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/4529?fgcd=Finfish+and+Shellfish+Products&manu=&lfacet=&format=&count=&max=50&offset=0&sort=default&order=asc&qlookup=&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "trout",
-	"tags": "fish",
-	"id": "15240",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/4718?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=15240&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "herring",
-	"tags": "fish",
-	"id": "15040",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/4522?fgcd=Finfish+and+Shellfish+Products&manu=&lfacet=&format=&count=&max=50&offset=0&sort=default&order=asc&qlookup=&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "tuna",
-	"tags": "fish",
-	"id": "15118",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/4600?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=15118&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "cod",
-	"tags": "fish",
-	"id": "15016",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/4498?fgcd=Finfish+and+Shellfish+Products&manu=&lfacet=&format=&count=&max=50&offset=0&sort=default&order=asc&qlookup=&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "salmon",
-	"tags": "fish",
-	"id": "15212",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/4690?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=15212&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "milk (2%)",
-	"tags": "dairy,milk",
-	"id": "01174",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/153?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=01174&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "milk (skim/nonfat)",
-	"tags": "dairy,milk",
-	"id": "01151",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/134?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=01151&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "yogurt (nonfat greek)",
-	"tags": "dairy,yogurt",
-	"id": "01256",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/216?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=01256&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "yogurt (frozen vanilla)",
-	"tags": "dairy,yogurt",
-	"id": "19293",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/6284?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=19293&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "cheese (cheddar)",
-	"tags": "dairy,cheese",
-	"id": "01009",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/9?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=01009&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "cheese (swiss)",
-	"tags": "dairy,cheese",
-	"id": "01040",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/40?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=01040&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "cheese (parmesan)",
-	"tags": "dairy,cheese",
-	"id": "01032",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/32?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=01032&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "cheese (mozzarella",
-	"tags": "dairy,cheese",
-	"id": "43597",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/8769?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=43597&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "cheese (feta)",
-	"tags": "dairy,cheese",
-	"id": "01019",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/19?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=01019&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "milk (soy)",
-	"tags": "milk,soy",
-	"id": "16120",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/4857?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=16120&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "yogurt (soy/tofu)",
-	"tags": "yogurt,soy",
-	"id": "43476",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/8743?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=43476&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "milk (rice)",
-	"tags": "milk,rice",
-	"id": "14639",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/4472?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=14639&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "egg",
-	"tags": "egg,meat",
-	"id": "01128",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/117?fgcd=Dairy+and+Egg+Products&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=egg&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "70% lean beef",
-	"tags": "meat,beef",
-	"id": "13496",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/3930?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=70%25&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "85% lean beef",
-	"tags": "meat,beef",
-	"id": "23569",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/7613?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=85%25&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "ground turkey",
-	"tags": "meat,poultry",
-	"id": "05306",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/1039?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=ground+turkey&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "chicken breast",
-	"tags": "meat,poultry",
-	"id": "05326",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/1056?fgcd=Poultry+Products&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=chicken+breast&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "tofu",
-	"tags": "vegetable,soy",
-	"id": "16427",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/5014?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=16427&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "bell pepper",
-	"tags": "vegetable",
-	"id": "11333",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/3069?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=11333&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "cuccumber",
-	"tags": "vegetable",
-	"id": "11205",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/2958?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=11205&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "tomato",
-	"tags": "vegetable",
-	"id": "11529",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/3223?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=11529&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "edamame",
-	"tags": "vegetable",
-	"id": "11212",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/2965?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=11212&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "olive",
-	"tags": "vegetable",
-	"id": "09193",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/2281?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=09193&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "avocado",
-	"tags": "vegetable",
-	"id": "09037",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/2156?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=09037&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "rice (brown)",
-	"tags": "starch",
-	"id": "20037",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/6506?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=20037&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "white bread",
-	"tags": "starch",
-	"id": "18069",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/5614?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=18069&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "sweet potato",
-	"tags": "starch",
-	"id": "11507",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/3207?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=11507&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "potato",
-	"tags": "starch",
-	"id": "11352",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/3080?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=11352&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "whole wheat bread",
-	"tags": "starch",
-	"id": "18075",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/5618?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=18075&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "flaxseed",
-	"tags": "seed",
-	"id": "12220",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/3716?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=12220&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "walnut",
-	"tags": "nut",
-	"id": "12155",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/3690?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=12155&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "sunflower seeds",
-	"tags": "seed",
-	"id": "12036",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/3626?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=12036&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "pistachio",
-	"tags": "seed,nut",
-	"id": "12151",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/3687?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=12151&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "pine nut",
-	"tags": "nut",
-	"id": "12147",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/3685?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=12147&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "brazil nut",
-	"tags": "nut",
-	"id": "12078",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/3641?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=12078&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "cashew",
-	"tags": "seed,nut",
-	"id": "12087",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/3645?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=12087&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "pumpkin seed",
-	"tags": "seed",
-	"id": "12163",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/3695?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=12163&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "sesame",
-	"tags": "seed",
-	"id": "12023",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/3620?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=12023&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "chia",
-	"tags": "seed,nut",
-	"id": "12006",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/3610?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=12006&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "almond",
-	"tags": "seed,nut",
-	"id": "12061",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/3635?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=12061&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "sunflower",
-	"tags": "oil",
-	"id": "04545",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/701?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=04545&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "cocconut",
-	"tags": "oil",
-	"id": "04047",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/659?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=04047&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "palm",
-	"tags": "oil",
-	"id": "04055",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/661?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=04055&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "lard",
-	"tags": "oil",
-	"id": "04002",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/635?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=04002&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "olive",
-	"tags": "oil",
-	"id": "04053",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/660?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=04053&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "canola",
-	"tags": "oil",
-	"id": "04582",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/718?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=04582&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}, {
-	"name": "peanut",
-	"tags": "oil",
-	"id": "04042",
-	"url": "https://ndb.nal.usda.gov/ndb/foods/show/657?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=04042&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
-}]
+{
+	"11008": {
+		"name": "artichoke",
+		"tags": "vegetable",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/2821?fgcd=Vegetables+and+Vegetable+Products&manu=&lfacet=&format=&count=&max=50&offset=&sort=fd_s&order=asc&qlookup=&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"11011": {
+		"name": "Asparagus",
+		"tags": "vegetable",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/2824?fgcd=Vegetables+and+Vegetable+Products&manu=&lfacet=&format=&count=&max=50&offset=&sort=fd_s&order=asc&qlookup=&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"11205": {
+		"name": "cucumber",
+		"tags": "vegetable",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/2958?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=11205&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"11212": {
+		"name": "edamame",
+		"tags": "vegetable",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/2965?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=11212&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"11333": {
+		"name": "bell pepper",
+		"tags": "vegetable",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/3069?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=11333&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"11457": {
+		"name": "spinach",
+		"tags": "vegetable",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/3167?fgcd=Vegetables+and+Vegetable+Products&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=spinach&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"11477": {
+		"name": "zucchini",
+		"tags": "vegetable",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/3180?manu=&fgcd=Vegetables%20and%20Vegetable%20Products&ds=Standard%20Reference"
+	},
+	"11485": {
+		"name": "butternut squash",
+		"tags": "vegetable",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/3188?manu=&fgcd=Vegetables%20and%20Vegetable%20Products&ds=Standard%20Reference"
+	},
+	"11508": {
+		"name": "sweet potato",
+		"tags": "starch",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/3208?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=sweet+potato&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"11529": {
+		"name": "tomato",
+		"tags": "vegetable",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/3223?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=11529&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"11642": {
+		"name": "all summer squash",
+		"tags": "vegetable",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/3290?manu=&fgcd=Vegetables%20and%20Vegetable%20Products&ds=Standard%20Reference"
+	},
+	"11674": {
+		"name": "potato",
+		"tags": "starch",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/3311?fgcd=Vegetables+and+Vegetable+Products&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=potato+baked&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"11959": {
+		"name": "Arugula",
+		"tags": "vegetable",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/3569?fgcd=Vegetables+and+Vegetable+Products&manu=&lfacet=&format=&count=&max=50&offset=&sort=fd_s&order=asc&qlookup=&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"12006": {
+		"name": "chia",
+		"tags": "seed,nut",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/3610?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=12006&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"12023": {
+		"name": "sesame",
+		"tags": "seed",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/3620?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=12023&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"12036": {
+		"name": "sunflower seeds",
+		"tags": "seed",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/3626?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=12036&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"12061": {
+		"name": "almond",
+		"tags": "seed,nut",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/3635?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=12061&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"12078": {
+		"name": "brazil nut",
+		"tags": "nut",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/3641?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=12078&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"12087": {
+		"name": "cashew",
+		"tags": "seed,nut",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/3645?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=12087&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"12147": {
+		"name": "pine nut",
+		"tags": "nut",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/3685?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=12147&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"12151": {
+		"name": "pistachio",
+		"tags": "seed,nut",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/3687?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=12151&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"12155": {
+		"name": "walnut",
+		"tags": "nut",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/3690?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=12155&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"12163": {
+		"name": "pumpkin seed",
+		"tags": "seed",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/3695?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=12163&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"12220": {
+		"name": "flaxseed",
+		"tags": "seed",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/3716?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=12220&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"13047": {
+		"name": "beef",
+		"tags": "meat",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/3749?n1=%7BQv%3D1%7D&fgcd=Beef+Products&man=&lfacet=&count=&max=50&sort=default&qlookup=hamburger&offset=&format=Full&new=&measureby=&Qv=1&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"13496": {
+		"name": "70% lean beef",
+		"tags": "meat,beef",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/3930?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=70%25&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"14639": {
+		"name": "milk (rice)",
+		"tags": "milk,rice",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/4472?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=14639&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"15016": {
+		"name": "cod",
+		"tags": "fish",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/4498?fgcd=Finfish+and+Shellfish+Products&manu=&lfacet=&format=&count=&max=50&offset=0&sort=default&order=asc&qlookup=&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"15040": {
+		"name": "herring",
+		"tags": "fish",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/4522?fgcd=Finfish+and+Shellfish+Products&manu=&lfacet=&format=&count=&max=50&offset=0&sort=default&order=asc&qlookup=&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"15047": {
+		"name": "mackerel",
+		"tags": "fish",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/4529?fgcd=Finfish+and+Shellfish+Products&manu=&lfacet=&format=&count=&max=50&offset=0&sort=default&order=asc&qlookup=&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"15088": {
+		"name": "sardine",
+		"tags": "fish",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/4570?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=15088&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"15118": {
+		"name": "tuna",
+		"tags": "fish",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/4600?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=15118&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"15212": {
+		"name": "salmon",
+		"tags": "fish",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/4690?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=15212&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"15240": {
+		"name": "trout",
+		"tags": "fish",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/4718?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=15240&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"16015": {
+		"name": "black beans",
+		"tags": "legume",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/4754?fgcd=Legumes+and+Legume+Products&manu=&lfacet=&format=&count=&max=50&offset=&sort=fd_s&order=asc&qlookup=&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"16025": {
+		"name": "great northern beans",
+		"tags": "legume",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/4764?fgcd=Legumes+and+Legume+Products&manu=&lfacet=&format=&count=&max=50&offset=&sort=fd_s&order=asc&qlookup=&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"16028": {
+		"name": "kidney beans",
+		"tags": "legume",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/4767?manu=&fgcd=&ds=Standard%20Reference"
+	},
+	"16043": {
+		"name": "pinto bean",
+		"tags": "legume",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/4782?fgcd=Legumes+and+Legume+Products&manu=&lfacet=&format=&count=&max=50&offset=50&sort=fd_s&order=asc&qlookup=&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"16057": {
+		"name": "chickpea",
+		"tags": "legume",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/4796?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=chickpea&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"16063": {
+		"name": "blackeye",
+		"tags": "legume",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/4802?fgcd=Legumes+and+Legume+Products&manu=&lfacet=&format=&count=&max=50&offset=100&sort=fd_s&order=asc&qlookup=&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"16070": {
+		"name": "lentils",
+		"tags": "legume",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/4808?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=lentil&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"16072": {
+		"name": "lima bean",
+		"tags": "legume",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/4810?fgcd=Legumes+and+Legume+Products&manu=&lfacet=&format=&count=&max=50&offset=100&sort=fd_s&order=asc&qlookup=&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"16081": {
+		"name": "mung beans",
+		"tags": "legume",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/4819?fgcd=Legumes+and+Legume+Products&manu=&lfacet=&format=&count=&max=50&offset=150&sort=fd_s&order=asc&qlookup=&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"16111": {
+		"name": "soybean",
+		"tags": "legume",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/4848?fgcd=Legumes+and+Legume+Products&manu=&lfacet=&format=&count=&max=50&offset=250&sort=fd_s&order=asc&qlookup=&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"16120": {
+		"name": "milk (soy)",
+		"tags": "milk,soy",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/4857?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=16120&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"16390": {
+		"name": "peanut",
+		"tags": "legume",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/4998?fgcd=Legumes+and+Legume+Products&manu=&lfacet=&format=&count=&max=50&offset=200&sort=fd_s&order=asc&qlookup=&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"16427": {
+		"name": "tofu",
+		"tags": "vegetable,soy",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/5014?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=16427&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"18069": {
+		"name": "white bread",
+		"tags": "starch",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/5614?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=18069&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"18075": {
+		"name": "whole wheat bread",
+		"tags": "starch",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/5618?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=18075&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"19293": {
+		"name": "yogurt (frozen vanilla)",
+		"tags": "dairy,yogurt",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/6284?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=19293&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"20037": {
+		"name": "rice (brown)",
+		"tags": "starch",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/6506?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=20037&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"23569": {
+		"name": "85% lean beef",
+		"tags": "meat,beef",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/7613?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=85%25&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"43476": {
+		"name": "yogurt (soy/tofu)",
+		"tags": "yogurt,soy",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/8743?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=43476&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"43597": {
+		"name": "cheese (mozzarella",
+		"tags": "dairy,cheese",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/8769?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=43597&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"01174": {
+		"name": "milk (2%)",
+		"tags": "dairy,milk",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/153?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=01174&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"01151": {
+		"name": "milk (skim/nonfat)",
+		"tags": "dairy,milk",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/134?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=01151&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"01256": {
+		"name": "yogurt (nonfat greek)",
+		"tags": "dairy,yogurt",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/216?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=01256&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"01009": {
+		"name": "cheese (cheddar)",
+		"tags": "dairy,cheese",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/9?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=01009&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"01040": {
+		"name": "cheese (swiss)",
+		"tags": "dairy,cheese",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/40?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=01040&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"01032": {
+		"name": "cheese (parmesan)",
+		"tags": "dairy,cheese",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/32?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=01032&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"01019": {
+		"name": "cheese (feta)",
+		"tags": "dairy,cheese",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/19?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=01019&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"01128": {
+		"name": "egg",
+		"tags": "egg,meat",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/117?fgcd=Dairy+and+Egg+Products&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=egg&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"05306": {
+		"name": "ground turkey",
+		"tags": "meat,poultry",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/1039?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=ground+turkey&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"05326": {
+		"name": "chicken breast",
+		"tags": "meat,poultry",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/1056?fgcd=Poultry+Products&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=chicken+breast&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"09193": {
+		"name": "olive",
+		"tags": "vegetable",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/2281?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=09193&ds=Standard+Reference&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"09037": {
+		"name": "avocado",
+		"tags": "vegetable",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/2156?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=09037&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"04545": {
+		"name": "sunflower",
+		"tags": "oil",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/701?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=04545&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"04047": {
+		"name": "cocconut",
+		"tags": "oil",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/659?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=04047&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"04055": {
+		"name": "palm",
+		"tags": "oil",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/661?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=04055&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"04002": {
+		"name": "lard",
+		"tags": "oil",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/635?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=04002&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"04053": {
+		"name": "olive",
+		"tags": "oil",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/660?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=04053&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"04582": {
+		"name": "canola",
+		"tags": "oil",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/718?fgcd=&manu=&lfacet=&format=&count=&max=50&offset=&sort=default&order=asc&qlookup=04582&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	},
+	"04042": {
+		"name": "peanut",
+		"tags": "oil",
+		"url": "https://ndb.nal.usda.gov/ndb/foods/show/657?n1=%7BQv%3D1%7D&fgcd=&man=&lfacet=&count=&max=50&sort=default&qlookup=04042&offset=&format=Full&new=&measureby=&Qv=1&ds=&qt=&qp=&qa=&qn=&q=&ing="
+	}
+}

@@ -16,8 +16,7 @@ import {
 console.log(FullNutritionInfo)
 
 export default class Food extends Component {
-	static getFoodNutrients(food, nutrientKey) {
-		console.log(food, nutrientKey);return food.nutrients[nutrientKey]; }
+	static getFoodNutrients(food, nutrientKey) {return food.nutrients[nutrientKey];	}
 
 	constructor(props) {
 		super(props);
@@ -51,6 +50,17 @@ export default class Food extends Component {
 		});
 	}
 
+	static getVictoryTooltipLabel(d) {
+		let unit = 'Grams';
+		let val = d.y;
+		if (val !== 0) {
+			if (d.y < 1e-3) { val *= 1e6; unit = 'MicroGrams'; }
+			else if (d.y < 1) { val *= 1e3; unit = 'MilliGrams'; }
+		}
+		const formattedVal = Number(val.toFixed(2));
+		return `${d.name}: \n${d.x}: ${formattedVal} ${unit}`
+	}
+
 	createVictoryLineChart(getNutrients, title, nutrientDataKey, w = 200, h = 200) {
 		const selectedFoods = this.state.selectedFoods.map(selectedFood => {
 			return this.indexedFoods[selectedFood.value];
@@ -59,14 +69,13 @@ export default class Food extends Component {
 		const selectDataColor = function (d, active) { return d.color; };
 		const axisStyle = {
 			ticks: { stroke: "grey", size: 3 },
-			tickLabels: { fontSize: 5, padding: 1},
+			tickLabels: { fontSize: 5, padding: 1 },
 		};
-		let xAxisStyle = Object.assign({},axisStyle);
+		let xAxisStyle = Object.assign({}, axisStyle);
 		xAxisStyle.tickLabels.textAnchor = 'start';
 		xAxisStyle.tickLabels.angle = 45;
 
 		const lines = selectedFoods.map(food => {
-			console.log(food)
 			return (
 				<VictoryLine
 					key={food.name}
@@ -85,12 +94,12 @@ export default class Food extends Component {
 		return (
 			<VictoryChart height={h} width={w}
 				domainPadding={{ y: 10 }}
-				padding={{bottom:50,left:30,right:20,top:10}}
+				padding={{ bottom: 50, left: 30, right: 20, top: 10 }}
 				containerComponent={
 					//setup tool tip
 					<VictoryVoronoiContainer
 						dimension="x"
-						labels={(d) => `${d.name}: \n${d.x}: ${d.y}`}
+						labels={Food.getVictoryTooltipLabel}
 						labelComponent={
 							<VictoryTooltip
 								style={{
@@ -112,7 +121,7 @@ export default class Food extends Component {
 				/>
 				<VictoryAxis dependentAxis
 					style={xAxisStyle}
-					/>
+				/>
 				<VictoryLegend x={w * 0.7} y={20}
 					orientation="vertical"
 					gutter={5}
@@ -142,7 +151,7 @@ export default class Food extends Component {
 				{this.createVictoryLineChart(Food.getFoodNutrients, "Vitamins", 'vitamins')}
 				{this.createVictoryLineChart(Food.getFoodNutrients, "Minerals", 'minerals')}
 				{this.createVictoryLineChart(Food.getFoodNutrients, "Amino Acids", 'amino')}
-				</div>
+			</div>
 		);
 	}
 }

@@ -74,7 +74,6 @@ export default class FdaApi {
 		//transform data for easier manipulation
 		sums.trans = sums.trans || 0;
 		// const totalFat = sums.saturated + sums.monounsaturated + sums.polyunsaturated + sums.trans;
-		console.log(newNutrients)
 		//reduce complex nutrients into a single sum
 		let carotenoids = FdaApi.ReduceComplexNutrientsToSum(newNutrients, 'carotenoids');
 		let flavonoids = FdaApi.ReduceComplexNutrientsToSum(newNutrients, 'flavonoids');
@@ -120,29 +119,22 @@ export default class FdaApi {
 	}
 
 	static MergeFoodsAndFDA(foodsData, FDA) {
-		return foodsData.map((x) => {
-			//find corresponding FDA food for each foodsData food, if it exists
-			for (const item of FDA.foods) {
-				const food = item.food;
-				// console.log(food)
-				// console.log(JSON.stringify(food))
-				if (food.desc.ndbno === x.id) {
-					x.nutrients = FdaApi.GetRelevantNutrients(food.nutrients);
-					x.name = food.desc.name;
-					return x;
-				}
+		return FDA.map(fdaFoodItem =>{
+			const fdaFood = fdaFoodItem.food;
+			const id = fdaFood.desc.ndbno;
+			const customFoodDesc = foodsData[id];
+			return {
+				name: fdaFood.desc.name,
+				nutrients:FdaApi.GetRelevantNutrients(fdaFood.nutrients),
+				src: customFoodDesc.url,
 			}
-			return x;
-		})
+		});
 	}
 
 	//gets all data from FDA and prints JSON to console
 	static async getFullNutritionInfo() {
 		console.log('Fetching FDA Nutrition Data')
-		let data = foods;
-		let ids = foods.map((x) => {
-			return x.id;
-		});
+		let ids = Object.keys(foods);
 
 		//get nutrient info
 		//can only request up to 50 foods at a time, so send one request for each 50 food ids
@@ -155,8 +147,10 @@ export default class FdaApi {
 		const foodData = await Promise.all(requests);
 
 		//merge info from foods.json
+		let data = [];
 		for (const foodResults of foodData) {
-			data = FdaApi.MergeFoodsAndFDA(data, foodResults);
+			const finalFoodObjs = FdaApi.MergeFoodsAndFDA(foods, foodResults.foods);
+			data = data.concat(finalFoodObjs);
 		}
 
 		console.log(JSON.stringify(data))
