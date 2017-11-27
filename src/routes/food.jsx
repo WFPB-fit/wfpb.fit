@@ -7,7 +7,7 @@ import FullNutritionInfo from '../assets/data/nutrition/fullNutritionInfo.json';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
 import {
-	VictoryGroup, VictoryChart, VictoryAxis, VictoryLegend,
+	VictoryGroup, VictoryChart, VictoryAxis, VictoryLegend,VictoryLabel,
 	VictoryTheme, VictoryTooltip, VictoryScatter, VictoryLine, VictoryVoronoiContainer
 } from 'victory';
 
@@ -54,17 +54,12 @@ export default class Food extends Component {
 		}, []);
 	}
 
-	createVictoryLineChart(w = 200, h = 200) {
+	createVictoryLineChart(w = 200, h = 200, title = "Food") {
 		const selectedFoods = this.selectedFoodsToFoodData();
 		const selectDataColor = function (d, active) { console.log(d); return d.color; };
-		const chartStyle = {
-			tickLabels: {
-				fontSize: 5,
-				fontFamily: 'inherit',
-				fillOpacity: 1,
-				margin: 0,
-				padding: 0
-			},
+		const axisStyle = {
+			ticks: { stroke: "grey", size: 5 },
+			tickLabels: { fontSize: 5 },
 		};
 
 		const lines = selectedFoods.map(food => {
@@ -74,9 +69,8 @@ export default class Food extends Component {
 					style={{
 						data: {
 							stroke: food.color,
-							strokeWidth: (d, active) => { return active ? 4 : 2; }
-						},
-						labels: { fill: food.color }
+							strokeWidth: (d, active) => { return active ? 2 : 1; }
+						}
 					}}
 				/>
 			)
@@ -86,33 +80,41 @@ export default class Food extends Component {
 		return (
 			<VictoryChart height={h} width={w}
 				domainPadding={{ y: 10 }}
-				style={{
-					labels: { fontSize: 5 }
-				}
-				}
 				containerComponent={
 					//setup tool tip
-					< VictoryVoronoiContainer
+					<VictoryVoronoiContainer
 						dimension="x"
 						labels={(d) => `${d.name}: \n${d.x}: ${d.y}`}
 						labelComponent={
-							< VictoryTooltip
-								cornerRadius={0}
+							<VictoryTooltip
+								style={{
+									fontSize: 4,
+									padding: 2
+								}}
+								cornerRadius={5}
 								flyoutStyle={{ fill: "white" }}
 							/>}
 					/>}
 			>
-				<VictoryLegend x={5} y={h - 20}
+				<VictoryLabel
+					x={w/2} y={10}
+					text={title}
+				/>
+				<VictoryAxis independentAxis
+					style={axisStyle} />
+				<VictoryAxis dependentAxis
+					style={axisStyle} />
+				<VictoryLegend x={5} y={h - 10}
 					orientation="horizontal"
 					gutter={5}
 					style={{
-						labels: { fontSize: 8 },
+						labels: { fontSize: 5 },
 						data: { stroke: selectDataColor, fill: selectDataColor }
 					}}
 					data={selectedFoods}
 				/>
 				{lines}
-			</VictoryChart >
+			</VictoryChart>
 		);
 	}
 	render() {
