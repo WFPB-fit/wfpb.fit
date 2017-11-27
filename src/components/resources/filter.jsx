@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Card, CardTitle, CardActions, CardText } from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
-import RaisedButton from 'material-ui/RaisedButton';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
 import SelectField from 'material-ui/SelectField';

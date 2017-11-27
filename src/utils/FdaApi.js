@@ -16,15 +16,33 @@ export default class FdaApi {
 				'Content-Type': 'application/json'
 			}),
 		}).then(response => {
-			return response.json()
+			return response.json(); //this takes a long time
 		})
 	}
 
+	static ReduceComplexNutrientsToSum(foodData, nutrientKey) {
+		const sumNutrients = function (total, nutrientVal) {
+			return total + nutrientVal;
+		}
+
+		//reduce complex nutrients into a single sum
+		let nutrients = foodData[nutrientKey] || {};
+		nutrients = Object.values(nutrients).reduce(sumNutrients, 0);
+		delete foodData[nutrientKey];
+
+		return nutrients;
+	}
+
 	static GetRelevantNutrients(nutrients) {
-		let newNutrients = {
-			individuals: {}
-		};
+		let newNutrients = {};
 		let sums = {};
+		const nameSubstitutions = {
+			'Vitamin C, total ascorbic acid': 'Vitamin C',
+			'Vitamin D3 (cholecalciferol)': 'Vitamin D3',
+			'Vitamin K (phylloquinone)': 'Vitamin K',
+			'Choline, total': 'Choline',
+			'Folate, DFE': 'Folate',
+		}
 
 		for (const groupName in NutrientGroups) {
 			const groupFilterData = NutrientGroups[groupName];
@@ -45,106 +63,57 @@ export default class FdaApi {
 					sums[groupName] = amount;
 					break; //exit loop early, we have found the 1 relevant nutrient
 				} else if (!excludedIds.includes(nId) && (groups.includes(n.group) || includedIds.includes(nId))) {
-					let arr = newNutrients.individuals[groupName] || [];
-					arr.push({
-						id: nId,
-						valPer100g: amount,
-						name: n.name
-					});
-					newNutrients.individuals[groupName] = arr;
+					let nutrs = newNutrients[groupName] || {};
+					let name = nameSubstitutions[n.name] || n.name
+					nutrs[name] = amount;
+					newNutrients[groupName] = nutrs;
 				}
 			}
 		}
 
 		//transform data for easier manipulation
 		sums.trans = sums.trans || 0;
-		const totalFat = sums.saturated + sums.monounsaturated + sums.polyunsaturated + sums.trans;
-		const sumNutrients = function (total, nutrient) {
-			return total + nutrient.valPer100g;
-		}
-		let carotenoids = newNutrients.individuals.carotenoids || [];
-		carotenoids = carotenoids.reduce(sumNutrients, 0);
-		delete newNutrients.individuals.carotenoids;
-		let flavonoids = newNutrients.individuals.carotenoids || [];
-		flavonoids = flavonoids.reduce(sumNutrients, 0);
-		delete newNutrients.individuals.flavonoids;
+		// const totalFat = sums.saturated + sums.monounsaturated + sums.polyunsaturated + sums.trans;
+		console.log(newNutrients)
+		//reduce complex nutrients into a single sum
+		let carotenoids = FdaApi.ReduceComplexNutrientsToSum(newNutrients, 'carotenoids');
+		let flavonoids = FdaApi.ReduceComplexNutrientsToSum(newNutrients, 'flavonoids');
+		let omega3 = FdaApi.ReduceComplexNutrientsToSum(newNutrients, 'omega3');
+
+		//manually reduce complex nutrients
+		const v = newNutrients.vitamins;
+		const vitaminE = v['Vitamin E (alpha-tocopherol)'] + v['Tocopherol, beta'] + v['Tocopherol, delta'] + v['Tocopherol, gamma'];
+		if (vitaminE) {
+			v['Vitamin E'] = vitaminE;
+			delete v['Vitamin E (alpha-tocopherol)'];
+			delete v['Tocopherol, beta'];
+			delete v['Tocopherol, delta'];
+			delete v['Tocopherol, gamma'];
+		};
+		delete v['Folate, food']; //Folate,food is same as Folate, DFE which was already included
 
 		//arrange data for consumption
-		let omega3 = newNutrients.individuals.omega3 || [];
-		newNutrients.fats = {
-			saturated: sums.saturated,
-			monounsaturated: sums.monounsaturated,
-			polyunsaturated: sums.polyunsaturated,
-			trans: sums.trans,
-			omega3: omega3.reduce(sumNutrients, 0),
-		};
 		newNutrients.energy = {
-			protein: sums.protein,
-			carbs: sums.carbs,
-			fat: totalFat,
+			Protein: sums.protein,
+			Carbs: sums.carbs,
+			// fat: totalFat,
+			SAFA: sums.saturated,
+			MUFA: sums.monounsaturated,
+			PUFA: sums.polyunsaturated,
+			Trans: sums.trans,
+			Omega3: omega3,
 		};
 		newNutrients.misc = {
-			cholesterol: sums.cholesterol,
-			fiber: sums.fiber,
-			carotenoids: carotenoids,
-			flavonoids: flavonoids
+			Cholesterol: sums.cholesterol,
+			Fiber: sums.fiber,
+			Carotenoids: carotenoids,
+			Flavonoids: flavonoids
 		};
-		// newNutrients.fats = [{
-		// 		name: 'saturated',
-		// 		valPer100g: sums.saturated
-		// 	},
-		// 	{
-		// 		name: 'monounsaturated',
-		// 		valPer100g: sums.monounsaturated
-		// 	},
-		// 	{
-		// 		name: 'polyunsaturated',
-		// 		valPer100g: sums.polyunsaturated
-		// 	},
-		// 	{
-		// 		name: 'omega3',
-		// 		valPer100g: omega3.reduce(sumNutrients, 0)
-		// 	},
-		// 	{
-		// 		name: 'trans',
-		// 		valPer100g: sums.trans
-		// 	}
-		// ];
-		// newNutrients.energy = [
-		// 	// {
-		// 	// 	name: 'calories',
-		// 	// 	valPer100g: sums.calories
-		// 	// },
-		// 	{
-		// 		name: 'protein',
-		// 		valPer100g: sums.protein
-		// 	},
-		// 	{
-		// 		name: 'carbohydrates',
-		// 		valPer100g: sums.carbs
-		// 	},
-		// 	{
-		// 		name: 'fat',
-		// 		valPer100g: totalFat
-		// 	},
-		// ];
-		// newNutrients.misc = [{
-		// 		name: 'cholesterol',
-		// 		valPer100g: sums.cholesterol
-		// 	},
-		// 	{
-		// 		name: 'fiber',
-		// 		valPer100g: sums.fiber
-		// 	},
-		// 	{
-		// 		name: 'carotenoids',
-		// 		valPer100g: carotenoids
-		// 	},
-		// 	{
-		// 		name: 'flavonoids',
-		// 		valPer100g: flavonoids
-		// 	},
-		// ];
+
+		//create defaults for potentially missing data
+		newNutrients.amino = newNutrients.amino || {};
+		newNutrients.vitamins = newNutrients.vitamins || {};
+		newNutrients.minerals = newNutrients.minerals || {};
 
 		//finally, turn the big array into an indexed hash
 		return newNutrients;
@@ -158,7 +127,8 @@ export default class FdaApi {
 				// console.log(food)
 				// console.log(JSON.stringify(food))
 				if (food.desc.ndbno === x.id) {
-					x.nutrients = FdaApi.GetRelevantNutrients(food.nutrients)
+					x.nutrients = FdaApi.GetRelevantNutrients(food.nutrients);
+					x.name = food.desc.name;
 					return x;
 				}
 			}
@@ -175,12 +145,18 @@ export default class FdaApi {
 		});
 
 		//get nutrient info
+		//can only request up to 50 foods at a time, so send one request for each 50 food ids
+		let requests = [];
 		while (ids.length > 0) {
 			const numRequestedIDS = Math.min(ids.length, 50);
-			let fdaFoodInfo = await FdaApi.getFDAData(ids.slice(0, numRequestedIDS));
-			data = FdaApi.MergeFoodsAndFDA(data, fdaFoodInfo); //merge info from foods.json
-			//delete unneeded info
+			requests.push(FdaApi.getFDAData(ids.slice(0, numRequestedIDS)));
 			ids = ids.slice(numRequestedIDS);
+		}
+		const foodData = await Promise.all(requests);
+
+		//merge info from foods.json
+		for (const foodResults of foodData) {
+			data = FdaApi.MergeFoodsAndFDA(data, foodResults);
 		}
 
 		console.log(JSON.stringify(data))

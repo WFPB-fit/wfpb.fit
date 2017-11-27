@@ -7,8 +7,8 @@ import FullNutritionInfo from '../assets/data/nutrition/fullNutritionInfo.json';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
 import {
-	VictoryGroup, VictoryChart, VictoryAxis, VictoryLegend,VictoryLabel,
-	VictoryTheme, VictoryTooltip, VictoryScatter, VictoryLine, VictoryVoronoiContainer
+	VictoryChart, VictoryAxis, VictoryLegend, VictoryLabel,
+	VictoryTooltip, VictoryLine, VictoryVoronoiContainer
 } from 'victory';
 
 // import FdaApi from '../utils/FdaApi.js';
@@ -16,11 +16,13 @@ import {
 console.log(FullNutritionInfo)
 
 export default class Food extends Component {
+	static getFoodNutrients(food, nutrientKey) {
+		console.log(food, nutrientKey);return food.nutrients[nutrientKey]; }
+
 	constructor(props) {
 		super(props);
 		//bind functions
 		this.getVictoryData = this.getVictoryData.bind(this);
-		this.selectedFoodsToFoodData = this.selectedFoodsToFoodData.bind(this);
 		this.handleSelectChange = this.handleSelectChange.bind(this);
 
 		//init vars
@@ -48,24 +50,27 @@ export default class Food extends Component {
 			return { x: key, y: foodData[key], name: name, color: color };
 		});
 	}
-	selectedFoodsToFoodData() {
-		return this.state.selectedFoods.map(selectedFood => {
+
+	createVictoryLineChart(getNutrients, title, nutrientDataKey, w = 200, h = 200) {
+		const selectedFoods = this.state.selectedFoods.map(selectedFood => {
 			return this.indexedFoods[selectedFood.value];
 		}, []);
-	}
 
-	createVictoryLineChart(w = 200, h = 200, title = "Food") {
-		const selectedFoods = this.selectedFoodsToFoodData();
-		const selectDataColor = function (d, active) { console.log(d); return d.color; };
+		const selectDataColor = function (d, active) { return d.color; };
 		const axisStyle = {
-			ticks: { stroke: "grey", size: 5 },
-			tickLabels: { fontSize: 5 },
+			ticks: { stroke: "grey", size: 3 },
+			tickLabels: { fontSize: 5, padding: 1},
 		};
+		let xAxisStyle = Object.assign({},axisStyle);
+		xAxisStyle.tickLabels.textAnchor = 'start';
+		xAxisStyle.tickLabels.angle = 45;
 
 		const lines = selectedFoods.map(food => {
+			console.log(food)
 			return (
 				<VictoryLine
-					data={this.getVictoryData(food.nutrients.energy, food.name, food.color)}
+					key={food.name}
+					data={this.getVictoryData(getNutrients(food, nutrientDataKey), food.name, food.color)}
 					style={{
 						data: {
 							stroke: food.color,
@@ -80,6 +85,7 @@ export default class Food extends Component {
 		return (
 			<VictoryChart height={h} width={w}
 				domainPadding={{ y: 10 }}
+				padding={{bottom:50,left:30,right:20,top:10}}
 				containerComponent={
 					//setup tool tip
 					<VictoryVoronoiContainer
@@ -97,18 +103,21 @@ export default class Food extends Component {
 					/>}
 			>
 				<VictoryLabel
-					x={w/2} y={10}
+					x={w / 2} y={10}
 					text={title}
+					textAnchor='middle'
 				/>
 				<VictoryAxis independentAxis
-					style={axisStyle} />
+					style={axisStyle}
+				/>
 				<VictoryAxis dependentAxis
-					style={axisStyle} />
-				<VictoryLegend x={5} y={h - 10}
-					orientation="horizontal"
+					style={xAxisStyle}
+					/>
+				<VictoryLegend x={w * 0.7} y={20}
+					orientation="vertical"
 					gutter={5}
 					style={{
-						labels: { fontSize: 5 },
+						labels: { fontSize: 4 },
 						data: { stroke: selectDataColor, fill: selectDataColor }
 					}}
 					data={selectedFoods}
@@ -128,8 +137,12 @@ export default class Food extends Component {
 					joinValues
 					multi
 				/>
-				{this.createVictoryLineChart()}
-			</div>
+				{this.createVictoryLineChart(Food.getFoodNutrients, "Energy", 'energy')}
+				{this.createVictoryLineChart(Food.getFoodNutrients, "Micronutrients", 'misc')}
+				{this.createVictoryLineChart(Food.getFoodNutrients, "Vitamins", 'vitamins')}
+				{this.createVictoryLineChart(Food.getFoodNutrients, "Minerals", 'minerals')}
+				{this.createVictoryLineChart(Food.getFoodNutrients, "Amino Acids", 'amino')}
+				</div>
 		);
 	}
 }
