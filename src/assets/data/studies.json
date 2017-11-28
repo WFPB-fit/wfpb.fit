@@ -1759,6 +1759,48 @@
 		"tags": "agribusiness",
 		"quote": "[USDA guideline change ]was only the latest in a long series of industry attempts to influence federal dietary recommendations. ... Since 1977, for example, under pressure from meat producers, federal dietary advice has evolved from “decrease consumption of meat” to “have two or three (daily) servings.” Thus, this recent incident also highlights the inherent conflict of interest in the Department of Agriculture's dual mandates to promote U.S. agricultural products and to advise the public about healthy food choices."
 	}, {
+		"title": "Veal Farmers of Ontario: The Real Deal about Veal",
+		"url": "https://ontarioveal.on.ca/all-about-veal/the-real-deal-about-veal/",
+		"type": "article",
+		"availability": "full",
+		"year": 2015,
+		"tags": "animals",
+		"quote": "Most people do not realize that veal is produced from male (bull) dairy calves. On a dairy farm, these bull calves are not needed for replenishing the milking herd because they cannot produce milk and they are generally not used to produce beef. All dairy cows must give birth to a calf each year to provide the milk that we drink. Approximately 50% of all calves born are female calves (heifers). These heifers will eventually be used by the dairy producer to replace older cows for milking purposes. Only a very select few of all the bull calves born are used for breeding stock. Dairy producers will sell the bull calves to veal producers, either privately or through a sales barn. Therefore, bull calves can be used by the veal industry to create a quality food product."
+	}, {
+		"title": "Colostrum Feeding and Management on U.S. Dairy Operations, 1991-2007",
+		"url": "https://www.aphis.usda.gov/animal_health/nahms/dairy/downloads/dairy07/Dairy07_is_Colostrum.pdf",
+		"type": "article",
+		"availability": "full",
+		"year": 2008,
+		"tags": "animals",
+		"quote": "The practice of removing calves from their dams before nursing increased from 19.2 percent of heifer calves in 1991 to 65.6 percent in 2007"
+	}, {
+		"title": "USDA: Poultry Slaughter Annual Summary",
+		"url": "http://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1497",
+		"pdf": "http://usda.mannlib.cornell.edu/usda/current/PoulSlauSu/PoulSlauSu-02-24-2017.pdf",
+		"type": "research report",
+		"availability": "full",
+		"year": 2017,
+		"tags": "animals",
+		"summary": "The USDA summarizes how many animals are slaughtered, though it only counts the processing plants that are federally inspected. In 2016 alone the industry (and thus consumers) killed 8,768,427,000 baby chickens, 140,587,000 adult chickens, 241,418,000 baby turkeys, 1,837,000 adult turkeys, and 27,268,000 ducks."
+	}, {
+		"title": "USDA: Livestock Slaughter Annual Summary",
+		"url": "http://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1097",
+		"pdf": "http://usda.mannlib.cornell.edu/usda/current/LiveSlauSu/LiveSlauSu-04-19-2017.pdf",
+		"type": "research report",
+		"availability": "full",
+		"year": 2017,
+		"tags": "animals",
+		"summary": "The USDA summarizes how many animals are slaughtered, though it only counts the processing plants that are federally inspected. In 2016 alone the industry (and thus consumers) killed 30,676,100 adult cattle, 512,700 baby calves, 118,303,900 hogs/pigs, and 2,332,600."
+	}, {
+		"title": "The monitoring, prevention, and treatment of milk fever and subclinical hypocalcemia in dairy cows",
+		"url": "http://www.sciencedirect.com/science/article/pii/S1090023307004248",
+		"type": "study",
+		"availability": "abstract",
+		"year": 2008,
+		"tags": "animals",
+		"quote": "The periparturient cow undergoes a transition from non-lactating to lactating at calving. The animal is tremendously challenged to maintain calcium homeostasis. Those that fail can develop milk fever, a clinical disorder that is life threatening to the cow and predisposes the animal to a variety of other disorders."
+	}, {
 		"title": "Vegetarian diets and the incidence of cancer in a low-risk population.",
 		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3565018/",
 		"type": "study",
@@ -1823,7 +1865,7 @@
 		"tags": "agribusiness",
 		"quote": "a number of leading nutrition experts—including some tasked by the government to advise it on the latest research—say the guidelines are influenced too much by food manufacturers, food producers, and special interest groups. As a result, many experts say some of the government’s diet advice continues to promulgate out-of-date research from years past. ... Some experts disagree [with recommendation of 'healthy' red meat], telling TIME that the discrepancies between the Advisory Committee’s report and the final guidelines are evidence that USDA and HHS do not rely on science to form their nutrition policies."
 	}, {
-		"title": "LESS BEEF, LESS CARBON: AMERICANS SHRINK THEIR DIET-RELATED CARBON FOOTPRINT BY 10 PERCENT BETWEEN 2005 AND 2014",
+		"title": "Less Beef, Less Carbon: Americans Shrink Their Diet-related Carbon Footprint by 10 Percent Between 2005 and 2014",
 		"url": "https://www.nrdc.org/sites/default/files/less-beef-less-carbon-ip.pdf",
 		"type": "research report",
 		"availability": "full",
@@ -2307,7 +2349,7 @@
 		"year": 2006,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "climate,ocean,biodiversity",
+		"tags": "climate,water,biodiversity",
 		"quote": "Globally, the rate of fisheries collapses, defined here as catches dropping below 10% of the recorded maximum (23), has been accelerating over time, with 29% of currently fished species considered collapsed in 2003 ... The data further revealed that despite large increases in global fishing effort, cumulative yields across all species and LMEs [large marine ecosystems] had declined by 13% ... This trend is of serious concern because it projects the global coUapse of all taxa currently fished by the mid-21st century (based on the extrapolation of regression in Fig. 3A to I00% in the year 2048)."
 	},
 	{
@@ -2366,13 +2408,80 @@
 		"quote": "If everyone reduced the amount of animal products they ate to meet their nutritional requirements, the total agricultual land required would decline by 13%...The growth in intensive industrial farming coupled with an increased need for protein and energy-rich animal feed has had a devastating impact on nature. Feed crops threaten the biodiversity of many of Earth's most valuble and vulnerable areas."
 	},
 	{
-		"title": "Slaughtering the Amazon",
+		"title": "World Widelife Fund: Slaughtering the Amazon",
 		"url": "https://www.wwf.org.uk/sites/default/files/2017-10/WWF_AppetiteForDestruction_Summary_Report_SignOff.pdf",
 		"year": 2009,
 		"type": "research report",
 		"availability": "full",
 		"tags": "climate,deforestation,meat production",
 		"quote": "The Amazon is estimated to store 80-120 billion tonnes of carbon. If destroyed, some fifty times the annual GHG emissions of the USA could be emitted ... According to the Brazilian government: ‘Cattle are responsible for about 80% of all deforestation’ in the Amazon region ... 12The cattle sector in the Brazilian Amazon is responsible for 14% of the world’s annual deforestation. This makes it the world’s largest driver of deforestation, responsible for more forest loss than the total deforestation in any country outside Brazil except Indonesia"
+	},
+	{
+		"title": "The World Bank: Causes of Deforestation of the Brazilian Amazon",
+		"url": "https://openknowledge.worldbank.org/handle/10986/15060?locale-attribute=en",
+		"pdf": "http://documents.worldbank.org/curated/en/758171468768828889/pdf/277150PAPER0wbwp0no1022.pdf",
+		"year": 2004,
+		"type": "research report",
+		"availability": "full",
+		"tags": "deforestation,meat production",
+		"quote": "From an environmental perspective, despite the uncertainties of valuation, the limited evidence available suggests that the costs of deforestation may be extremely high and possibly exceed private benefits from cattle ranching, particularly when the uncertainties of irreversible losses of genetic heritage (not yet fully understood) are incorporated. ... Land-use data on Amazonia demonstrates that the main cause of deforestation in the region is cattle ranching. Expansion of ranching since the early 1970s has been a continu-ous and inertial process. ... Regardless of who the original agents are, the end result of the land occupation process isalmost inevitably the establishment of ranching activities. If this were not financially viable, forest conversion or deforestation would not occur on the scale on which it is occurring"
+	},
+	{
+		"title": "Agricultural runoff fuels large phytoplankton blooms in vulnerable areas of the ocean",
+		"url": "https://www.nature.com/articles/nature03370",
+		"year": 2005,
+		"type": "study",
+		"availability": "abstract",
+		"tags": "water",
+		"quote": "Here we demonstrate that nitrogen-deficient areas of the tropical and subtropical oceans are acutely vulnerable to nitrogen pollution. Despite naturally high nutrient concentrations and productivity6,7,8, nitrogen-rich agricultural runoff fuels large (54–577 km2) phytoplankton blooms in the Gulf of California. Runoff exerts a strong and consistent influence on biological processes, in 80% of cases stimulating blooms within days of fertilization and irrigation of agricultural fields. We project that by the year 2050, 27–59% of all nitrogen fertilizer will be applied in developing regions located upstream of nitrogen-deficient marine ecosystems. Our findings highlight the present and future vulnerability of these ecosystems to agricultural runoff."
+	},
+	{
+		"title": "Mystery Meat II:The Industry Behind the Quiet Destruction of the American Heartland",
+		"url": "http://www.mightyearth.org/heartlanddestruction/",
+		"pdf": "http://www.mightyearth.org/wp-content/uploads/2017/08/Meat-Pollution-in-America.pdf",
+		"year": 2017,
+		"type": "research report",
+		"availability": "full",
+		"tags": "water,agribusiness,meat production",
+		"quote": "The scale and environmental impact of the meat industry is enormous: more than a third of all land in the continental U.S. is dedicated to growing feed crops and providing the pastures to raise meat. ... Demand for feed crops is driving widespread water contamination across the country, destroying America’s last native prairies, and releasing potent greenhouse gases. ... Our research found that these [environmental] impacts are driven primarily by the large agribusinesses that comprise America’s meat industry. At the pinnacle of this concentration of power is Tyson Foods, America’s largest meat company, which produces one out of every five pounds of all meat raised in the United States. Tyson is renowned for pioneering and consolidating our modern industrial meat system. Our analysis also found Tyson to be the dominant meat company in all the regions suffering the worst environmental impacts from industrial meat and feed production – from grassland clearing in Nebraska, Iowa, and Kansas, to manure and fertilizer pollution pouring into waterways from theHeartland down to the Gulf states."
+	},
+	{
+		"title": "A Global Assessment of the Water Footprint of Farm Animal Products",
+		"url": "https://link.springer.com/article/10.1007/s10021-011-9517-8",
+		"pdf": "http://wfn.project-platforms.com/Reports/Mekonnen-Hoekstra-2012-WaterFootprintFarmAnimalProducts.pdf",
+		"year": 2012,
+		"type": "study",
+		"availability": "full",
+		"tags": "water,meat production",
+		"quote": "Nearly one-third of the total water footprint of agriculture in the world is related to the production of animal products. The water footprint of any animal product is larger than the water footprint of crop products with equivalent nutritional value. The average water footprint per calorie for beef is 20 times larger than for cereals and starchy roots. The water footprint per gram of protein for milk, eggs and chicken meat is 1.5 times larger than for pulses. The unfavorable feed conversion efficiency for animal products is largely responsible for the relatively large water footprint of animal products compared to the crop products. Animal products from industrial systems generally consume and pollute more ground- and surface-water resources than animal products from grazing or mixed systems. The rising global meat consumption and the intensification of animal production systems will put further pressure on the global freshwater resources in the coming decades."
+	},
+	{
+		"title": "State of American Drinking Water",
+		"url": "https://www.ewg.org/tapwater/state-of-american-drinking-water.php#.WX-AD9PyvUI",
+		"year": 2015,
+		"type": "research report",
+		"availability": "full",
+		"tags": "water,nitrates,contaminants",
+		"quote": "the Tap Water Database also reveals nationwide detection of other drinking water contaminants at levels that are legal but scientists and medical experts say are not fully protective of public health. For example: ... In 2015, more than 1,800 water systems serving 7 million Americans in 48 states detected nitrates - chemicals from animal waste or agricultural fertilizers - at an average above the level the National Cancer Institute research shows increases the risk of cancer, which is a concentration just half of the government's legal limit for nitrate in drinking water"
+	},
+	{
+		"title": "The Green, Blue and Grey Water Footprint of Farm Animals and Animal Products",
+		"url": "http://waterfootprint.org/en/water-footprint/product-water-footprint/water-footprint-crop-and-animal-products/",
+		"pdf": "http://wfn.project-platforms.com/Reports/Report-48-WaterFootprint-AnimalProducts-Vol1.pdf",
+		"year": 2010,
+		"type": "research report",
+		"availability": "full",
+		"tags": "water",
+		"quote": "The water footprint of meat from beef cattle (15 400 m 3 /ton as a global average) is much larger than the footprints of meat from sheep (10 400 m 3 /ton), pig (6000 m 3 /ton), goat (5 500 m 3 /ton) or chicken (4 300 m 3 /ton). The global average water footprint of chicken egg is 3 300 m 3 /ton, while the water footprint of cow milk amounts to 1000 m 3 /ton. Per ton of product, animal products generally have a larger water footprint than crop products. The same is true when we look at the water footprint per calorie. The average water footprint per calorie for beef is twenty times larger than for cereals and starchy roots. When we look at the water requirements for protein, it has been found that the water footprint per gram of protein for milk, eggs and chicken meat is about 1.5 times larger than for pulses. For beef, the water footprint per gram of protein is 6 times larger than for pulses. In the case of fat, butter has a relatively small water footprint per gram of fat, even lower than for oil crops. All other animal products, however, have larger water footprints per gram of fat when compared to oil crops. From a freshwater resource perspective, it is more efficient to obtain calories, protein and fat through crop products than animal products. ... Global animal production requires about 2422 Gm 3 of water per year (87.2% green, 6.2% blue, 6.6% grey water). One third of this volume is for the beef cattle sector; another 19% for the dairy cattle sector. Most of the total volume of water (98%) refers to the water footprint of the feed for the animals. Drinking water for the animals, service water and feed mixing water account only for 1.1%, 0.8% and 0.03%, respectively."
+	},
+	{
+		"title": "Municipal drinking water nitrate level and cancer risk in older women: the Iowa Women's Health Study.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/11338313",
+		"year": 2001,
+		"type": "study",
+		"availability": "abstract",
+		"tags": "nitrates,contaminants",
+		"quote": "Nitrate contamination of drinking water may increase cancer risk ... For all cancers, there was no association with increasing nitrate in drinking water, nor were there clear and consistent associations for non-Hodgkin lymphoma; leukemia; melanoma; or cancers of the colon, breast, lung, pancreas, or kidney. There were positive associations for bladder cancer [relative risks (RRs) across nitrate quartiles = 1, 1.69, 1.10, and 2.83] and ovarian cancer (RR = 1, 1.52, 1.81, and 1.84), and inverse associations for uterine cancer (RR = 1, 0.86, 0.86, and 0.55) and rectal cancer (RR = 1, 0.72, 0.95, and 0.47) after adjustment for a variety of cancer risk/protective factors, agents that affect nitrosation (smoking, vitamin C, and vitamin E intake), dietary nitrate, and water source. Similar results were obtained when analyses were restricted to nitrate level in drinking water from 1955 through 1964. The positive association for bladder cancer is consistent with some previous data; the associations for ovarian, uterine, and rectal cancer were unexpected."
 	},
 	{
 		"title": "Business as Usual: A Resurgence of Deforestation in the Brazilian Amazon",
