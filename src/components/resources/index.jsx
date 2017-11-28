@@ -10,7 +10,6 @@ export default class Resources extends Component {
 		//update URL to match the new tags
 		const newTags = value.map(selectable => selectable.value);
 		const newTagString = (newTags.length > 0) ? `tags=${newTags.join(',')}` : '';
-		console.log(newTags,newTagString)
 		this.props.history.replace({
 			pathname: this.props.match.url,
 			search: newTagString

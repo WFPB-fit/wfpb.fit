@@ -137,6 +137,40 @@ export default class Food extends Component {
 			return this.indexedFoods[selectedFood.value];
 		}, []);
 
+		let dataVis = null;
+		if (selectedFoods.length > 0) {
+			const graphs = (<div>
+				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Energy", 'energy')}
+				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Micronutrients", 'misc')}
+				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Vitamins", 'vitamins')}
+				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Minerals", 'minerals')}
+				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Amino Acids", 'amino')}
+			</div>);
+			const sources = (
+				<div>
+					<h2>Sources</h2>
+					<ul>
+						{
+							selectedFoods.map(food => {
+								return (
+									<li key={food.name}>
+										{getLink(food.src, food.name)}
+									</li>
+								)
+							})
+						}
+					</ul>
+				</div>
+			);
+			dataVis = (
+				<div>{graphs}{sources}</div>
+			);
+		} else {
+			dataVis = (<div>
+				<p>Enter a tag in the search bar to display info</p>
+			</div>);
+		}
+
 		return (
 			<div>
 				<Select
@@ -147,23 +181,7 @@ export default class Food extends Component {
 					joinValues
 					multi
 				/>
-				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Energy", 'energy')}
-				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Micronutrients", 'misc')}
-				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Vitamins", 'vitamins')}
-				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Minerals", 'minerals')}
-				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Amino Acids", 'amino')}
-				<h2>Sources</h2>
-				<ul>
-					{
-						selectedFoods.map(food => {
-							return (
-								<li key={food.name}>
-									{getLink(food.src,food.name)}
-								</li>
-							)
-						})
-					}
-				</ul>
+				{dataVis}
 			</div>
 		);
 	}

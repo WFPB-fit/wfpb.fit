@@ -848,8 +848,16 @@
 		"year": 2007,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "saturated fat,fat,mufa,pufa",
+		"tags": "plant-based diet",
 		"quote": "Long-term consumption of a low-calorie low-protein vegan diet or regular endurance exercise training is associated with low cardiometabolic risk. Moreover, our data suggest that specific components of a low-calorie low-protein vegan diet provide additional beneficial effects on blood pressure."
+	}, {
+		"title": "Coconut oil consumption and cardiovascular risk factors in humans",
+		"url": "https://academic.oup.com/nutritionreviews/article/74/4/267/1807413",
+		"year": 2016,
+		"type": "meta analysis",
+		"availability": "abstract",
+		"tags": "oil",
+		"quote": "Overall, the weight of the evidence from intervention studies to date suggests that replacing coconut oil with cis unsaturated fats would alter blood lipid profiles in a manner consistent with a reduction in risk factors for cardiovascular disease."
 	}, {
 		"title": "Relation between progression and regression of atherosclerotic left main coronary artery disease and serum cholesterol levels as assessed with serial long-term (> or =12 months) follow-up intravascular ultrasound.",
 		"url": "http://circ.ahajournals.org/content/108/22/2757.long",
@@ -1469,6 +1477,22 @@
 		"tags": "cognition",
 		"quote": "The present paper summarizes research showing that Western diet intake is associated with cognitive impairment ... a model is described proposing that Western diet consumption contributes to the development of excessive food intake and obesity, in part, by interfering with a type of hippocampal-dependent memory inhibition that is critical in the ability of animals to refrain from responding to environmental cues associated with food, and ultimately from consuming energy intake in excess of that driven solely by caloric need."
 	}, {
+		"title": "Crossover study of diets enriched with virgin olive oil, walnuts or almonds. Effects on lipids and other cardiovascular risk markers.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/21421296",
+		"year": 2011,
+		"type": "meta analysis",
+		"availability": "abstract",
+		"tags": "cognition",
+		"quote": "In 18 participants completing the study (9 women, mean age 56 y, BMI 25.7 kg/m(2)), LDL-cholesterol was reduced from baseline by 7.3%, 10.8% and 13.4% after the VOO [Virgin Olive Oil], walnut and almond diets, respectively (P = 0.001, Friedman test). Total cholesterol and LDL/HDL ratios decreased in parallel. LDL-cholesterol decreases were greater than predicted from dietary fatty acid and cholesterol exchanges among diets."
+	}, {
+		"title": "Palm oil and blood lipid–related markers of cardiovascular disease: a systematic review and meta-analysis of dietary intervention trials",
+		"url": "http://ajcn.nutrition.org/content/99/6/1331.full",
+		"year": 2014,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "oil,fat",
+		"quote": "Comparison of PO [palm oil] diets with diets rich in stearic acid, monounsaturated fatty acids (MUFAs), and polyunsaturated fatty acids (PUFAs) showed significantly higher TC [total cholesterol], LDL cholesterol, apolipoprotein B, HDL cholesterol, and apolipoprotein A-I, whereas most of the same biomarkers were significantly lower when compared with diets rich in myristic/lauric acid. Comparison of PO-rich diets with diets rich in trans fatty acids showed significantly higher concentrations of HDL cholesterol and apolipoprotein A-I and significantly lower apolipoprotein B, triacylglycerols, and TC/HDL cholesterol. ... Both favorable and unfavorable changes in CHD/CVD risk markers occurred when PO was substituted for the primary dietary fats, whereas only favorable changes occurred when PO was substituted for trans fatty acids."
+	}, {
 		"title": "Brain rust: recent discoveries on the role of oxidative stress in neurodegenerative diseases.",
 		"url": "https://www.ncbi.nlm.nih.gov/pubmed/22583954",
 		"year": 2012,
@@ -1581,6 +1605,120 @@
 		"tags": "agribusiness,environment",
 		"quote": "Americans cut their beef consumption by 19 percent between 2005 and 2014 ... That drop in beef intake was the main contributor to a 10 percent reduction in the amount of climate-warming pollution Americans caused through their diets ... “roughly equivalent to the annual pollution of 57 million car tailpipes.” ... In the lead [of lobbying pay] was the dairy industry, which spent more than $6 million lobbying in 2016. It almost doubled the lobbying payments of the livestock industry, and more than quadrupled those of poultry and eggs. ... Last year, the group [National Pork Producers Council] spent more than $1.6 million lobbying on bills addressing issues like water quality and antibiotics."
 	}, {
+		"title": "Which nanny--the state or industry? Wowsers, teetotallers and the fun police in public health advocacy.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/25933699",
+		"type": "study",
+		"availability": "abstract",
+		"year": 2015,
+		"tags": "agribusiness",
+		"quote": "This paper explores a series of examples which illustrate how public health is being undermined by the 'Nanny Industry' and how industry uses fear of government regulation to maintain its own dominance, to maintain its profits and to do so at a significant financial and social cost to the community and to public health."
+	}, {
+		"title": "Informed choice and the nanny state: learning from the tobacco industry.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/25933699",
+		"type": "study",
+		"availability": "abstract",
+		"year": 2015,
+		"tags": "agribusiness",
+		"quote": "Some marketing strategies have deliberately mis-informed consumers thus directly contributing to many public health problems. Far from removing free choice, government policies that restrain commercial communications and stimuli are prerequisites necessary to promote free choice."
+	}, {
+		"title": "Guest Commentary: Fat and other taxes, lessons for the implementation of preventive policies.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/25998882",
+		"type": "article",
+		"availability": "abstract",
+		"year": 2015,
+		"tags": "agribusiness",
+		"quote": "Policy evidence from existing food tax implementation suggest that taxes need to be paralleled by subsidies and other interventions to encourage healthy eating. ... Key opponents to taxes are the food industry who use a range of arguments to prevent taxation being implemented. Public health advocates are weak in tackling the issues of corporate power and providing evidence to maintain policy and political support. The public health movement needs to continue to develop the political will among politicians and the public for taxes on food. A new way of looking at policy formation is required and this includes addressing the power of corporate interests and the role of professionals in shaping or combating these influences"
+	}, {
+		"title": "The rise and fall of the world's first fat tax.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/25998882",
+		"type": "study",
+		"availability": "abstract",
+		"year": 2015,
+		"tags": "agribusiness",
+		"quote": "In 2011, Denmark introduced the world's first tax on saturated fat, but only 15 months later the fat tax was abolished. ... Our findings suggest that industry and trade associations were heavily involved in the political process of formulating the fat tax. Industry representatives used certain tactics to oppose the fat tax: threatening lawsuits, predicting welfare losses, casting doubt on evidence, diverting focus and requesting postponement. After the fat tax was implemented, the food industry continued their opposition through intensified lobbyism and juridical actions at EU level. However, other factors seem to have contributed to the fall of the fat tax. The tax received criticism for being poorly designed and gradually lost popularity among health professionals, politicians and the public. In the end, the fat tax was abolished for financial reasons. This study demonstrates how politicians considered the fat tax as a funding source rather than a public health initiative, which resulted in significant shortcomings. Furthermore, we demonstrate that the massive influence by industry stakeholders was not balanced with inputs from public health professionals, who should assume a more proactive role in policy-making"
+	}, {
+		"title": "The Origins of Personal Responsibility Rhetoric in News Coverage of the Tobacco Industry",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4062031/",
+		"type": "study",
+		"availability": "full",
+		"year": 2014,
+		"tags": "agribusiness",
+		"quote": "The emergence of the industry’s public use of personal responsibility rhetoric in the late 1970s illustrates that its tactics preceded the ascension of personal responsibility rhetoric commonly associated with the “Reagan revolution” in the 1980s.  ... Our analysis likely underestimated tobacco industry use of personal responsibility rhetoric in the news during this period because of missing years of archived newspapers ... Because tactics similar to the tobacco industry “playbook” are being used by industries from fossil fuels to packaged foods and beverages, understanding these arguments is a matter of increasing importance for advocates seeking to regulate industry practices and products that may harm the public’s health.Because tactics similar to the tobacco industry “playbook” are being used by industries from fossil fuels33 to packaged foods and beverages,31,34 understanding these arguments is a matter of increasing importance for advocates seeking to regulate industry practices and products that may harm the public’s health."
+	}, {
+		"title": "Bloomberg's Health Legacy: Urban Innovator or Meddling Nanny?",
+		"url": "http://onlinelibrary.wiley.com/doi/10.1002/hast.208/full",
+		"type": "article",
+		"availability": "full",
+		"year": 2013,
+		"tags": "agribusiness",
+		"quote": "Here, I seek to show how Bloomberg has fundamentally changed public health policy and discourse. He has used the engine of government to make New York City a laboratory for innovation—raising the visibility of public health, testing policy effectiveness, and probing the boundaries of state power. Even though the courts have blocked some of his boldest initiatives, he has offered a paradigm for the “new public health”—reaching beyond infectious diseases to upstream risk factors in everyday life and the human habitat. I also critically probe various arguments designed to derail his policies ... A host of vested corporate interests—the sugar, alcohol, and tobacco industries, along with restaurants and advertisers—can make common cause around slippery slope concerns. All of these groups stand to lose if health is placed at the center of public policy. Slippery slope arguments should be approached with suspicion, as they force a speculative analysis without any specifics about the policy feared to lie downslope, or the likelihood of its being manifest. The task of policy-makers is to delineate which policies are acceptable and which are not. Their adoption of any given policy does not suggest that they will extend the same reasoning in other realms. It should not be necessary to win a debate today about policies that may, or may not, be proposed in the future"
+	}, {
+		"title": "Effect of Animal and Industrial Trans Fatty Acids on HDL and LDL Cholesterol Levels in Humans – A Quantitative Review",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2965647/",
+		"type": "meta analysis",
+		"availability": "full",
+		"year": 2010,
+		"tags": "fat,trans fat",
+		"quote": "Published data suggest that all fatty acids with a double bond in the trans configuration raise the ratio of plasma LDL to HDL cholesterol. ... Removing all such ruminant trans fatty acids from the diet would lower the total trans fatty acid intake in the United States and Europe by about 0.5% of energy and might therefore reduce cardiovascular disease risk by 1.5 to 6%"
+	}, {
+		"title": "Brachial artery ultrasound: a noninvasive tool in the assessment of triglyceride-rich lipoproteins.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/10376195",
+		"pdf": "http://onlinelibrary.wiley.com/doi/10.1002/clc.4960221407/pdf",
+		"type": "meta analysis",
+		"availability": "full",
+		"year": 1999,
+		"tags": "fat,oil",
+		"quote": "A high-fat diet also has an adverse effect on endothelial function. ... Olive oil was also found to have the same impairment to endothelial function as the rest of these high-fat meals."
+	}, {
+		"title": "Olive, soybean and palm oils intake have a similar acute detrimental effect over the endothelial function in healthy young subjects.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/17174226",
+		"type": "study",
+		"availability": "abstract",
+		"year": 2007,
+		"tags": "fat,oil",
+		"quote": "No difference was found in the acute adverse effect of the ingestion of different vegetable oils on the endothelial function. All the vegetable oils, fresh and deep-fried, produced an increase in the triglyceride plasma levels in healthy subjects."
+	}, {
+		"title": "Differential Effects of Two Isoenergetic Meals Rich in Saturated or Monounsaturated Fat on Endothelial Function in Subjects With Type 2 Diabetes",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2584179/",
+		"type": "study",
+		"availability": "full",
+		"year": 2008,
+		"tags": "fat,diabetes,oil",
+		"quote": "FMD [blood flow-mediated dilatation] did not change significantly after the MUFA-rich [monounsaturated fatty acid] meal but declined after the SAFA-rich[saturated fatty acid] meal. The FMD during the experiment, expressed as incremental area under the curve, increased after the MUFA-rich meal by 5.2 ± 2.5% and decreased after the SAFA-rich meal by 16.7 ± 6.0% (Δ = −11.5 ± 6.4%; P = 0.008). ... consumption of a single MUFA-rich meal in the form of extra-virgin olive oil does not impair endothelial function in subjects with type 2 diabetes. On the contrary, consumption of a SAFA-rich meal exerts a noxious effect on endothelial function that starts at 2 h and is maintained up to 6 h postprandially. Notably, the differential effects of MUFA- and SAFA-rich diets on endothelial function were observed for similar changes in plasma glucose, insulin, and lipid concentrations in TPAC and reactive hyperemia."
+	}, {
+		"title": "Olive oil intake and CHD in the European Prospective Investigation into Cancer and Nutrition Spanish cohort.",
+		"pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/7063564001F33C9352147192ADB8C4C3/S000711451200298Xa.pdf/olive_oil_intake_and_chd_in_the_european_prospective_investigation_into_cancer_and_nutrition_spanish_cohort.pdf",
+		"url": "https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/olive-oil-intake-and-chd-in-the-european-prospective-investigation-into-cancer-and-nutrition-spanish-cohort/7063564001F33C9352147192ADB8C4C3/core-reader",
+		"type": "study",
+		"availability": "full",
+		"year": 2012,
+		"tags": "fat,oil",
+		"quote": "Olive oil is well known for its cardioprotective properties; however, epidemiological data showing that olive oil consumption reduces incident CHD events are still limited. ... The analysis included 40 142 participants (38 % male), free of CHD events at baseline, recruited from five EPIC-Spain centres from 1992 to 1996 and followed up until 2004. ... Olive oil intake was negatively associated with CHD [congenital heart disease] risk after excluding dietary mis-reporters ... Olive oil intake is an indicator of a healthy MD and is usually correlated with foods such as vegetables; not adjusting for dietary factors may have led to an overestimation of the association."
+	}, {
+		"title": "Effect of antioxidant vitamins on the transient impairment of endothelium-dependent brachial artery vasoactivity following a single high-fat meal.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/10376195",
+		"type": "study",
+		"availability": "full",
+		"year": 1997,
+		"tags": "fat",
+		"quote": "A single high-fat meal transiently reduces endothelial function for up to 4 hours in healthy, normocholesterolemic subjects, probably through the accumulation of triglyceride-rich lipoproteins. This decrease is blocked by pretreatment with antioxidant vitamins C and E, suggesting an oxidative mechanism."
+	}, {
+		"title": "Effect of dietary antioxidants on postprandial endothelial dysfunction induced by a high-fat meal in healthy subjects.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/10376195",
+		"type": "study",
+		"availability": "full",
+		"year": 2003,
+		"tags": "fat",
+		"quote": "Compared with a high-carbohydrate meal, a high-fat meal can modify endothelial functions toward a more atherogenetic profile, which is partially prevented by dietary antioxidants [from vegetables]. ... In our study, a mixture of food antioxidants, which are more representative of dietary patterns than are supplements, partially restored the endothelium-dependent vascular responses during the high-fat meal. This seems to give support, at least indirectly, to the hypothesis that a fat-generated oxidative stress mediates the impairment of endothelial functions. In contrast, other mechanisms might also be implicated in the attenuation of endothelial dysfunction by food antioxidants, including gastric emptying and gut hormone release, which were not evaluated in the present study."
+	}, {
+		"title": "A Systematic Review of the Effects of Nuts on Blood Lipid Profiles in Humans",
+		"url": "http://jn.nutrition.org/content/135/9/2082.long",
+		"type": "meta analysis",
+		"availability": "full",
+		"year": 2005,
+		"tags": "fat,nuts",
+		"quote": "The results of 3 almond (50–100 g/d), 2 peanut (35–68 g/d), 1 pecan nut (72 g/d), and 4 walnut (40–84 g/d) studies showed decreases in total cholesterol between 2 and 16% and LDL cholesterol between 2 and 19% compared with subjects consuming control diets. Consumption of macadamia nuts (50–100 g/d) produced less convincing results. In conclusion, consumption of ∼50–100 g (∼1.5–3.5 servings) of nuts ≥ 5 times/wk as part of a heart-healthy diet with total fat content (high in mono- and/or polyunsaturated fatty acids) of ∼35% of energy may significantly decrease total cholesterol and LDL cholesterol in normo- and hyperlipidemic individuals."
+	}, {
 		"title": "JBS, World's Largest Meat Company, Mired In Multiple Corruption Scandals In Brazil",
 		"url": "http://harvestpublicmedia.org/post/jbs-worlds-largest-meat-company-mired-multiple-corruption-scandals-brazil",
 		"type": "article",
@@ -1588,6 +1726,30 @@
 		"year": 2014,
 		"tags": "agribusiness",
 		"quote": "As of 2014, JBS’s U.S. subsidiary held a 22 percent market-share in U.S. beef processing and an 18 percent market-share in poultry processing. ... Secretly recorded tapes surfaced in May of Brazil’s president, Michel Temer, allegedly discussing bribing a former legislator. The tapes were recorded by JBS chairman Joesley Batista and came to light when he and his brother, Wesley Batista, signed a leniency agreement with federal prosecutors and agreed to have JBS’s holding company pay a $3.2 billion fine."
+	}, {
+		"title": "Nuts, hypertension and endothelial function",
+		"url": "http://www.sciencedirect.com/science/article/pii/S0939475311000251",
+		"type": "meta analysis",
+		"availability": "abstract",
+		"year": 2011,
+		"tags": "nuts,fat",
+		"quote": "Because nuts are low in sodium and contain significant amounts of mono- and polyunsaturated fatty acids, fiber, minerals such as magnesium, potassium and calcium, and antioxidants, they have been suggested as potentially protective foods against hypertension. Limited evidence from prospective studies and clinical trials suggests that nut consumption has a beneficial effect on both BP [high blood pressure] and EF [endothelial function]. However, BP changes were a secondary outcome in nut feeding trials and no study used ambulatory BP monitoring as the standard for BP measurements."
+	}, {
+		"title": "The postprandial effect of components of the mediterranean diet on endothelial function",
+		"url": "http://www.sciencedirect.com/science/article/pii/S0735109700008962?via%3Dihub",
+		"type": "study",
+		"availability": "full",
+		"year": 2000,
+		"tags": "oil,fat",
+		"quote": "Contrary to part of our hypothesis, our study found that omega-9 (oleic acid)-rich olive oil impairs endothelial function postprandially. ... The mechanism appears to be oxidative stress because the decrease in FMD [flow-mediated vasodilation] was reduced (71%) by the concomitant administration of vitamins C and E. Balsamic vinegar (red wine product) and salad reduced the postprandial impairment in endothelial function to a similar extent (65%). In keeping with our hypothesis, the omega-3-rich canola oil and salmon meals did not reduce FMD significantly. ... Dietary fruits, vegetables, and their products appear to provide some protection against the direct impairment in endothelial function produced by high-fat foods, including olive oil."
+	}, {
+		"title": "Acute Effects of High-Fat Meals Enriched With Walnuts or Olive Oil on Postprandial Endothelial Function",
+		"url": "http://www.sciencedirect.com/science/article/pii/S0735109706019127?via%3Dihub",
+		"type": "study",
+		"availability": "full",
+		"year": 2006,
+		"tags": "nuts,oil,fat",
+		"quote": "Our main finding was that, in comparison with olive oil, walnuts reverse the impairment of endothelial function associated with eating a fatty meal. The fact that a single walnut meal positively effects postprandial vasoactivity further supports the beneficial effects of walnuts on cardiovascular risk"
 	}, {
 		"title": "Food Lobbies, the Food Pyramid, and U.S. Nutrition Policy",
 		"url": "http://journals.sagepub.com/doi/abs/10.2190/32F2-2PFB-MEG7-8HPU?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%3dpubmed",
