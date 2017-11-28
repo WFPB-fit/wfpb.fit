@@ -43,7 +43,7 @@ export default class Externalities extends Component {
 		`;
 		return (
 			<Div>
-				{/* <p>All of the following individuals are vegan, vegetarian, or plant based.</p> */}
+				<h3>A small selection of prominent vegans, vegetarians, and plant-based individuals around the globe</h3>
 				<h2>Physicians</h2>
 				{doctors}
 				<h2>Celebrities</h2>
@@ -56,7 +56,6 @@ export default class Externalities extends Component {
 				/>
 				<h2>Animals</h2>
 				<p>{endorsements.animals}</p>
-				<h3>And many more individuals all around the globe</h3>
 			</Div>
 		);
 	}

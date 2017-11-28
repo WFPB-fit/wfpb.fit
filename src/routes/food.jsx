@@ -8,7 +8,7 @@ import Select from 'react-select';
 import 'react-select/dist/react-select.css';
 import {
 	VictoryChart, VictoryAxis, VictoryLegend, VictoryLabel,
-	VictoryTooltip, VictoryLine, VictoryVoronoiContainer
+	VictoryTooltip, VictoryLine, createContainer
 } from 'victory';
 import { getLink } from '../utils/GeneralUtils.jsx';
 
@@ -87,14 +87,15 @@ export default class Food extends Component {
 			)
 		});
 
+		const VictoryZoomVoronoiContainer = createContainer("zoom", "voronoi");
 
 		return (
 			<VictoryChart height={h} width={w}
 				domainPadding={{ y: 10 }}
-				padding={{ bottom: 50, left: 30, right: 20, top: 10 }}
+				padding={{ bottom: 50, left: 30, right: 10, top: 10 }}
 				containerComponent={
 					//setup tool tip
-					<VictoryVoronoiContainer
+					<VictoryZoomVoronoiContainer
 						dimension="x"
 						labels={Food.getVictoryTooltipLabel}
 						labelComponent={
@@ -106,7 +107,8 @@ export default class Food extends Component {
 								cornerRadius={5}
 								flyoutStyle={{ fill: "white" }}
 							/>}
-					/>}
+					/>
+				}
 			>
 				<VictoryLabel
 					x={w / 2} y={10}
@@ -147,23 +149,26 @@ export default class Food extends Component {
 				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Amino Acids", 'amino')}
 			</div>);
 			const sources = (
-				<div>
-					<h2>Sources</h2>
-					<ul>
-						{
-							selectedFoods.map(food => {
-								return (
-									<li key={food.name}>
-										{getLink(food.src, food.name)}
-									</li>
-								)
-							})
-						}
-					</ul>
-				</div>
+				selectedFoods.map(food => {
+					return (
+						<li key={food.name}>
+							{getLink(food.src, food.name)}
+						</li>
+					)
+				})
 			);
 			dataVis = (
-				<div>{graphs}{sources}</div>
+				<div>
+					{graphs}
+					<h2>Sources</h2>
+					<ul>
+						{sources}
+					</ul>
+					<h2>Notes</h2>
+					<ul>
+						<li>Missing data points indicate the USDA does not have data available on that nutrient</li>
+					</ul>
+				</div>
 			);
 		} else {
 			dataVis = (<div>
@@ -182,6 +187,7 @@ export default class Food extends Component {
 					multi
 				/>
 				{dataVis}
+
 			</div>
 		);
 	}
