@@ -28,18 +28,24 @@ SELECT food.id,food.long_desc,food_group.name FROM food
 	(
 		long_desc not like '%with salt%' and
 		long_desc not like '%low moisture%' and
-		long_desc not like '%salt added in processing%' and
-		long_desc not like '%with added ascorbic acid%' and
-		long_desc not like '%with added sugar%' and
+		long_desc not like '%dehydrated%' and
+		long_desc not like '% added%' and
+		long_desc not like '% fortified%' and
+		long_desc not like '% lauric acid%' and
+		-- long_desc not like '%salt added in processing%' and
+		-- long_desc not like '%with added ascorbic acid%' and
+		-- long_desc not like '%with added sugar%' and
 		long_desc not like '%sulfured%' and
 		long_desc not like '%without skin%' and
 		long_desc not like '%drained%' and
+		long_desc not like '%with butter sauce%' and
 		long_desc not like '%added solution%'
 	) and
 	--------- RAW MEAT ---------
 	(
 		(
 			long_desc not like '% raw%' and -- is raw
+			long_desc not like '% uncooked%' and -- is raw
 			( --is meat (not is plant)
 				food_group_id != 200 and --spices,herbs
 				food_group_id != 900 and --fruit
@@ -62,7 +68,14 @@ SELECT food.id,food.long_desc,food_group.name FROM food
 		long_desc not like '%braised%' and
 		long_desc not like '%pan-broiled%'
 	) and
-
+	--------- MEAT TYPE ---------
+	(
+		long_desc not like '% select%' and
+		long_desc not like '% all grades%' and
+		long_desc not like '%light meat%' and
+		long_desc not like '%dark meat%' and
+		long_desc not like '%meat and skin%'
+	) and
 	--------- INCLUSION ---------
 	(
 		--------- SIMPLE ---------
