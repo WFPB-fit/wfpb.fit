@@ -9,8 +9,13 @@ SELECT food.id,food.long_desc,food_group.name FROM food
 	manufac_name is '' and --remove company specific food
 	(	--beef products:
 		food_group_id == 1300 and
-		long_desc like '%cooked%' and
-		long_desc not like '%by-products%' or
+		long_desc like '%choice%' and --only the best meats
+		(
+			long_desc like '%grilled%' or long_desc like '%roasted%' or   long_desc like '%broiled%'-- cooking types
+		) and
+		long_desc not like '%by-products%' and
+		long_desc not like '%imported%'
+		or
 		food_group_id != 1300
 	)
 	( --legumes
@@ -25,6 +30,7 @@ SELECT food.id,food.long_desc,food_group.name FROM food
 		long_desc like '%milk%' or
 		long_desc like '%egetarian%' or
 		long_desc like '%soybean%' or
-		long_desc == 'Papad' or
+		long_desc == 'Papad'
+		or
 		food_group_id != 1600
 	)
