@@ -840,7 +840,7 @@
 		"year": 2006,
 		"type": "study",
 		"availability": "full",
-		"tags": "saturated fat,fat,mufa,pufa",
+		"tags": "saturated fat,fat",
 		"quote": "Oral ingestion of fats with differing degrees of saturation resulted in different effects on insulin secretion and action. PUFA ingestion resulted in an absolute reduction in insulin secretion and SFA ingestion induced insulin resistance. Failure of insulin secretion to compensate for insulin resistance implies impaired beta cell function in the SFA study."
 	}, {
 		"title": "Long-term low-calorie low-protein vegan diet and endurance exercise are associated with low cardiometabolic risk.",
@@ -1179,6 +1179,56 @@
 		"tags": "puberty,weight",
 		"quote": "Girls with higher weight status in early childhood were more likely to exhibit earlier pubertal development relative to peers at 9 years, indicating that weight status preceded pubertal timing in girls."
 	}, {
+		"title": "Top Trends in Prepared Foods 2017: Exploring trends in meat, fish and seafood; pasta, noodles and rice; prepared meals; savory deli food; soup; and meat substitutes",
+		"url": "https://www.reportbuyer.com/product/4959853/top-trends-in-prepared-foods-2017-exploring-trends-in-meat-fish-and-seafood-pasta-noodles-and-rice-prepared-meals-savory-deli-food-soup-and-meat-substitutes.html",
+		"year": 2017,
+		"type": "research report",
+		"availability": "full",
+		"tags": "consumer trends",
+		"quote": "Consumers' diets are diverse, and while most claim not to follow a specific diet, there is a gradual shift occurring in response to health trends. Interestingly, 44% of consumers in Germany follow a low-meat diet, which is a significant increase from 2014 (26%). Similarly, 6% of US consumers now claim to be vegan, up from just 1% in 2014."
+	}, {
+		"title": "There are three and half times as many vegans as there were in 2006, making it the fastest growing lifestyle movement",
+		"url": "https://www.vegansociety.com/whats-new/news/find-out-how-many-vegans-are-great-britain",
+		"year": 2016,
+		"type": "article",
+		"availability": "full",
+		"tags": "consumer trends",
+		"quote": "At least 542,000 people in Britain are now following a vegan diet and never consume any animal products including meat, fish, milk, cheese, eggs and honey. This is a whopping increase since the last estimate of 150,000 ten years ago, making veganism one of Britain’s fastest growing lifestyle movements."
+	}, {
+		"title": "2017 Global Nutrition Report",
+		"url": "http://www.globalnutritionreport.org/the-report/",
+		"pdf": "https://www.globalnutritionreport.org/files/2017/11/Report_2017.pdf",
+		"year": 2017,
+		"type": "research report",
+		"availability": "full",
+		"tags": "environment,diet",
+		"quote": "1. Good nutrition can drive greater environmental sustainability. Agriculture and food production is the backbone of our diets and nutrition. Food production uses 70% of the world’s freshwater supply and 38% of the world’s land. Current agriculture practices produce 20% of all greenhouse gas emissions, and livestock uses 70% of agricultural land. Eating better is necessary to ensure that food production systems are more sustainable. 2. Good nutrition is infrastructure for economic development. ... 3. Good nutrition means less burden on health systems ... 4. Good nutrition supports equity and inclusion ... 5. Good nutrition and improved food security enhances peace and stability"
+	}, {
+		"title": "Meat Substitutes Market by Type (Tofu & Tofu Ingredients, Tempeh, Textured Vegetable Protein, Seitan, Quorn), Source (Soy-based, Wheat-based, Mycoprotein), Category (Frozen, Refrigerated), and Region - Global Forecast to 2022",
+		"url": "https://www.marketsandmarkets.com/Market-Reports/meat-substitutes-market-979.html",
+		"year": 2016,
+		"type": "research report",
+		"availability": "abstract",
+		"tags": "consumer trends",
+		"quote": "The market for meat substitutes was valued at USD 3.81 Billion in 2015, and is projected to grow at a CAGR of 6.6% from 2016. The rise in trend of vegan diet among consumers, due to the growing awareness on health effects of heavy meat consumption and meat adulteration, and its significant impact on the food industry retail chain as ingredients in convenience food, ready-to-cook foods, and ready-to-eat foods, have boosted the demand for meat substitutes across the globe."
+	}, {
+		"title": "Meat-free and Free-from Foods - UK - September 2013",
+		"url": "http://www.mintel.com/press-centre/food-and-drink/number-of-global-vegetarian-food-and-drink-product-launches-doubles-between-2009-and-2013",
+		"pdf": "http://store.mintel.com/meat-free-and-free-from-foods-uk-september-2013",
+		"year": 2013,
+		"type": "research report",
+		"availability": "abstract",
+		"tags": "consumer trends",
+		"quote": "12% of global food and drink products launched in 2013 carried a vegetarian claim, up from 6% in 2009. "
+	}, {
+		"title": "Global Markets for Milk Alternatives",
+		"url": "https://www.bccresearch.com/market-research/food-and-beverage/milk-alternatives-markets-report-fod071a.html",
+		"year": 2016,
+		"type": "research report",
+		"availability": "abstract",
+		"tags": "consumer trends,milk",
+		"quote": "The global market for milk alternatives reached $5.8 billion in 2014 and should reach nearly $10.9 billion by 2019, with a compound annual growth rate (CAGR) of 13.3% through 2019. The soy milk category of this market reached $4.4 billion in 2014 and should reach nearly $8.0 billion by 2019, a CAGR of 12.5%. Almond milk reached $886.8 million in 2014 and should reach $1.8 billion by 2019, a CAGR of l15.8%"
+	}, {
 		"title": "Effects of Environmental Endocrine Disruptors on Pubertal Development",
 		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3065309/",
 		"year": 2011,
@@ -1461,6 +1511,93 @@
 		"tags": "cognition",
 		"quote": "Emerging evidence suggests that dietary-derived flavonoids have the potential to improve human memory and neuro-cognitive performance via their ability to protect vulnerableneurons, enhance existing neuronal function and stimulate neuronal regeneration ... The presentreview explores the potential of flavonoids and their metabolite forms to promote memory andlearning through their interactions with neuronal signalling pathways pivotal in controlling LTPand memory in human subjects."
 	}, {
+		"title": "A review of lifestyle factors that contribute to important pathways associated with major depression: diet, sleep and exercise.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/23415826",
+		"year": 2013,
+		"type": "meta analysis",
+		"availability": "abstract",
+		"tags": "mental health",
+		"quote": "Research on major depression has confirmed that it is caused by an array of biopsychosocial and lifestyle factors. Diet, exercise and sleep are three such influences that play a significant mediating role in the development, progression and treatment of this condition. This review summarises animal- and human-based studies on the relationship between these three lifestyle factors and major depressive disorder, and their influence on dysregulated pathways associated with depression: namely neurotransmitter processes, immuno-inflammatory pathways, hypothalamic-pituitary-adrenal (HPA) axis disturbances, oxidative stress and antioxidant defence systems, neuroprogression, and mitochondrial disturbances. "
+	}, {
+		"title": "Protein – Which is Best?",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3905294/",
+		"year": 2004,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "protein",
+		"quote": "Animal proteins is an important source of protein, however potential health concerns do exist from a diet of protein consumed from primarily animal sources. With a proper combination of sources, vegetable proteins may provide similar benefits as protein from animal sources."
+	}, {
+		"title": "Vegetarian diets are associated with healthy mood states: a cross-sectional study in Seventh Day Adventist adult",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2887769/",
+		"year": 2010,
+		"type": "study",
+		"availability": "full",
+		"tags": "mental health",
+		"quote": "Vegetarians (VEG:n = 60) reported significantly less negative emotion than omnivores (OMN:n = 78) as measured by both mean total DASS and POMS scores (8.32 ± 0.88 vs 17.51 ± 1.88, p = .000 and 0.10 ± 1.99 vs 15.33 ± 3.10, p = .007, respectively). VEG reported significantly lower mean intakes of EPA (p < .001), DHA (p < .001), as well as the omega-6 fatty acid, arachidonic acid (AA; p < .001), and reported higher mean intakes of shorter-chain α-linolenic acid (p < .001) and linoleic acid (p < .001) than OMN. Mean total DASS and POMS scores were positively related to mean intakes of EPA (p < 0.05), DHA (p < 0.05), and AA (p < 0.05), and inversely related to intakes of ALA (p < 0.05), and LA (p < 0.05), indicating that participants with low intakes of EPA, DHA, and AA and high intakes of ALA and LA had better mood."
+	}, {
+		"title": "Restriction of meat, fish, and poultry in omnivores improves mood: A pilot randomized controlled trial",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3293760/",
+		"year": 2012,
+		"type": "study",
+		"availability": "full",
+		"tags": "mental health",
+		"quote": "Thirty-nine omnivores were randomly assigned to a control group consuming meat, fish, and poultry daily (OMN); a group consuming fish 3-4 times weekly but avoiding meat and poultry (FISH), or a vegetarian group avoiding meat, fish, and poultry (VEG). At baseline and after two weeks, participants completed a food frequency questionnaire, the Profile of Mood States questionnaire and the Depression Anxiety and Stress Scales. After the diet intervention, VEG participants reduced their EPA, DHA, and AA intakes, while FISH participants increased their EPA and DHA intakes. Mood scores were unchanged for OMN or FISH participants, but several mood scores for VEG participants improved significantly after two weeks."
+	}, {
+		"title": "Effects of a long-term vegetarian diet on biomarkers of antioxidant status and cardiovascular disease risk.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/15474873",
+		"year": 2004,
+		"type": "study",
+		"availability": "abstract",
+		"tags": "oxidative stress",
+		"quote": "A long-term vegetarian diet is associated with markedly higher fasting plasma AA [ascorbic acid] concentrations and lower concentrations of TAG, UA, and hsCRP. Long-term vegetarians have a better antioxidant status and coronary heart disease risk profile than do apparently healthy omnivores. Plasma AA may act a useful marker of overall health status."
+	}, {
+		"title": "Long-term Effects of a Very Low-Carbohydrate Diet and a Low-Fat Diet on Mood and Cognitive Function",
+		"url": "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/1108558",
+		"year": 2009,
+		"type": "study",
+		"availability": "full",
+		"tags": "diet,cognition,mental health",
+		"quote": "In this large, randomized, controlled study, we compared the long-term effects of a moderate energy-restricted LC [low carb] diet with those of a conventional isocaloric LF [low fat] diet on mood and cognitive function in overweight and obese individuals. ... In the present study, for the majority of the mood measures, including the SAI, BDI, and TMDS and the POMS subscales of anger, depression, and confusion, a significant effect of diet composition was observed showing that scores improved over the longer term and then remained stable for participants who were on the LF diet (ie, a positive effect of the diet on mood was maintained), but in the LC group, despite an initial improvement, scores returned toward baseline levels over time (ie, mood returned toward more negative baseline levels). The sustained improvements in mood in the LF group compared with the LC group are consistent with results from epidemiological studies showing that diets high in carbohydrate and low in fat and protein are associated with lower levels of anxiety and depression and have beneficial effects on psychological well-being."
+	}, {
+		"title": "Omega-6 fatty acids and greater likelihood of suicide risk and major depression in early pregnancy",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4239694/",
+		"year": 2014,
+		"type": "study",
+		"availability": "full",
+		"tags": "fat,mental health,pufa",
+		"quote": "Higher serum status of AA and AdA, two omega-6 fatty acids, were associated with greater likelihood of SR [suicide risk] and MDE [major depressive episode] among pregnant Brazilian women independently of confounding variables."
+	}, {
+		"title": "Modulation of inflammation in brain: a matter of fat.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/17257165",
+		"year": 2007,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "fat,inflammation,cognition,mental health",
+		"quote": "Neuroinflammation is a hallmark of all major CNS [central nervous system] diseases ... The dietary ratio of AA [arachidonic acid] to DHA [docosahexaenoic acid] may affect neurodegeneration associated with acute neural trauma and neurodegenerative diseases. The dietary intake of docosahexaenoic acid offers the possibility of counter-balancing the harmful effects of high levels of AA-derived pro-inflammatory lipid mediators."
+	}, {
+		"title": "OpenSecrets.org: Agribusiness",
+		"url": "https://www.opensecrets.org/industries/indus.php?Ind=A",
+		"type": "research report",
+		"availability": "full",
+		"tags": "lobbying",
+		"quote": "Individuals and political action committees associated with the agribusiness sector contributed more than $90 million at the federal level during the 2012 election cycle -- the biggest increase ever from one cycle to the next for this sector. Three-quarters of agribusiness contributions in the 2012 election cycle went to Republicans. The agribusiness sector has contributed a little more than $624.5 million to federal candidates during the past two decades, with nearly 70 percent going to Republicans. ... Issues of importance to the sector include agriculture subsidies, environmental and safety regulations and trade policy. Immigration overhaul is also a priority, as many industries in the sector are highly dependent on immigrants and seasonal workers for labor. ... Total for Agribusiness: $96,576,869. Total Number of Clients Reported: 419. Total Number of Lobbyists Reported: 998. Total Number of Revolvers: 589 (59.0%)."
+	}, {
+		"title": "Dairy and Dairy Alternative Beverage Trends in the U.S., 4th Edition",
+		"url": "https://www.packagedfacts.com/Dairy-Alternative-Beverage-Trends-Edition-11000293/",
+		"year": 2017,
+		"type": "research report",
+		"availability": "abstract",
+		"tags": "milk,consumer trends",
+		"quote": "Per capita consumption of fluid milk beverages decreased by close to 22% from 2000 to 2016. Through the same period, consumption of non-dairy plant-based milk alternatives has increased by triple digits. The decrease in dairy milk consumption can be interpreted as each consumer going from 10 glasses of milk each week to eight glasses per week, not much on an individual level but enormous when viewed in terms of the whole population on an annual basis. Even so, milk is still being consumed in over 90% of the households in the U.S.  ... the dairy and dairy alternative beverages market will reach nearly $28 billion by 2021."
+	}, {
+		"title": "The effects of 8 weeks of whey or rice protein supplementation on body composition and exercise performance",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3698202/",
+		"year": 2013,
+		"type": "study",
+		"availability": "full",
+		"tags": "protein",
+		"quote": "Both whey and rice protein isolate administration post resistance exercise improved indices of body composition and exercise performance; however, there were no differences between the two groups."
+	}, {
 		"title": "The incidence of dementia and intake of animal products: preliminary findings from the Adventist Health Study.",
 		"url": "https://www.ncbi.nlm.nih.gov/pubmed/8327020",
 		"year": 1993,
@@ -1572,6 +1709,31 @@
 		"year": 2017,
 		"tags": "milk,environment,saturated fat,politics",
 		"quote": "Milk and other dairy products are the No. 1 source of artery-clogging saturated fat in the American diet, contributing to heart disease, type 2 diabetes and Alzheimer’s disease. Studies have also linked dairy products to an increased risk of breast, ovarian and prostate cancers. ... Producing just a single gallon of milk requires 880 gallons of water. That’s nearly 55 gallons per cup. ... Industrial dairy cows suffer a life filled with illness, with one out of every 10 cows in a herd prematurely dying every year. Given natural conditions like healthy food and outdoor exercise, cows have an average lifespan of 20 years. ... Schools account for about 7 to 8 percent of all milk sales. Knowing it’s a must-win market, the dairy industry uses its money and lobbying power to convince us that milk is an essential part of children’s diets. And it works."
+	}, {
+		"title": "Identification of Top Food Sources of Various Dietary Components",
+		"url": "https://epi.grants.cancer.gov/diet/foodsources/",
+		"type": "study",
+		"availability": "full",
+		"year": 2012,
+		"tags": "saturated fat,fiber,cholesterol,protein,fat,sodium,calcium,potassium",
+		"quote": "Milk and other dairy products are the No. 1 source of artery-clogging saturated fat in the American diet, contributing to heart disease, type 2 diabetes and Alzheimer’s disease. Studies have also linked dairy products to an increased risk of breast, ovarian and prostate cancers. ... Producing just a single gallon of milk requires 880 gallons of water. That’s nearly 55 gallons per cup. ... Industrial dairy cows suffer a life filled with illness, with one out of every 10 cows in a herd prematurely dying every year. Given natural conditions like healthy food and outdoor exercise, cows have an average lifespan of 20 years. ... Schools account for about 7 to 8 percent of all milk sales. Knowing it’s a must-win market, the dairy industry uses its money and lobbying power to convince us that milk is an essential part of children’s diets. And it works."
+	}, {
+		"title": "Dietary sources of energy, solid fats, and added sugars among children and adolescents in the United States.",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3428130/",
+		"type": "study",
+		"availability": "full",
+		"year": 2012,
+		"tags": "saturated fat,policy",
+		"quote": "There is an overlap between the major sources of energy and empty calories: soda, grain desserts, pizza, and whole milk. The landscape of choices available to children and adolescents must change to provide fewer unhealthy foods and more healthy foods with fewer calories. Identifying top sources of energy and empty calories can provide targets for changes in the marketplace and food environment. However, product reformulation alone is not sufficient—the flow of empty calories into the food supply must be reduced."
+	}, {
+		"title": "A multicenter randomized controlled trial of a nutrition intervention program in a multiethnic adult population in the corporate setting reduces depression and anxiety and improves quality of life: the GEICO study",
+		"url": "http://journals.sagepub.com/doi/abs/10.4278/ajhp.130218-QUAN-72?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%3dpubmed",
+		"pdf": "http://journals.sagepub.com/doi/pdf/10.4278/ajhp.130218-QUAN-72",
+		"type": "study",
+		"availability": "full",
+		"year": 2015,
+		"tags": "mental health,diet",
+		"quote": "There were 292 participants (79.8% women, 20.2% men), with body mass index>=25 kg/m2 and/or previous diagnosis of type 2 diabetes. ... In an intention-to-treat analysis, improvements in impairment because of health (p<.001), overall work impairment because of health (p=.02), non-work-related activity impairment because of health (p<.001), depression (p=.02), anxiety (p=.04), fatigue (p=.001), emotional well-being (p=.01), daily functioning because of physical health (p=.01), and general health (p=0.02) in the intervention group were significantly greater than in the control group. Results were similar for study completers."
 	}, {
 		"title": "The System Supplying America's Chickens Pits Farmer Vs. Farmer",
 		"url": "https://www.npr.org/sections/thesalt/2014/02/20/279040721/the-system-that-supplies-our-chickens-pits-farmer-against-farmer",
