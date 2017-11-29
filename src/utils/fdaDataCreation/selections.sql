@@ -4,13 +4,14 @@
 SELECT food.id,food.long_desc,food_group.name FROM food
 	inner join food_group on food_group.id=food.food_group_id
 	where
+	--------- EXCLUSION ---------
 	--------- TOTAL FOOD GROUP REMOVAL ---------
 	(
-		food.food_group_id !=300 and -- baby food
-		food.food_group_id !=600 and -- soups/sauces
-		food.food_group_id !=3500 and -- native food
-		food.food_group_id !=3600 and --restaruants
-		food.food_group_id != 1800 --baked products
+		food_group_id !=300 and -- baby food
+		food_group_id !=600 and -- soups/sauces
+		food_group_id !=3500 and -- native food
+		food_group_id !=3600 and --restaruants
+		food_group_id != 1800 --baked products
 	) and
 	--------- GENERAL FILTERING ---------
 	(
@@ -25,6 +26,8 @@ SELECT food.id,food.long_desc,food_group.name FROM food
 	-- Currently, processed foods are given the benefit of the doubt. Only the best available ones are selected (without salt, with skin, etc), even though this is not what most consumers eat
 	(
 		long_desc not like '%with salt%' and
+		long_desc not like '%low moisture%' and
+		long_desc not like '%salt added in processing%' and
 		long_desc not like '%with added ascorbic acid%' and
 		long_desc not like '%with added sugar%' and
 		long_desc not like '%sulfured%' and
@@ -32,9 +35,44 @@ SELECT food.id,food.long_desc,food_group.name FROM food
 		long_desc not like '%drained%' and
 		long_desc not like '%added solution%'
 	) and
+	--------- RAW MEAT ---------
+	(
+		( --is potentially meat
+			food_group_id == 100 or --dairy
+			food_group_id == 500 or --poultry products
+			food_group_id == 700 or --sausage/lunch meat
+			food_group_id == 1000 or --pork
+			food_group_id == 1300 or --beef
+			-- food_group_id == 1500 or --fish
+			food_group_id == 1700 or --lamb veal game
+			food_group_id == 2200    --pork
+		) and
+		long_desc not like '%raw%'
+	) and
+	--------- COOKING METHODOLOGY ---------
+	(
+		long_desc not like '%braised%' and
+		long_desc not like '%pan-broiled%'
+	) and
+
+	--------- INCLUSION ---------
 	(
 		--------- SIMPLE ---------
 		LENGTH(long_desc) < 11 or --short named foods are hard to filter for in other metrics and can be popular
+
+		--------- PLANTS ---------
+		(
+			(
+				food_group_id == 200 or --spices,herbs
+				food_group_id == 900 or --fruit
+				food_group_id == 1100 or --veges
+				food_group_id == 1200 or --nuts,seeds
+				food_group_id == 1600 or --legumes
+				food_group_id == 2000    --grains
+			) and
+			long_desc like '%raw%' and
+			long_desc like '%frozen%'
+		) or
 
 		--------- MEATLESS ---------
 		(
@@ -61,29 +99,26 @@ SELECT food.id,food.long_desc,food_group.name FROM food
 		--------- FOOD GROUPS ---------
 		(	--fruit + juice:
 			food_group_id == 900 and
-			(-- meat type
-				long_desc like '%raw%' or
-				( --canned type
-					long_desc like '%canned%' and
-					long_desc not like '%drained%' and
-					long_desc not like '%extra heavy syrup%' and
-					long_desc not like '%extra light syrup%' and
-					long_desc not like '%water pack%' and
-					long_desc not like '%juice pack%'
-				)
+			( --canned type
+				long_desc like '%canned%' and
+				long_desc not like '%drained%' and
+				long_desc not like '%extra heavy syrup%' and
+				long_desc not like '%extra light syrup%' and
+				long_desc not like '%water pack%' and
+				long_desc not like '%juice pack%'
 			)
 		) or
+		-- (	--vegetable products:
+		-- 	food_group_id == 1100 and
+		-- ) or
 		(	--beef products:
 			food_group_id == 1300 and
-			(-- meat type
-				long_desc like '%choice%' or
-				long_desc like '%patty%' or
-				long_desc like '%patties%'
-			)
+			long_desc like '%choice%' or -- meat type
+			long_desc like '%patty%' or
+			long_desc like '%patties%'
 		) or
 		( --legumes
 			food_group_id==1600 and
-			long_desc like '%raw%' or
 			long_desc like '%flour%' or
 			long_desc like '%butter%' or
 			long_desc like '%yogurt%' or
