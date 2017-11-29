@@ -9,9 +9,10 @@ SELECT food.id,food.long_desc,food_group.name FROM food
 	(
 		food_group_id !=300 and -- baby food
 		food_group_id !=600 and -- soups/sauces
+		food_group_id != 1800 and --baked products
+		food_group_id != 2100 and --fast foods
 		food_group_id !=3500 and -- native food
-		food_group_id !=3600 and --restaruants
-		food_group_id != 1800 --baked products
+		food_group_id !=3600 --restaruants
 	) and
 	--------- GENERAL FILTERING ---------
 	(
@@ -37,17 +38,24 @@ SELECT food.id,food.long_desc,food_group.name FROM food
 	) and
 	--------- RAW MEAT ---------
 	(
-		( --is potentially meat
-			food_group_id == 100 or --dairy
-			food_group_id == 500 or --poultry products
-			food_group_id == 700 or --sausage/lunch meat
-			food_group_id == 1000 or --pork
-			food_group_id == 1300 or --beef
-			-- food_group_id == 1500 or --fish
-			food_group_id == 1700 or --lamb veal game
-			food_group_id == 2200    --pork
-		) and
-		long_desc not like '%raw%'
+		(
+			long_desc not like '% raw%' and -- is raw
+			( --is meat (not is plant)
+				food_group_id != 200 and --spices,herbs
+				food_group_id != 900 and --fruit
+				food_group_id != 1100 and --veges
+				food_group_id != 1200 and --nuts,seeds
+				food_group_id != 1600 and --legumes
+				food_group_id != 2000    --grains
+			)
+		) or ( --is plant
+				food_group_id == 200 or --spices,herbs
+				food_group_id == 900 or --fruit
+				food_group_id == 1100 or --veges
+				food_group_id == 1200 or --nuts,seeds
+				food_group_id == 1600 or --legumes
+				food_group_id == 2000    --grains
+		)
 	) and
 	--------- COOKING METHODOLOGY ---------
 	(
@@ -70,15 +78,15 @@ SELECT food.id,food.long_desc,food_group.name FROM food
 				food_group_id == 1600 or --legumes
 				food_group_id == 2000    --grains
 			) and
-			long_desc like '%raw%' and
+			long_desc like '% raw%' or
 			long_desc like '%frozen%'
 		) or
 
 		--------- MEATLESS ---------
 		(
-			long_desc like '%egetarian%' or --not sure if removing first letter (due to capitalization worries) is really neccessary
-			long_desc like '%egan%' or
-			long_desc like '%eatless%'
+			long_desc like '%Vegetarian%' or --not sure on capitalization
+			long_desc like '%Vegan%' or
+			long_desc like '%Meatless%'
 		) or
 		--------- COOKING METHODOLOGY ---------
 		(
@@ -92,7 +100,7 @@ SELECT food.id,food.long_desc,food_group.name FROM food
 				long_desc like '%grilled%' or
 				long_desc like '%roasted%' or
 				long_desc like '%broiled%' or
-				long_desc like '%BBQ%'
+				long_desc like '% BBQ%'
 			)
 		) or
 
@@ -113,7 +121,7 @@ SELECT food.id,food.long_desc,food_group.name FROM food
 		-- ) or
 		(	--beef products:
 			food_group_id == 1300 and
-			long_desc like '%choice%' or -- meat type
+			long_desc like '% choice%' or -- meat type
 			long_desc like '%patty%' or
 			long_desc like '%patties%'
 		) or
@@ -128,7 +136,10 @@ SELECT food.id,food.long_desc,food_group.name FROM food
 			long_desc like '%meat%' or
 			long_desc like '%burger%' or
 			long_desc like '%protein%' or
-			long_desc like '%chili%' or
+			long_desc like '%chili%'
+		) or
+		--------- INDIVIDUAL IDS ---------
+		(
 			food.id == 16006 or --baked beans, canned, plain
 			food.id == 16403 --refried beans
 		)
