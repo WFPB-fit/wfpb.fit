@@ -1,3 +1,5 @@
+--get USDA SR28 SQLite info from https://github.com/alyssaq/usda-sqlite
+--upload, view, and query using https://sqliteonline.com/
 -- select all foods
 SELECT food.id,food.long_desc,food_group.name FROM food
 	inner join food_group on food_group.id=food.food_group_id
