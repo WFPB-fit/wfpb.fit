@@ -126,7 +126,7 @@ export default class FdaApi {
 			return {
 				name: fdaFood.desc.name,
 				nutrients: FdaApi.GetRelevantNutrients(fdaFood.nutrients),
-				src: customFoodDesc.url,
+				src: `https://ndb.nal.usda.gov/ndb/search/list?qlookup=${id}`,
 			}
 		});
 	}
