@@ -29,9 +29,10 @@ SELECT food.id,food.long_desc,food_group.name FROM food
 		long_desc not like '%with salt%' and
 		long_desc not like '%low moisture%' and
 		long_desc not like '%dehydrated%' and
-		long_desc not like '% added%' and
+		long_desc not like '%prepared with whole milk%' and
 		long_desc not like '% fortified%' and
 		long_desc not like '% lauric acid%' and
+		long_desc not like '% added%' and
 		-- long_desc not like '%salt added in processing%' and
 		-- long_desc not like '%with added ascorbic acid%' and
 		-- long_desc not like '%with added sugar%' and
@@ -65,6 +66,7 @@ SELECT food.id,food.long_desc,food_group.name FROM food
 	) and
 	--------- COOKING METHODOLOGY ---------
 	(
+		long_desc not like '% unprepared%' and
 		long_desc not like '%braised%' and
 		long_desc not like '%pan-broiled%'
 	) and
