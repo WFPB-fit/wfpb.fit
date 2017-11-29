@@ -22,7 +22,7 @@
 		"type": "study",
 		"availability": "full",
 		"tags": "plant-based diet",
-		"quote": "The top sources of energy for 2–18 year olds were grain desserts (138 kcal/day), pizza (136 kcal), and soda (118 kcal). Sugar-sweetened beverages (soda and fruit drinks combined) provided 173 kcal/day.  ... Nearly 40% of total calories consumed (798 kcal/day of 2027 kcal) by 2–18 year olds were in the form of empty calories (433 kcal from solid fat and 365 kcal from added sugars). "
+		"quote": "The top sources of energy for 2–18 year olds were grain desserts (138 kcal/day), pizza (136 kcal), and soda (118 kcal). Sugar-sweetened beverages (soda and fruit drinks combined) provided 173 kcal/day. ... Nearly 40% of total calories consumed (798 kcal/day of 2027 kcal) by 2–18 year olds were in the form of empty calories (433 kcal from solid fat and 365 kcal from added sugars). "
 	}, {
 		"title": "Lactose intolerance and risk of lung, breast and ovarian cancers: aetiological clues from a population-based study in Sweden",
 		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3428130/",
@@ -785,7 +785,7 @@
 		"type": "meta analysis",
 		"availability": "abstract",
 		"tags": "cholesterol,cancer",
-		"quote": "Among the environmental factors believed to be responsible for this phenomenon, cholesterol has recently received considerable attention.  ... The recognition of cholesterol as a factor contributing to breast cancer development identifies cholesterol and its metabolism as novel targets for cancer therapy."
+		"quote": "Among the environmental factors believed to be responsible for this phenomenon, cholesterol has recently received considerable attention. ... The recognition of cholesterol as a factor contributing to breast cancer development identifies cholesterol and its metabolism as novel targets for cancer therapy."
 	}, {
 		"title": "Total Cholesterol and Cancer Risk in a Large Prospective Study in Korea",
 		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3082977/",
@@ -1089,7 +1089,7 @@
 		"type": "meta analysis",
 		"availability": "abstract",
 		"tags": "protein",
-		"quote": "High protein diets on the other hand advocate excessive levels of protein intake on the order of 200 to 400 g/d, which can equate to levels of approximately 5 g x kg(-1) x d(-1), which may exceed the liver's capacity to convert excess nitrogen to urea. Dangers of excessive protein, defined as when protein constitutes > 35% of total energy intake, include hyperaminoacidemia, hyperammonemia, hyperinsulinemia nausea, diarrhea, and even death (the \"rabbit starvation syndrome\"). ...  suggested maximum protein intake based on bodily needs, weight control evidence, and avoiding protein toxicity would be approximately of 25% of energy requirements"
+		"quote": "High protein diets on the other hand advocate excessive levels of protein intake on the order of 200 to 400 g/d, which can equate to levels of approximately 5 g x kg(-1) x d(-1), which may exceed the liver's capacity to convert excess nitrogen to urea. Dangers of excessive protein, defined as when protein constitutes > 35% of total energy intake, include hyperaminoacidemia, hyperammonemia, hyperinsulinemia nausea, diarrhea, and even death (the \"rabbit starvation syndrome\"). ... suggested maximum protein intake based on bodily needs, weight control evidence, and avoiding protein toxicity would be approximately of 25% of energy requirements"
 	}, {
 		"title": "A high-protein diet for reducing body fat: mechanisms and possible caveats",
 		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4258944/",
@@ -1137,7 +1137,7 @@
 		"type": "meta analysis",
 		"availability": "full",
 		"tags": "allergy",
-		"quote": "Most of the studies (n = 30) reported beneficial associations of fruit and vegetable consumption with risk of asthma and/or respiratory function, while eight studies found no significant relationship. Some studies (n = 20) reported mixed results, as they found a negative association between fruit only or vegetable only, and asthma.  In addition, the meta-analyses in both adults and children showed inverse associations between fruit intake and risk of prevalent wheeze and asthma severity (p < 0.05). Likewise, vegetable intake was negatively associated with risk of prevalent asthma (p < 0.05). Seven studies examined immune responses in relation to fruit and vegetable intake in asthma, with n = 6 showing a protective effect against either systemic or airway inflammation. "
+		"quote": "Most of the studies (n = 30) reported beneficial associations of fruit and vegetable consumption with risk of asthma and/or respiratory function, while eight studies found no significant relationship. Some studies (n = 20) reported mixed results, as they found a negative association between fruit only or vegetable only, and asthma. In addition, the meta-analyses in both adults and children showed inverse associations between fruit intake and risk of prevalent wheeze and asthma severity (p < 0.05). Likewise, vegetable intake was negatively associated with risk of prevalent asthma (p < 0.05). Seven studies examined immune responses in relation to fruit and vegetable intake in asthma, with n = 6 showing a protective effect against either systemic or airway inflammation. "
 	}, {
 		"title": "Multiple Sclerosis and Nutrition",
 		"url": "https://jamanetwork.com/journals/jamaneurology/article-abstract/573287",
@@ -1588,7 +1588,7 @@
 		"type": "research report",
 		"availability": "abstract",
 		"tags": "milk,consumer trends",
-		"quote": "Per capita consumption of fluid milk beverages decreased by close to 22% from 2000 to 2016. Through the same period, consumption of non-dairy plant-based milk alternatives has increased by triple digits. The decrease in dairy milk consumption can be interpreted as each consumer going from 10 glasses of milk each week to eight glasses per week, not much on an individual level but enormous when viewed in terms of the whole population on an annual basis. Even so, milk is still being consumed in over 90% of the households in the U.S.  ... the dairy and dairy alternative beverages market will reach nearly $28 billion by 2021."
+		"quote": "Per capita consumption of fluid milk beverages decreased by close to 22% from 2000 to 2016. Through the same period, consumption of non-dairy plant-based milk alternatives has increased by triple digits. The decrease in dairy milk consumption can be interpreted as each consumer going from 10 glasses of milk each week to eight glasses per week, not much on an individual level but enormous when viewed in terms of the whole population on an annual basis. Even so, milk is still being consumed in over 90% of the households in the U.S. ... the dairy and dairy alternative beverages market will reach nearly $28 billion by 2021."
 	}, {
 		"title": "The effects of 8 weeks of whey or rice protein supplementation on body composition and exercise performance",
 		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3698202/",
@@ -1726,6 +1726,48 @@
 		"tags": "saturated fat,policy",
 		"quote": "There is an overlap between the major sources of energy and empty calories: soda, grain desserts, pizza, and whole milk. The landscape of choices available to children and adolescents must change to provide fewer unhealthy foods and more healthy foods with fewer calories. Identifying top sources of energy and empty calories can provide targets for changes in the marketplace and food environment. However, product reformulation alone is not sufficient—the flow of empty calories into the food supply must be reduced."
 	}, {
+		"title": "UNEP: Assessing the Environmental Impacts of Consumption and Production: Priority Products and Materials",
+		"url": "http://www.unep.fr/scp/publications/details.asp?id=DTI/1262/PA",
+		"pdf": "http://www.unep.fr/shared/publications/pdf/DTIx1262xPA-PriorityProductsAndMaterials_Report.pdf",
+		"type": "research report",
+		"availability": "full",
+		"year": 2010,
+		"tags": "water,habitat loss,biodiversity,pollution",
+		"quote": "Agriculture and food consumption are identified as one of the most important drivers of environmental pressures, especially habitat change, climate change, water use and toxic emissions. ... a global shift towards a vegan diet is vital to save the world from hunger, fuel poverty, and the worst impacts of climate change."
+	}, {
+		"title": "Revised methane emissions factors and spatially distributed annual carbon fluxes for global livestock",
+		"url": "https://cbmjournal.springeropen.com/articles/10.1186/s13021-017-0084-y",
+		"type": "study",
+		"availability": "full",
+		"year": 2017,
+		"tags": "GHG",
+		"quote": "Using the new emissions factors, we estimate global livestock emissions of 119.1 ± 18.2 Tg methane in 2011; this quantity is 11% greater than that obtained using the IPCC 2006 emissions factors, encompassing an 8.4% increase in enteric fermentation methane, a 36.7% increase in manure management methane, and notable variability among regions and sources. For example, revised manure management methane emissions for 2011 in the US increased by 71.8%."
+	}, {
+		"title": "Grazed and confused? Ruminating on cattle, grazing systems, methane, nitrous oxide, the soil carbon sequestration question – and what it all means for greenhouse gas emissions",
+		"url": "http://www.fcrn.org.uk/projects/grazed-and-confused",
+		"pdf": "http://www.fcrn.org.uk/sites/default/files/project-files/fcrn_gnc_report.pdf",
+		"type": "research report",
+		"availability": "full",
+		"year": 2017,
+		"tags": "GHG,meat production,habitat loss,water,pollution",
+		"quote": "this report has deliberately confined itself to a very narrow, albeit important and complex remit: that of grassfed ruminants in grazing systems, and their relationship with climate change ... 300Livestock supply chain emissions contribute about 14.5% of this total [GHG emissions] at 7.1 Gt CO2-eq/yr (1.9 Gt C-eq)), with most of the emissions generated at the agricultural stage. Of this, about 80% is attributable to ruminants. ... could grazing ruminants also help sequester carbon in soils, and if so to what extent might this compensate? As the following numbers show, the answer is ‘not much’. ... While some grasslands are natural, many of the grazing lands used today were formed at great environmental cost from what was originally forest. Grazing livestock have historically been the main agent of anthropogenic deforestation and associated CO2 release. ... the livestock systems that operate today cause an enormous amount, and many kinds of, environmental damage. To raise the animals we eat and use, we have cleared forests, driven species to extinction, polluted air and waterways, and released vast quantities of GHG emissions into the atmosphere. The rearing of animals has literally transformed the face of this earth."
+	}, {
+		"title": "Future threats to biodiversity and pathways to their prevention",
+		"url": "https://www.nature.com/articles/nature22900",
+		"type": "study",
+		"availability": "abstract",
+		"year": 2017,
+		"tags": "biodiversity",
+		"quote": "Tens of thousands of species are threatened with extinction as a result of human activities. ... Proactive international efforts to increase crop yields, minimize land clearing and habitat fragmentation, and protect natural lands could increase food security in developing nations and preserve much of Earth's remaining biodiversity."
+	}, {
+		"title": "Tyson Foods CEO: The Future of Food Might Be Meatless",
+		"url": "http://www.foxbusiness.com/features/2017/03/07/tyson-foods-ceo-future-food-might-be-meatless.html",
+		"type": "article",
+		"availability": "full",
+		"year": 2017,
+		"tags": "consumer trends",
+		"quote": "whether it’s animal-based protein or plant-based protein, they have an appetite for it. Plant-based protein is growing almost, at this point, a little faster than animal-based, so I think the migration may continue in that direction,” Tom Hayes, CEO of Tyson Foods Inc. (TSN) told FOX Business."
+	}, {
 		"title": "A multicenter randomized controlled trial of a nutrition intervention program in a multiethnic adult population in the corporate setting reduces depression and anxiety and improves quality of life: the GEICO study",
 		"url": "http://journals.sagepub.com/doi/abs/10.4278/ajhp.130218-QUAN-72?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%3dpubmed",
 		"pdf": "http://journals.sagepub.com/doi/pdf/10.4278/ajhp.130218-QUAN-72",
@@ -1805,7 +1847,7 @@
 		"availability": "full",
 		"year": 2014,
 		"tags": "agribusiness",
-		"quote": "The emergence of the industry’s public use of personal responsibility rhetoric in the late 1970s illustrates that its tactics preceded the ascension of personal responsibility rhetoric commonly associated with the “Reagan revolution” in the 1980s.  ... Our analysis likely underestimated tobacco industry use of personal responsibility rhetoric in the news during this period because of missing years of archived newspapers ... Because tactics similar to the tobacco industry “playbook” are being used by industries from fossil fuels to packaged foods and beverages, understanding these arguments is a matter of increasing importance for advocates seeking to regulate industry practices and products that may harm the public’s health.Because tactics similar to the tobacco industry “playbook” are being used by industries from fossil fuels33 to packaged foods and beverages,31,34 understanding these arguments is a matter of increasing importance for advocates seeking to regulate industry practices and products that may harm the public’s health."
+		"quote": "The emergence of the industry’s public use of personal responsibility rhetoric in the late 1970s illustrates that its tactics preceded the ascension of personal responsibility rhetoric commonly associated with the “Reagan revolution” in the 1980s. ... Our analysis likely underestimated tobacco industry use of personal responsibility rhetoric in the news during this period because of missing years of archived newspapers ... Because tactics similar to the tobacco industry “playbook” are being used by industries from fossil fuels to packaged foods and beverages, understanding these arguments is a matter of increasing importance for advocates seeking to regulate industry practices and products that may harm the public’s health.Because tactics similar to the tobacco industry “playbook” are being used by industries from fossil fuels33 to packaged foods and beverages,31,34 understanding these arguments is a matter of increasing importance for advocates seeking to regulate industry practices and products that may harm the public’s health."
 	}, {
 		"title": "Bloomberg's Health Legacy: Urban Innovator or Meddling Nanny?",
 		"url": "http://onlinelibrary.wiley.com/doi/10.1002/hast.208/full",
@@ -2017,7 +2059,7 @@
 		"availability": "full",
 		"year": 2016,
 		"tags": "agribusiness",
-		"quote": "Beef commands a premium if it is labeled “grass-fed” or “naturally raised,” but the Department of Agriculture withdrew oversight of those terms in January and no longer verifies such claims. Even in cases where the U.S.D.A. does certify labels, the rules can be slippery. The term “humanely raised,” for example, has no standard definition, and the U.S.D.A. does not conduct site visits to confirm enforcement for those approved to use the label. ... Large [meat] producers successfully lobbied Congress to create a “checkoff” program, which imbued private industry with the power, via the U.S.D.A., to collect a percentage of all beef and pork sales to be used for the general promotion of eating meat. ...  Thus began an era in which U.S.D.A. officials began to view themselves as partnering with industry, rather than monitoring it. "
+		"quote": "Beef commands a premium if it is labeled “grass-fed” or “naturally raised,” but the Department of Agriculture withdrew oversight of those terms in January and no longer verifies such claims. Even in cases where the U.S.D.A. does certify labels, the rules can be slippery. The term “humanely raised,” for example, has no standard definition, and the U.S.D.A. does not conduct site visits to confirm enforcement for those approved to use the label. ... Large [meat] producers successfully lobbied Congress to create a “checkoff” program, which imbued private industry with the power, via the U.S.D.A., to collect a percentage of all beef and pork sales to be used for the general promotion of eating meat. ... Thus began an era in which U.S.D.A. officials began to view themselves as partnering with industry, rather than monitoring it. "
 	}, {
 		"title": "Experts Say Lobbying Skewed the U.S. Dietary Guidelines",
 		"url": "http://time.com/4130043/lobbying-politics-dietary-guidelines/",
@@ -2363,7 +2405,7 @@
 		"type": "meta analysis",
 		"availability": "full",
 		"tags": "milk",
-		"quote": "The range of non-fermented and fermented milk consumption and the shape of the associations between milk consumption and mortality differed considerably between studies ...  we observed no consistent association between milk consumption and all-cause or cause-specific mortality."
+		"quote": "The range of non-fermented and fermented milk consumption and the shape of the associations between milk consumption and mortality differed considerably between studies ... we observed no consistent association between milk consumption and all-cause or cause-specific mortality."
 	}, {
 		"title": "Low-carbohydrate diets and all-cause and cause-specific mortality: Two cohort Studies",
 		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2989112/",
@@ -2421,7 +2463,7 @@
 		"type": "research report",
 		"availability": "full",
 		"tags": "plant-based diet",
-		"quote": "A healthy vegan diet has many health benefits including lower rates of obesity, heart disease, high blood pressure, high blood cholesterol, type 2 diabetes and certain types of cancer.  It may take planning to get enough protein, iron, zinc, calcium, vitamins D and B12 and omega-3 fats from foods or supplements.  A healthy vegan diet can meet all your nutrient needs at any stage of life including when you are pregnant, breastfeeding or for older adults"
+		"quote": "A healthy vegan diet has many health benefits including lower rates of obesity, heart disease, high blood pressure, high blood cholesterol, type 2 diabetes and certain types of cancer. It may take planning to get enough protein, iron, zinc, calcium, vitamins D and B12 and omega-3 fats from foods or supplements. A healthy vegan diet can meet all your nutrient needs at any stage of life including when you are pregnant, breastfeeding or for older adults"
 	}, {
 		"title": "A Milk Protein, Casein, as a Proliferation Promoting Factor in Prostate Cancer Cells",
 		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4524299/",
@@ -2437,7 +2479,7 @@
 		"type": "research report",
 		"availability": "full",
 		"tags": "climate",
-		"quote": "This period is now the warmest in the history of modern civilization. ...  human activities, especially emissions of greenhouse gases, are the dominant cause of the observed warming since the mid-20th century. ... Thousands of studies conducted by researchers around the world have documented changes in surface, atmospheric, and oceanic temperatures; melting glaciers; diminishing snow cover; shrinking sea ice; rising sea levels; ocean acidification; and increasing atmospheric water vapor. ... global average sea level has risen by about 7–8 inches since 1900, with almost half (about 3 inches) of that rise occurring since 1993 ... Heavy rainfall is increasing in intensity and frequency across the United States and globally and is expected to continue to increase. ... Heatwaves have become more frequent in the United States since the 1960s, while extreme cold temperatures and cold waves are less frequent. ... The incidence of large forest fires in the western United States and Alaska has increased since the early 1980s and is projected to further increase ... The global atmospheric carbon dioxide (CO2) concentration has now passed 400 parts per million (ppm), a level that last occurred about 3 million years ago, when both global average temperature and sea level were significantly higher than today. ... In 2014 and 2015, emission growth rates slowed as economic growth became less carbon-intensive. Even if this slowing trend continues, however, it is not yet at a rate that would limit global average temperature change to well below 3.6°F (2°C) above preindustrial levels."
+		"quote": "This period is now the warmest in the history of modern civilization. ... human activities, especially emissions of greenhouse gases, are the dominant cause of the observed warming since the mid-20th century. ... Thousands of studies conducted by researchers around the world have documented changes in surface, atmospheric, and oceanic temperatures; melting glaciers; diminishing snow cover; shrinking sea ice; rising sea levels; ocean acidification; and increasing atmospheric water vapor. ... global average sea level has risen by about 7–8 inches since 1900, with almost half (about 3 inches) of that rise occurring since 1993 ... Heavy rainfall is increasing in intensity and frequency across the United States and globally and is expected to continue to increase. ... Heatwaves have become more frequent in the United States since the 1960s, while extreme cold temperatures and cold waves are less frequent. ... The incidence of large forest fires in the western United States and Alaska has increased since the early 1980s and is projected to further increase ... The global atmospheric carbon dioxide (CO2) concentration has now passed 400 parts per million (ppm), a level that last occurred about 3 million years ago, when both global average temperature and sea level were significantly higher than today. ... In 2014 and 2015, emission growth rates slowed as economic growth became less carbon-intensive. Even if this slowing trend continues, however, it is not yet at a rate that would limit global average temperature change to well below 3.6°F (2°C) above preindustrial levels."
 	},
 	{
 		"title": "Analysis and valuation of the health and climate change cobenefits of dietary change",
@@ -2456,7 +2498,7 @@
 		"type": "research report",
 		"availability": "full",
 		"tags": "climate,agriculture",
-		"quote": "Food  systems  contribute  19%–29%  of  global  anthropogenic  green-house  gas  (GHG)  emissions [in 2008]. ... climate change will affect agricultural yields and earnings,food prices, reliability of delivery, food quality, and, notably, food safety.Low-income producers and consumers of food will be more vulnerable ..."
+		"quote": "Food systems contribute 19%–29% of global anthropogenic green-house gas (GHG) emissions [in 2008]. ... climate change will affect agricultural yields and earnings,food prices, reliability of delivery, food quality, and, notably, food safety.Low-income producers and consumers of food will be more vulnerable ..."
 	},
 	{
 		"title": "CGIAR: Recalibrating Food Production in the Developing World: Global Warming Will Change More Than Just the Climate",
