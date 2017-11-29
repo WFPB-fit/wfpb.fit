@@ -4,8 +4,7 @@ import { titleize, getRandomColor } from '../utils/GeneralUtils.jsx';
 import FullNutritionInfo from '../assets/data/nutrition/fullNutritionInfo.json';
 // import exampleFDAdata from '../assets/data/nutrition/exampleFDA.json';
 // console.log(exampleFDAdata)
-import Select from 'react-select';
-import 'react-select/dist/react-select.css';
+import VirtualizedSelect from 'react-virtualized-select'
 import {
 	VictoryChart, VictoryAxis, VictoryLegend, VictoryLabel,
 	VictoryTooltip, VictoryLine, createContainer
@@ -178,7 +177,7 @@ export default class Food extends Component {
 
 		return (
 			<div>
-				<Select
+				<VirtualizedSelect
 					name="form-field-name"
 					value={this.state.selectedFoods}
 					onChange={this.handleSelectChange}

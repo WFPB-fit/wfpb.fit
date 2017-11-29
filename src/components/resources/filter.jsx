@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Card, CardTitle, CardActions, CardText } from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
-import Select from 'react-select';
-import 'react-select/dist/react-select.css';
+import VirtualizedSelect from 'react-virtualized-select'
 import SelectField from 'material-ui/SelectField';
 import MenuItem from 'material-ui/MenuItem';
 
@@ -25,7 +24,7 @@ export default class Filter extends Component {
 						title="Filter"
 					/>
 					<CardText>
-						<Select
+						<VirtualizedSelect
 							name="form-field-name"
 							value={this.props.selectedTags}
 							onChange={this.props.selectedTagsChanged}
