@@ -1,4 +1,4 @@
-import foods from '../assets/data/foods.json';
+// import FoodData from '../assets/data/foods.json';
 import NutrientGroups from '../assets/data/nutrientGroups.json';
 
 export default class FdaApi {
@@ -134,7 +134,7 @@ export default class FdaApi {
 	//gets all data from FDA and prints JSON to console
 	static async getFullNutritionInfo() {
 		console.log('Fetching FDA Nutrition Data')
-		let ids = Object.keys(foods);
+		let ids = ["11530"] //Object.keys(FoodData);
 
 		//get nutrient info
 		//can only request up to 50 foods at a time, so send one request for each 50 food ids
@@ -145,15 +145,14 @@ export default class FdaApi {
 			ids = ids.slice(numRequestedIDS);
 		}
 		const foodData = await Promise.all(requests);
-
+		console.log(JSON.stringify(foodData))
 		//merge info from foods.json
-		let data = [];
-		for (const foodResults of foodData) {
-			const finalFoodObjs = FdaApi.MergeFoodsAndFDA(foods, foodResults.foods);
-			data = data.concat(finalFoodObjs);
-		}
-
-		console.log(JSON.stringify(data))
-		return data;
+		// let data = [];
+		// for (const foodResults of foodData) {
+		// 	const finalFoodObjs = FdaApi.MergeFoodsAndFDA(FoodData, foodResults.foods);
+		// 	data = data.concat(finalFoodObjs);
+		// }
+		// console.log(JSON.stringify( data))
+		// return data;
 	}
 }

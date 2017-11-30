@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 
 import { titleize, getRandomColor } from '../utils/GeneralUtils.jsx';
-import FullNutritionInfo from '../assets/data/nutrition/fullNutritionInfo.json';
-// import exampleFDAdata from '../assets/data/nutrition/exampleFDA.json';
-// console.log(exampleFDAdata)
 import VirtualizedSelect from 'react-virtualized-select'
 import {
 	VictoryChart, VictoryAxis, VictoryLegend, VictoryLabel,
@@ -11,9 +8,10 @@ import {
 } from 'victory';
 import { getLink } from '../utils/GeneralUtils.jsx';
 
-// import FdaApi from '../utils/FdaApi.js';
-// FdaApi.getFullNutritionInfo();
-console.log(FullNutritionInfo)
+import FoodNutrientAmounts from '../assets/data/nutrition/parsed/amount.json';
+import FoodNames from '../assets/data/nutrition/parsed/foodNames.json';
+import NutrientNames from '../assets/data/nutrition/parsed/nutrients.json';
+import ServingSizes from '../assets/data/nutrition/parsed/servingSizes.json';
 
 export default class Food extends Component {
 	static getFoodNutrients(food, nutrientKey) { return food.nutrients[nutrientKey]; }
@@ -23,16 +21,14 @@ export default class Food extends Component {
 		//bind functions
 		this.getVictoryData = this.getVictoryData.bind(this);
 		this.handleSelectChange = this.handleSelectChange.bind(this);
+		this.preprocessSelectedFoods = this.preprocessSelectedFoods.bind(this);
 
 		//init vars
-		this.allSelectableFoods = Food.convertFoodsToSelectObjects(FullNutritionInfo)
-		this.indexedFoods = FullNutritionInfo.reduce((map, obj) => { //index the foods by their name and add extra props, like color
-			map[obj.name] = obj;
-			obj.color = getRandomColor();
-			return map;
-		}, {});
+		this.allSelectables = Object.keys(FoodNames).map(id=>{
+			return {value: id, name: FoodNames[id]};
+		});
 		this.state = {
-			selectedFoods: [this.allSelectableFoods[0]]
+			selectedFoods: [this.allSelectables[0]]
 		}
 	}
 	handleSelectChange(value) {
@@ -133,10 +129,16 @@ export default class Food extends Component {
 			</VictoryChart>
 		);
 	}
-	render() {
-		const selectedFoods = this.state.selectedFoods.map(selectedFood => {
-			return this.indexedFoods[selectedFood.value];
+
+	preprocessSelectedFoods(){
+		let selectedFoods = this.state.selectedFoods.map(selectedFood => {
+			return FoodNutrientAmounts[selectedFood.value];
 		}, []);
+		console.log(selectedFoods)
+	}
+
+	render() {
+		const selectedFoods = this.preprocessSelectedFoods();
 
 		let dataVis = null;
 		if (selectedFoods.length > 0) {
@@ -181,7 +183,7 @@ export default class Food extends Component {
 					name="form-field-name"
 					value={this.state.selectedFoods}
 					onChange={this.handleSelectChange}
-					options={this.allSelectableFoods}
+					options={this.allSelectables}
 					joinValues
 					multi
 				/>

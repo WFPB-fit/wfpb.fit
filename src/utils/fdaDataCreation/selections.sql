@@ -1,8 +1,26 @@
 --get USDA SR28 SQLite info from https://github.com/alyssaq/usda-sqlite
 --upload, view, and query using https://sqliteonline.com/
 -- In general we want to present few, good choices to make selection easier on the web app. Users can look up full data at USDA/Google if they desire
-SELECT food.id,food.long_desc,food_group.name FROM food
-	inner join food_group on food_group.id=food.food_group_id
+
+-- Select All serving sizes
+-- SELECT food_id,gm_weight FROM  weight where weight.description=='serving';
+
+-- Select All nutrient names
+-- SELECT id,name FROM  nutrient;
+
+-- Select All nutrient units
+-- SELECT id,units FROM  nutrient;
+
+-- Find all interesting food and extract certain columns
+SELECT
+	food.id,
+	-- food.long_desc,
+	nutrition.amount,
+	nutrition.nutrient_id
+	-- food_group.name
+	FROM food
+	-- inner join food_group on food_group.id=food.food_group_id
+	inner join nutrition on food.id=nutrition.food_id
 	where
 	--------- EXCLUSION ---------
 	--------- TOTAL FOOD GROUP REMOVAL ---------
