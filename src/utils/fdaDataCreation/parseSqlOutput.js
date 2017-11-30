@@ -82,7 +82,7 @@ export default class ParseSqlOutput {
 			// "573", // "Vitamin E, added",
 			// "578", // "Vitamin B-12, added",
 			"319", // "Retinol",
-			"320", // "Vitamin A, RAE",
+			// "320", // "Vitamin A, RAE",
 			"321", // "Carotene, beta",
 			"322", // "Carotene, alpha",
 			"323", // "Vitamin E (alpha-tocopherol)",
