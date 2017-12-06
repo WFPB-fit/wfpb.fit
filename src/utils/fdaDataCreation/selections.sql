@@ -102,7 +102,7 @@ SELECT
 	--------- INCLUSION ---------
 	(
 		--------- SIMPLE ---------
-		LENGTH(long_desc) < 11 or --short named foods are hard to filter for in other metrics and can be popular
+		LENGTH(long_desc) < 16 or --short named foods are hard to filter for in other metrics and can be popular
 
 		--------- PLANTS ---------
 		(
