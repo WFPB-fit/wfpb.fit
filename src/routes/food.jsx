@@ -8,11 +8,11 @@ import {
 } from 'victory';
 import { getLink } from '../utils/GeneralUtils.jsx';
 
-// import FoodNutrientAmounts from '../assets/data/nutrition/parsed/amount.json';
-// import FoodNames from '../assets/data/nutrition/parsed/foodNames.json';
+import FoodData from '../assets/data/nutrition/foodData.json';
+import NutrientNames from '../assets/data/nutrientNames.json';
 
 export default class Food extends Component {
-	static getFoodNutrients(food, nutrientKey) { return food.nutrients[nutrientKey]; }
+	static getFoodNutrients(food, nutrientKey) { return food[nutrientKey]; }
 
 	constructor(props) {
 		super(props);
@@ -22,13 +22,12 @@ export default class Food extends Component {
 		this.preprocessSelectedFoods = this.preprocessSelectedFoods.bind(this);
 
 		//init vars
-		// this.allSelectables = Object.keys(FoodNames).map(id=>{
-		// 	return {value: id, name: FoodNames[id]};
-		// });
-		this.allSelectables = 0;
+		this.allSelectables = Object.keys(FoodData).map(id => {
+			return { value: id, label: FoodData[id].name };
+		});
 		this.state = {
 			selectedFoods: [this.allSelectables[0]]
-		}
+		};
 	}
 	handleSelectChange(value) {
 		this.setState({ selectedFoods: value });
@@ -129,35 +128,54 @@ export default class Food extends Component {
 		);
 	}
 
-	preprocessSelectedFoods(){
-		let selectedFoods = this.state.selectedFoods.map(selectedFood => {
-			// return FoodNutrientAmounts[selectedFood.value];
-			return 0
+	preprocessSelectedFoods() {
+		return this.state.selectedFoods.map(selectedFood => {
+			let foodData = FoodData[selectedFood.value];
+			let newFoodData = {};
+			//copy over meta data
+			newFoodData.name = foodData.name;
+			newFoodData.id = selectedFood.value;
+
+			//copy over nutrient amounts, substitute in real nutrient name for nutrient ID
+			for (const nGroupName of Object.keys(foodData.nutrients)) {
+				let nutrients = foodData.nutrients[nGroupName];
+				let renamedNutrients = Object.keys(nutrients).reduce((total, nId) => { //reindex by nutrient name instead of ID
+					const nName = NutrientNames[nId];
+					total[nName] = nutrients[nId];
+					return total;
+				}, {});
+				newFoodData[nGroupName] = renamedNutrients;
+			}
+			return newFoodData;
 		}, []);
-		console.log(selectedFoods)
 	}
 
 	render() {
 		const selectedFoods = this.preprocessSelectedFoods();
-
+		console.log(selectedFoods)
 		let dataVis = null;
-		if (selectedFoods.length > 0) {
+		if (selectedFoods.length > 0) { //At least one food is selected
 			const graphs = (<div>
-				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Energy", 'energy')}
-				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Micronutrients", 'misc')}
+				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Overview", 'overview')}
+				<p>SAFA = Saturated Fat, MUFA = Monounsaturated Fat, PUFA = Polyunsaturated Fat</p>
 				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Vitamins", 'vitamins')}
 				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Minerals", 'minerals')}
 				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Amino Acids", 'amino')}
+				{/* {this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Phytosterols", 'phytosterols')} */}
+
 			</div>);
+
+			//link to food sources
 			const sources = (
 				selectedFoods.map(food => {
 					return (
 						<li key={food.name}>
-							{getLink(food.src, food.name)}
+							{getLink(`https://ndb.nal.usda.gov/ndb/search/list?qlookup=${food.id}`, food.name)}
 						</li>
 					)
 				})
 			);
+
 			dataVis = (
 				<div>
 					{graphs}
@@ -171,7 +189,7 @@ export default class Food extends Component {
 					</ul>
 				</div>
 			);
-		} else {
+		} else { //no foods are selected
 			dataVis = (<div>
 				<p>Enter a tag in the search bar to display info</p>
 			</div>);
