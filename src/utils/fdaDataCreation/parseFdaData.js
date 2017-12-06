@@ -1,22 +1,16 @@
 import FoodIds from '../../assets/data/nutrition/foodIds.json';
-import { CustomNutrientNames, ImportantNutrients } from '../../assets/data/importantNutrients.js';
+import { CustomNutrientNames, ImportantNutrients, NutrientSummationReductions } from '../../assets/data/importantNutrients.js';
 // import ServingSizes from '../../assets/data/nutrition/servingSizes.json';
 import FdaApi from './FdaApi.js';
 
 export default class ParseFdaData {
-	static index(arr) {
-		return arr.reduce((total, curr) => {
-			const foodId = curr[0];
-			const val = curr[1];
-			total[foodId] = val;
-			return total;
-		}, {});
+	//get a specific nutrient from the FDA nutrient array
+	static getNutrientFromId(id, nutrients) {
+		const n = nutrients.filter(x => x.nutrient_id == id); //find the nutrient. use '==' as one may be string and other integer
+		return (n.length === 1) ? n[0] : null;
 	}
 
-	static cleanUpGroupNutrients(n) {
-
-	}
-
+	//extract important nutrients from the FDA API data
 	static getNutrients(fdaFood) {
 		let nutrients = {};
 		let groupNames = Object.keys(ImportantNutrients);
@@ -26,8 +20,8 @@ export default class ParseFdaData {
 			let groupNutrients = {};
 			//for each nutrient in this group, add its FDA value to return value
 			for (let nutrientId of ImportantNutrients[groupName]) {
-				const n = fdaFood.nutrients.filter(x => x.nutrient_id === nutrientId); //find the nutrient
-				if (n.length === 1) groupNutrients[nutrientId] = n[0].value;
+				const n = ParseFdaData.getNutrientFromId(nutrientId, fdaFood.nutrients);
+				if (n) groupNutrients[nutrientId] = n.value;
 			}
 			nutrients[groupName] = groupNutrients;
 		}
@@ -35,6 +29,7 @@ export default class ParseFdaData {
 		return nutrients;
 	}
 
+	//add each nutrient's name to the total nutrient name object
 	static addNutrientNames(food, nutrients) {
 		for (const n of food.nutrients) {
 			let name = n.name;
@@ -44,30 +39,52 @@ export default class ParseFdaData {
 		}
 	}
 
+	//sum nutrients are broken into multiple but are basically the same, ie tocopherols and tocotriols. Add all those ones together.
+	static preprocessNutrientsToSummations(fdaFoods) {
+		const nIds = Object.keys(NutrientSummationReductions);
+		for (const nId of nIds) {
+			for (const food of fdaFoods) {
+				const summationIds = NutrientSummationReductions[nId].concat(nId); //get all the nutrients needed in the sum, add the placeholders value too
+				let sum = 0;
+				for (const nutrientIdToSum of summationIds) { //iterate over each required summation nutrient, adding up its value
+					const n = ParseFdaData.getNutrientFromId(nutrientIdToSum, food.nutrients);
+					if (n) sum += n.value;
+				}
+
+				//if values were summed, set the placeholder's nutrient value to the total sum
+				if (sum > 0) {
+					const n = ParseFdaData.getNutrientFromId(nId, food.nutrients);
+					// console.log(nId,n.value,sum)
+					n.value = sum;
+				}
+			}
+		}
+	}
+
 	static async parse() {
-		// const servings = ParseSqlOutput.index(ServingSizes);
-		// const foods = ParseSqlOutput.index(FoodNames);
-		// const nUnits = ParseSqlOutput.index(NutrientUnits);
-		// const nutrients = ParseSqlOutput.index(NutrientNames);
-		// const amounts = ParseSqlOutput.processAmounts(Amt);
+		//get Food info from FDA API
 		const ids = FoodIds.map(x => x[0]);
 		const fdaFoods = await FdaApi.fetchFoodsInfo(ids);
-		let foods = [];
+		ParseFdaData.preprocessNutrientsToSummations(fdaFoods);
 		console.log(fdaFoods)
-		let nutrientNames = {};
+
 		//extract info from the foods API
+		let foods = {};
+		let nutrientNames = {};
 		for (const fdaFood of fdaFoods) {
 			let food = {};
 			ParseFdaData.addNutrientNames(fdaFood, nutrientNames);
 
+			const id = fdaFood.desc.ndbno;
 			food.name = fdaFood.desc.name;
 			food.nutrients = ParseFdaData.getNutrients(fdaFood);
-			foods.push(food);
+			foods[id] = food;
 		}
 		console.log(foods)
 		console.log(nutrientNames)
 
 
-		// console.log(JSON.stringify(nUnits)); //note this may add a " character to the beginning and end when printing to the console
+		console.log(JSON.stringify(foods)); //note this may add a " character to the beginning and end when printing to the console
+		console.log(JSON.stringify(nutrientNames)); //note this may add a " character to the beginning and end when printing to the console
 	}
 }

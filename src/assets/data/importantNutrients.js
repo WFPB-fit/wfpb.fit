@@ -96,6 +96,45 @@ export const ImportantNutrients = {
         431, // Folic acid,
         432, // Folate, food,
         // 435, // Folate, DFE
+    ],
+    Isoflavones: [
+        710, // Object { name: "Daidzein", group: "Isoflavones" }
+        711, // Object { name: "Genistein", group: "Isoflavones" }
+        712, // Object { name: "Glycitein", group: "Isoflavones" }
+        713, // Object { name: "Total isoflavones", group: "Isoflavones" }
+        714, // Object { name: "Biochanin A", group: "Isoflavones" }
+        715, // Object { name: "Formononetin", group: "Isoflavones" }
+        716, // Object { name: "Coumestrol", group: "Isoflavones" }        
+    ],
+    Anthocyanidins: [
+        731, // Object { name: "Cyanidin", group: "Anthocyanidins" }
+        740, // Object { name: "Petunidin", group: "Anthocyanidins" }
+        741, // Object { name: "Delphinidin", group: "Anthocyanidins" }
+        742, // Object { name: "Malvidin", group: "Anthocyanidins" }
+        743, // Object { name: "Pelargonidin", group: "Anthocyanidins" }
+        745, // Object { name: "Peonidin", group: "Anthocyanidins" }
+    ],
+    "Flavan-3-ols": [
+        734,// Total Proanthocyanidin     
+        749, // Object { name: "(+)-Catechin", group: "Flavan-3-ols" }
+        750, // Object { name: "(-)-Epigallocatechin", group: "Flavan-3-ols" }
+        751, // Object { name: "(-)-Epicatechin", group: "Flavan-3-ols" }
+        752, // Object { name: "(-)-Epicatechin 3-gallate", group: "Flavan-3-ols" }
+        753, // Object { name: "(-)-Epigallocatechin 3-gallate", group: "Flavan-3-ols" }
+        794, // Object { name: "(+)-Gallocatechin", group: "Flavan-3-ols" }
+    ],
+    Flavonols: [
+        785, // Object { name: "Isorhamnetin", group: "Flavonols" }
+        786, // Object { name: "Kaempferol", group: "Flavonols" }
+        788, // Object { name: "Myricetin", group: "Flavonols" }
+        789, // Object { name: "Quercetin", group: "Flavonols" }
+    ],
+    Flavanones: [
+        758, // Object { name: "Eriodictyol", group: "Flavanones" }
+        759, // Object { name: "Hesperetin", group: "Flavanones" }
+        762, // Object { name: "Naringenin", group: "Flavanones" }
+        770, // Object { name: "Apigenin", group: "Flavones" }
+        773, // Object { name: "Luteolin", group: "Flavones" }
     ]
 }
 
@@ -111,8 +150,32 @@ export const CustomNutrientNames = {
     631: "DPA", // 22:5 n-3 (DPA),
 
     401: "Vitamin C", // Vitamin C, total ascorbic acid,    
-    323: "Vitamin E", // Vitamin E (alpha-tocopherol),
+    323: "Vitamin E", // Tocopherols + Tocotrienols, not just Vitamin E (alpha-tocopherol),
     325: "Vitamin D2", // Vitamin D2 (ergocalciferol),
     326: "Vitamin D3", // Vitamin D3 (cholecalciferol),
+
+    119: "Proanthocyanidins",// Total Proanthocyanidin     
+
+}
+
+export const NutrientSummationReductions = {
+    // 323 Vitamin E (alpha-tocopherol),
+    // 341, // Tocopherol, beta,
+    // 342, // Tocopherol, gamma,
+    // 343, // Tocopherol, delta,
+    // 344, // Tocotrienol, alpha,
+    // 345, // Tocotrienol, beta,
+    // 346, // Tocotrienol, gamma,
+    // 347, // Tocotrienol, delta,
+
+    323: [341, 342, 343, 344, 345, 346, 347],
+
+    // // Total Proanthocyanidin
+    // 734: "Proanthocyanidin dimers"
+    // 735: "Proanthocyanidin trimers"
+    // 736: "Proanthocyanidin 4-6mers"
+    // 737: "Proanthocyanidin 7-10mers"
+    // 738: "Proanthocyanidin polymers (>10mers)"
+    734: [735, 736, 737, 738],
 
 }
