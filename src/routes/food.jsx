@@ -8,10 +8,8 @@ import {
 } from 'victory';
 import { getLink } from '../utils/GeneralUtils.jsx';
 
-import FoodNutrientAmounts from '../assets/data/nutrition/parsed/amount.json';
-import FoodNames from '../assets/data/nutrition/parsed/foodNames.json';
-import NutrientNames from '../assets/data/nutrition/parsed/nutrients.json';
-import ServingSizes from '../assets/data/nutrition/parsed/servingSizes.json';
+// import FoodNutrientAmounts from '../assets/data/nutrition/parsed/amount.json';
+// import FoodNames from '../assets/data/nutrition/parsed/foodNames.json';
 
 export default class Food extends Component {
 	static getFoodNutrients(food, nutrientKey) { return food.nutrients[nutrientKey]; }
@@ -24,9 +22,10 @@ export default class Food extends Component {
 		this.preprocessSelectedFoods = this.preprocessSelectedFoods.bind(this);
 
 		//init vars
-		this.allSelectables = Object.keys(FoodNames).map(id=>{
-			return {value: id, name: FoodNames[id]};
-		});
+		// this.allSelectables = Object.keys(FoodNames).map(id=>{
+		// 	return {value: id, name: FoodNames[id]};
+		// });
+		this.allSelectables = 0;
 		this.state = {
 			selectedFoods: [this.allSelectables[0]]
 		}
@@ -132,7 +131,8 @@ export default class Food extends Component {
 
 	preprocessSelectedFoods(){
 		let selectedFoods = this.state.selectedFoods.map(selectedFood => {
-			return FoodNutrientAmounts[selectedFood.value];
+			// return FoodNutrientAmounts[selectedFood.value];
+			return 0
 		}, []);
 		console.log(selectedFoods)
 	}

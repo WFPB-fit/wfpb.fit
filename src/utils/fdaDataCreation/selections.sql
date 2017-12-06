@@ -13,15 +13,18 @@
 
 -- Find all interesting food and extract certain columns
 SELECT
-	food.id,
 	-- food.long_desc,
-	nutrition.amount,
-	nutrition.nutrient_id
-	-- food_group.name
+	-- gm_weight
+	-- nutrition.amount,
+	-- nutrition.nutrient_id
+	-- food_group.name,
+	food.id
 	FROM food
 	-- inner join food_group on food_group.id=food.food_group_id
-	inner join nutrition on food.id=nutrition.food_id
+	-- inner join nutrition on food.id=nutrition.food_id
+	-- inner join weight on food.id=weight.food_id
 	where
+	-- weight.description like 'serving%' and 
 	--------- EXCLUSION ---------
 	--------- TOTAL FOOD GROUP REMOVAL ---------
 	(

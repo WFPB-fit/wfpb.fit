@@ -21,10 +21,8 @@ import 'react-select/dist/react-select.css';
 import 'react-virtualized/styles.css';
 import 'react-virtualized-select/styles.css';
 
-// import Parse from './utils/fdaDataCreation/parseSqlOutput';
-// Parse.parse();
-// import FdaData from './utils/FdaApi';
-// FdaData.getFullNutritionInfo();
+import Parse from './utils/fdaDataCreation/parseFdaData';
+Parse.parse();
 
 export default class App extends Component {
 	constructor(props) {
