@@ -11,6 +11,9 @@ import { getLink } from '../utils/GeneralUtils.jsx';
 import FoodData from '../assets/data/nutrition/foodData.json';
 import NutrientNames from '../assets/data/nutrientNames.json';
 
+// var FoodData = null;
+// var NutrientNames = null;
+
 export default class Food extends Component {
 	static getFoodNutrients(food, nutrientKey) { return food[nutrientKey]; }
 
