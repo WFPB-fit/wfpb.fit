@@ -22,12 +22,39 @@ export default class Food extends Component {
 		//bind functions
 		this.getVictoryData = this.getVictoryData.bind(this);
 		this.handleSelectChange = this.handleSelectChange.bind(this);
-		this.preprocessSelectedFoods = this.preprocessSelectedFoods.bind(this);
+
+		// preprocess foods
+		if (!window.globalAppData.foodData) {
+			window.globalAppData.foodData = Object.keys(FoodData).reduce((total, foodName) => {
+				let foodData = FoodData[foodName];
+				foodData.color = getRandomColor();
+
+				//copy over nutrient amounts, substitute in real nutrient name for nutrient ID
+				for (const nGroupName of Object.keys(foodData.nutrients)) {
+					let nutrients = foodData.nutrients[nGroupName];
+					//reindex by nutrient name instead of ID
+					let renamedNutrients = Object.keys(nutrients).reduce((total, nId) => {
+						const nName = NutrientNames[nId];
+						total[nName] = nutrients[nId];
+						return total;
+					}, {});
+					foodData[nGroupName] = renamedNutrients;
+				}
+
+				//add the preprocessed foods to the returned object
+				total[foodName] = foodData;
+				return total;
+			}, {});
+		}
+
+
 
 		//init vars
-		this.allSelectables = Object.keys(FoodData).map(id => {
-			return { value: id, label: FoodData[id].name };
-		});
+		this.allSelectables = Object.keys(window.globalAppData.foodData)
+			.map(id => {
+				return { value: id, label: window.globalAppData.foodData[id].name };
+			})
+			.sort((a, b) => { return a.label.localeCompare(b.label); });
 		this.state = {
 			selectedFoods: [this.allSelectables[0]]
 		};
@@ -131,25 +158,11 @@ export default class Food extends Component {
 		);
 	}
 
+	//foods are set up to index by nutrient id instead of nutrient name.
+	//index by name instead. Determine the color of lines to be used
 	preprocessSelectedFoods() {
 		return this.state.selectedFoods.map(selectedFood => {
-			let foodData = FoodData[selectedFood.value];
-			let newFoodData = {};
-			//copy over meta data
-			newFoodData.name = foodData.name;
-			newFoodData.id = selectedFood.value;
-
-			//copy over nutrient amounts, substitute in real nutrient name for nutrient ID
-			for (const nGroupName of Object.keys(foodData.nutrients)) {
-				let nutrients = foodData.nutrients[nGroupName];
-				let renamedNutrients = Object.keys(nutrients).reduce((total, nId) => { //reindex by nutrient name instead of ID
-					const nName = NutrientNames[nId];
-					total[nName] = nutrients[nId];
-					return total;
-				}, {});
-				newFoodData[nGroupName] = renamedNutrients;
-			}
-			return newFoodData;
+			return window.globalAppData.foodData[selectedFood.value];
 		}, []);
 	}
 
