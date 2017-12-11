@@ -34,7 +34,7 @@ export default class ParseFdaData {
 		for (const n of food.nutrients) {
 			let name = n.name;
 
-			if (n.nutrient_id in CustomNutrientNames) name = CustomNutrientNames[n.nutrient_id];
+			if (CustomNutrientNames.hasOwnProperty(n.nutrient_id)) name = CustomNutrientNames[n.nutrient_id];
 			nutrients[n.nutrient_id] = name;
 		}
 	}
