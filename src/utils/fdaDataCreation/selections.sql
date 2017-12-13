@@ -13,7 +13,7 @@
 
 -- Find all interesting food and extract certain columns
 SELECT
-	-- food.long_desc,
+	food.long_desc,
 	-- gm_weight
 	-- nutrition.amount,
 	-- nutrition.nutrient_id
@@ -39,18 +39,44 @@ SELECT
 	(
 		manufac_name is '' and --remove company specific food
 		long_desc not like '%by-product%' and --remove waste food
-		long_desc not like '%separable lean and fat%' and --most people cut off the pure fat from their steaks/meat, so we won't include it
-		long_desc not like '%imported%' and -- remove imported food
 		long_desc not like '%industrial%' and -- this is a consumer facing app
 		long_desc not like '%USDA Commodity%'
+	) and
+	--------- LOCATIONS ---------
+	(
+		long_desc not like '% style%' and --italian, spanish, etc
+		long_desc not like '%California%' and
+		long_desc not like '%Florida%' and
+		long_desc not like '%imported%'
 	) and
 	--------- PRESERVATIVES & ADDITIVES ---------
 	-- Currently, processed foods are given the benefit of the doubt. Only the best available ones are selected (without salt, with skin, etc), even though this is not what most consumers eat
 	(
+		long_desc not like '%, unspecified %' and
+		long_desc not like '%, with %' and
+		long_desc not like '%, made from %' and
+		long_desc not like '%, made with %' and
+		long_desc not like '%, canned with %' and
+		long_desc not like '% sweetened%' and
+		long_desc not like '% unsweetened%' and
+		long_desc not like '% enriched%' and
+		long_desc not like '%, powder%' and
+		long_desc not like '%, dried%' and
+		long_desc not like '%, acid,%' and
 		long_desc not like '%with salt%' and
+		long_desc not like '%, low%' and --fat,sodium,carbs, etc
+		long_desc not like '%reduced sodium%' and
+		long_desc not like '%fat-free%' and
+		long_desc not like '%fat only%' and
+		long_desc not like '%defatted%' and
+		long_desc not like '%low-fat%' and
+		long_desc not like '%reduced fat%' and
+		long_desc not like '%home recipe%' and
 		long_desc not like '%low moisture%' and
 		long_desc not like '%dehydrated%' and
+		long_desc not like '%, dry%' and
 		long_desc not like '%prepared with whole milk%' and
+		long_desc not like '%prepared from%' and
 		long_desc not like '% fortified%' and
 		long_desc not like '% lauric acid%' and
 		long_desc not like '% added%' and
@@ -66,8 +92,9 @@ SELECT
 	--------- RAW MEAT ---------
 	(
 		(
-			long_desc not like '% raw%' and -- is raw
-			long_desc not like '% uncooked%' and -- is raw
+			long_desc not like '% raw%' and
+			long_desc not like '% frozen%' and 
+			long_desc not like '% uncooked%' and 
 			( --is meat (not is plant)
 				food_group_id != 200 and --spices,herbs
 				food_group_id != 900 and --fruit
@@ -87,97 +114,52 @@ SELECT
 	) and
 	--------- COOKING METHODOLOGY ---------
 	(
+		long_desc not like '%, pan-browned%' and
+		long_desc not like '%, microwaved%' and
+		long_desc not like '%, homemade%' and
+		long_desc not like '% stewed%' and
+		long_desc not like '% unheated%' and
 		long_desc not like '% unprepared%' and
+		long_desc not like '% fried%' and
+		long_desc not like '% simmered%' and
+		long_desc not like '% rotisserie%' and
 		long_desc not like '%braised%' and
+		long_desc not like '%grilled%' and
+		long_desc not like '%broiled%' and
+		long_desc not like '% BBQ%' and
 		long_desc not like '%pan-broiled%'
 	) and
 	--------- MEAT TYPE ---------
 	(
+		long_desc not like '%, immitation%' and
+		long_desc not like '%, bone-in%' and
+		long_desc not like '% extra lean%' and
+		long_desc not like '%separable lean and fat%' and --most people cut off the pure fat from their steaks/meat, so we won't include it
+
+		-- long_desc not like '% leg%' and
+		long_desc not like '% thigh%' and
+		long_desc not like '% feet%' and
+		long_desc not like '% skin-only%' and
+		long_desc not like '%, back%' and
+		
 		long_desc not like '% select%' and
 		long_desc not like '% all grades%' and
 		long_desc not like '%light meat%' and
 		long_desc not like '%dark meat%' and
 		long_desc not like '%meat and skin%'
-	) and
-	--------- INCLUSION ---------
-	(
-		--------- SIMPLE ---------
-		LENGTH(long_desc) < 16 or --short named foods are hard to filter for in other metrics and can be popular
-
-		--------- PLANTS ---------
-		(
-			(
-				food_group_id == 200 or --spices,herbs
-				food_group_id == 900 or --fruit
-				food_group_id == 1100 or --veges
-				food_group_id == 1200 or --nuts,seeds
-				food_group_id == 1600 or --legumes
-				food_group_id == 2000    --grains
-			) and
-			long_desc like '% raw%' or
-			long_desc like '%frozen%'
-		) or
-
-		--------- MEATLESS ---------
-		(
-			long_desc like '%Vegetarian%' or --not sure on capitalization
-			long_desc like '%Vegan%' or
-			long_desc like '%Meatless%'
-		) or
-		--------- COOKING METHODOLOGY ---------
-		(
-			(--generally cooked
-				LENGTH(long_desc) <= 35 and
-				long_desc like '%cooked%' and
-				long_desc not like '%uncooked%'
-			) or
-			(long_desc like '%home%' and long_desc like '%prepared%') or -- home prepped
-			(-- unique cooking types
-				long_desc like '%grilled%' or
-				long_desc like '%roasted%' or
-				long_desc like '%broiled%' or
-				long_desc like '% BBQ%'
-			)
-		) or
-
-		--------- FOOD GROUPS ---------
-		(	--fruit + juice:
-			food_group_id == 900 and
-			( --canned type
-				long_desc like '%canned%' and
-				long_desc not like '%drained%' and
-				long_desc not like '%extra heavy syrup%' and
-				long_desc not like '%extra light syrup%' and
-				long_desc not like '%water pack%' and
-				long_desc not like '%juice pack%'
-			)
-		) or
-		-- (	--vegetable products:
-		-- 	food_group_id == 1100 and
-		-- ) or
-		(	--beef products:
-			food_group_id == 1300 and
-			long_desc like '% choice%' or -- meat type
-			long_desc like '%patty%' or
-			long_desc like '%patties%'
-		) or
-		( --legumes
-			food_group_id==1600 and
-			long_desc like '%flour%' or
-			long_desc like '%butter%' or
-			long_desc like '%yogurt%' or
-			long_desc like '%milk%' or
-			long_desc like '%tofu%' or
-			long_desc like '%soy%' or
-			long_desc like '%meat%' or
-			long_desc like '%burger%' or
-			long_desc like '%protein%' or
-			long_desc like '%chili%'
-		) or
-		--------- INDIVIDUAL IDS ---------
-		(
-			food.id == 16006 or --baked beans, canned, plain
-			food.id == 16403 --refried beans
-		)
-
+	) and 
+	--------- CANNED TYPE ---------
+	( 
+		long_desc not like '%drained%' and
+		long_desc not like '%, heavy syrup%' and
+		long_desc not like '%extra heavy syrup%' and
+		long_desc not like '%extra light syrup%' and
+		long_desc not like '%water pack%' and
+		-- long_desc not like '%, solid and liquids%' and
+		long_desc not like '%juice pack%'
+	) and 
+	--------- JUICE TYPE ---------
+	( 
+		long_desc not like '%frozen concentrate%' and
+		long_desc not like '%canned or bottled%'
 	)
