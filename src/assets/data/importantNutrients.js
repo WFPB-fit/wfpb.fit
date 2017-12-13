@@ -1,15 +1,17 @@
 export const ImportantNutrients = {
 	overview: [
 		203, //protein
-		291, //fiber, total dietary
+		204, //total fat
 		205, //carbohydrates by difference
+		291, //fiber, total dietary
+		601, // Cholesterol,        
+	],
+	fats: [
 		605, //Fatty acids, total trans,
 		606, //Fatty acids, total saturated,
 		645, //Fatty acids, total monounsaturated,
 		646, //Fatty acids, total polyunsaturated,
-		601, // Cholesterol,        
-	],
-	omega3: [
+		//omega 3's
 		851, // 18:3 n-3 c,c,c (ALA)
 		621, // 22:6 n-3 (DHA),
 		629, // 20:5 n-3 (EPA),
@@ -161,8 +163,8 @@ export const CustomNutrientNames = {
 	323: "Vitamin E", // Tocopherols + Tocotrienols, not just Vitamin E (alpha-tocopherol),
 	325: "Vitamin D2", // Vitamin D2 (ergocalciferol),
 	326: "Vitamin D3", // Vitamin D3 (cholecalciferol),
-    432: "Folate", // Folate, food,
-    
+	432: "Folate", // Folate, food,
+
 	119: "Proanthocyanidins", // Total Proanthocyanidin     
 
 }
@@ -186,5 +188,13 @@ export const NutrientSummationReductions = {
 	// 737: "Proanthocyanidin 7-10mers"
 	// 738: "Proanthocyanidin polymers (>10mers)"
 	734: [735, 736, 737, 738],
-
 }
+
+/*
+The nine amino acids humans cannot synthesize are phenylalanine, valine, threonine, tryptophan, methionine, leucine, isoleucine, lysine, and histidine (i.e., F V T W M L I K H).[1][2]
+
+Six other amino acids are considered conditionally essential in the human diet, meaning their synthesis can be limited under special pathophysiological conditions, such as prematurity in the infant or individuals in severe catabolic distress.[2] These six are arginine, cysteine, glycine, glutamine, proline, and tyrosine (i.e., R C G Q P Y). Five amino acids are dispensable in humans, meaning they can be synthesized in the body. These five are alanine, aspartic acid, asparagine, glutamic acid and serine (i.e., A D N E S).[2]
+*/
+export const EssentialAminoAcids = [
+
+]

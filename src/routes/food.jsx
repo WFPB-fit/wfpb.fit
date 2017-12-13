@@ -15,13 +15,14 @@ import NutrientNames from '../assets/data/nutrientNames.json';
 // var NutrientNames = null;
 
 export default class Food extends Component {
-	static getFoodNutrients(food, nutrientKey) { return food[nutrientKey]; }
+	static getFoodNutrients(food, nutrientKey) { return food.nutrients[nutrientKey]; }
 
 	constructor(props) {
 		super(props);
 		//bind functions
 		this.getVictoryData = this.getVictoryData.bind(this);
 		this.handleSelectChange = this.handleSelectChange.bind(this);
+		this.getRelativeAminoAcids = this.getRelativeAminoAcids.bind(this);
 
 		// preprocess foods
 		if (!window.globalAppData.foodData) {
@@ -38,7 +39,7 @@ export default class Food extends Component {
 						total[nName] = nutrients[nId];
 						return total;
 					}, {});
-					foodData[nGroupName] = renamedNutrients;
+					foodData.nutrients[nGroupName] = renamedNutrients;
 				}
 
 				//add the preprocessed foods to the returned object
@@ -75,13 +76,15 @@ export default class Food extends Component {
 	}
 
 	static getVictoryTooltipLabel(d) {
-		let unit = 'Grams';
 		let val = d.y;
-		if (val !== 0) {
+		const formattedVal = Number(val.toFixed(2));
+		let unit = d.yLabel;
+
+		if (!unit) {
 			if (d.y < 1e-3) { val *= 1e6; unit = 'MicroGrams'; }
 			else if (d.y < 1) { val *= 1e3; unit = 'MilliGrams'; }
+			else { unit = 'Grams'; }
 		}
-		const formattedVal = Number(val.toFixed(2));
 		return `${d.name}: \n${d.x}: ${formattedVal} ${unit}`
 	}
 
@@ -162,8 +165,24 @@ export default class Food extends Component {
 	//index by name instead. Determine the color of lines to be used
 	preprocessSelectedFoods() {
 		return this.state.selectedFoods.map(selectedFood => {
-			return window.globalAppData.foodData[selectedFood.value];
+			let food = window.globalAppData.foodData[selectedFood.value];
+			food.nutrients.relativeAmino = this.getRelativeAminoAcids(food);
+			return food;
 		}, []);
+	}
+
+	getRelativeAminoAcids(food) {
+		let relAmino = {};
+		const totalAmino = Object.values(food.nutrients.amino).reduce((a, b) => { return a + b }, 0);
+
+		if (totalAmino > 0) {
+			for (const key of Object.keys(food.nutrients.amino)) {
+				relAmino[key] = food.nutrients.amino[key] / totalAmino;
+				relAmino[key] *= 100; //in %
+			}
+		}
+		
+		return relAmino;
 	}
 
 	render() {
@@ -177,6 +196,7 @@ export default class Food extends Component {
 				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Vitamins", 'vitamins')}
 				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Minerals", 'minerals')}
 				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Amino Acids", 'amino')}
+				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Relative Amino Acids", 'relativeAmino')}
 				{/* {this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Phytosterols", 'phytosterols')} */}
 
 			</div>);
