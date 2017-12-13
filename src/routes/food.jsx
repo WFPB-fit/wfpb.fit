@@ -2,25 +2,19 @@ import React, { Component } from 'react';
 
 import { titleize, getRandomColor } from '../utils/GeneralUtils.jsx';
 import VirtualizedSelect from 'react-virtualized-select'
-import {
-	VictoryChart, VictoryAxis, VictoryLegend, VictoryLabel,
-	VictoryTooltip, VictoryLine, createContainer
-} from 'victory';
 import { getLink } from '../utils/GeneralUtils.jsx';
 
 import FoodData from '../assets/data/nutrition/foodData.json';
 import NutrientNames from '../assets/data/nutrientNames.json';
+import NutrientGraph from '../components/nutrientGraph.jsx';
 
 // var FoodData = null;
 // var NutrientNames = null;
 
 export default class Food extends Component {
-	static getFoodNutrients(food, nutrientKey) { return food.nutrients[nutrientKey]; }
-
 	constructor(props) {
 		super(props);
 		//bind functions
-		this.getVictoryData = this.getVictoryData.bind(this);
 		this.handleSelectChange = this.handleSelectChange.bind(this);
 		// this.getRelativeAminoAcids = this.getRelativeAminoAcids.bind(this);
 
@@ -69,120 +63,14 @@ export default class Food extends Component {
 		return alphaOptions;
 	}
 
-	getVictoryData(foodData, name, color) {
-		return Object.keys(foodData).map(key => {
-			return { x: key, y: foodData[key], name: name, color: color };
-		});
-	}
-
-	static getVictoryTooltipLabel(d) {
-		let val = Number(d.y);
-		let unit = d.yLabel;
-
-		if (!unit) {
-			if (d.y < 1e-3) { val *= 1e6; unit = 'MicroGrams'; }
-			else if (d.y < 1) { val *= 1e3; unit = 'MilliGrams'; }
-			else { unit = 'Grams'; }
-		}
-		return `${d.name}: \n${d.x}: ${val.toFixed(1)} ${unit}`
-	}
-
-	createVictoryLineChart(selectedFoods, getNutrients, title, nutrientDataKey, w = 200, h = 200) {
-		const selectDataColor = function (d, active) { return d.color; };
-		const axisStyle = {
-			ticks: { stroke: "grey", size: 3 },
-			tickLabels: { fontSize: 5, padding: 1 },
-		};
-		let xAxisStyle = Object.assign({}, axisStyle);
-		xAxisStyle.tickLabels.textAnchor = 'start';
-		xAxisStyle.tickLabels.angle = 45;
-
-		const lines = selectedFoods.map(food => {
-			return (
-				<VictoryLine
-					key={food.name}
-					data={this.getVictoryData(getNutrients(food, nutrientDataKey), food.name, food.color)}
-					style={{
-						data: {
-							stroke: food.color,
-							strokeWidth: (d, active) => { return active ? 2 : 1; }
-						}
-					}}
-				/>
-			)
-		});
-
-		const VictoryZoomVoronoiContainer = createContainer("zoom", "voronoi");
-
-		return (
-			<VictoryChart height={h} width={w}
-				domainPadding={{ y: 10 }}
-				padding={{ bottom: 50, left: 20, right: 20, top: 10 }}
-				containerComponent={
-					//setup tool tip
-					<VictoryZoomVoronoiContainer
-						dimension="x"
-						labels={Food.getVictoryTooltipLabel}
-						labelComponent={
-							<VictoryTooltip
-								style={{
-									fontSize: 4,
-									padding: 2
-								}}
-								cornerRadius={5}
-								flyoutStyle={{ fill: "white" }}
-							/>}
-					/>
-				}
-			>
-				<VictoryLabel
-					x={w / 2} y={10}
-					text={title}
-					textAnchor='middle'
-				/>
-				<VictoryAxis independentAxis
-					style={axisStyle}
-				/>
-				<VictoryAxis dependentAxis
-					style={xAxisStyle}
-				/>
-				<VictoryLegend x={w * 0.7} y={20}
-					orientation="vertical"
-					gutter={5}
-					style={{
-						labels: { fontSize: 4 },
-						data: { stroke: selectDataColor, fill: selectDataColor }
-					}}
-					data={selectedFoods}
-				/>
-				{lines}
-			</VictoryChart>
-		);
-	}
-
 	//foods are set up to index by nutrient id instead of nutrient name.
 	//index by name instead. Determine the color of lines to be used
 	preprocessSelectedFoods() {
 		return this.state.selectedFoods.map(selectedFood => {
 			let food = window.globalAppData.foodData[selectedFood.value];
-			// food.nutrients.relativeAmino = this.getRelativeAminoAcids(food);
 			return food;
 		}, []);
 	}
-
-	// getRelativeAminoAcids(food) {
-	// 	let relAmino = {};
-	// 	const totalAmino = Object.values(food.nutrients.amino).reduce((a, b) => { return a + b }, 0);
-
-	// 	if (totalAmino > 0) {
-	// 		for (const key of Object.keys(food.nutrients.amino)) {
-	// 			relAmino[key] = food.nutrients.amino[key] / totalAmino;
-	// 			relAmino[key] *= 100; //in %
-	// 		}
-	// 	}
-		
-	// 	return relAmino;
-	// }
 
 	render() {
 		const selectedFoods = this.preprocessSelectedFoods();
@@ -190,15 +78,32 @@ export default class Food extends Component {
 		let dataVis = null;
 		if (selectedFoods.length > 0) { //At least one food is selected
 			const graphs = (<div>
-				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Overview", 'overview')}
-				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Fats", 'fats')}
+				<NutrientGraph
+					selectedFoods={selectedFoods}
+					title="Overview"
+					nutrientDataKey="overview"
+				/>
+				<NutrientGraph
+					selectedFoods={selectedFoods}
+					title="Fats"
+					nutrientDataKey="fats"
+				/>
 				<p>SAFA = Saturated Fat, MUFA = Monounsaturated Fat, PUFA = Polyunsaturated Fat</p>
-				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Vitamins", 'vitamins')}
-				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Minerals", 'minerals')}
-				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Amino Acids", 'amino')}
-				{/* {this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Relative Amino Acids", 'relativeAmino')} */}
-				{/* {this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Phytosterols", 'phytosterols')} */}
-
+				<NutrientGraph
+					selectedFoods={selectedFoods}
+					title="Vitamins"
+					nutrientDataKey="vitamins"
+				/>
+				<NutrientGraph
+					selectedFoods={selectedFoods}
+					title="Minerals"
+					nutrientDataKey="minerals"
+				/>
+				<NutrientGraph
+					selectedFoods={selectedFoods}
+					title="Amino Acids"
+					nutrientDataKey="amino"
+				/>
 			</div>);
 
 			//link to food sources
