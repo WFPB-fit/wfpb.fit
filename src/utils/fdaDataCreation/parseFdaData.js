@@ -1,4 +1,5 @@
 import FoodIds from '../../assets/data/nutrition/foodIds.json';
+import FoodData from '../../assets/data/nutrition/foodData.json';
 import { CustomNutrientNames, ImportantNutrients, NutrientSummationReductions } from '../../assets/data/importantNutrients.js';
 // import ServingSizes from '../../assets/data/nutrition/servingSizes.json';
 import FdaApi from './FdaApi.js';
@@ -21,7 +22,14 @@ export default class ParseFdaData {
 			//for each nutrient in this group, add its FDA value to return value
 			for (let nutrientId of ImportantNutrients[groupName]) {
 				const n = ParseFdaData.getNutrientFromId(nutrientId, fdaFood.nutrients);
-				if (n) groupNutrients[nutrientId] = n.value;
+				if (n && n.value) {
+					let val = n.value;
+					if (n.unit === 'µg') val *= 1e-6;
+					else if (n.unit === 'mg') val *= 1e-3;
+
+					const formatted = Number(val.toPrecision(4));
+					groupNutrients[nutrientId] = formatted;
+				}
 			}
 			nutrients[groupName] = groupNutrients;
 		}

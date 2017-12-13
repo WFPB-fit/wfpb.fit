@@ -11,6 +11,7 @@ export const ImportantNutrients = {
 		606, //Fatty acids, total saturated,
 		645, //Fatty acids, total monounsaturated,
 		646, //Fatty acids, total polyunsaturated,
+		
 		//omega 3's
 		851, // 18:3 n-3 c,c,c (ALA)
 		621, // 22:6 n-3 (DHA),

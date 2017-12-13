@@ -22,7 +22,7 @@ export default class Food extends Component {
 		//bind functions
 		this.getVictoryData = this.getVictoryData.bind(this);
 		this.handleSelectChange = this.handleSelectChange.bind(this);
-		this.getRelativeAminoAcids = this.getRelativeAminoAcids.bind(this);
+		// this.getRelativeAminoAcids = this.getRelativeAminoAcids.bind(this);
 
 		// preprocess foods
 		if (!window.globalAppData.foodData) {
@@ -76,8 +76,7 @@ export default class Food extends Component {
 	}
 
 	static getVictoryTooltipLabel(d) {
-		let val = d.y;
-		const formattedVal = Number(val.toFixed(2));
+		let val = Number(d.y);
 		let unit = d.yLabel;
 
 		if (!unit) {
@@ -85,7 +84,7 @@ export default class Food extends Component {
 			else if (d.y < 1) { val *= 1e3; unit = 'MilliGrams'; }
 			else { unit = 'Grams'; }
 		}
-		return `${d.name}: \n${d.x}: ${formattedVal} ${unit}`
+		return `${d.name}: \n${d.x}: ${val.toFixed(1)} ${unit}`
 	}
 
 	createVictoryLineChart(selectedFoods, getNutrients, title, nutrientDataKey, w = 200, h = 200) {
@@ -118,7 +117,7 @@ export default class Food extends Component {
 		return (
 			<VictoryChart height={h} width={w}
 				domainPadding={{ y: 10 }}
-				padding={{ bottom: 50, left: 30, right: 10, top: 10 }}
+				padding={{ bottom: 50, left: 20, right: 20, top: 10 }}
 				containerComponent={
 					//setup tool tip
 					<VictoryZoomVoronoiContainer
@@ -166,24 +165,24 @@ export default class Food extends Component {
 	preprocessSelectedFoods() {
 		return this.state.selectedFoods.map(selectedFood => {
 			let food = window.globalAppData.foodData[selectedFood.value];
-			food.nutrients.relativeAmino = this.getRelativeAminoAcids(food);
+			// food.nutrients.relativeAmino = this.getRelativeAminoAcids(food);
 			return food;
 		}, []);
 	}
 
-	getRelativeAminoAcids(food) {
-		let relAmino = {};
-		const totalAmino = Object.values(food.nutrients.amino).reduce((a, b) => { return a + b }, 0);
+	// getRelativeAminoAcids(food) {
+	// 	let relAmino = {};
+	// 	const totalAmino = Object.values(food.nutrients.amino).reduce((a, b) => { return a + b }, 0);
 
-		if (totalAmino > 0) {
-			for (const key of Object.keys(food.nutrients.amino)) {
-				relAmino[key] = food.nutrients.amino[key] / totalAmino;
-				relAmino[key] *= 100; //in %
-			}
-		}
+	// 	if (totalAmino > 0) {
+	// 		for (const key of Object.keys(food.nutrients.amino)) {
+	// 			relAmino[key] = food.nutrients.amino[key] / totalAmino;
+	// 			relAmino[key] *= 100; //in %
+	// 		}
+	// 	}
 		
-		return relAmino;
-	}
+	// 	return relAmino;
+	// }
 
 	render() {
 		const selectedFoods = this.preprocessSelectedFoods();
@@ -192,11 +191,12 @@ export default class Food extends Component {
 		if (selectedFoods.length > 0) { //At least one food is selected
 			const graphs = (<div>
 				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Overview", 'overview')}
+				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Fats", 'fats')}
 				<p>SAFA = Saturated Fat, MUFA = Monounsaturated Fat, PUFA = Polyunsaturated Fat</p>
 				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Vitamins", 'vitamins')}
 				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Minerals", 'minerals')}
 				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Amino Acids", 'amino')}
-				{this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Relative Amino Acids", 'relativeAmino')}
+				{/* {this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Relative Amino Acids", 'relativeAmino')} */}
 				{/* {this.createVictoryLineChart(selectedFoods, Food.getFoodNutrients, "Phytosterols", 'phytosterols')} */}
 
 			</div>);

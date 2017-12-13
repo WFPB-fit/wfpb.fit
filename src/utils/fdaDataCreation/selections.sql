@@ -64,6 +64,7 @@ SELECT
 		long_desc not like '%, dried%' and
 		long_desc not like '%, acid,%' and
 		long_desc not like '%with salt%' and
+		long_desc not like '%, salted%' and
 		long_desc not like '%, low%' and --fat,sodium,carbs, etc
 		long_desc not like '%reduced sodium%' and
 		long_desc not like '%fat-free%' and
@@ -96,20 +97,18 @@ SELECT
 			long_desc not like '% frozen%' and 
 			long_desc not like '% uncooked%' and 
 			( --is meat (not is plant)
-				food_group_id != 200 and --spices,herbs
-				food_group_id != 900 and --fruit
-				food_group_id != 1100 and --veges
-				food_group_id != 1200 and --nuts,seeds
-				food_group_id != 1600 and --legumes
-				food_group_id != 2000    --grains
+				food_group_id == 500 and --poultry
+				food_group_id == 1000 and --pork
+				food_group_id == 1300 and --beef
+				-- food_group_id == 1500 and --fish
+				food_group_id == 1700 --lamb,veal,game
 			)
-		) or ( --is plant
-				food_group_id == 200 or --spices,herbs
-				food_group_id == 900 or --fruit
-				food_group_id == 1100 or --veges
-				food_group_id == 1200 or --nuts,seeds
-				food_group_id == 1600 or --legumes
-				food_group_id == 2000    --grains
+		) or ( --is not meat
+				food_group_id != 500 and --poultry
+				food_group_id != 1000 and --pork
+				food_group_id != 1300 and --beef
+				-- food_group_id != 1500 and --fish
+				food_group_id != 1700 --lamb,veal,game
 		)
 	) and
 	--------- COOKING METHODOLOGY ---------
