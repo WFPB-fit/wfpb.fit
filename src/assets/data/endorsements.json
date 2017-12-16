@@ -1,60 +1,130 @@
 {
 	"doctors": [{
+		"name": "Michael Greger",
+		"books": "https://www.amazon.com/Michael-Greger/e/B001K892OG",
+		"profile_img": "/imgs/people/doctors/gregor.jpg",
+		"summary": "American physician, author, and professional speaker on public health issues, particularly the benefits of a whole foods, plant-based, healthy diet and the harms of eating animal products.",
+		"website": "https://nutritionfacts.org/"
+	}, {
+		"name": "Joel Fuhrman",
+		"books": "https://www.amazon.com/Joel-Fuhrman/e/B001ILFMKI/ref=sr_ntt_srch_lnk_1?qid=1513444375&sr=8-1",
+		"profile_img": "/imgs/people/doctors/fuhrman.jpg",
+		"summary": "Joel Fuhrman, M.D. is a board-certified family physician, six-time New York Times best-selling author and internationally recognized expert on nutrition and natural healing, who specializes in preventing and reversing disease through nutritional methods. Dr. Fuhrman is the President of the Nutritional Research Foundation. ",
+		"website": "https://www.drfuhrman.com/"
+	}, {
 		"name": "T. Colin Campbell",
 		"books": "https://www.amazon.com/T.-Colin-Campbell/e/B001K7QPBA",
 		"website": "http://nutritionstudies.org/",
+		"profile_img": "/imgs/people/doctors/campbell.jpg",
 		"summary": "American biochemist who specializes in the effect of nutrition on long-term health. He is the Jacob Gould Schurman Professor Emeritus of Nutritional Biochemistry at Cornell University."
 	}, {
-		"name": "Michael Greger",
-		"books": "https://www.amazon.com/Michael-Greger/e/B001K892OG",
-		"summary": "American physician, author, and professional speaker on public health issues, particularly the benefits of a whole foods, plant-based, healthy diet and the harms of eating animal products.",
-		"website": "https://www.drmcdougall.com/"
+		"name": "Garth Davis",
+		"books": "https://www.amazon.com/Proteinaholic-Obsession-Meat-Killing-About/dp/0062279319/ref=sr_1_1?s=books&ie=UTF8&qid=1513444674&sr=1-1",
+		"website": "https://www.thedavisclinic.com/dr-garth-davis.html",
+		"profile_img": "/imgs/people/doctors/davis.jpg",
+		"summary": "Dr. Davis graduated Phi Beta Kappa from the University of Texas in Austin where he was the Student Government President. Dr. Davis completed his surgical residency at the prestigious University of Michigan in Ann Arbor where he was elected to the position of Chief Administrative Resident. He is certified by the American Board of Surgery and is a Fellow of the American College of Surgeons and a Fellow of the American Society for Metabolic and Bariatric Surgery. "
+	}, {
+		"name": "Neal Barnard",
+		"books": "https://www.amazon.com/Neal%20D.%20Barnard/e/B001ILHHG0/ref=la_B001ILHHG0_pg_3?rh=n%3A283155%2Cp_82%3AB001ILHHG0&page=3&sort=author-pages-popularity-rank&ie=UTF8&qid=1510798053",
+		"profile_img": "/imgs/people/doctors/barnard.jpg",
+		"summary": "American author, clinical researcher, and founding president of the Physicians Committee for Responsible Medicine. ",
+		"website": "https://www.pcrm.org/media/experts/neal-barnard"
+	}, {
+		"name": "Caldwell Esselstyn",
+		"books": "https://www.amazon.com/s/ref=dp_byline_sr_book_1?ie=UTF8&text=Caldwell+B.+Esselstyn+Jr.&search-alias=books&field-author=Caldwell+B.+Esselstyn+Jr.&sort=relevancerank",
+		"profile_img": "/imgs/people/doctors/esselstyn.jpg",
+		"summary": "Caldwell B. Esselstyn, Jr., received his B.A. from Yale University and his M.D. from Western Reserve University. In 1956, pulling the No. 6 oar as a member of the victorious United States rowing team, he was awarded a gold medal at the Olympic Games. Dr. Esselstyn has been associated with the Cleveland Clinic since 1968. In 1991, Dr. Esselstyn served as President of the American Association of Endocrine Surgeons. His scientific publications number over 150, “The Best Doctors in America” 1994-1995 published by Woodward and White cites Dr. Esselstyn’s surgical expertise in the categories of endocrine and breast disease. In 1995 he published his bench mark long-term nutritional research arresting and reversing coronary artery disease in severely ill patients. ",
+		"website": "http://www.dresselstyn.com"
 	}, {
 		"name": "Michael Klaper",
 		"books": "https://www.amazon.com/Michael-Klaper/e/B00J4R7ZEE",
+		"profile_img": "/imgs/people/doctors/klaper.jpg",
 		"summary": "American physician, author, and veganism advocate",
 		"website": "https://doctorklaper.com/"
 	}, {
 		"name": "Terry Shintani",
 		"books": "https://www.amazon.com/s/ref=dp_byline_sr_book_1?ie=UTF8&text=Terry+Shintani&search-alias=books&field-author=Terry+Shintani&sort=relevancerank",
+		"profile_img": "/imgs/people/doctors/shintani.jpg",
 		"summary": "American physician, attorney, nutritionist, professor, author, lecturer, radio show host and community advocate in Hawaii. ",
 		"website": "http://www.drshintani.com/about"
 	}, {
-		"name": "Gabriel Cousens",
-		"books": "https://www.amazon.com/Gabriel-Cousens/e/B000APJBV4/ref=sr_ntt_srch_lnk_5?qid=1510798776&sr=1-5",
-		"summary": "Gabriel Cousens is an American physician M.D., homeopath, and spiritual writer who practices holistic medicine.",
-		"website": "http://treeoflifecenterus.com/"
-	}, {
-		"name": "Herbert M. Shelton",
-		"books": "https://www.amazon.com/Gabriel-Cousens/e/B000APJBV4/ref=sr_ntt_srch_lnk_5?qid=1510798776&sr=1-5",
-		"summary": " American naturopath, alternative medicine advocate, author, pacifist, vegetarian, and a supporter of rawism and fasting. Shelton was nominated by the American Vegetarian Party to run as its candidate for President of the United States in 1956.",
-		"website": "https://en.wikipedia.org/wiki/Herbert_M._Shelton"
-	}, {
-		"name": "Milton Mills",
-		"summary": "Critical Care Physician, Inova Fairfax Hospital - Member of the Board of Directors, Plant-based Prevention Of Disease, Inc."
-	}, {
-		"name": "Kim A. Williams Sr.",
-		"summary": "American cardiologist. He is a Fellow of the American College of Cardiology and served as its president 2015–2016. He is currently a trustee of the organization."
-	}, {
 		"name": "Dean Ornish",
 		"books": "https://www.amazon.com/Dean-Ornish-MD/e/B000APT53I",
+		"profile_img": "/imgs/people/doctors/ornish.jpg",
 		"summary": "American physician and researcher. He is the president and founder of the nonprofit Preventive Medicine Research Institute in Sausalito, California and a Clinical Professor of Medicine at the University of California, San Francisco. ",
 		"website": "https://www.ornish.com/"
 	}, {
 		"name": "Joel Kahn",
 		"books": "https://www.amazon.com/Joel-K.-Kahn-MD/e/B00QODW9VU",
-		"summary":"Dr. Kahn is a Clinical Professor of Medicine at Wayne State University School of Medicine and Director of Cardiac Wellness, Michigan Healthcare Professionals PC. He is a graduate Summa Cum Laude of the University of Michigan School of Medicine. He lectures widely on the cardiac benefits of vegan nutrition, mind body practices and heart attack prevention. He writes blogs for MindBodyGreen, OneGreenPlanet, Aloha.com, and Forksoverknives.com. He also writes for Readers Digest Magazine as the Holistic Heart Doc and his first book, The Whole Heart Solution.",
+		"profile_img": "/imgs/people/doctors/kahn.jpg",
+		"summary": "Dr. Kahn is a Clinical Professor of Medicine at Wayne State University School of Medicine and Director of Cardiac Wellness, Michigan Healthcare Professionals PC. He is a graduate Summa Cum Laude of the University of Michigan School of Medicine. He lectures widely on the cardiac benefits of vegan nutrition, mind body practices and heart attack prevention. He writes blogs for MindBodyGreen, OneGreenPlanet, Aloha.com, and Forksoverknives.com. He also writes for Readers Digest Magazine as the Holistic Heart Doc and his first book, The Whole Heart Solution.",
 		"website": "https://drjoelkahn.com/"
 	}, {
 		"name": "John A. McDougall",
 		"books": "https://www.amazon.com/John-A.-McDougall/e/B001IZVGHW",
-		"summary": "American physician and author",
+		"profile_img": "/imgs/people/doctors/mcdougall.jpg",
+		"summary": "A graduate of Michigan State University’s College of Human Medicine, Dr. McDougall performed his internship at Queen’s Medical Center in Honolulu, Hawaii, and his medical residency at the University of Hawaii. He is certified as an internist by the Board of Internal Medicine and the National Board of Medical Examiners.  He and Mary are also the authors of several nationally best-selling books as well as the co-founders of Dr. McDougall’s Right Foods, which produces high quality vegetarian cuisine to make it easier for people to eat well on the go.",
 		"website": "https://www.drmcdougall.com/"
+	}],
+	"organizations": [{
+		"name": "Harvard Medical School",
+		"icon": "/imgs/orgs/harvard.svg",
+		"quote": "Traditionally, research into vegetarianism focused mainly on potential nutritional deficiencies, but in recent years, the pendulum has swung the other way, and studies are confirming the health benefits of meat-free eating. Nowadays, plant-based eating is recognized as not only nutritionally sufficient but also as a way to reduce the risk for many chronic illnesses. ",
+		"website": "https://www.health.harvard.edu/staying-healthy/becoming-a-vegetarian"
 	}, {
-		"name": "Neal Barnard",
-		"books": "https://www.amazon.com/Neal%20D.%20Barnard/e/B001ILHHG0/ref=la_B001ILHHG0_pg_3?rh=n%3A283155%2Cp_82%3AB001ILHHG0&page=3&sort=author-pages-popularity-rank&ie=UTF8&qid=1510798053",
-		"summary": "American author, clinical researcher, and founding president of the Physicians Committee for Responsible Medicine. ",
-		"website": "https://www.pcrm.org/media/experts/neal-barnard"
+		"name": "Academy of Nutrition and Dietetics",
+		"icon": "/imgs/orgs/academyNutritionAndDietetics.jpg",
+		"quote": "It is the position of the Academy of Nutrition and Dietetics that appropriately planned vegetarian, including vegan, diets are healthful, nutritionally adequate, and may provide health benefits for the prevention and treatment of certain diseases. These diets are appropriate for all stages of the life cycle, including pregnancy, lactation, infancy, childhood, adolescence, older adulthood, and for athletes.",
+		"pdf": "https://www.andeal.org/vault/2440/web/JADA_VEG.pdf",
+		"website": "http://www.eatright.org/"
+	}, {
+		"name": "British Dietetic Association",
+		"icon": "/imgs/orgs/bda.png",
+		"quote": "Well planned vegetarian diets can be nutritious and healthy. They are associated with lower risks of heart disease, high blood pressure, Type 2 diabetes, obesity, certain cancers and lower cholesterol levels. ",
+		"pdf": "https://www.bda.uk.com/foodfacts/vegetarianfoodfacts.pdf",
+		"website": "http://www.eatright.org/"
+	}, {
+		"name": "Dietitians Of Canada",
+		"icon": "/imgs/orgs/canada.jpg",
+		"quote": "A healthy vegan diet has many health benefits including lower rates of obesity, heart disease, high blood pressure, high blood cholesterol, type 2 diabetes and certain types of cancer. ",
+		"pdf": "https://www.dietitians.ca/Downloads/Factsheets/Guidlines-for-Vegans.aspx",
+		"website": "https://www.dietitians.ca/"
+	}, {
+		"name": "The British Nutrition Foundation",
+		"icon": "/imgs/orgs/BNF_LOGO.png",
+		"quote": "Well planned vegetarian and vegan diets can be nutritious and healthy",
+		"website": "https://www.nutrition.org.uk/index.php?option=com_content&view=article&id=725:vegan-and-vegetarian-sp-446&catid=63&Itemid=480&showall=1&limitstart="
+	}, {
+		"name": "The Dietitians Association of Australia",
+		"icon": "/imgs/orgs/diet_aus.svg",
+		"quote": "Vegan diets are a type of vegetarian diet, where only plant-based foods are eaten. With good planning, those following a vegan diet can cover all their nutrient bases",
+		"website": "https://daa.asn.au/smart-eating-for-you/smart-eating-fast-facts/healthy-eating/vegan-diets-facts-tips-and-considerations/"
+	}, {
+		"name": "USDA",
+		"icon": "/imgs/orgs/usda.svg",
+		"quote": "Vegetarian diets can meet all the recommendations for nutrients. The key is to consume a variety of foods and the right amount of foods to meet your calorie needs. Follow the food group recommendations for your age, sex, and activity level to get the right amount of food and the variety of foods needed for nutrient adequacy. Nutrients that vegetarians may need to focus on include protein, iron, calcium, zinc, and vitamin B12.",
+		"website": "https://www.choosemyplate.gov/tips-vegetarians"
+	}, {
+		"name": "Australian National Health and Medical Research Council",
+		"icon": "/imgs/orgs/nhmrc.jpg",
+		"pdf": "https://www.nhmrc.gov.au/_files_nhmrc/file/publications/n55_australian_dietary_guidelines1.pdf",
+		"quote": "Appropriately planned vegetarian diets, including total vegetarian or vegan diets, are healthy and nutritionally adequate. Well-planned vegetarian diets are appropriate for individuals during all stages of the lifecycle. Those following a strict vegetarian or vegan diet can meet nutrient requirements as long as energy needs are met and an appropriate variety of plant foods are eaten throughout the day. Those following a vegan diet should choose foods to ensure adequate intake of iron and zinc and to optimise the absorption and bioavailability of iron, zinc and calcium.359 Supplementation of vitamin B12 may be required for people with strict vegan dietary patterns.8",
+		"website": "https://www.nhmrc.gov.au/guidelines-publications/n55"
+	}, {
+		"name": "Mayo Clinic",
+		"icon": "/imgs/orgs/mayo.svg",
+		"quote": "A well-planned vegetarian diet is a healthy way to meet your nutritional needs. Find out what you need to know about a plant-based diet",
+		"website": "https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/art-20046446"
+	}, {
+		"name": "The Heart and Stroke Foundation of Canada",
+		"icon": "/imgs/orgs/Heart_and_Stroke_logo.svg",
+		"quote": "Vegetarian diets can provide all the nutrients you need at any age, as well as some additional health benefits.  ...Vegetarian diets may lead to lower blood pressure, improved cholesterol levels, healthier weight and less incidence of Type 2 Diabetes, all of which can reduce the risk of heart disease and stroke. ",
+		"website": "http://www.heartandstroke.ca/get-healthy/healthy-eating/specific-diets/for-vegetarians"
+	}, {
+		"name": "The British National Health Service",
+		"icon": "/imgs/orgs/british_nhs.jpg",
+		"quote": "With good planning and an understanding of what makes up a healthy, balanced vegan diet, you can get all the nutrients your body needs.",
+		"website": "https://www.nhs.uk/Livewell/Vegetarianhealth/Pages/Vegandiets.aspx"
 	}],
 	"celebrities": "Arnold Schwarzenegger, Bill Clinton, Al Gore, Pamela Anderson, James Cameron, Penn Jillette, Ellen Degeneres, Olivia Wilde, Beyonce, Natalie Portman, Jennifer Lopez, Ariana Grande, Jaoquin Pheonix, Carrie Underwood, Miley Cyrus, Peter Dinklage, Jason Derulo, Charlie Sheen, Kylie Jenner, Ne-Yo, Jared Leto, Jason Mraz, Tia Blanco, Ben Cohen, Alicia Silverstone, Alex Baldwin, Lea Michele, Dax Shepard, Kristen Bell, Portia de Rossi, Lewis Hamilton, Brad Pitt, Robbie Williams, Craig Robinson, Russell Brand, Tobey Maguire, Woody Harrelson, Ellen Page, Liam Hemsworth, Mayim Bialik, Casey Affleck, Moby, Russell Simmons, Sia, Stevie Wonder, RZA,  Wacka Flocka Flame, Jason Derulo, Charlie Sheen, Kylie Jenner, Ne-Yo, Paul McCartney, David Attenborough, Kat Von D, Evanna Lynch, Travis Barker, Mya, Mike Tyson, John Sally, Chris Evans",
 	"athletes": {

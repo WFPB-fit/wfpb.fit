@@ -58,7 +58,7 @@ export default class Resource extends Component {
 		const rating = Resource.getRating(resource.rating);
 		const title = getLink(resource.url, titleize(resource.title || '')) || titleize(resource.name);
 		const books = getLink(resource.books, "Books");
-		const website = getLink(resource.website, "Website");
+		const website = getLink(resource.website);
 
 		const metaData = joinMetaData([resource.year, books, website, rating, availability, type, pdf, tags]);
 
@@ -66,6 +66,12 @@ export default class Resource extends Component {
 		const StyledCard = styled(Card) `
 		margin:5px auto;
 		`;
+
+		let imgUrl = resource.profile_img;
+		// if (resource.profile_img[0] === '/'){
+		// 	imgUrl = process.env.PUBLIC_URL + imgUrl;
+		// }
+
 		return (
 			<StyledCard >
 				<CardHeader
@@ -73,6 +79,7 @@ export default class Resource extends Component {
 					subtitle={metaData}
 				/>
 				<CardText>
+					{<img src={imgUrl} height="50" width="50"/>}
 					{resource.quote || resource.summary}
 					{video}
 				</CardText>

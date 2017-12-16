@@ -49,7 +49,13 @@ export function numCommonElements(arr1, arr2) {
 }
 
 export function getLink(url, text) {
-	return (url && text && text !== '' && url !== '') ? <a href={url}>{text}</a> : null;
+	if (!url || url === '') return null;
+
+	if (!text || text === '') {
+		const urlObj = new URL(url);
+		text = urlObj.hostname.replace('www.','');
+	}
+	return <a href={url}>{text}</a>;
 }
 export function joinMetaData(arr) {
 	const realData = arr.filter((el) => el);//filter out falsy values like null
