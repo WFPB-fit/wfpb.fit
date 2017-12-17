@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardTitle, CardText, CardHeader } from 'material-ui/Card';
+import { Card, CardTitle, CardMedia, CardText, CardHeader } from 'material-ui/Card';
 import styled from 'styled-components';
 import { titleize, getLink, joinMetaData, getTitleized } from '../../utils/GeneralUtils.jsx';
 
@@ -68,34 +68,40 @@ export default class Resource extends Component {
 
 		let StyledCard = styled(Card) `
 		margin:5px auto;
+		vertical-align: top;
 		`;
-		let CardMediaDisplayed = null;
+		let DisplayCardMedia = null;
+		let isExpandable = false;
 
 		if (isMediaCard) {
-			StyledCard = styled(StyledCard)`
-			max-width:80%;
-			`;
-			const CardImg = styled.img`
-			height:200px;
+			isExpandable = true;
+			StyledCard = styled(StyledCard) `
 			max-width:100%;
-			display:block;
-			margin: 0 auto;
+			display:inline-block;
+			width:300px;
+			margin:10px;
 			`;
-			CardMediaDisplayed = (
-				<CardHeader >
-					<CardImg src={resource.profile_img} alt="Profile Image" />
-				</CardHeader>
+			DisplayCardMedia = (
+				<CardMedia
+					style={{
+
+						height: "500px;"
+					}}
+					actAsExpander
+				>
+					<img src={resource.profile_img} alt="Profile Image" />
+				</CardMedia>
 			);
 		}
 
 		return (
 			<StyledCard >
-				{CardMediaDisplayed}
+				{DisplayCardMedia}
 				<CardTitle
 					title={title}
 					subtitle={metaData}
 				/>
-				<CardText>
+				<CardText expandable={isExpandable}>
 					{resource.quote || resource.summary}
 					{video}
 				</CardText>

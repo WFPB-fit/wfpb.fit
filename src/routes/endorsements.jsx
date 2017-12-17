@@ -8,7 +8,7 @@ import TabsDisplay from '../components/tabsDisplay/index.jsx';
 export default class Externalities extends Component {
 	constructor(props) {
 		super(props);
-		this.tabs = [{
+		this.athleteTabs = [{
 			label: 'Endurance',
 			resources: endorsements.athletes.endurance,
 			position: 0
@@ -37,9 +37,7 @@ export default class Externalities extends Component {
 		);
 
 		const Div = styled.div`
-		& p,h3 {
 			text-align:center;
-		}
 		`;
 		return (
 			<Div>
@@ -48,7 +46,7 @@ export default class Externalities extends Component {
 				{doctors}
 				<h2>Athletes</h2>
 				<TabsDisplay
-					tabs={this.tabs}
+					tabs={this.athleteTabs}
 					location={this.props.location}
 					history={this.props.history}
 				/>

@@ -42,12 +42,6 @@
 		"summary": "American physician, author, and veganism advocate",
 		"website": "https://doctorklaper.com/"
 	}, {
-		"name": "Terry Shintani",
-		"books": "https://www.amazon.com/s/ref=dp_byline_sr_book_1?ie=UTF8&text=Terry+Shintani&search-alias=books&field-author=Terry+Shintani&sort=relevancerank",
-		"profile_img": "/imgs/people/doctors/shintani.jpg",
-		"summary": "American physician, attorney, nutritionist, professor, author, lecturer, radio show host and community advocate in Hawaii. ",
-		"website": "http://www.drshintani.com/about"
-	}, {
 		"name": "Dean Ornish",
 		"books": "https://www.amazon.com/Dean-Ornish-MD/e/B000APT53I",
 		"profile_img": "/imgs/people/doctors/ornish.jpg",
@@ -59,6 +53,12 @@
 		"profile_img": "/imgs/people/doctors/kahn.jpg",
 		"summary": "Dr. Kahn is a Clinical Professor of Medicine at Wayne State University School of Medicine and Director of Cardiac Wellness, Michigan Healthcare Professionals PC. He is a graduate Summa Cum Laude of the University of Michigan School of Medicine. He lectures widely on the cardiac benefits of vegan nutrition, mind body practices and heart attack prevention. He writes blogs for MindBodyGreen, OneGreenPlanet, Aloha.com, and Forksoverknives.com. He also writes for Readers Digest Magazine as the Holistic Heart Doc and his first book, The Whole Heart Solution.",
 		"website": "https://drjoelkahn.com/"
+	}, {
+		"name": "Terry Shintani",
+		"books": "https://www.amazon.com/s/ref=dp_byline_sr_book_1?ie=UTF8&text=Terry+Shintani&search-alias=books&field-author=Terry+Shintani&sort=relevancerank",
+		"profile_img": "/imgs/people/doctors/shintani.jpg",
+		"summary": "American physician, attorney, nutritionist, professor, author, lecturer, radio show host and community advocate in Hawaii. ",
+		"website": "http://www.drshintani.com/about"
 	}, {
 		"name": "John A. McDougall",
 		"books": "https://www.amazon.com/John-A.-McDougall/e/B001IZVGHW",
