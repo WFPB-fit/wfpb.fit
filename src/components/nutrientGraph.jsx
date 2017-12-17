@@ -6,10 +6,6 @@ import {
 
 
 export default class NutrientGraph extends Component {
-    constructor(props) {
-        super(props);
-    }
-
 	static getVictoryData(foodData, name, color) {
 		return Object.keys(foodData).map(key => {
 			return { x: key, y: foodData[key], name: name, color: color };

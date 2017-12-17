@@ -43,19 +43,19 @@ export default class Externalities extends Component {
 		`;
 		return (
 			<Div>
-				<h3>A small selection of prominent vegans, vegetarians, and plant-based individuals around the globe</h3>
+				<h3>A small selection of prominent plant-based, vegan, or vegetarian individuals around the globe</h3>
 				<h2>Physicians</h2>
 				{doctors}
-				<h2>Celebrities</h2>
-				<p>{endorsements.celebrities}</p>
 				<h2>Athletes</h2>
 				<TabsDisplay
 					tabs={this.tabs}
 					location={this.props.location}
 					history={this.props.history}
 				/>
-				<h2>Animals</h2>
-				<p>{endorsements.animals}</p>
+				<h2>Celebrities</h2>
+				<p>{endorsements.celebrities}</p>
+				{/* <h2>Animals</h2>
+				<p>{endorsements.animals}</p> */}
 			</Div>
 		);
 	}

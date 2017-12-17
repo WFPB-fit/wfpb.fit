@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardHeader, CardText } from 'material-ui/Card';
+import { Card, CardTitle, CardText, CardHeader } from 'material-ui/Card';
 import styled from 'styled-components';
 import { titleize, getLink, joinMetaData, getTitleized } from '../../utils/GeneralUtils.jsx';
 
@@ -63,23 +63,39 @@ export default class Resource extends Component {
 		const metaData = joinMetaData([resource.year, books, website, rating, availability, type, pdf, tags]);
 
 		const video = Resource.getEmbeddedVideoCode(resource.url);
-		const StyledCard = styled(Card) `
+
+		const isMediaCard = resource.profile_img;
+
+		let StyledCard = styled(Card) `
 		margin:5px auto;
 		`;
+		let CardMediaDisplayed = null;
 
-		let imgUrl = resource.profile_img;
-		// if (resource.profile_img[0] === '/'){
-		// 	imgUrl = process.env.PUBLIC_URL + imgUrl;
-		// }
+		if (isMediaCard) {
+			StyledCard = styled(StyledCard)`
+			max-width:80%;
+			`;
+			const CardImg = styled.img`
+			height:200px;
+			max-width:100%;
+			display:block;
+			margin: 0 auto;
+			`;
+			CardMediaDisplayed = (
+				<CardHeader >
+					<CardImg src={resource.profile_img} alt="Profile Image" />
+				</CardHeader>
+			);
+		}
 
 		return (
 			<StyledCard >
-				<CardHeader
+				{CardMediaDisplayed}
+				<CardTitle
 					title={title}
 					subtitle={metaData}
 				/>
 				<CardText>
-					{<img src={imgUrl} height="50" width="50"/>}
 					{resource.quote || resource.summary}
 					{video}
 				</CardText>
