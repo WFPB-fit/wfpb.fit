@@ -27,6 +27,14 @@ export default class Externalities extends Component {
 		}];
 	}
 	render() {
+		const orgs = preprocess(endorsements.organizations).map((x) =>
+			(
+				<Resource
+					resource={x}
+					key={x.id}
+				/>
+			)
+		);
 		const doctors = preprocess(endorsements.doctors).map((x) =>
 			(
 				<Resource
@@ -41,7 +49,8 @@ export default class Externalities extends Component {
 		`;
 		return (
 			<Div>
-				<h3>A small selection of prominent plant-based, vegan, or vegetarian individuals around the globe</h3>
+				<h2>Organizations</h2>
+				{orgs}
 				<h2>Physicians</h2>
 				{doctors}
 				<h2>Athletes</h2>
@@ -52,9 +61,11 @@ export default class Externalities extends Component {
 				/>
 				<h2>Celebrities</h2>
 				<p>{endorsements.celebrities}</p>
+				<h3>And More!</h3>
+
 				{/* <h2>Animals</h2>
 				<p>{endorsements.animals}</p> */}
-			</Div>
+			</Div >
 		);
 	}
 }
