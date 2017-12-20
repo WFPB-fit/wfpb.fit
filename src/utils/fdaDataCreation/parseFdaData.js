@@ -1,6 +1,9 @@
 import FoodIds from '../../assets/data/nutrition/foodIds.json';
 import FoodData from '../../assets/data/nutrition/foodData.json';
-import { ImportantNutrients, NutrientSummationReductions } from '../../assets/data/importantNutrients.js';
+import {
+	ImportantNutrients,
+	NutrientSummationReductions
+} from '../../assets/data/importantNutrients.js';
 // import ServingSizes from '../../assets/data/nutrition/servingSizes.json';
 import FdaApi from './FdaApi.js';
 
@@ -9,6 +12,13 @@ export default class ParseFdaData {
 	static getNutrientFromId(id, nutrients) {
 		const n = nutrients.filter(x => x.nutrient_id == id); //find the nutrient. use '==' as one may be string and other integer
 		return (n.length === 1) ? n[0] : null;
+	}
+
+	static getNutrientValue(n) {
+		let val = n.value;
+		if (n.unit === 'µg') val *= 1e-6;
+		else if (n.unit === 'mg') val *= 1e-3;
+		return val;
 	}
 
 	//extract important nutrients from the FDA API data
@@ -22,10 +32,9 @@ export default class ParseFdaData {
 			//for each nutrient in this group, add its FDA value to return value
 			for (let nutrientId of ImportantNutrients[groupName]) {
 				const n = ParseFdaData.getNutrientFromId(nutrientId, fdaFood.nutrients);
+
 				if (n) {
-					let val = n.value;
-					if (n.unit === 'µg') val *= 1e-6;
-					else if (n.unit === 'mg') val *= 1e-3;
+					let val = ParseFdaData.getNutrientValue(n);
 
 					const formatted = Number(val.toPrecision(4));
 					groupNutrients[nutrientId] = formatted;
@@ -50,19 +59,25 @@ export default class ParseFdaData {
 	static preprocessNutrientsToSummations(fdaFoods) {
 		const nIds = Object.keys(NutrientSummationReductions);
 		for (const nId of nIds) {
-			for (const food of fdaFoods) {
-
+			for (let food of fdaFoods) {
 				const summationIds = NutrientSummationReductions[nId].concat(nId); //get all the nutrients needed in the sum, add the placeholders value too
 				let sum = 0;
 				for (const nutrientIdToSum of summationIds) { //iterate over each required summation nutrient, adding up its value
 					const n = ParseFdaData.getNutrientFromId(nutrientIdToSum, food.nutrients);
-					if (n) sum += n.value;
+					if (n) sum += ParseFdaData.getNutrientValue(n);
+
 				}
 
 				//if values were summed, set the placeholder's nutrient value to the total sum
 				if (sum > 0) {
-					food.nutrients[nId] = food.nutrients[nId] || {}; //nutrient may not be in fetched FDA data, so create it as a new object. This will be missing all other nutrient data besides what's below
-					food.nutrients[nId].value = sum;
+					const n = ParseFdaData.getNutrientFromId(nId, food.nutrients);
+					if (n) n.value = sum
+					else {
+						food.nutrients.push({ // add the nutrient summation into the food under the label nutrient
+							nutrient_id: nId,
+							value: sum
+						});
+					}
 				}
 			}
 		}

@@ -120,7 +120,6 @@ export const NutrientSummationReductions = {
 		346, // Tocotrienol, gamma,
 		347, // Tocotrienol, delta,
 	],
-
 	710: [ //isoflavones
 		// 710, // Object { name: "Daidzein", group: "Isoflavones" }
 		711, // Object { name: "Genistein", group: "Isoflavones" }

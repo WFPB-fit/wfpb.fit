@@ -45,7 +45,7 @@ export default class NutrientGraph extends Component {
         if (d.nutrientDataIsMissing) displayVal = 'Data Missing';
         // else if (val === 0) `0 Grams`;
 
-        return `${d.foodName}: \n${d.x}: ${displayVal}`
+        return `${d.foodName}: \n${d.x}: ${displayVal}`;
     }
 
 
@@ -61,7 +61,7 @@ export default class NutrientGraph extends Component {
             ticks: { stroke: "grey", size: 3 },
             tickLabels: { fontSize: 5, padding: 1 },
         };
-        
+
         const radars = selectedFoods.map((food) => {
             let data = NutrientGraph.getFoodNutrients(food, nutrientDataKey);
             // const keys = Object.keys(data).sort(alphaCompare);
@@ -108,7 +108,7 @@ export default class NutrientGraph extends Component {
             >
                 <VictoryPolarAxis dependentAxis
                     style={axisStyle}
-                // tickFormat={() => null} 
+                    tickFormat={() => null}
                 />
                 <VictoryPolarAxis
                     style={axisStyle} />
