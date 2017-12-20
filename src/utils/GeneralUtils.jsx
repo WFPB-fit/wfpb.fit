@@ -11,11 +11,11 @@ export function preprocess(resources) {
 	});
 }
 
-export function indexByTags(resources){
+export function indexByTags(resources) {
 	let indx = {};
-	for(const resource of resources){
+	for (const resource of resources) {
 		const tags = resource.tags;
-		for (const tag of tags){ //add indexed resource under each tags index
+		for (const tag of tags) { //add indexed resource under each tags index
 			let arr = indx[tag] || [];
 			arr.push(resource);
 			indx[tag] = arr;
@@ -47,13 +47,16 @@ export function numCommonElements(arr1, arr2) {
 	const intersect = arr1.filter(x => arr2.includes(x)); //[...set1].filter(x=> set2.has(x));
 	return intersect.length;
 }
-
+export function alphaCompare(a, b) {
+	if (a.value && b.value) return a.value.localeCompare(b.value);
+	else return a.localeCompare(b);
+}
 export function getLink(url, text) {
 	if (!url || url === '') return null;
 
 	if (!text || text === '') {
 		const urlObj = new URL(url);
-		text = urlObj.hostname.replace('www.','');
+		text = urlObj.hostname.replace('www.', '');
 	}
 	return <a href={url}>{text}</a>;
 }
@@ -73,11 +76,11 @@ export function getTitleized(val) {
 
 export function filterStudiesByTags(raw, allowed) { //https://stackoverflow.com/questions/38750705/filter-object-properties-by-key-in-es6
 	return Object.keys(raw)
-  .filter(key => allowed.includes(key))
-  .reduce((obj, key) => {
-    obj[key] = raw[key];
-    return obj;
-  }, {});
+		.filter(key => allowed.includes(key))
+		.reduce((obj, key) => {
+			obj[key] = raw[key];
+			return obj;
+		}, {});
 	// return studies.filter(resource => {
 	// 	return numCommonElements(resource.tags, tags) > 0;
 	// });

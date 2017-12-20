@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Resource from '../resource/index.jsx';
 import Filter from './filter';
-import { titleize } from '../../utils/GeneralUtils.jsx';
+import { titleize, alphaCompare } from '../../utils/GeneralUtils.jsx';
 
 export default class Resources extends Component {
 	handleSelectedTagsChanged(value) {
@@ -22,7 +22,7 @@ export default class Resources extends Component {
 		let newTags = tags.map((tag) => {
 			return { value: tag, label: titleize(tag) };
 		});
-		const sortedTags = newTags.sort((a, b) => a.value.localeCompare(b.value));
+		const sortedTags = newTags.sort(alphaCompare);
 		return sortedTags;
 	}
 	sortResources(a, b) {

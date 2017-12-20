@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { titleize, getRandomColor } from '../utils/GeneralUtils.jsx';
 import VirtualizedSelect from 'react-virtualized-select'
-import { getLink } from '../utils/GeneralUtils.jsx';
+import { getLink , alphaCompare} from '../utils/GeneralUtils.jsx';
 
 import FoodData from '../assets/data/nutrition/foodData.json';
 import NutrientNames from '../assets/data/nutrientNames.json';
@@ -49,7 +49,7 @@ export default class Food extends Component {
 			.map(id => {
 				return { value: id, label: window.globalAppData.foodData[id].name };
 			})
-			.sort((a, b) => { return a.label.localeCompare(b.label); });
+			.sort(alphaCompare);
 		this.state = {
 			selectedFoods: [this.allSelectables[0]]
 		};
@@ -59,7 +59,7 @@ export default class Food extends Component {
 	}
 	static convertFoodsToSelectObjects(foods) {
 		const optns = foods.map((x) => { return { value: x.name, label: titleize(x.name) } });
-		const alphaOptions = optns.sort((a, b) => a.value.localeCompare(b.value)); //alphabetize it
+		const alphaOptions = optns.sort(alphaCompare); 
 		return alphaOptions;
 	}
 
@@ -78,30 +78,30 @@ export default class Food extends Component {
 		let dataVis = null;
 		if (selectedFoods.length > 0) { //At least one food is selected
 			const graphs = (<div>
+				<h2>Overview</h2>
 				<NutrientGraph
 					selectedFoods={selectedFoods}
-					title="Overview"
 					nutrientDataKey="overview"
 				/>
+				<h2>Fats</h2>
 				<NutrientGraph
 					selectedFoods={selectedFoods}
-					title="Fats"
 					nutrientDataKey="fats"
 				/>
 				<p>SAFA = Saturated Fat, MUFA = Monounsaturated Fat, PUFA = Polyunsaturated Fat</p>
+				<h2>Vitamins</h2>
 				<NutrientGraph
 					selectedFoods={selectedFoods}
-					title="Vitamins"
 					nutrientDataKey="vitamins"
 				/>
+				<h2>Minerals</h2>
 				<NutrientGraph
 					selectedFoods={selectedFoods}
-					title="Minerals"
 					nutrientDataKey="minerals"
 				/>
+				<h2>Amino Acids</h2>
 				<NutrientGraph
 					selectedFoods={selectedFoods}
-					title="Amino Acids"
 					nutrientDataKey="amino"
 				/>
 			</div>);
