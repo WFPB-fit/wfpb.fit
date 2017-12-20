@@ -4,13 +4,15 @@ export const ImportantNutrients = {
 		204, //total fat
 		205, //carbohydrates by difference
 		291, //fiber, total dietary
+		601, //Cholesterol,  
+		636, //phytosterol      
 	],
 	fats: [
 		605, //Fatty acids, total trans,
 		606, //Fatty acids, total saturated,
 		645, //Fatty acids, total monounsaturated,
 		646, //Fatty acids, total polyunsaturated,
-		
+
 		//omega 3's
 		851, // 18:3 n-3 c,c,c (ALA)
 		621, // 22:6 n-3 (DHA),
@@ -91,22 +93,36 @@ export const ImportantNutrients = {
 		432, // Folate, food,
 		// 435, // Folate, DFE
 	],
-	sterols: [
-		601, // Cholesterol,        
-
-		636, // Phytosterols,
-		638, // Stigmasterol,
-		639, // Campesterol,
-		641, // Beta-sitosterol,
-	],
 	carotenoids: [
 		321, 322, //carotene
 		334, //Cryptoxanthin
 		337, //Lycopene
 		338, //Lutein + zeaxanthin
 	],
-	isoflavones: [
-		710, // Object { name: "Daidzein", group: "Isoflavones" }
+	flavonoids: [
+		710, //isoflavones
+		731, //anthocyanidins
+		734, //Proanthocyanidin
+		749, //Catechins
+		785, //flavonols
+		758, //flavanones
+	],
+}
+
+export const NutrientSummationReductions = {
+	// 323 Vitamin E (alpha-tocopherol),
+	323: [
+		341, // Tocopherol, beta,
+		342, // Tocopherol, gamma,
+		343, // Tocopherol, delta,
+		344, // Tocotrienol, alpha,
+		345, // Tocotrienol, beta,
+		346, // Tocotrienol, gamma,
+		347, // Tocotrienol, delta,
+	],
+
+	710: [ //isoflavones
+		// 710, // Object { name: "Daidzein", group: "Isoflavones" }
 		711, // Object { name: "Genistein", group: "Isoflavones" }
 		712, // Object { name: "Glycitein", group: "Isoflavones" }
 		713, // Object { name: "Total isoflavones", group: "Isoflavones" }
@@ -114,57 +130,48 @@ export const ImportantNutrients = {
 		715, // Object { name: "Formononetin", group: "Isoflavones" }
 		716, // Object { name: "Coumestrol", group: "Isoflavones" }        
 	],
-	anthocyanidins: [
-		731, // Object { name: "Cyanidin", group: "Anthocyanidins" }
+	731: [ //anthocyanidins
+		// 731, // Object { name: "Cyanidin", group: "Anthocyanidins" }
 		740, // Object { name: "Petunidin", group: "Anthocyanidins" }
 		741, // Object { name: "Delphinidin", group: "Anthocyanidins" }
 		742, // Object { name: "Malvidin", group: "Anthocyanidins" }
 		743, // Object { name: "Pelargonidin", group: "Anthocyanidins" }
 		745, // Object { name: "Peonidin", group: "Anthocyanidins" }
 	],
-	flavanols: [
-		734, // Total Proanthocyanidin     
-		749, // Object { name: "(+)-Catechin", group: "Flavan-3-ols" }
+	734: [ // Total Proanthocyanidin
+		// 734: "Proanthocyanidin dimers"
+		735, // 735: "Proanthocyanidin trimers"
+		736, // 736: "Proanthocyanidin 4-6mers"
+		737, // 737: "Proanthocyanidin 7-10mers"
+		738 // 738: "Proanthocyanidin polymers (>10mers)"
+	],
+	749: [ //Catechins
+		// 749, // Object { name: "(+)-Catechin", group: "Flavan-3-ols" }
 		750, // Object { name: "(-)-Epigallocatechin", group: "Flavan-3-ols" }
 		751, // Object { name: "(-)-Epicatechin", group: "Flavan-3-ols" }
 		752, // Object { name: "(-)-Epicatechin 3-gallate", group: "Flavan-3-ols" }
 		753, // Object { name: "(-)-Epigallocatechin 3-gallate", group: "Flavan-3-ols" }
 		794, // Object { name: "(+)-Gallocatechin", group: "Flavan-3-ols" }
 	],
-	flavonols: [
-		785, // Object { name: "Isorhamnetin", group: "Flavonols" }
+	785: [ //flavonols
+		// 785, // Object { name: "Isorhamnetin", group: "Flavonols" }
 		786, // Object { name: "Kaempferol", group: "Flavonols" }
 		788, // Object { name: "Myricetin", group: "Flavonols" }
 		789, // Object { name: "Quercetin", group: "Flavonols" }
 	],
-	flavanones: [
-		758, // Object { name: "Eriodictyol", group: "Flavanones" }
+	758: [ //flavanones
+		// 758, // Object { name: "Eriodictyol", group: "Flavanones" }
 		759, // Object { name: "Hesperetin", group: "Flavanones" }
 		762, // Object { name: "Naringenin", group: "Flavanones" }
 		770, // Object { name: "Apigenin", group: "Flavones" }
 		773, // Object { name: "Luteolin", group: "Flavones" }
-	]
-}
-
-export const NutrientSummationReductions = {
-	// 323 Vitamin E (alpha-tocopherol),
-	// 341, // Tocopherol, beta,
-	// 342, // Tocopherol, gamma,
-	// 343, // Tocopherol, delta,
-	// 344, // Tocotrienol, alpha,
-	// 345, // Tocotrienol, beta,
-	// 346, // Tocotrienol, gamma,
-	// 347, // Tocotrienol, delta,
-
-	323: [341, 342, 343, 344, 345, 346, 347],
-
-	// // Total Proanthocyanidin
-	// 734: "Proanthocyanidin dimers"
-	// 735: "Proanthocyanidin trimers"
-	// 736: "Proanthocyanidin 4-6mers"
-	// 737: "Proanthocyanidin 7-10mers"
-	// 738: "Proanthocyanidin polymers (>10mers)"
-	734: [735, 736, 737, 738],
+	],
+	636: [ //Phytosterols
+		// 636, // Phytosterols,
+		638, // Stigmasterol,
+		639, // Campesterol,
+		641, // Beta-sitosterol,
+	],
 }
 
 /*

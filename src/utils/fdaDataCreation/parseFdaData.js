@@ -51,6 +51,7 @@ export default class ParseFdaData {
 		const nIds = Object.keys(NutrientSummationReductions);
 		for (const nId of nIds) {
 			for (const food of fdaFoods) {
+
 				const summationIds = NutrientSummationReductions[nId].concat(nId); //get all the nutrients needed in the sum, add the placeholders value too
 				let sum = 0;
 				for (const nutrientIdToSum of summationIds) { //iterate over each required summation nutrient, adding up its value
@@ -60,9 +61,8 @@ export default class ParseFdaData {
 
 				//if values were summed, set the placeholder's nutrient value to the total sum
 				if (sum > 0) {
-					const n = ParseFdaData.getNutrientFromId(nId, food.nutrients);
-					// console.log(nId,n.value,sum)
-					n.value = sum;
+					food.nutrients[nId] = food.nutrients[nId] || {}; //nutrient may not be in fetched FDA data, so create it as a new object. This will be missing all other nutrient data besides what's below
+					food.nutrients[nId].value = sum;
 				}
 			}
 		}
@@ -77,10 +77,10 @@ export default class ParseFdaData {
 
 		//extract info from the foods API
 		let foods = {};
-		let nutrientNames = {};
+		// let nutrientNames = {};
 		for (const fdaFood of fdaFoods) {
 			let food = {};
-			ParseFdaData.addNutrientNames(fdaFood, nutrientNames);
+			// ParseFdaData.addNutrientNames(fdaFood, nutrientNames);
 
 			const id = fdaFood.desc.ndbno;
 			food.name = fdaFood.desc.name;
@@ -88,10 +88,10 @@ export default class ParseFdaData {
 			foods[id] = food;
 		}
 		console.log(foods)
-		console.log(nutrientNames)
+		// console.log(nutrientNames)
 
 
 		console.log(JSON.stringify(foods)); //note this may add a " character to the beginning and end when printing to the console
-		console.log(JSON.stringify(nutrientNames)); //note this may add a " character to the beginning and end when printing to the console
+		// console.log(JSON.stringify(nutrientNames)); //note this may add a " character to the beginning and end when printing to the console
 	}
 }

@@ -117,40 +117,15 @@ export default class Food extends Component {
 					selectedFoods={selectedFoods}
 					nutrientDataKey="amino"
 				/>
-				<h2>Sterols</h2>
-				<NutrientGraph
-					selectedFoods={selectedFoods}
-					nutrientDataKey="sterols"
-				/>
 				<h2>Carotenoids</h2>
 				<NutrientGraph
 					selectedFoods={selectedFoods}
 					nutrientDataKey="carotenoids"
 				/>
-				<h2>Isoflavones</h2>
+				<h2>Flavonoids</h2>
 				<NutrientGraph
 					selectedFoods={selectedFoods}
-					nutrientDataKey="isoflavones"
-				/>
-				<h2>Anthocyanidins</h2>
-				<NutrientGraph
-					selectedFoods={selectedFoods}
-					nutrientDataKey="anthocyanidins"
-				/>
-				<h2>Flavanols</h2>
-				<NutrientGraph
-					selectedFoods={selectedFoods}
-					nutrientDataKey="flavanols"
-				/>
-				<h2>Flavonols</h2>
-				<NutrientGraph
-					selectedFoods={selectedFoods}
-					nutrientDataKey="flavonols"
-				/>
-				<h2>Flavanones</h2>
-				<NutrientGraph
-					selectedFoods={selectedFoods}
-					nutrientDataKey="flavanones"
+					nutrientDataKey="flavonoids"
 				/>
 			</div>);
 
