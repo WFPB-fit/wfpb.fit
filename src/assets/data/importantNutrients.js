@@ -4,7 +4,6 @@ export const ImportantNutrients = {
 		204, //total fat
 		205, //carbohydrates by difference
 		291, //fiber, total dietary
-		601, // Cholesterol,        
 	],
 	fats: [
 		605, //Fatty acids, total trans,
@@ -63,7 +62,7 @@ export const ImportantNutrients = {
 		322, // Carotene, alpha,
 		334, // Cryptoxanthin, beta,        
 		323, // Vitamin E (alpha-tocopherol),
-		324, // Vitamin D,
+		// 324, // Vitamin D,
 		325, // Vitamin D2 (ergocalciferol),
 		326, // Vitamin D3 (cholecalciferol),
 		// 328, // Vitamin D (D2 + D3),
@@ -86,11 +85,19 @@ export const ImportantNutrients = {
 		418, // Vitamin B-12,
 		421, // Choline, total,
 		// 428, // Menaquinone-4,
-		429, // Dihydrophylloquinone,
+		// 429, // Dihydrophylloquinone,
 		430, // Vitamin K (phylloquinone),
 		431, // Folic acid,
 		432, // Folate, food,
 		// 435, // Folate, DFE
+	],
+	sterols: [
+		601, // Cholesterol,        
+
+		636, // Phytosterols,
+		638, // Stigmasterol,
+		639, // Campesterol,
+		641, // Beta-sitosterol,
 	],
 	carotenoids: [
 		321, 322, //carotene
@@ -98,13 +105,7 @@ export const ImportantNutrients = {
 		337, //Lycopene
 		338, //Lutein + zeaxanthin
 	],
-	phytosterols: [
-		636, // Phytosterols,
-		638, // Stigmasterol,
-		639, // Campesterol,
-		641, // Beta-sitosterol,
-	],
-	Isoflavones: [
+	isoflavones: [
 		710, // Object { name: "Daidzein", group: "Isoflavones" }
 		711, // Object { name: "Genistein", group: "Isoflavones" }
 		712, // Object { name: "Glycitein", group: "Isoflavones" }
@@ -113,7 +114,7 @@ export const ImportantNutrients = {
 		715, // Object { name: "Formononetin", group: "Isoflavones" }
 		716, // Object { name: "Coumestrol", group: "Isoflavones" }        
 	],
-	Anthocyanidins: [
+	anthocyanidins: [
 		731, // Object { name: "Cyanidin", group: "Anthocyanidins" }
 		740, // Object { name: "Petunidin", group: "Anthocyanidins" }
 		741, // Object { name: "Delphinidin", group: "Anthocyanidins" }
@@ -121,7 +122,7 @@ export const ImportantNutrients = {
 		743, // Object { name: "Pelargonidin", group: "Anthocyanidins" }
 		745, // Object { name: "Peonidin", group: "Anthocyanidins" }
 	],
-	"Flavan-3-ols": [
+	flavanols: [
 		734, // Total Proanthocyanidin     
 		749, // Object { name: "(+)-Catechin", group: "Flavan-3-ols" }
 		750, // Object { name: "(-)-Epigallocatechin", group: "Flavan-3-ols" }
@@ -130,44 +131,19 @@ export const ImportantNutrients = {
 		753, // Object { name: "(-)-Epigallocatechin 3-gallate", group: "Flavan-3-ols" }
 		794, // Object { name: "(+)-Gallocatechin", group: "Flavan-3-ols" }
 	],
-	Flavonols: [
+	flavonols: [
 		785, // Object { name: "Isorhamnetin", group: "Flavonols" }
 		786, // Object { name: "Kaempferol", group: "Flavonols" }
 		788, // Object { name: "Myricetin", group: "Flavonols" }
 		789, // Object { name: "Quercetin", group: "Flavonols" }
 	],
-	Flavanones: [
+	flavanones: [
 		758, // Object { name: "Eriodictyol", group: "Flavanones" }
 		759, // Object { name: "Hesperetin", group: "Flavanones" }
 		762, // Object { name: "Naringenin", group: "Flavanones" }
 		770, // Object { name: "Apigenin", group: "Flavones" }
 		773, // Object { name: "Luteolin", group: "Flavones" }
 	]
-}
-
-export const CustomNutrientNames = {
-	205: "Carbs", //carbohydrates by difference
-	291: "Fiber", //fiber, total dietary
-
-	605: "Trans Fat", //Fatty acids, total trans,
-	606: "SAFA", //Fatty acids, total saturated,
-	645: "MUFA", //Fatty acids, total monounsaturated,
-	646: "PUFA", //Fatty acids, total polyunsaturated,
-
-	851: "ALA", // 18:3 n-3 c,c,c (ALA)
-	621: "DHA", // 22:6 n-3 (DHA),
-	629: "EPA", // 20:5 n-3 (EPA),
-	631: "DPA", // 22:5 n-3 (DPA),
-
-	430: "Vitamin K", // Vitamin K (phylloquinone),    
-	401: "Vitamin C", // Vitamin C, total ascorbic acid,    
-	323: "Vitamin E", // Tocopherols + Tocotrienols, not just Vitamin E (alpha-tocopherol),
-	325: "Vitamin D2", // Vitamin D2 (ergocalciferol),
-	326: "Vitamin D3", // Vitamin D3 (cholecalciferol),
-	432: "Folate", // Folate, food,
-
-	119: "Proanthocyanidins", // Total Proanthocyanidin     
-
 }
 
 export const NutrientSummationReductions = {

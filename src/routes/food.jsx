@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 
 import { titleize, getRandomColor } from '../utils/GeneralUtils.jsx';
 import VirtualizedSelect from 'react-virtualized-select'
-import { getLink , alphaCompare} from '../utils/GeneralUtils.jsx';
+import { getLink, alphaCompare } from '../utils/GeneralUtils.jsx';
 
 import FoodData from '../assets/data/nutrition/foodData.json';
+import { ImportantNutrients } from '../assets/data/importantNutrients.js';
 import NutrientNames from '../assets/data/nutrientNames.json';
 import NutrientGraph from '../components/nutrientGraph.jsx';
 
@@ -20,24 +21,34 @@ export default class Food extends Component {
 
 		// preprocess foods
 		if (!window.globalAppData.foodData) {
-			window.globalAppData.foodData = Object.keys(FoodData).reduce((total, foodName) => {
-				let foodData = FoodData[foodName];
+			window.globalAppData.foodData = Object.keys(FoodData).reduce((total, foodId) => {
+				let foodData = FoodData[foodId];
 				foodData.color = getRandomColor();
+				foodData.id = foodId;
 
 				//copy over nutrient amounts, substitute in real nutrient name for nutrient ID
-				for (const nGroupName of Object.keys(foodData.nutrients)) {
-					let nutrients = foodData.nutrients[nGroupName];
+				for (const nGroupName of Object.keys(ImportantNutrients)) {
+					let nutrients = ImportantNutrients[nGroupName];
+
 					//reindex by nutrient name instead of ID
-					let renamedNutrients = Object.keys(nutrients).reduce((total, nId) => {
+					let chartNutrientData = nutrients.reduce((total, nId) => {
 						const nName = NutrientNames[nId];
-						total[nName] = nutrients[nId];
+
+						let val = 0;
+						let isMissing = false;
+						if (nId in foodData.nutrients[nGroupName]) val = foodData.nutrients[nGroupName][nId];
+						else {
+							// if (foodId === "01001") console.log(foodData.nutrients[nGroupName],nId)
+							isMissing = true;
+						}
+						total.push({ x: NutrientNames[nId], y: val, nId: nId, foodName: foodData.name, nutrientDataIsMissing: isMissing });
 						return total;
-					}, {});
-					foodData.nutrients[nGroupName] = renamedNutrients;
+					}, []);
+					foodData.nutrients[nGroupName] = chartNutrientData;
 				}
 
 				//add the preprocessed foods to the returned object
-				total[foodName] = foodData;
+				total[foodId] = foodData;
 				return total;
 			}, {});
 		}
@@ -59,7 +70,7 @@ export default class Food extends Component {
 	}
 	static convertFoodsToSelectObjects(foods) {
 		const optns = foods.map((x) => { return { value: x.name, label: titleize(x.name) } });
-		const alphaOptions = optns.sort(alphaCompare); 
+		const alphaOptions = optns.sort(alphaCompare);
 		return alphaOptions;
 	}
 
@@ -74,7 +85,9 @@ export default class Food extends Component {
 
 	render() {
 		const selectedFoods = this.preprocessSelectedFoods();
+		
 		console.log(selectedFoods)
+
 		let dataVis = null;
 		if (selectedFoods.length > 0) { //At least one food is selected
 			const graphs = (<div>
@@ -103,6 +116,41 @@ export default class Food extends Component {
 				<NutrientGraph
 					selectedFoods={selectedFoods}
 					nutrientDataKey="amino"
+				/>
+				<h2>Sterols</h2>
+				<NutrientGraph
+					selectedFoods={selectedFoods}
+					nutrientDataKey="sterols"
+				/>
+				<h2>Carotenoids</h2>
+				<NutrientGraph
+					selectedFoods={selectedFoods}
+					nutrientDataKey="carotenoids"
+				/>
+				<h2>Isoflavones</h2>
+				<NutrientGraph
+					selectedFoods={selectedFoods}
+					nutrientDataKey="isoflavones"
+				/>
+				<h2>Anthocyanidins</h2>
+				<NutrientGraph
+					selectedFoods={selectedFoods}
+					nutrientDataKey="anthocyanidins"
+				/>
+				<h2>Flavanols</h2>
+				<NutrientGraph
+					selectedFoods={selectedFoods}
+					nutrientDataKey="flavanols"
+				/>
+				<h2>Flavonols</h2>
+				<NutrientGraph
+					selectedFoods={selectedFoods}
+					nutrientDataKey="flavonols"
+				/>
+				<h2>Flavanones</h2>
+				<NutrientGraph
+					selectedFoods={selectedFoods}
+					nutrientDataKey="flavanones"
 				/>
 			</div>);
 

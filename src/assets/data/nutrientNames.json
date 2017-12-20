@@ -1,12 +1,12 @@
 {
     "203": "Protein",
-    "204": "Total lipid (fat)",
+    "204": "Total Fat",
     "205": "Carbs",
     "207": "Ash",
     "208": "Energy",
     "209": "Starch",
     "210": "Sucrose",
-    "211": "Glucose (dextrose)",
+    "211": "Glucose",
     "212": "Fructose",
     "213": "Lactose",
     "214": "Maltose",
@@ -178,3 +178,4 @@
     "857": "21:5",
     "858": "22:4"
 }
+

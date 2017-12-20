@@ -9,6 +9,10 @@ import { alphaCompare } from '../utils/GeneralUtils.jsx';
 
 
 export default class NutrientGraph extends Component {
+    constructor(props) {
+        super(props);
+    }
+
     static getVictoryData(foodData, name, color) {
         return Object.keys(foodData).map(key => {
             return { x: key, y: foodData[key], name: name, color: color };
@@ -17,12 +21,13 @@ export default class NutrientGraph extends Component {
     static getFoodNutrients(food, nutrientKey) { return food.nutrients[nutrientKey]; }
 
     static transformObjectToVictoryXYArray(obj, name) {
+        debugger;
         let arrData = Object.keys(obj).sort(alphaCompare).map(key => {
             return { x: key, y: obj[key], name: name };
         });
-        if (arrData.length === 1) {
-            arrData.push({ x: 0, y: 0, name: name }); //if only 1 entry then VictoryArea will crash. Add dummy value at center
-        }
+        // if (arrData.length === 1) {
+        //     arrData.push({ x: 0, y: 0, name: name }); //if only 1 entry then VictoryArea will crash. Add dummy value at center
+        // }
         return arrData;
     }
 
@@ -35,8 +40,12 @@ export default class NutrientGraph extends Component {
             else if (d.y < 1) { val *= 1e3; unit = 'MilliGrams'; }
             else { unit = 'Grams'; }
         }
-        if (d.x === 0) return 'Ignore me, I am a hack to get the graph to work';
-        return `${d.name}: \n${d.x}: ${val.toFixed(1)} ${unit}`
+
+        let displayVal = `${val.toFixed(1)} ${unit}`;
+        if (d.nutrientDataIsMissing) displayVal = 'Data Missing';
+        // else if (val === 0) `0 Grams`;
+
+        return `${d.foodName}: \n${d.x}: ${displayVal}`
     }
 
 
@@ -52,18 +61,18 @@ export default class NutrientGraph extends Component {
             ticks: { stroke: "grey", size: 3 },
             tickLabels: { fontSize: 5, padding: 1 },
         };
-
+        
         const radars = selectedFoods.map((food) => {
             let data = NutrientGraph.getFoodNutrients(food, nutrientDataKey);
-            const keys = Object.keys(data).sort(alphaCompare);
-            data = NutrientGraph.transformObjectToVictoryXYArray(data, food.name);
+            // const keys = Object.keys(data).sort(alphaCompare);
+            // data = NutrientGraph.transformObjectToVictoryXYArray(data, food.name);
 
-            if(data.length===0) return null; //if no values in VictoryArea = crash
+            if (data.length === 0) return null; //if no values in VictoryArea = crash
             return (
                 <VictoryArea
                     key={food.name}
                     data={data}
-                    categories={{ x: keys }} // Controls ordering
+                    // categories={{ x: keys }} // Controls ordering
                     style={{
                         data: { fill: food.color, fillOpacity: 0.2, },
                     }}
