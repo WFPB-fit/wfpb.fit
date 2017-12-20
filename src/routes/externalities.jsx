@@ -18,6 +18,11 @@ export default class Externalities extends Component {
 			tags: agribusinessTags,
 			resources: filterStudiesByTags(window.globalAppData.studies, agribusinessTags),
 			position: 1
+		},{
+			label: 'Animals',
+			tags: [],
+			resources: filterStudiesByTags({}, []),
+			position: 2
 		}
 		];
 	}
