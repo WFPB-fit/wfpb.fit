@@ -11,6 +11,16 @@ import { alphaCompare } from '../utils/GeneralUtils.jsx';
 export default class NutrientGraph extends Component {
     constructor(props) {
         super(props);
+        this.handleDomainChange = this.handleDomainChange.bind(this);
+        this.state = {
+            zoomDomain: null
+        };
+        this.zoomScaleFactor = 20;
+        this.maxZoomDomain = null;
+        this.minZoomDomain = {
+            x: [0, 0],
+            y: [0, 5e-2]
+        };
     }
 
     static getVictoryData(foodData, name, color) {
@@ -48,6 +58,38 @@ export default class NutrientGraph extends Component {
         return `${d.foodName}: \n${d.x}: ${displayVal}`;
     }
 
+
+    handleDomainChange(domain, props) {
+        if (!this.state.zoomDomain) {
+            this.state.zoomDomain = domain;
+            this.maxZoomDomain = domain;
+        }
+
+        //find the diff in zoom states
+        let newD = domain;
+        let oldD = this.state.zoomDomain;
+        let xDiff = [newD.x[0] - oldD.x[0], newD.x[1] - oldD.x[1]];
+        let yDiff = [newD.y[0] - oldD.y[0], newD.y[1] - oldD.y[1]];
+
+        //magnify the diffs
+        const scale = (x) => x * this.zoomScaleFactor;
+        xDiff = xDiff.map(scale);
+        yDiff = yDiff.map(scale);
+
+        //apply the magnified diff
+        newD.x = [oldD.x[0] + xDiff[0], oldD.x[1] + xDiff[1]]
+        newD.y = [oldD.y[0] + yDiff[0], oldD.y[1] + yDiff[1]]
+
+        //ensure not out of bounds of max/min zoom
+        newD.x = [Math.min(newD.x[0], this.maxZoomDomain.x[0]), Math.min(newD.x[1], this.maxZoomDomain.x[1])];
+        newD.y = [Math.min(newD.y[0], this.maxZoomDomain.y[0]), Math.min(newD.y[1], this.maxZoomDomain.y[1])];
+        newD.x = [Math.max(newD.x[0], this.minZoomDomain.x[0]), Math.max(newD.x[1], this.minZoomDomain.x[1])];
+        newD.y = [Math.max(newD.y[0], this.minZoomDomain.y[0]), Math.max(newD.y[1], this.minZoomDomain.y[1])];
+
+        // console.log(newD)
+        //set zoom state to new magnification
+        this.state.zoomDomain = newD;
+    }
 
     render() {
         const selectedFoods = this.props.selectedFoods,
@@ -91,8 +133,10 @@ export default class NutrientGraph extends Component {
                 containerComponent={
                     //setup tool tip
                     <VictoryZoomVoronoiContainer
-                        allowPan
                         dimension="x"
+                        zoomDimension='y' //ensure X zooming does not mess up the enchanced zooming
+                        zoomDomain={this.state.zoomDomain}
+                        onZoomDomainChange={(domain, props) => this.handleDomainChange(domain, props)}
                         labels={NutrientGraph.getVictoryTooltipLabel}
                         labelComponent={
                             <VictoryTooltip
