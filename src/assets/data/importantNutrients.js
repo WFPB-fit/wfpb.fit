@@ -1,4 +1,5 @@
 export const ImportantNutrients = {
+	calories: [208],
 	overview: [
 		203, //protein
 		204, //total fat
@@ -100,7 +101,7 @@ export const ImportantNutrients = {
 		338, //Lutein + zeaxanthin
 	],
 	flavonoids: [
-		710, //isoflavones
+		713, //total isoflavones
 		731, //anthocyanidins
 		734, //Proanthocyanidin
 		749, //Catechins
@@ -120,15 +121,15 @@ export const NutrientSummationReductions = {
 		346, // Tocotrienol, gamma,
 		347, // Tocotrienol, delta,
 	],
-	710: [ //isoflavones
-		// 710, // Object { name: "Daidzein", group: "Isoflavones" }
-		711, // Object { name: "Genistein", group: "Isoflavones" }
-		712, // Object { name: "Glycitein", group: "Isoflavones" }
-		713, // Object { name: "Total isoflavones", group: "Isoflavones" }
-		714, // Object { name: "Biochanin A", group: "Isoflavones" }
-		715, // Object { name: "Formononetin", group: "Isoflavones" }
-		716, // Object { name: "Coumestrol", group: "Isoflavones" }        
-	],
+	// 710: [ //isoflavones
+	// 	// 710, // Object { name: "Daidzein", group: "Isoflavones" }
+	// 	711, // Object { name: "Genistein", group: "Isoflavones" }
+	// 	712, // Object { name: "Glycitein", group: "Isoflavones" }
+	// 	713, // Object { name: "Total isoflavones", group: "Isoflavones" }
+	// 	714, // Object { name: "Biochanin A", group: "Isoflavones" }
+	// 	715, // Object { name: "Formononetin", group: "Isoflavones" }
+	// 	716, // Object { name: "Coumestrol", group: "Isoflavones" }        
+	// ],
 	731: [ //anthocyanidins
 		// 731, // Object { name: "Cyanidin", group: "Anthocyanidins" }
 		740, // Object { name: "Petunidin", group: "Anthocyanidins" }

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { titleize, getRandomColor } from '../utils/GeneralUtils.jsx';
 import VirtualizedSelect from 'react-virtualized-select'
-import { getLink, alphaCompare } from '../utils/GeneralUtils.jsx';
+import { getLink, alphaCompare, getNutrientFromId } from '../utils/GeneralUtils.jsx';
 
 import FoodData from '../assets/data/nutrition/foodData.json';
 import { ImportantNutrients } from '../assets/data/importantNutrients.js';
@@ -41,7 +41,7 @@ export default class Food extends Component {
 							// if (foodId === "01001") console.log(foodData.nutrients[nGroupName],nId)
 							isMissing = true;
 						}
-						total.push({ x: NutrientNames[nId], y: val, nId: nId, foodName: foodData.name, nutrientDataIsMissing: isMissing });
+						total.push({ x: NutrientNames[nId], y: val, nutrient_id: nId, foodName: foodData.name, nutrientDataIsMissing: isMissing });
 						return total;
 					}, []);
 					foodData.nutrients[nGroupName] = chartNutrientData;
@@ -85,7 +85,7 @@ export default class Food extends Component {
 
 	render() {
 		const selectedFoods = this.preprocessSelectedFoods();
-		
+
 		console.log(selectedFoods)
 
 		let dataVis = null;
@@ -139,9 +139,23 @@ export default class Food extends Component {
 					)
 				})
 			);
+			const calories = (
+				selectedFoods.map(food => {
+					return (
+						<li key={food.name}>
+							{food.name}: {food.nutrients.calories[0].y}
+						</li>
+					)
+				})
+			);
 
 			dataVis = (
 				<div>
+					<p>Nutrients in 100 Grams of every selected food:</p>
+					<h2>Calories</h2>
+					<ul>
+						{calories}
+					</ul>
 					{graphs}
 					<h2>Sources</h2>
 					<ul>
@@ -149,7 +163,17 @@ export default class Food extends Component {
 					</ul>
 					<h2>Notes</h2>
 					<ul>
-						<li>Missing data points indicate the USDA does not have data available on that nutrient</li>
+						<li>"Missing data" indicates the USDA does not have data available on that nutrient</li>
+						<li>Some displayed nutrients are actually summations of different nutrients, including:</li>
+						<ul>
+							<li>Vitamin E: Alpha, Beta, Gamma, Delta Tocopherol & Alpha, Beta, Gamma, Delta Tocotrienol</li>
+							<li>Anthocyanidins: Cyanidin, Petunidin, Delphinidin, Malvidin, Pelargonidin, Peonidin </li>
+							<li>Proanthocyanidin: Proanthocyanidin dimers, trimers, 4-6mers, 7-10mers, polymers (>10mers) </li>
+							<li>Catechins: (+)-Catechin, (-)-Epigallocatechin, (-)-Epicatechin, (-)-Epicatechin 3-gallate, (-)-Epigallocatechin 3-gallate, (+)-Gallocatechin</li>
+							<li>Flavonols: Isorhamnetin, Kaempferol, Myricetin, Quercetin</li>
+							<li>Flavanones: Eriodictyol, Hesperetin, Naringenin, Apigenin, Luteolin</li>
+							<li>Phytosterols: Misc Phytosterols, Stigmasterol, Campesterol, Beta-sitosterol</li>
+						</ul>
 					</ul>
 				</div>
 			);

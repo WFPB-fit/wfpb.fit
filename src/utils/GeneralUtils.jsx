@@ -42,7 +42,10 @@ export function getRandomColor() { //https://stackoverflow.com/questions/1484506
 	}
 	return color;
 }
-
+export function getNutrientFromId(id, nutrients) {
+	const n = nutrients.filter(x => x.nutrient_id == id); //find the nutrient. use '==' as one may be string and other integer
+	return (n.length === 1) ? n[0] : null;
+}
 export function numCommonElements(arr1, arr2) {
 	const intersect = arr1.filter(x => arr2.includes(x)); //[...set1].filter(x=> set2.has(x));
 	return intersect.length;
