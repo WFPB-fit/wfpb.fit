@@ -15,7 +15,7 @@ export default class NutrientGraph extends Component {
         this.state = {
             zoomDomain: null
         };
-        this.zoomScaleFactor = 20;
+        this.zoomScaleFactor = 1;
         this.maxZoomDomain = null;
         this.minZoomDomain = {
             x: [0, 0],
@@ -59,12 +59,12 @@ export default class NutrientGraph extends Component {
     }
 
 
-    handleDomainChange(domain, props) {
+    async handleDomainChange(domain, props) {
         if (!this.state.zoomDomain) {
-            this.state.zoomDomain = domain;
+            await this.setState({zoomDomain: domain});
             this.maxZoomDomain = domain;
         }
-
+        // console.log(domain,this.state.zoomDomain)
         //find the diff in zoom states
         let newD = domain;
         let oldD = this.state.zoomDomain;
@@ -88,7 +88,7 @@ export default class NutrientGraph extends Component {
 
         // console.log(newD)
         //set zoom state to new magnification
-        this.state.zoomDomain = newD;
+        this.setState({zoomDomain: newD});
     }
 
     render() {
@@ -97,7 +97,6 @@ export default class NutrientGraph extends Component {
             w = 200,
             h = 200;
 
-        const selectDataColor = function (d, active) { return d.color; };
         const axisStyle = {
             axis: { stroke: "none" },
             ticks: { stroke: "grey", size: 3 },
@@ -136,7 +135,7 @@ export default class NutrientGraph extends Component {
                         dimension="x"
                         zoomDimension='y' //ensure X zooming does not mess up the enchanced zooming
                         zoomDomain={this.state.zoomDomain}
-                        onZoomDomainChange={(domain, props) => this.handleDomainChange(domain, props)}
+                        // onZoomDomainChange={(domain, props) => this.handleDomainChange(domain, props)}
                         labels={NutrientGraph.getVictoryTooltipLabel}
                         labelComponent={
                             <VictoryTooltip

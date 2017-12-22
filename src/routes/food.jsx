@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { titleize, getRandomColor } from '../utils/GeneralUtils.jsx';
 import VirtualizedSelect from 'react-virtualized-select'
-import { getLink, alphaCompare, getNutrientFromId } from '../utils/GeneralUtils.jsx';
+import { getLink, alphaCompare } from '../utils/GeneralUtils.jsx';
 
 import FoodData from '../assets/data/nutrition/foodData.json';
 import { ImportantNutrients } from '../assets/data/importantNutrients.js';
@@ -41,7 +41,7 @@ export default class Food extends Component {
 							// if (foodId === "01001") console.log(foodData.nutrients[nGroupName],nId)
 							isMissing = true;
 						}
-						total.push({ x: NutrientNames[nId], y: val, nutrient_id: nId, foodName: foodData.name, nutrientDataIsMissing: isMissing });
+						total.push({ x: nName, y: val, nutrient_id: nId, foodName: foodData.name, nutrientDataIsMissing: isMissing });
 						return total;
 					}, []);
 					foodData.nutrients[nGroupName] = chartNutrientData;
@@ -151,7 +151,7 @@ export default class Food extends Component {
 
 			dataVis = (
 				<div>
-					<p>Nutrients in 100 Grams of every selected food:</p>
+					<p>Nutrients in 100 Grams of each food:</p>
 					<h2>Calories</h2>
 					<ul>
 						{calories}
