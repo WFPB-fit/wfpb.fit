@@ -5,9 +5,11 @@ import VirtualizedSelect from 'react-virtualized-select'
 import { getLink, alphaCompare } from '../utils/GeneralUtils.jsx';
 
 import FoodData from '../assets/data/nutrition/foodData.json';
+import IndexedFoodSearch from '../assets/data/nutrition/indexedFoods.json';
 import { ImportantNutrients } from '../assets/data/importantNutrients.js';
 import NutrientNames from '../assets/data/nutrientNames.json';
 import NutrientGraph from '../components/nutrientGraph.jsx';
+import NestedSelectField from '../components/NestedSelectField.jsx';
 
 // var FoodData = null;
 // var NutrientNames = null;
@@ -62,7 +64,8 @@ export default class Food extends Component {
 			})
 			.sort(alphaCompare);
 		this.state = {
-			selectedFoods: [this.allSelectables[0]]
+			selectedFoods: [this.allSelectables[0]],
+			selectedFoodFilters: [],
 		};
 	}
 	handleSelectChange(value) {
@@ -185,6 +188,10 @@ export default class Food extends Component {
 
 		return (
 			<div>
+				<NestedSelectField
+					selectObject={IndexedFoodSearch}
+					selectedKeys={this.state.selectedFoodFilters}
+				/>
 				<VirtualizedSelect
 					name="form-field-name"
 					value={this.state.selectedFoods}

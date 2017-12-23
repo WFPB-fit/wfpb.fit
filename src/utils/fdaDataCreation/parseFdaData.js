@@ -86,7 +86,12 @@ export default class ParseFdaData {
 
 	static preprocessFoodFilter(filterName) {
 		filterName = titleize(filterName);
-		filterName = pluralize.singular(filterName);
+
+		//make last word singular
+		let words = filterName.split();
+		words[words.length - 1] = pluralize.singular(words[words.length - 1]);
+		filterName = words.join();
+
 		filterName = filterName.trim();
 		return filterName;
 	}
