@@ -17,6 +17,7 @@ import NestedSelectField from '../components/NestedSelectField.jsx';
 export default class Food extends Component {
 	constructor(props) {
 		super(props);
+
 		//bind functions
 		this.handleSelectChange = this.handleSelectChange.bind(this);
 		// this.getRelativeAminoAcids = this.getRelativeAminoAcids.bind(this);
@@ -90,47 +91,61 @@ export default class Food extends Component {
 		const selectedFoods = this.preprocessSelectedFoods();
 
 		console.log(selectedFoods)
+		console.log(IndexedFoodSearch)
 
 		let dataVis = null;
 		if (selectedFoods.length > 0) { //At least one food is selected
-			const graphs = (<div>
-				<h2>Overview</h2>
-				<NutrientGraph
-					selectedFoods={selectedFoods}
-					nutrientDataKey="overview"
-				/>
-				<h2>Fats</h2>
-				<NutrientGraph
-					selectedFoods={selectedFoods}
-					nutrientDataKey="fats"
-				/>
-				<p>SAFA = Saturated Fat, MUFA = Monounsaturated Fat, PUFA = Polyunsaturated Fat</p>
-				<h2>Vitamins</h2>
-				<NutrientGraph
-					selectedFoods={selectedFoods}
-					nutrientDataKey="vitamins"
-				/>
-				<h2>Minerals</h2>
-				<NutrientGraph
-					selectedFoods={selectedFoods}
-					nutrientDataKey="minerals"
-				/>
-				<h2>Amino Acids</h2>
-				<NutrientGraph
-					selectedFoods={selectedFoods}
-					nutrientDataKey="amino"
-				/>
-				<h2>Carotenoids</h2>
-				<NutrientGraph
-					selectedFoods={selectedFoods}
-					nutrientDataKey="carotenoids"
-				/>
-				<h2>Flavonoids</h2>
-				<NutrientGraph
-					selectedFoods={selectedFoods}
-					nutrientDataKey="flavonoids"
-				/>
-			</div>);
+			const graphs = (
+				<div>
+					<h2>Overview</h2>
+					<NutrientGraph
+						selectedFoods={selectedFoods}
+						nutrientDataKey="overview"
+					/>
+					<h2>Fats</h2>
+					<NutrientGraph
+						selectedFoods={selectedFoods}
+						nutrientDataKey="fats"
+					/>
+					<p>SAFA = Saturated Fat, MUFA = Monounsaturated Fat, PUFA = Polyunsaturated Fat</p>
+
+					{/* <h2>Other Lipids</h2>
+					<NutrientGraph
+						selectedFoods={selectedFoods}
+						nutrientDataKey="lipids"
+					/> */}
+					<h2>Vitamins</h2>
+					<NutrientGraph
+						selectedFoods={selectedFoods}
+						nutrientDataKey="vitamins"
+					/>
+					{/* <h2>Synthetic Vitamins</h2>
+					<NutrientGraph
+						selectedFoods={selectedFoods}
+						nutrientDataKey="fats"
+					/> */}
+					<h2>Minerals</h2>
+					<NutrientGraph
+						selectedFoods={selectedFoods}
+						nutrientDataKey="minerals"
+					/>
+					<h2>Amino Acids</h2>
+					<NutrientGraph
+						selectedFoods={selectedFoods}
+						nutrientDataKey="amino"
+					/>
+					<h2>Carotenoids</h2>
+					<NutrientGraph
+						selectedFoods={selectedFoods}
+						nutrientDataKey="carotenoids"
+					/>
+					<h2>Flavonoids</h2>
+					<NutrientGraph
+						selectedFoods={selectedFoods}
+						nutrientDataKey="flavonoids"
+					/>
+				</div>
+			);
 
 			//link to food sources
 			const sources = (

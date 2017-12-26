@@ -95,31 +95,8 @@ export default class ParseFdaData {
 		filterName = filterName.trim();
 		return filterName;
 	}
-	static parseIndicies() {
-		let foodIndex = {};
-		for (const food of FoodGroups) {
-			const [foodName, groupName, foodId] = food;
-			const foodFilters = foodName.split(',');
-
-			//add group to total food index if needed. Set top level index of this food to the group
-			if (!(groupName in foodIndex)) foodIndex[groupName] = {};
-			let prevIndex = foodIndex[groupName];
-
-			//iterate over each of the food's filters, indexing on each
-			for (let i = 0; i < foodFilters.length; i++) {
-				const filter = ParseFdaData.preprocessFoodFilter(foodFilters[i]);
-				if (!(filter in prevIndex)) prevIndex[filter] = {}; //add index if not present
-				prevIndex = prevIndex[filter];
-				if (i === (foodFilters.length - 1)) prevIndex[''] = foodId;
-			}
-		}
-		return foodIndex;
-	}
 
 	static async parse() {
-		const indexedFoodNames = ParseFdaData.parseIndicies();
-		console.log(JSON.stringify(indexedFoodNames));
-
 		//get Food info from FDA API
 		const ids = FoodIds.map(x => x[0]);
 		const fdaFoods = await FdaApi.fetchFoodsInfo(ids);
@@ -135,6 +112,7 @@ export default class ParseFdaData {
 
 			const id = fdaFood.desc.ndbno;
 			food.name = fdaFood.desc.name;
+			food.fg = fdaFood.desc.fg; //food group
 			food.nutrients = ParseFdaData.getNutrients(fdaFood);
 			foods[id] = food;
 		}

@@ -24,6 +24,13 @@ import 'react-virtualized-select/styles.css';
 // import Parse from './utils/fdaDataCreation/parseFdaData';
 // Parse.parse();
 
+import { Provider } from 'react-redux'
+import { createStore, applyMiddleware } from 'redux';
+import rootReducer from './utils/data/reducers';
+let store = createStore(
+	rootReducer
+);
+
 export default class App extends Component {
 	constructor(props) {
 		super(props);
@@ -40,33 +47,52 @@ export default class App extends Component {
 			}
 		};
 		document.title = window.globalAppData.appName; //set tab title
+
+		this.loadData();
 	}
 
+	async loadData() {
+		import('./assets/data/importantNutrients.js').then(data => {
+			// store.dispatch({
+			// 	type: 'ADD_FG_NAME_INDEX',
+			// 	foodGroups: data
+			// });
+			// store.dispatch({
+			// 	type: 'ADD_FG_ID_INDEX',
+			// 	foodGroups: data
+			// });
+		})
+		import('./assets/data/nutrition/foodData.json').then(data => {
+			console.log(data)
+		});
+	}
 
 	render() {
 		return (
-			<MuiThemeProvider>
-				<div id="app">
-					<Router >
-						<div>
-							<Header />
-							{/* <PieChart x={100} y={100} outerRadius={100} innerRadius={50}
+			<Provider store={store}>
+				<MuiThemeProvider>
+					<div id="app">
+						<Router >
+							<div>
+								<Header />
+								{/* <PieChart x={100} y={100} outerRadius={100} innerRadius={50}
 								data={[{ value: 92 - 34, label: 'Code lines' },
 								{ value: 34, label: 'Empty lines' }]} /> */}
-							<Switch>
-								<CenteredDiv>
-									<Route exact path="/" component={Home} />
-									<Route path="/health" component={Health} />
-									<Route path="/food" component={Food} />
-									<Route path="/externalities" component={Externalities} />
-									<Route path="/learn-more" component={LearnMore} />
-									<Route path="/endorsements" component={Endorsements} />
-								</CenteredDiv>
-							</Switch>
-						</div>
-					</Router>
-				</div>
-			</MuiThemeProvider>
+								<Switch>
+									<CenteredDiv>
+										<Route exact path="/" component={Home} />
+										<Route path="/health" component={Health} />
+										<Route path="/food" component={Food} />
+										<Route path="/externalities" component={Externalities} />
+										<Route path="/learn-more" component={LearnMore} />
+										<Route path="/endorsements" component={Endorsements} />
+									</CenteredDiv>
+								</Switch>
+							</div>
+						</Router>
+					</div>
+				</MuiThemeProvider>
+			</Provider>
 		);
 	}
 }
