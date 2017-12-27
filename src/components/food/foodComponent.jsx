@@ -41,7 +41,6 @@ export default class Food extends Component {
 	//index by name instead. Determine the color of lines to be used
 	preprocessSelectedFoods() {
 		// preprocess foods
-		console.log(this.props.foodData, 'props')
 		return this.state.selectedFoods.map(selectedFood => {
 			const foodId = selectedFood.value;
 			let foodData = Object.assign({}, this.props.foodData[foodId]);
@@ -81,10 +80,10 @@ export default class Food extends Component {
 		if (selectedFoodsData.length > 0) { //At least one food is selected
 			const graphs = (
 				<div>
-					<h2>Overview</h2>
+					<h2>Macronutrients</h2>
 					<NutrientGraph
 						selectedFoods={selectedFoodsData}
-						nutrientDataKey="overview"
+						nutrientDataKey="macros"
 					/>
 					<h2>Fats</h2>
 					<NutrientGraph
@@ -97,11 +96,6 @@ export default class Food extends Component {
 					<NutrientGraph
 						selectedFoods={selectedFoodsData}
 						nutrientDataKey="omega3"
-					/>
-					<h2>Sterols</h2>
-					<NutrientGraph
-						selectedFoods={selectedFoodsData}
-						nutrientDataKey="sterols"
 					/>
 					<h2>Vitamins</h2>
 					<NutrientGraph

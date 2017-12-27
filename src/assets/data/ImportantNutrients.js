@@ -1,13 +1,17 @@
 export const ImportantNutrients = {
 	calories: [208],
-	overview: [
+	misc: [	
+		208, //calories
+		291, //fiber, total dietary  	
+		601, //Cholesterol,  
+		636, //phytosterol  
+	],
+	macros: [
 		203, //protein
 		204, //total fat
 		205, //carbohydrates by difference
-		291, //fiber, total dietary  
 	],
 	fats: [
-		// 605, //Fatty acids, total trans,
 		606, //Fatty acids, total saturated,
 		605, //Fatty acids, total trans,
 
@@ -20,10 +24,6 @@ export const ImportantNutrients = {
 		621, // 22:6 n-3 (DHA),
 		629, // 20:5 n-3 (EPA),
 		631, // 22:5 n-3 (DPA),
-	],
-	sterols: [		
-		601, //Cholesterol,  
-		636, //phytosterol  
 	],
 	amino: [
 		454, // Betaine,
