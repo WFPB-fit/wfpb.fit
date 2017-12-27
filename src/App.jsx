@@ -21,15 +21,19 @@ import 'react-select/dist/react-select.css';
 import 'react-virtualized/styles.css';
 import 'react-virtualized-select/styles.css';
 
-// import Parse from './utils/fdaDataCreation/parseFdaData';
-// Parse.parse();
+
+import DataLoader from './utils/data/DataLoader.js';
 
 import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux';
 import rootReducer from './utils/data/reducers';
+
+import Parse from './utils/fdaDataCreation/parseFdaData';
+
 let store = createStore(
 	rootReducer
 );
+Parse.parse(store);
 
 export default class App extends Component {
 	constructor(props) {
@@ -48,23 +52,7 @@ export default class App extends Component {
 		};
 		document.title = window.globalAppData.appName; //set tab title
 
-		this.loadData();
-	}
-
-	async loadData() {
-		import('./assets/data/importantNutrients.js').then(data => {
-			// store.dispatch({
-			// 	type: 'ADD_FG_NAME_INDEX',
-			// 	foodGroups: data
-			// });
-			// store.dispatch({
-			// 	type: 'ADD_FG_ID_INDEX',
-			// 	foodGroups: data
-			// });
-		})
-		import('./assets/data/nutrition/foodData.json').then(data => {
-			console.log(data)
-		});
+		DataLoader.init(store);
 	}
 
 	render() {

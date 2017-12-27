@@ -96,7 +96,7 @@ export default class ParseFdaData {
 		return filterName;
 	}
 
-	static async parse() {
+	static async parse(store) {
 		//get Food info from FDA API
 		const ids = FoodIds.map(x => x[0]);
 		const fdaFoods = await FdaApi.fetchFoodsInfo(ids);
@@ -105,13 +105,16 @@ export default class ParseFdaData {
 
 		//extract info from the foods API
 		let foods = {};
-		// let nutrientNames = {};
+		// NEED TO SOMEHOW ENSURE THAT store's food group ids are loaded in time
+		// Should be fine since everything is on localhost, so whatever for now
+
+		console.log(store.getState());
 		for (const fdaFood of fdaFoods) {
 			let food = {};
 			// ParseFdaData.addNutrientNames(fdaFood, nutrientNames);
 
 			const id = fdaFood.desc.ndbno;
-			food.name = fdaFood.desc.name;
+			food.name = fdaFood.desc.name;			
 			food.fg = fdaFood.desc.fg; //food group
 			food.nutrients = ParseFdaData.getNutrients(fdaFood);
 			foods[id] = food;
