@@ -13,8 +13,6 @@ import {
 import FdaApi from './FdaApi.js';
 
 export default class ParseFdaData {
-
-
 	static getNutrientValue(n) {
 		let val = n.value;
 		if (n.unit === 'µg') val *= 1e-6;
@@ -25,23 +23,18 @@ export default class ParseFdaData {
 	//extract important nutrients from the FDA API data
 	static getNutrients(fdaFood) {
 		let nutrients = {};
-		let groupNames = Object.keys(ImportantNutrients);
+		let importantNutrients = Object.values(ImportantNutrients);
 
-		//add each group to the return value
-		for (const groupName of groupNames) {
-			let groupNutrients = {};
-			//for each nutrient in this group, add its FDA value to return value
-			for (let nutrientId of ImportantNutrients[groupName]) {
-				const n = getNutrientFromId(nutrientId, fdaFood.nutrients);
+		//add each nutrient from importantNutrients to the return value
+		for(const nutrientGroup of importantNutrients){
+			for (const nId of nutrientGroup){
+				const n = getNutrientFromId(nId, fdaFood.nutrients);
 
 				if (n) {
 					let val = ParseFdaData.getNutrientValue(n);
-
-					const formatted = Number(val.toPrecision(4));
-					groupNutrients[nutrientId] = formatted;
+					nutrients[nId] = Number(val.toPrecision(4));
 				}
 			}
-			nutrients[groupName] = groupNutrients;
 		}
 
 		return nutrients;
@@ -84,18 +77,6 @@ export default class ParseFdaData {
 		}
 	}
 
-	static preprocessFoodFilter(filterName) {
-		filterName = titleize(filterName);
-
-		//make last word singular
-		let words = filterName.split();
-		words[words.length - 1] = pluralize.singular(words[words.length - 1]);
-		filterName = words.join();
-
-		filterName = filterName.trim();
-		return filterName;
-	}
-
 	static async parse(store) {
 		//get Food info from FDA API
 		const ids = FoodIds.map(x => x[0]);
@@ -106,17 +87,16 @@ export default class ParseFdaData {
 		//extract info from the foods API
 		let foods = {};
 		// NEED TO SOMEHOW ENSURE THAT store's food group ids are loaded in time
-		// Should be fine since everything is on localhost, so whatever for now
-
-		console.log(store.getState());
+		// Should be fine since this is run manually on localhost, thus I don't care for now
+		const fgNameIndex = store.getState().foodGroupIds.nameIndex;
 		for (const fdaFood of fdaFoods) {
 			let food = {};
 			// ParseFdaData.addNutrientNames(fdaFood, nutrientNames);
 
 			const id = fdaFood.desc.ndbno;
 			food.name = fdaFood.desc.name;			
-			food.fg = fdaFood.desc.fg; //food group
-			food.nutrients = ParseFdaData.getNutrients(fdaFood);
+			food.fg = fgNameIndex[fdaFood.desc.fg]; //food group
+			food.n = ParseFdaData.getNutrients(fdaFood);
 			foods[id] = food;
 		}
 		console.log(foods)

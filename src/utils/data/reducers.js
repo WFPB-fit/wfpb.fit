@@ -8,10 +8,26 @@ function foodGroupIds(state = {
 }, action) {
 	switch (action.type) {
 		case 'ADD_FG_ID_INDEX':
-			state.nameIndex = action.foodGroupIndex;
+			state.idIndex = action.foodGroupIndex;
 			return state;
 		case 'ADD_FG_NAME_INDEX':
-			state.idIndex = action.foodGroupIndex;;
+			state.nameIndex = action.foodGroupIndex;;
+			return state;
+		default:
+			return state;
+	}
+}
+
+function food(state = {
+	indices: {},
+	data: {}
+}, action) {
+	switch (action.type) {
+		case 'ADD_INDEXED_FOODS':
+			state.indices = action.indices;
+			return state;
+		case 'ADD_FOOD_DATA':
+			state.data = action.foodData;;
 			return state;
 		default:
 			return state;
@@ -29,6 +45,7 @@ function indexTags(state = {}, action) {
 
 const rootReducer = combineReducers({
 	foodGroupIds,
+	food,
 	indexTags
 })
 

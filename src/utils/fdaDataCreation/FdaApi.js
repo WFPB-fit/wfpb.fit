@@ -29,7 +29,7 @@ export default class FdaApi {
 	//gets all data from FDA
 	static async fetchFoodsInfo(ids) {
 		console.log('Fetching FDA Nutrition Data')
-		ids = ["01001"] //Object.keys(FoodData);
+		// ids = ["01001"] //Object.keys(FoodData);
 
 		//get nutrient info
 		//can only request up to 50 foods at a time, so send one request for each 50 food ids

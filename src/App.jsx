@@ -25,7 +25,7 @@ import 'react-virtualized-select/styles.css';
 import DataLoader from './utils/data/DataLoader.js';
 
 import { Provider } from 'react-redux'
-import { createStore, applyMiddleware } from 'redux';
+import { createStore } from 'redux';
 import rootReducer from './utils/data/reducers';
 
 // import Parse from './utils/fdaDataCreation/parseFdaData';

@@ -20,18 +20,17 @@ export const ImportantNutrients = {
 		629, // 20:5 n-3 (EPA),
 		631, // 22:5 n-3 (DPA),
 	],
+	lipids:[
+		605, //Fatty acids, total trans,
+		601, //Cholesterol,  
+		636, //phytosterol  
 
-	// lipids:[
-	// 	605, //Fatty acids, total trans,
-	// 	601, //Cholesterol,  
-	// 	636, //phytosterol  
-
-	// 	//omega 3's
-	// 	851, // 18:3 n-3 c,c,c (ALA)
-	// 	621, // 22:6 n-3 (DHA),
-	// 	629, // 20:5 n-3 (EPA),
-	// 	631, // 22:5 n-3 (DPA),
-	// ],
+		//omega 3's
+		851, // 18:3 n-3 c,c,c (ALA)
+		621, // 22:6 n-3 (DHA),
+		629, // 20:5 n-3 (EPA),
+		631, // 22:5 n-3 (DPA),
+	],
 	amino: [
 		454, // Betaine,
 		501, // Tryptophan,
