@@ -54,6 +54,13 @@ export function alphaCompare(a, b) {
 	if (a.value && b.value) return a.value.localeCompare(b.value);
 	else return a.localeCompare(b);
 }
+export function objSwap(json) {
+	var ret = {};
+	for (var key in json) {
+		ret[json[key]] = key;
+	}
+	return ret;
+}
 export function getLink(url, text) {
 	if (!url || url === '') return null;
 

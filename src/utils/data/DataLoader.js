@@ -2,16 +2,23 @@ import {
 	combineReducers
 } from 'redux'
 import {
-	getNutrientFromId,titleize
+	getNutrientFromId,
+	titleize
 } from '../GeneralUtils.jsx';
 import pluralize from 'pluralize';
+
+import {
+	ImportantNutrients,
+	FoodGroupIds
+} from '../../assets/data/ImportantNutrients.js';
 
 export default class DataLoader {
 	static async init(store) {
 		DataLoader.store = store;
 
 		const fgIdIndex = await DataLoader.loadFoodGroups();
-		DataLoader.loadFoodData(fgIdIndex);
+		await DataLoader.loadFoodData(fgIdIndex);
+		console.log(store.getState())
 	}
 
 	static get(varName) {
@@ -26,9 +33,10 @@ export default class DataLoader {
 		let foodData = JSON.parse(localStorage.getItem('foodData'));
 		if (!foodData) {
 			const FoodData = await DataLoader.getNutrientsRawData();
-
 		}
 	}
+
+
 
 	static async loadFoodGroups() {
 		let idIndex = JSON.parse(localStorage.getItem('fgIdIndex'));
@@ -36,9 +44,6 @@ export default class DataLoader {
 		let foodIds = null;
 
 		if (!idIndex) {
-			const {
-				FoodGroupIds
-			} = await DataLoader.getImportantNutrients();
 			idIndex = {};
 			for (const [id, name] of FoodGroupIds) {
 				idIndex[id] = name;
@@ -47,10 +52,6 @@ export default class DataLoader {
 		}
 
 		if (!nameIndex) {
-			const {
-				FoodGroupIds
-			} = await DataLoader.getImportantNutrients();
-
 			nameIndex = {};
 			for (const [id, name] of FoodGroupIds) {
 				nameIndex[name] = id;
@@ -76,14 +77,11 @@ export default class DataLoader {
 
 		if (!indices || !foodData) {
 			foodData = await DataLoader.getFoodsRawData();
-			const {
-				ImportantNutrients
-			} = await DataLoader.getImportantNutrients();
-			foodData = DataLoader._preprocessFoodData(foodData, ImportantNutrients);
+			foodData = DataLoader._preprocessFoodData(foodData);
 			indices = DataLoader._preprocessFoodIndices(foodData, fgIdIndex);
 
-			localStorage.setItem('foodIndex',JSON.stringify(indices));
-			localStorage.setItem('foodData',JSON.stringify(foodData));
+			localStorage.setItem('foodIndex', JSON.stringify(indices));
+			localStorage.setItem('foodData', JSON.stringify(foodData));
 		}
 
 		DataLoader.store.dispatch({
@@ -96,8 +94,8 @@ export default class DataLoader {
 		});
 	}
 
-	static _preprocessFoodData(foodData, importantNutrients) {
-		const groupNames = Object.keys(importantNutrients);
+	static _preprocessFoodData(foodData) {
+		const groupNames = Object.keys(ImportantNutrients);
 		const foodIds = Object.keys(foodData);
 
 		//add each group to the return value
@@ -108,7 +106,7 @@ export default class DataLoader {
 				let groupNutrients = {};
 				const foodNutrients = foodData[foodId].n;
 				//for each nutrient in this group, add its FDA value to return value
-				for (let nId of importantNutrients[groupName]) {
+				for (let nId of ImportantNutrients[groupName]) {
 					if (nId in foodNutrients) {
 						groupNutrients[nId] = foodNutrients[nId];
 					}
@@ -132,7 +130,7 @@ export default class DataLoader {
 		filterName = filterName.trim();
 		return filterName;
 	}
-	
+
 	static _preprocessFoodIndices(foodData, fgIdIndex) {
 		let foodIndex = {};
 		const foodIds = Object.keys(foodData);
@@ -159,14 +157,6 @@ export default class DataLoader {
 		return foodIndex;
 	}
 
-
-	static async getImportantNutrients() {
-		if (!DataLoader.importantNutrients) {
-			DataLoader.importantNutrients = await
-			import ('../../assets/data/importantNutrients.js');
-		}
-		return DataLoader.importantNutrients;
-	}
 	static async getFoodsRawData() {
 		if (!DataLoader.foods) {
 			DataLoader.foods = await

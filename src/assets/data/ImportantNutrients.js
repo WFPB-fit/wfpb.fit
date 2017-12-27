@@ -20,7 +20,7 @@ export const ImportantNutrients = {
 		629, // 20:5 n-3 (EPA),
 		631, // 22:5 n-3 (DPA),
 	],
-	lipids:[
+	lipids: [
 		605, //Fatty acids, total trans,
 		601, //Cholesterol,  
 		636, //phytosterol  
@@ -194,4 +194,30 @@ export const EssentialAminoAcids = [
 
 ]
 
-export const FoodGroupIds = [[100,"Dairy and Egg Products"],[200,"Spices and Herbs"],[300,"Baby Foods"],[400,"Fats and Oils"],[500,"Poultry Products"],[600,"Soups, Sauces, and Gravies"],[700,"Sausages and Luncheon Meats"],[800,"Breakfast Cereals"],[900,"Fruits and Fruit Juices"],[1000,"Pork Products"],[1100,"Vegetables and Vegetable Products"],[1200,"Nut and Seed Products"],[1300,"Beef Products"],[1400,"Beverages"],[1500,"Finfish and Shellfish Products"],[1600,"Legumes and Legume Products"],[1700,"Lamb, Veal, and Game Products"],[1800,"Baked Products"],[1900,"Sweets"],[2000,"Cereal Grains and Pasta"],[2100,"Fast Foods"],[2200,"Meals, Entrees, and Side Dishes"],[2500,"Snacks"],[3500,"American Indian/Alaska Native Foods"],[3600,"Restaurant Foods"]];
+export const FoodGroupIds = {
+	100: "Dairy and Egg Products",
+	200: "Spices and Herbs",
+	300: "Baby Foods",
+	400: "Fats and Oils",
+	500: "Poultry Products",
+	600: "Soups, Sauces, and Gravies",
+	700: "Sausages and Luncheon Meats",
+	800: "Breakfast Cereals",
+	900: "Fruits and Fruit Juices",
+	1000: "Pork Products",
+	1100: "Vegetables and Vegetable Products",
+	1200: "Nut and Seed Products",
+	1300: "Beef Products",
+	1400: "Beverages",
+	1500: "Finfish and Shellfish Products",
+	1600: "Legumes and Legume Products",
+	1700: "Lamb, Veal, and Game Products",
+	1800: "Baked Products",
+	1900: "Sweets",
+	2000: "Cereal Grains and Pasta",
+	2100: "Fast Foods",
+	2200: "Meals, Entrees, and Side Dishes",
+	2500: "Snacks",
+	3500: "American Indian/Alaska Native Foods",
+	3600: "Restaurant Foods"
+};

@@ -5,7 +5,7 @@ import {
 
     VictoryArea, VictoryPolarAxis, VictoryTheme
 } from 'victory';
-import { alphaCompare } from '../utils/GeneralUtils.jsx';
+import { alphaCompare } from '../../utils/GeneralUtils.jsx';
 
 import SelectField from 'material-ui/SelectField';
 import MenuItem from 'material-ui/MenuItem';

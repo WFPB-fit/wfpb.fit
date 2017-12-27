@@ -8,11 +8,26 @@ function foodGroupIds(state = {
 }, action) {
 	switch (action.type) {
 		case 'ADD_FG_ID_INDEX':
-			state.idIndex = action.foodGroupIndex;
-			return state;
+			return Object.assign({}, state, {
+				idIndex: action.foodGroupIndex
+			});
 		case 'ADD_FG_NAME_INDEX':
-			state.nameIndex = action.foodGroupIndex;;
+			return Object.assign({}, state, {
+				nameIndex: action.foodGroupIndex
+			});
+		default:
 			return state;
+	}
+}
+
+function importantNutrients(state = {
+	data: {}
+}, action) {
+	switch (action.type) {
+		case 'ADD_IMPORTANT_NUTRIENTS':
+			return Object.assign({}, state, {
+				data: action.data
+			});
 		default:
 			return state;
 	}
@@ -24,11 +39,13 @@ function food(state = {
 }, action) {
 	switch (action.type) {
 		case 'ADD_INDEXED_FOODS':
-			state.indices = action.indices;
-			return state;
+			return Object.assign({}, state, {
+				indices: action.indices
+			});
 		case 'ADD_FOOD_DATA':
-			state.data = action.foodData;;
-			return state;
+			return Object.assign({}, state, {
+				data: action.foodData
+			});
 		default:
 			return state;
 	}
@@ -46,6 +63,7 @@ function indexTags(state = {}, action) {
 const rootReducer = combineReducers({
 	foodGroupIds,
 	food,
+	importantNutrients,
 	indexTags
 })
 

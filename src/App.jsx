@@ -11,7 +11,7 @@ import learnMoreData from './assets/data/learn-more.json';
 import { preprocess, indexByTags, CenteredDiv } from './utils/GeneralUtils.jsx';
 
 import Home from './routes/home';
-import Food from './routes/food';
+import Food from './routes/foodContainer.jsx';
 import Health from './routes/health';
 import Externalities from './routes/externalities';
 import Endorsements from './routes/endorsements';

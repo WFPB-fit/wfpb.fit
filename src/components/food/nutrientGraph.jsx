@@ -5,7 +5,7 @@ import {
 
     VictoryArea, VictoryPolarAxis, VictoryTheme
 } from 'victory';
-import { alphaCompare } from '../utils/GeneralUtils.jsx';
+import { alphaCompare } from '../../utils/GeneralUtils.jsx';
 
 
 export default class NutrientGraph extends Component {

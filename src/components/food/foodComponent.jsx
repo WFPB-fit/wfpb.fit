@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
-
-import { titleize, getRandomColor } from '../utils/GeneralUtils.jsx';
 import VirtualizedSelect from 'react-virtualized-select'
-import { getLink, alphaCompare } from '../utils/GeneralUtils.jsx';
 
-import FoodData from '../assets/data/nutrition/foodData.json';
-import IndexedFoodSearch from '../assets/data/nutrition/indexedFoods.json';
-import { ImportantNutrients } from '../assets/data/importantNutrients.js';
-import NutrientNames from '../assets/data/nutrientNames.json';
-import NutrientGraph from '../components/nutrientGraph.jsx';
-import NestedSelectField from '../components/NestedSelectField.jsx';
+import { titleize, getRandomColor, getLink, alphaCompare } from '../../utils/GeneralUtils.jsx';
+
+import NutrientNames from '../../assets/data/nutrientNames.json';
+import NutrientGraph from './nutrientGraph.jsx';
+import NestedSelectField from './NestedSelectField.jsx';
 
 // var FoodData = null;
 // var NutrientNames = null;
@@ -21,51 +17,11 @@ export default class Food extends Component {
 		//bind functions
 		this.handleSelectChange = this.handleSelectChange.bind(this);
 		// this.getRelativeAminoAcids = this.getRelativeAminoAcids.bind(this);
-
-		// preprocess foods
-		if (!window.globalAppData.foodData) {
-			window.globalAppData.foodData = Object.keys(FoodData).reduce((total, foodId) => {
-				let foodData = FoodData[foodId];
-				foodData.color = getRandomColor();
-				foodData.id = foodId;
-
-				//copy over nutrient amounts, substitute in real nutrient name for nutrient ID
-				for (const nGroupName of Object.keys(ImportantNutrients)) {
-					let nutrients = ImportantNutrients[nGroupName];
-
-					//reindex by nutrient name instead of ID
-					let chartNutrientData = nutrients.reduce((total, nId) => {
-						const nName = NutrientNames[nId];
-
-						let val = 0;
-						let isMissing = false;
-						if (nId in foodData.nutrients[nGroupName]) val = foodData.nutrients[nGroupName][nId];
-						else {
-							// if (foodId === "01001") console.log(foodData.nutrients[nGroupName],nId)
-							isMissing = true;
-						}
-						total.push({ x: nName, y: val, nutrient_id: nId, foodName: foodData.name, nutrientDataIsMissing: isMissing });
-						return total;
-					}, []);
-					foodData.nutrients[nGroupName] = chartNutrientData;
-				}
-
-				//add the preprocessed foods to the returned object
-				total[foodId] = foodData;
-				return total;
-			}, {});
-		}
-
-
+		console.log(this.props)
 
 		//init vars
-		this.allSelectables = Object.keys(window.globalAppData.foodData)
-			.map(id => {
-				return { value: id, label: window.globalAppData.foodData[id].name };
-			})
-			.sort(alphaCompare);
 		this.state = {
-			selectedFoods: [this.allSelectables[0]],
+			selectedFoods: [],
 			selectedFoodFilters: [],
 		};
 	}
@@ -81,67 +37,113 @@ export default class Food extends Component {
 	//foods are set up to index by nutrient id instead of nutrient name.
 	//index by name instead. Determine the color of lines to be used
 	preprocessSelectedFoods() {
+		// preprocess foods
 		return this.state.selectedFoods.map(selectedFood => {
-			let food = window.globalAppData.foodData[selectedFood.value];
-			return food;
+			const foodId = selectedFood.value;
+			let foodData = this.props.foodData[foodId];
+			foodData.color = getRandomColor();
+			foodData.id = foodId;
+
+			//copy over nutrient amounts, substitute in real nutrient name for nutrient ID
+			for (const groupName of Object.keys(foodData.n)){
+				const nGroup = foodData.n[groupName];
+
+				let chartNutrientData = nGroup.reduce((total, nId) => {
+					const nName = NutrientNames[nId];
+					let val = 0;
+
+					let isMissing = false;
+					if (nId in foodData.n[groupName]) val = foodData.n[groupName][nId];
+					else isMissing = true;
+
+					total.push({ x: nName, y: val, nutrient_id: nId, foodName: foodData.name, nutrientDataIsMissing: isMissing });
+					return total;
+				}, []);
+
+				foodData[groupName] = chartNutrientData;
+			}
+			return foodData;
+		// 	for (const nGroupName of Object.keys(ImportantNutrients)) {
+		// 		let nutrients = ImportantNutrients[nGroupName];
+		// 		//reindex by nutrient name instead of ID
+		// 		let chartNutrientData = nutrients.reduce((total, nId) => {
+		// 			const nName = NutrientNames[nId];
+		// 			let val = 0;
+		// 			let isMissing = false;
+		// 			if (nId in foodData.nutrients[nGroupName]) val = foodData.nutrients[nGroupName][nId];
+		// 			else {
+		// 				isMissing = true;
+		// 			}
+		// 			total.push({ x: nName, y: val, nutrient_id: nId, foodName: foodData.name, nutrientDataIsMissing: isMissing });
+		// 			return total;
+		// 		}, []);
+		// 		foodData.nutrients[nGroupName] = chartNutrientData;
+		// 	}
+		// 	//add the preprocessed foods to the returned object
+		// 	total[foodId] = foodData;
+		// 	return total;
 		}, []);
 	}
 
 	render() {
-		const selectedFoods = this.preprocessSelectedFoods();
+		const selectedFoodsData = this.preprocessSelectedFoods();
+		
+		// this.state.selectedFoods.map(selectedFood => {
+		// 	let food = this.props.foodData[selectedFood.value];
+		// 	return food;
+		// }, []);
 
-		console.log(selectedFoods)
-		console.log(IndexedFoodSearch)
+		console.log(selectedFoodsData)
 
 		let dataVis = null;
-		if (selectedFoods.length > 0) { //At least one food is selected
+		if (selectedFoodsData.length > 0) { //At least one food is selected
 			const graphs = (
 				<div>
 					<h2>Overview</h2>
 					<NutrientGraph
-						selectedFoods={selectedFoods}
+						selectedFoods={selectedFoodsData}
 						nutrientDataKey="overview"
 					/>
 					<h2>Fats</h2>
 					<NutrientGraph
-						selectedFoods={selectedFoods}
+						selectedFoods={selectedFoodsData}
 						nutrientDataKey="fats"
 					/>
 					<p>SAFA = Saturated Fat, MUFA = Monounsaturated Fat, PUFA = Polyunsaturated Fat</p>
 
 					{/* <h2>Other Lipids</h2>
 					<NutrientGraph
-						selectedFoods={selectedFoods}
+						selectedFoods={selectedFoodsData}
 						nutrientDataKey="lipids"
 					/> */}
 					<h2>Vitamins</h2>
 					<NutrientGraph
-						selectedFoods={selectedFoods}
+						selectedFoods={selectedFoodsData}
 						nutrientDataKey="vitamins"
 					/>
 					{/* <h2>Synthetic Vitamins</h2>
 					<NutrientGraph
-						selectedFoods={selectedFoods}
+						selectedFoods={selectedFoodsData}
 						nutrientDataKey="fats"
 					/> */}
 					<h2>Minerals</h2>
 					<NutrientGraph
-						selectedFoods={selectedFoods}
+						selectedFoods={selectedFoodsData}
 						nutrientDataKey="minerals"
 					/>
 					<h2>Amino Acids</h2>
 					<NutrientGraph
-						selectedFoods={selectedFoods}
+						selectedFoods={selectedFoodsData}
 						nutrientDataKey="amino"
 					/>
 					<h2>Carotenoids</h2>
 					<NutrientGraph
-						selectedFoods={selectedFoods}
+						selectedFoods={selectedFoodsData}
 						nutrientDataKey="carotenoids"
 					/>
 					<h2>Flavonoids</h2>
 					<NutrientGraph
-						selectedFoods={selectedFoods}
+						selectedFoods={selectedFoodsData}
 						nutrientDataKey="flavonoids"
 					/>
 				</div>
@@ -149,7 +151,7 @@ export default class Food extends Component {
 
 			//link to food sources
 			const sources = (
-				selectedFoods.map(food => {
+				selectedFoodsData.map(food => {
 					return (
 						<li key={food.name}>
 							{getLink(`https://ndb.nal.usda.gov/ndb/search/list?qlookup=${food.id}`, food.name)}
@@ -158,7 +160,7 @@ export default class Food extends Component {
 				})
 			);
 			const calories = (
-				selectedFoods.map(food => {
+				selectedFoodsData.map(food => {
 					return (
 						<li key={food.name}>
 							{food.name}: {food.nutrients.calories[0].y}
@@ -204,14 +206,13 @@ export default class Food extends Component {
 		return (
 			<div>
 				<NestedSelectField
-					selectObject={IndexedFoodSearch}
 					selectedKeys={this.state.selectedFoodFilters}
 				/>
 				<VirtualizedSelect
 					name="form-field-name"
 					value={this.state.selectedFoods}
 					onChange={this.handleSelectChange}
-					options={this.allSelectables}
+					options={this.props.allSelectables}
 					joinValues
 					multi
 				/>
