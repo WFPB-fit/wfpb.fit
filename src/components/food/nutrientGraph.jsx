@@ -28,7 +28,7 @@ export default class NutrientGraph extends Component {
             return { x: key, y: foodData[key], name: name, color: color };
         });
     }
-    static getFoodNutrients(food, nutrientKey) { return food.nutrients[nutrientKey]; }
+    static getFoodNutrients(food, nutrientKey) { return food.n[nutrientKey]; }
 
     static transformObjectToVictoryXYArray(obj, name) {
         debugger;

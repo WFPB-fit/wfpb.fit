@@ -4,32 +4,26 @@ export const ImportantNutrients = {
 		203, //protein
 		204, //total fat
 		205, //carbohydrates by difference
-		291, //fiber, total dietary
-		601, //Cholesterol,  
-		636, //phytosterol      
+		291, //fiber, total dietary  
 	],
 	fats: [
-		605, //Fatty acids, total trans,
+		// 605, //Fatty acids, total trans,
 		606, //Fatty acids, total saturated,
+		605, //Fatty acids, total trans,
+
 		645, //Fatty acids, total monounsaturated,
 		646, //Fatty acids, total polyunsaturated,
-
+	],
+	omega3:[
 		//omega 3's
 		851, // 18:3 n-3 c,c,c (ALA)
 		621, // 22:6 n-3 (DHA),
 		629, // 20:5 n-3 (EPA),
 		631, // 22:5 n-3 (DPA),
 	],
-	lipids: [
-		605, //Fatty acids, total trans,
+	sterols: [		
 		601, //Cholesterol,  
 		636, //phytosterol  
-
-		//omega 3's
-		851, // 18:3 n-3 c,c,c (ALA)
-		621, // 22:6 n-3 (DHA),
-		629, // 20:5 n-3 (EPA),
-		631, // 22:5 n-3 (DPA),
 	],
 	amino: [
 		454, // Betaine,
@@ -194,7 +188,7 @@ export const EssentialAminoAcids = [
 
 ]
 
-export const FoodGroupIds = {
+export const FoodGroupIdIndex = {
 	100: "Dairy and Egg Products",
 	200: "Spices and Herbs",
 	300: "Baby Foods",

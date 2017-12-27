@@ -4,11 +4,13 @@ import FoodGroups from '../../assets/data/nutrition/foodGroups.json'; //array of
 import pluralize from 'pluralize';
 import {
 	ImportantNutrients,
-	NutrientSummationReductions
-} from '../../assets/data/importantNutrients.js';
+	NutrientSummationReductions,
+	FoodGroupIdIndex
+} from '../../assets/data/ImportantNutrients.js';
 import {
 	getNutrientFromId,
-	titleize
+	titleize,
+	objSwap
 } from '../GeneralUtils.jsx';
 import FdaApi from './FdaApi.js';
 
@@ -88,7 +90,7 @@ export default class ParseFdaData {
 		let foods = {};
 		// NEED TO SOMEHOW ENSURE THAT store's food group ids are loaded in time
 		// Should be fine since this is run manually on localhost, thus I don't care for now
-		const fgNameIndex = store.getState().foodGroupIds.nameIndex;
+		const fgNameIndex = objSwap(FoodGroupIdIndex);
 		for (const fdaFood of fdaFoods) {
 			let food = {};
 			// ParseFdaData.addNutrientNames(fdaFood, nutrientNames);

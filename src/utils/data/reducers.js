@@ -2,37 +2,6 @@ import {
 	combineReducers
 } from 'redux'
 
-function foodGroupIds(state = {
-	nameIndex: {},
-	idIndex: {}
-}, action) {
-	switch (action.type) {
-		case 'ADD_FG_ID_INDEX':
-			return Object.assign({}, state, {
-				idIndex: action.foodGroupIndex
-			});
-		case 'ADD_FG_NAME_INDEX':
-			return Object.assign({}, state, {
-				nameIndex: action.foodGroupIndex
-			});
-		default:
-			return state;
-	}
-}
-
-function importantNutrients(state = {
-	data: {}
-}, action) {
-	switch (action.type) {
-		case 'ADD_IMPORTANT_NUTRIENTS':
-			return Object.assign({}, state, {
-				data: action.data
-			});
-		default:
-			return state;
-	}
-}
-
 function food(state = {
 	indices: {},
 	data: {}
@@ -61,9 +30,7 @@ function indexTags(state = {}, action) {
 }
 
 const rootReducer = combineReducers({
-	foodGroupIds,
 	food,
-	importantNutrients,
 	indexTags
 })
 

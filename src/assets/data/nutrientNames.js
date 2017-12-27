@@ -1,4 +1,4 @@
-{
+export default {
     "203": "Protein",
     "204": "Total Fat",
     "205": "Carbs",

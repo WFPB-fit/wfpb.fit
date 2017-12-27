@@ -9,16 +9,14 @@ import pluralize from 'pluralize';
 
 import {
 	ImportantNutrients,
-	FoodGroupIds
+	FoodGroupIdIndex
 } from '../../assets/data/ImportantNutrients.js';
 
 export default class DataLoader {
 	static async init(store) {
 		DataLoader.store = store;
 
-		const fgIdIndex = await DataLoader.loadFoodGroups();
-		await DataLoader.loadFoodData(fgIdIndex);
-		console.log(store.getState())
+		await DataLoader.loadFoodData();
 	}
 
 	static get(varName) {
@@ -36,49 +34,14 @@ export default class DataLoader {
 		}
 	}
 
-
-
-	static async loadFoodGroups() {
-		let idIndex = JSON.parse(localStorage.getItem('fgIdIndex'));
-		let nameIndex = JSON.parse(localStorage.getItem('fgNameIndex'));
-		let foodIds = null;
-
-		if (!idIndex) {
-			idIndex = {};
-			for (const [id, name] of FoodGroupIds) {
-				idIndex[id] = name;
-			}
-			localStorage.setItem('fgIdIndex', JSON.stringify(idIndex));
-		}
-
-		if (!nameIndex) {
-			nameIndex = {};
-			for (const [id, name] of FoodGroupIds) {
-				nameIndex[name] = id;
-			}
-			localStorage.setItem('fgNameIndex', JSON.stringify(nameIndex));
-		}
-
-		DataLoader.store.dispatch({
-			type: 'ADD_FG_ID_INDEX',
-			foodGroupIndex: idIndex
-		});
-		DataLoader.store.dispatch({
-			type: 'ADD_FG_NAME_INDEX',
-			foodGroupIndex: nameIndex
-		});
-
-		return idIndex;
-	}
-
-	static async loadFoodData(fgIdIndex) {
+	static async loadFoodData() {
 		let indices = JSON.parse(localStorage.getItem('foodIndex'));
 		let foodData = JSON.parse(localStorage.getItem('foodData'));
 
 		if (!indices || !foodData) {
 			foodData = await DataLoader.getFoodsRawData();
-			foodData = DataLoader._preprocessFoodData(foodData);
-			indices = DataLoader._preprocessFoodIndices(foodData, fgIdIndex);
+			foodData = foodData ;//DataLoader._preprocessFoodData(foodData);
+			indices = DataLoader._preprocessFoodIndices(foodData);
 
 			localStorage.setItem('foodIndex', JSON.stringify(indices));
 			localStorage.setItem('foodData', JSON.stringify(foodData));
@@ -131,14 +94,14 @@ export default class DataLoader {
 		return filterName;
 	}
 
-	static _preprocessFoodIndices(foodData, fgIdIndex) {
+	static _preprocessFoodIndices(foodData) {
 		let foodIndex = {};
 		const foodIds = Object.keys(foodData);
 
 		for (const foodId of foodIds) {
 			const food = foodData[foodId];
 			const foodName = food.name;
-			const groupName = fgIdIndex[food.fg]
+			const groupName = FoodGroupIdIndex[food.fg]
 			const foodFilters = foodName.split(',');
 
 			//add group to total food index if needed. Set top level index of this food to the group
