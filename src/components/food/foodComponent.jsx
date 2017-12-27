@@ -21,7 +21,6 @@ export default class Food extends Component {
 		//bind functions
 		this.handleSelectChange = this.handleSelectChange.bind(this);
 		// this.getRelativeAminoAcids = this.getRelativeAminoAcids.bind(this);
-		console.log(this.props)
 
 		//init vars
 		this.state = {
@@ -41,24 +40,25 @@ export default class Food extends Component {
 	//foods are set up to index by nutrient id instead of nutrient name.
 	//index by name instead. Determine the color of lines to be used
 	preprocessSelectedFoods() {
-		console.log(ImportantNutrients)
 		// preprocess foods
+		console.log(this.props.foodData, 'props')
 		return this.state.selectedFoods.map(selectedFood => {
 			const foodId = selectedFood.value;
-			let foodData = this.props.foodData[foodId];
+			let foodData = Object.assign({}, this.props.foodData[foodId]);
 
 			foodData.color = getRandomColor();
 			foodData.id = foodId;
 
 			//copy over nutrient amounts, substitute in real nutrient name for nutrient ID
 			let newNutrients = {};
+			// debugger
+
 			for (const groupName of Object.keys(ImportantNutrients)) {
 				let newGroupNutrients = [];
-
-				for (const nId of ImportantNutrients[groupName]){
+				for (const nId of ImportantNutrients[groupName]) {
 					const nName = NutrientNames[nId];
-					let val = 0;
 
+					let val = 0;
 					let isMissing = false;
 					if (nId in foodData.n) val = foodData.n[nId];
 					else isMissing = true;
@@ -75,12 +75,6 @@ export default class Food extends Component {
 
 	render() {
 		const selectedFoodsData = this.preprocessSelectedFoods();
-
-		// this.state.selectedFoods.map(selectedFood => {
-		// 	let food = this.props.foodData[selectedFood.value];
-		// 	return food;
-		// }, []);
-
 		console.log(selectedFoodsData)
 
 		let dataVis = null;
