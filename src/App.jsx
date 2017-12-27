@@ -28,12 +28,12 @@ import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux';
 import rootReducer from './utils/data/reducers';
 
-import Parse from './utils/fdaDataCreation/parseFdaData';
+// import Parse from './utils/fdaDataCreation/parseFdaData';
 
 let store = createStore(
 	rootReducer
 );
-Parse.parse(store);
+// Parse.parse(store);
 
 export default class App extends Component {
 	constructor(props) {

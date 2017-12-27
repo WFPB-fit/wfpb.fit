@@ -2,12 +2,17 @@ import {
 	combineReducers
 } from 'redux'
 
-function foodGroupIds(state = {}, action) {
+function foodGroupIds(state = {
+	nameIndex: {},
+	idIndex: {}
+}, action) {
 	switch (action.type) {
 		case 'ADD_FG_ID_INDEX':
-			return Object.assign({}, action.foodGroupIndex)
+			state.nameIndex = action.foodGroupIndex;
+			return state;
 		case 'ADD_FG_NAME_INDEX':
-			return Object.assign({}, action.foodGroupIndex)
+			state.idIndex = action.foodGroupIndex;;
+			return state;
 		default:
 			return state;
 	}

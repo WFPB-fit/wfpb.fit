@@ -17,7 +17,7 @@ export default class DataLoader {
 		}
 	}
 
-	static async loadFoodNutrients(){
+	static async loadFoodNutrients() {
 		let foodData = JSON.parse(localStorage.getItem('foodData'));
 		if (!foodData) {
 			const FoodData = await DataLoader.getNutrientsRawData();
@@ -32,8 +32,10 @@ export default class DataLoader {
 		let foodIds = null;
 
 		if (!idIndex) {
-			const {FoodGroupIds} = await DataLoader.getFoodGroupIdRawData();
-			let idIndex = {};
+			const {
+				FoodGroupIds
+			} = await DataLoader.getFoodGroupIdRawData();
+			idIndex = {};
 			for (const [id, name] of FoodGroupIds) {
 				idIndex[id] = name;
 			}
@@ -41,9 +43,11 @@ export default class DataLoader {
 		}
 
 		if (!nameIndex) {
-			const {FoodGroupIds} = await DataLoader.getFoodGroupIdRawData();
+			const {
+				FoodGroupIds
+			} = await DataLoader.getFoodGroupIdRawData();
 
-			let nameIndex = {};
+			nameIndex = {};
 			for (const [id, name] of FoodGroupIds) {
 				nameIndex[name] = id;
 			}
