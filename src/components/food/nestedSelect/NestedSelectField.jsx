@@ -5,10 +5,11 @@ import {
 
     VictoryArea, VictoryPolarAxis, VictoryTheme
 } from 'victory';
-import { alphaCompare } from '../../../utils/GeneralUtils.jsx';
+import { alphaCompare, titleize } from '../../../utils/GeneralUtils.jsx';
 
 import SelectField from 'material-ui/SelectField';
 import MenuItem from 'material-ui/MenuItem';
+import RaisedButton from 'material-ui/RaisedButton';
 
 export default class NestedSelectField extends Component {
     constructor(props) {
@@ -16,13 +17,12 @@ export default class NestedSelectField extends Component {
         this.handleSelectChangeClosure = this.handleSelectChangeClosure.bind(this);
         this.getSelectField = this.getSelectField.bind(this);
         this.getFilteredObj = this.getFilteredObj.bind(this);
+        this.getFoodButton = this.getFoodButton.bind(this);
+        this.addFoodClosure = this.addFoodClosure.bind(this);
 
         this.state = {
-            selectedKeys: this.props.selectedKeys
+            selectedKeys: []
         };
-    }
-    componentWillReceiveProps(props) {
-        this.setState({ selectedKeys: props.selectedKeys });
     }
 
     getFilteredObj(keys) {
@@ -61,22 +61,50 @@ export default class NestedSelectField extends Component {
     }
 
     getSelectField(keys, indexKey, value) {
-        keys = keys.sort(alphaCompare);
-        return (
-            <SelectField
-                value={value}
-                key={indexKey}
-                onChange={this.handleSelectChangeClosure(indexKey)}
-            >
-                {
-                    keys.map(x => <MenuItem key={x} value={x} primaryText={x} />)
-                }
-            </SelectField>
-        );
+        keys = keys.sort(alphaCompare).filter(x => x !== '');
+        if (keys.length > 0) {
+            return (
+                <SelectField
+                    value={value}
+                    key={indexKey}
+                    onChange={this.handleSelectChangeClosure(indexKey)}
+                >
+                    {
+                        keys.map(x => <MenuItem key={x} value={x} primaryText={x} />)
+                    }
+                </SelectField>
+            );
+        }
+        else { return null; }
+    }
+
+    getFoodButton(foodObj) {
+        if ("" in foodObj) {
+            const foodId = foodObj[""];
+            const foodIdAlreadySelected = this.props.selectedFoods.filter(x => x.value === foodId).length === 1;
+            if (!foodIdAlreadySelected) {
+                const foodName = titleize(this.props.allFoodData[foodId].name);
+                return (
+                    <RaisedButton
+                        primary
+                        key={foodId}
+                        label={`Add Food`}
+                        onClick={this.addFoodClosure(foodId, foodName)}
+                    />
+                );
+            }
+        }
+        return null;
+    }
+
+    addFoodClosure(foodId, foodName) {
+        return () => this.props.addFood(foodId, foodName);
     }
 
     render() {
+        console.log(this.state.selectedKeys)
         let selectFields = [];
+        let addFoodButtons = [];
 
         //create a select field for each selected key
         let prevSelectObj = this.props.selectObject;
@@ -85,16 +113,20 @@ export default class NestedSelectField extends Component {
             const keys = Object.keys(prevSelectObj).sort(alphaCompare);
             // console.log(selectedKey, this.state.selectedKeys, Object.keys(prevSelectObj))
             selectFields.push(this.getSelectField(Object.keys(prevSelectObj), i, selectedKey));
+            addFoodButtons.push(this.getFoodButton(prevSelectObj));
             prevSelectObj = prevSelectObj[selectedKey];
         }
+
         //add select field for next level in object
         if (typeof prevSelectObj === 'object') {
             selectFields.push(this.getSelectField(Object.keys(prevSelectObj), this.state.selectedKeys.length, null));
+            addFoodButtons.push(this.getFoodButton(prevSelectObj));
         }
 
         return (
             <div>
-                {selectFields}
+                <div>{selectFields}</div>
+                <div>{addFoodButtons}</div>
             </div>
         );
     }

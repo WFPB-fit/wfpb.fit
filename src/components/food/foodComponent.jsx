@@ -20,17 +20,23 @@ export default class Food extends Component {
 
 		//bind functions
 		this.handleSelectChange = this.handleSelectChange.bind(this);
+		this.addFood = this.addFood.bind(this);
 		// this.getRelativeAminoAcids = this.getRelativeAminoAcids.bind(this);
 
 		//init vars
 		this.state = {
-			selectedFoods: [],
-			selectedFoodFilters: [],
+			selectedFoods: []
 		};
 	}
 	handleSelectChange(value) {
 		this.setState({ selectedFoods: value });
 	}
+	addFood(foodId, foodName) {
+		let selectedFoods = Object.assign([], this.state.selectedFoods);
+		selectedFoods.push({ value: foodId, label: foodName })
+		this.setState({ selectedFoods });
+	}
+
 	static convertFoodsToSelectObjects(foods) {
 		const optns = foods.map((x) => { return { value: x.name, label: titleize(x.name) } });
 		const alphaOptions = optns.sort(alphaCompare);
@@ -74,7 +80,6 @@ export default class Food extends Component {
 
 	render() {
 		const selectedFoodsData = this.preprocessSelectedFoods();
-		console.log(selectedFoodsData)
 
 		let dataVis = null;
 		if (selectedFoodsData.length > 0) { //At least one food is selected
@@ -187,7 +192,8 @@ export default class Food extends Component {
 		return (
 			<div>
 				<NestedSelectField
-					selectedKeys={this.state.selectedFoodFilters}
+					selectedFoods={this.state.selectedFoods}
+					addFood={this.addFood}
 				/>
 				<VirtualizedSelect
 					name="form-field-name"
