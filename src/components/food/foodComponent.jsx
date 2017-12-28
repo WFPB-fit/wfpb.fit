@@ -5,7 +5,7 @@ import { titleize, getRandomColor, getLink, alphaCompare } from '../../utils/Gen
 
 import NutrientNames from '../../assets/data/nutrientNames.js';
 import NutrientGraph from './nutrientGraph.jsx';
-import NestedSelectField from './NestedSelectField.jsx';
+import NestedSelectField from './nestedSelect/NestedSelectContainer.jsx';
 
 import {
 	ImportantNutrients

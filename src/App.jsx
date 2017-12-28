@@ -35,6 +35,8 @@ let store = createStore(
 );
 // Parse.parse(store);
 
+// console.log(localStorage.getItem('parsed foods data'))
+
 export default class App extends Component {
 	constructor(props) {
 		super(props);

@@ -1,6 +1,6 @@
-import FoodIds from '../../assets/data/nutrition/foodIds.json';
+import FoodIds from '../../assets/data/nutrition/foodIds.json'; //[ [id1],[id2],...]
 import FoodData from '../../assets/data/nutrition/foodData.json';
-import FoodGroups from '../../assets/data/nutrition/foodGroups.json'; //array of [foodName, groupName, foodId]
+import FoodGroups from '../../assets/data/nutrition/foodGroups.json'; //[ [foodName, groupName, foodId], ...]
 import pluralize from 'pluralize';
 import {
 	ImportantNutrients,
@@ -14,6 +14,8 @@ import {
 } from '../GeneralUtils.jsx';
 import FdaApi from './FdaApi.js';
 
+// import * as fs from 'fs';
+
 export default class ParseFdaData {
 	static getNutrientValue(n) {
 		let val = n.value;
@@ -22,14 +24,24 @@ export default class ParseFdaData {
 		return val;
 	}
 
+	// static writeFile(filename,data){
+	// 	fs.writeFile(filename, data, function(err) {
+	// 		if(err) {
+	// 			return console.log(err);
+	// 		}
+
+	// 		console.log("The file was saved!");
+	// 	}); 		
+	// }
+
 	//extract important nutrients from the FDA API data
 	static getNutrients(fdaFood) {
 		let nutrients = {};
 		let importantNutrients = Object.values(ImportantNutrients);
 
 		//add each nutrient from importantNutrients to the return value
-		for(const nutrientGroup of importantNutrients){
-			for (const nId of nutrientGroup){
+		for (const nutrientGroup of importantNutrients) {
+			for (const nId of nutrientGroup) {
 				const n = getNutrientFromId(nId, fdaFood.nutrients);
 
 				if (n) {
@@ -85,6 +97,7 @@ export default class ParseFdaData {
 		const fdaFoods = await FdaApi.fetchFoodsInfo(ids);
 		ParseFdaData.preprocessNutrientsToSummations(fdaFoods);
 		console.log(fdaFoods)
+		// localStorage.setItem('fdaFoods',JSON.stringify(fdaFoods))
 
 		//extract info from the foods API
 		let foods = {};
@@ -96,16 +109,14 @@ export default class ParseFdaData {
 			// ParseFdaData.addNutrientNames(fdaFood, nutrientNames);
 
 			const id = fdaFood.desc.ndbno;
-			food.name = fdaFood.desc.name;			
+			food.name = fdaFood.desc.name;
 			food.fg = fgNameIndex[fdaFood.desc.fg]; //food group
 			food.n = ParseFdaData.getNutrients(fdaFood);
 			foods[id] = food;
 		}
 		console.log(foods)
-		// console.log(nutrientNames)
 
-
-		console.log(JSON.stringify(foods)); //note this may add a " character to the beginning and end when printing to the console
-		// console.log(JSON.stringify(nutrientNames)); //note this may add a " character to the beginning and end when printing to the console
+		localStorage.setItem('parsed foods data', JSON.stringify(foods))
+		console.log("Done processing foods")
 	}
 }
