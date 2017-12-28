@@ -15,6 +15,7 @@ export default class NestedSelectField extends Component {
         super(props);
         this.handleSelectChangeClosure = this.handleSelectChangeClosure.bind(this);
         this.getSelectField = this.getSelectField.bind(this);
+        this.getFilteredObj = this.getFilteredObj.bind(this);
 
         this.state = {
             selectedKeys: this.props.selectedKeys
@@ -24,17 +25,35 @@ export default class NestedSelectField extends Component {
         this.setState({ selectedKeys: props.selectedKeys });
     }
 
+    getFilteredObj(keys) {
+        let lastObj = this.props.selectObject;
+        for (const key of keys) {
+            lastObj = lastObj[key];
+        }
+        return lastObj;
+    }
+
     handleSelectChangeClosure(selectFieldIndx) {
         let updateSelectedFieldsClosure = (event, index, value) => {
-            console.log(value)
             let newKeys = null;
             if (selectFieldIndx < this.state.selectedKeys.length) {
+                //user selected previous select obj, remove all the ones after it
                 newKeys = this.state.selectedKeys.slice(0, selectFieldIndx + 1);
                 newKeys[selectFieldIndx] = value;
             } else {
-                newKeys = this.state.selectedKeys.slice(); //copy array
+                //add the new select
+                newKeys = this.state.selectedKeys.slice();
                 newKeys.push(value);
             }
+
+            //automatically add the key if there is only 1
+            let keys = Object.keys(this.getFilteredObj(newKeys));
+            while (keys.length === 1 && keys[0] !== "") {
+                newKeys.push(keys[0]);
+                keys = Object.keys(this.getFilteredObj(newKeys));
+            }
+
+            //update state
             this.setState({ selectedKeys: newKeys });
         }
         updateSelectedFieldsClosure = updateSelectedFieldsClosure.bind(this);
@@ -50,7 +69,7 @@ export default class NestedSelectField extends Component {
                 onChange={this.handleSelectChangeClosure(indexKey)}
             >
                 {
-                    keys.map(x => <MenuItem key={x} value={x} primaryText={x}/>)
+                    keys.map(x => <MenuItem key={x} value={x} primaryText={x} />)
                 }
             </SelectField>
         );
