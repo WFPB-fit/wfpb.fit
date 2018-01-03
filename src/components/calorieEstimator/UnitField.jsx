@@ -50,7 +50,7 @@ export default class UnitField extends Component {
                 >
                     {
                         Object.keys(this.props.units).map(x => {
-                            return (<MenuItem value={x} primaryText={titleize(x)} />);
+                            return (<MenuItem value={x} key={x} primaryText={titleize(x)} />);
                         })
                     }
                 </SelectField>

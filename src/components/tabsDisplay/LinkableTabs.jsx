@@ -20,10 +20,12 @@ class LinkableTabs extends Component {
         return initTabIndex;
     }
     render() {
+        const {match, location, history, staticContext, ...nonrouterProps} = this.props; //https://github.com/DefinitelyTyped/DefinitelyTyped/issues/13689#issuecomment-296246134
+
         return (
             <Tabs
                 initialSelectedIndex={this.getDefaultActiveTab()}
-                {...this.props}
+                {...nonrouterProps}
             />
         );
     }

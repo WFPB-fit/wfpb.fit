@@ -16,9 +16,10 @@ export default class CalorieForm extends Component {
     }
 
     handleFormChange(key) {
-        return (event, index, value) => {
-            this.setState({ key: value });
-            console.log(key, value)
+        return (event, indexOrMaybeValue, value) => {
+            let newState = {};
+            newState[key] = (value !== undefined) ? value : indexOrMaybeValue;
+            this.setState(newState);
         }
     }
     render() {
@@ -38,6 +39,7 @@ export default class CalorieForm extends Component {
                     floatingLabelText="Age"
                     min={0}
                     max={150}
+                    onChange={this.handleFormChange('age')}
                 />
 
                 <UnitField
@@ -69,6 +71,14 @@ export default class CalorieForm extends Component {
                     <MenuItem value={'heavy'} primaryText="Heavy" />
                     <MenuItem value={'vHeavy'} primaryText="Very Heavy" />
                 </SelectField>
+
+
+                <TextField
+                    type="number"
+                    floatingLabelText="Calories/Day"
+                    disabled
+                    // value={HarrisBenedict({...this.state})}
+                />
             </div>
         );
     }

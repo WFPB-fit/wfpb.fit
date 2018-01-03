@@ -206,7 +206,7 @@ export default class Food extends Component {
 				<p>Enter a tag in the search bar to display info</p>
 			</div>);
 		}
-		console.log(this.state.filterOptions)
+
 		return (
 			<div>
 				{/* <NestedSelectField
