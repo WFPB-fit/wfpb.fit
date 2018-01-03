@@ -5,11 +5,13 @@
   "dependencies": {
     "material-ui": "^0.19.4",
     "pluralize": "^7.0.0",
+    "porter-stemmer": "^0.9.1",
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",
+    "react-select-fast-filter-options": "^0.2.3",
     "react-virtualized-select": "^3.1.0",
     "redux": "^3.7.2",
     "styled-components": "^2.2.3",

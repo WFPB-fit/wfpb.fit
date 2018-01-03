@@ -1,5 +1,15 @@
 import React, { Component } from 'react';
+
+// -------- Create React-Select search options - https://github.com/bvaughn/react-select-fast-filter-options --------
+// import {
+// 	SimpleTokenizer,
+// 	StemmingTokenizer
+// } from 'js-search';
+// import { stemmer } from 'porter-stemmer';
+// const tok = new StemmingTokenizer(stemmer, new SimpleTokenizer())
+
 import VirtualizedSelect from 'react-virtualized-select'
+import createFilterOptions from 'react-select-fast-filter-options';
 
 import { titleize, getRandomColor, getLink, alphaCompare } from '../../utils/GeneralUtils.jsx';
 
@@ -11,22 +21,29 @@ import {
 	ImportantNutrients
 } from '../../assets/data/ImportantNutrients.js';
 
-// var FoodData = null;
-// var NutrientNames = null;
-
 export default class Food extends Component {
 	constructor(props) {
 		super(props);
 
 		//bind functions
 		this.handleSelectChange = this.handleSelectChange.bind(this);
+		this.getFilterOptions = this.getFilterOptions.bind(this);
 		this.addFood = this.addFood.bind(this);
 		// this.getRelativeAminoAcids = this.getRelativeAminoAcids.bind(this);
 
 		//init vars
 		this.state = {
-			selectedFoods: []
+			selectedFoods: [],
+			filterOptions: this.getFilterOptions(this.props)
 		};
+	}
+	componentWillReceiveProps(nextProps) {
+		this.setState({ filterOptions: this.getFilterOptions(nextProps) });
+	}
+	getFilterOptions(nextProps) {
+		return createFilterOptions({
+			options: nextProps.allSelectables,
+		});
 	}
 	handleSelectChange(value) {
 		this.setState({ selectedFoods: value });
@@ -188,7 +205,7 @@ export default class Food extends Component {
 				<p>Enter a tag in the search bar to display info</p>
 			</div>);
 		}
-
+		console.log(this.state.filterOptions)
 		return (
 			<div>
 				<NestedSelectField
@@ -197,6 +214,7 @@ export default class Food extends Component {
 				/>
 				<VirtualizedSelect
 					name="form-field-name"
+					filterOptions={this.state.filterOptions}
 					value={this.state.selectedFoods}
 					onChange={this.handleSelectChange}
 					options={this.props.allSelectables}

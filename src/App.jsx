@@ -65,9 +65,6 @@ export default class App extends Component {
 						<Router >
 							<div>
 								<Header />
-								{/* <PieChart x={100} y={100} outerRadius={100} innerRadius={50}
-								data={[{ value: 92 - 34, label: 'Code lines' },
-								{ value: 34, label: 'Empty lines' }]} /> */}
 								<Switch>
 									<CenteredDiv>
 										<Route exact path="/" component={Home} />
