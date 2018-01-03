@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import tags from '../assets/data/tags.json';
 import { filterStudiesByTags } from '../utils/GeneralUtils.jsx';
-import TabsDisplay from '../components/tabsDisplay/index.jsx';
+import ResourceTabs from '../components/tabsDisplay/ResourceTabs.jsx';
 
 export default class Externalities extends Component {
 	constructor(props) {
@@ -28,7 +28,7 @@ export default class Externalities extends Component {
 	}
 	render() {
 		return (
-			<TabsDisplay
+			<ResourceTabs
 				tabs={this.tabs}
 				location={this.props.location}
 				history={this.props.history}

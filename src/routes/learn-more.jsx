@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TabsDisplay from '../components/tabsDisplay/index.jsx';
+import ResourceTabs from '../components/tabsDisplay/ResourceTabs.jsx';
 
 export default class Health extends Component {
 	constructor(props) {
@@ -26,7 +26,7 @@ export default class Health extends Component {
 	}
 	render() {
 		return (
-			<TabsDisplay
+			<ResourceTabs
 				tabs={this.tabs}
 				location={this.props.location}
 				history={this.props.history}

@@ -3,7 +3,7 @@ import Resource from '../components/resource/index.jsx';
 import { preprocess } from '../utils/GeneralUtils.jsx';
 import endorsements from '../assets/data/endorsements.json';
 import styled from 'styled-components';
-import TabsDisplay from '../components/tabsDisplay/index.jsx';
+import ResourceTabs from '../components/tabsDisplay/ResourceTabs.jsx';
 
 export default class Externalities extends Component {
 	constructor(props) {
@@ -54,7 +54,7 @@ export default class Externalities extends Component {
 				<h2>Physicians</h2>
 				{doctors}
 				<h2>Athletes</h2>
-				<TabsDisplay
+				<ResourceTabs
 					tabs={this.athleteTabs}
 					location={this.props.location}
 					history={this.props.history}
