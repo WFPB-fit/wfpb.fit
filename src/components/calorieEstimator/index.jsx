@@ -23,6 +23,7 @@ export default class CalorieForm extends Component {
         }
     }
     render() {
+        const calPerDay = HarrisBenedict(this.state);
         return (
             <div>
                 <SelectField
@@ -43,17 +44,16 @@ export default class CalorieForm extends Component {
                 />
 
                 <UnitField
-                    onChange={this.handleFormChange('height')}
+                    onChange={this.handleFormChange('cm')}
                     title="Height"
                     units={{
-                        ft: (12 * 2.54),
                         in: 2.54,
-                        cm: 1
+                        cm: 1,
                     }}
                 />
 
                 <UnitField
-                    onChange={this.handleFormChange('weight')}
+                    onChange={this.handleFormChange('kg')}
                     title="Weight"
                     units={{
                         lbs: 0.453592,
@@ -74,10 +74,14 @@ export default class CalorieForm extends Component {
 
 
                 <TextField
-                    type="number"
                     floatingLabelText="Calories/Day"
                     disabled
-                    // value={HarrisBenedict({...this.state})}
+                    value={calPerDay.toLocaleString()}
+                />
+                <TextField
+                    floatingLabelText="Calories/Year"
+                    disabled
+                    value={(calPerDay * 365).toLocaleString()}
                 />
             </div>
         );
