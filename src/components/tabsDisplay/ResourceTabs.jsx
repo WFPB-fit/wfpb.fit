@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import Resources from '../resources/index.jsx';
 import { Tabs, Tab } from 'material-ui/Tabs';
-import {
-	withRouter
-} from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import LinkableTabs from './LinkableTabs.jsx';
 import LinkableTab from './LinkableTab.jsx';
 
