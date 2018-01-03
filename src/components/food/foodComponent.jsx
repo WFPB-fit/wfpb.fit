@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 // 	StemmingTokenizer
 // } from 'js-search';
 // import { stemmer } from 'porter-stemmer';
-// const tok = new StemmingTokenizer(stemmer, new SimpleTokenizer())
+// const porterStemmerTokenizer = new StemmingTokenizer(stemmer, new SimpleTokenizer())
 
 import VirtualizedSelect from 'react-virtualized-select'
 import createFilterOptions from 'react-select-fast-filter-options';
@@ -43,6 +43,7 @@ export default class Food extends Component {
 	getFilterOptions(nextProps) {
 		return createFilterOptions({
 			options: nextProps.allSelectables,
+			// tokenizer: porterStemmerTokenizer,
 		});
 	}
 	handleSelectChange(value) {

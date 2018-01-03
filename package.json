@@ -5,7 +5,6 @@
   "dependencies": {
     "material-ui": "^0.19.4",
     "pluralize": "^7.0.0",
-    "porter-stemmer": "^0.9.1",
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
     "react-redux": "^5.0.6",
