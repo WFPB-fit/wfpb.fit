@@ -6,6 +6,8 @@ import { withRouter } from 'react-router-dom';
 import LinkableTabs from '../components/tabsDisplay/LinkableTabs.jsx';
 import LinkableTab from '../components/tabsDisplay/LinkableTab.jsx';
 
+import CalorieEstimator from '../components/calorieEstimator';
+
 export default class Food extends Component {
     render() {
         return (
@@ -19,6 +21,7 @@ export default class Food extends Component {
                 <LinkableTab
                     label={'Environment'}
                 >
+                    <CalorieEstimator/>
                 </LinkableTab>
 
                 <LinkableTab
