@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
-import FoodComponent from '../components/food/foodComponent.jsx'
-import { alphaCompare } from '../utils/GeneralUtils.jsx';
+import FoodComponent from './display.jsx'
+import { alphaCompare } from '../../utils/GeneralUtils.jsx';
 
 
 const getAllSelectables = (foodData) => {
