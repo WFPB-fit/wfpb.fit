@@ -9,11 +9,12 @@ import { titleize } from '../../utils/GeneralUtils';
 export default class UnitField extends Component {
     state = {
         unit: Object.keys(this.props.units)[0],
-        amount: 0
+        amount: this.props.default
     }
 
     constructor(props) {
         super(props);
+        
         this.handleUnitChange = this.handleUnitChange.bind(this);
         this.handleAmtChange = this.handleAmtChange.bind(this);
     }
@@ -35,18 +36,20 @@ export default class UnitField extends Component {
 
     render() {
         return (
-            <div>
+            <span>
                 <TextField
                     type="number"
                     floatingLabelText={this.props.title}
                     onChange={this.handleAmtChange}
                     value={this.state.amount}
+                    style={{ width: '100px'}}
                     min={0}
                 />
                 <SelectField
                     floatingLabelText="Unit"
                     onChange={this.handleUnitChange}
                     value={this.state.unit}
+                    style={{ width: '100px'}}
                 >
                     {
                         Object.keys(this.props.units).map(x => {
@@ -54,8 +57,7 @@ export default class UnitField extends Component {
                         })
                     }
                 </SelectField>
-
-            </div>
+            </span>
         );
     }
 }

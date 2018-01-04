@@ -19,7 +19,7 @@ export default function calculateHarrisBenedict1990({
 	activityLevel
 }) {
 	console.log(gender, age, cm, kg, activityLevel)
-	if (!gender || !age || !cm || !kg || !activityLevel) return '';
+	if (!gender || !age || !cm || !kg || !activityLevel) return 0;
 
 	let bmr = 10 * kg + 6.25 * cm - 5 * age;
 

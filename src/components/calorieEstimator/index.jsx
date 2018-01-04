@@ -12,77 +12,99 @@ export default class CalorieForm extends Component {
     constructor(props) {
         super(props);
         this.handleFormChange = this.handleFormChange.bind(this);
-        this.state = {};
+        this.state = {
+            age:21,
+            gender:'male',
+            cm:180,
+            kg:90,
+            activityLevel:'sedentary'
+        };
     }
 
     handleFormChange(key) {
         return (event, indexOrMaybeValue, value) => {
             let newState = {};
             newState[key] = (value !== undefined) ? value : indexOrMaybeValue;
+            console.log(key,newState[key])
             this.setState(newState);
         }
     }
     render() {
         const calPerDay = HarrisBenedict(this.state);
+
         return (
-            <div>
-                <SelectField
-                    floatingLabelText="Gender"
-                    onChange={this.handleFormChange('gender')}
-                    value={this.state.gender}
-                >
-                    <MenuItem value={'female'} primaryText="Female" />
-                    <MenuItem value={'male'} primaryText="Male" />
-                </SelectField>
+            // cannot use styled components - https://github.com/mui-org/material-ui/issues/783#issuecomment-340068259
+            <div style={{textAlign:'center'}}>
+                <div>
+                    <SelectField
+                        floatingLabelText="Gender"
+                        onChange={this.handleFormChange('gender')}
+                        value={this.state.gender}
+                        style={{ width: '100px', textAlign: 'left' }}
+                    >
+                        <MenuItem value={'female'} primaryText="Female" />
+                        <MenuItem value={'male'} primaryText="Male" />
+                    </SelectField>
 
-                <TextField
-                    type="number"
-                    floatingLabelText="Age"
-                    min={0}
-                    max={150}
-                    onChange={this.handleFormChange('age')}
-                />
+                    <TextField
+                        type="number"
+                        floatingLabelText="Age"
+                        value={this.state.age}
+                        min={0}
+                        max={150}
+                        style={{ width: '100px', textAlign: 'left' }}
+                        onChange={this.handleFormChange('age')}
+                    />
 
-                <UnitField
-                    onChange={this.handleFormChange('cm')}
-                    title="Height"
-                    units={{
-                        in: 2.54,
-                        cm: 1,
-                    }}
-                />
+                    <UnitField
+                        onChange={this.handleFormChange('cm')}
+                        title="Height"
+                        default={this.state.cm}
+                        style={{ textAlign: 'left' }}
+                        units={{
+                            cm: 1,
+                            in: 2.54,
+                        }}
+                    />
 
-                <UnitField
-                    onChange={this.handleFormChange('kg')}
-                    title="Weight"
-                    units={{
-                        lbs: 0.453592,
-                        kg: 1
-                    }}
-                />
-                <SelectField
-                    floatingLabelText="Activity Level"
-                    onChange={this.handleFormChange('activityLevel')}
-                    value={this.state.activityLevel}
-                >
-                    <MenuItem value={'sedentary'} primaryText="Sedentary" />
-                    <MenuItem value={'light'} primaryText="Light" />
-                    <MenuItem value={'moderate'} primaryText="Moderate" />
-                    <MenuItem value={'heavy'} primaryText="Heavy" />
-                    <MenuItem value={'vHeavy'} primaryText="Very Heavy" />
-                </SelectField>
+                    <UnitField
+                        onChange={this.handleFormChange('kg')}
+                        title="Weight"
+                        style={{ textAlign: 'left' }}
+                        default={this.state.kg}
+                        units={{
+                            kg: 1,
+                            lbs: 0.453592
+                        }}
+                    />
+                    <SelectField
+                        floatingLabelText="Activity Level"
+                        onChange={this.handleFormChange('activityLevel')}
+                        value={this.state.activityLevel}
+                        style={{ width: '150px', textAlign: 'left' }}
+                    >
+                        <MenuItem value={'sedentary'} primaryText="Sedentary" />
+                        <MenuItem value={'light'} primaryText="Light" />
+                        <MenuItem value={'moderate'} primaryText="Moderate" />
+                        <MenuItem value={'heavy'} primaryText="Heavy" />
+                        <MenuItem value={'vHeavy'} primaryText="Very Heavy" />
+                    </SelectField>
 
-
-                <TextField
-                    floatingLabelText="Calories/Day"
-                    disabled
-                    value={calPerDay.toLocaleString()}
-                />
-                <TextField
-                    floatingLabelText="Calories/Year"
-                    disabled
-                    value={(calPerDay * 365).toLocaleString()}
-                />
+                </div>
+                <div>
+                    <TextField
+                        floatingLabelText="Calories/Day"
+                        disabled
+                        style={{ textAlign: 'left' }}
+                        value={calPerDay.toLocaleString()}
+                    />
+                    <TextField
+                        floatingLabelText="Calories/Year"
+                        disabled
+                        style={{ textAlign: 'left' }}
+                        value={(calPerDay * 365).toLocaleString()}
+                    />
+                </div>
             </div>
         );
     }
