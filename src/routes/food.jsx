@@ -4,31 +4,24 @@ import { Tabs, Tab } from 'material-ui/Tabs';
 import { withRouter } from 'react-router-dom';
 
 import LinkableTabs from '../components/tabsDisplay/LinkableTabs.jsx';
-import LinkableTab from '../components/tabsDisplay/LinkableTab.jsx';
 
 import CalorieEstimator from '../components/calorieEstimator';
 
 export default class Food extends Component {
+    constructor(props) {
+        super(props)
+
+        this.tabs = [
+            { label: 'Nutrients', component: (<NutrientDataVis />) },
+            { label: 'Environment', component: (<CalorieEstimator />) },
+            { label: 'Animals', component: (<CalorieEstimator />) },
+        ];
+    }
     render() {
         return (
-            <LinkableTabs>
-                <LinkableTab
-                    label={'Nutrients'}
-                >
-                    <NutrientDataVis />
-                </LinkableTab>
-
-                <LinkableTab
-                    label={'Environment'}
-                >
-                    <CalorieEstimator/>
-                </LinkableTab>
-
-                <LinkableTab
-                    label={'Animals'}
-                >
-                </LinkableTab>
-            </LinkableTabs>
+            <LinkableTabs
+                tabs={this.tabs}
+            />
         );
     }
 }

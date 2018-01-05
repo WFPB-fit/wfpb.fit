@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 
 import TextField from 'material-ui/TextField';
-import SelectField from 'material-ui/SelectField';
-import MenuItem from 'material-ui/MenuItem';
-import RaisedButton from 'material-ui/RaisedButton';
+import SelectField from 'material-ui/Select';
+import { MenuItem } from 'material-ui/Menu';
+// import Button from 'material-ui/Button';
+import Tooltip from 'material-ui/Tooltip';
+import Input, { InputLabel } from 'material-ui/Input';
+import { FormControl } from 'material-ui/Form';
 
 import HarrisBenedict from './HarrisBenedict.js';
 import UnitField from './UnitField.jsx';
@@ -13,19 +16,18 @@ export default class CalorieForm extends Component {
         super(props);
         this.handleFormChange = this.handleFormChange.bind(this);
         this.state = {
-            age:21,
-            gender:'male',
-            cm:180,
-            kg:90,
-            activityLevel:'sedentary'
+            age: 21,
+            gender: 'male',
+            cm: 180,
+            kg: 90,
+            activityLevel: 'sedentary'
         };
     }
 
     handleFormChange(key) {
-        return (event, indexOrMaybeValue, value) => {
+        return (event) => {
             let newState = {};
-            newState[key] = (value !== undefined) ? value : indexOrMaybeValue;
-            console.log(key,newState[key])
+            newState[key] = (typeof event === 'object') ? event.target.value : event;
             this.setState(newState);
         }
     }
@@ -34,25 +36,29 @@ export default class CalorieForm extends Component {
 
         return (
             // cannot use styled components - https://github.com/mui-org/material-ui/issues/783#issuecomment-340068259
-            <div style={{textAlign:'center'}}>
+            <div style={{ textAlign: 'center' }}>
                 <div>
-                    <SelectField
-                        floatingLabelText="Gender"
-                        onChange={this.handleFormChange('gender')}
-                        value={this.state.gender}
-                        style={{ width: '100px', textAlign: 'left' }}
-                    >
-                        <MenuItem value={'female'} primaryText="Female" />
-                        <MenuItem value={'male'} primaryText="Male" />
-                    </SelectField>
+                    <FormControl>
+                        <InputLabel htmlFor='gender'>Activity Level</InputLabel>
+                        <SelectField
+                            input={<Input name="sort" id='gender' />}
+                            onChange={this.handleFormChange('gender')}
+                            value={this.state.gender}
+                            style={{ width: '100px', textAlign: 'left' }}
+                        >
+                            <MenuItem value={'female'}>Female</MenuItem>
+                            <MenuItem value={'male'}>Male</MenuItem>
+                        </SelectField>
+                    </FormControl>
 
                     <TextField
+                        label="Age"
                         type="number"
-                        floatingLabelText="Age"
                         value={this.state.age}
-                        min={0}
-                        max={150}
                         style={{ width: '100px', textAlign: 'left' }}
+                        inputProps={{
+                            min: 0
+                        }}
                         onChange={this.handleFormChange('age')}
                     />
 
@@ -77,32 +83,50 @@ export default class CalorieForm extends Component {
                             lbs: 0.453592
                         }}
                     />
-                    <SelectField
-                        floatingLabelText="Activity Level"
-                        onChange={this.handleFormChange('activityLevel')}
-                        value={this.state.activityLevel}
-                        style={{ width: '150px', textAlign: 'left' }}
-                    >
-                        <MenuItem value={'sedentary'} primaryText="Sedentary" />
-                        <MenuItem value={'light'} primaryText="Light" />
-                        <MenuItem value={'moderate'} primaryText="Moderate" />
-                        <MenuItem value={'heavy'} primaryText="Heavy" />
-                        <MenuItem value={'vHeavy'} primaryText="Very Heavy" />
-                    </SelectField>
 
+                    <FormControl>
+                        <InputLabel htmlFor='activity-level'>Activity Level</InputLabel>
+                        <SelectField
+                            input={<Input name="sort" id='activity-level' />}
+                            onChange={this.handleFormChange('activityLevel')}
+                            value={this.state.activityLevel}
+                            style={{ width: '150px', textAlign: 'left' }}
+                        >
+                            <MenuItem value={'sedentary'} >Sedentary</MenuItem>
+                            <MenuItem value={'light'} >Light</MenuItem>
+                            <MenuItem value={'moderate'} >Moderate</MenuItem>
+                            <MenuItem value={'heavy'} >Heavy</MenuItem>
+                            <MenuItem value={'vHeavy'} >Very Heavy</MenuItem>
+                            {/* <Tooltip id="tooltip-sedentary" title="Little or no exercise" placement="right">
+                                <MenuItem value={'sedentary'} >Sedentary</MenuItem>
+                            </Tooltip>
+                            <Tooltip id="tooltip-light" title="Little or no exercise" placement="right">
+                                <MenuItem value={'light'} >Light</MenuItem>
+                            </Tooltip>
+                            <Tooltip id="tooltip-moderate" title="Little or no exercise" placement="right">
+                                <MenuItem value={'moderate'} >Moderate</MenuItem>
+                            </Tooltip>
+                            <Tooltip id="tooltip-heavy" title="Little or no exercise" placement="right">
+                                <MenuItem value={'heavy'} >Heavy</MenuItem>
+                            </Tooltip>
+                            <Tooltip id="tooltip-vHeavy" title="Little or no exercise" placement="right">
+                                <MenuItem value={'vHeavy'} >Very Heavy</MenuItem>
+                            </Tooltip> */}
+                        </SelectField>
+                    </FormControl>
                 </div>
                 <div>
                     <TextField
-                        floatingLabelText="Calories/Day"
+                        label="Calories/Day"
                         disabled
-                        style={{ textAlign: 'left' }}
                         value={calPerDay.toLocaleString()}
+                        style={{ textAlign: 'left' }}
                     />
                     <TextField
-                        floatingLabelText="Calories/Year"
+                        label="Calories/Year"
                         disabled
-                        style={{ textAlign: 'left' }}
                         value={(calPerDay * 365).toLocaleString()}
+                        style={{ textAlign: 'left' }}
                     />
                 </div>
             </div>

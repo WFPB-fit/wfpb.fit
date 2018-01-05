@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 
 import TextField from 'material-ui/TextField';
-import SelectField from 'material-ui/SelectField';
-import MenuItem from 'material-ui/MenuItem';
+import SelectField from 'material-ui/Select';
+import { MenuItem } from 'material-ui/Menu';
+import Input, { InputLabel } from 'material-ui/Input';
+import { FormControl } from 'material-ui/Form';
 
 import { titleize } from '../../utils/GeneralUtils';
 
@@ -14,50 +16,60 @@ export default class UnitField extends Component {
 
     constructor(props) {
         super(props);
-        
+
         this.handleUnitChange = this.handleUnitChange.bind(this);
         this.handleAmtChange = this.handleAmtChange.bind(this);
     }
 
-    handleUnitChange(event, index, value) {
+    handleUnitChange(event) {
+        const value = event.target.value;
+        
         const oldUnitVal = this.props.units[this.state.unit];
         const newUnitVal = this.props.units[value];
         const adjustedAmountByUnit = (this.state.amount * oldUnitVal) / newUnitVal;
-        this.handleAmtChange(null, adjustedAmountByUnit, value);
+        this.handleAmtChange(event, adjustedAmountByUnit, value);
 
         this.setState({ unit: value });
     }
     handleAmtChange(event, value, unit = this.state.unit) {
+        value = value || event.target.value;
         value = parseFloat(parseFloat(value).toFixed(2));
         this.setState({ amount: value });
 
-        if (this.props.onChange) this.props.onChange(null, null, value * this.props.units[unit]);
+        if (this.props.onChange) this.props.onChange(value * this.props.units[unit]);
     }
 
     render() {
+        const selectId = `select-field-${this.props.title}`;
         return (
             <span>
                 <TextField
+                    label={this.props.title}
                     type="number"
-                    floatingLabelText={this.props.title}
-                    onChange={this.handleAmtChange}
                     value={this.state.amount}
-                    style={{ width: '100px'}}
-                    min={0}
+                    style={{ width: '100px' }}
+                    inputProps={{
+                        min:0
+                    }}
+                    onChange={this.handleAmtChange}
                 />
-                <SelectField
-                    floatingLabelText="Unit"
-                    onChange={this.handleUnitChange}
-                    value={this.state.unit}
-                    style={{ width: '100px'}}
-                >
-                    {
-                        Object.keys(this.props.units).map(x => {
-                            return (<MenuItem value={x} key={x} primaryText={titleize(x)} />);
-                        })
-                    }
-                </SelectField>
-            </span>
+
+                <FormControl>
+                    <InputLabel htmlFor={selectId}>Unit</InputLabel>
+                    <SelectField
+                        input={<Input name="sort" id={selectId} />}
+                        onChange={this.handleUnitChange}
+                        value={this.state.unit}
+                        style={{ width: '100px' }}
+                    >
+                        {
+                            Object.keys(this.props.units).map(x => {
+                                return (<MenuItem value={x} key={x}>{titleize(x)}</MenuItem>);
+                            })
+                        }
+                    </SelectField>
+                </FormControl>
+            </span >
         );
     }
 }

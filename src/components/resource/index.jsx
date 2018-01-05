@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
-import { Card, CardTitle, CardMedia, CardText, CardHeader } from 'material-ui/Card';
+
+import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
+import ExpandMoreIcon from 'material-ui-icons/ExpandMore';
+import Typography from 'material-ui/Typography';
+import IconButton from 'material-ui/IconButton';
+
 import styled from 'styled-components';
 import { titleize, getLink, joinMetaData, getTitleized } from '../../utils/GeneralUtils.jsx';
 
@@ -49,6 +54,19 @@ export default class Resource extends Component {
 	static getTags(tags) {
 		return (tags) ? titleize(tags.join(', ')) : null;
 	}
+	constructor(props) {
+		super(props);
+		this.handleExpandClick = this.handleExpandClick.bind(this);
+
+		this.state = {
+			expanded: false
+		}
+	}
+
+	handleExpandClick = () => {
+		this.setState({ expanded: !this.state.expanded });
+	};
+
 	render() {
 		const resource = this.props.resource;
 		const pdf = getLink(resource.pdf, "PDF");
@@ -97,14 +115,23 @@ export default class Resource extends Component {
 		return (
 			<StyledCard >
 				{DisplayCardMedia}
-				<CardTitle
-					title={title}
-					subtitle={metaData}
-				/>
-				<CardText expandable={isExpandable}>
+				<Typography type="headline" component="h2">{title}</Typography>
+				<Typography type="headline" component="h4">{metaData}</Typography>
+
+
+				<IconButton
+					onClick={this.handleExpandClick}
+					aria-expanded={this.state.expanded}
+					aria-label="Show more"
+				>
+					<ExpandMoreIcon />
+				</IconButton>
+
+				<div>
 					{resource.quote || resource.summary}
 					{video}
-				</CardText>
+				</div>
+
 			</StyledCard>
 		);
 	}

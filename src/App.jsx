@@ -4,7 +4,7 @@ import {
 	Route, Switch
 } from 'react-router-dom';
 import Header from './components/header/index';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
 
 import studyData from './assets/data/studies.json';
 import learnMoreData from './assets/data/learn-more.json';
@@ -29,11 +29,12 @@ import { createStore } from 'redux';
 import rootReducer from './utils/data/reducers';
 
 // import Parse from './utils/fdaDataCreation/parseFdaData';
+// Parse.parse(store);
 
 let store = createStore(
 	rootReducer
 );
-// Parse.parse(store);
+const theme = createMuiTheme();
 
 // console.log(localStorage.getItem('parsed foods data'))
 
@@ -60,7 +61,7 @@ export default class App extends Component {
 	render() {
 		return (
 			<Provider store={store}>
-				<MuiThemeProvider>
+				<MuiThemeProvider theme={theme}>
 					<div id="app">
 						<Router >
 							<div>

@@ -15,8 +15,8 @@ export default class Resources extends Component {
 			search: newTagString
 		});
 	}
-	handleSortByChanged(event, index, sortLabel) {
-		this.setState({ sortBy: sortLabel });
+	handleSortByChanged(event) {
+		this.setState({ sortBy: event.target.value });
 	}
 	static tagsToSelectables(tags) {
 		let newTags = tags.map((tag) => {
@@ -43,7 +43,6 @@ export default class Resources extends Component {
 
 	constructor(props) {
 		super(props);
-
 		//bind this
 		this.sortResources = this.sortResources.bind(this);
 		this.getStudiesFromSelectedTags = this.getStudiesFromSelectedTags.bind(this);

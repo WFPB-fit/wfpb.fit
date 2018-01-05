@@ -7,9 +7,11 @@ import {
 } from 'victory';
 import { alphaCompare, titleize } from '../../../utils/GeneralUtils.jsx';
 
-import SelectField from 'material-ui/SelectField';
-import MenuItem from 'material-ui/MenuItem';
-import RaisedButton from 'material-ui/RaisedButton';
+import SelectField from 'material-ui/Select';
+import { MenuItem } from 'material-ui/Menu';
+import Button from 'material-ui/Button';
+// import Input, { InputLabel } from 'material-ui/Input';
+import { FormControl } from 'material-ui/Form';
 
 export default class NestedSelectField extends Component {
     constructor(props) {
@@ -63,16 +65,22 @@ export default class NestedSelectField extends Component {
     getSelectField(keys, indexKey, value) {
         keys = keys.sort(alphaCompare).filter(x => x !== '');
         if (keys.length > 0) {
+            const sortId = `sort-select-${x}`;
             return (
-                <SelectField
-                    value={value}
-                    key={indexKey}
-                    onChange={this.handleSelectChangeClosure(indexKey)}
-                >
-                    {
-                        keys.map(x => <MenuItem key={x} value={x} primaryText={x} />)
-                    }
-                </SelectField>
+                <FormControl>
+                    {/* <InputLabel htmlFor={sortId} >Sort</InputLabel> */}
+                    <SelectField
+                        // input={<Input name="sort" id={sortId} />}
+                        value={value}
+                        key={indexKey}
+                        onChange={this.handleSelectChangeClosure(indexKey)}
+                    >
+
+                        {
+                            keys.map(x => <MenuItem key={x} value={x}>{x}</MenuItem>)
+                        }
+                    </SelectField>
+                </FormControl>
             );
         }
         else { return null; }
@@ -85,12 +93,15 @@ export default class NestedSelectField extends Component {
             if (!foodIdAlreadySelected) {
                 const foodName = titleize(this.props.allFoodData[foodId].name);
                 return (
-                    <RaisedButton
+                    <Button
+                        raised
                         primary
                         key={foodId}
-                        label={`Add Food`}
                         onClick={this.addFoodClosure(foodId, foodName)}
-                    />
+                    >
+                        Add Food
+                    </Button>
+
                 );
             }
         }
