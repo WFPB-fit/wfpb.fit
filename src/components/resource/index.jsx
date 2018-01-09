@@ -110,7 +110,7 @@ export default class Resource extends Component {
 		}
 
 		const RotateIcon = styled(IconButton) `transform:rotate(${(this.state.expanded) ? 180 : 0}deg);`
-		const ExpandIcon = (
+		let ExpandIcon = (
 			<RotateIcon
 				onClick={this.handleExpandClick}
 				aria-expanded={this.state.expanded}
@@ -119,15 +119,16 @@ export default class Resource extends Component {
 				<ExpandMoreIcon />
 			</RotateIcon>
 		);
+		if(!isMediaCard) ExpandIcon = null;
 
-		let CardInfo = null;
-		if (this.state.expanded) {
-			CardInfo = (
-				<div>
-					{resource.quote || resource.summary}
-					{video}
-				</div>
-			);
+		let CardInfo = (
+			<div>
+				{resource.quote || resource.summary}
+				{video}
+			</div>
+		);
+		if (isMediaCard && !this.state.expanded) {
+			CardInfo = null;
 		}
 
 		return (
