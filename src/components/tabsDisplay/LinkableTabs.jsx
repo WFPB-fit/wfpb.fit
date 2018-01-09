@@ -48,6 +48,7 @@ class LinkableTabs extends Component {
                 <Paper>
                     <StyledTabs
                         fullWidth
+                        scrollable
                         centered
                         onChange={this.switchTab}
                         value={this.state.activeTabIndex}
