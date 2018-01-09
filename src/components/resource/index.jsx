@@ -102,13 +102,31 @@ export default class Resource extends Component {
 			DisplayCardMedia = (
 				<CardMedia
 					style={{
-
-						height: "500px;"
+						height: 300
 					}}
-					actAsExpander
-				>
-					<img src={resource.profile_img} alt="Profile Image" />
-				</CardMedia>
+					image={resource.profile_img}
+				/>
+			);
+		}
+
+		const RotateIcon = styled(IconButton) `transform:rotate(${(this.state.expanded) ? 180 : 0}deg);`
+		const ExpandIcon = (
+			<RotateIcon
+				onClick={this.handleExpandClick}
+				aria-expanded={this.state.expanded}
+				aria-label="Show more"
+			>
+				<ExpandMoreIcon />
+			</RotateIcon>
+		);
+
+		let CardInfo = null;
+		if (this.state.expanded) {
+			CardInfo = (
+				<div>
+					{resource.quote || resource.summary}
+					{video}
+				</div>
 			);
 		}
 
@@ -118,19 +136,8 @@ export default class Resource extends Component {
 				<Typography type="headline" component="h2">{title}</Typography>
 				<Typography type="headline" component="h4">{metaData}</Typography>
 
-
-				<IconButton
-					onClick={this.handleExpandClick}
-					aria-expanded={this.state.expanded}
-					aria-label="Show more"
-				>
-					<ExpandMoreIcon />
-				</IconButton>
-
-				<div>
-					{resource.quote || resource.summary}
-					{video}
-				</div>
+				{ExpandIcon}
+				{CardInfo}
 
 			</StyledCard>
 		);
