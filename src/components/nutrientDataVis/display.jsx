@@ -1,15 +1,6 @@
 import React, { Component } from 'react';
 
-// -------- Create React-Select search options - https://github.com/bvaughn/react-select-fast-filter-options --------
-// import {
-// 	SimpleTokenizer,
-// 	StemmingTokenizer
-// } from 'js-search';
-// import { stemmer } from 'porter-stemmer';
-// const porterStemmerTokenizer = new StemmingTokenizer(stemmer, new SimpleTokenizer())
-
-import VirtualizedSelect from 'react-virtualized-select'
-import createFilterOptions from 'react-select-fast-filter-options';
+import VirtualizedSelect from 'react-virtualized-select';
 
 import { titleize, getRandomColor, getLink, alphaCompare } from '../../utils/GeneralUtils.jsx';
 
@@ -27,24 +18,13 @@ export default class Food extends Component {
 
 		//bind functions
 		this.handleSelectChange = this.handleSelectChange.bind(this);
-		this.getFilterOptions = this.getFilterOptions.bind(this);
 		this.addFood = this.addFood.bind(this);
 		// this.getRelativeAminoAcids = this.getRelativeAminoAcids.bind(this);
 
 		//init vars
 		this.state = {
-			selectedFoods: [],
-			filterOptions: this.getFilterOptions(this.props)
+			selectedFoods: []
 		};
-	}
-	componentWillReceiveProps(nextProps) {
-		this.setState({ filterOptions: this.getFilterOptions(nextProps) });
-	}
-	getFilterOptions(nextProps) {
-		return createFilterOptions({
-			options: nextProps.allSelectables,
-			// tokenizer: porterStemmerTokenizer,
-		});
 	}
 	handleSelectChange(value) {
 		this.setState({ selectedFoods: value });
@@ -67,7 +47,7 @@ export default class Food extends Component {
 		// preprocess foods
 		return this.state.selectedFoods.map(selectedFood => {
 			const foodId = selectedFood.value;
-			let foodData = Object.assign({}, this.props.foodData[foodId]);
+			let foodData = Object.assign({}, this.props.food.data[foodId]);
 
 			foodData.color = getRandomColor();
 			foodData.id = foodId;
@@ -206,7 +186,7 @@ export default class Food extends Component {
 				<p>Enter a tag in the search bar to display info</p>
 			</div>);
 		}
-
+console.log(this.props)
 		return (
 			<div>
 				{/* <NestedSelectField
@@ -215,10 +195,10 @@ export default class Food extends Component {
 				/> */}
 				<VirtualizedSelect
 					name="form-field-name"
-					filterOptions={this.state.filterOptions}
+					filterOptions={this.props.food.filterOptions}
 					value={this.state.selectedFoods}
 					onChange={this.handleSelectChange}
-					options={this.props.allSelectables}
+					options={this.props.food.allSelectables}
 					joinValues
 					multi
 				/>
