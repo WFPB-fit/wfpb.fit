@@ -12,7 +12,7 @@ import { preprocess, indexByTags, CenteredDiv } from './utils/GeneralUtils.jsx';
 
 import Home from './routes/home';
 import Food from './routes/food.jsx';
-import Science from './routes/science';
+import Research from './routes/research';
 import Endorsements from './routes/endorsements';
 import LearnMore from './routes/learn-more';
 
@@ -68,7 +68,7 @@ export default class App extends Component {
 								<Switch>
 									<CenteredDiv>
 										<Route exact path="/" component={Home} />
-										<Route path="/science" component={Science} />
+										<Route path="/research" component={Research} />
 										<Route path="/food" component={Food} />
 										<Route path="/learn-more" component={LearnMore} />
 										<Route path="/endorsements" component={Endorsements} />

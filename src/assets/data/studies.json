@@ -1,5 +1,4 @@
-[
-	{
+[{
 		"title": "Empirical analyses of the influence of diet on human concentrations of persistent organic pollutants: a systematic review of all studies conducted in Spain.",
 		"url": "https://www.ncbi.nlm.nih.gov/pubmed/21683445",
 		"year": 2011,
@@ -2753,12 +2752,77 @@
 	{
 		"title": "Position of the Academy of Nutrition and Dietetics: Vegetarian Diets.",
 		"url": "https://www.ncbi.nlm.nih.gov/pubmed/27886704/",
-		"pdf":"https://www.andeal.org/vault/2440/web/JADA_VEG.pdf",
+		"pdf": "https://www.andeal.org/vault/2440/web/JADA_VEG.pdf",
 		"year": 2016,
 		"type": "research report",
 		"availability": "full",
 		"tags": "plant-based diet",
 		"quote": "These diets are appropriate for all stages of the life cycle, including pregnancy, lactation, infancy, childhood, adolescence, older adulthood, and for athletes. Plant-based diets are more environmentally sustainable than diets rich in animal products because they use fewer natural resources and are associated with much less environmental damage. Vegetarians and vegans are at reduced risk of certain health conditions, including ischemic heart disease, type 2 diabetes, hypertension, certain types of cancer, and obesity. ... Vegans need reliable sources of vitamin B-12, such as fortified foods or supplements."
+	}, {
+		"title": "Humoral immunity to cow's milk proteins and gliadin within the etiology of recurrent aphthous ulcers?",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/19563417",
+		"year": 2009,
+		"availability": "abstract",
+		"type": "study",
+		"tags": "canker sores,milk",
+		"quote": "These results indicate the strong association between high levels of serum anti-CMP [cow's milk protein] IgA, IgG and IgE antibodies and clinical manifestations of recurrent aphthous ulcers [canker sores].",
+		"pdf": "https://health.gov/dietaryguidelines/2015-scientific-report/PDFs/Scientific-Report-of-the-2015-Dietary-Guidelines-Advisory-Committee.pdf"
+	}, {
+		"title": "Efficacy of honey in comparison to topical corticosteroid for treatment of recurrent minor aphthous ulceration: a randomized, blind, controlled, parallel, double-center clinical trial.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/25019115",
+		"year": 2014,
+		"availability": "abstract",
+		"type": "study",
+		"tags": "canker sores,honey",
+		"quote": "There were 94 subjects, with 180 minor recurrent aphthous ulcerations. The ulcers were distributed as 67, 57, and 56 ulcers for honey, topical corticosteroid, and Orabase treatment, respectively. There was a statistically significant difference between the honey group and the other two groups in terms of reduction of ulcer size, days of pain, and degree of erythema. No side effects were reported in any group."
+	},  {
+		"title": "Clinical evaluation of fluid extract of Chamomilla recutita for oral aphthae.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/16865865",
+		"year": 2006,
+		"availability": "abstract",
+		"type": "study",
+		"tags": "canker sores,chamomile",
+		"quote": "This study evaluates the fluid extract from Chamomilla recutita's safety and effectiveness in pain relief from aphthous stomatitis and other painful ulcers of the oral mucous membrane. The analgesic effect was considered excellent by 82% and good by 18% of the patients, as demonstrated with the Analogical Visual Scale for chronic and experimental pains after 5, 10, and 15 minutes. Tolerance was evaluated as excellent by 97% and good by 1% of the subjects."
+	}, {
+		"title": "Effect of sodium lauryl sulfate on recurrent aphthous stomatitis: a randomized controlled clinical trial.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/22435470",
+		"year": 2012,
+		"availability": "abstract",
+		"type": "study",
+		"tags": "canker sores,SLS",
+		"quote": "The number of ulcers and episodes did not differ significantly between SLS-A, SLS-B, and SLS-free. Only duration of ulcers and mean pain score was significantly decreased during the period using SLS-free."
+	}, {
+		"title": "The effectiveness of dentifrices without and with sodium lauryl sulfate on plaque, gingivitis and gingival abrasion—a randomized clinical trial",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4799265/",
+		"year": 2016,
+		"availability": "full",
+		"type": "study",
+		"tags": "canker sores,SLS",
+		"quote": "As dentifrices with and without SLS clinically showed no difference in the present study with regard to gingivitis and plaque, an SLS-free dentifrice could be recommended to patients suffering from recurrent aphthous ulcers. Whether the frequency of recurrent aphthous ulcers is reduced when people start to brush with an SLS-free dentifrice remains still part of a discussion"
+	}, {
+		"title": "Scientific Report of the 2015 Dietary Guidelines Advisory Committee",
+		"year": 2015,
+		"availability": "full",
+		"type": "research report",
+		"tags": "diet",
+		"quote": "The major findings regarding sustainable diets were that a diet higher in plant-based foods, such as vegetables, fruits, whole grains, legumes, nuts, and seeds, and lower in calories and animal-based foods is more health promoting and is associated with less environmental impact than is the current U.S. diet. ",
+		"pdf": "https://health.gov/dietaryguidelines/2015-scientific-report/PDFs/Scientific-Report-of-the-2015-Dietary-Guidelines-Advisory-Committee.pdf"
+	}, {
+		"title": "Lifestyle Management:Standards of Medical Care in Diabetes 2018",
+		"year": 2018,
+		"availability": "full",
+		"type": "research report",
+		"tags": "diet",
+		"quote": "The Mediterranean (54,55), Dietary Approaches to Stop Hyper-tension (DASH) (56–58), and plant-based diets (59,60) are all examples of healthful eating patterns that have shown positive results in research, but individualized meal planning should focus on personal preferences, needs, and goals.",
+		"pdf": "http://care.diabetesjournals.org/content/diacare/41/Supplement_1/S38.full.pdf"
+	}, {
+		"title": "Plates, pyramids, planetDevelopments in national healthy and sustainable dietary guidelines: a state of play assessment",
+		"year": 2016,
+		"availability": "full",
+		"type": "research report",
+		"tags": "diet",
+		"quote": "Characteristics of low environmental impact diets consistent with good health ... Diversity – a wide variety of foods eaten. Based around: minimally processed tubers and whole grains; legumes; fruits and vegetables – particularly those that are field grown, “robust” (less prone to spoilage) and less requiring of rapid and more energy-intensive transport modes. Meat, if eaten, in moderate quantities – and all animal parts consumed. Dairy products or alternatives (e.g. fortified milk substitutes and other foods rich in calcium and micronutrients) eaten in moderation. Unsalted seeds and nuts. Small quantities of fish and aquatic products sourced from certified fisheries. Very limited consumption of foods high in fat, sugar or salt and low in micronutrients e.g. crisps, confectionery, sugary drinks. Oils and fats with a beneficial Omega 3:6 ratio such as rapeseed  and olive oil. ",
+		"pdf": "http://fao.org/3/a-i5640e.pdf"
 	},
 	{
 		"title": "Dietitians of Canada: Healthy Eating Guidelinesfor Vegans",

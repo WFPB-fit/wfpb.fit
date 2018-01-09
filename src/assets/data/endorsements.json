@@ -90,6 +90,10 @@
 		"pdf": "https://www.dietitians.ca/Downloads/Factsheets/Guidlines-for-Vegans.aspx",
 		"website": "https://www.dietitians.ca/"
 	}, {
+		"name": "Proposed 2018 Canada Food Guide",
+		"quote": "Health Canada recommends: Regular intake of vegetables, fruit, whole grains, and protein-rich foods* – especially plant-based sources of protein. Inclusion of foods that contain mostly unsaturated fat, instead of foods that contain mostly of saturated fat. ... Processed or prepared foods and beverages high in sodium, sugars, or saturated fat undermine healthy eating",
+		"website": "https://www.foodguideconsultation.ca/guiding-principles-detailed"
+	}, {
 		"name": "The British Nutrition Foundation",
 		"icon": "/imgs/orgs/BNF_LOGO.png",
 		"quote": "Well planned vegetarian and vegan diets can be nutritious and healthy",
@@ -104,6 +108,14 @@
 		"icon": "/imgs/orgs/usda.svg",
 		"quote": "Vegetarian diets can meet all the recommendations for nutrients. The key is to consume a variety of foods and the right amount of foods to meet your calorie needs. Follow the food group recommendations for your age, sex, and activity level to get the right amount of food and the variety of foods needed for nutrient adequacy. Nutrients that vegetarians may need to focus on include protein, iron, calcium, zinc, and vitamin B12.",
 		"website": "https://www.choosemyplate.gov/tips-vegetarians"
+	}, {
+		"name": "Scientific Report of the 2015 Dietary Guidelines Advisory Committee",
+		"quote": "The major findings regarding sustainable diets were that a diet higher in plant-based foods, such as vegetables, fruits, whole grains, legumes, nuts, and seeds, and lower in calories and animal-based foods is more health promoting and is associated with less environmental impact than is the current U.S. diet. ",
+		"pdf": "https://health.gov/dietaryguidelines/2015-scientific-report/PDFs/Scientific-Report-of-the-2015-Dietary-Guidelines-Advisory-Committee.pdf"
+	}, {
+		"name": "American Institute for Cancer Research",
+		"quote": "Create meals that lower your risk for cancer and other chronic diseases and manage your weight, at the same time. ... Aim for meals made up of 2/3 (or more) vegetables, fruits whole grains or beans and 1/3 (or less) animal protein.",
+		"website": "http://www.aicr.org/new-american-plate/cancer-preventive-diet-model-plate.html?referrer=http://www.aicr.org"
 	}, {
 		"name": "Australian National Health and Medical Research Council",
 		"icon": "/imgs/orgs/nhmrc.jpg",
@@ -120,6 +132,10 @@
 		"icon": "/imgs/orgs/Heart_and_Stroke_logo.svg",
 		"quote": "Vegetarian diets can provide all the nutrients you need at any age, as well as some additional health benefits.  ...Vegetarian diets may lead to lower blood pressure, improved cholesterol levels, healthier weight and less incidence of Type 2 Diabetes, all of which can reduce the risk of heart disease and stroke. ",
 		"website": "http://www.heartandstroke.ca/get-healthy/healthy-eating/specific-diets/for-vegetarians"
+	},  {
+		"name": "The American Association of Clinical Endocrinologists",
+		"quote": "Lifestyle therapy begins with nutrition counseling and education. All patients should strive to attain and maintain an optimal weight through a primarily plant-based diet high in polyunsaturated and monounsaturated fatty acids, with limited intake of saturated fatty acids and avoidance of trans fats. Patients who are overweight (body mass index [BMI] 25–29.9 kg/m2) or obese (BMI ≥30 kg/m2) should also restrict their caloric intake with the goal of reducing body weight by at least 5 to 10%. As shown in the Look AHEAD (Action for Health in Diabetes) and Diabetes Prevention Program (DPP) studies, lowering caloric intake is the main driver for weight loss (3–6). ",
+		"website": "http://journals.aace.com/doi/full/10.4158/EP161682.CS?code=aace-site"
 	}, {
 		"name": "The British National Health Service",
 		"icon": "/imgs/orgs/british_nhs.jpg",

@@ -3,7 +3,7 @@ import tags from '../assets/data/tags.json';
 import { filterStudiesByTags } from '../utils/GeneralUtils.jsx';
 import ResourceTabs from '../components/tabsDisplay/ResourceTabs.jsx';
 
-export default class Science extends Component {
+export default class Research extends Component {
 	constructor(props) {
 		super(props);
 		const agribusinessTags = ['agribusiness'];
