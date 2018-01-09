@@ -13,8 +13,8 @@ export default class Food extends Component {
 
         this.tabs = [
             { label: 'Nutrients', component: (<NutrientDataVis />) },
-            { label: 'Environment', component: (<CalorieEstimator />) },
-            { label: 'Animals', component: (<CalorieEstimator />) },
+            { label: 'My Diet', component: (<CalorieEstimator />) },
+            { label: 'Data', component: (<div/>) },
         ];
     }
     render() {

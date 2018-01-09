@@ -17,8 +17,7 @@ import Drawer from 'material-ui/Drawer';
 
 const topLinks = [
 	{ txt: 'Home', href: '/' },
-	{ txt: 'Health', href: '/health' },
-	{ txt: 'Externalities', href: '/externalities' },
+	{ txt: 'Science', href: '/science' },
 	{ txt: 'Compare Foods', href: '/food' },
 	{ txt: 'How To', href: '/how-to' },
 	{ txt: 'Learn More', href: '/learn-more' },

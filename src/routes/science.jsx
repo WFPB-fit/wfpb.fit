@@ -3,12 +3,24 @@ import tags from '../assets/data/tags.json';
 import { filterStudiesByTags } from '../utils/GeneralUtils.jsx';
 import ResourceTabs from '../components/tabsDisplay/ResourceTabs.jsx';
 
-export default class Externalities extends Component {
+export default class Science extends Component {
 	constructor(props) {
 		super(props);
 		const agribusinessTags = ['agribusiness'];
 
 		this.tabs = [{
+			label: 'Disease',
+			tags: tags.disease,
+			resources: filterStudiesByTags(window.globalAppData.studies, tags.disease)
+		}, {
+			label: 'Food',
+			tags: tags.food,
+			resources: filterStudiesByTags(window.globalAppData.studies, tags.food)
+		}, {
+			label: 'Nutrients',
+			tags: tags.nutrients,
+			resources: filterStudiesByTags(window.globalAppData.studies, tags.nutrients)
+		}, {
 			label: 'Environment',
 			tags: tags.environment,
 			resources: filterStudiesByTags(window.globalAppData.studies, tags.environment),
