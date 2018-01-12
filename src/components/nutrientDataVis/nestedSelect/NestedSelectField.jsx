@@ -95,7 +95,7 @@ export default class NestedSelectField extends Component {
                 return (
                     <Button
                         raised
-                        primary
+                        color="primary"
                         key={foodId}
                         onClick={this.addFoodClosure(foodId, foodName)}
                     >

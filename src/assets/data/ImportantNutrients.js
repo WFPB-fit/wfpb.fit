@@ -1,8 +1,6 @@
 export const ImportantNutrients = {
 	calories: [208],
 	misc: [	
-		208, //calories
-		291, //fiber, total dietary  	
 		601, //Cholesterol,  
 		636, //phytosterol  
 	],
@@ -10,6 +8,11 @@ export const ImportantNutrients = {
 		203, //protein
 		204, //total fat
 		205, //carbohydrates by difference
+	],
+	carbs:[
+		291, //fiber, total dietary  	
+		209, //Starch
+		269, //Sugars
 	],
 	fats: [
 		606, //Fatty acids, total saturated,

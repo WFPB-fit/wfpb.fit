@@ -6,6 +6,7 @@ import { titleize, getRandomColor, getLink, alphaCompare } from '../../utils/Gen
 
 import NutrientNames from '../../assets/data/nutrientNames.js';
 import NutrientGraph from './nutrientGraph.jsx';
+import BestFoodSelector from './bestFood';
 // import NestedSelectField from './nestedSelect/NestedSelectContainer.jsx';
 
 import {
@@ -19,6 +20,7 @@ export default class Food extends Component {
 		//bind functions
 		this.handleSelectChange = this.handleSelectChange.bind(this);
 		this.addFood = this.addFood.bind(this);
+		this.addFoods = this.addFoods.bind(this);
 		// this.getRelativeAminoAcids = this.getRelativeAminoAcids.bind(this);
 
 		//init vars
@@ -32,6 +34,13 @@ export default class Food extends Component {
 	addFood(foodId, foodName) {
 		let selectedFoods = Object.assign([], this.state.selectedFoods);
 		selectedFoods.push({ value: foodId, label: foodName })
+		this.setState({ selectedFoods });
+	}
+	addFoods(foodIds) {
+		let selectedFoods = Object.assign([], this.state.selectedFoods);
+		for (const id of foodIds) {
+			selectedFoods.push({ value: id, label: this.props.food.data[id].name })
+		}
 		this.setState({ selectedFoods });
 	}
 
@@ -78,7 +87,7 @@ export default class Food extends Component {
 
 	render() {
 		const selectedFoodsData = this.preprocessSelectedFoods();
-
+		console.log(this.props.food.data)
 		let dataVis = null;
 		if (selectedFoodsData.length > 0) { //At least one food is selected
 			const graphs = (
@@ -87,6 +96,11 @@ export default class Food extends Component {
 					<NutrientGraph
 						selectedFoods={selectedFoodsData}
 						nutrientDataKey="macros"
+					/>
+					<h2>Carbohydrates</h2>
+					<NutrientGraph
+						selectedFoods={selectedFoodsData}
+						nutrientDataKey="carbs"
 					/>
 					<h2>Fats</h2>
 					<NutrientGraph
@@ -186,7 +200,7 @@ export default class Food extends Component {
 				<p>Enter a tag in the search bar to display info</p>
 			</div>);
 		}
-console.log(this.props)
+
 		return (
 			<div>
 				{/* <NestedSelectField
@@ -201,6 +215,10 @@ console.log(this.props)
 					options={this.props.food.allSelectables}
 					joinValues
 					multi
+				/>
+				<BestFoodSelector
+					foodData={this.props.food.data}
+					addFoods={this.addFoods}
 				/>
 				{dataVis}
 
