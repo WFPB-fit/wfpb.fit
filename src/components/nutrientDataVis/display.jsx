@@ -6,7 +6,7 @@ import { titleize, getRandomColor, getLink, alphaCompare } from '../../utils/Gen
 
 import NutrientNames from '../../assets/data/nutrientNames.js';
 import NutrientGraph from './nutrientGraph.jsx';
-import BestFoodSelector from './bestFood';
+// import BestFoodSelector from './bestFood';
 // import NestedSelectField from './nestedSelect/NestedSelectContainer.jsx';
 
 import {
@@ -87,7 +87,7 @@ export default class Food extends Component {
 
 	render() {
 		const selectedFoodsData = this.preprocessSelectedFoods();
-		console.log(this.props.food.data)
+
 		let dataVis = null;
 		if (selectedFoodsData.length > 0) { //At least one food is selected
 			const graphs = (
@@ -216,10 +216,10 @@ export default class Food extends Component {
 					joinValues
 					multi
 				/>
-				<BestFoodSelector
+				{/* <BestFoodSelector
 					foodData={this.props.food.data}
 					addFoods={this.addFoods}
-				/>
+				/> */}
 				{dataVis}
 
 			</div>

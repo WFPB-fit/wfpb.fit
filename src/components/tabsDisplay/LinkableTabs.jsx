@@ -8,7 +8,7 @@ import { withRouter } from 'react-router-dom';
 import Resources from '../resources/index.jsx';
 import styled from 'styled-components';
 
-const StyledTabs = styled(Tabs)`
+const StyledTabs = styled(Tabs) `
 margin:5px;
 `;
 
@@ -43,13 +43,14 @@ class LinkableTabs extends Component {
     }
     render() {
         const { match, location, history, staticContext, ...nonrouterProps } = this.props; //https://github.com/DefinitelyTyped/DefinitelyTyped/issues/13689#issuecomment-296246134
+        const isScrollable = this.props.tabs.length > 2;
         return (
             <div>
                 <Paper>
                     <StyledTabs
                         fullWidth
-                        scrollable
                         centered
+                        scrollable={isScrollable}
                         onChange={this.switchTab}
                         value={this.state.activeTabIndex}
                         {...nonrouterProps}
