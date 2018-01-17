@@ -6,7 +6,7 @@ import { MenuItem } from 'material-ui/Menu';
 import Input, { InputLabel } from 'material-ui/Input';
 import { FormControl } from 'material-ui/Form';
 
-import { titleize } from '../../utils/GeneralUtils';
+import { titleize } from '../../../utils/GeneralUtils';
 
 export default class UnitField extends Component {
     state = {

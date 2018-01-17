@@ -8,7 +8,8 @@ import Tooltip from 'material-ui/Tooltip';
 
 import styled from 'styled-components';
 
-import CalorieEstimator from './calorieEstimator';
+import CalorieEstimator from './calorieEstimator/index.jsx';
+import FoodEstimator from './foodEstimator';
 
 const HideableDiv = styled.div`
 display: ${props => props.visible ? 'block' : 'none'}
@@ -34,7 +35,7 @@ export default class CalorieForm extends Component {
         return (
             <div>
                 <CalorieEstimator />
-
+                <FoodEstimator/>
                 <Button
                     raised
                     color="primary"
@@ -42,7 +43,7 @@ export default class CalorieForm extends Component {
                 >
                     {(this.state.overallVisible) ? 'Hide Overall' : 'View Overall'}
                 </Button>
-
+                
                 <HideableDiv
                     visible={this.state.overallVisible}
                 >
