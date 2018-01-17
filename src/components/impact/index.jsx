@@ -10,6 +10,10 @@ import styled from 'styled-components';
 
 import CalorieEstimator from './calorieEstimator/index.jsx';
 import FoodEstimator from './foodEstimator';
+import DataVis from './dataVis.jsx';
+
+import WRR from '../../assets/data/environment/wrr.js';
+import ReferenceFoodUsage from '../../assets/data/environment/ReferenceFoodUsage.js';
 
 const HideableDiv = styled.div`
 display: ${props => props.visible ? 'block' : 'none'}
@@ -20,6 +24,7 @@ export default class CalorieForm extends Component {
         super(props);
 
         this.toggleOverallVisible = this.toggleOverallVisible.bind(this);
+        this.foodUsageChanged = this.foodUsageChanged.bind(this);
 
         this.state = {
             overallVisible: false
@@ -29,13 +34,19 @@ export default class CalorieForm extends Component {
     toggleOverallVisible() {
         this.setState({ overallVisible: !this.state.overallVisible });
     }
+    foodUsageChanged(foods) {
+        this.setState({ foods: foods });
+    }
 
     render() {
-
+        console.log(this.state)
         return (
             <div>
                 <CalorieEstimator />
-                <FoodEstimator/>
+                <FoodEstimator
+                    foodUsageChanged={this.foodUsageChanged}
+                />
+
                 <Button
                     raised
                     color="primary"
@@ -43,7 +54,12 @@ export default class CalorieForm extends Component {
                 >
                     {(this.state.overallVisible) ? 'Hide Overall' : 'View Overall'}
                 </Button>
-                
+
+                <DataVis
+                    foodUsage={this.state.foods}
+                    refFoodUsages={}
+                />
+
                 <HideableDiv
                     visible={this.state.overallVisible}
                 >

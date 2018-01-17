@@ -16,6 +16,7 @@ export default class CalorieForm extends Component {
 
         this.handleFormChange = this.handleFormChange.bind(this);
         this.isPercentageTotalWrong = this.isPercentageTotalWrong.bind(this);
+        this.updateParentForm = this.updateParentForm.bind(this);
         this.totalPercent = this.totalPercent.bind(this);
 
         this.state = {};
@@ -29,13 +30,24 @@ export default class CalorieForm extends Component {
         this.state['Fruits and vegetables'] = 30;
         this.state.Nuts = 15;
         this.state.Pulses = 20;
+        this.updateParentForm();
     }
 
-    totalPercent(){
+    totalPercent() {
         return Object.keys(this.state).reduce((sum, key) => sum + parseInt(this.state[key]), 0);
     }
     isPercentageTotalWrong() {
         return this.totalPercent() !== 100;
+    }
+    updateParentForm(){
+        if (this.props.foodUsageChanged) {
+            if (this.isPercentageTotalWrong()) {
+                this.props.foodUsageChanged(null);
+            } else {
+                const foods = Object.assign({}, this.state);
+                this.props.foodUsageChanged(foods);
+            }
+        }
     }
 
     handleFormChange(key) {
@@ -43,6 +55,7 @@ export default class CalorieForm extends Component {
             let newState = {};
             newState[key] = event.target.value;
             this.setState(newState);
+            this.updateParentForm();
         }
     }
 

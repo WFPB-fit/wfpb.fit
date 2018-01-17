@@ -2,7 +2,9 @@ export default {
 	"land": {
 		"Sugar": 0.03,
 		"Rice": 0.09,
-		"Oils": (.1 + .16 + .26) / 3, //		"Rapeseed and mustardseed oil": 0.10,   		"Soybean oil": 0.16, 		"Sunflowerseed oil": 0.26,
+		"Rapeseed and mustardseed oil": 0.10,
+		"Soybean oil": 0.16,
+		"Sunflowerseed oil": 0.26,
 		"Maize": 0.11,
 		"Roots and tubers": 0.12,
 		"Wheat": 0.14,
@@ -20,7 +22,9 @@ export default {
 	"water": {
 		"Sugar": 605,
 		"Rice": 403,
-		"Oils": (393 + 639 + 607) / 3, //		"Rapeseed and mustardseed oil": 393, 		"Soybean oil": 639,    		"Sunflowerseed oil": 607,
+		"Rapeseed and mustardseed oil": 393,
+		"Soybean oil": 639,
+		"Sunflowerseed oil": 607,
 		"Maize": 342,
 		"Roots and tubers": 423,
 		"Wheat": 551,
@@ -38,7 +42,9 @@ export default {
 	"ghg": {
 		"Sugar": 0.67,
 		"Rice": 2.60,
-		"Oils": (1.54 + 2.81 + 3.46) / 3, //		"Rapeseed and mustardseed oil": 1.54, 		"Soybean oil": 2.81, 		"Sunflowerseed oil": 3.46,
+		"Rapeseed and mustardseed oil": 1.54,
+		"Soybean oil": 2.81,
+		"Sunflowerseed oil": 3.46,
 		"Maize": 1.97,
 		"Roots and tubers": 2.04,
 		"Wheat": 2.12,
