@@ -39,7 +39,6 @@ export default class CalorieForm extends Component {
     }
 
     render() {
-        console.log(this.state)
         return (
             <div>
                 <CalorieEstimator />
@@ -57,7 +56,7 @@ export default class CalorieForm extends Component {
 
                 <DataVis
                     foodUsage={this.state.foods}
-                    refFoodUsages={}
+                    refFoodUsages={ReferenceFoodUsage}
                 />
 
                 <HideableDiv

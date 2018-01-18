@@ -13,7 +13,7 @@ import {
 import styled from 'styled-components';
 
 import WRR from '../../assets/data/environment/wrr.js';
-import {titleize} from '../../utils/GeneralUtils';
+import { titleize } from '../../utils/GeneralUtils';
 
 export default class CalorieForm extends Component {
     constructor(props) {
@@ -22,20 +22,21 @@ export default class CalorieForm extends Component {
         // this.handleFormChange = this.handleFormChange.bind(this);
     }
 
-    getImpact(impactType) {
-        return Object.keys(this.props.foodUsage).reduce((sum, foodType) => {
-            const usage = this.props.foodUsage[foodType] || 0;
-            return sum + WRR[impactType][foodType] * usage / 100.0;
-        });
+    getImpact(dietFoods, impactType) {
+        return Object.keys(dietFoods).reduce((sum, foodType) => {
+            const usage = (dietFoods[foodType] || 0) / 100.0;
+            return sum + WRR[impactType][foodType] *usage;
+        }, 0);
     }
 
     getImpactChart(impactType) {
         if (!this.props.foodUsage) return null;
 
-
-        let foodUsageData = this.props.refFoodUsages.push({ label: 'You', data: this.props.foodUsage });
+        console.log(this.props.refFoodUsages, this.props.foodUsage)
+        let foodUsageData = this.props.refFoodUsages.slice(); //copy
+        foodUsageData.push({ label: 'You', data: this.props.foodUsage });
         foodUsageData = foodUsageData.map(x => {
-            return { x: x.label, y: this.getImpact(impactType) };
+            return { x: x.label, y: this.getImpact(x.data, impactType) };
         });
 
         return (
