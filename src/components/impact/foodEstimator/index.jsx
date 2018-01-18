@@ -13,79 +13,39 @@ import WRR from '../../../assets/data/environment/wrr.js';
 export default class CalorieForm extends Component {
     constructor(props) {
         super(props);
-
-        this.handleFormChange = this.handleFormChange.bind(this);
-        this.isPercentageTotalWrong = this.isPercentageTotalWrong.bind(this);
-        this.updateParentForm = this.updateParentForm.bind(this);
-        this.totalPercent = this.totalPercent.bind(this);
-
-        this.state = {};
-
-        //set default food usages to some random vegan amounts. Can try to find better data-backed defaults later
-        Object.keys(WRR['land']).forEach(x => { this.state[x] = 0; })
-        this.state.Wheat = 5;
-        this.state.Rice = 5;
-        this.state.Maize = 5;
-        this.state['Roots and tubers'] = 20;
-        this.state['Fruits and vegetables'] = 30;
-        this.state.Nuts = 15;
-        this.state.Pulses = 20;
-        this.updateParentForm();
-    }
-
-    totalPercent() {
-        return Object.keys(this.state).reduce((sum, key) => sum + parseInt(this.state[key]), 0);
-    }
-    isPercentageTotalWrong() {
-        return this.totalPercent() !== 100;
-    }
-    updateParentForm(){
-        if (this.props.foodUsageChanged) {
-            if (this.isPercentageTotalWrong()) {
-                this.props.foodUsageChanged(null);
-            } else {
-                const foods = Object.assign({}, this.state);
-                this.props.foodUsageChanged(foods);
-            }
-        }
-    }
-
-    handleFormChange(key) {
-        return (event) => {
-            let newState = {};
-            newState[key] = event.target.value;
-            this.setState(newState);
-            this.updateParentForm();
-        }
     }
 
     getFoodFields() {
+        const percent = this.props.getTotalDietCompPercent();
+
         return Object.keys(WRR['land']).map(x => {
             return <TextField
                 label={x}
                 type="number"
-                value={this.state[x]}
+                value={this.props.dietComposition[x]}
                 key={x}
                 style={{ width: '100px' }}
                 inputProps={{
                     min: 0,
                     max: 100
                 }}
-                error={this.isPercentageTotalWrong()}
-                value={this.state[x]}
-                onChange={this.handleFormChange(x)}
+                error={percent !== 100}
+                value={this.props.dietComposition[x]}
+                onChange={this.props.handleDietCompositionChange(x)}
             />
         });
     }
 
     render() {
-        const errMessage = (this.isPercentageTotalWrong()) ? <p>Foods percentages must add to 100%, not {this.totalPercent()}%</p> : null;
+        const percent = this.props.getTotalDietCompPercent();
+        const isErr = (percent !== 100)
+        const msg = (percent !== 100) ? `Must sum to 100, not ${percent}` : `Diet composition (percent)`;
         return (
             <div>
                 <div>
                     {this.getFoodFields()}
                 </div>
-                {errMessage}
+                <p>{msg}</p>
             </div>
         );
     }

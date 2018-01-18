@@ -18,25 +18,22 @@ import { titleize } from '../../utils/GeneralUtils';
 export default class CalorieForm extends Component {
     constructor(props) {
         super(props);
-
-        // this.handleFormChange = this.handleFormChange.bind(this);
     }
 
     getImpact(dietFoods, impactType) {
         return Object.keys(dietFoods).reduce((sum, foodType) => {
             const usage = (dietFoods[foodType] || 0) / 100.0;
-            return sum + WRR[impactType][foodType] *usage;
+            return sum + WRR[impactType][foodType] * usage;
         }, 0);
     }
 
     getImpactChart(impactType) {
         if (!this.props.foodUsage) return null;
 
-        console.log(this.props.refFoodUsages, this.props.foodUsage)
         let foodUsageData = this.props.refFoodUsages.slice(); //copy
         foodUsageData.push({ label: 'You', data: this.props.foodUsage });
         foodUsageData = foodUsageData.map(x => {
-            return { x: x.label, y: this.getImpact(x.data, impactType) };
+            return { x: titleize(x.label), y: this.getImpact(x.data, impactType) };
         });
 
         return (

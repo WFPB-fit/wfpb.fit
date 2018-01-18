@@ -24,26 +24,64 @@ export default class CalorieForm extends Component {
         super(props);
 
         this.toggleOverallVisible = this.toggleOverallVisible.bind(this);
-        this.foodUsageChanged = this.foodUsageChanged.bind(this);
+        this.handleDietCompositionChange = this.handleDietCompositionChange.bind(this);
+        this.getTotalDietCompPercent = this.getTotalDietCompPercent.bind(this);
 
         this.state = {
-            overallVisible: false
-        }
+            overallVisible: false,
+            dietComposition: {}
+        };
+
+        //set default food usages to some random vegan amounts. Can try to find better data-backed defaults later
+        Object.keys(WRR['land']).forEach(x => { this.state.dietComposition[x] = 0; })
+        this.state.dietComposition.Wheat = 5;
+        this.state.dietComposition.Rice = 5;
+        this.state.dietComposition.Maize = 5;
+        this.state.dietComposition['Roots and tubers'] = 20;
+        this.state.dietComposition['Fruits and vegetables'] = 30;
+        this.state.dietComposition.Nuts = 15;
+        this.state.dietComposition.Pulses = 20;
     }
 
     toggleOverallVisible() {
         this.setState({ overallVisible: !this.state.overallVisible });
     }
-    foodUsageChanged(foods) {
-        this.setState({ foods: foods });
+
+    handleDietCompositionChange(key) {
+        return (event) => {
+            let newState = Object.assign({}, this.state.dietComposition);
+            newState[key] = event.target.value;
+            this.setState({ dietComposition: newState });
+        }
+    }
+
+    getTotalDietCompPercent() {
+        return Object.keys(this.state.dietComposition).reduce((sum, key) => {
+            const val = parseInt(this.state.dietComposition[key] || 0);
+            return sum + val;
+        }, 0);
     }
 
     render() {
+        let viz = null;
+
+        if (this.getTotalDietCompPercent() == 100) {
+            viz = (
+                <DataVis
+                    foodUsage={this.state.dietComposition}
+                    refFoodUsages={ReferenceFoodUsage}
+                />
+            );
+        }
+
         return (
             <div>
                 <CalorieEstimator />
+
                 <FoodEstimator
-                    foodUsageChanged={this.foodUsageChanged}
+                    handleDietCompositionChange={this.handleDietCompositionChange}
+                    dietComposition={this.state.dietComposition}
+                    getTotalDietCompPercent={this.getTotalDietCompPercent}
                 />
 
                 <Button
@@ -54,10 +92,7 @@ export default class CalorieForm extends Component {
                     {(this.state.overallVisible) ? 'Hide Overall' : 'View Overall'}
                 </Button>
 
-                <DataVis
-                    foodUsage={this.state.foods}
-                    refFoodUsages={ReferenceFoodUsage}
-                />
+                {viz}
 
                 <HideableDiv
                     visible={this.state.overallVisible}
