@@ -4,7 +4,7 @@ export default [{
 		data: {
 			Sugar: 10,
 			Rice: 5,
-			"Rapeseed and mustardseed oil": 5,
+			"Mustard/Rape-seed oil": 5,
 			"Soybean oil": 5,
 			"Sunflowerseed oil": 5,
 			Maize: 5,
@@ -27,7 +27,7 @@ export default [{
 		data: {
 			Sugar: 10,
 			Rice: 6,
-			"Rapeseed and mustardseed oil": 7,
+			"Mustard/Rape-seed oil": 7,
 			"Soybean oil": 7,
 			"Sunflowerseed oil": 7,
 			Maize: 14,
@@ -50,7 +50,7 @@ export default [{
 		data: {
 			Sugar: 0,
 			Rice: 0,
-			"Rapeseed and mustardseed oil": 5,
+			"Mustard/Rape-seed oil": 5,
 			"Soybean oil": 5,
 			"Sunflowerseed oil": 5,
 			Maize: 0,

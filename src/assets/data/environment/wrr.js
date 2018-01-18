@@ -2,7 +2,7 @@ export default {
 	"land": {
 		"Sugar": 0.03,
 		"Rice": 0.09,
-		"Rapeseed and mustardseed oil": 0.10,
+		"Mustard/Rape-seed oil": 0.10,
 		"Soybean oil": 0.16,
 		"Sunflowerseed oil": 0.26,
 		"Maize": 0.11,
@@ -22,7 +22,7 @@ export default {
 	"water": {
 		"Sugar": 605,
 		"Rice": 403,
-		"Rapeseed and mustardseed oil": 393,
+		"Mustard/Rape-seed oil": 393,
 		"Soybean oil": 639,
 		"Sunflowerseed oil": 607,
 		"Maize": 342,
@@ -42,7 +42,7 @@ export default {
 	"ghg": {
 		"Sugar": 0.67,
 		"Rice": 2.60,
-		"Rapeseed and mustardseed oil": 1.54,
+		"Mustard/Rape-seed oil": 1.54,
 		"Soybean oil": 2.81,
 		"Sunflowerseed oil": 3.46,
 		"Maize": 1.97,
