@@ -7,14 +7,15 @@ import { MenuItem } from 'material-ui/Menu';
 import Tooltip from 'material-ui/Tooltip';
 import Input, { InputLabel } from 'material-ui/Input';
 import { FormControl } from 'material-ui/Form';
-
 import HarrisBenedict from './HarrisBenedict.js';
+
 import UnitField from './UnitField.jsx';
 
 export default class CalorieForm extends Component {
     constructor(props) {
         super(props);
         this.handleFormChange = this.handleFormChange.bind(this);
+
         this.state = {
             age: 21,
             gender: 'male',
@@ -22,17 +23,30 @@ export default class CalorieForm extends Component {
             kg: 90,
             activityLevel: 'sedentary'
         };
+        this.props.handleDailyCaloriesChange(this.getDailyCal());
     }
 
     handleFormChange(key) {
         return (event) => {
-            let newState = {};
+            let newState = Object.assign({},this.state);
             newState[key] = (typeof event === 'object') ? event.target.value : event;
             this.setState(newState);
+
+            const cal= this.getDailyCal(newState);
+            this.props.handleDailyCaloriesChange(this.getDailyCal(newState));
         }
     }
+
+    getDailyCal(state=this.state) {
+        return HarrisBenedict(state);
+    }
+
+
     render() {
-        const calPerDay = HarrisBenedict(this.state);
+        const dailyCal = this.getDailyCal().toLocaleString();
+        let yearlyCal = this.getDailyCal() * 365.25;
+        yearlyCal = yearlyCal.toFixed(0);
+        yearlyCal = parseFloat(yearlyCal).toLocaleString();
 
         return (
             // cannot use styled components - https://github.com/mui-org/material-ui/issues/783#issuecomment-340068259
@@ -119,14 +133,13 @@ export default class CalorieForm extends Component {
                     <TextField
                         label="Calories/Day"
                         disabled
-                        value={calPerDay.toLocaleString()}
+                        value={dailyCal}
                         style={{ textAlign: 'left' }}
                     />
                     <TextField
                         label="Calories/Year"
                         disabled
-                        value={(calPerDay * 365).toLocaleString()}
-                        style={{ textAlign: 'left' }}
+                        value={yearlyCal}
                     />
                 </div>
             </div>

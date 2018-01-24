@@ -21,10 +21,14 @@ export default class CalorieForm extends Component {
     }
 
     getImpact(dietFoods, impactType) {
-        return Object.keys(dietFoods).reduce((sum, foodType) => {
+        const dietComponentsCalories =  Object.keys(dietFoods).reduce((sum, foodType) => {
             const usage = (dietFoods[foodType] || 0) / 100.0;
             return sum + WRR[impactType][foodType] * usage;
         }, 0);
+        const cals = this.props.dailyCalories || 0;
+        const calRatio = cals * 365.25 / 1000000; //WRR is data is for 1 million calories
+
+        return calRatio * dietComponentsCalories;
     }
 
     getImpactChart(impactType) {

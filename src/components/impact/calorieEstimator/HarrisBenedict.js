@@ -33,5 +33,5 @@ export default function calculateHarrisBenedict1990({
 		bmr *= activityScalars[activityLevel];
 	}
 
-	return bmr.toFixed(0);
+	return parseFloat(bmr.toFixed(0));
 }

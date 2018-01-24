@@ -26,10 +26,12 @@ export default class CalorieForm extends Component {
         this.toggleOverallVisible = this.toggleOverallVisible.bind(this);
         this.handleDietCompositionChange = this.handleDietCompositionChange.bind(this);
         this.getTotalDietCompPercent = this.getTotalDietCompPercent.bind(this);
+        this.handleDailyCaloriesChange = this.handleDailyCaloriesChange.bind(this);
 
         this.state = {
             overallVisible: false,
-            dietComposition: {}
+            dietComposition: {},
+            dailyCalories:0
         };
 
         //set default food usages to some random vegan amounts. Can try to find better data-backed defaults later
@@ -54,7 +56,9 @@ export default class CalorieForm extends Component {
             this.setState({ dietComposition: newState });
         }
     }
-
+    handleDailyCaloriesChange(cal) {
+        this.setState({ dailyCalories: cal });
+    }
     getTotalDietCompPercent() {
         return Object.keys(this.state.dietComposition).reduce((sum, key) => {
             const val = parseInt(this.state.dietComposition[key] || 0);
@@ -63,20 +67,23 @@ export default class CalorieForm extends Component {
     }
 
     render() {
+        console.log(this.state.dailyCalories)
         let viz = null;
-
         if (this.getTotalDietCompPercent() == 100) {
             viz = (
                 <DataVis
                     foodUsage={this.state.dietComposition}
                     refFoodUsages={ReferenceFoodUsage}
+                    dailyCalories={this.state.dailyCalories}
                 />
             );
         }
 
         return (
             <div>
-                <CalorieEstimator />
+                <CalorieEstimator
+                    handleDailyCaloriesChange={this.handleDailyCaloriesChange}
+                />
 
                 <FoodEstimator
                     handleDietCompositionChange={this.handleDietCompositionChange}
