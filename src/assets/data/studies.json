@@ -2244,6 +2244,15 @@
 		"summary": "The USDA summarizes how many animals are slaughtered, though it only counts the processing plants that are federally inspected. In 2016 alone the industry (and thus consumers) killed 30,676,100 adult cattle, 512,700 baby calves, 118,303,900 hogs/pigs, and 2,332,600."
 	},
 	{
+		"title": "Dietary greenhouse gas emissions of meat-eaters, fish-eaters, vegetarians and vegans in the UK",
+		"url": "https://link.springer.com/article/10.1007%2Fs10584-014-1169-1/fulltext.html",
+		"type": "study",
+		"availability": "full",
+		"year": 2014,
+		"tags": "ghg",
+		"summary": "The age-and-sex-adjusted mean (95 % confidence interval) GHG emissions in kilograms of carbon dioxide equivalents per day (kgCO2e/day) were 7.19 (7.16, 7.22) for high meat-eaters ( > = 100 g/d), 5.63 (5.61, 5.65) for medium meat-eaters (50-99 g/d), 4.67 (4.65, 4.70) for low meat-eaters ( < 50 g/d), 3.91 (3.88, 3.94) for fish-eaters, 3.81 (3.79, 3.83) for vegetarians and 2.89 (2.83, 2.94) for vegans. In conclusion, dietary GHG emissions in self-selected meat-eaters are approximately twice as high as those in vegans. "
+	},
+	{
 		"title": "The monitoring, prevention, and treatment of milk fever and subclinical hypocalcemia in dairy cows",
 		"url": "http://www.sciencedirect.com/science/article/pii/S1090023307004248",
 		"type": "study",

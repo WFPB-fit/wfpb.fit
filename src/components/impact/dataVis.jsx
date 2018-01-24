@@ -15,12 +15,20 @@ import styled from 'styled-components';
 import WRR from '../../assets/data/environment/wrr.js';
 import { titleize } from '../../utils/GeneralUtils';
 
+const GraphDiv = styled.div`
+display:inline-block;
+max-width:450px;
+`;
+
+const ContainerDiv = styled.div`
+text-align:center;
+`;
 export default class CalorieForm extends Component {
     constructor(props) {
         super(props);
     }
 
-    getImpact(dietFoods, impactType) {
+    getEnvImpact(dietFoods, impactType) {
         const dietComponentsCalories =  Object.keys(dietFoods).reduce((sum, foodType) => {
             const usage = (dietFoods[foodType] || 0) / 100.0;
             return sum + WRR[impactType][foodType] * usage;
@@ -31,17 +39,17 @@ export default class CalorieForm extends Component {
         return calRatio * dietComponentsCalories;
     }
 
-    getImpactChart(impactType) {
+    getEnvImpactChart(impactType) {
         if (!this.props.foodUsage) return null;
 
         let foodUsageData = this.props.refFoodUsages.slice(); //copy
         foodUsageData.push({ label: 'You', data: this.props.foodUsage });
         foodUsageData = foodUsageData.map(x => {
-            return { x: titleize(x.label), y: this.getImpact(x.data, impactType) };
+            return { x: titleize(x.label), y: this.getEnvImpact(x.data, impactType) };
         });
 
         return (
-            <div>
+            <GraphDiv>
                 <h2>{titleize(impactType)}</h2>
                 <VictoryChart
                     theme={VictoryTheme.material}
@@ -52,17 +60,17 @@ export default class CalorieForm extends Component {
                         data={foodUsageData}
                     />
                 </VictoryChart>
-            </div>
+            </GraphDiv>
         );
     }
 
     render() {
         return (
-            <div>
-                {this.getImpactChart('water')}
-                {this.getImpactChart('land')}
-                {this.getImpactChart('ghg')}
-            </div>
+            <ContainerDiv>
+                {this.getEnvImpactChart('water')}
+                {this.getEnvImpactChart('land')}
+                {this.getEnvImpactChart('ghg')}
+            </ContainerDiv>
         );
     }
 }
