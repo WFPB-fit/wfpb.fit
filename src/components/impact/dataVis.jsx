@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 
-import TextField from 'material-ui/TextField';
-import SelectField from 'material-ui/Select';
-import { MenuItem } from 'material-ui/Menu';
 import Button from 'material-ui/Button';
-import Tooltip from 'material-ui/Tooltip';
+
+import { MenuItem } from 'material-ui/Menu';
+import SelectField from 'material-ui/Select';
+import Input, { InputLabel } from 'material-ui/Input';
+import { FormControl } from 'material-ui/Form';
 
 import {
     VictoryChart, VictoryTheme, VictoryBar
@@ -29,7 +30,7 @@ export default class CalorieForm extends Component {
     }
 
     getEnvImpact(dietFoods, impactType) {
-        const dietComponentsCalories =  Object.keys(dietFoods).reduce((sum, foodType) => {
+        const dietComponentsCalories = Object.keys(dietFoods).reduce((sum, foodType) => {
             const usage = (dietFoods[foodType] || 0) / 100.0;
             return sum + WRR[impactType][foodType] * usage;
         }, 0);
@@ -50,6 +51,19 @@ export default class CalorieForm extends Component {
 
         return (
             <GraphDiv>
+                <FormControl>
+                    <InputLabel htmlFor='gender'>Activity Level</InputLabel>
+                    <SelectField
+                        input={<Input name="sort" id='gender' />}
+                        // onChange={this.handleFormChange('gender')}
+                        value={this.state.units[impactType]}
+                        style={{ width: '100px', textAlign: 'left' }}
+                    >
+                        <MenuItem value={'female'}>Female</MenuItem>
+                        <MenuItem value={'male'}>Male</MenuItem>
+                    </SelectField>
+                </FormControl>
+
                 <h2>{titleize(impactType)}</h2>
                 <VictoryChart
                     theme={VictoryTheme.material}

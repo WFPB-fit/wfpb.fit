@@ -58,5 +58,39 @@ export default {
 		"Dairy": 34.44,
 		"Sheep and goat": 182.79,
 		"Beef": 220.30
+	},
+	"units": {
+		"land": {
+			"hectare": 1,
+			"acre": 2.47105,
+			"sq feet": 107639,
+			"US Football Field": 1.60177,
+			"Soccer Field": 1.39,
+			"helipad": 430.556, //asssumes helipad is 50x50
+		},
+		"ghg": {
+			"Tonnes CO2e": 1, //2204.62 lbs in a tonne
+			//https://www.eia.gov/tools/faqs/faq.php?id=307&t=11
+			"E10 (Gal)": (2204.62 / 17.2), //convert tonnes to pounds to use EIA data
+			"Gasoline (Gal)": (2204.62 / 19.6),
+			"Diesel (Gal)": (2204.62 / 12.7),
+			"Ethanol (Gal)": (2204.62 / 22.4),
+			"Kerosene (Gal)": (2204.62 / 21.5),
+			//https://www.eia.gov/environment/emissions/co2_vol_mass.php
+			"Gallons Natural Gas": (2204.62 / 117.10 * 7480.52), //7480.52 G in 1000 Cu Ft
+			"Coal": (1.10231 / 4631.50), //1 tonne = 1.10231 US ton,
+			"Jet Fuel (Gal)": (2204.62 / 21.10),
+			"Aviation Gas (Gal)": (2204.62 / 18.40),
+		},
+		"water": {
+			"1,000 Cubic Meters": 1,
+			"Gallons": 264172,
+			"Liters": 1000000,
+			"Minutes of Showering": (264172 / 2.2), //gallons / 2.2 GPM
+			"Minutes of Low-Flow Showering": (264172 / 0.5), //gallons / 2.2 GPM
+			"Olympic Swimming Pools": (264172 / 660430), //660,430 gal in olympic pools
+			"Seconds of Max Flow thru Hoover Dam": (264172 / (28424 * 8)), //28,424 gallons per second per gate * 8 gates https://www.usbr.gov/lc/hooverdam/history/essays/jetflow.html
+			"Seconds of Flow thru Niagara Horseshoe Falls": (264172 / 681750)
+		},
 	}
 }
