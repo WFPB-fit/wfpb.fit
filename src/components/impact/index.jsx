@@ -40,9 +40,9 @@ export default class CalorieForm extends Component {
         this.state.dietComposition.Rice = 5;
         this.state.dietComposition.Maize = 5;
         this.state.dietComposition['Roots and tubers'] = 20;
-        this.state.dietComposition['Fruits and vegetables'] = 30;
+        this.state.dietComposition['Fruits and vegetables'] = 40;
         this.state.dietComposition.Nuts = 15;
-        this.state.dietComposition.Pulses = 20;
+        this.state.dietComposition.Pulses = 10;
     }
 
     toggleOverallVisible() {

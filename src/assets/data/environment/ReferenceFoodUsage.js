@@ -30,7 +30,7 @@ export default [{
 			"Mustard/Rape-seed oil": 7,
 			"Soybean oil": 7,
 			"Sunflowerseed oil": 7,
-			Maize: 14,
+			Maize: 10,
 			"Roots and tubers": 2,
 			Wheat: 9,
 			"Fruits and vegetables": 4,
@@ -42,7 +42,7 @@ export default [{
 			Poultry: 4,
 			Dairy: 11,
 			"Sheep and goat": 3,
-			Beef: 4
+			Beef: 7
 		}
 	},
 	{
