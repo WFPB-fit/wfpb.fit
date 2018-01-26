@@ -35,8 +35,6 @@ let store = createStore(
 );
 const theme = createMuiTheme();
 
-// console.log(localStorage.getItem('parsed foods data'))
-
 export default class App extends Component {
 	constructor(props) {
 		super(props);

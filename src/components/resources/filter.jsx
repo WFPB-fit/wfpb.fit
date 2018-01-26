@@ -27,7 +27,6 @@ export default class Filter extends Component {
 	}
 
 	render() {
-		console.log(this.props.sortBy)
 		return (
 			<Card>
 				<PaddedDiv>

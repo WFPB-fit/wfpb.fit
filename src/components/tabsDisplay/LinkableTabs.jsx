@@ -26,8 +26,8 @@ class LinkableTabs extends Component {
         const hash = this.props.location.hash;
 
         let initTabIndex = 0;
-        React.Children.forEach(this.props.children, (x, i) => {
-            const label = x.props.label;
+        this.props.tabs.forEach((x, i) => {
+            const label = x.label;
             if (`#${label.toLowerCase()}` === hash) initTabIndex = i;
         });
 

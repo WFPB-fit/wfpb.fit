@@ -67,7 +67,6 @@ export default class CalorieForm extends Component {
     }
 
     render() {
-        console.log(this.state.dailyCalories)
         let viz = null;
         if (this.getTotalDietCompPercent() == 100) {
             viz = (

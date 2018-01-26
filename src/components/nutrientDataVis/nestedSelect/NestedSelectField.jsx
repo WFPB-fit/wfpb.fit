@@ -113,7 +113,6 @@ export default class NestedSelectField extends Component {
     }
 
     render() {
-        console.log(this.state.selectedKeys)
         let selectFields = [];
         let addFoodButtons = [];
 

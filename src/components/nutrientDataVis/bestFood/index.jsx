@@ -33,7 +33,6 @@ export default class Food extends Component {
     }
 
     addFoods() {
-        console.log(this.state)
         const nId = this.state.selectedNutrientId;
         const foods = this.props.foodData;
         let fIds = Object.keys(foods);
