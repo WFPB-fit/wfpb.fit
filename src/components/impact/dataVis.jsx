@@ -20,10 +20,20 @@ const GraphDiv = styled.div`
 display:inline-block;
 max-width:450px;
 `;
-
+const GraphCenterer = styled.div`
+display: flex;
+align-items: center;
+`;
+const CenteredForm = styled(FormControl) `
+transform: translateY(50%);
+`;
+const GraphContainer = styled.div`
+display:inline-block;
+`;
 const ContainerDiv = styled.div`
 text-align:center;
 `;
+
 export default class CalorieForm extends Component {
     constructor(props) {
         super(props);
@@ -50,31 +60,35 @@ export default class CalorieForm extends Component {
         });
 
         return (
-            <GraphDiv>
-                <FormControl>
-                    <InputLabel htmlFor='gender'>Activity Level</InputLabel>
-                    <SelectField
-                        input={<Input name="sort" id='gender' />}
-                        // onChange={this.handleFormChange('gender')}
-                        value={this.state.units[impactType]}
-                        style={{ width: '100px', textAlign: 'left' }}
-                    >
-                        <MenuItem value={'female'}>Female</MenuItem>
-                        <MenuItem value={'male'}>Male</MenuItem>
-                    </SelectField>
-                </FormControl>
+            <GraphContainer>
+                <GraphCenterer>
+                    <CenteredForm>
+                        <InputLabel htmlFor='gender'>Activity Level</InputLabel>
+                        <SelectField
+                            input={<Input name="sort" id='gender' />}
+                            // onChange={this.handleFormChange('gender')}
+                            value={WRR.units[impactType]}
+                            style={{ width: '100px', textAlign: 'left' }}
+                        >
+                            <MenuItem value={'female'}>Female</MenuItem>
+                            <MenuItem value={'male'}>Male</MenuItem>
+                        </SelectField>
+                    </CenteredForm>
 
-                <h2>{titleize(impactType)}</h2>
-                <VictoryChart
-                    theme={VictoryTheme.material}
-                    domainPadding={10}
-                >
-                    <VictoryBar
-                        style={{ data: { fill: "#c43a31" } }}
-                        data={foodUsageData}
-                    />
-                </VictoryChart>
-            </GraphDiv>
+                    <GraphDiv>
+                        <h2>{titleize(impactType)}</h2>
+                        <VictoryChart
+                            theme={VictoryTheme.material}
+                            domainPadding={10}
+                        >
+                            <VictoryBar
+                                style={{ data: { fill: "#c43a31" } }}
+                                data={foodUsageData}
+                            />
+                        </VictoryChart>
+                    </GraphDiv>
+                </GraphCenterer>
+            </GraphContainer>
         );
     }
 
