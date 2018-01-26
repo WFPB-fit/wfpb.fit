@@ -18,17 +18,20 @@ import { titleize } from '../../utils/GeneralUtils';
 
 const GraphDiv = styled.div`
 display:inline-block;
-max-width:450px;
+max-width:650px;
 `;
 const GraphCenterer = styled.div`
 display: flex;
 align-items: center;
 `;
 const CenteredForm = styled(FormControl) `
-transform: translateY(50%);
+transform: translateY(-50%);
+`;
+const FlexContainer = styled.div`
+display:inline-block;
 `;
 const GraphContainer = styled.div`
-display:inline-block;
+display:block;
 `;
 const ContainerDiv = styled.div`
 text-align:center;
@@ -37,6 +40,24 @@ text-align:center;
 export default class CalorieForm extends Component {
     constructor(props) {
         super(props);
+
+        this.setEnvUnit = this.setEnvUnit.bind(this);
+        this.state = {
+            units: {
+                land: 1,
+                water: 1,
+                ghg: 1,
+            }
+        }
+    }
+
+    setEnvUnit(impactType) {
+        return (event) => {
+            const value = event.target.value;
+            let units = Object.assign({}, this.state.units);
+            units[impactType] = value;
+            this.setState({ units: units });
+        };
     }
 
     getEnvImpact(dietFoods, impactType) {
@@ -47,7 +68,8 @@ export default class CalorieForm extends Component {
         const cals = this.props.dailyCalories || 0;
         const calRatio = cals * 365.25 / 1000000; //WRR is data is for 1 million calories
 
-        return calRatio * dietComponentsCalories;
+        const scaledImpact = calRatio * dietComponentsCalories * this.state.units[impactType];
+        return scaledImpact;
     }
 
     getEnvImpactChart(impactType) {
@@ -59,35 +81,42 @@ export default class CalorieForm extends Component {
             return { x: titleize(x.label), y: this.getEnvImpact(x.data, impactType) };
         });
 
+        const unitId = `units-${impactType}`;
         return (
             <GraphContainer>
-                <GraphCenterer>
-                    <CenteredForm>
-                        <InputLabel htmlFor='gender'>Activity Level</InputLabel>
-                        <SelectField
-                            input={<Input name="sort" id='gender' />}
-                            // onChange={this.handleFormChange('gender')}
-                            value={WRR.units[impactType]}
-                            style={{ width: '100px', textAlign: 'left' }}
-                        >
-                            <MenuItem value={'female'}>Female</MenuItem>
-                            <MenuItem value={'male'}>Male</MenuItem>
-                        </SelectField>
-                    </CenteredForm>
+                <h2>{titleize(impactType)}</h2>
+                <FlexContainer>
+                    <GraphCenterer>
+                        <CenteredForm>
+                            <InputLabel htmlFor={unitId}>Units</InputLabel>
+                            <SelectField
+                                input={<Input name="sort" id={unitId} />}
+                                onChange={this.setEnvUnit(impactType)}
+                                value={this.state.units[impactType]}
+                                style={{ textAlign: 'left' }}
+                            >
+                                {
+                                    Object.keys(WRR.units[impactType]).map(x => {
+                                        return <MenuItem value={WRR.units[impactType][x]}>{titleize(x)}</MenuItem>
+                                    })
+                                }
+                            </SelectField>
+                        </CenteredForm>
 
-                    <GraphDiv>
-                        <h2>{titleize(impactType)}</h2>
-                        <VictoryChart
-                            theme={VictoryTheme.material}
-                            domainPadding={10}
-                        >
-                            <VictoryBar
-                                style={{ data: { fill: "#c43a31" } }}
-                                data={foodUsageData}
-                            />
-                        </VictoryChart>
-                    </GraphDiv>
-                </GraphCenterer>
+                        <GraphDiv>
+                            <VictoryChart
+                                theme={VictoryTheme.material}
+                                domainPadding={10}
+                                padding={{ top: 5, bottom: 40, left: 100, right: 5 }}
+                            >
+                                <VictoryBar
+                                    style={{ data: { fill: "#c43a31" } }}
+                                    data={foodUsageData}
+                                />
+                            </VictoryChart>
+                        </GraphDiv>
+                    </GraphCenterer>
+                </FlexContainer>
             </GraphContainer>
         );
     }

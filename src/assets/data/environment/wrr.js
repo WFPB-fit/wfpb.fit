@@ -61,26 +61,27 @@ export default {
 	},
 	"units": {
 		"land": {
-			"hectare": 1,
-			"acre": 2.47105,
+			"hectares": 1,
+			"acres": 2.47105,
 			"sq feet": 107639,
-			"US Football Field": 1.60177,
-			"Soccer Field": 1.39,
-			"helipad": 430.556, //asssumes helipad is 50x50
+			"US Football Fields": 1.60177,
+			"Soccer Fields": 1.39,
+			"helipads": 430.556, //asssumes helipad is 50x50
 		},
 		"ghg": {
 			"Tonnes CO2e": 1, //2204.62 lbs in a tonne
 			//https://www.eia.gov/tools/faqs/faq.php?id=307&t=11
-			"E10 (Gal)": (2204.62 / 17.2), //convert tonnes to pounds to use EIA data
-			"Gasoline (Gal)": (2204.62 / 19.6),
-			"Diesel (Gal)": (2204.62 / 12.7),
-			"Ethanol (Gal)": (2204.62 / 22.4),
-			"Kerosene (Gal)": (2204.62 / 21.5),
+			"Gallons E10": (2204.62 / 17.2), //convert tonnes to pounds to use EIA data
+			"Gallons Gasoline": (2204.62 / 19.6),
+			"Gallons Diesel": (2204.62 / 22.4),
+			"Gallons Ethanol": (2204.62 / 12.7),
+			"Gallons Kerosene": (2204.62 / 21.5),
 			//https://www.eia.gov/environment/emissions/co2_vol_mass.php
 			"Gallons Natural Gas": (2204.62 / 117.10 * 7480.52), //7480.52 G in 1000 Cu Ft
-			"Coal": (1.10231 / 4631.50), //1 tonne = 1.10231 US ton,
-			"Jet Fuel (Gal)": (2204.62 / 21.10),
-			"Aviation Gas (Gal)": (2204.62 / 18.40),
+			// 1 tonne CO2 * 2204.62 lbs/tonne * 1 short ton coal/4631.5 lbs CO2 * 2000lbs/1 short ton
+			"Pounds Coal": (2204.62 / 4631.50 * 2000), //1 tonne = 1.10231 US ton,
+			"Gallons Jet Fuel": (2204.62 / 21.10),
+			"Gallons Aviation Gas": (2204.62 / 18.40),
 		},
 		"water": {
 			"1,000 Cubic Meters": 1,
