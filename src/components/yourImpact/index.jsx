@@ -12,14 +12,20 @@ import CalorieEstimator from './calorieEstimator/index.jsx';
 import FoodEstimator from './foodEstimator';
 import DataVis from './dataVis.jsx';
 
-import WRR from '../../assets/data/environment/wrr.js';
+import WRI from '../../assets/data/environment/wri.js';
 import ReferenceFoodUsage from '../../assets/data/environment/ReferenceFoodUsage.js';
 
 const HideableDiv = styled.div`
 display: ${props => props.visible ? 'block' : 'none'}
 `;
+const Wrapper = styled.div`
+img{
+    display:block;
+    margin:0 auto;
+}
+`;
 
-export default class CalorieForm extends Component {
+export default class YourImpact extends Component {
     constructor(props) {
         super(props);
 
@@ -35,7 +41,7 @@ export default class CalorieForm extends Component {
         };
 
         //set default food usages to some random vegan amounts. Can try to find better data-backed defaults later
-        Object.keys(WRR['land']).forEach(x => { this.state.dietComposition[x] = 0; })
+        Object.keys(WRI['land']).forEach(x => { this.state.dietComposition[x] = 0; })
         this.state.dietComposition.Wheat = 5;
         this.state.dietComposition.Rice = 5;
         this.state.dietComposition.Maize = 5;
@@ -79,33 +85,37 @@ export default class CalorieForm extends Component {
         }
 
         return (
-            <div>
+            <Wrapper>
+                <h2>Calorie Estimator</h2>
                 <CalorieEstimator
                     handleDailyCaloriesChange={this.handleDailyCaloriesChange}
                 />
 
+                <h2>Diet Composition</h2>
+                <h4>Where do your calories come from?</h4>
                 <FoodEstimator
                     handleDietCompositionChange={this.handleDietCompositionChange}
                     dietComposition={this.state.dietComposition}
                     getTotalDietCompPercent={this.getTotalDietCompPercent}
                 />
 
-                <Button
+                <h2>Your Yearly Impact</h2>
+                {viz}
+
+
+                {/* <Button
                     raised
                     color="primary"
                     onClick={this.toggleOverallVisible}
                 >
                     {(this.state.overallVisible) ? 'Hide Overall' : 'View Overall'}
                 </Button>
-
-                {viz}
-
                 <HideableDiv
                     visible={this.state.overallVisible}
                 >
                     <p>asd</p>
-                </HideableDiv>
-            </div>
+                </HideableDiv> */}
+            </Wrapper>
         );
     }
 }

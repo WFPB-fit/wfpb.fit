@@ -5,7 +5,8 @@ import { withRouter } from 'react-router-dom';
 
 import LinkableTabs from '../components/tabsDisplay/LinkableTabs.jsx';
 
-import Impact from '../components/impact';
+import YourImpact from '../components/yourImpact';
+import TotalImpact from '../components/totalImpact';
 
 export default class Food extends Component {
     constructor(props) {
@@ -13,7 +14,8 @@ export default class Food extends Component {
 
         this.tabs = [
             { label: 'Nutrients', component: (<NutrientDataVis />) },
-            { label: 'Impact', component: (<Impact />) },
+            { label: 'Total Impact', component: (<TotalImpact />) },
+            { label: 'Your Impact', component: (<YourImpact />) },
         ];
     }
     render() {

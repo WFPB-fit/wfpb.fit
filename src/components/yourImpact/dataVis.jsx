@@ -13,7 +13,7 @@ import {
 
 import styled from 'styled-components';
 
-import WRR from '../../assets/data/environment/wrr.js';
+import WRI from '../../assets/data/environment/wri.js';
 import { titleize } from '../../utils/GeneralUtils';
 
 const GraphDiv = styled.div`
@@ -63,10 +63,10 @@ export default class CalorieForm extends Component {
     getEnvImpact(dietFoods, impactType) {
         const dietComponentsCalories = Object.keys(dietFoods).reduce((sum, foodType) => {
             const usage = (dietFoods[foodType] || 0) / 100.0;
-            return sum + WRR[impactType][foodType] * usage;
+            return sum + WRI[impactType][foodType] * usage;
         }, 0);
         const cals = this.props.dailyCalories || 0;
-        const calRatio = cals * 365.25 / 1000000; //WRR is data is for 1 million calories
+        const calRatio = cals * 365.25 / 1000000; //WRI is data is for 1 million calories
 
         const scaledImpact = calRatio * dietComponentsCalories * this.state.units[impactType];
         return scaledImpact;
@@ -96,8 +96,8 @@ export default class CalorieForm extends Component {
                                 style={{ textAlign: 'left' }}
                             >
                                 {
-                                    Object.keys(WRR.units[impactType]).map(x => {
-                                        return <MenuItem value={WRR.units[impactType][x]}>{titleize(x)}</MenuItem>
+                                    Object.keys(WRI.units[impactType]).map(x => {
+                                        return <MenuItem key={x} value={WRI.units[impactType][x]}>{titleize(x)}</MenuItem>
                                     })
                                 }
                             </SelectField>
