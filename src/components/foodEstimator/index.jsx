@@ -34,7 +34,6 @@ export default class CalorieForm extends Component {
                             max: 100
                         }}
                         error={percent !== 100}
-                        value={this.props.dietComposition[x]}
                         onChange={(this.props.disabled) ? null : this.props.handleDietCompositionChange(x)}
                     />
                 );

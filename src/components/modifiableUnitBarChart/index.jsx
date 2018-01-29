@@ -29,6 +29,7 @@ display:inline-block;
 `;
 const GraphContainer = styled.div`
 display:block;
+text-align:center;
 `;
 const ContainerDiv = styled.div`
 text-align:center;
@@ -39,21 +40,25 @@ export default class UnitChart extends Component {
         super(props);
 
         this.setUnit = this.setUnit.bind(this);
+        this.getKeyWithValue = this.getKeyWithValue.bind(this);
         this.state = {
-            unit: 1
+            unit: this.getKeyWithValue(1)
         }
     }
 
     setUnit(event) {
-        this.setState({ unit: event.target.value });
+        this.setState({ unit: this.getKeyWithValue(event.target.value) });
+    }
+
+    getKeyWithValue(val) {
+        return Object.keys(this.props.units).filter(x => this.props.units[x] === val)[0];
     }
 
     render() {
+        const unitVal = this.props.units[this.state.unit];
         let data = this.props.data.map(x => {
-            return { x: x.x, y: x.y * this.state.unit };
+            return { x: x.x, y: x.y * unitVal };
         });
-        const padding = this.props.padding || { top: 5, bottom: 40, left: 100, right: 5 };
-
         const unitId = `units-${null}`;
 
         return (
@@ -65,7 +70,7 @@ export default class UnitChart extends Component {
                             <SelectField
                                 input={<Input name="sort" id={unitId} />}
                                 onChange={this.setUnit}
-                                value={this.state.unit}
+                                value={unitVal}
                                 style={{ textAlign: 'left' }}
                             >
                                 {
@@ -80,7 +85,7 @@ export default class UnitChart extends Component {
                             <VictoryChart
                                 theme={VictoryTheme.material}
                                 domainPadding={10}
-                                padding={padding}
+                                padding={this.props.padding || { top: 5, bottom: 40, left: 100, right: 5 }}
                             >
                                 <VictoryBar
                                     style={{ data: { fill: "#c43a31" } }}

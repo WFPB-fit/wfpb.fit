@@ -2,37 +2,59 @@ import React, { Component } from 'react';
 
 import styled from 'styled-components';
 
-import {
-    VictoryChart, VictoryTheme, VictoryBar
-} from 'victory';
+import TextField from 'material-ui/TextField';
+
+import ModifiableUnitBarChart from '../modifiableUnitBarChart';
 
 import { titleize } from '../../utils/GeneralUtils';
 
 const Wrapper = styled.div`
-
+text-align:center;
 `;
 
 export default class SlaughterViz extends Component {
     constructor(props) {
         super(props);
+        this.setDogEq = this.setDogEq.bind(this);
+
+        this.state = {
+            dogEq: 5,
+        }
+    }
+
+    setDogEq(event) {
+        this.setState({ dogEq: event.target.value });
     }
 
     render() {
         const data = Object.keys(this.props.data).map(key => { return { x: key, y: this.props.data[key] * 1000 } }); //USDA data is per 1,000 head units
-
         return (
             <Wrapper>
                 <h3>{titleize(this.props.name)}</h3>
-                <VictoryChart
-                    theme={VictoryTheme.material}
-                    domainPadding={10}
-                    padding={{ top: 5, bottom: 40, left: 100, right: 5 }}
-                >
-                    <VictoryBar
-                        style={{ data: { fill: "#c43a31" } }}
-                        data={data}
+                <ModifiableUnitBarChart
+                    units={{
+                        "Number Killed": 1,
+                        "Dog Equivalents": 1.0 / this.state.dogEq
+                    }}
+                    data={data}
+                />
+
+                <div>
+                    {`Dog Equivalents assume that `}
+                    <TextField
+                        label=""
+                        type="number"
+                        value={this.state.dogEq}
+                        inputProps={{
+                            min: 0
+                        }}
+                        style={{ width: '40px' }}
+                        onChange={this.setDogEq}
                     />
-                </VictoryChart>
+
+                    {` ${this.props.name.toLowerCase()} `} 
+                    are equal to 1 dog's life
+                </div>
             </Wrapper>
         );
     }

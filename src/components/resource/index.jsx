@@ -1,19 +1,12 @@
 import React, { Component } from 'react';
 
 import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
-import ExpandMoreIcon from 'material-ui-icons/ExpandMore';
-import HelpIcon from 'material-ui-icons/Help';
 import Typography from 'material-ui/Typography';
-import IconButton from 'material-ui/IconButton';
-import Dialog, {
-	// DialogActions,
-	DialogContent,
-	DialogContentText,
-	DialogTitle,
-  } from 'material-ui/Dialog';
-  
+
 import styled from 'styled-components';
+
 import { titleize, getLink, joinMetaData, getTitleized } from '../../utils/GeneralUtils.jsx';
+import Help from '../help';
 
 export default class Resource extends Component {
 	static youtubeID(url) {
@@ -63,19 +56,6 @@ export default class Resource extends Component {
 	}
 	constructor(props) {
 		super(props);
-		this.learnMoreClick = this.learnMoreClick.bind(this);
-		this.handleDialogClose = this.handleDialogClose.bind(this);
-
-		this.state = {
-			expanded: false
-		}
-	}
-
-	learnMoreClick() {
-		this.setState({ expanded: !this.state.expanded });
-	}
-	handleDialogClose() {
-		this.setState({ expanded: false });
 	}
 
 	render() {
@@ -120,36 +100,23 @@ export default class Resource extends Component {
 			);
 		}
 
-		const RotateIcon = styled(IconButton) `transform:rotate(${(this.state.expanded) ? 180 : 0}deg);`
-		let ExpandIcon = (
-			<RotateIcon
-				onClick={this.learnMoreClick}
-				aria-expanded={this.state.expanded}
-				aria-label="Show more"
-			>
-				<HelpIcon />
-			</RotateIcon>
-		);
-		if (!isMediaCard) ExpandIcon = null;
-
-		let CardInfo = (
-			<div>
-				{resource.quote || resource.summary}
-				{video}
-			</div>
-		);
+		let ExpandIcon = null;
 		if (isMediaCard) {
+			ExpandIcon = (
+				<Help
+					title={title}
+					content={resource.quote || resource.summary}
+				/>
+			)
+		}
+
+		let CardInfo = null;
+		if (!isMediaCard) {
 			CardInfo = (
-				<Dialog
-					open={this.state.expanded}
-					onClose={this.handleDialogClose}
-				>
-					<DialogTitle>{title}</DialogTitle>
-					<DialogContent>
-						{/* <DialogActions></DialogActions> */}
-						<DialogContentText> {resource.quote || resource.summary}</DialogContentText>
-					</DialogContent>
-				</Dialog>
+				<div>
+					{resource.quote || resource.summary}
+					{video}
+				</div>
 			);
 		}
 
