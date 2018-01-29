@@ -9,7 +9,7 @@ import Tooltip from 'material-ui/Tooltip';
 import styled from 'styled-components';
 
 import CalorieEstimator from './calorieEstimator/index.jsx';
-import FoodEstimator from './foodEstimator';
+import FoodEstimator from '../foodEstimator';
 import DataVis from './dataVis.jsx';
 
 import WRI from '../../assets/data/environment/wri.js';
@@ -37,7 +37,7 @@ export default class YourImpact extends Component {
         this.state = {
             overallVisible: false,
             dietComposition: {},
-            dailyCalories:0
+            dailyCalories: 0
         };
 
         //set default food usages to some random vegan amounts. Can try to find better data-backed defaults later
@@ -65,16 +65,16 @@ export default class YourImpact extends Component {
     handleDailyCaloriesChange(cal) {
         this.setState({ dailyCalories: cal });
     }
-    getTotalDietCompPercent() {
-        return Object.keys(this.state.dietComposition).reduce((sum, key) => {
-            const val = parseInt(this.state.dietComposition[key] || 0);
+    getTotalDietCompPercent(dietComp) {
+        return Object.keys(dietComp).reduce((sum, key) => {
+            const val = parseInt(dietComp[key] || 0);
             return sum + val;
         }, 0);
     }
 
     render() {
         let viz = null;
-        if (this.getTotalDietCompPercent() == 100) {
+        if (this.getTotalDietCompPercent(this.state.dietComposition) == 100) {
             viz = (
                 <DataVis
                     foodUsage={this.state.dietComposition}
@@ -99,7 +99,6 @@ export default class YourImpact extends Component {
                     getTotalDietCompPercent={this.getTotalDietCompPercent}
                 />
 
-                <h2>Your Yearly Impact</h2>
                 {viz}
 
 
@@ -115,6 +114,13 @@ export default class YourImpact extends Component {
                 >
                     <p>asd</p>
                 </HideableDiv> */}
+
+
+                {/* <FoodEstimator
+                    disabled
+                    dietComposition={ReferenceFoodUsage[0].data} //Vegan
+                    getTotalDietCompPercent={this.getTotalDietCompPercent}
+                /> */}
             </Wrapper>
         );
     }

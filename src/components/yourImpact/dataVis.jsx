@@ -16,48 +16,19 @@ import styled from 'styled-components';
 import WRI from '../../assets/data/environment/wri.js';
 import { titleize } from '../../utils/GeneralUtils';
 
-const GraphDiv = styled.div`
-display:inline-block;
-max-width:650px;
-`;
-const GraphCenterer = styled.div`
-display: flex;
-align-items: center;
-`;
-const CenteredForm = styled(FormControl) `
-transform: translateY(-50%);
-`;
-const FlexContainer = styled.div`
-display:inline-block;
-`;
-const GraphContainer = styled.div`
-display:block;
-`;
+import ModifiableUnitBarChart from '../modifiableUnitBarChart';
+
 const ContainerDiv = styled.div`
 text-align:center;
 `;
 
+const LeftH2 = styled.h2`
+text-align:left;
+`
+
 export default class CalorieForm extends Component {
     constructor(props) {
         super(props);
-
-        this.setEnvUnit = this.setEnvUnit.bind(this);
-        this.state = {
-            units: {
-                land: 1,
-                water: 1,
-                ghg: 1,
-            }
-        }
-    }
-
-    setEnvUnit(impactType) {
-        return (event) => {
-            const value = event.target.value;
-            let units = Object.assign({}, this.state.units);
-            units[impactType] = value;
-            this.setState({ units: units });
-        };
     }
 
     getEnvImpact(dietFoods, impactType) {
@@ -68,65 +39,43 @@ export default class CalorieForm extends Component {
         const cals = this.props.dailyCalories || 0;
         const calRatio = cals * 365.25 / 1000000; //WRI is data is for 1 million calories
 
-        const scaledImpact = calRatio * dietComponentsCalories * this.state.units[impactType];
+        const scaledImpact = calRatio * dietComponentsCalories;
         return scaledImpact;
     }
 
-    getEnvImpactChart(impactType) {
-        if (!this.props.foodUsage) return null;
-
+    getEnvData(impactType){
         let foodUsageData = this.props.refFoodUsages.slice(); //copy
         foodUsageData.push({ label: 'You', data: this.props.foodUsage });
         foodUsageData = foodUsageData.map(x => {
             return { x: titleize(x.label), y: this.getEnvImpact(x.data, impactType) };
         });
-
-        const unitId = `units-${impactType}`;
-        return (
-            <GraphContainer>
-                <h2>{titleize(impactType)}</h2>
-                <FlexContainer>
-                    <GraphCenterer>
-                        <CenteredForm>
-                            <InputLabel htmlFor={unitId}>Units</InputLabel>
-                            <SelectField
-                                input={<Input name="sort" id={unitId} />}
-                                onChange={this.setEnvUnit(impactType)}
-                                value={this.state.units[impactType]}
-                                style={{ textAlign: 'left' }}
-                            >
-                                {
-                                    Object.keys(WRI.units[impactType]).map(x => {
-                                        return <MenuItem key={x} value={WRI.units[impactType][x]}>{titleize(x)}</MenuItem>
-                                    })
-                                }
-                            </SelectField>
-                        </CenteredForm>
-
-                        <GraphDiv>
-                            <VictoryChart
-                                theme={VictoryTheme.material}
-                                domainPadding={10}
-                                padding={{ top: 5, bottom: 40, left: 100, right: 5 }}
-                            >
-                                <VictoryBar
-                                    style={{ data: { fill: "#c43a31" } }}
-                                    data={foodUsageData}
-                                />
-                            </VictoryChart>
-                        </GraphDiv>
-                    </GraphCenterer>
-                </FlexContainer>
-            </GraphContainer>
-        );
+        return foodUsageData;
     }
 
     render() {
+        if (!this.props.foodUsage) return null;
+
         return (
             <ContainerDiv>
-                {this.getEnvImpactChart('water')}
-                {this.getEnvImpactChart('land')}
-                {this.getEnvImpactChart('ghg')}
+                <LeftH2>Your Food's Yearly Impact</LeftH2>
+
+                <h3>Water</h3>
+                <ModifiableUnitBarChart
+                    units={WRI.units['water']}
+                    data={this.getEnvData('water')}
+                />
+
+                <h3>Land</h3>
+                <ModifiableUnitBarChart
+                    units={WRI.units['land']}
+                    data={this.getEnvData('land')}
+                />
+
+                <h3>GHG</h3>
+                <ModifiableUnitBarChart
+                    units={WRI.units['ghg']}
+                    data={this.getEnvData('ghg')}
+                />
             </ContainerDiv>
         );
     }
