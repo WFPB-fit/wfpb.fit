@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import TextField from 'material-ui/TextField';
+import Typography from 'material-ui/Typography/Typography';
 
 import ModifiableUnitBarChart from '../modifiableUnitBarChart';
 
@@ -39,14 +40,14 @@ export default class SlaughterViz extends Component {
                     data={data}
                 />
 
-                <div>
+                <Typography type='caption'>
                     {`Dog Equivalents assume that `}
                     <TextField
                         label=""
                         type="number"
                         value={this.state.dogEq}
                         inputProps={{
-                            min: 0
+                            min: 2 //cannot be 1 else will get confused with number killed
                         }}
                         style={{ width: '40px' }}
                         onChange={this.setDogEq}
@@ -54,7 +55,7 @@ export default class SlaughterViz extends Component {
 
                     {` ${this.props.name.toLowerCase()} `} 
                     are equal to 1 dog's life
-                </div>
+                </Typography>
             </Wrapper>
         );
     }
