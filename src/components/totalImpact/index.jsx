@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 
 import styled from 'styled-components';
 
-// import Table, { TableBody, TableCell, TableHead, TableRow } from 'material-ui/Table';
-
-import Slaughter from '../../assets/data/animals/slaughter.js';
 import SlaughterViz from './slaughterViz.jsx';
 
 
@@ -29,7 +26,9 @@ export default class TotalImpact extends Component {
 
                 <h2>Animals</h2>
 
-                {
+
+                <SlaughterViz />
+                {/* {
                     Slaughter.map(x => (
                         <SlaughterViz
                             data={x.data}
@@ -37,25 +36,7 @@ export default class TotalImpact extends Component {
                             key={x.name}
                         />
                     ))
-                }
-                {/* <Table>
-                    <TableHead>
-                        <TableRow>
-                            <TableCell>Animal</TableCell>
-                            <TableCell>Number Killed (2016)</TableCell>
-                        </TableRow>
-                    </TableHead>
-                    <TableBody>
-                        {slaughterData.map(n => {
-                            return (
-                                <TableRow key={n.x}>
-                                    <TableCell>{n.x}</TableCell>
-                                    <TableCell numeric>{n.y.toLocaleString()}</TableCell>
-                                </TableRow>
-                            );
-                        })}
-                    </TableBody>
-                </Table> */}
+                } */}
             </Wrapper>
         );
     }
