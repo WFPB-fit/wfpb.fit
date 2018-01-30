@@ -9,6 +9,7 @@ import Tooltip from 'material-ui/Tooltip';
 import styled from 'styled-components';
 
 import WRI from '../../assets/data/environment/wri.js';
+import { sumValues } from '../../utils/GeneralUtils.jsx';
 
 export default class CalorieForm extends Component {
     constructor(props) {
@@ -16,7 +17,7 @@ export default class CalorieForm extends Component {
     }
 
     getFoodFields() {
-        const percent = this.props.getTotalDietCompPercent(this.props.dietComposition);
+        const percent = sumValues(this.props.dietComposition);
 
         return Object.keys(WRI['land']).map(x => {
 
@@ -44,7 +45,7 @@ export default class CalorieForm extends Component {
     }
 
     render() {
-        const percent = this.props.getTotalDietCompPercent(this.props.dietComposition);
+        const percent = sumValues(this.props.dietComposition);
         const isErr = (percent !== 100)
         const msg = (percent !== 100) ? `Must sum to 100%, not ${percent}%` : ``;
         return (

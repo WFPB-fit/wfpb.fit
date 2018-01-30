@@ -89,7 +89,7 @@ export default {
 			"Liters": 1000000,
 			"Minutes of Showering": (264172 / 2.2), //gallons / 2.2 GPM
 			"Minutes of Low-Flow Showering": (264172 / 0.5), //gallons / 2.2 GPM
-			"Olympic Swimming Pools": (264172 / 660430), //660,430 gal in olympic pools
+			"Olympic Swimming Pools": (264172 / 660000), //660,430 gal in olympic pools
 			"Minutes of Max Flow thru Hoover Dam": (264172 / (28424 * 8) / 60), //28,424 gallons per second per gate * 8 gates https://www.usbr.gov/lc/hooverdam/history/essays/jetflow.html / 60 s/min
 			"Minutes of Flow thru Niagara Horseshoe Falls": (264172 / 681750 / 60)
 		},

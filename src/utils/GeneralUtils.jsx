@@ -61,6 +61,12 @@ export function objSwap(json) {
 	}
 	return ret;
 }
+export function sumValues(obj) {
+	return Object.keys(obj).reduce((sum, key) => {
+		const val = parseInt(obj[key] || 0);
+		return sum + val;
+	}, 0);
+}
 export function getLink(url, text) {
 	if (!url || url === '') return null;
 

@@ -2,34 +2,22 @@ import React, { Component } from 'react';
 
 import styled from 'styled-components';
 
-// import Typography from 'material-ui/Typography/Typography';
+import Typography from 'material-ui/Typography/Typography';
 import Table, { TableBody, TableCell, TableHead, TableRow } from 'material-ui/Table';
 
-// import {
-//     VictoryChart, VictoryTheme, VictoryLine, VictoryAxis, VictoryZoomContainer
-// } from 'victory';
-
-import { titleize, getRandomColor } from '../../utils/GeneralUtils';
+import { titleize, getLink } from '../../utils/GeneralUtils';
 import SlaughterData from '../../assets/data/animals/slaughter.js';
+import Help from '../help';
 
 const Wrapper = styled.div`
 text-align:center;
-max-width:350px;
+max-width:400px;
 margin:0 auto;
 `;
 
 export default class SlaughterViz extends Component {
     constructor(props) {
         super(props);
-        this.setDogEq = this.setDogEq.bind(this);
-
-        this.state = {
-            dogEq: 5,
-        }
-    }
-
-    setDogEq(event) {
-        this.setState({ dogEq: event.target.value });
     }
 
     render() {
@@ -46,7 +34,7 @@ export default class SlaughterViz extends Component {
                     <TableHead>
                         <TableRow>
                             <TableCell>Animal</TableCell>
-                            <TableCell>Number Killed (2016)</TableCell>
+                            <TableCell>Number Killed in USA (2016)</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -60,38 +48,22 @@ export default class SlaughterViz extends Component {
                         })}
                     </TableBody>
                 </Table>
-
-                {/* <VictoryChart
-                    theme={VictoryTheme.material}
-                    domainPadding={10}
-                    padding={this.props.padding || { top: 5, bottom: 40, left: 105, right: 5 }}
-                    containerComponent={
-                        <VictoryZoomContainer />
+                <Help
+                    title="Slaughter Information"
+                    content={
+                        <Typography>
+                            {"These numbers are from the "}
+                            {getLink("http://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1497", "USDA: Poultry Slaughter Annual Summary")}
+                            {" and the "}
+                            {getLink("http://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1097", "USDA: Livestock Slaughter Annual Summary")}
+                            {`. 
+                            This data only includes American slaughter houses that have been federally inspected. 
+                            The total worldwide number is much 
+                            `}
+                            {getLink("https://apps.fas.usda.gov/psdonline/circulars/livestock_poultry.pdf", "higher.")}
+                        </Typography>
                     }
-                >
-                    <VictoryAxis dependentAxis
-                        label="Number Killed"
-                        style={{
-                            axisLabel: { padding: 93 },
-                        }}
-                    />
-                    <VictoryAxis independentAxis />
-                    {
-                        SlaughterData.map(x => {
-                            const data = Object.keys(x.data).map(key => { return { x: key, y: x.data[key] } });
-                            if (x.name.toLowerCase() === "baby chickens") return null
-                            return (
-                                <VictoryLine
-                                    key={x.name}
-                                    data={data}
-                                    style={{
-                                        data: { stroke: getRandomColor() },
-                                    }}
-                                />
-                            );
-                        })
-                    }
-                </VictoryChart> */}
+                />
             </Wrapper>
         );
     }

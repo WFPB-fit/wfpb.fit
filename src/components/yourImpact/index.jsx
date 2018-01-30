@@ -5,15 +5,21 @@ import SelectField from 'material-ui/Select';
 import { MenuItem } from 'material-ui/Menu';
 import Button from 'material-ui/Button';
 import Tooltip from 'material-ui/Tooltip';
+import Typography from 'material-ui/Typography/Typography';
 
 import styled from 'styled-components';
 
+import FormHelperText from 'material-ui/Form/FormHelperText';
+
 import CalorieEstimator from './calorieEstimator/index.jsx';
 import FoodEstimator from '../foodEstimator';
-import DataVis from './dataVis.jsx';
-
+import DataVis from './viz/index.jsx';
+import Help from '../help';
 import WRI from '../../assets/data/environment/wri.js';
 import ReferenceFoodUsage from '../../assets/data/environment/ReferenceFoodUsage.js';
+import { sumValues, getLink } from '../../utils/GeneralUtils.jsx';
+
+
 
 const HideableDiv = styled.div`
 display: ${props => props.visible ? 'block' : 'none'}
@@ -31,7 +37,6 @@ export default class YourImpact extends Component {
 
         this.toggleOverallVisible = this.toggleOverallVisible.bind(this);
         this.handleDietCompositionChange = this.handleDietCompositionChange.bind(this);
-        this.getTotalDietCompPercent = this.getTotalDietCompPercent.bind(this);
         this.handleDailyCaloriesChange = this.handleDailyCaloriesChange.bind(this);
 
         this.state = {
@@ -65,16 +70,10 @@ export default class YourImpact extends Component {
     handleDailyCaloriesChange(cal) {
         this.setState({ dailyCalories: cal });
     }
-    getTotalDietCompPercent(dietComp) {
-        return Object.keys(dietComp).reduce((sum, key) => {
-            const val = parseInt(dietComp[key] || 0);
-            return sum + val;
-        }, 0);
-    }
 
     render() {
         let viz = null;
-        if (this.getTotalDietCompPercent(this.state.dietComposition) == 100) {
+        if (sumValues(this.state.dietComposition) == 100) {
             viz = (
                 <DataVis
                     foodUsage={this.state.dietComposition}
@@ -86,41 +85,41 @@ export default class YourImpact extends Component {
 
         return (
             <Wrapper>
-                <h2>Calorie Estimator</h2>
+                <h2>Calorie Estimator
+                    <Help
+                        title="Calorie Estimator"
+                        content={
+                            <div>
+                                <Typography>We use the {getLink("https://en.wikipedia.org/wiki/Harris%E2%80%93Benedict_equation", "Harris–Benedict equation")} for estimating daily calories. That value is multiplied by 365.25 to get your yearly calories.</Typography>
+                            </div>
+                        }
+                    /></h2>
                 <CalorieEstimator
                     handleDailyCaloriesChange={this.handleDailyCaloriesChange}
                 />
 
-                <h2>Diet Composition</h2>
+                <h2>Diet Composition
+                    <Help
+                        title="Diet Compositon"
+                        content={
+                            <div>
+                                <h4>Categories</h4>
+                                <Typography>Roots and tubers include potatoes, yams, carrots, cassava, and other vegetables or starchs that grow underground.</Typography>
+                                <h4>Source</h4>
+                                <Typography>These food categories and corresponding data are from the World Research Institute's "Shifting Diets for a Sustainable Food Future".</Typography>
+                                <br />
+                                <Typography>Ranganathan, J. et al. 2016. “Shifting Diets for a Sustainable Food Future.” Working Paper, Installment 11 of Creating a Sustainable Food Future. Washington, DC: World Resources Institute. Accessible at http://www.worldresourcesreport.org.</Typography>
+                            </div>
+                        }
+                    />
+                </h2>
                 <h4>Where do your calories come from?</h4>
                 <FoodEstimator
                     handleDietCompositionChange={this.handleDietCompositionChange}
                     dietComposition={this.state.dietComposition}
-                    getTotalDietCompPercent={this.getTotalDietCompPercent}
                 />
 
                 {viz}
-
-
-                {/* <Button
-                    raised
-                    color="primary"
-                    onClick={this.toggleOverallVisible}
-                >
-                    {(this.state.overallVisible) ? 'Hide Overall' : 'View Overall'}
-                </Button>
-                <HideableDiv
-                    visible={this.state.overallVisible}
-                >
-                    <p>asd</p>
-                </HideableDiv> */}
-
-
-                {/* <FoodEstimator
-                    disabled
-                    dietComposition={ReferenceFoodUsage[0].data} //Vegan
-                    getTotalDietCompPercent={this.getTotalDietCompPercent}
-                /> */}
             </Wrapper>
         );
     }

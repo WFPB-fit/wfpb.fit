@@ -35,7 +35,7 @@ export default class Resource extends Component {
 
     render() {
         return (
-            <div>
+            <span>
                 <RotateIcon
                     onClick={this.learnMoreClick}
                     aria-expanded={this.state.expanded}
@@ -56,7 +56,7 @@ export default class Resource extends Component {
                         {/* <DialogContentText> {resource.quote || resource.summary}</DialogContentText> */}
                     </DialogContent>
                 </Dialog>
-            </div>
+            </span>
         );
     }
 }

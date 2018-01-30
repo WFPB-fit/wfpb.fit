@@ -38,7 +38,7 @@ export default [{
 			Pulses: 2,
 			Pork: 3,
 			Eggs: 3,
-			"Fish (farmed)": 3,
+			"Fish (farmed)": 4,
 			Poultry: 4,
 			Dairy: 11,
 			"Sheep and goat": 3,

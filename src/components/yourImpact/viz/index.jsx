@@ -13,10 +13,10 @@ import {
 
 import styled from 'styled-components';
 
-import WRI from '../../assets/data/environment/wri.js';
-import { titleize } from '../../utils/GeneralUtils';
-
-import ModifiableUnitBarChart from '../modifiableUnitBarChart';
+import WRI from '../../../assets/data/environment/wri.js';
+import { titleize } from '../../../utils/GeneralUtils';
+import VizHelpExplanation from './help';
+import ModifiableUnitBarChart from '../../modifiableUnitBarChart';
 
 const ContainerDiv = styled.div`
 text-align:center;
@@ -43,7 +43,7 @@ export default class CalorieForm extends Component {
         return scaledImpact;
     }
 
-    getEnvData(impactType){
+    getEnvData(impactType) {
         let foodUsageData = this.props.refFoodUsages.slice(); //copy
         foodUsageData.push({ label: 'You', data: this.props.foodUsage });
         foodUsageData = foodUsageData.map(x => {
@@ -57,7 +57,12 @@ export default class CalorieForm extends Component {
 
         return (
             <ContainerDiv>
-                <LeftH2>Your Food's Yearly Impact</LeftH2>
+                <LeftH2>
+                    Your Food's Yearly Impact
+                    <VizHelpExplanation
+                        refFoodUsages={this.props.refFoodUsages}
+                    />
+                </LeftH2>
 
                 <h3>Water</h3>
                 <ModifiableUnitBarChart
