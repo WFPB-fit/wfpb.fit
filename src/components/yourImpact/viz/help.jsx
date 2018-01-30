@@ -35,7 +35,8 @@ export default class DataVizHelp extends Component {
                         {
                             this.props.refFoodUsages.map(x => {
                                 return (
-                                    <div>
+                                    <div
+                                        key={x.label}>
                                         <h5>{titleize(x.label)}</h5>
                                         <FoodEstimator
                                             disabled

@@ -74,7 +74,7 @@ export function getLink(url, text) {
 		const urlObj = new URL(url);
 		text = urlObj.hostname.replace('www.', '');
 	}
-	return <a href={url}>{text}</a>;
+	return <a href={url} target="_blank">{text}</a>;
 }
 export function joinMetaData(arr) {
 	const realData = arr.filter((el) => el);//filter out falsy values like null

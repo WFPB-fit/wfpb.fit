@@ -105,6 +105,8 @@ export default class YourImpact extends Component {
                             <div>
                                 <h4>Categories</h4>
                                 <Typography>Roots and tubers include potatoes, yams, carrots, cassava, and other vegetables or starchs that grow underground.</Typography>
+                                <br/>
+                                <Typography>Pulses are the grain seed of {getLink("https://en.wikipedia.org/wiki/Legume", "Legumes")}, and include beans, chickpeas, alfalfa, lentils, peas, peanuts, and much more. All pulses are nitrogen-fixing, and thus do not require much, if any, fertilizer.</Typography>
                                 <h4>Source</h4>
                                 <Typography>These food categories and corresponding data are from the World Research Institute's "Shifting Diets for a Sustainable Food Future".</Typography>
                                 <br />

@@ -15,6 +15,7 @@ max-width:400px;
 margin:0 auto;
 `;
 
+
 export default class SlaughterViz extends Component {
     constructor(props) {
         super(props);
@@ -28,13 +29,34 @@ export default class SlaughterViz extends Component {
             return { x: x.name, y: (x.data['2016'] * 1000).toLocaleString() } //data in units of 1,000 head
         }, {});
 
+
         return (
             <Wrapper>
+                <h3> Slaughter Information
+                    <Help
+                        title="Slaughter Information"
+                        content={
+                            <div>
+                                <Typography>
+                                    {"These numbers are from the "}
+                                    {getLink("http://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1497", "USDA: Poultry Slaughter Annual Summary")}
+                                    {" and the "}
+                                    {getLink("http://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1097", "USDA: Livestock Slaughter Annual Summary")}
+                                    {`. 
+                    This data only includes American slaughter houses that have been federally inspected. 
+                    The total worldwide number is much 
+                    `}
+                                    {getLink("https://apps.fas.usda.gov/psdonline/circulars/livestock_poultry.pdf", "higher.")}
+                                </Typography>
+                            </div>
+                        }
+                    />
+                </h3>
                 <Table>
                     <TableHead>
                         <TableRow>
                             <TableCell>Animal</TableCell>
-                            <TableCell>Number Killed in USA (2016)</TableCell>
+                            <TableCell>Number Killed in USA (2016) </TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -48,22 +70,6 @@ export default class SlaughterViz extends Component {
                         })}
                     </TableBody>
                 </Table>
-                <Help
-                    title="Slaughter Information"
-                    content={
-                        <Typography>
-                            {"These numbers are from the "}
-                            {getLink("http://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1497", "USDA: Poultry Slaughter Annual Summary")}
-                            {" and the "}
-                            {getLink("http://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1097", "USDA: Livestock Slaughter Annual Summary")}
-                            {`. 
-                            This data only includes American slaughter houses that have been federally inspected. 
-                            The total worldwide number is much 
-                            `}
-                            {getLink("https://apps.fas.usda.gov/psdonline/circulars/livestock_poultry.pdf", "higher.")}
-                        </Typography>
-                    }
-                />
             </Wrapper>
         );
     }

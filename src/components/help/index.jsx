@@ -12,7 +12,7 @@ import Dialog, {
 import styled from 'styled-components';
 
 const RotateIcon = styled(IconButton) `
-transform:${props => props.expanded ? 'rotate(180deg)' : 'rotate(0deg)'};
+transform:${props => props['aria-expanded'] ? 'rotate(180deg)' : 'rotate(0deg)'};
 `
 
 export default class Resource extends Component {
@@ -40,7 +40,6 @@ export default class Resource extends Component {
                     onClick={this.learnMoreClick}
                     aria-expanded={this.state.expanded}
                     aria-label="Show more"
-                    expanded={this.state.expanded}
                 >
                     <HelpIcon />
                 </RotateIcon>

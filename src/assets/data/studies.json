@@ -2234,6 +2234,33 @@
 		"summary": "The USDA summarizes how many animals are slaughtered, though it only counts the processing plants that are federally inspected. In 2016 alone the industry (and thus consumers) killed 8,768,427,000 baby chickens, 140,587,000 adult chickens, 241,418,000 baby turkeys, 1,837,000 adult turkeys, and 27,268,000 ducks."
 	},
 	{
+		"title": "Effects of a ginger extract on knee pain in patients with osteoarthritis.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/11710709",
+		"type": "study",
+		"availability": "abstract",
+		"year": 2001,
+		"tags": "ginger,arthritis",
+		"quote": "A highly purified and standardized ginger extract had a statistically significant effect on reducing symptoms of OA of the knee. This effect was moderate. There was a good safety profile, with mostly mild GI adverse events in the ginger extract group."
+	},
+	{
+		"title": "Ginger--an herbal medicinal product with broad anti-inflammatory actions.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/16117603",
+		"type": "meta analysis",
+		"availability": "abstract",
+		"year": 2001,
+		"tags": "ginger",
+		"quote": "The anti-inflammatory properties of ginger have been known and valued for centuries. During the past 25 years, many laboratories have provided scientific support for the long-held belief that ginger contains constituents with antiinflammatory properties. "
+	},
+	{
+		"title": "Energy and protein feed-to-food conversion efficiencies in the US and potential food security gains from dietary changes",
+		"url": "http://iopscience.iop.org/article/10.1088/1748-9326/11/10/105002",
+		"type": "study",
+		"availability": "full",
+		"year": 2016,
+		"tags": "climate",
+		"quote":"Averaged over all categories, caloric and protein efficiencies are 7%–8%. At 3% in both metrics, beef is by far the least efficient. We find that reallocating the agricultural land used for beef feed to poultry feed production can meet the caloric and protein demands of ≈120 and ≈140 million additional people consuming the mean American diet, respectively, roughly 40% of current US population. ... We find that these legume-dominated plant-based diets substitute beef with a dietary shift potential of ≈190 million individuals."
+	},
+	{
 		"title": "USDA: Livestock Slaughter Annual Summary",
 		"url": "http://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1097",
 		"pdf": "http://usda.mannlib.cornell.edu/usda/current/LiveSlauSu/LiveSlauSu-04-19-2017.pdf",
