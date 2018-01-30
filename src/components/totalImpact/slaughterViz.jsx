@@ -2,15 +2,18 @@ import React, { Component } from 'react';
 
 import styled from 'styled-components';
 
-import TextField from 'material-ui/TextField';
 import Typography from 'material-ui/Typography/Typography';
 
-import ModifiableUnitBarChart from '../modifiableUnitBarChart';
+import {
+    VictoryChart, VictoryTheme, VictoryBar, VictoryAxis
+} from 'victory';
 
 import { titleize } from '../../utils/GeneralUtils';
 
 const Wrapper = styled.div`
 text-align:center;
+max-width:350px;
+margin:0 auto;
 `;
 
 export default class SlaughterViz extends Component {
@@ -32,30 +35,24 @@ export default class SlaughterViz extends Component {
         return (
             <Wrapper>
                 <h3>{titleize(this.props.name)}</h3>
-                <ModifiableUnitBarChart
-                    units={{
-                        "Number Killed": 1,
-                        "Dog Equivalents": 1.0 / this.state.dogEq
-                    }}
-                    data={data}
-                />
 
-                <Typography type='caption'>
-                    {`Dog Equivalents assume that `}
-                    <TextField
-                        label=""
-                        type="number"
-                        value={this.state.dogEq}
-                        inputProps={{
-                            min: 2 //cannot be 1 else will get confused with number killed
+                <VictoryChart
+                    theme={VictoryTheme.material}
+                    domainPadding={10}
+                    padding={this.props.padding || { top: 5, bottom: 40, left: 105, right: 5 }}
+                >
+                    <VictoryAxis dependentAxis
+                        label="Number Killed"
+                        style={{
+                            axisLabel: { padding: 93 },
                         }}
-                        style={{ width: '40px' }}
-                        onChange={this.setDogEq}
                     />
-
-                    {` ${this.props.name.toLowerCase()} `} 
-                    are equal to 1 dog's life
-                </Typography>
+                    <VictoryAxis independentAxis />
+                    <VictoryBar
+                        style={{ data: { fill: "#c43a31" } }}
+                        data={data}
+                    />
+                </VictoryChart>
             </Wrapper>
         );
     }
