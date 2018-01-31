@@ -8,9 +8,9 @@ import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
 
 import studyData from './assets/data/studies.json';
 import learnMoreData from './assets/data/learn-more.json';
-import { preprocess, indexByTags, CenteredDiv } from './utils/GeneralUtils.jsx';
+import { preprocess, indexByTags } from './utils/GeneralUtils.jsx';
 
-import Home from './routes/home';
+import Home from './routes/home.jsx';
 import Food from './routes/food.jsx';
 import Research from './routes/research';
 import Endorsements from './routes/endorsements';
@@ -19,7 +19,6 @@ import LearnMore from './routes/learn-more';
 import 'react-select/dist/react-select.css';
 import 'react-virtualized/styles.css';
 import 'react-virtualized-select/styles.css';
-
 
 import DataLoader from './utils/data/DataLoader.js';
 
@@ -64,13 +63,11 @@ export default class App extends Component {
 							<div>
 								<Header />
 								<Switch>
-									<CenteredDiv>
-										<Route exact path="/" component={Home} />
-										<Route path="/research" component={Research} />
-										<Route path="/food" component={Food} />
-										<Route path="/learn-more" component={LearnMore} />
-										<Route path="/endorsements" component={Endorsements} />
-									</CenteredDiv>
+									<Route exact path="/" component={Home} />
+									<Route path="/research" component={Research} />
+									<Route path="/food" component={Food} />
+									<Route path="/learn-more" component={LearnMore} />
+									<Route path="/endorsements" component={Endorsements} />
 								</Switch>
 							</div>
 						</Router>

@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import NutrientDataVis from '../components/nutrientDataVis';
-import { Tabs, Tab } from 'material-ui/Tabs';
-import { withRouter } from 'react-router-dom';
 
 import LinkableTabs from '../components/tabsDisplay/LinkableTabs.jsx';
 
+import NutrientDataVis from '../components/nutrientDataVis';
 import YourImpact from '../components/yourImpact';
 import TotalImpact from '../components/totalImpact';
+import { WidthWrapper } from '../utils/GeneralUtils.jsx';
 
 export default class Food extends Component {
     constructor(props) {
@@ -20,9 +19,11 @@ export default class Food extends Component {
     }
     render() {
         return (
-            <LinkableTabs
-                tabs={this.tabs}
-            />
+            <WidthWrapper>
+                <LinkableTabs
+                    tabs={this.tabs}
+                />
+            </WidthWrapper>
         );
     }
 }

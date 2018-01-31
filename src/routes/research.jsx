@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import tags from '../assets/data/tags.json';
-import { filterStudiesByTags } from '../utils/GeneralUtils.jsx';
+import { filterStudiesByTags, WidthWrapper } from '../utils/GeneralUtils.jsx';
 import ResourceTabs from '../components/tabsDisplay/ResourceTabs.jsx';
 
 export default class Research extends Component {
@@ -40,11 +40,13 @@ export default class Research extends Component {
 	}
 	render() {
 		return (
-			<ResourceTabs
-				tabs={this.tabs}
-				location={this.props.location}
-				history={this.props.history}
-			/>
+			<WidthWrapper>
+				<ResourceTabs
+					tabs={this.tabs}
+					location={this.props.location}
+					history={this.props.history}
+				/>
+			</WidthWrapper>
 		);
 	}
 }

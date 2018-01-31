@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Resource from '../components/resource/index.jsx';
-import { preprocess } from '../utils/GeneralUtils.jsx';
+import { preprocess,WidthWrapper } from '../utils/GeneralUtils.jsx';
 import endorsements from '../assets/data/endorsements.json';
 import styled from 'styled-components';
 import ResourceTabs from '../components/tabsDisplay/ResourceTabs.jsx';
@@ -44,11 +44,8 @@ export default class Externalities extends Component {
 			)
 		);
 
-		const Div = styled.div`
-			text-align:center;
-		`;
 		return (
-			<Div>
+			<WidthWrapper>
 				<h2>Organizations</h2>
 				{orgs}
 				<h2>Physicians</h2>
@@ -65,7 +62,7 @@ export default class Externalities extends Component {
 
 				{/* <h2>Animals</h2>
 				<p>{endorsements.animals}</p> */}
-			</Div >
+			</WidthWrapper >
 		);
 	}
 }

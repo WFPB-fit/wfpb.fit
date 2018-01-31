@@ -19,7 +19,7 @@ const topLinks = [
 	{ txt: 'Home', href: '/' },
 	{ txt: 'Research', href: '/research' },
 	{ txt: 'Compare Foods', href: '/food' },
-	{ txt: 'How To', href: '/how-to' },
+	{ txt: 'Supplies', href: '/supplies' },
 	{ txt: 'Learn More', href: '/learn-more' },
 	{ txt: 'Endorsements', href: '/endorsements' },
 ];

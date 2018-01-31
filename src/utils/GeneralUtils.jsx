@@ -102,7 +102,8 @@ export function filterStudiesByTags(raw, allowed) { //https://stackoverflow.com/
 	// });
 }
 
-export let CenteredDiv = styled.div`
+
+export const WidthWrapper = styled.div`
 width:95%;
 @media (min-width: 700px) {
 	width:80%;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ResourceTabs from '../components/tabsDisplay/ResourceTabs.jsx';
+import { WidthWrapper } from '../utils/GeneralUtils.jsx';
 
 export default class Health extends Component {
 	constructor(props) {
@@ -17,7 +18,7 @@ export default class Health extends Component {
 			label: 'Videos',
 			resources: window.globalAppData.learnMore.videos,
 			position: 2
-		},{
+		}, {
 			label: 'Wikipedia',
 			resources: window.globalAppData.learnMore.wikipedia,
 			position: 3
@@ -26,11 +27,13 @@ export default class Health extends Component {
 	}
 	render() {
 		return (
-			<ResourceTabs
-				tabs={this.tabs}
-				location={this.props.location}
-				history={this.props.history}
-			/>
+			<WidthWrapper>
+				<ResourceTabs
+					tabs={this.tabs}
+					location={this.props.location}
+					history={this.props.history}
+				/>
+			</WidthWrapper>
 		);
 	}
 }
