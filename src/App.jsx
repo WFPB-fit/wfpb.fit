@@ -34,6 +34,7 @@ let store = createStore(
 );
 const theme = createMuiTheme();
 
+
 export default class App extends Component {
 	constructor(props) {
 		super(props);
@@ -51,7 +52,25 @@ export default class App extends Component {
 		};
 		document.title = window.globalAppData.appName; //set tab title
 
+		this.saveOpenNav = this.saveOpenNav.bind(this);
+
 		DataLoader.init(store);
+		this.state = {
+			openNav: () => { }
+		}
+
+		this.MyHome = (props) => {
+			return (
+				<Home
+					openNav={this.state.openNav} //pass ability to open nav
+					{...props}
+				/>
+			);
+		}
+	}
+
+	saveOpenNav(x) {
+		this.setState({ openNav: x });
 	}
 
 	render() {
@@ -61,9 +80,9 @@ export default class App extends Component {
 					<div id="app">
 						<Router >
 							<div>
-								<Header />
+								<Header saveOpenDialog={this.saveOpenNav} />
 								<Switch>
-									<Route exact path="/" component={Home} />
+									<Route exact path="/" render={this.MyHome} />
 									<Route path="/research" component={Research} />
 									<Route path="/food" component={Food} />
 									<Route path="/learn-more" component={LearnMore} />

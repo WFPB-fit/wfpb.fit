@@ -37,6 +37,8 @@ export default class Header extends Component {
 		this.state = {
 			drawerOpen: false
 		};
+
+		this.props.saveOpenDialog(this.toggleDrawer);
 	}
 	toggleDrawer() {
 		this.setState({ drawerOpen: !this.state.drawerOpen });
