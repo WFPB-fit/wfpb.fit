@@ -34,6 +34,14 @@ let store = createStore(
 );
 const theme = createMuiTheme();
 
+window.navLinks = [
+	{ txt: 'Home', href: '/' },
+	{ txt: 'Research', href: '/research' },
+	{ txt: 'Compare Foods', href: '/food' },
+	{ txt: 'Supplies', href: '/supplies' },
+	{ txt: 'Learn More', href: '/learn-more' },
+	{ txt: 'Endorsements', href: '/endorsements' },
+];
 
 export default class App extends Component {
 	constructor(props) {

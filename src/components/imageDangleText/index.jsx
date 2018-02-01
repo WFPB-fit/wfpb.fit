@@ -4,17 +4,19 @@ import Typography from 'material-ui/Typography/Typography';
 
 import styled from 'styled-components';
 
-const width = '190px';
+const width = 200;
 const Wrapper = styled.div`
-width:${width};
-padding:70px 0;
-margin:0 auto;
+width:${width}px;
+margin:40px auto;
 `;
+const imgWidth = width/2;
 const Img = styled.img`
-width:${width};
-height:${width};
-border-radius: ${width};
+width:${imgWidth}px;
+height:${imgWidth}px;
+border-radius:${props => (props.isCircle)? `${imgWidth/2}px` : '0px'};
+margin:0 auto;
 margin-bottom:20px;
+display:block;
 `;
 
 export default class ImageDangleText extends Component {
@@ -24,8 +26,9 @@ export default class ImageDangleText extends Component {
                 <Img
                     src={this.props.src}
                     alt="Image"
+                    // isCircle
                 />
-                <Typography>{this.props.text}</Typography>
+                {this.props.text}
             </Wrapper>
         );
     }

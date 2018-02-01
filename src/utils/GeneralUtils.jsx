@@ -115,3 +115,7 @@ max-width:1000px;
 	text-align:center;
 }
 `;
+export const VerticalMidAlignWrapper = styled.div`
+display : flex;
+align-items : center;
+`;

@@ -15,14 +15,6 @@ import {
 } from 'react-router-dom';
 import Drawer from 'material-ui/Drawer';
 
-const topLinks = [
-	{ txt: 'Home', href: '/' },
-	{ txt: 'Research', href: '/research' },
-	{ txt: 'Compare Foods', href: '/food' },
-	{ txt: 'Supplies', href: '/supplies' },
-	{ txt: 'Learn More', href: '/learn-more' },
-	{ txt: 'Endorsements', href: '/endorsements' },
-];
 const bottomLinks = [
 	{ txt: 'Donate', href: '/donate' },
 ];
@@ -84,7 +76,7 @@ export default class Header extends Component {
 						onKeyDown={this.toggleDrawer}
 					>
 						<List>
-							{this.getListItemLinks(topLinks)}
+							{this.getListItemLinks(window.navLinks)}
 						</List>
 						<Divider />
 						<List>
