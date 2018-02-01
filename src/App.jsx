@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
+
 import {
 	BrowserRouter as Router,
 	Route, Switch
 } from 'react-router-dom';
-import Header from './components/header/index';
+
 import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
+
+import styled from 'styled-components';
 
 import studyData from './assets/data/studies.json';
 import learnMoreData from './assets/data/learn-more.json';
 import { preprocess, indexByTags } from './utils/GeneralUtils.jsx';
+import Header from './components/header';
+import Footer from './components/footer';
 
 import Home from './routes/home.jsx';
 import Food from './routes/food.jsx';
@@ -42,6 +47,16 @@ window.navLinks = [
 	{ txt: 'Learn More', href: '/learn-more' },
 	{ txt: 'Endorsements', href: '/endorsements' },
 ];
+
+const Wrapper = styled.div`
+display: flex;  
+min-height: 100%;
+flex-direction: column;
+justify-content:space-between;
+`;
+const Body = styled.div`
+flex:1;
+`;
 
 export default class App extends Component {
 	constructor(props) {
@@ -85,20 +100,21 @@ export default class App extends Component {
 		return (
 			<Provider store={store}>
 				<MuiThemeProvider theme={theme}>
-					<div id="app">
 						<Router >
-							<div>
+							<Wrapper>
 								<Header saveOpenDialog={this.saveOpenNav} />
-								<Switch>
-									<Route exact path="/" render={this.MyHome} />
-									<Route path="/research" component={Research} />
-									<Route path="/food" component={Food} />
-									<Route path="/learn-more" component={LearnMore} />
-									<Route path="/endorsements" component={Endorsements} />
-								</Switch>
-							</div>
+								<Body>
+									<Switch>
+										<Route exact path="/" render={this.MyHome} />
+										<Route path="/research" component={Research} />
+										<Route path="/food" component={Food} />
+										<Route path="/learn-more" component={LearnMore} />
+										<Route path="/endorsements" component={Endorsements} />
+									</Switch>
+								</Body>
+								<Footer />
+							</Wrapper>
 						</Router>
-					</div>
 				</MuiThemeProvider>
 			</Provider>
 		);
