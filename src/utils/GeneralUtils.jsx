@@ -105,7 +105,7 @@ export function filterStudiesByTags(raw, allowed) { //https://stackoverflow.com/
 
 export const WidthWrapper = styled.div`
 width:95%;
-@media (min-width: 700px) {
+@media (min-width: 800px) {
 	width:80%;
 }
 margin:0 auto;
