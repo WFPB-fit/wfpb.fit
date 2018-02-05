@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
 import Typography from 'material-ui/Typography';
+import Button from 'material-ui/Button';
 
 import styled from 'styled-components';
 
@@ -60,16 +61,14 @@ export default class Resource extends Component {
 
 	render() {
 		const resource = this.props.resource;
-		const pdf = getLink(resource.pdf, "PDF");
+
 		const availability = getTitleized(resource.availability);
 		const type = getTitleized(resource.type);
 		const tags = Resource.getTags(resource.tags);
 		const rating = Resource.getRating(resource.rating);
-		const title = getLink(resource.url, titleize(resource.title || '')) || titleize(resource.name);
-		const books = getLink(resource.books, "Books");
-		const website = getLink(resource.website);
+		const title = titleize(resource.title || '') || titleize(resource.name);
 
-		const metaData = joinMetaData([resource.year, books, website, rating, availability, type, pdf, tags]);
+		const metaData = joinMetaData([resource.year, rating, availability, type, tags]);
 
 		const video = Resource.getEmbeddedVideoCode(resource.url);
 
@@ -123,12 +122,37 @@ export default class Resource extends Component {
 		return (
 			<StyledCard >
 				{DisplayCardMedia}
-				<Typography type="headline" component="h2">{title}</Typography>
-				<Typography type="headline" component="h4">{metaData}</Typography>
+				<CardContent>
+					<Typography type="title">{title}</Typography>
+					<Typography type="subheading">{metaData}</Typography>
 
-				{ExpandIcon}
-				{CardInfo}
+					{ExpandIcon}
+					
+					<Typography type="body1">{CardInfo}</Typography>
+				</CardContent>
 
+				<CardActions>
+					{resource.pdf &&
+						<Button size="small" color="primary" href={resource.pdf}>
+							PDF
+					 	</Button>
+					}
+					{resource.url &&
+						<Button size="small" color="primary" href={resource.url}>
+							Source
+					 	</Button>
+					}
+					{resource.books &&
+						<Button size="small" color="primary" href={resource.books}>
+							Books
+					 	</Button>
+					}
+					{resource.website &&
+						<Button size="small" color="primary" href={resource.website}>
+							Website
+					 	</Button>
+					}
+				</CardActions>
 			</StyledCard>
 		);
 	}

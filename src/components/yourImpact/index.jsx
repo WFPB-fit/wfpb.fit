@@ -50,10 +50,10 @@ export default class YourImpact extends Component {
         this.state.dietComposition.Wheat = 5;
         this.state.dietComposition.Rice = 5;
         this.state.dietComposition.Maize = 5;
-        this.state.dietComposition['Roots and tubers'] = 20;
-        this.state.dietComposition['Fruits and vegetables'] = 40;
-        this.state.dietComposition.Nuts = 15;
-        this.state.dietComposition.Pulses = 10;
+        this.state.dietComposition['Roots and tubers'] = 5;
+        this.state.dietComposition['Fruits and vegetables'] = 45;
+        this.state.dietComposition.Nuts = 10;
+        this.state.dietComposition.Pulses = 25;
     }
 
     toggleOverallVisible() {

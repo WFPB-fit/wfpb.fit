@@ -53,6 +53,7 @@ export default class Endorsements extends Component {
 				{doctors}
 				<h2>Athletes</h2>
 				<ResourceTabs
+					notLinkable
 					tabs={this.athleteTabs}
 					location={this.props.location}
 					history={this.props.history}

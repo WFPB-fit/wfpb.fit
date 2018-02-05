@@ -23,6 +23,8 @@ class LinkableTabs extends Component {
         }
     }
     getDefaultActiveTab() {
+        if(this.props.notLinkable) return 0;
+
         const hash = this.props.location.hash;
 
         let initTabIndex = 0;
@@ -38,8 +40,10 @@ class LinkableTabs extends Component {
         this.setState({ activeTabIndex });
 
         //make shareable - modify URL
+        if(!this.props.notLinkable){
         const tabName = this.props.tabs[activeTabIndex].label.toLowerCase();
         this.props.history.replace(`#${tabName}`);
+        }
     }
     render() {
         const { match, location, history, staticContext, ...nonrouterProps } = this.props; //https://github.com/DefinitelyTyped/DefinitelyTyped/issues/13689#issuecomment-296246134
