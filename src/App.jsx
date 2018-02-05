@@ -18,7 +18,6 @@ import Footer from './components/footer';
 import Home from './routes/home.jsx';
 import Food from './routes/food.jsx';
 import Research from './routes/research';
-import Endorsements from './routes/endorsements';
 import LearnMore from './routes/learn-more';
 
 import 'react-select/dist/react-select.css';
@@ -42,10 +41,9 @@ const theme = createMuiTheme();
 window.navLinks = [
 	{ txt: 'Home', href: '/' },
 	{ txt: 'Research', href: '/research' },
-	{ txt: 'Compare Foods', href: '/food' },
+	{ txt: 'Data', href: '/data' },
 	{ txt: 'Supplies', href: '/supplies' },
-	{ txt: 'Learn More', href: '/learn-more' },
-	{ txt: 'Endorsements', href: '/endorsements' },
+	{ txt: 'Learn More', href: '/learn-more' }
 ];
 
 const Wrapper = styled.div`
@@ -109,7 +107,6 @@ export default class App extends Component {
 										<Route path="/research" component={Research} />
 										<Route path="/food" component={Food} />
 										<Route path="/learn-more" component={LearnMore} />
-										<Route path="/endorsements" component={Endorsements} />
 									</Switch>
 								</Body>
 								<Footer />

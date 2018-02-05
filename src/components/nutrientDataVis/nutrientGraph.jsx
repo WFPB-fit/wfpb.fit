@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {
     VictoryChart,
     VictoryTooltip, createContainer,
-
+    VictoryLine, VictoryVoronoiContainer,
     VictoryArea, VictoryPolarAxis, VictoryTheme
 } from 'victory';
 import { alphaCompare } from '../../utils/GeneralUtils.jsx';
@@ -61,7 +61,7 @@ export default class NutrientGraph extends Component {
 
     async handleDomainChange(domain, props) {
         if (!this.state.zoomDomain) {
-            await this.setState({zoomDomain: domain});
+            await this.setState({ zoomDomain: domain });
             this.maxZoomDomain = domain;
         }
         // console.log(domain,this.state.zoomDomain)
@@ -88,7 +88,7 @@ export default class NutrientGraph extends Component {
 
         // console.log(newD)
         //set zoom state to new magnification
-        this.setState({zoomDomain: newD});
+        this.setState({ zoomDomain: newD });
     }
 
     render() {
@@ -120,43 +120,80 @@ export default class NutrientGraph extends Component {
                 />
             )
         });
+
+        const lines = selectedFoods.map((food) => {
+            let data = NutrientGraph.getFoodNutrients(food, nutrientDataKey);
+            // const keys = Object.keys(data).sort(alphaCompare);
+            // data = NutrientGraph.transformObjectToVictoryXYArray(data, food.name);
+
+            if (data.length === 0) return null; //if no values in VictoryArea = crash
+            return (
+
+                <VictoryLine
+                    key={food.name}
+                    style={{
+                        data: { stroke: food.color, fillOpacity: 0.2, },
+                    }}
+                    data={data}
+                />
+            )
+        });
+
         const VictoryZoomVoronoiContainer = createContainer("zoom", "voronoi");
 
         return (
             <VictoryChart
-                // height={h} width={w}
-                polar
                 theme={VictoryTheme.material}
-                domainPadding={{ y: 10 }}
-                padding={40}
-                containerComponent={
-                    //setup tool tip
-                    <VictoryZoomVoronoiContainer
-                        dimension="x"
-                        zoomDimension='y' //ensure X zooming does not mess up the enchanced zooming
-                        zoomDomain={this.state.zoomDomain}
-                        // onZoomDomainChange={(domain, props) => this.handleDomainChange(domain, props)}
-                        labels={NutrientGraph.getVictoryTooltipLabel}
-                        labelComponent={
-                            <VictoryTooltip
-                                style={{
-                                    fontSize: 4,
-                                    padding: 2
-                                }}
-                                cornerRadius={5}
-                                flyoutStyle={{ fill: "white" }}
-                            />}
-                    />
-                }
+                containerComponent={<VictoryVoronoiContainer />}
+                labels={NutrientGraph.getVictoryTooltipLabel}
+                labelComponent={
+                    <VictoryTooltip
+                        style={{
+                            fontSize: 4,
+                            padding: 2
+                        }}
+                        cornerRadius={5}
+                        flyoutStyle={{ fill: "white" }}
+                    />}
             >
-                <VictoryPolarAxis dependentAxis
-                    style={axisStyle}
-                    tickFormat={() => null}
-                />
-                <VictoryPolarAxis
-                    style={axisStyle} />
-                {radars}
+                {lines}
             </VictoryChart>
+
+
+            // <VictoryChart
+            //     // height={h} width={w}
+            //     polar
+            //     theme={VictoryTheme.material}
+            //     domainPadding={{ y: 10 }}
+            //     padding={40}
+            //     containerComponent={
+            //         //setup tool tip
+            //         <VictoryZoomVoronoiContainer
+            //             dimension="x"
+            //             zoomDimension='y' //ensure X zooming does not mess up the enchanced zooming
+            //             zoomDomain={this.state.zoomDomain}
+            //             // onZoomDomainChange={(domain, props) => this.handleDomainChange(domain, props)}
+            //             labels={NutrientGraph.getVictoryTooltipLabel}
+            //             labelComponent={
+            //                 <VictoryTooltip
+            //                     style={{
+            //                         fontSize: 4,
+            //                         padding: 2
+            //                     }}
+            //                     cornerRadius={5}
+            //                     flyoutStyle={{ fill: "white" }}
+            //                 />}
+            //         />
+            //     }
+            // >
+            //     <VictoryPolarAxis dependentAxis
+            //         style={axisStyle}
+            //         tickFormat={() => null}
+            //     />
+            //     <VictoryPolarAxis
+            //         style={axisStyle} />
+            //     {radars}
+            // </VictoryChart>
         );
     }
 }

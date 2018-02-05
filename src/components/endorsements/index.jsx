@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import Resource from '../components/resource/index.jsx';
-import { preprocess,WidthWrapper } from '../utils/GeneralUtils.jsx';
-import endorsements from '../assets/data/endorsements.json';
 import styled from 'styled-components';
-import ResourceTabs from '../components/tabsDisplay/ResourceTabs.jsx';
 
-export default class Externalities extends Component {
+import Resource from '../resource/index.jsx';
+import { preprocess, WidthWrapper } from '../../utils/GeneralUtils.jsx';
+import endorsements from '../../assets/data/endorsements.json';
+import ResourceTabs from '../tabsDisplay/ResourceTabs.jsx';
+
+export default class Endorsements extends Component {
 	constructor(props) {
 		super(props);
 		this.athleteTabs = [{
@@ -45,7 +46,7 @@ export default class Externalities extends Component {
 		);
 
 		return (
-			<WidthWrapper>
+			<div>
 				<h2>Organizations</h2>
 				{orgs}
 				<h2>Physicians</h2>
@@ -62,7 +63,7 @@ export default class Externalities extends Component {
 
 				{/* <h2>Animals</h2>
 				<p>{endorsements.animals}</p> */}
-			</WidthWrapper >
+			</div >
 		);
 	}
 }
