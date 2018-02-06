@@ -8,12 +8,18 @@ export default class Resources extends Component {
 		this.setState({ selectedTags: value });
 
 		//update URL to match the new tags
-		const newTags = value.map(selectable => selectable.value);
-		const newTagString = (newTags.length > 0) ? `tags=${newTags.join(',')}` : '';
-		this.props.history.replace({
-			pathname: this.props.match.url,
-			search: newTagString
-		});
+		const newTags = value.map(selectable => selectable.value); //get tag values from select options
+		const tagSearchParam = (newTags.length > 0) ? newTags.join(',') : ''; //create the query string
+
+		//create a new URL using the tags new params
+		let url = new URL(window.location.href);
+		let params = url.searchParams;
+		params.delete('tags');
+		params.append('tags', tagSearchParam);
+		console.log(url, tagSearchParam)
+
+		//update URL
+		this.props.history.replace(url.toString().replace(url.origin, ""));
 	}
 	handleSortByChanged(event) {
 		this.setState({ sortBy: event.target.value });
@@ -65,7 +71,7 @@ export default class Resources extends Component {
 
 		//set initial tags from url params
 		const urlTags = (new URLSearchParams(this.props.location.search).get('tags') || '').split(',');
-		const realUrlTags = urlTags.filter(t => tags.includes(t));
+		const realUrlTags = urlTags.filter(t => tags.includes(t) );
 		const selectableURLTags = Resources.tagsToSelectables(realUrlTags);
 		this.state.selectedTags = selectableURLTags;
 

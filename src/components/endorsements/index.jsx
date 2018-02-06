@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 import Resource from '../resource/index.jsx';
-import { preprocess, WidthWrapper } from '../../utils/GeneralUtils.jsx';
+import { preprocess } from '../../utils/GeneralUtils.jsx';
 import endorsements from '../../assets/data/endorsements.json';
 import ResourceTabs from '../tabsDisplay/ResourceTabs.jsx';
 
