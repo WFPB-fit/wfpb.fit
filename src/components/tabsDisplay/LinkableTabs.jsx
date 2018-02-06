@@ -23,15 +23,19 @@ class LinkableTabs extends Component {
         }
     }
     getDefaultActiveTab() {
-        if(this.props.notLinkable) return 0;
+        if (this.props.notLinkable) return 0;
 
         const hash = this.props.location.hash;
 
         let initTabIndex = 0;
-        this.props.tabs.forEach((x, i) => {
-            const label = x.label;
-            if (`#${label.toLowerCase()}` === hash) initTabIndex = i;
-        });
+
+        if (hash === "") this.switchTab(null, initTabIndex);
+        else {
+            this.props.tabs.forEach((x, i) => {
+                const label = x.label;
+                if (`#${label.toLowerCase()}` === hash) initTabIndex = i;
+            });
+        }
 
         return initTabIndex;
     }
@@ -40,9 +44,9 @@ class LinkableTabs extends Component {
         this.setState({ activeTabIndex });
 
         //make shareable - modify URL
-        if(!this.props.notLinkable){
-        const tabName = this.props.tabs[activeTabIndex].label.toLowerCase();
-        this.props.history.replace(`#${tabName}`);
+        if (!this.props.notLinkable) {
+            const tabName = this.props.tabs[activeTabIndex].label.toLowerCase();
+            this.props.history.replace(`#${tabName}`);
         }
     }
     render() {
