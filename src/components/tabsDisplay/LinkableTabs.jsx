@@ -46,7 +46,7 @@ class LinkableTabs extends Component {
         }
     }
     render() {
-        const { match, location, history, staticContext, ...nonrouterProps } = this.props; //https://github.com/DefinitelyTyped/DefinitelyTyped/issues/13689#issuecomment-296246134
+        const { match, location, history, staticContext, notLinkable, ...passedProps } = this.props; //https://github.com/DefinitelyTyped/DefinitelyTyped/issues/13689#issuecomment-296246134
         const isScrollable = this.props.tabs.length > 2;
         return (
             <div>
@@ -57,7 +57,7 @@ class LinkableTabs extends Component {
                         scrollable={isScrollable}
                         onChange={this.switchTab}
                         value={this.state.activeTabIndex}
-                        {...nonrouterProps}
+                        {...passedProps}
                     >
                         {
                             this.props.tabs.map(x => <Tab key={x.label} label={x.label} />)

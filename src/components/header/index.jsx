@@ -59,10 +59,10 @@ export default class Header extends Component {
 			<div>
 				<AppBar position="static">
 					<Toolbar>
-						<IconButton color="contrast" aria-label="Menu" onClick={this.toggleDrawer}>
+						<IconButton color="secondary" aria-label="Menu" onClick={this.toggleDrawer}>
 							<MenuIcon />
 						</IconButton>
-						<Typography variant="title" color="inherit">
+						<Typography variant="title" color="secondary">
 							{window.globalAppData.appName}
 						</Typography>
 					</Toolbar>

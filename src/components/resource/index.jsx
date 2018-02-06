@@ -8,6 +8,7 @@ import styled from 'styled-components';
 
 import { titleize, getLink, joinMetaData, getTitleized } from '../../utils/GeneralUtils.jsx';
 import Help from '../help';
+import Quote from '../quote';
 
 export default class Resource extends Component {
 	static youtubeID(url) {
@@ -111,9 +112,13 @@ export default class Resource extends Component {
 
 		let CardInfo = null;
 		if (!isMediaCard) {
+			let txt;
+			if(resource.quote) txt = <Quote>{resource.quote}</Quote>;
+			else if(resource.summary) txt = <Typography variant="body1">{resource.summary}</Typography>;
+
 			CardInfo = (
 				<div>
-					{resource.quote || resource.summary}
+					{txt}
 					{video}
 				</div>
 			);
@@ -123,12 +128,10 @@ export default class Resource extends Component {
 			<StyledCard >
 				{DisplayCardMedia}
 				<CardContent>
-					<Typography variant="headline">{title}</Typography>
-					<Typography variant="subheading">{metaData}</Typography>
+					<Typography align="center" variant="headline">{title}</Typography>
+					<Typography align="center" variant="subheading">{metaData}</Typography>
 
-					{ExpandIcon}
-
-					<Typography variant="body1">{CardInfo}</Typography>
+					{CardInfo}
 				</CardContent>
 
 				<CardActions>
@@ -154,6 +157,8 @@ export default class Resource extends Component {
 							Books
 					 	</Button>
 					}
+					
+					{ExpandIcon}
 				</CardActions>
 			</StyledCard>
 		);
