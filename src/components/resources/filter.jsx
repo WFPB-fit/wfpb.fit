@@ -31,7 +31,7 @@ export default class Filter extends Component {
 			<Card>
 				<PaddedDiv>
 					<CardContent />
-					<Typography type="headline" component="h2">Filter</Typography>
+					<Typography variant="headline">Filter</Typography>
 
 					<VirtualizedSelect
 						name="form-field-name"

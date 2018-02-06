@@ -54,20 +54,20 @@ export default class Home extends Component {
 					src="/imgs/assets/filler/veges.jpg" // https://commons.wikimedia.org/wiki/File:Fruit_%26_vegs_assortment.jpg
 				>
 
-					<Typography type='display3' align="center">
+					<Typography variant='display3' align="center">
 						<White>
 							Diet Quick Ref
 						</White>
 					</Typography>
 
-					<Typography type='subheading' align="center">
+					<Typography variant='subheading' align="center">
 						<White>
 							Healthy Eating, Simplified
 						</White>
 
 						<Button
 							onClick={this.props.openNav}
-							raised
+							variant="raised" 
 							color="primary"
 						>
 							Get Started
@@ -76,7 +76,7 @@ export default class Home extends Component {
 				</CenteredTextImage>
 
 				<Row2>
-					<Typography type="headline">
+					<Typography variant="headline">
 						Fast, Free, Evidence-Based Nutrition Advice
 					</Typography>
 				</Row2>
@@ -159,7 +159,7 @@ export default class Home extends Component {
 						</VerticalMidAlignWrapper>
 
 						<BottomText>
-							<Typography type="display1"><White>Fix Your Health Now</White></Typography>
+							<Typography variant="display1"><White>Fix Your Health Now</White></Typography>
 								<White>
 								Diet is vitally important part of a healthy life, and is often overlooked and misunderstood.
 								Fads can make you lose weight, but day-to-day eating habits will keep you healthy long-term.

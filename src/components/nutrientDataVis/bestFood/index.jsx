@@ -123,7 +123,7 @@ export default class Food extends Component {
                 />
 
                 <Button
-                    raised
+                    variant="raised" 
                     color="primary"
                     onClick={this.addFoods}
                 >

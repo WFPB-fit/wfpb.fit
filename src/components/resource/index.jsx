@@ -123,33 +123,35 @@ export default class Resource extends Component {
 			<StyledCard >
 				{DisplayCardMedia}
 				<CardContent>
-					<Typography type="title">{title}</Typography>
-					<Typography type="subheading">{metaData}</Typography>
+					<Typography variant="headline">{title}</Typography>
+					<Typography variant="subheading">{metaData}</Typography>
 
 					{ExpandIcon}
-					
-					<Typography type="body1">{CardInfo}</Typography>
+
+					<Typography variant="body1">{CardInfo}</Typography>
 				</CardContent>
 
 				<CardActions>
+
+					{resource.url &&
+						<Button size="small" variant="raised"  color="primary" href={resource.url}>
+							Source
+					 	</Button>
+					}
+					{resource.website &&
+						<Button size="small" variant="raised"  color="primary" href={resource.website}>
+							{new URL(resource.website).hostname.replace("www.","")}
+					 	</Button>
+					}
+
 					{resource.pdf &&
 						<Button size="small" color="primary" href={resource.pdf}>
 							PDF
 					 	</Button>
 					}
-					{resource.url &&
-						<Button size="small" color="primary" href={resource.url}>
-							Source
-					 	</Button>
-					}
 					{resource.books &&
 						<Button size="small" color="primary" href={resource.books}>
 							Books
-					 	</Button>
-					}
-					{resource.website &&
-						<Button size="small" color="primary" href={resource.website}>
-							Website
 					 	</Button>
 					}
 				</CardActions>

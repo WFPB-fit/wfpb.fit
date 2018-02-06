@@ -62,7 +62,7 @@ export default class Header extends Component {
 						<IconButton color="contrast" aria-label="Menu" onClick={this.toggleDrawer}>
 							<MenuIcon />
 						</IconButton>
-						<Typography type="title" color="inherit">
+						<Typography variant="title" color="inherit">
 							{window.globalAppData.appName}
 						</Typography>
 					</Toolbar>
