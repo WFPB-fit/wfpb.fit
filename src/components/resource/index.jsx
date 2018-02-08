@@ -137,23 +137,23 @@ export default class Resource extends Component {
 				<CardActions>
 
 					{resource.url &&
-						<Button size="small" variant="raised"  color="primary" href={resource.url}>
+						<Button size="small" variant="raised"  color="primary" target="_blank" href={resource.url}>
 							Source
 					 	</Button>
 					}
 					{resource.website &&
-						<Button size="small" variant="raised"  color="primary" href={resource.website}>
+						<Button size="small" variant="raised"  color="primary"  target="_blank" href={resource.website}>
 							{new URL(resource.website).hostname.replace("www.","")}
 					 	</Button>
 					}
 
 					{resource.pdf &&
-						<Button size="small" color="primary" href={resource.pdf}>
+						<Button size="small" color="primary"  target="_blank" href={resource.pdf}>
 							PDF
 					 	</Button>
 					}
 					{resource.books &&
-						<Button size="small" color="primary" href={resource.books}>
+						<Button size="small" color="primary"  target="_blank" href={resource.books}>
 							Books
 					 	</Button>
 					}

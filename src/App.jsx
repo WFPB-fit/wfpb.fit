@@ -16,6 +16,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 
 import Home from './routes/home.jsx';
+import Supplies from './routes/supplies.jsx';
 import Data from './routes/food.jsx';
 import Research from './routes/research';
 import LearnMore from './routes/learn-more';
@@ -105,6 +106,7 @@ export default class App extends Component {
 									<Switch>
 										<Route exact path="/" render={this.MyHome} />
 										<Route path="/research" component={Research} />
+										<Route path="/supplies" component={Supplies} />
 										<Route path="/data" component={Data} />
 										<Route path="/learn-more" component={LearnMore} />
 									</Switch>
