@@ -20,7 +20,7 @@ export default class Supplies extends Component {
                             SuppliesData[supplyType].map(supply=> {
                                 return <Resource
                                     resource={supply}
-                                    key={supply.url}
+                                    key={supply.amzn || supply.wmart || supply.url}
                                 />
                             })
                         }

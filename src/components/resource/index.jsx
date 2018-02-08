@@ -113,8 +113,8 @@ export default class Resource extends Component {
 		let CardInfo = null;
 		if (!isMediaCard) {
 			let txt;
-			if(resource.quote) txt = <Quote>{resource.quote}</Quote>;
-			else if(resource.summary) txt = <Typography variant="body1">{resource.summary}</Typography>;
+			if (resource.quote) txt = <Quote>{resource.quote}</Quote>;
+			else if (resource.summary) txt = <Typography variant="body1">{resource.summary}</Typography>;
 
 			CardInfo = (
 				<div>
@@ -123,6 +123,10 @@ export default class Resource extends Component {
 				</div>
 			);
 		}
+
+		let buy = resource.buyURL;
+		if (resource.amzn) buy = `http://a.co/${resource.amzn}`
+		else if (resource.wmart) buy = `https://www.walmart.com/ip/${resource.wmart}`
 
 		return (
 			<StyledCard >
@@ -135,29 +139,33 @@ export default class Resource extends Component {
 				</CardContent>
 
 				<CardActions>
-
 					{resource.url &&
-						<Button size="small" variant="raised"  color="primary" target="_blank" href={resource.url}>
+						<Button size="small" variant="raised" color="primary" target="_blank" href={resource.url}>
 							Source
 					 	</Button>
 					}
+					{buy &&
+						<Button size="small" variant="raised" color="primary" target="_blank" href={buy}>
+							Buy
+				 		</Button>
+					}
 					{resource.website &&
-						<Button size="small" variant="raised"  color="primary"  target="_blank" href={resource.website}>
-							{new URL(resource.website).hostname.replace("www.","")}
-					 	</Button>
+						<Button size="small" variant="raised" color="primary" target="_blank" href={resource.website}>
+							{new URL(resource.website).hostname.replace("www.", "")}
+						</Button>
 					}
 
 					{resource.pdf &&
-						<Button size="small" color="primary"  target="_blank" href={resource.pdf}>
+						<Button size="small" color="primary" target="_blank" href={resource.pdf}>
 							PDF
 					 	</Button>
 					}
 					{resource.books &&
-						<Button size="small" color="primary"  target="_blank" href={resource.books}>
+						<Button size="small" color="primary" target="_blank" href={resource.books}>
 							Books
 					 	</Button>
 					}
-					
+
 					{ExpandIcon}
 				</CardActions>
 			</StyledCard>
