@@ -2,13 +2,19 @@ import React, { Component } from 'react';
 import {
     VictoryChart,
     VictoryTooltip, createContainer,
-    VictoryLine, VictoryVoronoiContainer,
+    VictoryLine, VictoryVoronoiContainer, VictoryAxis,
     VictoryArea, VictoryPolarAxis, VictoryTheme
 } from 'victory';
-import { alphaCompare } from '../../utils/GeneralUtils.jsx';
+import { alphaCompare, WidthWrapper } from '../../utils/GeneralUtils.jsx';
 
 
 export default class NutrientGraph extends Component {
+    static tickFormat(t) {
+        if (t < 1e-2 || t > 1e3) {
+            return t.toExponential();
+        }
+        return t;
+    }
     constructor(props) {
         super(props);
         this.handleDomainChange = this.handleDomainChange.bind(this);
@@ -46,16 +52,18 @@ export default class NutrientGraph extends Component {
         let unit = d.yLabel;
 
         if (!unit) {
-            if (d.y < 1e-3) { val *= 1e6; unit = 'MicroGrams'; }
-            else if (d.y < 1) { val *= 1e3; unit = 'MilliGrams'; }
-            else { unit = 'Grams'; }
+            if (d.y < 1e-3) { val *= 1e6; unit = 'µg'; }
+            else if (d.y < 1) { val *= 1e3; unit = 'mg'; }
+            else { unit = 'g'; }
         }
 
         let displayVal = `${val.toFixed(1)} ${unit}`;
         if (d.nutrientDataIsMissing) displayVal = 'Data Missing';
         // else if (val === 0) `0 Grams`;
 
-        return `${d.foodName}: \n${d.x}: ${displayVal}`;
+        // return `${d.foodName}: \n${d.x}: ${displayVal}`;
+        return `${d.foodName}: ${displayVal}`;
+
     }
 
 
@@ -142,22 +150,37 @@ export default class NutrientGraph extends Component {
         const VictoryZoomVoronoiContainer = createContainer("zoom", "voronoi");
 
         return (
-            <VictoryChart
-                theme={VictoryTheme.material}
-                containerComponent={<VictoryVoronoiContainer />}
-                labels={NutrientGraph.getVictoryTooltipLabel}
-                labelComponent={
-                    <VictoryTooltip
-                        style={{
-                            fontSize: 4,
-                            padding: 2
-                        }}
-                        cornerRadius={5}
-                        flyoutStyle={{ fill: "white" }}
-                    />}
-            >
-                {lines}
-            </VictoryChart>
+            <WidthWrapper>
+                <VictoryChart
+                    // domain={{ y: [0, 100] }}
+                    padding={{ bottom: 100, left: 35, right: 35, top: 40 }}
+                    theme={VictoryTheme.material}
+                    containerComponent={
+                        <VictoryVoronoiContainer
+                            labels={NutrientGraph.getVictoryTooltipLabel}
+                            labelComponent={
+                                <VictoryTooltip
+                                    style={{
+                                        fontSize: 5,
+                                        padding: 2
+                                    }}
+                                    cornerRadius={5}
+                                    flyoutStyle={{ fill: "white" }}
+                                />}
+                        />
+                    }
+                >
+                    {lines}
+                    <VictoryAxis independentAxis style={{
+                        tickLabels: { fontSize: 7, padding: 1, verticalAnchor: "middle", textAnchor: "start", angle: 45 }
+                    }} />
+                    <VictoryAxis dependentAxis style={{
+                        tickLabels: { fontSize: 7, padding: 1 }
+                    }}
+                        tickFormat={NutrientGraph.tickFormat}
+                    />
+                </VictoryChart>
+            </WidthWrapper>
 
 
             // <VictoryChart
