@@ -53,7 +53,7 @@ export default class CalorieForm extends Component {
             <div style={{ textAlign: 'center' }}>
                 <div>
                     <FormControl>
-                        <InputLabel htmlFor='gender'>Activity Level</InputLabel>
+                        <InputLabel htmlFor='gender'>Gender</InputLabel>
                         <SelectField
                             input={<Input name="sort" id='gender' />}
                             onChange={this.handleFormChange('gender')}

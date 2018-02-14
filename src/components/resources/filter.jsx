@@ -44,7 +44,7 @@ export default class Filter extends Component {
 
 
 					<div>
-						<Button onClick={this.addAll}>All Tags</Button>
+						<Button onClick={this.addAll}>Add All</Button>
 					</div>
 
 					<div>
