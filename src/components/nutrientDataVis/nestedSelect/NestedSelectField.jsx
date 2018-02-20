@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
-import {
-    VictoryChart,
-    VictoryTooltip, createContainer,
 
-    VictoryArea, VictoryPolarAxis, VictoryTheme
-} from 'victory';
-import { alphaCompare, titleize } from '../../../utils/GeneralUtils.jsx';
+import styled from 'styled-components';
 
 import SelectField from 'material-ui/Select';
 import { MenuItem } from 'material-ui/Menu';
 import Button from 'material-ui/Button';
-// import Input, { InputLabel } from 'material-ui/Input';
+import { InputLabel } from 'material-ui/Input'; //Input, {}
 import { FormControl } from 'material-ui/Form';
+
+import { alphaCompare, titleize } from '../../../utils/GeneralUtils.jsx';
+
+const SelectChild = styled.div`
+margin:5px;
+`;
 
 export default class NestedSelectField extends Component {
     constructor(props) {
@@ -36,7 +37,9 @@ export default class NestedSelectField extends Component {
     }
 
     handleSelectChangeClosure(selectFieldIndx) {
-        let updateSelectedFieldsClosure = (event, index, value) => {
+        let updateSelectedFieldsClosure = (event) => {
+            const value = event.target.value;
+
             let newKeys = null;
             if (selectFieldIndx < this.state.selectedKeys.length) {
                 //user selected previous select obj, remove all the ones after it
@@ -65,17 +68,20 @@ export default class NestedSelectField extends Component {
     getSelectField(keys, indexKey, value) {
         keys = keys.sort(alphaCompare).filter(x => x !== '');
         if (keys.length > 0) {
-            const sortId = `sort-select-${x}`;
+            const sortId = `sort-select-${value}`;
+            let label = (indexKey === 0) ? "Food Group" : "Food";
             return (
-                <FormControl>
-                    {/* <InputLabel htmlFor={sortId} >Sort</InputLabel> */}
+                <FormControl
+                    key={indexKey}
+                    style={{ minWidth: '150px',verticalAlign:'bottom' }}                    
+                >
+                    <InputLabel htmlFor={sortId} >{label}</InputLabel>
                     <SelectField
-                        // input={<Input name="sort" id={sortId} />}
-                        value={value}
-                        key={indexKey}
+                        autoWidth
+                        //input={<Input name={`sort-${sortId}`} id={sortId} />}
+                        value={value || ''}
                         onChange={this.handleSelectChangeClosure(indexKey)}
                     >
-
                         {
                             keys.map(x => <MenuItem key={x} value={x}>{x}</MenuItem>)
                         }
@@ -101,7 +107,6 @@ export default class NestedSelectField extends Component {
                     >
                         Add Food
                     </Button>
-
                 );
             }
         }
@@ -135,8 +140,8 @@ export default class NestedSelectField extends Component {
 
         return (
             <div>
-                <div>{selectFields}</div>
-                <div>{addFoodButtons}</div>
+                <SelectChild>{selectFields}</SelectChild>
+                <SelectChild>{addFoodButtons}</SelectChild>
             </div>
         );
     }

@@ -7,7 +7,7 @@ import { titleize, getRandomColor, getLink, alphaCompare } from '../../utils/Gen
 import NutrientNames from '../../assets/data/nutrientNames.js';
 import NutrientGraph from './nutrientGraph.jsx';
 // import BestFoodSelector from './bestFood';
-// import NestedSelectField from './nestedSelect/NestedSelectContainer.jsx';
+import NestedSelectField from './nestedSelect/NestedSelectContainer.jsx';
 
 import {
 	ImportantNutrients
@@ -203,10 +203,10 @@ export default class Food extends Component {
 
 		return (
 			<div>
-				{/* <NestedSelectField
+				<NestedSelectField
 					selectedFoods={this.state.selectedFoods}
 					addFood={this.addFood}
-				/> */}
+				/>
 				<VirtualizedSelect
 					name="form-field-name"
 					filterOptions={this.props.food.filterOptions}
