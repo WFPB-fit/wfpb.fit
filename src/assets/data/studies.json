@@ -624,7 +624,7 @@
 	},
 	{
 		"title": "Is There a Role for Diet in the Therapy of Rheumatoid Arthritis?",
-		"url": "https://www.ncbi.nlm.nih.gov/pubmed/20430134",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/27032786",
 		"year": 2016,
 		"type": "meta analysis",
 		"availability": "abstract",
@@ -633,7 +633,7 @@
 	},
 	{
 		"title": "Rheumatoid arthritis treated with vegetarian diets",
-		"url": "http://m.ajcn.nutrition.org/content/70/3/594s.short",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/10479237",
 		"year": 1999,
 		"type": "study",
 		"availability": "abstract",
@@ -3202,6 +3202,15 @@
 		"availability": "abstract",
 		"tags": "phytoestrogens",
 		"quote": "We identified 861 articles as being relevant. Human cell line studies, human epidemiologic studies (case-control or cohort), randomized trials, and review articles were included. Animal studies regarding phytoestrogens were included when no human data were available concerning an important clinical area. ... This review suggests that phytoestrogens are among the dietary factors affording protection against cancer and heart disease in vegetarians."
+	},
+	{
+		"title": "Targeting the gut microbiome to treat the osteoarthritis of obesity",
+		"url": "https://insight.jci.org/articles/view/95997",
+		"year": 2018,
+		"type": "study",
+		"availability": "full",
+		"tags": "arthritis",
+		"quote":"obesity is associated with loss of beneficial Bifidobacteria, while key proinflammatory species gain in abundance. A downstream systemic inflammatory signature culminates with macrophage migration to the synovium and accelerated knee OA. Oligofructose supplementation restores the lean gut microbiome in obese mice, in part, by supporting key commensal microflora, particularly Bifidobacterium pseudolongum. This is associated with reduced inflammation in the colon, circulation, and knee and protection from OA."
 	},
 	{
 		"title": "Phytoestrogens and human health effects: weighing up the current evidence",

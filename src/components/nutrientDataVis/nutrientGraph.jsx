@@ -34,7 +34,12 @@ export default class NutrientGraph extends Component {
             return { x: key, y: foodData[key], name: name, color: color };
         });
     }
-    static getFoodNutrients(food, nutrientKey) { return food.n[nutrientKey]; }
+    // static getFoodNutrients(food, nutrientKey) { 
+    //     if (nutrientKey != null){
+    //         return food.n[nutrientKey]; 
+    //     }
+    //     return food;
+    // }
 
     static transformObjectToVictoryXYArray(obj, name) {
         debugger;
@@ -51,13 +56,13 @@ export default class NutrientGraph extends Component {
         let val = Number(d.y);
         let unit = d.yLabel;
 
-        if (!unit) {
-            if (d.y < 1e-3) { val *= 1e6; unit = 'µg'; }
-            else if (d.y < 1) { val *= 1e3; unit = 'mg'; }
-            else { unit = 'g'; }
-        }
+        let prefix = '';
+        if (d.y < 1e-3) { val *= 1e6; prefix = 'µ'; }
+        else if (d.y < 1) { val *= 1e3; prefix = 'm'; }
 
-        let displayVal = `${val.toFixed(1)} ${unit}`;
+        if (!unit) {unit = '';}
+
+        let displayVal = `${val.toFixed(1)} ${prefix}${unit}`;
         if (d.nutrientDataIsMissing) displayVal = 'Data Missing';
         // else if (val === 0) `0 Grams`;
 
@@ -100,8 +105,7 @@ export default class NutrientGraph extends Component {
     }
 
     render() {
-        const selectedFoods = this.props.selectedFoods,
-            nutrientDataKey = this.props.nutrientDataKey,
+        const linesData = this.props.linesData,
             w = 200,
             h = 200;
 
@@ -111,38 +115,37 @@ export default class NutrientGraph extends Component {
             tickLabels: { fontSize: 5, padding: 1 },
         };
 
-        const radars = selectedFoods.map((food) => {
-            let data = NutrientGraph.getFoodNutrients(food, nutrientDataKey);
+        // const radars = selectedFoods.map((food) => {
+        //     let data = NutrientGraph.getFoodNutrients(food, nutrientDataKey);
+        //     // const keys = Object.keys(data).sort(alphaCompare);
+        //     // data = NutrientGraph.transformObjectToVictoryXYArray(data, food.name);
+
+        //     if (data.length === 0) return null; //if no values in VictoryArea = crash
+        //     return (
+        //         <VictoryArea
+        //             key={food.name}
+        //             data={data}
+        //             // categories={{ x: keys }} // Controls ordering
+        //             style={{
+        //                 data: { fill: food.color, fillOpacity: 0.2, },
+        //             }}
+        //         />
+        //     )
+        // });
+
+        const lines = linesData.map((line) => {
             // const keys = Object.keys(data).sort(alphaCompare);
             // data = NutrientGraph.transformObjectToVictoryXYArray(data, food.name);
 
-            if (data.length === 0) return null; //if no values in VictoryArea = crash
-            return (
-                <VictoryArea
-                    key={food.name}
-                    data={data}
-                    // categories={{ x: keys }} // Controls ordering
-                    style={{
-                        data: { fill: food.color, fillOpacity: 0.2, },
-                    }}
-                />
-            )
-        });
-
-        const lines = selectedFoods.map((food) => {
-            let data = NutrientGraph.getFoodNutrients(food, nutrientDataKey);
-            // const keys = Object.keys(data).sort(alphaCompare);
-            // data = NutrientGraph.transformObjectToVictoryXYArray(data, food.name);
-
-            if (data.length === 0) return null; //if no values in VictoryArea = crash
+            if (line.dataPoints.length === 0) return null; //if no values in VictoryArea = crash
             return (
 
                 <VictoryLine
-                    key={food.name}
+                    key={line.id}
                     style={{
-                        data: { stroke: food.color, fillOpacity: 0.2, },
+                        data: { stroke: line.color, fillOpacity: 0.2, },
                     }}
-                    data={data}
+                    data={line.dataPoints}
                 />
             )
         });
@@ -172,12 +175,17 @@ export default class NutrientGraph extends Component {
                 >
                     {lines}
                     <VictoryAxis independentAxis style={{
-                        tickLabels: { fontSize: 7, padding: 1, verticalAnchor: "middle", textAnchor: "start", angle: 45 }
-                    }} />
+                        tickLabels: { fontSize: 7, padding: 1, verticalAnchor: "middle", textAnchor: "start", angle: 45 },
+                        // axisLabel:{ fontSize: 6,padding: 25},
+                    }} 
+                        // label="Nutrients"
+                    />
                     <VictoryAxis dependentAxis style={{
-                        tickLabels: { fontSize: 7, padding: 1 }
+                        tickLabels: { fontSize: 7, padding: 1 },
+                        axisLabel:{ fontSize: 6,padding: 25},
                     }}
                         tickFormat={NutrientGraph.tickFormat}
+                        label="Grams"
                     />
                 </VictoryChart>
             </WidthWrapper>

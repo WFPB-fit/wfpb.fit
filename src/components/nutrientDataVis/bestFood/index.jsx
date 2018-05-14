@@ -13,6 +13,8 @@ import {
 import nutrientNames from '../../../assets/data/nutrientNames.js';
 import { titleize } from '../../../utils/GeneralUtils';
 
+//get foods that rank highly in certain nutrients
+
 export default class Food extends Component {
     constructor(props) {
         super(props);
