@@ -13,7 +13,7 @@
 
 -- Find all interesting food and extract certain columns
 SELECT
-	food.long_desc,
+	-- food.long_desc,
 	-- gm_weight
 	-- nutrition.amount,
 	-- nutrition.nutrient_id
@@ -181,59 +181,58 @@ SELECT
 
 
 
+-- -- A more generous selection
+-- SELECT
+-- 	-- gm_weight
+-- 	-- nutrition.amount,
+-- 	-- nutrition.nutrient_id
+-- 	-- food_group.name,
+-- 	food.id
+-- 	FROM food
+-- 	-- inner join food_group on food_group.id=food.food_group_id
+-- 	-- inner join nutrition on food.id=nutrition.food_id
+-- 	-- inner join weight on food.id=weight.food_id
+-- 	where
+-- 	-- weight.description like 'serving%' and 
+-- 	--------- EXCLUSION ---------
+-- 	--------- TOTAL FOOD GROUP REMOVAL ---------
+-- 	(
+-- 		food_group_id !=300 and -- baby food
+-- 		--food_group_id !=600 and -- soups/sauces
+-- 		--food_group_id != 1800 and --baked products
+-- 		--food_group_id != 2100 and --fast foods
+-- 		food_group_id !=3500 and -- native food
+-- 		food_group_id !=3600 --restaruants
+-- 	) and
+-- 	(
+-- 		manufac_name is '' and --remove company specific food
+-- 		long_desc not like '%by-product%' and --remove waste food
+-- 		long_desc not like '%industrial%' and -- this is a consumer facing app
+-- 		long_desc not like '%USDA Commodity%'
+-- 	) and 
+-- 	--------- LOCATIONS ---------
+-- 	(
+-- 		long_desc not like '% style%' and --italian, spanish, etc
+-- 		long_desc not like '%California%' and
+-- 		long_desc not like '%Florida%' and
+-- 		long_desc not like '%imported%'
+-- 	) and     
+-- 	--------- MEAT TYPE ---------
+-- 	(
+-- 		-- long_desc not like '%, immitation%' and
+-- 		long_desc not like '%, bone-in%' and
+-- 		long_desc not like '% extra lean%' and
+-- 		long_desc not like '%separable lean and fat%' and --most people cut off the pure fat from their steaks/meat, so we won't include it
 
--- A more generous selection
-SELECT
-	-- gm_weight
-	-- nutrition.amount,
-	-- nutrition.nutrient_id
-	-- food_group.name,
-	food.id
-	FROM food
-	-- inner join food_group on food_group.id=food.food_group_id
-	-- inner join nutrition on food.id=nutrition.food_id
-	-- inner join weight on food.id=weight.food_id
-	where
-	-- weight.description like 'serving%' and 
-	--------- EXCLUSION ---------
-	--------- TOTAL FOOD GROUP REMOVAL ---------
-	(
-		food_group_id !=300 and -- baby food
-		--food_group_id !=600 and -- soups/sauces
-		--food_group_id != 1800 and --baked products
-		--food_group_id != 2100 and --fast foods
-		food_group_id !=3500 and -- native food
-		food_group_id !=3600 --restaruants
-	) and
-	(
-		manufac_name is '' and --remove company specific food
-		long_desc not like '%by-product%' and --remove waste food
-		long_desc not like '%industrial%' and -- this is a consumer facing app
-		long_desc not like '%USDA Commodity%'
-	) and 
-	--------- LOCATIONS ---------
-	(
-		long_desc not like '% style%' and --italian, spanish, etc
-		long_desc not like '%California%' and
-		long_desc not like '%Florida%' and
-		long_desc not like '%imported%'
-	) and     
-	--------- MEAT TYPE ---------
-	(
-		-- long_desc not like '%, immitation%' and
-		long_desc not like '%, bone-in%' and
-		long_desc not like '% extra lean%' and
-		long_desc not like '%separable lean and fat%' and --most people cut off the pure fat from their steaks/meat, so we won't include it
-
-		-- long_desc not like '% leg%' and
-		long_desc not like '% thigh%' and
-		long_desc not like '% feet%' and
-		long_desc not like '% skin-only%' and
-		long_desc not like '%, back%' and
+-- 		-- long_desc not like '% leg%' and
+-- 		long_desc not like '% thigh%' and
+-- 		long_desc not like '% feet%' and
+-- 		long_desc not like '% skin-only%' and
+-- 		long_desc not like '%, back%' and
 		
-		long_desc not like '% select%' and
-		long_desc not like '% all grades%' and
-		long_desc not like '%light meat%' and
-		long_desc not like '%dark meat%' and
-		long_desc not like '%meat and skin%'
-	) 
+-- 		long_desc not like '% select%' and
+-- 		long_desc not like '% all grades%' and
+-- 		long_desc not like '%light meat%' and
+-- 		long_desc not like '%dark meat%' and
+-- 		long_desc not like '%meat and skin%'
+-- 	) 
