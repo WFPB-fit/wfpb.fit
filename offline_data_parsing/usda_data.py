@@ -1,6 +1,8 @@
 import grequests
 import json
+import xml
 import pprint
+import pdb
 
 max_foods_per_request = 3
 
@@ -43,24 +45,52 @@ def get_foods_from_responses(list_usda_responses): #https://ndb.nal.usda.gov/ndb
     for response in list_usda_responses:
         response_foods = response['foods']
         for food in response_foods:
-            foods.append(food['food'])
+            foods.append(parse_food(food))
     return foods
 
-def parse_foods(foods):
-    new_foods = []
-    for food in foods:
-        new_foods.append(food)
-    return new_foods
+def parse_nutrient(usda_nutrient):
+    id = usda_nutrient['nutrient_id']
+    val_in_100g = get_nutrient_value(usda_nutrient)
+    val_in_100g = "{:.3g}".format(val_in_100g)
 
-# def get_nutrient_value(n):
-#     val = n["value"]
-#     if (n.unit === 'µg') val *= 1e-6;
-#     else if (n.unit === 'mg') val *= 1e-3;
-#     return val;
+    with open('../src/assets/data/usda_kept_nutrients') as f:
+        important_nutrients = xml.load(f)
+        pdb.set_trace()
+
+    return {id: val_in_100g}
+
+def parse_food(usda_food):
+    usda_food = usda_food['food']
+    food = {}
+
+    food["id"] = int(usda_food["desc"]["ndbno"])
+    food["name"] = usda_food["desc"]["name"]
+
+    #add food group
+    with open('../src/assets/data/foodGroupIds.json') as f:
+        food_group_ids = json.load(f)
+    food_group_names = dict((v,k) for k,v in food_group_ids.items()) #swap keys and values
+    food['fg'] = food_group_names[usda_food["desc"]["fg"]]
+    
+    food['nutrients'] = {}
+    for usda_nutrient in food['nutrients']:
+        nutrient = parse_nutrient(usda_nutrient)
+        food['nutrients'].update(nutrient)
+
+    pdb.set_trace()
+    return food
+
+def get_nutrient_value(n):
+    val = float(n["value"])
+    unit = n['unit']
+    if (unit == 'µg'):
+        val *= 1e-6
+    elif (unit == 'mg'):
+        val *= 1e-3
+    return val
 
 
 responses = fetch_USDA_data()
 foods = get_foods_from_responses(responses)
-# foods = list(map(parse_foods, foods))
 pp = pprint.PrettyPrinter(indent=4,depth=3)
 pp.pprint(foods)
