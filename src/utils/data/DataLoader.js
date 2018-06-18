@@ -7,10 +7,8 @@ import {
 } from '../GeneralUtils.jsx';
 import pluralize from 'pluralize';
 
-import {
-	ImportantNutrients,
-	FoodGroupIdIndex
-} from '../../assets/data/ImportantNutrients.js';
+import GraphNutrients from '../../assets/data/preprocessed_data/graphNutrients.json';
+import FoodGroupIdIndex from '../../assets/data/foodGroupIds.json';
 
 export default class DataLoader {
 	static async init(store) {
@@ -58,7 +56,7 @@ export default class DataLoader {
 	}
 
 	static _preprocessFoodData(foodData) {
-		const groupNames = Object.keys(ImportantNutrients);
+		const groupNames = Object.keys(GraphNutrients);
 		const foodIds = Object.keys(foodData);
 
 		//add each group to the return value
@@ -69,7 +67,7 @@ export default class DataLoader {
 				let groupNutrients = {};
 				const foodNutrients = foodData[foodId].n;
 				//for each nutrient in this group, add its FDA value to return value
-				for (let nId of ImportantNutrients[groupName]) {
+				for (let nId of GraphNutrients[groupName]) {
 					if (nId in foodNutrients) {
 						groupNutrients[nId] = foodNutrients[nId];
 					}
@@ -123,7 +121,7 @@ export default class DataLoader {
 	static async getFoodsRawData() {
 		if (!DataLoader.foods) {
 			DataLoader.foods = await
-			import ('../../assets/data/nutrition/foodData.json');
+			import ('../../assets/data/preprocessed_data/foods.json');
 		}
 		return DataLoader.foods;
 	}

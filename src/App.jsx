@@ -9,7 +9,7 @@ import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
 
 import styled from 'styled-components';
 
-import studyData from './assets/data/studies.json';
+import studyData from './assets/data/preprocessed_data/studies.json';
 import learnMoreData from './assets/data/learn-more.json';
 import { preprocess, indexByTags } from './utils/GeneralUtils.jsx';
 import Header from './components/header';

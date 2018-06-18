@@ -10,6 +10,12 @@ import { titleize, getLink, joinMetaData, getTitleized } from '../../utils/Gener
 import Help from '../help';
 import Quote from '../quote';
 
+import Availabilities from '../../assets/data/preprocessed_data/study_availability.json';
+import StudyTypes from '../../assets/data/preprocessed_data/study_types.json';
+
+// import CircularProgress from 'material-ui/core/CircularProgress';
+
+
 export default class Resource extends Component {
 	static youtubeID(url) {
 		if (!url || url.indexOf('youtube.com') < 0) {
@@ -63,8 +69,8 @@ export default class Resource extends Component {
 	render() {
 		const resource = this.props.resource;
 
-		const availability = getTitleized(resource.availability);
-		const type = getTitleized(resource.type);
+		const availability = getTitleized(Availabilities[resource.availability]);
+		const type = getTitleized(StudyTypes[resource.type]);
 		const tags = Resource.getTags(resource.tags);
 		const rating = Resource.getRating(resource.rating);
 		const title = titleize(resource.title || '') || titleize(resource.name);

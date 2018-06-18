@@ -1,11 +1,10 @@
 import grequests
 import json
-import pprint
 import pdb
 
 max_foods_per_request = 3 #25 = usda max
 
-important_nutrients = {
+nutrients_in_graphs = {
 	"calories": [208],
 	"misc": [	
 		601, #Cholesterol,  
@@ -78,7 +77,7 @@ important_nutrients = {
 		# 320, # Vitamin A, RAE,
 		# 321, # Carotene, beta,
 		# 322, # Carotene, alpha,
-		# 334, # Cryptoxanthin, beta,        
+		# 334, # Cryptoxanthin, beta,		
 		323, # Vitamin E (alpha-tocopherol),
 		# 324, # Vitamin D,
 		325, # Vitamin D2 (ergocalciferol),
@@ -125,6 +124,10 @@ important_nutrients = {
 	],
 }
 
+important_nutrients = []
+for nutrients in nutrients_in_graphs.values():
+	important_nutrients.extend(nutrients)
+
 nutrient_summations = {
 	# 323 Vitamin E (alpha-tocopherol),
 	"323": [
@@ -143,7 +146,7 @@ nutrient_summations = {
 	# 	713, # Object { name: "Total isoflavones", group: "Isoflavones" }
 	# 	714, # Object { name: "Biochanin A", group: "Isoflavones" }
 	# 	715, # Object { name: "Formononetin", group: "Isoflavones" }
-	# 	716, # Object { name: "Coumestrol", group: "Isoflavones" }        
+	# 	716, # Object { name: "Coumestrol", group: "Isoflavones" }		
 	# ],
 	"731": [ #anthocyanidins
 		# 731, # Object { name: "Cyanidin", group: "Anthocyanidins" }
@@ -191,90 +194,107 @@ nutrient_summations = {
 
 
 def fix_sql_ids(id):
-    return str(id[0]).zfill(5)#pad start with 0's
+	return str(id[0]).zfill(5)#pad start with 0's
 
 #report_type = f for full, b for basic
 def get_response(ids, report_type="f", key="PwVSjgNYYAwZ9M4txUxNlFjh44kCgQcrhPPR4X8c"):
-    params = {"ndbno":ids, "type": report_type, "api_key":key}
-    url="https://api.nal.usda.gov/ndb/V2/reports"
-    return grequests.get(url, params=params)
+	params = {"ndbno":ids, "type": report_type, "api_key":key}
+	url="https://api.nal.usda.gov/ndb/V2/reports"
+	return grequests.get(url, params=params)
 
 def open_ids():
-    #get IDs by downloading https://github.com/alyssaq/usda-sqlite and running the SQL query
-    with open('./food_ids/ids.json') as ids_file:    
-        ids = json.load(ids_file)
-    
-    return list(map(fix_sql_ids,ids))
+	#get IDs by downloading https://github.com/alyssaq/usda-sqlite and running the SQL query
+	with open('./food_ids/ids.json') as ids_file:	
+		ids = json.load(ids_file)
+	
+	return list(map(fix_sql_ids,ids))
 
 def fetch_USDA_data():
-    usda_requests = []
-    ids = open_ids()
-    
-    while len(ids) > 0:
-        id_subsection = ids[0:max_foods_per_request] 
+	usda_requests = []
+	ids = open_ids()
+	
+	while len(ids) > 0:
+		id_subsection = ids[0:max_foods_per_request] 
 
-        usda_requests.append( get_response(id_subsection) )
+		usda_requests.append( get_response(id_subsection) )
 
-        ids = ids[max_foods_per_request:]
-        
-        break
-    
-    responses = grequests.map(usda_requests)
-
-    return list( map(lambda x: x.json(), responses) )
+		ids = ids[max_foods_per_request:]
+		
+		break
+	
+	responses = grequests.map(usda_requests)
+	
+	return list( map(lambda x: x.json(), responses) )
 
 def get_foods_from_responses(list_usda_responses): #https://ndb.nal.usda.gov/ndb/doc/apilist/API-FOOD-REPORTV2.md
-    foods = []
+	foods = []
+	# pdb.set_trace()
 
-    for response in list_usda_responses:
-        response_foods = response['foods']
-        for food in response_foods:
-            foods.append(parse_food(food))
-    return foods
-
-def parse_nutrient(usda_nutrient):
-    id = usda_nutrient['nutrient_id']
-    val_in_100g = get_nutrient_value(usda_nutrient)
-    val_in_100g = "{:.3g}".format(val_in_100g)
-
-    with open('../src/assets/data/ImportantNutrients') as f:
-        important_nutrients = commentjson.load(f)
-        pdb.set_trace()
-
-    return {id: val_in_100g}
+	for response in list_usda_responses:
+		response_foods = response['foods']
+		for food in response_foods:
+			foods.append(parse_food(food))
+	return foods
 
 def parse_food(usda_food):
-    usda_food = usda_food['food']
-    food = {}
+	usda_food = usda_food['food']
+	food = {}
 
-    food["id"] = int(usda_food["desc"]["ndbno"])
-    food["name"] = usda_food["desc"]["name"]
+	food["id"] = int(usda_food["desc"]["ndbno"])
+	food["name"] = usda_food["desc"]["name"]
 
-    #add food group
-    with open('../src/assets/data/foodGroupIds.json') as f:
-        food_group_ids = json.load(f)
-    food_group_names = dict((v,k) for k,v in food_group_ids.items()) #swap keys and values
-    food['fg'] = food_group_names[usda_food["desc"]["fg"]]
-    
-    food['nutrients'] = {}
-    for usda_nutrient in food['nutrients']:
-        nutrient = parse_nutrient(usda_nutrient)
-        food['nutrients'].update(nutrient)
+	#add food group
+	with open('../src/assets/data/foodGroupIds.json') as f:
+		food_group_ids = json.load(f)
+	food_group_names = dict((v,k) for k,v in food_group_ids.items()) #swap keys and values
+	food['fg'] = int(food_group_names[usda_food["desc"]["fg"]])
+	
+	#parse the nutrients into their values
+	food['nutrients'] = {}
+	for usda_nutrient in usda_food['nutrients']:
+		n_id = usda_nutrient['nutrient_id']
+		food['nutrients'][n_id] = get_nutrient_value(usda_nutrient)
+	
+	#sum up certain nutrients to reduce size of the data
+	for n_total_id in nutrient_summations:
+		ids = nutrient_summations[n_total_id]
+		n_sum = food['nutrients'].get(n_total_id,0)
+		for n_id_to_add in ids:
+			if n_id_to_add in food['nutrients']:
+				n_sum += food['nutrients'][n_id_to_add]
+				del food['nutrients'][n_id_to_add]
 
-    pdb.set_trace()
-    return food
+		if (n_sum > 0):
+			food['n_total_id'] = n_sum
+	
+	#remove unimportant nutrients
+	nutrients = {}
+	for n_id in food['nutrients']:
+		if n_id in important_nutrients:
+			val = food['nutrients'][n_id]
+			val = "{:.3g}".format(val) #format to reduce unnecessary data
+			val = float(val)
+			nutrients[n_id] = val
+	food['n'] = nutrients
+
+	return food
 
 def get_nutrient_value(n):
-    val = float(n["value"])
-    unit = n['unit']
-    if (unit == 'µg'):
-        val *= 1e-6
-    elif (unit == 'mg'):
-        val *= 1e-3
-    return val
+	val = float(n["value"])
+	unit = n['unit']
+	if (unit == 'µg'):
+		val *= 1e-6
+	elif (unit == 'mg'):
+		val *= 1e-3
+	return val
 
+def format_and_save_usda_food_data(folder_name):
+	responses = fetch_USDA_data()
+	foods = get_foods_from_responses(responses)
 
-responses = fetch_USDA_data()
-foods = get_foods_from_responses(responses)
-pp = pprint.PrettyPrinter(indent=4,depth=3)
-pp.pprint(foods)
+	with open(folder_name+"foods.json", 'w') as outfile:
+		json.dump(foods, outfile)
+		# json.dump(foods, outfile, indent=4, separators=(',', ': '))
+	
+	with open(folder_name+"graphNutrients.json", 'w') as outfile:
+		json.dump(nutrients_in_graphs, outfile)

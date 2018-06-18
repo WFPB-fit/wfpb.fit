@@ -9,9 +9,7 @@ import NutrientGraph from './nutrientGraph.jsx';
 // import BestFoodSelector from './bestFood';
 import NestedSelectField from './nestedSelect/NestedSelectContainer.jsx';
 
-import {
-	ImportantNutrients
-} from '../../assets/data/ImportantNutrients.js';
+import GraphNutrients from '../../assets/data/preprocessed_data/graphNutrients.json';
 
 export default class Food extends Component {
 	constructor(props) {
@@ -103,9 +101,9 @@ export default class Food extends Component {
 			let newNutrients = {};
 			// debugger
 
-			for (const groupName of Object.keys(ImportantNutrients)) {
+			for (const groupName of Object.keys(GraphNutrients)) {
 				let newGroupNutrients = [];
-				for (const nId of ImportantNutrients[groupName]) {
+				for (const nId of GraphNutrients[groupName]) {
 					const nName = NutrientNames[nId];
 
 					let val = 0;
@@ -134,25 +132,25 @@ export default class Food extends Component {
 					/>
 					<h2>Macronutrients</h2>
 					<NutrientGraph
-						linesData={this.getTypicalFoodsLineGraphData(ImportantNutrients["macros"])}
+						linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["macros"])}
 					/>
 					<h2>Carbohydrates</h2>
 					<NutrientGraph
-						linesData={this.getTypicalFoodsLineGraphData(ImportantNutrients["carbs"])}
+						linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["carbs"])}
 					/>
 					<h2>Fats</h2>
 					<NutrientGraph
-						linesData={this.getTypicalFoodsLineGraphData(ImportantNutrients["fats"])}
+						linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["fats"])}
 					/>
 					<p>SAFA = Saturated Fat, MUFA = Monounsaturated Fat, PUFA = Polyunsaturated Fat</p>
 
 					<h2>Omega 3's</h2>
 					<NutrientGraph
-						linesData={this.getTypicalFoodsLineGraphData(ImportantNutrients["omega3"])}
+						linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["omega3"])}
 					/>
 					<h2>Vitamins</h2>
 					<NutrientGraph
-						linesData={this.getTypicalFoodsLineGraphData(ImportantNutrients["vitamins"])}
+						linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["vitamins"])}
 					/>
 					{/* <h2>Synthetic Vitamins</h2>
 					<NutrientGraph
@@ -161,19 +159,19 @@ export default class Food extends Component {
 					/> */}
 					<h2>Minerals</h2>
 					<NutrientGraph
-						linesData={this.getTypicalFoodsLineGraphData(ImportantNutrients["minerals"])}
+						linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["minerals"])}
 					/>
 					<h2>Amino Acids</h2>
 					<NutrientGraph
-						linesData={this.getTypicalFoodsLineGraphData(ImportantNutrients["amino"])}
+						linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["amino"])}
 					/>
 					<h2>Carotenoids</h2>
 					<NutrientGraph
-						linesData={this.getTypicalFoodsLineGraphData(ImportantNutrients["carotenoids"])}
+						linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["carotenoids"])}
 					/>
 					<h2>Flavonoids</h2>
 					<NutrientGraph
-						linesData={this.getTypicalFoodsLineGraphData(ImportantNutrients["flavonoids"])}
+						linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["flavonoids"])}
 					/>
 				</div>
 			);

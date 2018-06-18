@@ -22,4 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-src/assets/data/nutrition/*
+src/assets/data/preprocessed_data
+*__pycache*
