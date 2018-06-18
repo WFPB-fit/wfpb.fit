@@ -3,7 +3,7 @@ import json
 import pprint
 import pdb
 
-max_foods_per_request = 3
+max_foods_per_request = 3 #25 = usda max
 
 important_nutrients = {
 	"calories": [208],
