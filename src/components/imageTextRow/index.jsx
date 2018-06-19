@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Typography from 'material-ui/Typography/Typography';
+import Typography from '@material-ui/core/Typography';
 
 import styled from 'styled-components';
 

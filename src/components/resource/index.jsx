@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
-import Typography from 'material-ui/Typography';
-import Button from 'material-ui/Button';
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
 
 import styled from 'styled-components';
 

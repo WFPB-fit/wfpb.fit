@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import HelpIcon from 'material-ui-icons/Help';
-import IconButton from 'material-ui/IconButton';
+import HelpIcon from '@material-ui/icons/Help';
+import IconButton from '@material-ui/core/IconButton';
 import Dialog, {
     // DialogActions,
     DialogContent,

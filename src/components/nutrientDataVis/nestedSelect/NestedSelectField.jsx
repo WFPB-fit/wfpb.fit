@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 
 import styled from 'styled-components';
 
-import SelectField from 'material-ui/Select';
-import { MenuItem } from 'material-ui/Menu';
-import Button from 'material-ui/Button';
-import { InputLabel } from 'material-ui/Input'; //Input, {}
-import { FormControl } from 'material-ui/Form';
+import Select from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
+import Button from '@material-ui/core/Button';
+import InputLabel from '@material-ui/core/InputLabel'; //Input, {}
+import FormControl from '@material-ui/core/FormControl';
 
 import { alphaCompare, titleize } from '../../../utils/GeneralUtils.jsx';
 

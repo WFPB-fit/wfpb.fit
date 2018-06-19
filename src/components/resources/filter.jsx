@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 import Card, { CardActions, CardContent } from 'material-ui/Card';
-import Button from 'material-ui/Button';
+import Button from '@material-ui/core/Button';
 import VirtualizedSelect from 'react-virtualized-select'
-import SelectField from 'material-ui/Select';
-import { MenuItem } from 'material-ui/Menu';
-import Typography from 'material-ui/Typography';
-import Input, { InputLabel } from 'material-ui/Input';
-import { FormControl } from 'material-ui/Form';
+import Select from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
+import Typography from '@material-ui/core/Typography';
+import Input from '@material-ui/core/Input'; import InputLabel from '@material-ui/core/InputLabel';
+import FormControl from '@material-ui/core/FormControl';
 
 import styled from 'styled-components';
 

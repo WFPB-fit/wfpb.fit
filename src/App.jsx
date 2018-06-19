@@ -5,8 +5,6 @@ import {
 	Route, Switch
 } from 'react-router-dom';
 
-import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
-
 import styled from 'styled-components';
 
 import studyData from './assets/data/preprocessed_data/studies.json';
@@ -37,7 +35,6 @@ import rootReducer from './utils/data/reducers';
 let store = createStore(
 	rootReducer
 );
-const theme = createMuiTheme();
 
 window.navLinks = [
 	{ txt: 'Home', href: '/' },
@@ -98,7 +95,6 @@ export default class App extends Component {
 	render() {
 		return (
 			<Provider store={store}>
-				<MuiThemeProvider theme={theme}>
 						<Router >
 							<Wrapper>
 								<Header saveOpenDialog={this.saveOpenNav} />
@@ -114,7 +110,6 @@ export default class App extends Component {
 								<Footer />
 							</Wrapper>
 						</Router>
-				</MuiThemeProvider>
 			</Provider>
 		);
 	}

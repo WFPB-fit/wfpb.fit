@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 
 import styled from 'styled-components';
 
-import Typography from 'material-ui/Typography/Typography';
-import Button from 'material-ui/Button';
-
 import BgImg from './backgroundImg.jsx';
 
 const Center = styled.div`

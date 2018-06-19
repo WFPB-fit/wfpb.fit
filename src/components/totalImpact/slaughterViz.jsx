@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import styled from 'styled-components';
 
-import Typography from 'material-ui/Typography/Typography';
+import Typography from '@material-ui/core/Typography';
 import Table, { TableBody, TableCell, TableHead, TableRow } from 'material-ui/Table';
 
 import { titleize, getLink } from '../../utils/GeneralUtils';

@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 import styled from 'styled-components';
 
-import FormHelperText from 'material-ui/Form/FormHelperText';
-import Typography from 'material-ui/Typography/Typography';
+import FormHelperText from '@material-ui/core/FormHelperText';
+import Typography from '@material-ui/core/Typography';
 
 import SlaughterViz from './slaughterViz.jsx';
 import Help from '../help';

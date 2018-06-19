@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
 import AppBar from 'material-ui/AppBar';
-import List from 'material-ui/List';
+import List from '@material-ui/core/List';
 import { ListItem, ListItemIcon, ListItemText } from 'material-ui/List';
 import Toolbar from 'material-ui/Toolbar';
-import Typography from 'material-ui/Typography';
-import IconButton from 'material-ui/IconButton';
+import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from 'material-ui-icons/Menu';
 import Divider from 'material-ui/Divider';
 

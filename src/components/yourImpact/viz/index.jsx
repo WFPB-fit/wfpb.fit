@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-import Button from 'material-ui/Button';
+import Button from '@material-ui/core/Button';
 
-import { MenuItem } from 'material-ui/Menu';
-import SelectField from 'material-ui/Select';
-import Input, { InputLabel } from 'material-ui/Input';
-import { FormControl } from 'material-ui/Form';
+import MenuItem from '@material-ui/core/MenuItem';
+import Select from '@material-ui/core/Select';
+import Input from '@material-ui/core/Input'; import InputLabel from '@material-ui/core/InputLabel';
+import FormControl from '@material-ui/core/FormControl';
 
 import {
     VictoryChart, VictoryTheme, VictoryBar
