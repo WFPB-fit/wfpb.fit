@@ -39,6 +39,8 @@ export default class Research extends Component {
 		];
 	}
 	render() {
+		console.log(this.props)
+
 		return (
 			<WidthWrapper>
 				<ResourceTabs

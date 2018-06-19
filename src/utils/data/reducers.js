@@ -50,6 +50,24 @@ function food(state = {
 	}
 }
 
+function studies(state={
+	metaData: {},
+	text: {}
+},action){
+	switch (action.type) {
+		case 'ADD_STUDIES_METADATA':
+			return Object.assign({}, state, {
+				studies_metadata: action.data
+			});
+		case 'ADD_STUDIES_TEXT':
+			return Object.assign({}, state, {
+				studies_text: action.data
+			});
+		default:
+			return state;
+	}
+}
+
 function indexTags(state = {}, action) {
 	switch (action.type) {
 		case 'INDEX_BY_TAGS':
@@ -61,7 +79,8 @@ function indexTags(state = {}, action) {
 
 const rootReducer = combineReducers({
 	food,
-	indexTags
+	indexTags,
+	studies
 })
 
 export default rootReducer;

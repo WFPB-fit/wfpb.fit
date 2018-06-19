@@ -17,6 +17,7 @@ import Home from './routes/home.jsx';
 import Supplies from './routes/supplies.jsx';
 import Data from './routes/food.jsx';
 import Research from './routes/research';
+import ResearchContainer from './routes/research_container.jsx';
 import LearnMore from './routes/learn-more';
 
 import 'react-select/dist/react-select.css';
@@ -101,7 +102,7 @@ export default class App extends Component {
 								<Body>
 									<Switch>
 										<Route exact path="/" render={this.MyHome} />
-										<Route path="/research" component={Research} />
+										<Route path="/research" component={ResearchContainer} />
 										<Route path="/supplies" component={Supplies} />
 										<Route path="/data" component={Data} />
 										<Route path="/learn-more" component={LearnMore} />

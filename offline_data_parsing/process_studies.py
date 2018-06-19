@@ -29,7 +29,7 @@ def preprocess_studies(folder_name):
 
     with open(folder_name+"studies.json", 'w') as outfile:
         json.dump(studies, outfile)
-    with open(folder_name+"study_quotes.json", 'w') as outfile:
+    with open(folder_name+"studies_text.json", 'w') as outfile:
         json.dump(study_quotes, outfile)
 
     #invert these dictionaries

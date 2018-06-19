@@ -14,7 +14,8 @@ export default class DataLoader {
 	static async init(store) {
 		DataLoader.store = store;
 
-		await DataLoader.loadFoodData();
+		DataLoader.loadFoodData();
+		DataLoader.load_studies_data();
 	}
 
 	static get(varName) {
@@ -52,6 +53,21 @@ export default class DataLoader {
 		DataLoader.store.dispatch({
 			type: 'ADD_FOOD_DATA',
 			foodData: foodData
+		});
+	}
+
+	static async load_studies_data(){
+		let studies = await import ('../../assets/data/preprocessed_data/studies.json');
+		let studies_text = await import ('../../assets/data/preprocessed_data/studies_text.json');
+
+		//studies
+		DataLoader.store.dispatch({
+			type: 'ADD_STUDIES_METADATA',
+			data: studies
+		});
+		DataLoader.store.dispatch({
+			type: 'ADD_STUDIES_TEXT',
+			data: studies_text
 		});
 	}
 
