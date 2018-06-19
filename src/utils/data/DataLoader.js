@@ -57,7 +57,7 @@ export default class DataLoader {
 	}
 
 	static async load_studies_data(){
-		let studies = await import ('../../assets/data/preprocessed_data/studies.json');
+		let studies = await import ('../../assets/data/preprocessed_data/studies_metadata.json');
 		let studies_text = await import ('../../assets/data/preprocessed_data/studies_text.json');
 
 		//studies

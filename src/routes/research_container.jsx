@@ -3,8 +3,8 @@ import Research from './research.jsx'
 
 const mapStateToProps = state => {
     return {
-        metadata: state.studies.studies_metadata,
-        text: state.studies.studies_text
+        studies_metadata: state.studies.studies_metadata,
+        studies_text: state.studies.studies_text
     }
 }
 

@@ -90,17 +90,6 @@ export function getTitleized(val) {
 	return (val) ? titleize(val) : null;
 }
 
-export function filterStudiesByTags(raw, allowed) { //https://stackoverflow.com/questions/38750705/filter-object-properties-by-key-in-es6
-	return Object.keys(raw)
-		.filter(key => allowed.includes(key))
-		.reduce((obj, key) => {
-			obj[key] = raw[key];
-			return obj;
-		}, {});
-	// return studies.filter(resource => {
-	// 	return numCommonElements(resource.tags, tags) > 0;
-	// });
-}
 
 
 export const WidthWrapper = styled.div`

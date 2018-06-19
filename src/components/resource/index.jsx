@@ -17,7 +17,7 @@ import Quote from '../quote';
 import Availabilities from '../../assets/data/preprocessed_data/study_availability.json';
 import StudyTypes from '../../assets/data/preprocessed_data/study_types.json';
 
-// import CircularProgress from '@material-ui/core/CircularProgress';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 
 export default class Resource extends Component {
@@ -125,6 +125,7 @@ export default class Resource extends Component {
 			let txt;
 			if (resource.quote) txt = <Quote>{resource.quote}</Quote>;
 			else if (resource.summary) txt = <Typography variant="body1">{resource.summary}</Typography>;
+			else txt = <CircularProgress/>
 
 			CardInfo = (
 				<div>

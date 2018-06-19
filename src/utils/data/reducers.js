@@ -57,7 +57,7 @@ function studies(state={
 	switch (action.type) {
 		case 'ADD_STUDIES_METADATA':
 			return Object.assign({}, state, {
-				studies_metadata: action.data
+				studies_metadata: (action.data)
 			});
 		case 'ADD_STUDIES_TEXT':
 			return Object.assign({}, state, {

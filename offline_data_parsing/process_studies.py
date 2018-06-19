@@ -12,27 +12,28 @@ def preprocess_studies(folder_name):
         study = studies[i]
         study['id'] = i
         if 'quote' in study:
-            study_quotes[i] = study['quote']
+            study_quotes[i] = {'quote': study['quote']}
             del study['quote']
         elif 'summary' in study:
-            study_summaries[i] = study['summary']
+            study_summaries[i] = {'summary': study['summary']}
             del study['summary']
 
 
     availabilities = get_possibilites(studies,'availability')
     study_types = get_possibilites(studies,'type')
-
     for study in studies:
         study['availability'] = availabilities[study['availability']]
         study['type'] = study_types[study['type']]
         # process_url(study)
 
-    with open(folder_name+"studies.json", 'w') as outfile:
+        study['tags'] = study['tags'].split(",")
+
+    with open(folder_name+"studies_metadata.json", 'w') as outfile:
         json.dump(studies, outfile)
     with open(folder_name+"studies_text.json", 'w') as outfile:
         json.dump(study_quotes, outfile)
 
-    #invert these dictionaries
+    #invert these dictionaries for easier usage
     availabilities = dict([[v,k] for k,v in availabilities.items()])
     study_types = dict([[v,k] for k,v in study_types.items()])
     with open(folder_name+"study_availability.json", 'w') as outfile:
