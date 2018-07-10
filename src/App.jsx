@@ -15,9 +15,10 @@ import Footer from './components/footer';
 import Home from './routes/home.jsx';
 import Supplies from './routes/supplies.jsx';
 import Data from './routes/food.jsx';
-import Research from './routes/research';
+import GettingStarted from './routes/getting-started.jsx';
 import ResearchContainer from './routes/research_container.jsx';
 import LearnMore from './routes/learn-more';
+import Endorsements from './routes/endorsements';
 
 import 'react-select/dist/react-select.css';
 import 'react-virtualized/styles.css';
@@ -29,6 +30,8 @@ import { Provider } from 'react-redux'
 import { createStore } from 'redux';
 import rootReducer from './utils/data/reducers';
 
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
 // import Parse from './utils/fdaDataCreation/parseFdaData';
 // Parse.parse(store);
 
@@ -36,12 +39,15 @@ let store = createStore(
 	rootReducer
 );
 
+// used for the options in the Navigation drawer
 window.navLinks = [
 	{ txt: 'Home', href: '/' },
+	{ txt: 'Getting Started', href: '/getting-started' },
 	{ txt: 'Research', href: '/research' },
 	{ txt: 'Data', href: '/data' },
-	{ txt: 'Supplies', href: '/supplies' },
-	{ txt: 'Learn More', href: '/learn-more' }
+	// { txt: 'Supplies', href: '/supplies' },
+	{ txt: 'Media', href: '/media' },
+	{ txt: 'Endorsements', href: '/endorsements' }
 ];
 
 const Wrapper = styled.div`
@@ -53,6 +59,10 @@ justify-content:space-between;
 const Body = styled.div`
 flex:1;
 `;
+
+const theme = createMuiTheme({
+	typography: { htmlFontSize: 14 }
+});
 
 export default class App extends Component {
 	constructor(props) {
@@ -93,23 +103,27 @@ export default class App extends Component {
 
 	render() {
 		return (
-			<Provider store={store}>
-						<Router >
-							<Wrapper>
-								<Header saveOpenDialog={this.saveOpenNav} />
-								<Body>
-									<Switch>
-										<Route exact path="/" render={this.MyHome} />
-										<Route path="/research" component={ResearchContainer} />
-										<Route path="/supplies" component={Supplies} />
-										<Route path="/data" component={Data} />
-										<Route path="/learn-more" component={LearnMore} />
-									</Switch>
-								</Body>
-								<Footer />
-							</Wrapper>
-						</Router>
-			</Provider>
+			<MuiThemeProvider theme={theme}>
+				<Provider store={store}>
+					<Router >
+						<Wrapper>
+							<Header saveOpenDialog={this.saveOpenNav} />
+							<Body>
+								<Switch>
+									<Route exact path="/" render={this.MyHome} />
+									<Route path="/research" component={ResearchContainer} />
+									{/* <Route path="/supplies" component={Supplies} /> */}
+									<Route path="/data" component={Data} />
+									<Route path="/endorsements" component={Endorsements} />
+									<Route path="/getting-started" component={GettingStarted} />
+									<Route path="/media" component={LearnMore} />
+								</Switch>
+							</Body>
+							<Footer />
+						</Wrapper>
+					</Router>
+				</Provider>
+			</MuiThemeProvider>
 		);
 	}
 }

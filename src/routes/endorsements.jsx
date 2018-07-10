@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 // import styled from 'styled-components';
 
-import Resource from '../resource/index.jsx';
-import { preprocess } from '../../utils/GeneralUtils.jsx';
-import endorsements from '../../assets/data/endorsements.json';
-import ResourceTabs from '../tabsDisplay/ResourceTabs.jsx';
+import Resource from '../components/resource/index.jsx';
+import { preprocess } from '../utils/GeneralUtils.jsx';
+import endorsements from '../assets/data/endorsements.json';
+import ResourceTabs from '../components/tabsDisplay/ResourceTabs.jsx';
+import { WidthWrapper } from '../utils/GeneralUtils';
 
 export default class Endorsements extends Component {
 	constructor(props) {
@@ -46,7 +47,7 @@ export default class Endorsements extends Component {
 		);
 
 		return (
-			<div>
+			<WidthWrapper>
 				<h2>Organizations</h2>
 				{orgs}
 				<h2>Physicians</h2>
@@ -64,7 +65,7 @@ export default class Endorsements extends Component {
 
 				{/* <h2>Animals</h2>
 				<p>{endorsements.animals}</p> */}
-			</div >
+			</WidthWrapper >
 		);
 	}
 }
