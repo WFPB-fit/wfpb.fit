@@ -100,9 +100,11 @@ width:95%;
 margin:0 auto;
 max-width:1000px;
 
-& p,h3 {
-	text-align:center;
-}
+line-height: 1.4;
+
+// & p,h3 {
+// 	text-align:center;
+// }
 `;
 export const VerticalMidAlignWrapper = styled.div`
 display : flex;

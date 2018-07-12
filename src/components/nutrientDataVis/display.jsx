@@ -48,7 +48,7 @@ export default class Food extends Component {
 		return alphaOptions;
 	}
 
-	getTypicalFoodsLineGraphData(nutrientIds){
+	getTypicalFoodsLineGraphData(nutrientIds) {
 		return this.state.selectedFoods.map(selectedFood => {
 			const foodId = selectedFood.value;
 
@@ -66,20 +66,20 @@ export default class Food extends Component {
 				if (nId in foodData.n) val = foodData.n[nId];
 				else isMissing = true;
 
-				newGroupNutrients.push({ x: nName, y: val, nutrient_id: nId,yLabel:'g', foodName: foodData.name, nutrientDataIsMissing: isMissing });
+				newGroupNutrients.push({ x: nName, y: val, nutrient_id: nId, yLabel: 'g', foodName: foodData.name, nutrientDataIsMissing: isMissing });
 			}
 			foodData.dataPoints = newGroupNutrients;
 
 			return foodData;
 		}, []);
 	}
-	getCaloriesLineGraphData(){
+	getCaloriesLineGraphData() {
 		let foodsCalorieDataLine = this.state.selectedFoods.map(selectedFood => {
 			const foodId = selectedFood.value;
 			const foodData = this.props.food.data[foodId];
-			const cal = foodData.n[208]; //calories nutrient ID
-			return { x: foodData.name, y: cal, foodName: foodData.name };
-		},[]);
+			const calories =  foodData.n[208]; //calories nutrient ID
+			return { x: foodData.name, y: calories, foodName: foodData.name };
+		}, []);
 
 		return [{
 			dataPoints: foodsCalorieDataLine
@@ -124,58 +124,6 @@ export default class Food extends Component {
 	render() {
 		let dataVis = null;
 		if (this.state.selectedFoods.length > 0) { //At least one food is selected
-			const graphs = (
-				<div>
-					<h2>Calories</h2>
-					<NutrientGraph
-						linesData={this.getCaloriesLineGraphData()}
-					/>
-					<h2>Macronutrients</h2>
-					<NutrientGraph
-						linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["macros"])}
-					/>
-					<h2>Carbohydrates</h2>
-					<NutrientGraph
-						linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["carbs"])}
-					/>
-					<h2>Fats</h2>
-					<NutrientGraph
-						linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["fats"])}
-					/>
-					<p>SAFA = Saturated Fat, MUFA = Monounsaturated Fat, PUFA = Polyunsaturated Fat</p>
-
-					<h2>Omega 3's</h2>
-					<NutrientGraph
-						linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["omega3"])}
-					/>
-					<h2>Vitamins</h2>
-					<NutrientGraph
-						linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["vitamins"])}
-					/>
-					{/* <h2>Synthetic Vitamins</h2>
-					<NutrientGraph
-						selectedFoods={selectedFoodsData}
-						nutrientDataKey="fats"
-					/> */}
-					<h2>Minerals</h2>
-					<NutrientGraph
-						linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["minerals"])}
-					/>
-					<h2>Amino Acids</h2>
-					<NutrientGraph
-						linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["amino"])}
-					/>
-					<h2>Carotenoids</h2>
-					<NutrientGraph
-						linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["carotenoids"])}
-					/>
-					<h2>Flavonoids</h2>
-					<NutrientGraph
-						linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["flavonoids"])}
-					/>
-				</div>
-			);
-
 			//link to food sources
 			const sources = (
 				this.state.selectedFoods.map(selectedFood => {
@@ -186,13 +134,72 @@ export default class Food extends Component {
 							{getLink(`https://ndb.nal.usda.gov/ndb/search/list?qlookup=${foodData.id}`, foodData.name)}
 						</li>
 					)
-				},[])
+				}, [])
 			);
+
+			const firstFoodId = this.state.selectedFoods[0].value;
+			const firstfoodData = this.props.food.data[firstFoodId];
+			console.log(firstfoodData)
+			let calories = `${firstfoodData.name}: ${firstfoodData.n[208]} Calories`
+			if (this.state.selectedFoods.length > 1) {
+				calories = (
+					<NutrientGraph
+						linesData={this.getCaloriesLineGraphData()}
+					/>
+				);
+			}
 
 			dataVis = (
 				<div>
 					<p>Nutrients in 100 Grams of each food:</p>
-					{graphs}
+
+					<div>
+						<h2>Calories</h2>
+						{calories}
+						<h2>Macronutrients</h2>
+						<NutrientGraph
+							linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["macros"])}
+						/>
+						<h2>Carbohydrates</h2>
+						<NutrientGraph
+							linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["carbs"])}
+						/>
+						<h2>Fats</h2>
+						<NutrientGraph
+							linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["fats"])}
+						/>
+						<p>SAFA = Saturated Fat, MUFA = Monounsaturated Fat, PUFA = Polyunsaturated Fat</p>
+
+						<h2>Omega 3's</h2>
+						<NutrientGraph
+							linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["omega3"])}
+						/>
+						<h2>Vitamins</h2>
+						<NutrientGraph
+							linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["vitamins"])}
+						/>
+						{/* <h2>Synthetic Vitamins</h2>
+					<NutrientGraph
+						selectedFoods={selectedFoodsData}
+						nutrientDataKey="fats"
+					/> */}
+						<h2>Minerals</h2>
+						<NutrientGraph
+							linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["minerals"])}
+						/>
+						<h2>Amino Acids</h2>
+						<NutrientGraph
+							linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["amino"])}
+						/>
+						<h2>Carotenoids</h2>
+						<NutrientGraph
+							linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["carotenoids"])}
+						/>
+						<h2>Flavonoids</h2>
+						<NutrientGraph
+							linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["flavonoids"])}
+						/>
+					</div>
 					<h2>Sources</h2>
 					<ul>
 						{sources}

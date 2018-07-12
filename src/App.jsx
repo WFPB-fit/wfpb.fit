@@ -7,7 +7,7 @@ import {
 
 import styled from 'styled-components';
 
-import learnMoreData from './assets/data/learn-more.json';
+import learnMoreData from './assets/data/media.json';
 import { preprocess, indexByTags } from './utils/GeneralUtils.jsx';
 import Header from './components/header';
 import Footer from './components/footer';

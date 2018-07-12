@@ -40,6 +40,7 @@ const BottomImg = styled.img`
 height:120px;
 width:120px;
 `
+
 export default class Home extends Component {
 	constructor(props) {
 		super(props)
@@ -49,7 +50,45 @@ export default class Home extends Component {
 		// this.props.openNav();
 		return (
 			<div>
-				<CenteredTextImage
+				<WidthWrapper>
+					<h1>EviDiet</h1>
+					<p>
+						Nutrition science is complex.
+						The food industry further confuses things with advertisements, lobbying, and misleading studies.
+						It's no wonder nations are getting fatter and sicker.
+					</p>
+					<h3>Overcome the confusion</h3>
+					<p>
+						This non-profit website makes healthy eating easier by aggregating information.
+						The evidence supports a <b>whole food, low-fat, plant-based diet (WFPBD)</b> as a healthy diet, perhaps THE healthiest diet.
+						These diets have been documented to <b>ease weightloss, reverse heart disease, protect against type II diabetes, prevent cancer, improve autoimmune disease, extend lifespan</b>, and more.
+						It takes time and effort to change deeply ingrained habits like your food choices, but it is possible.
+						And a healthier life is a happier life.
+					</p>
+					<h3>DISCLAIMER</h3>
+					<p>
+						If you have an illness, discuss your diet with your doctor before making changes.
+						Do not stop taking medications until a doctor says it is safe.
+						Never be afraid of asking questions or getting a
+						{' '}<a href="https://www.plantbaseddoctors.org">second opinion</a>{' '}
+						from another accredited physician or dietitian.
+					</p>
+
+					<p>
+						To begin, click the menu in the top left to view
+						{' '}<a href="/getting-started">guides</a>,{' '}
+						{' '}<a href="/research">research</a>,{' '}
+						{' '}<a href="/data">data</a>,{' '}
+						{' '}<a href="/media">media</a>,{' '}
+						{' '}<a href="/endorsements">endorsements</a>,{' '}
+						and more.
+					</p>
+				</WidthWrapper>
+
+
+
+
+				{/* <CenteredTextImage
 					height="600px"
 					src="/imgs/assets/filler/veges.jpg" // https://commons.wikimedia.org/wiki/File:Fruit_%26_vegs_assortment.jpg
 				>
@@ -164,15 +203,10 @@ export default class Home extends Component {
 								Diet is vitally important part of a healthy life, and is often overlooked and misunderstood.
 								Fads can make you lose weight, but day-to-day eating habits will keep you healthy long-term.
 								Click above to start learning how.
-									{/* Diet is vitally important part of a healthy life, and is often overlooked and misunderstood.
-									While fad diets can help you lose weight, day-to-day eating habits will keep you healthy long-term.
-									Healthy eating isn't just for the overweight though.
-									The right food can have major health impacts: reversing heart disease, treating and preventing chronic disease, decreasing cancer risk, easier bowel movements, enhancing athletic performance, clearing complexion, and much more.
-									Begin your nutrition journey with Diet Quick Ref, and talk to your doctor about how a healthy diet can improve your life. */}
 								</White>
 						</BottomText>
 					</BottomWrap>
-				</CenteredTextImage>
+				</CenteredTextImage> */}
 
 				{/* https://www.cdc.gov/nchs/data/databriefs/db288.pdf - https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?BeginYear=2015
                 https://www.cdc.gov/nchs/fastats/leading-causes-of-death.htm */}

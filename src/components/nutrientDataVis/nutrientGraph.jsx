@@ -60,7 +60,7 @@ export default class NutrientGraph extends Component {
         if (d.y < 1e-3) { val *= 1e6; prefix = 'µ'; }
         else if (d.y < 1) { val *= 1e3; prefix = 'm'; }
 
-        if (!unit) {unit = '';}
+        if (!unit) { unit = ''; }
 
         let displayVal = `${val.toFixed(1)} ${prefix}${unit}`;
         if (d.nutrientDataIsMissing) displayVal = 'Data Missing';
@@ -102,6 +102,17 @@ export default class NutrientGraph extends Component {
         // console.log(newD)
         //set zoom state to new magnification
         this.setState({ zoomDomain: newD });
+    }
+
+    maxY() {
+        if (!this.props.linesData) return;
+        let max = 0;
+        for (let line of this.props.linesData) {
+            for (let pt of line.dataPoints) {
+                if (pt.y && pt.y > max) max = pt.y;
+            }
+        }
+        return max;
     }
 
     render() {
@@ -177,13 +188,14 @@ export default class NutrientGraph extends Component {
                     <VictoryAxis independentAxis style={{
                         tickLabels: { fontSize: 7, padding: 1, verticalAnchor: "middle", textAnchor: "start", angle: 45 },
                         // axisLabel:{ fontSize: 6,padding: 25},
-                    }} 
-                        // label="Nutrients"
+                    }}
+                    // label="Nutrients"
                     />
                     <VictoryAxis dependentAxis style={{
                         tickLabels: { fontSize: 7, padding: 1 },
-                        axisLabel:{ fontSize: 6,padding: 25},
+                        axisLabel: { fontSize: 6, padding: 25 },
                     }}
+                        range={[0, this.maxY()]}
                         tickFormat={NutrientGraph.tickFormat}
                         label="Grams"
                     />

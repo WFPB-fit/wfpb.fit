@@ -16,6 +16,14 @@
 			"summary": "Morbidly obese and stricken with an autoimmune disease, a man endeavors to drink only fruit and vegetable juice for 60 days in an effort to lose weight and reclaim his health."
 		},
 		{
+			"title": "Eating Animals",
+			"video":"https://www.youtube.com/watch?v=Y-z4Mpql6Ls",
+			"year": 2018,
+			"rating": 6.7,
+			"tags": "agribusiness,environment",
+			"summary": "Filmmaker Christopher Dillon examines the environmental, economic and public health consequences of factory farming. Topics include animal rights, pollution and the use of antibiotics and hormones."
+		},
+		{
 			"title": "Food, Inc.",
 			"url": "https://en.wikipedia.org/wiki/Food,_Inc.",
 			"year": 2008,
@@ -39,7 +47,7 @@
 		},
 		{
 			"title": "Simply Raw: Reversing Diabetes in 30 Days",
-			"url": "https://www.youtube.com/watch?v=2pjkC71exKU",
+			"video": "https://www.youtube.com/watch?v=2pjkC71exKU",
 			"year": 2009,
 			"rating": 7.7,
 			"tags": "health",
@@ -63,7 +71,7 @@
 		},
 		{
 			"title": "Henry: One Man's Way",
-			"url": "https://www.youtube.com/watch?v=0Kip4XVDYlE",
+			"video": "https://www.youtube.com/watch?v=0Kip4XVDYlE",
 			"year": 1996,
 			"rating": 7.8,
 			"tags": "animals",
@@ -86,7 +94,7 @@
 		},
 		{
 			"title": "Behind the Mask: The Story of the People Who Risk Everything to Save Animals",
-			"url": "https://www.youtube.com/watch?v=FfKXq9BL29o",
+			"video": "https://www.youtube.com/watch?v=FfKXq9BL29o",
 			"year": 2006,
 			"rating": 7.6,
 			"tags": "animals",
@@ -102,7 +110,7 @@
 		},
 		{
 			"title": "Earthlings",
-			"url": "https://vimeo.com/209647801",
+			"video": "https://vimeo.com/209647801",
 			"year": 2005,
 			"rating": 8.7,
 			"tags": "animals",
@@ -150,7 +158,7 @@
 		},
 		{
 			"title": "The Meat Lobby: Big Business Against Health?",
-			"url": "https://www.youtube.com/watch?v=QuhHaGciXVo",
+			"video": "https://www.youtube.com/watch?v=QuhHaGciXVo",
 			"year": 2016,
 			"tags": "agribusiness,health",
 			"summary": "In 2015, the WHO listed one of the additives in processed meats as carcinogenic. That same additive was nearly banned in America in the 1970s - until lobbying from the meat industry discredited the scientists. We reveal how, to impede or halt regulations on certain additives, food industry lobbies have been working in the shadows for decades."
@@ -180,16 +188,8 @@
 			"summary": "In Taiji, Japan, local fishermen hide a gruesome secret: the capture and slaughter of dolphins. Activist Ric O'Barry, who trained dolphins for the \"Flipper\" TV series, joins forces with filmmaker Louis Psihoyos and the Ocean Preservation Society to expose the brutal practice, risking life and limb in the process."
 		},
 		{
-			"title": "The End of the Line: How Overfishing Is Changing the World and What We Eat",
-			"url": "https://en.wikipedia.org/wiki/The_End_of_the_Line:_How_Overfishing_Is_Changing_the_World_and_What_We_Eat",
-			"rating": 7.5,
-			"year": 2009,
-			"tags": "animals,environment,agribusiness",
-			"summary": "Rupert Murray's acclaimed film looking at the consequences of unchecked, unregulated sea fishing across the globe. It is not a film about what might happen, it is a film about what has happened. The collapse of the cod population saw the end of 40,000 jobs, the bluefin tuna is being hunted to extinction, and it takes five kilos of anchovies to produce one fish farmed salmon."
-		},
-		{
 			"title": "Planet Ocean",
-			"url": "https://www.youtube.com/watch?v=eH1s9GCqPKo",
+			"video": "https://www.youtube.com/watch?v=eH1s9GCqPKo",
 			"rating": 7.9,
 			"year": 2012,
 			"tags": "environment",
@@ -221,7 +221,7 @@
 		},
 		{
 			"title": "Lucent",
-			"url": "https://www.youtube.com/watch?v=KArL5YjaL5U",
+			"video": "https://www.youtube.com/watch?v=KArL5YjaL5U",
 			"year": 2014,
 			"rating": 8.2,
 			"tags": "animals",
@@ -254,103 +254,103 @@
 	],
 	"videos": [{
 		"title": "Foods for Protecting the Body and Mind",
-		"url": "https://www.youtube.com/watch?v=BnHYHjchn6w",
+		"video": "https://www.youtube.com/watch?v=BnHYHjchn6w",
 		"year": 2015,
 		"tags": "health",
 		"summary": "Filmmaker Kip Andersen uncovers the secret to preventing and even reversing chronic diseases, and he investigates why the nation's leading health organizations doesn't want people to know about it."
 	}, {
 		"title": "Tyson: A Tradition of Torture Exposed — Again",
-		"url": "https://www.youtube.com/watch?time_continue=2&v=szPz4GVAqOY",
+		"video": "https://www.youtube.com/watch?time_continue=2&v=szPz4GVAqOY",
 		"year": 2017,
 		"tags": "animals",
 		"summary": " This heartbreaking footage filmed by a Compassion Over Killing investigator, working inside a Virginia factory farm supplying Tyson Foods, reveals systemic animal abuse, including painful effects of genetic manipulation."
 	}, {
 		"title": "Artificial insemination of a dairy cow. A.I",
-		"url": "https://www.youtube.com/watch?v=2yvXowLh-Pg",
+		"video": "https://www.youtube.com/watch?v=2yvXowLh-Pg",
 		"year": 2013,
 		"tags": "animals",
 		"summary": "A cow is manually inseminated and appears uncomfortable"
 	}, {
 		"title": "Blood Water: B.C.’s Dirty Salmon Farming Secret",
-		"url": "https://vimeo.com/238445419",
+		"video": "https://vimeo.com/238445419",
 		"year": 2017,
 		"tags": "animals,environment,health",
 		"quote": "Investigative dives at two farmed salmon processing plants reveal a shocking and horrendous secret hidden below the surface. Bloody effluent, untreated and infected with Piscine Reovirus, is being dumped into the pristine waters of Clayoquot Sound and Discovery Passage, B.C. Canada."
 	}, {
 		"title": "Ultimate Compilation: Drones Expose Factory Farming Across America",
-		"url": "https://www.youtube.com/watch?v=Zmli_NuFkK4",
+		"video": "https://www.youtube.com/watch?v=Zmli_NuFkK4",
 		"year": 2017,
 		"tags": "animals,environment",
 		"summary": "The food industry is hiding something. But it's no match for our drones."
 	}, {
 		"title": "Spy Drones Expose Smithfield Foods Factory Farms",
-		"url": "https://www.youtube.com/watch?v=ayGJ1YSfDXs",
+		"video": "https://www.youtube.com/watch?v=ayGJ1YSfDXs",
 		"year": 2014,
 		"tags": "animals,environment",
 		"summary": "\"Spy Drones Expose Smithfield Foods Factory Farms\": SINCE 2012, \"Speciesism: The Movie\" director Mark Devries has been secretly using spy drones to investigate and expose the environmental devastation caused by factory farms. In this video, the drones capture shocking aerial footage of several massive facilities that supply pigs for Smithfield Foods. Find out more at http://FactoryFarmDrones.com"
 	}, {
 		"title": "Shocking Footage: Chicks Ground Up Alive",
-		"url": "https://www.youtube.com/watch?v=6WiAQ8zRars",
+		"video": "https://www.youtube.com/watch?v=6WiAQ8zRars",
 		"year": 2016,
 		"tags": "animals",
 		"summary": "A PETA exposé of a massive hatchery operated by Sanderson Farms, Inc., which supplies chicken meat to Asia, the Middle East, and elsewhere, reveals shocking footage showing unwanted chicks who were born alone and left to languish before finally being ground up alive."
 	}, {
 		"title": "The White Cow (with Slaugherhouse Footage)",
-		"url": "https://www.youtube.com/watch?v=o7RvmHPQ0i0",
+		"video": "https://www.youtube.com/watch?v=o7RvmHPQ0i0",
 		"year": 2017,
 		"tags": "animals",
 		"summary": "This is an alternate version of our co-founder, Dr. Sofia Pineda Ochoa, recounting her experience at a slaughterhouse."
 	}, {
 		"title": "The Free Range Myth – Here’s Why It’s A Lie",
-		"url": "https://www.youtube.com/watch?v=zo3RKc1ofnc",
+		"video": "https://www.youtube.com/watch?v=zo3RKc1ofnc",
 		"year": 2015,
 		"tags": "animals",
 		"summary": "“Cage-free” conveys a similar impression of hens living “free” as nature intended. What are the realities behind “free-range” and “cage-free” labels?"
 	}, {
 		"title": "Okja (2017, Fiction)",
-		"url": "https://www.youtube.com/watch?v=AjCebKn4iic",
+		"video": "https://www.youtube.com/watch?v=AjCebKn4iic",
 		"year": 2017,
 		"tags": "animals",
 		"summary": "For 10 idyllic years, young Mija has been caretaker and constant companion to Okja - a massive animal and an even bigger friend - at her home in the mountains of South Korea. But that changes when family-owned, multinational conglomerate Mirando Corporation takes Okja for themselves and transports her to New York, where an image-obsessed and self-promoting CEO has big plans for Mija's dearest friend. With no particular plan but single-minded in intent, Mija sets out on a rescue mission."
 	}, {
 		"title": "VEGAN 2017 - The Film",
-		"url": "https://www.youtube.com/watch?v=IxVR53xemSs",
+		"video": "https://www.youtube.com/watch?v=IxVR53xemSs",
 		"year": 2017,
 		"tags": "animals,environment",
 		"summary": "Plant Based News' end of year film Vegan 2017 is here."
 	}, {
 		"title": "pig slaughter machine",
-		"url": "https://www.youtube.com/watch?v=tQ7ELpy2M2E",
+		"video": "https://www.youtube.com/watch?v=tQ7ELpy2M2E",
 		"year": 2017,
 		"tags": "animals",
 		"summary": "Qingdao TENT Machinery CO LTD is specialized in food machinery for many years,if you interested in our machine ,fell free to contact me."
 	}, {
 		"title": "Pig slaughter- Comparison of different stunning methods used",
-		"url": "https://www.youtube.com/watch?v=adtjQDW9rVE",
+		"video": "https://www.youtube.com/watch?v=adtjQDW9rVE",
 		"year": 2014,
 		"tags": "animals",
 		"summary": "Comparison of different stunning methods used"
 	}, {
 		"title": "GRAPHIC CONTENT: Spycam footage exposes shocking slaughterhouse cruelty Sheep",
-		"url": "https://www.youtube.com/watch?v=D_2j15tt7fo",
+		"video": "https://www.youtube.com/watch?v=D_2j15tt7fo",
 		"year": 2015,
 		"tags": "animals",
 		"summary": "Sheep are punched, kicked and thrown onto a conveyor belt in secretly recorded video in a north Yorkshire slaughterhouse."
 	}, {
 		"title": "Food as Medicine: Preventing & Treating the Most Dreaded Diseases with Diet",
-		"url": "https://www.youtube.com/watch?v=d0IhZ-R1O8g",
+		"video": "https://www.youtube.com/watch?v=d0IhZ-R1O8g",
 		"year": 2015,
 		"tags": "health",
 		"summary": "Dr. Greger has scoured the world’s scholarly literature on clinical nutrition and developed this new presentation based on the latest in cutting edge research exploring the role diet may play in preventing, arresting, and even reversing some of our most feared causes of death and disability."
 	}, {
 		"title": "HOW NOT TO DIE: The Role of Diet in Preventing, Arresting, & Reversing Our Top 15 Killers",
-		"url": "https://www.youtube.com/watch?v=lXXXygDRyBU",
+		"video": "https://www.youtube.com/watch?v=lXXXygDRyBU",
 		"year": 2016,
 		"tags": "health",
 		"summary": "Dr. Greger has scoured the world’s scholarly literature on clinical nutrition and developed this new presentation based on the latest in cutting edge research exploring the role diet may play in preventing, arresting, and even reversing some of our most feared causes of death and disability."
 	}, {
 		"title": "Dr. Michael Greger: \"How Not To Die\" | Talks at Google",
-		"url": "https://www.youtube.com/watch?v=7rNY7xKyGCQ",
+		"video": "https://www.youtube.com/watch?v=7rNY7xKyGCQ",
 		"year": 2016,
 		"tags": "health",
 		"summary": "In this “best-of” compilation of his last four year-in-review presentations, Dr. Greger explains what we can do about the #1 cause of death and disability: our diet."
@@ -362,6 +362,14 @@
 			"rating": 4.2,
 			"tags": "health",
 			"summary": "Bestselling author John A. McDougall and his kitchen-savvy wife, Mary, prove that a starch-rich diet can actually help you lose weight, prevent a variety of ills, and even cure common diseases. By fueling your body primarily with carbohydrates rather than proteins and fats, you will feel satisfied, boost energy, and look and feel your best."
+		},
+		{
+			"title": "The End of the Line: How Overfishing Is Changing the World and What We Eat",
+			"url": "https://en.wikipedia.org/wiki/The_End_of_the_Line:_How_Overfishing_Is_Changing_the_World_and_What_We_Eat",
+			"rating": 7.5,
+			"year": 2009,
+			"tags": "animals,environment,agribusiness",
+			"summary": "Rupert Murray's acclaimed film looking at the consequences of unchecked, unregulated sea fishing across the globe. It is not a film about what might happen, it is a film about what has happened. The collapse of the cod population saw the end of 40,000 jobs, the bluefin tuna is being hunted to extinction, and it takes five kilos of anchovies to produce one fish farmed salmon."
 		},
 		{
 			"title": "Eat to Live: The Amazing Nutrient Rich Program for Fast and Sustained Weight Loss",

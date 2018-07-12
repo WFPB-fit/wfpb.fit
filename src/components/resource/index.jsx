@@ -81,7 +81,7 @@ export default class Resource extends Component {
 
 		const metaData = joinMetaData([resource.year, rating, availability, type, tags]);
 
-		const video = Resource.getEmbeddedVideoCode(resource.url);
+		const video = Resource.getEmbeddedVideoCode(resource.video);
 
 		const isMediaCard = resource.profile_img;
 
