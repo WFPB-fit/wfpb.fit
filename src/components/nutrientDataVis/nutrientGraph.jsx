@@ -3,10 +3,11 @@ import {
     VictoryChart,
     VictoryTooltip, createContainer,
     VictoryLine, VictoryVoronoiContainer, VictoryAxis,
-    VictoryArea, VictoryPolarAxis, VictoryTheme
+    VictoryArea, VictoryPolarAxis, VictoryTheme,
+    VictoryScatter
 } from 'victory';
 import { alphaCompare, WidthWrapper } from '../../utils/GeneralUtils.jsx';
-
+import ScatterPoint from './scatterPoint.jsx'
 
 export default class NutrientGraph extends Component {
     static tickFormat(t) {
@@ -57,9 +58,10 @@ export default class NutrientGraph extends Component {
         let unit = d.yLabel;
 
         let prefix = '';
-        if (d.y < 1e-3) { val *= 1e6; prefix = 'µ'; }
-        else if (d.y < 1) { val *= 1e3; prefix = 'm'; }
-
+        if (unit !== '%') {
+            if (d.y < 1e-3) { val *= 1e6; prefix = 'µ'; }
+            else if (d.y < 1) { val *= 1e3; prefix = 'm'; }
+        }
         if (!unit) { unit = ''; }
 
         let displayVal = `${val.toFixed(1)} ${prefix}${unit}`;
@@ -115,6 +117,40 @@ export default class NutrientGraph extends Component {
         return max;
     }
 
+    getVictoryGraphLines(linesData) {
+        return linesData.map((line) => {
+            // const keys = Object.keys(data).sort(alphaCompare);
+            // data = NutrientGraph.transformObjectToVictoryXYArray(data, food.name);
+
+            if (line.dataPoints.length === 0) return null; //if no values in VictoryArea = crash
+            return (
+                <VictoryLine
+                    key={line.id}
+                    style={{
+                        data: { stroke: line.color },
+                    }}
+                    data={line.dataPoints}
+                />
+            )
+        });
+    }
+
+    getVictoryGraphPoints(linesData) {
+        return linesData.map((line) => {
+            if (line.dataPoints.length === 0) return null; //if no values in VictoryArea = crash
+
+            return (
+                <VictoryScatter data={line.dataPoints}
+                    dataComponent={<ScatterPoint />}
+                    size={3}
+                    style={{
+                        data: { fill: line.color },
+                    }}
+                />
+            );
+        });
+    }
+
     render() {
         const linesData = this.props.linesData,
             w = 200,
@@ -144,23 +180,6 @@ export default class NutrientGraph extends Component {
         //     )
         // });
 
-        const lines = linesData.map((line) => {
-            // const keys = Object.keys(data).sort(alphaCompare);
-            // data = NutrientGraph.transformObjectToVictoryXYArray(data, food.name);
-
-            if (line.dataPoints.length === 0) return null; //if no values in VictoryArea = crash
-            return (
-
-                <VictoryLine
-                    key={line.id}
-                    style={{
-                        data: { stroke: line.color, fillOpacity: 0.2, },
-                    }}
-                    data={line.dataPoints}
-                />
-            )
-        });
-
         const VictoryZoomVoronoiContainer = createContainer("zoom", "voronoi");
 
         return (
@@ -184,18 +203,20 @@ export default class NutrientGraph extends Component {
                         />
                     }
                 >
-                    {lines}
+                    {this.getVictoryGraphLines(linesData)}
+                    {this.getVictoryGraphPoints(linesData)}
+
                     <VictoryAxis independentAxis style={{
                         tickLabels: { fontSize: 7, padding: 1, verticalAnchor: "middle", textAnchor: "start", angle: 45 },
                         // axisLabel:{ fontSize: 6,padding: 25},
                     }}
+                    // range={[0, this.maxY() * 1.1]} #'range' not working in Victory Charts 0.27.2
                     // label="Nutrients"
                     />
                     <VictoryAxis dependentAxis style={{
                         tickLabels: { fontSize: 7, padding: 1 },
                         axisLabel: { fontSize: 6, padding: 25 },
                     }}
-                        range={[0, this.maxY()]}
                         tickFormat={NutrientGraph.tickFormat}
                         label="Grams"
                     />

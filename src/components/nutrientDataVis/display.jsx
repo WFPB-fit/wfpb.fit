@@ -19,6 +19,7 @@ export default class Food extends Component {
 		this.handleSelectChange = this.handleSelectChange.bind(this);
 		this.addFood = this.addFood.bind(this);
 		this.addFoods = this.addFoods.bind(this);
+		this.getMacroPercentages = this.getMacroPercentages.bind(this);
 		// this.getRelativeAminoAcids = this.getRelativeAminoAcids.bind(this);
 
 		//init vars
@@ -48,36 +49,77 @@ export default class Food extends Component {
 		return alphaOptions;
 	}
 
-	getTypicalFoodsLineGraphData(nutrientIds) {
+	getNutrientName(nId) {
+		return NutrientNames[nId]
+	}
+	getNutrientWeights(nutrientIds) {
+		return (foodId) => {
+			let foodData = this.props.food.data[foodId]; //each foodData is a line
+			let dataPoints = [];
+			for (const nId of nutrientIds) { //each nutrient is a point
+				let val = 0;
+				let isMissing = false;
+
+				if (nId in foodData.n) val = foodData.n[nId];
+				else isMissing = true;
+
+				dataPoints.push({ x: this.getNutrientName(nId), y: val, yLabel: 'g', foodName: foodData.name, nutrientDataIsMissing: isMissing });
+			}
+			return dataPoints;
+		}
+	}
+
+	getGraphData(getDataPointsFunction) {
 		return this.state.selectedFoods.map(selectedFood => {
 			const foodId = selectedFood.value;
 
 			let foodData = Object.assign({}, this.props.food.data[foodId]); //each foodData is a line
 			foodData.color = getRandomColor();
 			foodData.id = foodId;
-
-			//copy over nutrient amounts, substitute in real nutrient name for nutrient ID
-			let newGroupNutrients = [];
-			for (const nId of nutrientIds) { //each nutrient is a point
-				const nName = NutrientNames[nId];
-
-				let val = 0;
-				let isMissing = false;
-				if (nId in foodData.n) val = foodData.n[nId];
-				else isMissing = true;
-
-				newGroupNutrients.push({ x: nName, y: val, nutrient_id: nId, yLabel: 'g', foodName: foodData.name, nutrientDataIsMissing: isMissing });
-			}
-			foodData.dataPoints = newGroupNutrients;
+			foodData.dataPoints = getDataPointsFunction(foodId);
 
 			return foodData;
 		}, []);
 	}
-	getCaloriesLineGraphData() {
+
+	getMacroPercentages(foodId) {
+		const foodData = this.props.food.data[foodId];
+		const proteinCal = foodData.n[203] * 4;
+		const fatCal = foodData.n[204] * 9;
+		const carbCal = foodData.n[205] * 4;
+		const totalCal = proteinCal + fatCal + carbCal;
+
+		let dataPoints = [];
+
+		//"203": "Protein",	
+		let percentCalFromProtein = 0;
+		let isMissing = false;
+		if (203 in foodData.n) percentCalFromProtein = proteinCal / totalCal * 100;
+		else isMissing = true;
+		dataPoints.push({ x: this.getNutrientName(203), y: percentCalFromProtein, yLabel: '%', foodName: foodData.name, nutrientDataIsMissing: isMissing });
+
+		//"204":"Fat", //Total Fat
+		let percentCalFromFat = 0;
+		isMissing = false;
+		if (204 in foodData.n) percentCalFromFat = fatCal / totalCal * 100;
+		else isMissing = true;
+		dataPoints.push({ x: this.getNutrientName(204), y: percentCalFromFat, yLabel: '%', foodName: foodData.name, nutrientDataIsMissing: isMissing });
+
+		//"205": "Carbs",
+		let percentCalFromCarbs = 0;
+		isMissing = false;
+		if (205 in foodData.n) percentCalFromCarbs = carbCal / totalCal * 100;
+		else isMissing = true;
+		dataPoints.push({ x: this.getNutrientName(205), y: percentCalFromCarbs, yLabel: '%', foodName: foodData.name, nutrientDataIsMissing: isMissing });
+
+		return dataPoints
+	}
+
+	getCaloriesLineGraphData(foodId) {
 		let foodsCalorieDataLine = this.state.selectedFoods.map(selectedFood => {
 			const foodId = selectedFood.value;
 			const foodData = this.props.food.data[foodId];
-			const calories =  foodData.n[208]; //calories nutrient ID
+			const calories = foodData.n[208]; //calories nutrient ID
 			return { x: foodData.name, y: calories, foodName: foodData.name };
 		}, []);
 
@@ -86,40 +128,40 @@ export default class Food extends Component {
 		}];
 	}
 
-	//foods are set up to index by nutrient id instead of nutrient name.
-	//index by name instead. Determine the color of lines to be used
-	preprocessSelectedFoods() {
-		// preprocess foods
-		return this.state.selectedFoods.map(selectedFood => {
-			const foodId = selectedFood.value;
-			let foodData = Object.assign({}, this.props.food.data[foodId]);
+	// //foods are set up to index by nutrient id instead of nutrient name.
+	// //index by name instead. Determine the color of lines to be used
+	// preprocessSelectedFoods() {
+	// 	// preprocess foods
+	// 	return this.state.selectedFoods.map(selectedFood => {
+	// 		const foodId = selectedFood.value;
+	// 		let foodData = Object.assign({}, this.props.food.data[foodId]);
 
-			foodData.color = getRandomColor();
-			foodData.id = foodId;
+	// 		foodData.color = getRandomColor();
+	// 		foodData.id = foodId;
 
-			//copy over nutrient amounts, substitute in real nutrient name for nutrient ID
-			let newNutrients = {};
-			// debugger
+	// 		//copy over nutrient amounts, substitute in real nutrient name for nutrient ID
+	// 		let newNutrients = {};
+	// 		// debugger
 
-			for (const groupName of Object.keys(GraphNutrients)) {
-				let newGroupNutrients = [];
-				for (const nId of GraphNutrients[groupName]) {
-					const nName = NutrientNames[nId];
+	// 		for (const groupName of Object.keys(GraphNutrients)) {
+	// 			let newGroupNutrients = [];
+	// 			for (const nId of GraphNutrients[groupName]) {
+	// 				const nName = NutrientNames[nId];
 
-					let val = 0;
-					let isMissing = false;
-					if (nId in foodData.n) val = foodData.n[nId];
-					else isMissing = true;
+	// 				let val = 0;
+	// 				let isMissing = false;
+	// 				if (nId in foodData.n) val = foodData.n[nId];
+	// 				else isMissing = true;
 
-					newGroupNutrients.push({ x: nName, y: val, nutrient_id: nId, foodName: foodData.name, nutrientDataIsMissing: isMissing });
-				}
-				newNutrients[groupName] = newGroupNutrients;
-			}
-			foodData.n = newNutrients;
+	// 				newGroupNutrients.push({ x: nName, y: val, nutrient_id: nId, foodName: foodData.name, nutrientDataIsMissing: isMissing });
+	// 			}
+	// 			newNutrients[groupName] = newGroupNutrients;
+	// 		}
+	// 		foodData.n = newNutrients;
 
-			return foodData;
-		}, []);
-	}
+	// 		return foodData;
+	// 	}, []);
+	// }
 
 	render() {
 		let dataVis = null;
@@ -131,7 +173,7 @@ export default class Food extends Component {
 					const foodData = this.props.food.data[foodId];
 					return (
 						<li key={foodData.name}>
-							{getLink(`https://ndb.nal.usda.gov/ndb/search/list?qlookup=${foodData.id}`, foodData.name)}
+							{getLink(`https://ndb.nal.usda.gov/ndb/search/list?qlookup=${foodId}`, foodData.name)}
 						</li>
 					)
 				}, [])
@@ -139,7 +181,7 @@ export default class Food extends Component {
 
 			const firstFoodId = this.state.selectedFoods[0].value;
 			const firstfoodData = this.props.food.data[firstFoodId];
-			console.log(firstfoodData)
+
 			let calories = `${firstfoodData.name}: ${firstfoodData.n[208]} Calories`
 			if (this.state.selectedFoods.length > 1) {
 				calories = (
@@ -148,6 +190,8 @@ export default class Food extends Component {
 					/>
 				);
 			}
+
+			// console.log(this.preprocessMacros(GraphNutrients["macros"],GraphNutrients["macros"]))
 
 			dataVis = (
 				<div>
@@ -158,25 +202,29 @@ export default class Food extends Component {
 						{calories}
 						<h2>Macronutrients</h2>
 						<NutrientGraph
-							linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["macros"])}
+							linesData={this.getGraphData(this.getNutrientWeights(GraphNutrients["macros"]))}
+						/>
+						<h2>Macronutrient as a % of Calories</h2>
+						<NutrientGraph
+							linesData={this.getGraphData(this.getMacroPercentages)}
 						/>
 						<h2>Carbohydrates</h2>
 						<NutrientGraph
-							linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["carbs"])}
+							linesData={this.getGraphData(this.getNutrientWeights(GraphNutrients["carbs"]))}
 						/>
 						<h2>Fats</h2>
 						<NutrientGraph
-							linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["fats"])}
+							linesData={this.getGraphData(this.getNutrientWeights(GraphNutrients["fats"]))}
 						/>
 						<p>SAFA = Saturated Fat, MUFA = Monounsaturated Fat, PUFA = Polyunsaturated Fat</p>
 
 						<h2>Omega 3's</h2>
 						<NutrientGraph
-							linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["omega3"])}
+							linesData={this.getGraphData(this.getNutrientWeights(GraphNutrients["omega3"]))}
 						/>
 						<h2>Vitamins</h2>
 						<NutrientGraph
-							linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["vitamins"])}
+							linesData={this.getGraphData(this.getNutrientWeights(GraphNutrients["vitamins"]))}
 						/>
 						{/* <h2>Synthetic Vitamins</h2>
 					<NutrientGraph
@@ -185,19 +233,19 @@ export default class Food extends Component {
 					/> */}
 						<h2>Minerals</h2>
 						<NutrientGraph
-							linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["minerals"])}
+							linesData={this.getGraphData(this.getNutrientWeights(GraphNutrients["minerals"]))}
 						/>
 						<h2>Amino Acids</h2>
 						<NutrientGraph
-							linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["amino"])}
+							linesData={this.getGraphData(this.getNutrientWeights(GraphNutrients["amino"]))}
 						/>
 						<h2>Carotenoids</h2>
 						<NutrientGraph
-							linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["carotenoids"])}
+							linesData={this.getGraphData(this.getNutrientWeights(GraphNutrients["carotenoids"]))}
 						/>
 						<h2>Flavonoids</h2>
 						<NutrientGraph
-							linesData={this.getTypicalFoodsLineGraphData(GraphNutrients["flavonoids"])}
+							linesData={this.getGraphData(this.getNutrientWeights(GraphNutrients["flavonoids"]))}
 						/>
 					</div>
 					<h2>Sources</h2>
