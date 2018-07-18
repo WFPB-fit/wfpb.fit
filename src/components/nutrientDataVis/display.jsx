@@ -86,8 +86,10 @@ export default class Food extends Component {
 		const foodData = this.props.food.data[foodId];
 		const proteinCal = foodData.n[203] * 4;
 		const fatCal = foodData.n[204] * 9;
-		const carbCal = foodData.n[205] * 4;
+		const carbCal = (foodData.n[205] - (foodData.n[291] || 0) ) * 4; //carb = 205, fiber=291. Fiber is a carb but it has no calories
 		const totalCal = proteinCal + fatCal + carbCal;
+		
+		console.log(totalCal)
 
 		let dataPoints = [];
 
