@@ -9,12 +9,21 @@ import {
 import { alphaCompare, WidthWrapper } from '../../utils/GeneralUtils.jsx';
 import ScatterPoint from './scatterPoint.jsx'
 
+const MAX_LABEL_LEN = 17;
+
 export default class NutrientGraph extends Component {
-    static tickFormat(t) {
+    static yTickFormat(t) {
         if (t < 1e-2 || t > 1e3) {
             return t.toExponential();
         }
         return t;
+    }
+    static processGraphLabel(label){
+        if (label.length > MAX_LABEL_LEN) {
+            label = label.substring(0, MAX_LABEL_LEN);
+            label += '...';
+        }
+        return label
     }
     constructor(props) {
         super(props);
@@ -67,9 +76,11 @@ export default class NutrientGraph extends Component {
         let displayVal = `${val.toFixed(1)} ${prefix}${unit}`;
         if (d.nutrientDataIsMissing) displayVal = 'Data Missing';
         // else if (val === 0) `0 Grams`;
+        // let nameComponents = d.foodName.split(",");
+
 
         // return `${d.foodName}: \n${d.x}: ${displayVal}`;
-        return `${d.foodName}: ${displayVal}`;
+        return `${NutrientGraph.processGraphLabel(d.foodName)} : ${displayVal}`;
 
     }
 
@@ -140,7 +151,9 @@ export default class NutrientGraph extends Component {
             if (line.dataPoints.length === 0) return null; //if no values in VictoryArea = crash
 
             return (
-                <VictoryScatter data={line.dataPoints}
+                <VictoryScatter
+                    name="missingData"
+                    data={line.dataPoints}
                     key={line.id}
                     dataComponent={<ScatterPoint />}
                     size={3}
@@ -192,11 +205,12 @@ export default class NutrientGraph extends Component {
                     containerComponent={
                         <VictoryVoronoiContainer
                             labels={NutrientGraph.getVictoryTooltipLabel}
+                            voronoiBlacklist={["missingData"]}
                             labelComponent={
                                 <VictoryTooltip
                                     style={{
-                                        fontSize: 5,
-                                        padding: 2
+                                        fontSize: 6,
+                                        padding: 3
                                     }}
                                     cornerRadius={5}
                                     flyoutStyle={{ fill: "white" }}
@@ -213,12 +227,13 @@ export default class NutrientGraph extends Component {
                     }}
                     // range={[0, this.maxY() * 1.1]} #'range' not working in Victory Charts 0.27.2
                     // label="Nutrients"
+                    tickFormat={NutrientGraph.processGraphLabel}
                     />
                     <VictoryAxis dependentAxis style={{
                         tickLabels: { fontSize: 7, padding: 1 },
                         axisLabel: { fontSize: 6, padding: 25 },
                     }}
-                        tickFormat={NutrientGraph.tickFormat}
+                        tickFormat={NutrientGraph.yTickFormat}
                         label="Grams"
                     />
                 </VictoryChart>
