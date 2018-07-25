@@ -51,13 +51,7 @@ export default class Home extends Component {
 		return (
 			<div>
 				<WidthWrapper>
-					<h1>EviDiet</h1>
-					<p>
-						Nutrition science is complex.
-						The food industry further confuses things with advertisements, lobbying, and misleading studies.
-						It's no wonder nations are getting fatter and sicker.
-					</p>
-					<h3>Overcome the confusion</h3>
+					<h1>{window.globalAppData.appName}</h1>
 					<p>
 						This non-profit website makes healthy eating easier by aggregating information.
 						The evidence supports a <b>whole food, low-fat, plant-based diet (WFPBD)</b> as a healthy diet, perhaps THE healthiest diet.

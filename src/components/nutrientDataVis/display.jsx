@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 
 import VirtualizedSelect from 'react-virtualized-select';
 
@@ -11,7 +12,7 @@ import NestedSelectField from './nestedSelect/NestedSelectContainer.jsx';
 
 import GraphNutrients from '../../assets/data/preprocessed_data/graphNutrients.json';
 
-export default class Food extends Component {
+class Food extends Component {
 	constructor(props) {
 		super(props);
 
@@ -89,8 +90,6 @@ export default class Food extends Component {
 		const carbCal = (foodData.n[205] - (foodData.n[291] || 0) ) * 4; //carb = 205, fiber=291. Fiber is a carb but it has no calories
 		const totalCal = proteinCal + fatCal + carbCal;
 		
-		console.log(totalCal)
-
 		let dataPoints = [];
 
 		//"203": "Protein",	
@@ -301,3 +300,5 @@ export default class Food extends Component {
 		);
 	}
 }
+
+export default withRouter(Food);

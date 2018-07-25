@@ -3,25 +3,10 @@ import Resource from '../resource/index.jsx';
 import Filter from './filter';
 import { titleize, alphaCompare } from '../../utils/GeneralUtils.jsx';
 
-let param_separator = '_';
-
 export default class Resources extends Component {
 	handleSelectedTagsChanged(value) {
+		console.log(value)
 		this.setState({ selectedTags: value });
-
-		//update URL to match the new tags
-		const newTags = value.map(selectable => selectable.value); //get tag values from select options
-		const tagSearchParam = (newTags.length > 0) ? newTags.join(param_separator) : ''; //create the query string
-
-		//create a new URL using the tags new params
-		let url = new URL(window.location.href);
-		let params = url.searchParams;
-		params.delete('tags');
-		params.append('tags', tagSearchParam);
-		console.log(url, tagSearchParam)
-
-		//update URL
-		this.props.history.replace(url.toString().replace(url.origin, ""));
 	}
 	handleSortByChanged(event) {
 		this.setState({ sortBy: event.target.value });
@@ -56,7 +41,7 @@ export default class Resources extends Component {
 		this.getStudiesFromSelectedTags = this.getStudiesFromSelectedTags.bind(this);
 		this.handleSelectedTagsChanged = this.handleSelectedTagsChanged.bind(this);
 		this.handleSortByChanged = this.handleSortByChanged.bind(this);
-
+		
 		//initialize vars
 		//init state first
 		this.state = {
@@ -70,12 +55,6 @@ export default class Resources extends Component {
 			tags = Object.keys(this.props.research);
 		}
 		this.selectableTags = Resources.tagsToSelectables(tags);
-
-		//set initial tags from url params
-		const urlTags = (new URLSearchParams(this.props.location.search).get('tags') || '').split(param_separator);
-		const realUrlTags = urlTags.filter(t => tags.includes(t) );
-		const selectableURLTags = Resources.tagsToSelectables(realUrlTags);
-		this.state.selectedTags = selectableURLTags;
 
 		//find number of unique resources
 		const taggedResources = Object.values(this.props.research);
@@ -117,6 +96,7 @@ export default class Resources extends Component {
 		return (
 			<div>
 				<Filter
+					tagsToSelectables={Resources.tagsToSelectables}
 					selectedTags={this.state.selectedTags}
 					sortBy={this.state.sortBy}
 					allTags={this.selectableTags}

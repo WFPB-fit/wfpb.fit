@@ -60,7 +60,7 @@ class LinkableTabs extends Component {
                     <StyledTabs
                         fullWidth
                         centered
-                        scrollable={isScrollable}
+                        // scrollable={isScrollable}
                         onChange={this.switchTab}
                         value={this.state.activeTabIndex}
                         {...passedProps}

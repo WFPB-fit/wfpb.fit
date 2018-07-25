@@ -15,6 +15,8 @@ import FormControl from '@material-ui/core/FormControl';
 
 import styled from 'styled-components';
 
+import LinkableSelect from '../LinkableSelect';
+
 const PaddedDiv = styled.div`
 padding:5px;
 `;
@@ -37,13 +39,11 @@ export default class Filter extends Component {
 					<CardContent />
 					<Typography variant="headline">Filter</Typography>
 
-					<VirtualizedSelect
-						name="form-field-name"
+					<LinkableSelect
+						tagsToSelectables={this.props.tagsToSelectables}
 						value={this.props.selectedTags}
 						onChange={this.props.selectedTagsChanged}
 						options={this.props.allTags}
-						joinValues
-						multi
 					/>
 
 

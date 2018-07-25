@@ -141,6 +141,7 @@ export default class NutrientGraph extends Component {
 
             return (
                 <VictoryScatter data={line.dataPoints}
+                    key={line.id}
                     dataComponent={<ScatterPoint />}
                     size={3}
                     style={{
