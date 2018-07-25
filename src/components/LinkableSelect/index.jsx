@@ -8,6 +8,8 @@ import styled from 'styled-components';
 
 import PropTypes from 'prop-types';
 
+import { alphaCompare } from '../../utils/GeneralUtils.jsx';
+
 class LinkableSelect extends Component {
     tagsChanged(value) {
         this.props.onChange(value);
@@ -28,33 +30,41 @@ class LinkableSelect extends Component {
         this.props.history.replace(url.toString().replace(url.origin, ""));
     }
 
-    addAll() {
-        this.props.onChange(this.props.options);
+    setSelectablesFromURL(){
+        //set initial tags from url params
+        const urlTags = (new URLSearchParams(this.props.location.search).get(this.props.paramName) || '').split(this.props.paramSeparator);
+        const realUrlTags = urlTags.filter(t => t in this.optionsValues);
+
+        let selectables = [];
+        for (let tag of realUrlTags){
+            selectables.push({ value: tag, label: this.optionsValues[tag] })
+        }
+        selectables = selectables.sort(alphaCompare);
+
+        this.props.onChange(selectables);
     }
 
     constructor(props) {
         super(props);
         //bind fucntions to this class
-        this.addAll = this.addAll.bind(this);
         this.tagsChanged = this.tagsChanged.bind(this);
+        this.setSelectablesFromURL = this.setSelectablesFromURL.bind(this);
 
-        console.log(this.props)
+        this.optionsValues = {};
+        for (let selectable of this.props.options ){
+            this.optionsValues[selectable.value] = selectable.label;
+        }
 
-        //set initial tags from url params
-        const urlTags = (new URLSearchParams(this.props.location.search).get(this.props.paramName) || '').split(this.props.paramSeparator);
-        const realUrlTags = urlTags.filter(t => this.props.options.includes(t));
-        const selectableURLTags = this.props.tagsToSelectables(realUrlTags);
-        this.props.onChange(selectableURLTags);
+        this.setSelectablesFromURL();
     }
 
     render() {
         const { onChange, ...props } = this.props;
+
         return (
             <VirtualizedSelect
                 onChange={this.tagsChanged}
                 {...props}
-                value={this.props.selectedTags}
-                options={this.props.options}
                 name="form-field-name"
                 joinValues
                 multi

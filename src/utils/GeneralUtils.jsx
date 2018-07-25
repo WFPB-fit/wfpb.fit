@@ -51,7 +51,8 @@ export function numCommonElements(arr1, arr2) {
 	return intersect.length;
 }
 export function alphaCompare(a, b) {
-	if (a.value && b.value) return a.value.localeCompare(b.value);
+	if (a.label && b.label) return a.label.localeCompare(b.label);
+	else if(a.value && b.value) return a.value.localeCompare(b.value);
 	else return a.localeCompare(b);
 }
 export function objSwap(json) {

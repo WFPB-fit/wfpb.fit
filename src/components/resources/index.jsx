@@ -1,7 +1,27 @@
 import React, { Component } from 'react';
+
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+// import CardMedia from '@material-ui/core/CardMedia';
+
+import Button from '@material-ui/core/Button';
+import VirtualizedSelect from 'react-virtualized-select'
+import SelectField from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
+import Typography from '@material-ui/core/Typography';
+import Input from '@material-ui/core/Input'; import InputLabel from '@material-ui/core/InputLabel';
+import FormControl from '@material-ui/core/FormControl';
+
+import styled from 'styled-components';
+
 import Resource from '../resource/index.jsx';
-import Filter from './filter';
 import { titleize, alphaCompare } from '../../utils/GeneralUtils.jsx';
+import LinkableSelect from '../LinkableSelect';
+
+const PaddedDiv = styled.div`
+padding:5px;
+`;
 
 export default class Resources extends Component {
 	handleSelectedTagsChanged(value) {
@@ -10,13 +30,6 @@ export default class Resources extends Component {
 	}
 	handleSortByChanged(event) {
 		this.setState({ sortBy: event.target.value });
-	}
-	static tagsToSelectables(tags) {
-		let newTags = tags.map((tag) => {
-			return { value: tag, label: titleize(tag) };
-		});
-		const sortedTags = newTags.sort(alphaCompare);
-		return sortedTags;
 	}
 	sortResources(a, b) {
 		let aVal = a[this.state.sortBy] || 1;
@@ -41,7 +54,7 @@ export default class Resources extends Component {
 		this.getStudiesFromSelectedTags = this.getStudiesFromSelectedTags.bind(this);
 		this.handleSelectedTagsChanged = this.handleSelectedTagsChanged.bind(this);
 		this.handleSortByChanged = this.handleSortByChanged.bind(this);
-		
+
 		//initialize vars
 		//init state first
 		this.state = {
@@ -54,8 +67,11 @@ export default class Resources extends Component {
 		if (!this.props.tags) {
 			tags = Object.keys(this.props.research);
 		}
-		this.selectableTags = Resources.tagsToSelectables(tags);
-
+		tags = tags.map((tag) => {
+			return { value: tag, label: titleize(tag) };
+		});
+		this.selectableTags = tags.sort(alphaCompare);
+		
 		//find number of unique resources
 		const taggedResources = Object.values(this.props.research);
 		const allResearch = Object.values(taggedResources.reduce((total, currResources) => {
@@ -95,16 +111,38 @@ export default class Resources extends Component {
 
 		return (
 			<div>
-				<Filter
-					tagsToSelectables={Resources.tagsToSelectables}
-					selectedTags={this.state.selectedTags}
-					sortBy={this.state.sortBy}
-					allTags={this.selectableTags}
-					selectedTagsChanged={this.handleSelectedTagsChanged}
-					sortByChanged={this.handleSortByChanged}
-					numShown={resources.length}
-					numTotal={this.numTotal}
-				/>
+				<Card>
+					<PaddedDiv>
+						<CardContent />
+						<Typography variant="headline">Filter</Typography>
+
+						<LinkableSelect
+							value={this.state.selectedTags}
+							onChange={this.handleSelectedTagsChanged}
+							options={this.selectableTags}
+						/>
+
+						<div>
+							<FormControl>
+								<InputLabel htmlFor="sort-select">Sort</InputLabel>
+								<SelectField
+									input={<Input name="sort" id="sort-select" />}
+									value={this.state.sortBy}
+									onChange={this.handleSortByChanged}
+								>
+									<MenuItem value={'year'}>Year</MenuItem>
+									<MenuItem value={'availability'}>Availability</MenuItem>
+									<MenuItem value={'type'}>Resource Type</MenuItem>
+								</SelectField>
+							</FormControl>
+						</div>
+
+						<CardActions>
+							<p>{resources.length} / {this.numTotal} Displayed</p>
+						</CardActions>
+					</PaddedDiv>
+				</Card>
+
 				{
 					resources.map((x) => (
 						<Resource

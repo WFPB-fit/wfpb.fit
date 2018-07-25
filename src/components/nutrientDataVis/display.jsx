@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 
-import VirtualizedSelect from 'react-virtualized-select';
+import LinkableSelect from '../LinkableSelect';
 
 import { titleize, getRandomColor, getLink, alphaCompare } from '../../utils/GeneralUtils.jsx';
 
@@ -281,7 +281,7 @@ class Food extends Component {
 					selectedFoods={this.state.selectedFoods}
 					addFood={this.addFood}
 				/>
-				<VirtualizedSelect
+				<LinkableSelect
 					name="form-field-name"
 					filterOptions={this.props.food.filterOptions}
 					value={this.state.selectedFoods}
