@@ -115,7 +115,7 @@ export default class YourImpact extends Component {
                         }
                     />
                 </h2>
-                <h4>Where do your calories come from?</h4>
+                <h4>Where do your calories come from (%)?</h4>
                 <FoodEstimator
                     handleDietCompositionChange={this.handleDietCompositionChange}
                     dietComposition={this.state.dietComposition}

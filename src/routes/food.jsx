@@ -12,7 +12,7 @@ export default class Food extends Component {
         super(props)
 
         this.tabs = [
-            { label: 'Nutrients', component: (<NutrientDataVis />) },
+            { label: 'Foods', component: (<NutrientDataVis />) },
             { label: 'Total Impact', component: (<TotalImpact />) },
             { label: 'Your Impact', component: (<YourImpact />) },
         ];

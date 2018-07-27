@@ -46,7 +46,7 @@ export default [{
 		}
 	},
 	{
-		label: 'paleo',
+		label: 'Meat Lover',
 		data: {
 			Sugar: 0,
 			Rice: 0,
@@ -57,15 +57,15 @@ export default [{
 			"Roots and tubers": 5,
 			Wheat: 0,
 			"Fruits and vegetables": 5,
-			Nuts: 10,
+			Nuts: 5,
 			Pulses: 5,
 			Pork: 8,
-			Eggs: 8,
+			Eggs: 10,
 			"Fish (farmed)": 8,
 			Poultry: 12,
 			Dairy: 8,
 			"Sheep and goat": 8,
-			Beef: 8
+			Beef: 11
 		}
 	}
 ]
