@@ -72,7 +72,7 @@ export default class App extends Component {
 
 		//simple global data container
 		window.globalAppData = {
-			appName: 'Plant-Based Diet',
+			appName: 'Whole Food Plant-Based Diet',
 			learnMore: {
 				documentaries: indexByTags(preprocess(learnMoreData.documentaries)),
 				videos: indexByTags(preprocess(learnMoreData.videos)),

@@ -1,49 +1,53 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
+import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
 
-import { WidthWrapper, getLink, VerticalMidAlignWrapper } from '../utils/GeneralUtils.jsx';
-import ImageDangleText from '../components/imageDangleText';
-import CenteredTextImage from '../components/centeredtextImage';
+import {
+	WidthWrapper,
+	getLink,
+	VerticalMidAlignWrapper
+} from "../utils/GeneralUtils.jsx";
+import ImageDangleText from "../components/imageDangleText";
+import CenteredTextImage from "../components/centeredtextImage";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Row2 = styled.div`
-padding:40px;
-background-color:#ccc;
-color:black;
-text-align:center;
+	padding: 40px;
+	background-color: #ccc;
+	color: black;
+	text-align: center;
 `;
 
 const ImagesRow = styled.div`
-display:block;
+	display: block;
 
-@media (min-width: 800px) {
-	display:flex;
-	justify-content: space-around;
-}
+	@media (min-width: 800px) {
+		display: flex;
+		justify-content: space-around;
+	}
 `;
 const White = styled.div`
-color:white;
-margin:5px;
+	color: white;
+	margin: 5px;
 `;
 const BottomWrap = styled.div`
-display:flex;
-justify-content: space-around;
+	display: flex;
+	justify-content: space-around;
 `;
 const BottomText = styled.div`
-width:100%;
-padding-left: 70px;
+	width: 100%;
+	padding-left: 70px;
 `;
 const BottomImg = styled.img`
-height:120px;
-width:120px;
-`
+	height: 120px;
+	width: 120px;
+`;
 
 export default class Home extends Component {
 	constructor(props) {
-		super(props)
+		super(props);
 	}
 
 	render() {
@@ -52,63 +56,108 @@ export default class Home extends Component {
 				<WidthWrapper>
 					<h1>{window.globalAppData.appName}</h1>
 					<p>
-						This non-profit website aggregates resources about the <b>whole food, low-fat, plant-based diet (WFPBD)</b>.
-						WFPBD has been documented to <b>ease weightloss, reverse heart disease, protect against type II diabetes, help prevent cancer, improve autoimmune disease, extend lifespan</b>, and more.
-						It takes time and effort to change deeply ingrained habits like your food choices, but it is possible.
-						And a healthier life is a happier life.
+						This non-profit website aggregates resources about the{" "}
+						<b>whole food, low-fat, plant-based diet (WFPBD)</b>. WFPBD has been
+						documented to{" "}
+						<b>
+							ease weightloss, reverse heart disease, protect against type II
+							diabetes, help prevent cancer, improve autoimmune disease, extend
+							lifespan
+						</b>, and more.
 					</p>
 					<h3>DISCLAIMER</h3>
 					<p>
-						If you have an illness, discuss your diet with your doctor before making changes.
-						Do not stop taking medications until a doctor says it is safe.
-						Never be afraid of asking questions or getting a
-						{' '}<a href="https://www.plantbaseddoctors.org">second opinion</a>{' '}
-						from an accredited physician or dietitian.
+						If you have an illness, discuss your diet with your doctor before
+						making changes. Do not stop taking medications until a doctor says
+						it is safe. Never be afraid of asking questions or getting a{" "}
+						<a href="https://www.plantbaseddoctors.org">second opinion</a> from
+						an accredited physician or dietitian.
 					</p>
 
-
-
-					{/* <p>
-						To begin, click the menu in the top left to view
-						{' '}<a href="/research">research</a>,{' '}
-						{' '}<a href="/data">data</a>,{' '}
-						{' '}<a href="/media">media</a>,{' '}
-						{' '}<a href="/endorsements">endorsements</a>,{' '}
-						and more.
-					</p> */}
 					<Button
 						onClick={this.props.toggleDrawer}
 						variant="raised"
 						color="primary"
 					>
-						Get Started
-				</Button>
+						Learn More
+					</Button>
 
 					<h2>What is WFPB Diet?</h2>
 
+					<p>
+						A pattern of eating that prioritizes nutrient-dense plant foods:
+						vegetables, fruits, beans, legumes, grains, nuts, seeds, etc. And
+						avoids animal products like meat, dairy, or eggs and processed foods
+						like sugar, oil, white/refined flours, etc.
+					</p>
+
+					<h2>Why eat this way?</h2>
+
+					<p>
+						Whole plant foods are typically very high in vitamins, minerals,
+						fiber, resistant starch, and phytochemicals like Carotenoids and
+						Flavonoids. These nutrients are either essential for life or
+						associated with positive health benefits like improved heart or gut
+						health.
+					</p>
+
+					<p>
+						Plant foods are also free of cholesterol and trans fats, which
+						naturally occur in animal products and may negatively impact heart
+						health. Plants are also typically lower in pollution, which can
+						accumulate in animal tissue. Research supports plant-based foods as
+						generally anti-inflammatory and anti-carcinogenic, while animals
+						products can be pro-inflammatory and cancer-promoting.
+					</p>
+
+					<p>
+						Processed foods like sodas, fruit juices, snacks, cookies,
+						deep-fried, etc generally offer little nutritional benefit and a
+						large amount of calories from added sugar and oil. These foods may
+						be stripped of fiber, making you less full. They can be be
+						habit-forming and easy to over-indulge.
+					</p>
+
+					<p>
+						In addition to being extremely healthy, WFPBD is also an ethical way
+						to eat. Animal agriculture is one of the biggest green house gas
+						producers, and the number one cause of antibiotic use, water use,
+						water pollution, plastic oceanic pollution, deforestation/land use,
+						and biodiversity loss.
+					</p>
 					<h2>Starting WFPB Diet</h2>
 					<ol>
 						<li>
-							Recognize that this is not a fad diet or a quick weight-loss scheme.
-							This diet is a lifestyle change {getLink("https://www.andeal.org/vault/2440/web/JADA_VEG.pdf", "appropriate for all stages of the life cycle")}, and should be approached with the mentality to make permanent, sustainable change.
-							Changing ingrained habits is hard, and can take time.
+							Recognize that this is not a fad diet or a quick weight-loss
+							scheme. In order to get results, it needs to be a sustained and
+							consistent habit of healthy eating. Changing ingrained habits is
+							hard, and can take time.
 						</li>
 						<li>
-							Support groups can help you make permanent change.
-							These can include your {getLink("https://www.plantbaseddoctors.org/", "doctor or dietitian")}, online communities, family and and friends and meeting new people at meetups or plant-based festivals.
+							Support groups can help you make permanent change. These can
+							include your{" "}
+							{getLink(
+								"https://www.plantbaseddoctors.org/",
+								"doctor or dietitian"
+							)}, online communities, family, friends and meeting new people at
+							meetups or plant-based festivals.
 						</li>
 						<li>
-							With a consistent change in eating habits, your {getLink("/research?selected=taste#food", "taste")} preferences will change.
-							This typically takes about 2 months.
+							With a consistent change in eating habits, your{" "}
+							{getLink("/research?selected=taste#food", "taste")} preferences
+							will change. This typically takes about 2 months.
 						</li>
 						<li>
-							Don't go grocery shopping when hungry, as it may lead to {getLink("/research?selected=shopping#food", "buying more junk food.")}
+							Don't go grocery shopping when hungry, as it may lead to{" "}
+							{getLink(
+								"/research?selected=shopping#food",
+								"buying more junk food."
+							)}
 						</li>
 					</ol>
+
+					<h2>Common issues</h2>
 				</WidthWrapper>
-
-
-
 
 				{/* <CenteredTextImage
 					height="600px"
@@ -236,8 +285,7 @@ export default class Home extends Component {
 							Chronic disease is a growing plague on the western world.
 
 					</Typography> */}
-
-			</div >
+			</div>
 		);
 	}
 }
