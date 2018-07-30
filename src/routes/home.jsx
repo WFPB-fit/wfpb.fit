@@ -47,15 +47,13 @@ export default class Home extends Component {
 	}
 
 	render() {
-		// this.props.openNav();
 		return (
 			<div>
 				<WidthWrapper>
 					<h1>{window.globalAppData.appName}</h1>
 					<p>
-						This non-profit website makes healthy eating easier by aggregating information.
-						The evidence supports a <b>whole food, low-fat, plant-based diet (WFPBD)</b> as a healthy diet, perhaps THE healthiest diet.
-						These diets have been documented to <b>ease weightloss, reverse heart disease, protect against type II diabetes, prevent cancer, improve autoimmune disease, extend lifespan</b>, and more.
+						This non-profit website aggregates resources about the <b>whole food, low-fat, plant-based diet (WFPBD)</b>.
+						WFPBD has been documented to <b>ease weightloss, reverse heart disease, protect against type II diabetes, help prevent cancer, improve autoimmune disease, extend lifespan</b>, and more.
 						It takes time and effort to change deeply ingrained habits like your food choices, but it is possible.
 						And a healthier life is a happier life.
 					</p>
@@ -65,18 +63,48 @@ export default class Home extends Component {
 						Do not stop taking medications until a doctor says it is safe.
 						Never be afraid of asking questions or getting a
 						{' '}<a href="https://www.plantbaseddoctors.org">second opinion</a>{' '}
-						from another accredited physician or dietitian.
+						from an accredited physician or dietitian.
 					</p>
 
-					<p>
+
+
+					{/* <p>
 						To begin, click the menu in the top left to view
-						{' '}<a href="/getting-started">guides</a>,{' '}
 						{' '}<a href="/research">research</a>,{' '}
 						{' '}<a href="/data">data</a>,{' '}
 						{' '}<a href="/media">media</a>,{' '}
 						{' '}<a href="/endorsements">endorsements</a>,{' '}
 						and more.
-					</p>
+					</p> */}
+					<Button
+						onClick={this.props.toggleDrawer}
+						variant="raised"
+						color="primary"
+					>
+						Get Started
+				</Button>
+
+					<h2>What is WFPB Diet?</h2>
+
+					<h2>Starting WFPB Diet</h2>
+					<ol>
+						<li>
+							Recognize that this is not a fad diet or a quick weight-loss scheme.
+							This diet is a lifestyle change {getLink("https://www.andeal.org/vault/2440/web/JADA_VEG.pdf", "appropriate for all stages of the life cycle")}, and should be approached with the mentality to make permanent, sustainable change.
+							Changing ingrained habits is hard, and can take time.
+						</li>
+						<li>
+							Support groups can help you make permanent change.
+							These can include your {getLink("https://www.plantbaseddoctors.org/", "doctor or dietitian")}, online communities, family and and friends and meeting new people at meetups or plant-based festivals.
+						</li>
+						<li>
+							With a consistent change in eating habits, your {getLink("/research?selected=taste#food", "taste")} preferences will change.
+							This typically takes about 2 months.
+						</li>
+						<li>
+							Don't go grocery shopping when hungry, as it may lead to {getLink("/research?selected=shopping#food", "buying more junk food.")}
+						</li>
+					</ol>
 				</WidthWrapper>
 
 

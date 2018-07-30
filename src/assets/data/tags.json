@@ -1,6 +1,6 @@
 {
 	"disease": ["nitrates", "contaminants", "pollution", "antibiotic resistance", "physicians", "bones", "plant-based diet", "cancer", "multiple sclerosis", "essential tremor", "cardiovascular disease", "teeth", "migraine", "inflammation", "autoimmune", "arthritis", "ibd", "weight", "allergy", "puberty", "lupus", "cognition", "dementia", "mental health", "diabetes", "addiction"],
-	"food": ["soy","milk", "flaxseed", "taste", "fruit", "veges"],
+	"food": ["soy","milk", "flaxseed", "taste","shopping", "fruit", "veges"],
 	"nutrients": ["fiber", "calcium", "ala", "vitamin a", "fat", "trans fat", "saturated fat", "protein", "cholesterol", "phytochemicals"],
 	"environment": ["climate", "deforestation", "meat production", "agriculture", "water", "biodiversity", "pollution", "nitrates", "contaminants"]
 }

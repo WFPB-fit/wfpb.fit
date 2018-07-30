@@ -27,21 +27,7 @@ const bottomLinks = [
 export default class Header extends Component {
 	constructor(props) {
 		super(props);
-		this.toggleDrawer = this.toggleDrawer.bind(this);
-		this.closeDrawer = this.closeDrawer.bind(this);
 		this.getListItemLinks = this.getListItemLinks.bind(this);
-
-		this.state = {
-			drawerOpen: false
-		};
-
-		this.props.saveOpenDialog(this.toggleDrawer);
-	}
-	toggleDrawer() {
-		this.setState({ drawerOpen: !this.state.drawerOpen });
-	}
-	closeDrawer(e) {
-		this.setState({ drawerOpen: false });
 	}
 
 	getListItemLinks(listData) {
@@ -64,7 +50,7 @@ export default class Header extends Component {
 			<div>
 				<AppBar position="static">
 					<Toolbar>
-						<IconButton color="secondary" aria-label="Menu" onClick={this.toggleDrawer}>
+						<IconButton color="secondary" aria-label="Menu" onClick={this.props.toggleDrawer}>
 							<MenuIcon />
 						</IconButton>
 						<Typography variant="title" color="secondary">
@@ -73,12 +59,12 @@ export default class Header extends Component {
 					</Toolbar>
 				</AppBar>
 
-				<Drawer open={this.state.drawerOpen} onClose={this.closeDrawer}>
+				<Drawer open={this.props.drawerOpen} onClose={this.props.closeDrawer}>
 					<div
 						tabIndex={0}
 						role="button"
-						onClick={this.toggleDrawer}
-						onKeyDown={this.toggleDrawer}
+						onClick={this.props.toggleDrawer}
+						onKeyDown={this.props.toggleDrawer}
 					>
 						<List>
 							{this.getListItemLinks(window.navLinks)}
