@@ -116,11 +116,28 @@ export default class Home extends Component {
 					<h2>Issues With WFPBD and How To Avoid Them</h2>
 					<ol>
 						<li>
-							40% of the US is deficient in <b>vitamin B12</b>. Created by
-							bacteria, B12 is stored in animal tissue. If you completely avoid
-							animal products you'll need to take a supplement or eat fortified
-							foods.
+							Created by bacteria, <b>vitamin B12</b> is stored in animal
+							tissue. If you completely avoid animal products you'll need to
+							take a supplement or eat fortified foods. 40% of the US is
+							deficient in B12, so it's a good idea to take a supplement no
+							anyways.
 						</li>
+						<li>
+							Americans eat 2-3x more <b>protein</b> than they need. Excess
+							protein can cause health problems. The USDA recommends 0.4 grams
+							per pound of body weight every day, while Harvard suggests 0.45
+							grams if completely avoiding animal products. High protein plant
+							foods include beans, peas, nuts, seeds, soy products, and whole
+							grains. "Complementary proteins" are not required.
+						</li>
+						<li>
+							<b>Vitamin D</b> is created when our skin is exposed to sunlight.
+							10-20 minutes in the sun, 3 times a week makes enough. When
+							there's not enough sun, Vitamin D must be obtained through food,
+							typically fish or fortified foods. Vitamin or algae supplements
+							are another good source (algae are where fish get theirs from).
+						</li>
+						<li />
 					</ol>
 					<h2>Getting Started Tips</h2>
 					<ol>
@@ -168,15 +185,13 @@ export default class Home extends Component {
 							people, as it limits the amount of times you need to exert
 							willpower.
 						</li>
-						<li><b>It gets easier over time</b> as new healthy habits are formed.</li>
-					</ol>
-
-					<h2>FAQ</h2>
-					<ol>
 						<li>
 							While transitioning away from high calorie foods like oil, sugar,
 							and animal products you may find yourself needing to larger meals
 							and more often in order to get enough calories.
+						</li>
+						<li>
+							<b>It gets easier over time</b> as new healthy habits are formed.
 						</li>
 					</ol>
 				</WidthWrapper>
