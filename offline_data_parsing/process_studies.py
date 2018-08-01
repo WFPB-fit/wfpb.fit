@@ -2,8 +2,8 @@ import json
 
 
 def preprocess_studies(folder_name):
-    with open('./nutrition_studies.json') as nutrition_studies:	
-        studies = json.load(nutrition_studies)
+    with open('./research.json') as research:	
+        studies = json.load(research)
 
     #add ID and export 'quotes' to another dictionary
     study_quotes = {}

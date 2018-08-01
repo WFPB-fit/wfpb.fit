@@ -8,42 +8,8 @@ import {
 	getLink,
 	VerticalMidAlignWrapper
 } from "../utils/GeneralUtils.jsx";
-import ImageDangleText from "../components/imageDangleText";
-import CenteredTextImage from "../components/centeredtextImage";
 
 import styled from "styled-components";
-
-const Row2 = styled.div`
-	padding: 40px;
-	background-color: #ccc;
-	color: black;
-	text-align: center;
-`;
-
-const ImagesRow = styled.div`
-	display: block;
-
-	@media (min-width: 800px) {
-		display: flex;
-		justify-content: space-around;
-	}
-`;
-const White = styled.div`
-	color: white;
-	margin: 5px;
-`;
-const BottomWrap = styled.div`
-	display: flex;
-	justify-content: space-around;
-`;
-const BottomText = styled.div`
-	width: 100%;
-	padding-left: 70px;
-`;
-const BottomImg = styled.img`
-	height: 120px;
-	width: 120px;
-`;
 
 export default class Home extends Component {
 	constructor(props) {
@@ -88,8 +54,10 @@ export default class Home extends Component {
 						A pattern of eating that prioritizes nutrient-dense plant foods:
 						vegetables, fruits, beans, legumes, grains, nuts, seeds, etc. And
 						avoids animal products like meat, dairy, or eggs and processed foods
-						like sugar, oil, white/refined flours, etc.
+						like oil, sugar, white/refined flours, etc.
 					</p>
+
+					{/* <img alt="WFPBD foods" src="/imgs/assets/foods/Fruits_Veg.jpg" /> */}
 
 					<h2>Why eat this way?</h2>
 
@@ -97,25 +65,19 @@ export default class Home extends Component {
 						Whole plant foods are typically very high in vitamins, minerals,
 						fiber, resistant starch, and phytochemicals like Carotenoids and
 						Flavonoids. These nutrients are either essential for life or
-						associated with positive health benefits like improved heart or gut
-						health.
+						associated with positive heart, gut, or other health benefits.
 					</p>
 
 					<p>
-						Plant foods are also free of cholesterol and trans fats, which
-						naturally occur in animal products and may negatively impact heart
-						health. Plants are also typically lower in pollution, which can
-						accumulate in animal tissue. Research supports plant-based foods as
-						generally anti-inflammatory and anti-carcinogenic, while animals
-						products can be pro-inflammatory and cancer-promoting.
-					</p>
-
-					<p>
-						Processed foods like sodas, fruit juices, snacks, cookies,
-						deep-fried, etc generally offer little nutritional benefit and a
-						large amount of calories from added sugar and oil. These foods may
-						be stripped of fiber, making you less full. They can be be
-						habit-forming and easy to over-indulge.
+						Plant foods are also <b>free of cholesterol and trans fats</b>,
+						which naturally occur in animal products and may negatively impact
+						heart health. Research supports plant-based foods as generally
+						<b> anti-inflammatory and cancer preventative</b>, while animal
+						products can be pro-inflammatory and cancer-promoting. Plant foods
+						are the only
+						<b> source of fiber and resistant starch</b>, which is important to
+						intestinal health. Processed foods offer little nutrition for a
+						large amount of calories, and can be difficult to put down.
 					</p>
 
 					<p>
@@ -123,168 +85,101 @@ export default class Home extends Component {
 						to eat. Animal agriculture is one of the biggest green house gas
 						producers, and the number one cause of antibiotic use, water use,
 						water pollution, plastic oceanic pollution, deforestation/land use,
-						and biodiversity loss.
+						and biodiversity loss. It's also not fun for the animals themselves.
 					</p>
-					<h2>Starting WFPB Diet</h2>
+
+					<h2>How can I be sure of these benefits?</h2>
+					<p>
+						For anything you want to believe, you can probably find research to
+						support it. To actually make an <b>evidence-based decision</b>,
+						there must be intelligently designed and honest research that is
+						repeated until a reliable pattern emerges.
+					</p>
+					<p>
+						Without expert training and a constant look into available research,
+						it can be difficult to know what to believe. Professional
+						organizations can summarize research in meta-analysis or research
+						reports, but politics can pressure them into modifying their
+						message. It's difficult to know what's true, and there's no easy
+						answer.
+					</p>
+					<p>
+						Despite these difficulties, we believe WFPBD has sufficient evidence
+						to support it as a healthy way to eat and prevent disease. Decades
+						of quality foundational research, ongoing modern analysis, and the
+						endorsements of international governmental and non-governmental
+						organizations supports this idea. This site attempts to aggregate
+						much of this information, so that you can make a better informed
+						decision about what to feed yourself and your family.
+					</p>
+
+					<h2>Issues With WFPBD and How To Avoid Them</h2>
 					<ol>
 						<li>
-							Recognize that this is not a fad diet or a quick weight-loss
-							scheme. In order to get results, it needs to be a sustained and
-							consistent habit of healthy eating. Changing ingrained habits is
-							hard, and can take time.
+							40% of the US is deficient in <b>vitamin B12</b>. Created by
+							bacteria, B12 is stored in animal tissue. If you completely avoid
+							animal products you'll need to take a supplement or eat fortified
+							foods.
+						</li>
+					</ol>
+					<h2>Getting Started Tips</h2>
+					<ol>
+						<li>
+							<b>This is not a quick weight-loss scheme.</b> This is a pattern
+							of healthy eating that relies on consistent choices (but not
+							perfection).
 						</li>
 						<li>
-							Support groups can help you make permanent change. These can
-							include your{" "}
+							<b>
+								Support groups can help you make <i>permanent</i> change.
+							</b>{" "}
+							These can include your{" "}
 							{getLink(
 								"https://www.plantbaseddoctors.org/",
 								"doctor or dietitian"
 							)}, online communities, family, friends and meeting new people at
-							meetups or plant-based festivals.
+							meetups/plant-based festivals.
 						</li>
 						<li>
-							With a consistent change in eating habits, your{" "}
-							{getLink("/research?selected=taste#food", "taste")} preferences
-							will change. This typically takes about 2 months.
+							With a consistent change in eating habits,{" "}
+							<b>
+								your {getLink("/research?selected=taste#food", "taste")}{" "}
+								preferences will change.
+							</b>{" "}
+							This typically takes about 2 months.
 						</li>
 						<li>
-							Don't go grocery shopping when hungry, as it may lead to{" "}
+							While transitioning away from high calorie foods like oil, sugar,
+							and animal products{" "}
+							<b>you may need to eat larger meals and more often</b> in order to
+							get enough calories (but only if you're actually eating the right
+							foods).
+						</li>
+						<li>
+							<b>Don't go grocery shopping when hungry,</b> as it may lead to{" "}
 							{getLink(
 								"/research?selected=shopping#food",
 								"buying more junk food."
 							)}
 						</li>
+						<li>
+							Reducing the amount of times you eat at restaurants and limiting
+							food purchases only to the grocery store can be helpful for some
+							people, as it limits the amount of times you need to exert
+							willpower.
+						</li>
+						<li><b>It gets easier over time</b> as new healthy habits are formed.</li>
 					</ol>
 
-					<h2>Common issues</h2>
+					<h2>FAQ</h2>
+					<ol>
+						<li>
+							While transitioning away from high calorie foods like oil, sugar,
+							and animal products you may find yourself needing to larger meals
+							and more often in order to get enough calories.
+						</li>
+					</ol>
 				</WidthWrapper>
-
-				{/* <CenteredTextImage
-					height="600px"
-					src="/imgs/assets/filler/veges.jpg" // https://commons.wikimedia.org/wiki/File:Fruit_%26_vegs_assortment.jpg
-				>
-
-					<Typography variant='display3' align="center">
-						<White>
-							Diet Quick Ref
-						</White>
-					</Typography>
-
-					<Typography variant='subheading' align="center">
-						<White>
-							Healthy Eating, Simplified
-						</White>
-
-						<Button
-							onClick={this.props.openNav}
-							variant="raised" 
-							color="primary"
-						>
-							Get Started
-						</Button>
-					</Typography>
-				</CenteredTextImage>
-
-				<Row2>
-					<Typography variant="headline">
-						Fast, Free, Evidence-Based Nutrition Advice
-					</Typography>
-				</Row2>
-
-				<WidthWrapper>
-
-					<ImagesRow>
-						<ImageDangleText
-							src="/imgs/assets/icons/health.png"
-							text={
-								<ul>
-									<li>Lower risk of death</li>
-									<li>Treat chronic disease</li>
-									<li>Enhance fitness</li>
-									<li>Prevent pain</li>
-								</ul>
-							}
-						/>
-						<ImageDangleText
-							src="/imgs/assets/icons/mental-health.png"
-							text={
-								<ul>
-									<li>Look good</li>
-									<li>Feel great</li>
-									<li>Improve energy</li>
-									<li>Take control of your health</li>
-								</ul>
-							}
-						/>
-						<ImageDangleText
-							src="/imgs/assets/icons/burger.png"
-							text={
-								<ul>
-									<li>Delicious Food</li>
-									<li>Simple Recipes</li>
-								</ul>
-							}
-						/>
-					</ImagesRow>
-
-					<ImagesRow>
-						<ImageDangleText
-							src="/imgs/assets/icons/microscope.png"
-							text={
-								<span>
-									Peer-reviewed {getLink("/research", "research")} to kick-start your nutrition learning experience.
-									Become better informed at the supermarket and when talking with your doctor.
-								</span>
-							}
-						/>
-						<ImageDangleText
-							src="/imgs/assets/icons/hdd.png"
-							text={
-								<span>
-									{getLink("/food", "Data")} from thousands of foods for easy nutrition comparison.
-									Negative externality data gives overview of environmental impact of food production.
-								</span>
-							}
-						/>
-						<ImageDangleText
-							src="/imgs/assets/icons/piggy-bank.png"
-							text={
-								<span>
-									We find the best deals online, so that eating healthy doesn't have to break the bank.
-								</span>
-							}
-						/>
-					</ImagesRow>
-
-				</WidthWrapper>
-
-				<CenteredTextImage
-					height="400px"
-					src="/imgs/assets/filler/vegesNCI.jpg" // https://commons.wikimedia.org/wiki/File:Fruit_%26_vegs_assortment.jpg
-				>
-					<BottomWrap>
-						<VerticalMidAlignWrapper>
-							<BottomImg
-								src="/imgs/assets/icons/berry.png" />
-						</VerticalMidAlignWrapper>
-
-						<BottomText>
-							<Typography variant="display1"><White>Fix Your Health Now</White></Typography>
-								<White>
-								Diet is vitally important part of a healthy life, and is often overlooked and misunderstood.
-								Fads can make you lose weight, but day-to-day eating habits will keep you healthy long-term.
-								Click above to start learning how.
-								</White>
-						</BottomText>
-					</BottomWrap>
-				</CenteredTextImage> */}
-
-				{/* https://www.cdc.gov/nchs/data/databriefs/db288.pdf - https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?BeginYear=2015
-                https://www.cdc.gov/nchs/fastats/leading-causes-of-death.htm */}
-				{/* <Typography>
-							Chronic disease is a growing plague on the western world.
-
-					</Typography> */}
 			</div>
 		);
 	}

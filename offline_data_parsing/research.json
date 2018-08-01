@@ -1370,6 +1370,15 @@
 		"quote": "At least 542,000 people in Britain are now following a vegan diet and never consume any animal products including meat, fish, milk, cheese, eggs and honey. This is a whopping increase since the last estimate of 150,000 ten years ago, making veganism one of Britain’s fastest growing lifestyle movements."
 	},
 	{
+		"title": "Here's How America Uses Its Land",
+		"url": "https://www.bloomberg.com/graphics/2018-us-land-use/",
+		"year": 2018,
+		"type": "article",
+		"availability": "full",
+		"tags": "land",
+		"quote":"There’s a single, major occupant on all this land: cows. Between pastures and cropland used to produce feed, 41 percent of U.S. land in the contiguous states revolves around livestock."
+	},
+	{
 		"title": "2017 Global Nutrition Report",
 		"url": "http://www.globalnutritionreport.org/the-report/",
 		"pdf": "https://www.globalnutritionreport.org/files/2017/11/Report_2017.pdf",
@@ -2995,7 +3004,7 @@
 		"year": 2017,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "climate,meat production",
+		"tags": "climate,meat production,land use",
 		"quote": "Our results demonstrate that substituting one food for another, beans for beef, could achieve approximately 46 to 74% of the reductions needed to meet the 2020 GHG [greenhouse gas) target for the US. In turn, this shift would free up 42% of US cropland (692,918 km2)."
 	},
 	{
