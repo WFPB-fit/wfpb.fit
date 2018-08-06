@@ -113,38 +113,62 @@ export default class Home extends Component {
 						decision about what to feed yourself and your family.
 					</p>
 
-					<h2>Issues With WFPBD and How To Avoid Them</h2>
+					<h2>Potential Pitfalls</h2>
 					<ol>
 						<li>
 							Created by bacteria, <b>vitamin B12</b> is stored in animal
-							tissue. If you completely avoid animal products you'll need to
-							take a supplement or eat fortified foods. 40% of the US is
-							deficient in B12, so it's a good idea to take a supplement no
-							anyways.
+							tissue. Without eating animals B12 will need to come from
+							supplements or fortified food. Even without a strict vegetarian
+							diet, it can be helpful to supplement because{" "}
+							{getLink(
+								"https://www.plantbaseddoctors.org/",
+								"3% of US adults and 7% of seniors are B12 deficient, and 14-17% of adults are marginally depleted."
+							)}
 						</li>
 						<li>
 							Americans eat 2-3x more <b>protein</b> than they need. Excess
 							protein can cause health problems. The USDA recommends 0.4 grams
-							per pound of body weight every day, while Harvard suggests 0.45
-							grams if completely avoiding animal products. High protein plant
-							foods include beans, peas, nuts, seeds, soy products, and whole
-							grains. "Complementary proteins" are not required.
+							per pound of body weight every day. High protein plant foods
+							include beans, peas, nuts, seeds, soy products, and whole grains.
+							"Complementary proteins" are an outdated idea, and are not
+							required.
 						</li>
 						<li>
 							<b>Vitamin D</b> is created when our skin is exposed to sunlight.
 							10-20 minutes in the sun, 3 times a week makes enough. When
 							there's not enough sun, Vitamin D must be obtained through food,
 							typically fish or fortified foods. Vitamin or algae supplements
-							are another good source (algae are where fish get theirs from).
+							are another good source (algae are where fish Vitamin D).
 						</li>
-						<li />
+						<li>
+							<b>Omega 3 fatty acids</b> have been shown to support a healthy
+							lifestyle. Plants only make ALA. Your body can convert ALA to the
+							more useful DHA+EPA, but only in small amounts. It can be good to
+							supplement with DHA/EPA derived from algae, fulfilling your daily
+							requirement while avoiding the environmental contamination found
+							in fish.
+						</li>
+						<li>
+							<b>Iron</b> is harder to absorb from plants (non-heme) than
+							animals (heme). Eating a variety of plant foods including green
+							leafy vegetables, beans, whole grains, and seeds will get you an
+							adequate amount. Combining iron-rich plants with foods high in
+							Vitamin C (like fruit or green leafy vegetables) can help
+							absorption.
+						</li>
 					</ol>
 					<h2>Getting Started Tips</h2>
 					<ol>
 						<li>
-							<b>This is not a quick weight-loss scheme.</b> This is a pattern
-							of healthy eating that relies on consistent choices (but not
-							perfection).
+							<b>Everyone's body is different.</b> Reducing animal
+							products/processed foods and increasing WFPB intake is generally
+							associated with better health. However, allergies, food
+							sensitivities, or digestion issues may make your individual diet
+							look a little different.
+						</li>
+						<li>
+							<b>Perfection is not required</b>. However, to get significant
+							health benefits <b>long-term consistency is important</b>.
 						</li>
 						<li>
 							<b>
@@ -154,23 +178,19 @@ export default class Home extends Component {
 							{getLink(
 								"https://www.plantbaseddoctors.org/",
 								"doctor or dietitian"
-							)}, online communities, family, friends and meeting new people at
-							meetups/plant-based festivals.
+							)}, online communities, family, and friends.
 						</li>
 						<li>
 							With a consistent change in eating habits,{" "}
 							<b>
-								your {getLink("/research?selected=taste#food", "taste")}{" "}
-								preferences will change.
+								{getLink("/research?selected=taste#food", "taste can change")}
 							</b>{" "}
-							This typically takes about 2 months.
+							in as little as 2 months.
 						</li>
 						<li>
-							While transitioning away from high calorie foods like oil, sugar,
-							and animal products{" "}
-							<b>you may need to eat larger meals and more often</b> in order to
-							get enough calories (but only if you're actually eating the right
-							foods).
+							Eating low-calorie, nutritionally dense food may make you hungry
+							more often. <b>Increase size/frequency of WFPB meals</b> to avoid
+							grogginess while still maintaining your calorie goals.
 						</li>
 						<li>
 							<b>Don't go grocery shopping when hungry,</b> as it may lead to{" "}
@@ -179,19 +199,28 @@ export default class Home extends Component {
 								"buying more junk food."
 							)}
 						</li>
+						{/* <li>
+							Limiting food purchases to the grocery store can be helpful, as it limits
+							the number of times to exert willpower.
+						</li> */}
 						<li>
-							Reducing the amount of times you eat at restaurants and limiting
-							food purchases only to the grocery store can be helpful for some
-							people, as it limits the amount of times you need to exert
-							willpower.
+							<b>Buy and prepare food in bulk</b> to save time and money.
+							Preparing ahead of time can lead to{" "}
+							{getLink(
+								"https://www.ncbi.nlm.nih.gov/pubmed/23597811",
+								"healthier eating choices."
+							)}
 						</li>
 						<li>
-							While transitioning away from high calorie foods like oil, sugar,
-							and animal products you may find yourself needing to larger meals
-							and more often in order to get enough calories.
+							<b>Reduce food waste</b> by{" "}
+							{getLink(
+								"/imgs/assets/foods/produce-chart.jpg",
+								"properly storing produce"
+							)}
+							.
 						</li>
 						<li>
-							<b>It gets easier over time</b> as new healthy habits are formed.
+							<b>It gets easier</b> as you form new healthy habits.
 						</li>
 					</ol>
 				</WidthWrapper>
