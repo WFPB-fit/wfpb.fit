@@ -11,6 +11,13 @@ import {
 
 import styled from "styled-components";
 
+const HomeImg = styled.img`
+	max-width: 60%;
+	padding: 5px;
+	margin: 0 auto;
+	display: block;
+`;
+
 export default class Home extends Component {
 	constructor(props) {
 		super(props);
@@ -35,9 +42,9 @@ export default class Home extends Component {
 					<p>
 						If you have an illness, discuss your diet with your doctor before
 						making changes. Do not stop taking medications until a doctor says
-						it is safe. Never be afraid of asking questions or getting a{" "}
-						<a href="https://www.plantbaseddoctors.org">second opinion</a> from
-						an accredited physician or dietitian.
+						it is safe. Never be afraid of asking questions or getting a
+						{getLink("https://www.plantbaseddoctors.org", "second opinion")}
+						from an accredited physician or dietitian.
 					</p>
 
 					<Button
@@ -51,11 +58,37 @@ export default class Home extends Component {
 					<h2>What is WFPB Diet?</h2>
 
 					<p>
-						A pattern of eating that prioritizes nutrient-dense plant foods:
-						vegetables, fruits, beans, legumes, grains, nuts, seeds, etc. And
-						avoids animal products like meat, dairy, or eggs and processed foods
-						like oil, sugar, white/refined flours, etc.
+						Eating habits that prioritize a diverse range of nutrient-dense
+						plant foods, and avoids animal products and processed foods.
 					</p>
+
+					<p>
+						WFPB is similar to the
+						{getLink(
+							"https://www.hsph.harvard.edu/nutritionsource/healthy-weight/diet-reviews/mediterranean-diet/",
+							"Mediterranean Diet"
+						)}
+						and the
+						{getLink(
+							"https://www.hsph.harvard.edu/nutritionsource/healthy-weight/diet-reviews/dash-diet/",
+							"DASH Diet"
+						)}
+						with its focus on plants like vegetables, fruits, beans, legumes,
+						grains, nuts, seeds, even mushrooms and more. However, it also
+						recommends completely abstaining from any animal product such as
+						dairy, eggs, meat, poultry, or seafood. Processed foods like sugar,
+						white flours, and even oil should also be minimized. Some sample
+						food pyramids are below.
+					</p>
+
+					<HomeImg
+						src="/imgs/assets/foods/pyramids/gregor-daily-dozen.jpg"
+						alt="Nutrition Facts Daily Dozen"
+					/>
+					<HomeImg
+						src="/imgs/assets/foods/pyramids/Plant-Based-Dietitian-Pyramid.jpg"
+						alt="Plant-Based-Dietitian-Pyramid"
+					/>
 
 					{/* <img alt="WFPBD foods" src="/imgs/assets/foods/Fruits_Veg.jpg" /> */}
 
@@ -81,27 +114,20 @@ export default class Home extends Component {
 					</p>
 
 					<p>
-						In addition to being extremely healthy, WFPBD is also an ethical way
-						to eat. Animal agriculture is one of the biggest green house gas
-						producers, and the number one cause of antibiotic use, water use,
-						water pollution, plastic oceanic pollution, deforestation/land use,
-						and biodiversity loss. It's also not fun for the animals themselves.
+						In addition to being extremely healthy,{" "}
+						<b>WFPBD is also an ethical way to eat.</b> Animal agriculture is
+						one of the biggest green house gas producers, and the number one
+						cause of antibiotic use, water use, water pollution, plastic oceanic
+						pollution, deforestation/land use, and biodiversity loss. It's also
+						not fun for the animals themselves.
 					</p>
 
 					<h2>How can I be sure of these benefits?</h2>
 					<p>
-						For anything you want to believe, you can probably find research to
-						support it. To actually make an <b>evidence-based decision</b>,
-						there must be intelligently designed and honest research that is
-						repeated until a reliable pattern emerges.
-					</p>
-					<p>
 						Without expert training and a constant look into available research,
-						it can be difficult to know what to believe. Professional
-						organizations can summarize research in meta-analysis or research
-						reports, but politics can pressure them into modifying their
-						message. It's difficult to know what's true, and there's no easy
-						answer.
+						it can be difficult to know what to believe. Studies can be poorly
+						or dishonestly designed. Professional organizations can summarize
+						research, but bias and politics can warp their conclusions.
 					</p>
 					<p>
 						Despite these difficulties, we believe WFPBD has sufficient evidence
@@ -109,8 +135,8 @@ export default class Home extends Component {
 						of quality foundational research, ongoing modern analysis, and the
 						endorsements of international governmental and non-governmental
 						organizations supports this idea. This site attempts to aggregate
-						much of this information, so that you can make a better informed
-						decision about what to feed yourself and your family.
+						this info, so that you can be better informed about this healthy way
+						of eating.
 					</p>
 
 					<h2>Potential Pitfalls</h2>
@@ -119,7 +145,7 @@ export default class Home extends Component {
 							Created by bacteria, <b>vitamin B12</b> is stored in animal
 							tissue. Without eating animals B12 will need to come from
 							supplements or fortified food. Even without a strict vegetarian
-							diet, it can be helpful to supplement because{" "}
+							diet, it can be helpful to supplement because
 							{getLink(
 								"https://www.plantbaseddoctors.org/",
 								"3% of US adults and 7% of seniors are B12 deficient, and 14-17% of adults are marginally depleted."
@@ -174,17 +200,25 @@ export default class Home extends Component {
 							<b>
 								Support groups can help you make <i>permanent</i> change.
 							</b>{" "}
-							These can include your{" "}
+							These can include your
 							{getLink(
 								"https://www.plantbaseddoctors.org/",
 								"doctor or dietitian"
 							)}, online communities, family, and friends.
 						</li>
 						<li>
-							With a consistent change in eating habits,{" "}
+							Focusing on eating "good stuff" may be easier than trying to avoid
+							"bad stuff".
+							<b>
+								Filling up on healthy whole foods makes it harder to crave
+								unhealthy snacks.
+							</b>
+						</li>
+						<li>
+							With a consistent change in eating habits,
 							<b>
 								{getLink("/research?selected=taste#food", "taste can change")}
-							</b>{" "}
+							</b>
 							in as little as 2 months.
 						</li>
 						<li>
@@ -193,7 +227,7 @@ export default class Home extends Component {
 							grogginess while still maintaining your calorie goals.
 						</li>
 						<li>
-							<b>Don't go grocery shopping when hungry,</b> as it may lead to{" "}
+							<b>Don't go grocery shopping when hungry,</b> as it may lead to
 							{getLink(
 								"/research?selected=shopping#food",
 								"buying more junk food."
@@ -205,19 +239,18 @@ export default class Home extends Component {
 						</li> */}
 						<li>
 							<b>Buy and prepare food in bulk</b> to save time and money.
-							Preparing ahead of time can lead to{" "}
+							Preparing ahead of time can lead to
 							{getLink(
 								"https://www.ncbi.nlm.nih.gov/pubmed/23597811",
 								"healthier eating choices."
 							)}
 						</li>
 						<li>
-							<b>Reduce food waste</b> by{" "}
+							<b>Reduce food waste</b> by
 							{getLink(
 								"/imgs/assets/foods/produce-chart.jpg",
-								"properly storing produce"
+								"properly storing produce."
 							)}
-							.
 						</li>
 						<li>
 							<b>It gets easier</b> as you form new healthy habits.
