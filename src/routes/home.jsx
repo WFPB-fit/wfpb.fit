@@ -11,8 +11,18 @@ import {
 
 import styled from "styled-components";
 
-const HomeImg = styled.img`
-	max-width: 60%;
+import ModalImage from "../components/ModalImage";
+
+const TallSkinnyImg = styled.img`
+	width: 60%;
+	max-width: 400px;
+	padding: 5px;
+	margin: 0 auto;
+	display: block;
+`;
+const SquarishImg = styled.img`
+	width: 70%;
+	max-width: 800px;
 	padding: 5px;
 	margin: 0 auto;
 	display: block;
@@ -59,7 +69,7 @@ export default class Home extends Component {
 
 					<p>
 						Eating habits that prioritize a diverse range of nutrient-dense
-						plant foods, and avoids animal products and processed foods.
+						plant foods, and avoid animal products and processed foods.
 					</p>
 
 					<p>
@@ -74,18 +84,25 @@ export default class Home extends Component {
 							"DASH Diet"
 						)}
 						with its focus on plants like vegetables, fruits, beans, legumes,
-						grains, nuts, seeds, even mushrooms and more. However, it also
-						recommends completely abstaining from any animal product such as
-						dairy, eggs, meat, poultry, or seafood. Processed foods like sugar,
-						white flours, and even oil should also be minimized. Some sample
-						food pyramids are below.
+						grains, nuts, seeds, mushrooms etc. It differs by recommending
+						against animal products like dairy, eggs, meat, poultry, or seafood.
+						Processed foods like sugar, white flours, and even oil should also
+						be minimized. Some sample food pyramids are below.
 					</p>
 
-					<HomeImg
+					<ModalImage
 						src="/imgs/assets/foods/pyramids/gregor-daily-dozen.jpg"
 						alt="Nutrition Facts Daily Dozen"
 					/>
-					<HomeImg
+					<ModalImage
+						src="/imgs/assets/foods/pyramids/Plant-Based-Dietitian-Pyramid.jpg"
+						alt="Plant-Based-Dietitian-Pyramid"
+					/>
+					<TallSkinnyImg
+						src="/imgs/assets/foods/pyramids/gregor-daily-dozen.jpg"
+						alt="Nutrition Facts Daily Dozen"
+					/>
+					<SquarishImg
 						src="/imgs/assets/foods/pyramids/Plant-Based-Dietitian-Pyramid.jpg"
 						alt="Plant-Based-Dietitian-Pyramid"
 					/>
@@ -95,31 +112,91 @@ export default class Home extends Component {
 					<h2>Why eat this way?</h2>
 
 					<p>
-						Whole plant foods are typically very high in vitamins, minerals,
-						fiber, resistant starch, and phytochemicals like Carotenoids and
-						Flavonoids. These nutrients are either essential for life or
-						associated with positive heart, gut, or other health benefits.
+						<b>
+							Disease is expensive, time consuming, miserable, and socially
+							difficult.
+						</b>{" "}
+						WFPB gives us a way to take control of our health and help avoid
+						many different types of disease. It works in a variety of ways:
 					</p>
 
-					<p>
-						Plant foods are also <b>free of cholesterol and trans fats</b>,
-						which naturally occur in animal products and may negatively impact
-						heart health. Research supports plant-based foods as generally
-						<b> anti-inflammatory and cancer preventative</b>, while animal
-						products can be pro-inflammatory and cancer-promoting. Plant foods
-						are the only
-						<b> source of fiber and resistant starch</b>, which is important to
-						intestinal health. Processed foods offer little nutrition for a
-						large amount of calories, and can be difficult to put down.
-					</p>
+					<ul>
+						<li>
+							<b>
+								Cholesterol is absorbed from animals and gets caught in our
+								arteries (Athleroscloris)
+							</b>. Athleroscloris can lead to heart disease and may play a role
+							in other chronic diseases. Plants do not contain cholesterol.
+							Plants contain phytosterols, which help reverse Athleroscloris.
+						</li>
+						<li>
+							<b>
+								Trans fat is found in animal meat and some oils, and can
+								contribute to heart disease.
+							</b>{" "}
+							Plants do not contain trans fat.
+						</li>
+						<li>
+							Whole plants contains fiber and resistant starch (RS). Poorly
+							digested by our bodies,{" "}
+							<b>fiber and RS feed the good bacteria in our gut</b>. Good
+							bacteria help feed and support our body's cells in the gut. By
+							feeding the bad bacteria with animal products/processed foods, or{" "}
+							<b>
+								by not feeding the good bacteria enough, our gut can let in more
+								disease-causing molecules ("leaky gut syndrome").
+							</b>{" "}
+							This overactivates the immune system and can lead to inflammation
+							and autoimmune disease.
+						</li>
+						<li>
+							<b>
+								Fiber and resistant starch is filling, and make it easier to
+								stop over-eating.{" "}
+							</b>
+						</li>
+						<li>
+							Oxidative stress is the process of oxygen molecules reacting with
+							the DNA in our cells. These reactions can lead to mutations and
+							cancer.{" "}
+							<b>
+								Antioxidants help prevent oxidative stress, and are bountiful in
+								plants.
+							</b>{" "}
+							Antioxidants include vitamins and plant chemicals (phytochemicals)
+							like Carotenoids (plant pigments) and Flavonoids.
+						</li>
+						<li>
+							<b>
+								Animal products contain infectious disease causing organisms
+								(pathogens).
+							</b>{" "}
+							Food safety ensures pathogens do not grow, but mistakes can lead
+							to <b>food-borne illness.</b> Only when contaminated with animal
+							waste do plants lead to food-borne illness.
+						</li>
+						<li>
+							Evidence suggests{" "}
+							<b>
+								long-term exposure to small amounts of animal pathogens may lead
+								to certain chronic disease.
+							</b>
+						</li>
+						<li>
+							Animal agriculture is the #1 user of antibiotics, and even uses
+							"last-resort" antibiotics.{" "}
+							<b>
+								Closely confined and medicated animals leads to the evolution of
+								new diseases and antibiotic-resistent diseases.
+							</b>
+						</li>
+					</ul>
 
 					<p>
-						In addition to being extremely healthy,{" "}
-						<b>WFPBD is also an ethical way to eat.</b> Animal agriculture is
-						one of the biggest green house gas producers, and the number one
-						cause of antibiotic use, water use, water pollution, plastic oceanic
-						pollution, deforestation/land use, and biodiversity loss. It's also
-						not fun for the animals themselves.
+						<b>WFPBD is also an ethical way to eat. </b> Animal agriculture is
+						one of the biggest contributors to climate change and the #1 cause
+						of water use, land use, water pollution, animal death,
+						deforestation, and plastic in the ocean.
 					</p>
 
 					<h2>How can I be sure of these benefits?</h2>
@@ -145,19 +222,20 @@ export default class Home extends Component {
 							Created by bacteria, <b>vitamin B12</b> is stored in animal
 							tissue. Without eating animals B12 will need to come from
 							supplements or fortified food. Even without a strict vegetarian
-							diet, it can be helpful to supplement because
+							diet, it can be helpful to supplement as
 							{getLink(
 								"https://www.plantbaseddoctors.org/",
 								"3% of US adults and 7% of seniors are B12 deficient, and 14-17% of adults are marginally depleted."
 							)}
 						</li>
 						<li>
-							Americans eat 2-3x more <b>protein</b> than they need. Excess
-							protein can cause health problems. The USDA recommends 0.4 grams
-							per pound of body weight every day. High protein plant foods
-							include beans, peas, nuts, seeds, soy products, and whole grains.
-							"Complementary proteins" are an outdated idea, and are not
-							required.
+							Americans eat about double the recommended amount of{" "}
+							<b>protein</b>. Excess protein can cause bone mass loss, kidney or
+							liver disease, and ..... The USDA recommends 0.4 grams per pound
+							of body weight every day, but athletes or strict vegetarians may
+							need more. High protein plant foods include beans, peas, nuts,
+							seeds, soy products, and whole grains. "Complementary proteins"
+							are an outdated idea, and are not required.
 						</li>
 						<li>
 							<b>Vitamin D</b> is created when our skin is exposed to sunlight.
