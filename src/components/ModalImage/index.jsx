@@ -28,6 +28,10 @@ export default class LinkableSelect extends Component {
 					src={this.props.src}
 					alt={this.props.alt}
 					onClick={this.handleOpen}
+					style={{
+						cursor:'pointer'
+					}}
+					className={this.props.className}
 				/>
 				<Modal
 					// aria-labelledby="simple-modal-title"
@@ -39,7 +43,8 @@ export default class LinkableSelect extends Component {
 						style={{
 							top: `50%`,
 							left: `50%`,
-							// transform: `translate(-50%, -50%)`
+							position:`absolute`,
+							transform: `translate(-50%, -50%)`
 						}}
 						src={this.props.src}
 						alt={this.props.alt}

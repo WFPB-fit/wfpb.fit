@@ -13,14 +13,15 @@ import styled from "styled-components";
 
 import ModalImage from "../components/ModalImage";
 
-const TallSkinnyImg = styled.img`
+const TallSkinnyImg = styled(ModalImage)`
 	width: 60%;
 	max-width: 400px;
 	padding: 5px;
 	margin: 0 auto;
 	display: block;
+	color:black;
 `;
-const SquarishImg = styled.img`
+const SquarishImg = styled(ModalImage)`
 	width: 70%;
 	max-width: 800px;
 	padding: 5px;
@@ -89,15 +90,7 @@ export default class Home extends Component {
 						Processed foods like sugar, white flours, and even oil should also
 						be minimized. Some sample food pyramids are below.
 					</p>
-
-					<ModalImage
-						src="/imgs/assets/foods/pyramids/gregor-daily-dozen.jpg"
-						alt="Nutrition Facts Daily Dozen"
-					/>
-					<ModalImage
-						src="/imgs/assets/foods/pyramids/Plant-Based-Dietitian-Pyramid.jpg"
-						alt="Plant-Based-Dietitian-Pyramid"
-					/>
+					
 					<TallSkinnyImg
 						src="/imgs/assets/foods/pyramids/gregor-daily-dozen.jpg"
 						alt="Nutrition Facts Daily Dozen"
