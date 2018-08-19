@@ -44,7 +44,8 @@ export default class LinkableSelect extends Component {
 							top: `50%`,
 							left: `50%`,
 							position:`absolute`,
-							transform: `translate(-50%, -50%)`
+							transform: `translate(-50%, -50%)`,
+							maxHeight: `100%`
 						}}
 						src={this.props.src}
 						alt={this.props.alt}

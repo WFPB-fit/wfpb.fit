@@ -19,7 +19,7 @@ const TallSkinnyImg = styled(ModalImage)`
 	padding: 5px;
 	margin: 0 auto;
 	display: block;
-	color:black;
+	color: black;
 `;
 const SquarishImg = styled(ModalImage)`
 	width: 70%;
@@ -47,7 +47,8 @@ export default class Home extends Component {
 							ease weightloss, reverse heart disease, protect against type II
 							diabetes, help prevent cancer, improve autoimmune disease, extend
 							lifespan
-						</b>, and more.
+						</b>
+						, and more.
 					</p>
 					<h3>DISCLAIMER</h3>
 					<p>
@@ -69,28 +70,42 @@ export default class Home extends Component {
 					<h2>What is WFPB Diet?</h2>
 
 					<p>
-						Eating habits that prioritize a diverse range of nutrient-dense
-						plant foods, and avoid animal products and processed foods.
-					</p>
-
-					<p>
-						WFPB is similar to the
+						WFPB is somewhat similar to the
 						{getLink(
 							"https://www.hsph.harvard.edu/nutritionsource/healthy-weight/diet-reviews/mediterranean-diet/",
 							"Mediterranean Diet"
 						)}
-						and the
+						or the
 						{getLink(
 							"https://www.hsph.harvard.edu/nutritionsource/healthy-weight/diet-reviews/dash-diet/",
 							"DASH Diet"
 						)}
-						with its focus on plants like vegetables, fruits, beans, legumes,
-						grains, nuts, seeds, mushrooms etc. It differs by recommending
-						against animal products like dairy, eggs, meat, poultry, or seafood.
-						Processed foods like sugar, white flours, and even oil should also
-						be minimized. Some sample food pyramids are below.
+						. WFPBD is eating habits that prioritize a diverse range of
+						nutrient-dense plant foods, and avoid animal products and processed
+						foods.
 					</p>
-					
+					<h3>What do you eat?</h3>
+					<p>
+						Nutrient dense plant foods include: vegetables, fruits, beans,
+						legumes, whole grains, nuts, seeds, and more.
+					</p>
+					<p>
+						Also, other plant-like foods such as fungi or algae are generally
+						nutritious and can be eaten.
+					</p>
+					<p>
+						Animal products are to be avoided and include meat, dairy, eggs,
+						poultry, seafood, etc.
+					</p>
+					<p>
+						Processed foods include sugar, refined grains, oil, candies, creams,
+						etc.
+					</p>
+					<p>
+						There are multiple food pyramids or infographics that show this
+						diet, a few are below.
+					</p>
+
 					<TallSkinnyImg
 						src="/imgs/assets/foods/pyramids/gregor-daily-dozen.jpg"
 						alt="Nutrition Facts Daily Dozen"
@@ -109,22 +124,31 @@ export default class Home extends Component {
 							Disease is expensive, time consuming, miserable, and socially
 							difficult.
 						</b>{" "}
-						WFPB gives us a way to take control of our health and help avoid
-						many different types of disease. It works in a variety of ways:
+						Diet is a powerful way to avoid, or cause, many diseases.
 					</p>
+
+					<p>
+						<b>WFPBD is also an ethical way to eat. </b> Animal agriculture is
+						the #1 cause of antibiotic use, water use, water pollution, land
+						use, native habitat destruction, plastic in the ocean, animal death,
+						and is one of the biggest contributors to climate change.
+					</p>
+
+					<h2>How does it work?</h2>
 
 					<ul>
 						<li>
 							<b>
 								Cholesterol is absorbed from animals and gets caught in our
-								arteries (Athleroscloris)
-							</b>. Athleroscloris can lead to heart disease and may play a role
-							in other chronic diseases. Plants do not contain cholesterol.
-							Plants contain phytosterols, which help reverse Athleroscloris.
+								arteries, eventually leading to Athleroscloris
+							</b>
+							. Athleroscloris can lead to heart disease and may play a role in
+							other chronic diseases. Plants do not contain cholesterol. Plants
+							contain phytosterols, which help reverse Athleroscloris.
 						</li>
 						<li>
 							<b>
-								Trans fat is found in animal meat and some oils, and can
+								Trans fat is found in animal meat and hydrogenated oils, and can
 								contribute to heart disease.
 							</b>{" "}
 							Plants do not contain trans fat.
@@ -133,31 +157,31 @@ export default class Home extends Component {
 							Whole plants contains fiber and resistant starch (RS). Poorly
 							digested by our bodies,{" "}
 							<b>fiber and RS feed the good bacteria in our gut</b>. Good
-							bacteria help feed and support our body's cells in the gut. By
-							feeding the bad bacteria with animal products/processed foods, or{" "}
+							bacteria help feed and support our body's cells in the gut, and
+							crowd out bad bacteria. By feeding the bad bacteria with animal
+							products/processed foods, or{" "}
 							<b>
-								by not feeding the good bacteria enough, our gut can let in more
-								disease-causing molecules ("leaky gut syndrome").
+								by not feeding the good bacteria enough, our gut can let
+								disease-causing molecules into our body ("leaky gut syndrome").
 							</b>{" "}
-							This overactivates the immune system and can lead to inflammation
-							and autoimmune disease.
+							This overactivates the immune system and can lead to inflammation,
+							autoimmune disease, and cancer.
 						</li>
 						<li>
 							<b>
 								Fiber and resistant starch is filling, and make it easier to
-								stop over-eating.{" "}
+								stop over-eating (increased satiety).{" "}
 							</b>
 						</li>
 						<li>
-							Oxidative stress is the process of oxygen molecules reacting with
-							the DNA in our cells. These reactions can lead to mutations and
-							cancer.{" "}
+							Cells and their DNA can be damaged by Oxidative Stress. This can
+							lead to cancer and other diseases.{" "}
 							<b>
 								Antioxidants help prevent oxidative stress, and are bountiful in
 								plants.
 							</b>{" "}
 							Antioxidants include vitamins and plant chemicals (phytochemicals)
-							like Carotenoids (plant pigments) and Flavonoids.
+							like Carotenoids and Flavonoids.
 						</li>
 						<li>
 							<b>
@@ -169,13 +193,6 @@ export default class Home extends Component {
 							waste do plants lead to food-borne illness.
 						</li>
 						<li>
-							Evidence suggests{" "}
-							<b>
-								long-term exposure to small amounts of animal pathogens may lead
-								to certain chronic disease.
-							</b>
-						</li>
-						<li>
 							Animal agriculture is the #1 user of antibiotics, and even uses
 							"last-resort" antibiotics.{" "}
 							<b>
@@ -183,38 +200,33 @@ export default class Home extends Component {
 								new diseases and antibiotic-resistent diseases.
 							</b>
 						</li>
+						<li>And more...</li>
 					</ul>
-
-					<p>
-						<b>WFPBD is also an ethical way to eat. </b> Animal agriculture is
-						one of the biggest contributors to climate change and the #1 cause
-						of water use, land use, water pollution, animal death,
-						deforestation, and plastic in the ocean.
-					</p>
 
 					<h2>How can I be sure of these benefits?</h2>
 					<p>
-						Without expert training and a constant look into available research,
-						it can be difficult to know what to believe. Studies can be poorly
-						or dishonestly designed. Professional organizations can summarize
-						research, but bias and politics can warp their conclusions.
+						Without expert training and a constant look into available research,{" "}
+						<b>it can be difficult to know what to believe. </b>
+						Studies can be poorly or dishonestly designed. Meta analysis can
+						summarize research, but bias and politics can warp their
+						conclusions.
 					</p>
 					<p>
-						Despite these difficulties, we believe WFPBD has sufficient evidence
-						to support it as a healthy way to eat and prevent disease. Decades
-						of quality foundational research, ongoing modern analysis, and the
-						endorsements of international governmental and non-governmental
-						organizations supports this idea. This site attempts to aggregate
-						this info, so that you can be better informed about this healthy way
-						of eating.
+						<b>
+							WFPBD has a large body of evidence to support it as a healthy way
+							to eat.
+						</b>{" "}
+						Decades of diverse, quality research and the endorsements of
+						governments and physician groups supports this idea.{" "}
+						<b>This site aggregates info and research into WFPBD.</b>
 					</p>
 
-					<h2>Potential Pitfalls</h2>
+					<h2>Potential Nutrient Deficiencies</h2>
 					<ol>
 						<li>
 							Created by bacteria, <b>vitamin B12</b> is stored in animal
 							tissue. Without eating animals B12 will need to come from
-							supplements or fortified food. Even without a strict vegetarian
+							supplements or fortified food. Even without a strict WFPB
 							diet, it can be helpful to supplement as
 							{getLink(
 								"https://www.plantbaseddoctors.org/",
@@ -222,20 +234,26 @@ export default class Home extends Component {
 							)}
 						</li>
 						<li>
+							<b>Vitamin D</b> is created when our skin is exposed to sunlight.
+							{getLink(
+								"https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
+								"5-30 minutes of daytime sunlight, twice a week fulfills our requirement for Vitamin D."
+							)}
+							When there's not enough sun, Vitamin D must be obtained through
+							food. Certain mushrooms, fortified plant-based milk, or algae
+							supplements can be good sources of Vitamin D.
+						</li>
+					</ol>
+					<h3>Other Nutrients To Consider</h3>
+					<ol>
+						<li>
 							Americans eat about double the recommended amount of{" "}
 							<b>protein</b>. Excess protein can cause bone mass loss, kidney or
 							liver disease, and ..... The USDA recommends 0.4 grams per pound
-							of body weight every day, but athletes or strict vegetarians may
+							of body weight every day, but athletes or strict WFPB may
 							need more. High protein plant foods include beans, peas, nuts,
 							seeds, soy products, and whole grains. "Complementary proteins"
 							are an outdated idea, and are not required.
-						</li>
-						<li>
-							<b>Vitamin D</b> is created when our skin is exposed to sunlight.
-							10-20 minutes in the sun, 3 times a week makes enough. When
-							there's not enough sun, Vitamin D must be obtained through food,
-							typically fish or fortified foods. Vitamin or algae supplements
-							are another good source (algae are where fish Vitamin D).
 						</li>
 						<li>
 							<b>Omega 3 fatty acids</b> have been shown to support a healthy
@@ -275,7 +293,8 @@ export default class Home extends Component {
 							{getLink(
 								"https://www.plantbaseddoctors.org/",
 								"doctor or dietitian"
-							)}, online communities, family, and friends.
+							)}
+							, online communities, family, and friends.
 						</li>
 						<li>
 							Focusing on eating "good stuff" may be easier than trying to avoid
