@@ -225,9 +225,8 @@ export default class Home extends Component {
 					<ol>
 						<li>
 							Created by bacteria, <b>vitamin B12</b> is stored in animal
-							tissue. Without eating animals B12 will need to come from
-							supplements or fortified food. Even without a strict WFPB
-							diet, it can be helpful to supplement as
+							tissue. Without eating animals B12 will need to be supplemented. Even without a strict WFPB
+							diet, B12 supplementation can be helpful, as
 							{getLink(
 								"https://www.plantbaseddoctors.org/",
 								"3% of US adults and 7% of seniors are B12 deficient, and 14-17% of adults are marginally depleted."
