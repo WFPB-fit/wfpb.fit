@@ -90,21 +90,19 @@ export default class Home extends Component {
 						legumes, whole grains, nuts, seeds, and more.
 					</p>
 					<p>
-						Also, other plant-like foods such as fungi or algae are generally
-						nutritious and can be eaten.
+						Also, other plant-like foods such as fungi or algae can be
+						nutritious.
 					</p>
 					<p>
 						Animal products are to be avoided and include meat, dairy, eggs,
-						poultry, seafood, etc.
+						poultry, fish, shellfish, etc.
 					</p>
 					<p>
-						Processed foods include sugar, refined grains, oil, candies, creams,
+						Processed foods include sugar, oil, refined grains, candies, creams,
 						etc.
 					</p>
-					<p>
-						There are multiple food pyramids or infographics that show this
-						diet, a few are below.
-					</p>
+
+					<h3>Examples</h3>
 
 					<TallSkinnyImg
 						src="/imgs/assets/foods/pyramids/gregor-daily-dozen.jpg"
@@ -121,17 +119,16 @@ export default class Home extends Component {
 
 					<p>
 						<b>
-							Disease is expensive, time consuming, miserable, and socially
-							difficult.
+							Disease is expensive, time consuming, miserable, and difficult.
 						</b>{" "}
-						Diet is a powerful way to avoid, or cause, many diseases.
+						WFPBD is a powerful way to help avoid disease.
 					</p>
 
 					<p>
 						<b>WFPBD is also an ethical way to eat. </b> Animal agriculture is
 						the #1 cause of antibiotic use, water use, water pollution, land
 						use, native habitat destruction, plastic in the ocean, animal death,
-						and is one of the biggest contributors to climate change.
+						and global climate change.
 					</p>
 
 					<h2>How does it work?</h2>
@@ -225,8 +222,9 @@ export default class Home extends Component {
 					<ol>
 						<li>
 							Created by bacteria, <b>vitamin B12</b> is stored in animal
-							tissue. Without eating animals B12 will need to be supplemented. Even without a strict WFPB
-							diet, B12 supplementation can be helpful, as
+							tissue. Without eating animals B12 will need to be supplemented.
+							Even without a strict WFPB diet, B12 supplementation can be
+							helpful, as
 							{getLink(
 								"https://www.plantbaseddoctors.org/",
 								"3% of US adults and 7% of seniors are B12 deficient, and 14-17% of adults are marginally depleted."
@@ -239,20 +237,25 @@ export default class Home extends Component {
 								"5-30 minutes of daytime sunlight, twice a week fulfills our requirement for Vitamin D."
 							)}
 							When there's not enough sun, Vitamin D must be obtained through
-							food. Certain mushrooms, fortified plant-based milk, or algae
-							supplements can be good sources of Vitamin D.
+							food, typically fish. Since WFPBD does not recommend animal
+							products, instead use a D vitamin, fortified foods, algae
+							supplements, or a UVB lamp to get your vitamin D.
 						</li>
 					</ol>
 					<h3>Other Nutrients To Consider</h3>
 					<ol>
 						<li>
 							Americans eat about double the recommended amount of{" "}
-							<b>protein</b>. Excess protein can cause bone mass loss, kidney or
-							liver disease, and ..... The USDA recommends 0.4 grams per pound
-							of body weight every day, but athletes or strict WFPB may
-							need more. High protein plant foods include beans, peas, nuts,
-							seeds, soy products, and whole grains. "Complementary proteins"
-							are an outdated idea, and are not required.
+							<b>protein</b>. <b>Excess protein can disease</b>: weakened bones,
+							kidney or liver disease, and increased risk of heart disease and
+							cancer. The{" "}
+							<b>
+								USDA recommends daily intake of 0.4 grams/pound of body weight.
+							</b>{" "}
+							High protein plant foods include beans, peas, nuts, seeds, soy
+							products, and whole grains.{" "}
+							<b>Complementary Proteins are an outdated idea</b>, as any whole
+							plant food can fulfill essential amino acid requirements.
 						</li>
 						<li>
 							<b>Omega 3 fatty acids</b> have been shown to support a healthy
@@ -278,11 +281,11 @@ export default class Home extends Component {
 							products/processed foods and increasing WFPB intake is generally
 							associated with better health. However, allergies, food
 							sensitivities, or digestion issues may make your individual diet
-							look a little different.
+							look a little different. Talk with a doctor or dietitian for help.
 						</li>
 						<li>
 							<b>Perfection is not required</b>. However, to get significant
-							health benefits <b>long-term consistency is important</b>.
+							health benefits <b>long-term consistency is</b>.
 						</li>
 						<li>
 							<b>
@@ -297,10 +300,10 @@ export default class Home extends Component {
 						</li>
 						<li>
 							Focusing on eating "good stuff" may be easier than trying to avoid
-							"bad stuff".
+							"bad stuff".{" "}
 							<b>
-								Filling up on healthy whole foods makes it harder to crave
-								unhealthy snacks.
+								Filling up on healthy whole foods makes it less likely to
+								over-indulge in unhealthy snacks.
 							</b>
 						</li>
 						<li>
