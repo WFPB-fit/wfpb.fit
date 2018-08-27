@@ -26,13 +26,6 @@ export default class DataLoader {
 		}
 	}
 
-	static async loadFoodNutrients() {
-		let foodData = JSON.parse(localStorage.getItem('foodData'));
-		if (!foodData) {
-			const FoodData = await DataLoader.getNutrientsRawData();
-		}
-	}
-
 	static async loadFoodData() {
 		let indices = JSON.parse(localStorage.getItem('foodIndex'));
 		let foodData = JSON.parse(localStorage.getItem('foodData'));
@@ -42,8 +35,8 @@ export default class DataLoader {
 			foodData = foodData ;//DataLoader._preprocessFoodData(foodData);
 			indices = DataLoader._preprocessFoodIndices(foodData);
 
-			localStorage.setItem('foodIndex', JSON.stringify(indices));
-			localStorage.setItem('foodData', JSON.stringify(foodData));
+			// localStorage.setItem('foodIndex', JSON.stringify(indices));
+			// localStorage.setItem('foodData', JSON.stringify(foodData));
 		}
 
 		DataLoader.store.dispatch({

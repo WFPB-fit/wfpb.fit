@@ -194,7 +194,8 @@ export default class Home extends Component {
 							"last-resort" antibiotics.{" "}
 							<b>
 								Closely confined and medicated animals leads to the evolution of
-								new diseases and antibiotic-resistent diseases.
+								new and antibiotic-resistent disease, some of which can be
+								spread to humans.
 							</b>
 						</li>
 						<li>And more...</li>
@@ -245,33 +246,35 @@ export default class Home extends Component {
 					<h3>Other Nutrients To Consider</h3>
 					<ol>
 						<li>
-							Americans eat about double the recommended amount of{" "}
-							<b>protein</b>. <b>Excess protein can disease</b>: weakened bones,
-							kidney or liver disease, and increased risk of heart disease and
-							cancer. The{" "}
+							Americans eat twice the <b>protein</b> that's recommended.{" "}
+							<b>Excess protein can cause disease</b>: weakened bones, kidney or
+							liver disease, and increased risk of heart disease and cancer. The{" "}
 							<b>
 								USDA recommends daily intake of 0.4 grams/pound of body weight.
 							</b>{" "}
 							High protein plant foods include beans, peas, nuts, seeds, soy
 							products, and whole grains.{" "}
-							<b>Complementary Proteins are an outdated idea</b>, as any whole
+							<b>Complementary Proteins are an outdated idea</b>, as nearly any whole
 							plant food can fulfill essential amino acid requirements.
 						</li>
 						<li>
-							<b>Omega 3 fatty acids</b> have been shown to support a healthy
-							lifestyle. Plants only make ALA. Your body can convert ALA to the
-							more useful DHA+EPA, but only in small amounts. It can be good to
-							supplement with DHA/EPA derived from algae, fulfilling your daily
-							requirement while avoiding the environmental contamination found
-							in fish.
+							<b>Omega 3 fatty acids</b> have been shown to improve brain and
+							joint health. There are 3 types: ALA, DHA, and EPA. Plants only
+							make ALA. Your body can convert ALA to the more useful DHA+EPA,
+							but only in small amounts.{" "}
+							<b>
+								It can be good to supplement with DHA/EPA derived from algae
+							</b>
+							, fulfilling your daily requirement while avoiding the
+							environmental contamination found in fish.
 						</li>
 						<li>
 							<b>Iron</b> is harder to absorb from plants (non-heme) than
-							animals (heme). Eating a variety of plant foods including green
-							leafy vegetables, beans, whole grains, and seeds will get you an
-							adequate amount. Combining iron-rich plants with foods high in
-							Vitamin C (like fruit or green leafy vegetables) can help
-							absorption.
+							animals (heme).{" "}
+							<b>Eat a variety of plant foods to get all your iron</b>, particularly
+							green leafy vegetables, beans, whole grains, and seeds.{" "}
+							<b>Combine iron-rich plants with foods high in Vitamin C</b> (like
+							fruit or green leafy vegetables) to help absorption.
 						</li>
 					</ol>
 					<h2>Getting Started Tips</h2>
@@ -314,9 +317,12 @@ export default class Home extends Component {
 							in as little as 2 months.
 						</li>
 						<li>
-							Eating low-calorie, nutritionally dense food may make you hungry
-							more often. <b>Increase size/frequency of WFPB meals</b> to avoid
-							grogginess while still maintaining your calorie goals.
+							Eating low-calorie, nutritionally dense food may make you
+							calorie-deficient without realizing it.{" "}
+							<b>
+								You may need to increase the size/frequency of WFPB meals to
+								maintain your energy (calorie) intake.
+							</b>
 						</li>
 						<li>
 							<b>Don't go grocery shopping when hungry,</b> as it may lead to

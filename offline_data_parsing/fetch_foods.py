@@ -2,7 +2,7 @@ import grequests
 import json
 import pdb
 
-max_foods_per_request = 3 #25 = usda max
+max_foods_per_request = 25 #25 = usda max
 
 nutrients_in_graphs = {
 	"calories": [208],
@@ -203,6 +203,8 @@ def get_response(ids, report_type="f", key="PwVSjgNYYAwZ9M4txUxNlFjh44kCgQcrhPPR
 	return grequests.get(url, params=params)
 
 def open_ids():
+	# return [11233]
+
 	#get IDs by downloading https://github.com/alyssaq/usda-sqlite and running the SQL query
 	with open('./food_ids/ids.json') as ids_file:	
 		ids = json.load(ids_file)
@@ -219,8 +221,6 @@ def fetch_USDA_data():
 		usda_requests.append( get_response(id_subsection) )
 
 		ids = ids[max_foods_per_request:]
-		
-		break
 	
 	responses = grequests.map(usda_requests)
 	
@@ -233,10 +233,14 @@ def get_foods_from_responses(list_usda_responses): #https://ndb.nal.usda.gov/ndb
 	for response in list_usda_responses:
 		response_foods = response['foods']
 		for food in response_foods:
-			foods.append(parse_food(food))
+			food = parse_food(food)
+			if food != None:
+				foods.append(food)
 	return foods
 
 def parse_food(usda_food):
+	if 'food' not in usda_food:
+		return None
 	usda_food = usda_food['food']
 	food = {}
 
@@ -258,16 +262,18 @@ def parse_food(usda_food):
 	#sum up certain nutrients to reduce size of the data
 	for n_total_id in nutrient_summations:
 		ids = nutrient_summations[n_total_id]
-		n_sum = food['nutrients'].get(n_total_id,0)
+		n_sum = food['nutrients'].get(int(n_total_id),0)
 		for n_id_to_add in ids:
 			if n_id_to_add in food['nutrients']:
-				n_sum += food['nutrients'][n_id_to_add]
-				del food['nutrients'][n_id_to_add]
+				n_sum += food['nutrients'].get(int(n_id_to_add),0)
+				# del food['nutrients'][n_id_to_add]
 
 		if (n_sum > 0):
-			food['n_total_id'] = n_sum
+			food['nutrients'][int(n_total_id)] = n_sum
+		# pdb.set_trace()
+
 	
-	#remove unimportant nutrients
+	#keep only important, formatted nutrients
 	nutrients = {}
 	for n_id in food['nutrients']:
 		if n_id in important_nutrients:
@@ -276,6 +282,7 @@ def parse_food(usda_food):
 			val = float(val)
 			nutrients[n_id] = val
 	food['n'] = nutrients
+	del food['nutrients']
 
 	return food
 

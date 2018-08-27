@@ -16,6 +16,8 @@ class Food extends Component {
 	constructor(props) {
 		super(props);
 
+		console.log(this.props.food.data)
+
 		//bind functions
 		this.handleSelectChange = this.handleSelectChange.bind(this);
 		this.addFood = this.addFood.bind(this);
