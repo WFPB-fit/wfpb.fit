@@ -350,9 +350,6 @@ export default class Home extends Component {
 								"properly storing produce."
 							)}
 						</li>
-						<li>
-							<b>It gets easier</b> as you form new healthy habits.
-						</li>
 					</ol>
 				</WidthWrapper>
 			</div>
