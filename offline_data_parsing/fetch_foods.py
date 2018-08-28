@@ -2,6 +2,8 @@ import grequests
 import json
 import pdb
 
+#EXAMPLE: https://api.nal.usda.gov/ndb/V2/reports?ndbno=11233&type=f&api_key=PwVSjgNYYAwZ9M4txUxNlFjh44kCgQcrhPPR4X8c
+
 max_foods_per_request = 25 #25 = usda max
 
 nutrients_in_graphs = {

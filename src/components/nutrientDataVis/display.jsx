@@ -190,12 +190,16 @@ class Food extends Component {
 				calories = (
 					<NutrientGraph
 						linesData={this.getCaloriesLineGraphData()}
+						yLabel="Calorie"
 					/>
 				);
 			}
 
 			// console.log(this.preprocessMacros(GraphNutrients["macros"],GraphNutrients["macros"]))
-
+			let macro = <NutrientGraph
+			linesData={this.getGraphData(this.getNutrientWeights(GraphNutrients["macros"]))}
+		/>;
+		console.log(macro)
 			dataVis = (
 				<div>
 					<p>Nutrients in 100 Grams of each food:</p>

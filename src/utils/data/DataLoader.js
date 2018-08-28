@@ -1,14 +1,9 @@
-import {
-	combineReducers
-} from 'redux'
-import {
-	getNutrientFromId,
-	titleize
-} from '../GeneralUtils.jsx';
-import pluralize from 'pluralize';
+import { combineReducers } from "redux";
+import { getNutrientFromId, titleize } from "../GeneralUtils.jsx";
+import pluralize from "pluralize";
 
-import GraphNutrients from '../../assets/data/preprocessed_data/graphNutrients.json';
-import FoodGroupIdIndex from '../../assets/data/foodGroupIds.json';
+import GraphNutrients from "../../assets/data/preprocessed_data/graphNutrients.json";
+import FoodGroupIdIndex from "../../assets/data/foodGroupIds.json";
 
 export default class DataLoader {
 	static async init(store) {
@@ -18,21 +13,21 @@ export default class DataLoader {
 		DataLoader.load_studies_data();
 	}
 
-	static get(varName) {
-		if (DataLoader[varName]) return DataLoader[varName];
-		else if (localStorage.getItem(varName)) return JSON.parse(localStorage.getItem(varName));
-		else {
-			return DataLoader[varName];
-		}
-	}
+	// static get(varName) {
+	// 	if (DataLoader.store[varName]) return DataLoader.store[varName];
+	// 	else if (localStorage.getItem(varName)) return JSON.parse(localStorage.getItem(varName));
+	// 	else {
+	// 		return DataLoader.store[varName];
+	// 	}
+	// }
 
 	static async loadFoodData() {
-		let indices = JSON.parse(localStorage.getItem('foodIndex'));
-		let foodData = JSON.parse(localStorage.getItem('foodData'));
+		let indices = JSON.parse(localStorage.getItem("foodIndex"));
+		let foodData = JSON.parse(localStorage.getItem("foodData"));
 
 		if (!indices || !foodData) {
-			foodData = await DataLoader.getFoodsRawData();
-			foodData = foodData ;//DataLoader._preprocessFoodData(foodData);
+			foodData = await import("../../assets/data/preprocessed_data/foods.json");
+			// foodData = DataLoader._preprocessFoodData(foodData);
 			indices = DataLoader._preprocessFoodIndices(foodData);
 
 			// localStorage.setItem('foodIndex', JSON.stringify(indices));
@@ -40,26 +35,26 @@ export default class DataLoader {
 		}
 
 		DataLoader.store.dispatch({
-			type: 'ADD_INDEXED_FOODS',
+			type: "ADD_INDEXED_FOODS",
 			indices: indices
 		});
 		DataLoader.store.dispatch({
-			type: 'ADD_FOOD_DATA',
+			type: "ADD_FOOD_DATA",
 			foodData: foodData
 		});
 	}
 
-	static async load_studies_data(){
-		let studies = await import ('../../assets/data/preprocessed_data/studies_metadata.json');
-		let studies_text = await import ('../../assets/data/preprocessed_data/studies_text.json');
+	static async load_studies_data() {
+		let studies = await import("../../assets/data/preprocessed_data/studies_metadata.json");
+		let studies_text = await import("../../assets/data/preprocessed_data/studies_text.json");
 
 		//studies
 		DataLoader.store.dispatch({
-			type: 'ADD_STUDIES_METADATA',
+			type: "ADD_STUDIES_METADATA",
 			data: studies
 		});
 		DataLoader.store.dispatch({
-			type: 'ADD_STUDIES_TEXT',
+			type: "ADD_STUDIES_TEXT",
 			data: studies_text
 		});
 	}
@@ -80,7 +75,6 @@ export default class DataLoader {
 					if (nId in foodNutrients) {
 						groupNutrients[nId] = foodNutrients[nId];
 					}
-
 				}
 				indexedFoodNutrients[groupName] = groupNutrients;
 			}
@@ -108,8 +102,8 @@ export default class DataLoader {
 		for (const foodId of foodIds) {
 			const food = foodData[foodId];
 			const foodName = food.name;
-			const groupName = FoodGroupIdIndex[food.fg]
-			const foodFilters = foodName.split(',');
+			const groupName = FoodGroupIdIndex[food.fg];
+			const foodFilters = foodName.split(",");
 
 			//add group to total food index if needed. Set top level index of this food to the group
 			if (!(groupName in foodIndex)) foodIndex[groupName] = {};
@@ -120,19 +114,10 @@ export default class DataLoader {
 				const filter = DataLoader._preprocessFoodFilter(foodFilters[i]);
 				if (!(filter in prevIndex)) prevIndex[filter] = {}; //add index if not present
 				prevIndex = prevIndex[filter];
-				if (i === (foodFilters.length - 1)) prevIndex[''] = foodId;
+				if (i === foodFilters.length - 1) prevIndex[""] = foodId;
 			}
 		}
 
 		return foodIndex;
 	}
-
-	static async getFoodsRawData() {
-		if (!DataLoader.foods) {
-			DataLoader.foods = await
-			import ('../../assets/data/preprocessed_data/foods.json');
-		}
-		return DataLoader.foods;
-	}
-
 }

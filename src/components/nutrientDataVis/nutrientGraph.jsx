@@ -218,8 +218,8 @@ export default class NutrientGraph extends Component {
                         />
                     }
                 >
-                    {this.getVictoryGraphLines(linesData)}
                     {this.getVictoryGraphPoints(linesData)}
+                    {this.getVictoryGraphLines(linesData)}
 
                     <VictoryAxis independentAxis style={{
                         tickLabels: { fontSize: 7, padding: 1, verticalAnchor: "middle", textAnchor: "start", angle: 45 },
@@ -234,7 +234,7 @@ export default class NutrientGraph extends Component {
                         axisLabel: { fontSize: 6, padding: 25 },
                     }}
                         tickFormat={NutrientGraph.yTickFormat}
-                        label="Grams"
+                        label={this.props.yLabel || "Grams"}
                     />
                 </VictoryChart>
             </WidthWrapper>
