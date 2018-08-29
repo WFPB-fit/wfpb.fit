@@ -1,279 +1,311 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import {
-    VictoryChart,
-    VictoryTooltip, createContainer,
-    VictoryLine, VictoryVoronoiContainer, VictoryAxis,
-    VictoryArea, VictoryPolarAxis, VictoryTheme,
-    VictoryScatter
-} from 'victory';
-import { alphaCompare, WidthWrapper } from '../../utils/GeneralUtils.jsx';
-import ScatterPoint from './scatterPoint.jsx'
+	VictoryChart,
+	VictoryTooltip,
+	createContainer,
+	VictoryLine,
+	VictoryVoronoiContainer,
+	VictoryAxis,
+	VictoryArea,
+	VictoryPolarAxis,
+	VictoryTheme,
+	VictoryScatter
+} from "victory";
+import { alphaCompare, WidthWrapper } from "../../utils/GeneralUtils.jsx";
+import ScatterPoint from "./scatterPoint.jsx";
 
-const MAX_LABEL_LEN = 17;
+const MAX_LABEL_LEN = 10;
 
 export default class NutrientGraph extends Component {
-    static yTickFormat(t) {
-        if (t < 1e-2 || t > 1e3) {
-            return t.toExponential();
+	static yTickFormat(t) {
+		t = parseFloat(t);
+		if (t < 1e-2 || t > 1e3) {
+			return t.toExponential();
+		}
+		return t;
+	}
+	static processGraphLabel(label) {
+		if (label.length > MAX_LABEL_LEN * 2) {
+			label = label.substring(0, MAX_LABEL_LEN) + "..." + label.substring(label.length - MAX_LABEL_LEN - 1, label.length);
         }
-        return t;
-    }
-    static processGraphLabel(label){
-        if (label.length > MAX_LABEL_LEN) {
-            label = label.substring(0, MAX_LABEL_LEN);
-            label += '...';
+		return label;
+	}
+	constructor(props) {
+		super(props);
+		this.handleDomainChange = this.handleDomainChange.bind(this);
+		this.state = {
+			zoomDomain: null
+		};
+		this.zoomScaleFactor = 1;
+		this.maxZoomDomain = null;
+		this.minZoomDomain = {
+			x: [0, 0],
+			y: [0, 5e-2]
+		};
+	}
+
+	static getVictoryData(foodData, name, color) {
+		return Object.keys(foodData).map(key => {
+			return { x: key, y: foodData[key], name: name, color: color };
+		});
+	}
+	// static getFoodNutrients(food, nutrientKey) {
+	//     if (nutrientKey != null){
+	//         return food.n[nutrientKey];
+	//     }
+	//     return food;
+	// }
+
+	static transformObjectToVictoryXYArray(obj, name) {
+		debugger;
+		let arrData = Object.keys(obj)
+			.sort(alphaCompare)
+			.map(key => {
+				return { x: key, y: obj[key], name: name };
+			});
+		// if (arrData.length === 1) {
+		//     arrData.push({ x: 0, y: 0, name: name }); //if only 1 entry then VictoryArea will crash. Add dummy value at center
+		// }
+		return arrData;
+	}
+
+	static getVictoryTooltipLabel(d) {
+		let val = Number(d.y);
+		let unit = d.yLabel;
+
+		let prefix = "";
+		if (!unit) {
+			unit = "";
         }
-        return label
-    }
-    constructor(props) {
-        super(props);
-        this.handleDomainChange = this.handleDomainChange.bind(this);
-        this.state = {
-            zoomDomain: null
-        };
-        this.zoomScaleFactor = 1;
-        this.maxZoomDomain = null;
-        this.minZoomDomain = {
-            x: [0, 0],
-            y: [0, 5e-2]
-        };
-    }
 
-    static getVictoryData(foodData, name, color) {
-        return Object.keys(foodData).map(key => {
-            return { x: key, y: foodData[key], name: name, color: color };
-        });
-    }
-    // static getFoodNutrients(food, nutrientKey) { 
-    //     if (nutrientKey != null){
-    //         return food.n[nutrientKey]; 
-    //     }
-    //     return food;
-    // }
+        const valDecimal = ( val - parseInt(val) )
+        const magnitude = - parseInt( valDecimal.toExponential().split('e')[1] );
+		// if (unit !== '%') {
+		//     if (d.y < 1e-3) { val *= 1e6; prefix = 'µ'; }
+		//     else if (d.y < 1) { val *= 1e3; prefix = 'm'; }
+		// }
 
-    static transformObjectToVictoryXYArray(obj, name) {
-        debugger;
-        let arrData = Object.keys(obj).sort(alphaCompare).map(key => {
-            return { x: key, y: obj[key], name: name };
-        });
-        // if (arrData.length === 1) {
-        //     arrData.push({ x: 0, y: 0, name: name }); //if only 1 entry then VictoryArea will crash. Add dummy value at center
-        // }
-        return arrData;
-    }
+		let displayVal = `${val.toFixed(magnitude+1)} ${prefix}${unit}`;
+		if (d.nutrientDataIsMissing) displayVal = "Data Missing";
+		// else if (val === 0) `0 Grams`;
+		// let nameComponents = d.foodName.split(",");
 
-    static getVictoryTooltipLabel(d) {
-        let val = Number(d.y);
-        let unit = d.yLabel;
+		// return `${d.foodName}: \n${d.x}: ${displayVal}`;
+		// return `${NutrientGraph.processGraphLabel(d.foodName)} : ${displayVal}`;
+		return `${d.foodName} : ${displayVal}`;
+	}
 
-        let prefix = '';
-        if (unit !== '%') {
-            if (d.y < 1e-3) { val *= 1e6; prefix = 'µ'; }
-            else if (d.y < 1) { val *= 1e3; prefix = 'm'; }
-        }
-        if (!unit) { unit = ''; }
+	async handleDomainChange(domain, props) {
+		if (!this.state.zoomDomain) {
+			await this.setState({ zoomDomain: domain });
+			this.maxZoomDomain = domain;
+		}
+		// console.log(domain,this.state.zoomDomain)
+		//find the diff in zoom states
+		let newD = domain;
+		let oldD = this.state.zoomDomain;
+		let xDiff = [newD.x[0] - oldD.x[0], newD.x[1] - oldD.x[1]];
+		let yDiff = [newD.y[0] - oldD.y[0], newD.y[1] - oldD.y[1]];
 
-        let displayVal = `${val.toFixed(1)} ${prefix}${unit}`;
-        if (d.nutrientDataIsMissing) displayVal = 'Data Missing';
-        // else if (val === 0) `0 Grams`;
-        // let nameComponents = d.foodName.split(",");
+		//magnify the diffs
+		const scale = x => x * this.zoomScaleFactor;
+		xDiff = xDiff.map(scale);
+		yDiff = yDiff.map(scale);
 
+		//apply the magnified diff
+		newD.x = [oldD.x[0] + xDiff[0], oldD.x[1] + xDiff[1]];
+		newD.y = [oldD.y[0] + yDiff[0], oldD.y[1] + yDiff[1]];
 
-        // return `${d.foodName}: \n${d.x}: ${displayVal}`;
-        return `${NutrientGraph.processGraphLabel(d.foodName)} : ${displayVal}`;
+		//ensure not out of bounds of max/min zoom
+		newD.x = [
+			Math.min(newD.x[0], this.maxZoomDomain.x[0]),
+			Math.min(newD.x[1], this.maxZoomDomain.x[1])
+		];
+		newD.y = [
+			Math.min(newD.y[0], this.maxZoomDomain.y[0]),
+			Math.min(newD.y[1], this.maxZoomDomain.y[1])
+		];
+		newD.x = [
+			Math.max(newD.x[0], this.minZoomDomain.x[0]),
+			Math.max(newD.x[1], this.minZoomDomain.x[1])
+		];
+		newD.y = [
+			Math.max(newD.y[0], this.minZoomDomain.y[0]),
+			Math.max(newD.y[1], this.minZoomDomain.y[1])
+		];
 
-    }
+		//set zoom state to new magnification
+		this.setState({ zoomDomain: newD });
+	}
 
+	maxY() {
+		if (!this.props.linesData) return;
+		let max = 0;
+		for (let line of this.props.linesData) {
+			for (let pt of line.dataPoints) {
+				if (pt.y && pt.y > max) max = pt.y;
+			}
+		}
+		return max;
+	}
 
-    async handleDomainChange(domain, props) {
-        if (!this.state.zoomDomain) {
-            await this.setState({ zoomDomain: domain });
-            this.maxZoomDomain = domain;
-        }
-        // console.log(domain,this.state.zoomDomain)
-        //find the diff in zoom states
-        let newD = domain;
-        let oldD = this.state.zoomDomain;
-        let xDiff = [newD.x[0] - oldD.x[0], newD.x[1] - oldD.x[1]];
-        let yDiff = [newD.y[0] - oldD.y[0], newD.y[1] - oldD.y[1]];
+	getVictoryGraphLines(linesData) {
+		return linesData.map(line => {
+			// const keys = Object.keys(data).sort(alphaCompare);
+			// data = NutrientGraph.transformObjectToVictoryXYArray(data, food.name);
 
-        //magnify the diffs
-        const scale = (x) => x * this.zoomScaleFactor;
-        xDiff = xDiff.map(scale);
-        yDiff = yDiff.map(scale);
+			if (line.dataPoints.length === 0) return null; //if no values in VictoryArea = crash
+			return (
+				<VictoryLine
+					key={line.id}
+					style={{
+						data: { stroke: line.color }
+					}}
+					data={line.dataPoints}
+				/>
+			);
+		});
+	}
 
-        //apply the magnified diff
-        newD.x = [oldD.x[0] + xDiff[0], oldD.x[1] + xDiff[1]]
-        newD.y = [oldD.y[0] + yDiff[0], oldD.y[1] + yDiff[1]]
+	getVictoryGraphPoints(linesData) {
+		return linesData.map(line => {
+			if (line.dataPoints.length === 0) return null; //if no values in VictoryArea = crash
 
-        //ensure not out of bounds of max/min zoom
-        newD.x = [Math.min(newD.x[0], this.maxZoomDomain.x[0]), Math.min(newD.x[1], this.maxZoomDomain.x[1])];
-        newD.y = [Math.min(newD.y[0], this.maxZoomDomain.y[0]), Math.min(newD.y[1], this.maxZoomDomain.y[1])];
-        newD.x = [Math.max(newD.x[0], this.minZoomDomain.x[0]), Math.max(newD.x[1], this.minZoomDomain.x[1])];
-        newD.y = [Math.max(newD.y[0], this.minZoomDomain.y[0]), Math.max(newD.y[1], this.minZoomDomain.y[1])];
+			return (
+				<VictoryScatter
+					name="missingData"
+					data={line.dataPoints}
+					key={line.id}
+					dataComponent={<ScatterPoint />}
+					size={3}
+					style={{
+						data: { fill: line.color }
+					}}
+				/>
+			);
+		});
+	}
 
-        // console.log(newD)
-        //set zoom state to new magnification
-        this.setState({ zoomDomain: newD });
-    }
+	render() {
+		const linesData = this.props.linesData,
+			w = 200,
+			h = 200;
 
-    maxY() {
-        if (!this.props.linesData) return;
-        let max = 0;
-        for (let line of this.props.linesData) {
-            for (let pt of line.dataPoints) {
-                if (pt.y && pt.y > max) max = pt.y;
-            }
-        }
-        return max;
-    }
+		const axisStyle = {
+			axis: { stroke: "none" },
+			ticks: { stroke: "grey", size: 3 },
+			tickLabels: { fontSize: 5, padding: 1 }
+		};
 
-    getVictoryGraphLines(linesData) {
-        return linesData.map((line) => {
-            // const keys = Object.keys(data).sort(alphaCompare);
-            // data = NutrientGraph.transformObjectToVictoryXYArray(data, food.name);
+		// const radars = selectedFoods.map((food) => {
+		//     let data = NutrientGraph.getFoodNutrients(food, nutrientDataKey);
+		//     // const keys = Object.keys(data).sort(alphaCompare);
+		//     // data = NutrientGraph.transformObjectToVictoryXYArray(data, food.name);
 
-            if (line.dataPoints.length === 0) return null; //if no values in VictoryArea = crash
-            return (
-                <VictoryLine
-                    key={line.id}
-                    style={{
-                        data: { stroke: line.color },
-                    }}
-                    data={line.dataPoints}
-                />
-            )
-        });
-    }
+		//     if (data.length === 0) return null; //if no values in VictoryArea = crash
+		//     return (
+		//         <VictoryArea
+		//             key={food.name}
+		//             data={data}
+		//             // categories={{ x: keys }} // Controls ordering
+		//             style={{
+		//                 data: { fill: food.color, fillOpacity: 0.2, },
+		//             }}
+		//         />
+		//     )
+		// });
 
-    getVictoryGraphPoints(linesData) {
-        return linesData.map((line) => {
-            if (line.dataPoints.length === 0) return null; //if no values in VictoryArea = crash
+		const VictoryZoomVoronoiContainer = createContainer("zoom", "voronoi");
+		const yLabel =
+			typeof this.props.yLabel === "string" ? this.props.yLabel : "Grams";
 
-            return (
-                <VictoryScatter
-                    name="missingData"
-                    data={line.dataPoints}
-                    key={line.id}
-                    dataComponent={<ScatterPoint />}
-                    size={3}
-                    style={{
-                        data: { fill: line.color },
-                    }}
-                />
-            );
-        });
-    }
-
-    render() {
-        const linesData = this.props.linesData,
-            w = 200,
-            h = 200;
-
-        const axisStyle = {
-            axis: { stroke: "none" },
-            ticks: { stroke: "grey", size: 3 },
-            tickLabels: { fontSize: 5, padding: 1 },
-        };
-
-        // const radars = selectedFoods.map((food) => {
-        //     let data = NutrientGraph.getFoodNutrients(food, nutrientDataKey);
-        //     // const keys = Object.keys(data).sort(alphaCompare);
-        //     // data = NutrientGraph.transformObjectToVictoryXYArray(data, food.name);
-
-        //     if (data.length === 0) return null; //if no values in VictoryArea = crash
-        //     return (
-        //         <VictoryArea
-        //             key={food.name}
-        //             data={data}
-        //             // categories={{ x: keys }} // Controls ordering
-        //             style={{
-        //                 data: { fill: food.color, fillOpacity: 0.2, },
-        //             }}
-        //         />
-        //     )
-        // });
-
-        const VictoryZoomVoronoiContainer = createContainer("zoom", "voronoi");
-
-        return (
-            <WidthWrapper>
-                <VictoryChart
+		return (
+			<WidthWrapper>
+				<VictoryChart  //SVG child needs to have `overflow: visible` for tool tip to not be cut off. Added this as a global style "for now"
                     // domain={{ y: [0, 100] }}
-                    padding={{ bottom: 100, left: 35, right: 35, top: 40 }}
-                    theme={VictoryTheme.material}
-                    containerComponent={
-                        <VictoryVoronoiContainer
-                            labels={NutrientGraph.getVictoryTooltipLabel}
-                            voronoiBlacklist={["missingData"]}
-                            labelComponent={
-                                <VictoryTooltip
-                                    style={{
-                                        fontSize: 6,
-                                        padding: 3
-                                    }}
-                                    cornerRadius={5}
-                                    flyoutStyle={{ fill: "white" }}
-                                />}
-                        />
-                    }
-                >
-                    {this.getVictoryGraphPoints(linesData)}
-                    {this.getVictoryGraphLines(linesData)}
+					padding={{ bottom: 100, left: 35, right: 35, top: 40 }}
+					theme={VictoryTheme.material}
+					containerComponent={
+						<VictoryVoronoiContainer
+							labels={NutrientGraph.getVictoryTooltipLabel}
+							voronoiBlacklist={["missingData"]}
+							labelComponent={
+								<VictoryTooltip
+									style={{
+										fontSize: 6,
+										padding: 3
+									}}
+									cornerRadius={5}
+									flyoutStyle={{ fill: "white" }}
+								/>
+							}
+						/>
+					}
+				>
+					{this.getVictoryGraphPoints(linesData)}
+					{this.getVictoryGraphLines(linesData)}
 
-                    <VictoryAxis independentAxis style={{
-                        tickLabels: { fontSize: 7, padding: 1, verticalAnchor: "middle", textAnchor: "start", angle: 45 },
-                        // axisLabel:{ fontSize: 6,padding: 25},
-                    }}
-                    // range={[0, this.maxY() * 1.1]} #'range' not working in Victory Charts 0.27.2
-                    // label="Nutrients"
-                    tickFormat={NutrientGraph.processGraphLabel}
-                    />
-                    <VictoryAxis dependentAxis style={{
-                        tickLabels: { fontSize: 7, padding: 1 },
-                        axisLabel: { fontSize: 6, padding: 25 },
-                    }}
-                        tickFormat={NutrientGraph.yTickFormat}
-                        label={this.props.yLabel || "Grams"}
-                    />
-                </VictoryChart>
-            </WidthWrapper>
+					<VictoryAxis
+						independentAxis
+						style={{
+							tickLabels: {
+								fontSize: 7,
+								padding: 1,
+								verticalAnchor: "middle",
+								textAnchor: "start",
+								angle: 45
+							}
+							// axisLabel:{ fontSize: 6,padding: 25},
+						}}
+						// range={[0, this.maxY() * 1.1]} #'range' not working in Victory Charts 0.27.2
+						tickFormat={NutrientGraph.processGraphLabel}
+					/>
+					<VictoryAxis
+						dependentAxis
+						style={{
+							tickLabels: { fontSize: 7, padding: 1 },
+							axisLabel: { fontSize: 6, padding: 25 }
+						}}
+						tickFormat={NutrientGraph.yTickFormat}
+						label={yLabel}
+					/>
+				</VictoryChart>
+			</WidthWrapper>
 
-
-            // <VictoryChart
-            //     // height={h} width={w}
-            //     polar
-            //     theme={VictoryTheme.material}
-            //     domainPadding={{ y: 10 }}
-            //     padding={40}
-            //     containerComponent={
-            //         //setup tool tip
-            //         <VictoryZoomVoronoiContainer
-            //             dimension="x"
-            //             zoomDimension='y' //ensure X zooming does not mess up the enchanced zooming
-            //             zoomDomain={this.state.zoomDomain}
-            //             // onZoomDomainChange={(domain, props) => this.handleDomainChange(domain, props)}
-            //             labels={NutrientGraph.getVictoryTooltipLabel}
-            //             labelComponent={
-            //                 <VictoryTooltip
-            //                     style={{
-            //                         fontSize: 4,
-            //                         padding: 2
-            //                     }}
-            //                     cornerRadius={5}
-            //                     flyoutStyle={{ fill: "white" }}
-            //                 />}
-            //         />
-            //     }
-            // >
-            //     <VictoryPolarAxis dependentAxis
-            //         style={axisStyle}
-            //         tickFormat={() => null}
-            //     />
-            //     <VictoryPolarAxis
-            //         style={axisStyle} />
-            //     {radars}
-            // </VictoryChart>
-        );
-    }
+			// <VictoryChart
+			//     // height={h} width={w}
+			//     polar
+			//     theme={VictoryTheme.material}
+			//     domainPadding={{ y: 10 }}
+			//     padding={40}
+			//     containerComponent={
+			//         //setup tool tip
+			//         <VictoryZoomVoronoiContainer
+			//             dimension="x"
+			//             zoomDimension='y' //ensure X zooming does not mess up the enchanced zooming
+			//             zoomDomain={this.state.zoomDomain}
+			//             // onZoomDomainChange={(domain, props) => this.handleDomainChange(domain, props)}
+			//             labels={NutrientGraph.getVictoryTooltipLabel}
+			//             labelComponent={
+			//                 <VictoryTooltip
+			//                     style={{
+			//                         fontSize: 4,
+			//                         padding: 2
+			//                     }}
+			//                     cornerRadius={5}
+			//                     flyoutStyle={{ fill: "white" }}
+			//                 />}
+			//         />
+			//     }
+			// >
+			//     <VictoryPolarAxis dependentAxis
+			//         style={axisStyle}
+			//         tickFormat={() => null}
+			//     />
+			//     <VictoryPolarAxis
+			//         style={axisStyle} />
+			//     {radars}
+			// </VictoryChart>
+		);
+	}
 }

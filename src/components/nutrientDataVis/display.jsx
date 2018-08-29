@@ -10,6 +10,7 @@ import {
 	alphaCompare
 } from "../../utils/GeneralUtils.jsx";
 
+import RDA from "../../assets/data/preprocessed_data/RDA.json";
 import NutrientNames from "../../assets/data/nutrientNames.js";
 import NutrientGraph from "./nutrientGraph.jsx";
 // import BestFoodSelector from './bestFood';
@@ -20,8 +21,6 @@ import GraphNutrients from "../../assets/data/preprocessed_data/graphNutrients.j
 class Food extends Component {
 	constructor(props) {
 		super(props);
-
-		console.log(this.props.food.data);
 
 		//bind functions
 		this.handleSelectChange = this.handleSelectChange.bind(this);
@@ -59,8 +58,15 @@ class Food extends Component {
 		return alphaOptions;
 	}
 
-	static getRdiDensity(nutrients){
-		
+	static getRdaDensity(nutrients){
+		const numRdaNutrients = Object.values(RDA).length;
+		let sum = 0;
+		for(const nId in RDA){
+			sum += (nutrients[nId] || 0) / RDA[nId]
+		}
+		const calPercent = nutrients[208] / 2000;
+
+		return parseFloat( (sum / nutrients[208]).toFixed(3) );
 	}
 
 	getNutrientName(nId) {
@@ -165,7 +171,23 @@ class Food extends Component {
 
 		return [
 			{
-				dataPoints: foodsCalorieDataLine
+				dataPoints: foodsCalorieDataLine,
+				id: 0
+			}
+		];
+	}
+
+	getRdaLineGraphData(foodId) {
+		let foodsRdaDataLine = this.state.selectedFoods.map(selectedFood => {
+			const foodId = selectedFood.value;
+			const foodData = this.props.food.data[foodId];
+			return { x: foodData.name, y: Food.getRdaDensity(foodData.n), foodName: foodData.name };
+		}, []);
+
+		return [
+			{
+				dataPoints: foodsRdaDataLine,
+				id: 0
 			}
 		];
 	}
@@ -211,12 +233,12 @@ class Food extends Component {
 			//At least one food is selected
 			//link to food sources
 			const sources = this.state.selectedFoods.map(selectedFood => {
-				const foodId = selectedFood.value;
-				const foodData = this.props.food.data[foodId];
+				const foodIndex = selectedFood.value;
+				const foodData = this.props.food.data[foodIndex];
 				return (
 					<li key={foodData.name}>
 						{getLink(
-							`https://ndb.nal.usda.gov/ndb/search/list?qlookup=${foodId}`,
+							`https://ndb.nal.usda.gov/ndb/search/list?qlookup=${foodData.id}`,
 							foodData.name
 						)}
 					</li>
@@ -236,12 +258,12 @@ class Food extends Component {
 				);
 			}
 
-			let rdiDensity = `${firstfoodData.name}: ${Food.getRdiDensity(firstfoodData.n)}`;
+			let rdaDensity = `${firstfoodData.name}: ${Food.getRdaDensity(firstfoodData.n)}`;
 			if (this.state.selectedFoods.length > 1) {
-				calories = (
+				rdaDensity = (
 					<NutrientGraph
-						linesData={this.getCaloriesLineGraphData()}
-						yLabel="Calorie"
+						linesData={this.getRdaLineGraphData()}
+						yLabel="RDA Density"
 					/>
 				);
 			}
@@ -253,10 +275,12 @@ class Food extends Component {
 					<p>Nutrients in 100 Grams of each food:</p>
 
 					<div>
-						<h2>RDI Density</h2>
-						{rdiDensity}
+						<h2>RDA Density</h2>
+						{rdaDensity}
+
 						<h2>Calories</h2>
 						{calories}
+
 						<h2>Macronutrients</h2>
 						<NutrientGraph
 							linesData={this.getGraphData(
