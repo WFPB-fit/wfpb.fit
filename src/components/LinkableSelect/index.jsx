@@ -39,7 +39,7 @@ class LinkableSelect extends Component {
 			) || ""
 		).split(this.props.paramSeparator);
 		const realUrlTags = urlTags.filter(t => t in this.optionsValues);
-
+		console.log(realUrlTags);
 		let selectables = [];
 		for (let tag of realUrlTags) {
 			selectables.push({ value: tag, label: this.optionsValues[tag] });
@@ -54,19 +54,21 @@ class LinkableSelect extends Component {
 		//bind fucntions to this class
 		this.tagsChanged = this.tagsChanged.bind(this);
 		this.setSelectablesFromURL = this.setSelectablesFromURL.bind(this);
-
-		if (this.props.options) { //might still be loading in
-			this.optionsValues = {};
-			for (let selectable of this.props.options) {
-				this.optionsValues[selectable.value] = selectable.label;
-			}
-
-			this.setSelectablesFromURL();
-		}
 	}
 
 	render() {
 		const { onChange, ...props } = this.props;
+
+		//why crashing???????????????
+		console.log(this.props.options)
+		if (this.props.options) {
+			this.optionsValues = {};
+			for (let selectable of this.props.options) {
+				this.optionsValues[selectable.value] = selectable.label;
+			}
+		}
+
+		this.setSelectablesFromURL();
 
 		return (
 			<VirtualizedSelect

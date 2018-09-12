@@ -58,13 +58,17 @@ class Food extends Component {
 		return alphaOptions;
 	}
 
+	// https://academic.oup.com/ajcn/article/99/5/1223S/4577490
 	static getRdaDensity(nutrients){
 		const numRdaNutrients = Object.values(RDA).length;
 		let sum = 0;
 		for(const nId in RDA){
-			sum += (nutrients[nId] || 0) / RDA[nId]
+			const percentRDA = (nutrients[nId] || 0) / RDA[nId];
+			// sum += Math.min(percentRDA, 1); //Good idea?
+			sum += percentRDA;
 		}
-		const calPercent = nutrients[208] / 2000;
+		//Normalize to 100kCal
+		sum *= 100 / nutrients[208];
 
 		return parseFloat( (sum / nutrients[208]).toFixed(3) );
 	}
