@@ -62,10 +62,11 @@ class Food extends Component {
 	static getRdaDensity(nutrients){
 		const numRdaNutrients = Object.values(RDA).length;
 		let sum = 0;
+		debugger;
 		for(const nId in RDA){
 			const percentRDA = (nutrients[nId] || 0) / RDA[nId];
-			// sum += Math.min(percentRDA, 1); //Good idea?
-			sum += percentRDA;
+			sum += Math.min(percentRDA, 1); //up to 100% of RDA, over that is not needed. Good idea?
+			// sum += percentRDA;
 		}
 		//Normalize to 100kCal
 		sum *= 100 / nutrients[208];
@@ -239,10 +240,12 @@ class Food extends Component {
 			const sources = this.state.selectedFoods.map(selectedFood => {
 				const foodIndex = selectedFood.value;
 				const foodData = this.props.food.data[foodIndex];
+				const id = (foodData.id +"").padStart(5, '0');
+
 				return (
 					<li key={foodData.name}>
 						{getLink(
-							`https://ndb.nal.usda.gov/ndb/search/list?qlookup=${foodData.id}`,
+							`https://ndb.nal.usda.gov/ndb/search/list?qlookup=${id}`,
 							foodData.name
 						)}
 					</li>

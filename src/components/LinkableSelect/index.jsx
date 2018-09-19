@@ -31,18 +31,15 @@ class LinkableSelect extends Component {
 		this.props.history.replace(url.toString().replace(url.origin, ""));
 	}
 
-	setSelectablesFromURL() {
+	setSelectablesFromURL(optionsValues, paramName, paramSeparator) {
 		//set initial tags from url params
-		const urlTags = (
-			new URLSearchParams(this.props.location.search).get(
-				this.props.paramName
-			) || ""
-		).split(this.props.paramSeparator);
-		const realUrlTags = urlTags.filter(t => t in this.optionsValues);
-		console.log(realUrlTags);
+		const currentUrl = new URLSearchParams(this.props.location.search).get(paramName) || "";
+		const urlTags = (currentUrl).split(paramSeparator);
+		const realUrlTags = urlTags.filter(t => t in optionsValues);
+
 		let selectables = [];
 		for (let tag of realUrlTags) {
-			selectables.push({ value: tag, label: this.optionsValues[tag] });
+			selectables.push({ value: tag, label: optionsValues[tag] });
 		}
 		selectables = selectables.sort(alphaCompare);
 
@@ -56,19 +53,18 @@ class LinkableSelect extends Component {
 		this.setSelectablesFromURL = this.setSelectablesFromURL.bind(this);
 	}
 
+	componentWillReceiveProps(props){
+		if (!this.props.options && props.options) {
+			let optionsValues = {};
+			for (let selectable of props.options) {
+				optionsValues[selectable.value] = selectable.label;
+			}
+			this.setSelectablesFromURL(optionsValues, props.paramName, props.paramSeparator);
+		}
+	}
+
 	render() {
 		const { onChange, ...props } = this.props;
-
-		//why crashing???????????????
-		console.log(this.props.options)
-		if (this.props.options) {
-			this.optionsValues = {};
-			for (let selectable of this.props.options) {
-				this.optionsValues[selectable.value] = selectable.label;
-			}
-		}
-
-		this.setSelectablesFromURL();
 
 		return (
 			<VirtualizedSelect

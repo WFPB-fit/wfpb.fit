@@ -355,6 +355,10 @@ def get_foods_from_responses(list_usda_responses): #https://ndb.nal.usda.gov/ndb
 				foods.append(food)
 	return foods
 
+def get_num_calories(usda_food):
+	num_calories = [n['value'] for n in usda_food['nutrients'] if n.get('nutrient_id')==208] #find the calorie nutrient object
+	return num_calories[0]
+
 def parse_food(usda_food):
 	if 'food' not in usda_food:
 		return None
@@ -372,9 +376,17 @@ def parse_food(usda_food):
 	
 	#parse the nutrients into their values
 	food['nutrients'] = {}
+	num_calories = get_num_calories(usda_food)
 	for usda_nutrient in usda_food['nutrients']:
+		amt = get_nutrient_value(usda_nutrient)
+		if num_calories != 0:
+			amt *= 100 / num_calories #normalize nutrient to 100kcal
+		else:
+			return None #do not include 0 calorie foods?
+		
 		n_id = usda_nutrient['nutrient_id']
-		food['nutrients'][n_id] = get_nutrient_value(usda_nutrient)
+		food['nutrients'][n_id] = amt
+	food['nutrients'][208] = num_calories #fix the calories which got 'normalized' in the loop
 	
 	#sum up certain nutrients to reduce size of the data
 	for n_total_id in nutrient_summations:
