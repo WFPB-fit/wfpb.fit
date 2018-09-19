@@ -62,16 +62,19 @@ class Food extends Component {
 	static getRdaDensity(nutrients){
 		const numRdaNutrients = Object.values(RDA).length;
 		let sum = 0;
-		debugger;
+		console.log(RDA)
+		console.log(nutrients)
 		for(const nId in RDA){
-			const percentRDA = (nutrients[nId] || 0) / RDA[nId];
+			const need = RDA[nId]
+			const percentRDA = (nutrients[nId] || 0) / need;
 			sum += Math.min(percentRDA, 1); //up to 100% of RDA, over that is not needed. Good idea?
 			// sum += percentRDA;
+			// debugger
 		}
 		//Normalize to 100kCal
-		sum *= 100 / nutrients[208];
+		// sum *= 100 / nutrients[208]; //Already calorie-normalized in the offline data processing
 
-		return parseFloat( (sum / nutrients[208]).toFixed(3) );
+		return parseFloat( (sum).toFixed(3) );
 	}
 
 	getNutrientName(nId) {
@@ -265,7 +268,7 @@ class Food extends Component {
 				);
 			}
 
-			let rdaDensity = `${firstfoodData.name}: ${Food.getRdaDensity(firstfoodData.n)}`;
+			let rdaDensity;
 			if (this.state.selectedFoods.length > 1) {
 				rdaDensity = (
 					<NutrientGraph
@@ -273,6 +276,8 @@ class Food extends Component {
 						yLabel="RDA Density"
 					/>
 				);
+			}else{
+				rdaDensity = `${firstfoodData.name}: ${Food.getRdaDensity(firstfoodData.n)}`;
 			}
 
 			// console.log(this.preprocessMacros(GraphNutrients["macros"],GraphNutrients["macros"]))

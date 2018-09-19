@@ -17,13 +17,18 @@ SELECT
 	-- gm_weight
 	-- nutrition.amount,
 	-- nutrition.nutrient_id
-	-- food_group.name,
+	-- food_group.name, --need to uncomment the inner join with the food_group table
+	-- food.long_desc,
 	food.id
 	FROM food
 	-- inner join food_group on food_group.id=food.food_group_id
-	-- inner join nutrition on food.id=nutrition.food_id
+	inner join nutrition on food.id=nutrition.food_id
 	-- inner join weight on food.id=weight.food_id
 	where
+	-- no zero calorie stuff. 
+	-- This discludes Tea so may change it later, but 0 cal makes it impossible to normalize nutrients to 100kcal in the app unless i go by weight, 
+	-- which would make everything very confusing
+	(nutrition.nutrient_id == 208 and nutrition.amount != 0) and  
 	-- weight.description like 'serving%' and 
 	--------- EXCLUSION ---------
 	--------- TOTAL FOOD GROUP REMOVAL ---------
@@ -86,32 +91,36 @@ SELECT
 		-- long_desc not like '%with added sugar%' and
 		long_desc not like '%sulfured%' and
 		long_desc not like '%without skin%' and
+		long_desc not like '%skin only%' and
+		-- long_desc not like '%without skin%' and
 		long_desc not like '%drained%' and
 		long_desc not like '%with butter sauce%' and
 		long_desc not like '%added solution%'
 	) and
 	--------- RAW MEAT ---------
-	--doesnt do what i thought it did, removed
-	-- (
-	-- 	(
-	-- 		long_desc not like '% raw%' and
-	-- 		long_desc not like '% frozen%' and 
-	-- 		long_desc not like '% uncooked%' and 
-	-- 		( --is meat (not is plant)
-	-- 			food_group_id == 500 and --poultry
-	-- 			food_group_id == 1000 and --pork
-	-- 			food_group_id == 1300 and --beef
-	-- 			-- food_group_id == 1500 and --fish
-	-- 			food_group_id == 1700 --lamb,veal,game
-	-- 		)
-	-- 	) or ( --is not meat
-	-- 			food_group_id != 500 and --poultry
-	-- 			food_group_id != 1000 and --pork
-	-- 			food_group_id != 1300 and --beef
-	-- 			-- food_group_id != 1500 and --fish
-	-- 			food_group_id != 1700 --lamb,veal,game
-	-- 	)
-	-- ) and
+	--works! Includes entries from 'meals and entrees', ie chicken tenders
+	(
+		(
+			long_desc not like '% raw%' and
+			long_desc not like '% frozen%' and 
+			long_desc not like '% uncooked%' and 
+			( --is meat (not is plant)
+				food_group_id == 100 and --dairy and eggs
+				food_group_id == 500 and --poultry
+				food_group_id == 1000 and --pork
+				food_group_id == 1300 and --beef
+				-- food_group_id == 1500 and --fish
+				food_group_id == 1700 --lamb,veal,game
+			)
+		) or ( --is not meat
+				food_group_id != 100 and --dairy and eggs
+				food_group_id != 500 and --poultry
+				food_group_id != 1000 and --pork
+				food_group_id != 1300 and --beef
+				-- food_group_id != 1500 and --fish
+				food_group_id != 1700 --lamb,veal,game
+		)
+	) and
 	--------- COOKING METHODOLOGY ---------
 	(
 		long_desc not like '%, pan-browned%' and
@@ -120,11 +129,11 @@ SELECT
 		long_desc not like '% stewed%' and
 		long_desc not like '% unheated%' and
 		long_desc not like '% unprepared%' and
-		long_desc not like '% fried%' and
+		-- long_desc not like '% fried%' and
 		long_desc not like '% simmered%' and
 		long_desc not like '% rotisserie%' and
 		long_desc not like '%braised%' and
-		long_desc not like '%grilled%' and
+		-- long_desc not like '%grilled%' and
 		long_desc not like '%broiled%' and
 		long_desc not like '% BBQ%' and
 		long_desc not like '%pan-broiled%'
@@ -137,7 +146,7 @@ SELECT
 		long_desc not like '%separable lean and fat%' and --most people cut off the pure fat from their steaks/meat, so we won't include it
 
 		-- long_desc not like '% leg%' and
-		long_desc not like '% thigh%' and
+		-- long_desc not like '% thigh%' and
 		long_desc not like '% feet%' and
 		long_desc not like '% skin-only%' and
 		long_desc not like '%, back%' and
@@ -164,75 +173,3 @@ SELECT
 		long_desc not like '%canned or bottled%'
 	)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--- -- A more generous selection
--- SELECT
--- 	-- gm_weight
--- 	-- nutrition.amount,
--- 	-- nutrition.nutrient_id
--- 	-- food_group.name,
--- 	food.id
--- 	FROM food
--- 	-- inner join food_group on food_group.id=food.food_group_id
--- 	-- inner join nutrition on food.id=nutrition.food_id
--- 	-- inner join weight on food.id=weight.food_id
--- 	where
--- 	-- weight.description like 'serving%' and 
--- 	--------- EXCLUSION ---------
--- 	--------- TOTAL FOOD GROUP REMOVAL ---------
--- 	(
--- 		food_group_id !=300 and -- baby food
--- 		--food_group_id !=600 and -- soups/sauces
--- 		--food_group_id != 1800 and --baked products
--- 		--food_group_id != 2100 and --fast foods
--- 		food_group_id !=3500 and -- native food
--- 		food_group_id !=3600 --restaruants
--- 	) and
--- 	(
--- 		manufac_name is '' and --remove company specific food
--- 		long_desc not like '%by-product%' and --remove waste food
--- 		long_desc not like '%industrial%' and -- this is a consumer facing app
--- 		long_desc not like '%USDA Commodity%'
--- 	) and 
--- 	--------- LOCATIONS ---------
--- 	(
--- 		long_desc not like '% style%' and --italian, spanish, etc
--- 		long_desc not like '%California%' and
--- 		long_desc not like '%Florida%' and
--- 		long_desc not like '%imported%'
--- 	) and     
--- 	--------- MEAT TYPE ---------
--- 	(
--- 		-- long_desc not like '%, immitation%' and
--- 		long_desc not like '%, bone-in%' and
--- 		long_desc not like '% extra lean%' and
--- 		long_desc not like '%separable lean and fat%' and --most people cut off the pure fat from their steaks/meat, so we won't include it
-
--- 		-- long_desc not like '% leg%' and
--- 		long_desc not like '% thigh%' and
--- 		long_desc not like '% feet%' and
--- 		long_desc not like '% skin-only%' and
--- 		long_desc not like '%, back%' and
-		
--- 		long_desc not like '% select%' and
--- 		long_desc not like '% all grades%' and
--- 		long_desc not like '%light meat%' and
--- 		long_desc not like '%dark meat%' and
--- 		long_desc not like '%meat and skin%'
--- 	) 
