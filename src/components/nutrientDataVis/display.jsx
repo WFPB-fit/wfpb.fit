@@ -62,8 +62,6 @@ class Food extends Component {
 	static getRdaDensity(nutrients){
 		const numRdaNutrients = Object.values(RDA).length;
 		let sum = 0;
-		console.log(RDA)
-		console.log(nutrients)
 		for(const nId in RDA){
 			const need = RDA[nId]
 			const percentRDA = (nutrients[nId] || 0) / need;
@@ -200,55 +198,20 @@ class Food extends Component {
 		];
 	}
 
-	// //foods are set up to index by nutrient id instead of nutrient name.
-	// //index by name instead. Determine the color of lines to be used
-	// preprocessSelectedFoods() {
-	// 	// preprocess foods
-	// 	return this.state.selectedFoods.map(selectedFood => {
-	// 		const foodId = selectedFood.value;
-	// 		let foodData = Object.assign({}, this.props.food.data[foodId]);
-
-	// 		foodData.color = getRandomColor();
-	// 		foodData.id = foodId;
-
-	// 		//copy over nutrient amounts, substitute in real nutrient name for nutrient ID
-	// 		let newNutrients = {};
-	// 		// debugger
-
-	// 		for (const groupName of Object.keys(GraphNutrients)) {
-	// 			let newGroupNutrients = [];
-	// 			for (const nId of GraphNutrients[groupName]) {
-	// 				const nName = NutrientNames[nId];
-
-	// 				let val = 0;
-	// 				let isMissing = false;
-	// 				if (nId in foodData.n) val = foodData.n[nId];
-	// 				else isMissing = true;
-
-	// 				newGroupNutrients.push({ x: nName, y: val, nutrient_id: nId, foodName: foodData.name, nutrientDataIsMissing: isMissing });
-	// 			}
-	// 			newNutrients[groupName] = newGroupNutrients;
-	// 		}
-	// 		foodData.n = newNutrients;
-
-	// 		return foodData;
-	// 	}, []);
-	// }
-
 	render() {
 		let dataVis = null;
 		if (this.state.selectedFoods.length > 0) {
 			//At least one food is selected
 			//link to food sources
 			const sources = this.state.selectedFoods.map(selectedFood => {
-				const foodIndex = selectedFood.value;
-				const foodData = this.props.food.data[foodIndex];
-				const id = (foodData.id +"").padStart(5, '0');
+				const foodId = selectedFood.value;
+				const foodData = this.props.food.data[foodId];
+				const usdaFoodId = (foodId +"").padStart(5, '0');
 
 				return (
 					<li key={foodData.name}>
 						{getLink(
-							`https://ndb.nal.usda.gov/ndb/search/list?qlookup=${id}`,
+							`https://ndb.nal.usda.gov/ndb/search/list?qlookup=${usdaFoodId}`,
 							foodData.name
 						)}
 					</li>

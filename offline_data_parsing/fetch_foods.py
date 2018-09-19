@@ -424,9 +424,18 @@ def get_nutrient_value(n):
 		val *= 1e-3
 	return val
 
+def index_foods(foods):
+	new_foods = {}
+	for food in foods:
+		id = food['id']
+		del food['id']
+		new_foods[id] = food
+	return new_foods
+
 def format_and_save_usda_food_data(folder_name):
 	responses = fetch_USDA_data()
 	foods = get_foods_from_responses(responses)
+	foods = index_foods(foods)
 
 	RDA = {}
 	RDA = parse_rda_info(RDA, rda_vitamin_names, rda_vitamin_units, rda_vitamin_vals)

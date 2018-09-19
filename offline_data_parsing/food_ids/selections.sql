@@ -98,23 +98,25 @@ SELECT
 		long_desc not like '%added solution%'
 	) and
 	--------- RAW MEAT ---------
-	--works! Includes entries from 'meals and entrees', ie chicken tenders
+	--Includes entries from 'meals and entrees', ie chicken tenders
 	(
 		(
 			long_desc not like '% raw%' and
-			long_desc not like '% frozen%' and 
-			long_desc not like '% uncooked%' and 
+			-- long_desc not like '% frozen%' and 
+			-- long_desc not like '% uncooked%' and 
 			( --is meat (not is plant)
-				food_group_id == 100 and --dairy and eggs
-				food_group_id == 500 and --poultry
-				food_group_id == 1000 and --pork
-				food_group_id == 1300 and --beef
+				food_group_id == 100 or --dairy and eggs
+				food_group_id == 500 or --poultry
+				food_group_id == 700 or --sausages and luncheon meat
+				food_group_id == 1000 or --pork
+				food_group_id == 1300 or --beef
 				-- food_group_id == 1500 and --fish
 				food_group_id == 1700 --lamb,veal,game
 			)
 		) or ( --is not meat
 				food_group_id != 100 and --dairy and eggs
 				food_group_id != 500 and --poultry
+				food_group_id != 700 or --sausages and luncheon meat
 				food_group_id != 1000 and --pork
 				food_group_id != 1300 and --beef
 				-- food_group_id != 1500 and --fish
