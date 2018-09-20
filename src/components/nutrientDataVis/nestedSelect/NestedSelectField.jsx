@@ -69,11 +69,12 @@ export default class NestedSelectField extends Component {
         keys = keys.sort(alphaCompare).filter(x => x !== '');
         if (keys.length > 0) {
             const sortId = `sort-select-${value}`;
-            let label = (indexKey === 0) ? "Food Group" : "Food";
+            let label = (indexKey === 0) ? "Food Group Search" : "Food";
+            let minWidth = (indexKey === 0) ? "250px" : "150px";
             return (
                 <FormControl
                     key={indexKey}
-                    style={{ minWidth: '150px',verticalAlign:'bottom' }}                    
+                    style={{ minWidth: minWidth, verticalAlign: 'bottom' }}
                 >
                     <InputLabel htmlFor={sortId} >{label}</InputLabel>
                     <SelectField

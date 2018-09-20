@@ -61,7 +61,7 @@ export default class NutrientGraph extends Component {
 
 	static getVictoryTooltipLabel(d) {
 		let val = Number(d.y);
-		let unit = d.yLabel;
+		let unit = d.unit;
 
 		let prefix = "";
 		if (!unit) {
@@ -69,13 +69,14 @@ export default class NutrientGraph extends Component {
         }
 
         const valDecimal = ( val - parseInt(val) )
-        const magnitude = - parseInt( valDecimal.toExponential().split('e')[1] );
+		let magnitude = - parseInt( valDecimal.toExponential().split('e')[1] );
+		magnitude = Math.max(magnitude, 1);
 		// if (unit !== '%') {
 		//     if (d.y < 1e-3) { val *= 1e6; prefix = 'µ'; }
 		//     else if (d.y < 1) { val *= 1e3; prefix = 'm'; }
 		// }
 
-		let displayVal = `${val.toFixed(magnitude+1)} ${prefix}${unit}`;
+		let displayVal = `${val.toFixed(magnitude)} ${prefix}${unit}`;
 		if (d.nutrientDataIsMissing) displayVal = "Data Missing";
 		// else if (val === 0) `0 Grams`;
 		// let nameComponents = d.foodName.split(",");

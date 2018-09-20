@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import CircularProgress from '@material-ui/core/CircularProgress';
+
 export function preprocess(resources) {
 	return resources.map((resource, indx) => {
 		if (resource.tags) resource.tags = resource.tags.split(",");
@@ -99,6 +101,13 @@ export function joinMetaData(arr) {
 export function getTitleized(val) {
 	return val ? titleize(val) : null;
 }
+
+export const CenteredCircularProgress = styled(CircularProgress)`
+position:absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%,-50%);
+`;
 
 export const WidthWrapper = styled.div`
 	width: 95%;

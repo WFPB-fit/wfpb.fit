@@ -7,7 +7,8 @@ import {
 	titleize,
 	getRandomColor,
 	getLink,
-	alphaCompare
+	alphaCompare,
+	CenteredCircularProgress
 } from "../../utils/GeneralUtils.jsx";
 
 import RDA from "../../assets/data/preprocessed_data/RDA.json";
@@ -59,10 +60,10 @@ class Food extends Component {
 	}
 
 	// https://academic.oup.com/ajcn/article/99/5/1223S/4577490
-	static getRdaDensity(nutrients){
+	static getRdaDensity(nutrients) {
 		const numRdaNutrients = Object.values(RDA).length;
 		let sum = 0;
-		for(const nId in RDA){
+		for (const nId in RDA) {
 			const need = RDA[nId]
 			const percentRDA = (nutrients[nId] || 0) / need;
 			sum += Math.min(percentRDA, 1); //up to 100% of RDA, over that is not needed. Good idea?
@@ -72,7 +73,8 @@ class Food extends Component {
 		//Normalize to 100kCal
 		// sum *= 100 / nutrients[208]; //Already calorie-normalized in the offline data processing
 
-		return parseFloat( (sum).toFixed(3) );
+
+		return parseFloat((sum / numRdaNutrients * 100).toFixed(1));
 	}
 
 	getNutrientName(nId) {
@@ -93,7 +95,7 @@ class Food extends Component {
 				dataPoints.push({
 					x: this.getNutrientName(nId),
 					y: val,
-					yLabel: "g",
+					unit: "g",
 					foodName: foodData.name,
 					nutrientDataIsMissing: isMissing
 				});
@@ -133,7 +135,7 @@ class Food extends Component {
 		dataPoints.push({
 			x: this.getNutrientName(203),
 			y: percentCalFromProtein,
-			yLabel: "%",
+			unit: "%",
 			foodName: foodData.name,
 			nutrientDataIsMissing: isMissing
 		});
@@ -146,7 +148,7 @@ class Food extends Component {
 		dataPoints.push({
 			x: this.getNutrientName(204),
 			y: percentCalFromFat,
-			yLabel: "%",
+			unit: "%",
 			foodName: foodData.name,
 			nutrientDataIsMissing: isMissing
 		});
@@ -159,7 +161,7 @@ class Food extends Component {
 		dataPoints.push({
 			x: this.getNutrientName(205),
 			y: percentCalFromCarbs,
-			yLabel: "%",
+			unit: "%",
 			foodName: foodData.name,
 			nutrientDataIsMissing: isMissing
 		});
@@ -187,7 +189,7 @@ class Food extends Component {
 		let foodsRdaDataLine = this.state.selectedFoods.map(selectedFood => {
 			const foodId = selectedFood.value;
 			const foodData = this.props.food.data[foodId];
-			return { x: foodData.name, y: Food.getRdaDensity(foodData.n), foodName: foodData.name };
+			return { x: foodData.name, y: Food.getRdaDensity(foodData.n), unit: "%", foodName: foodData.name };
 		}, []);
 
 		return [
@@ -199,6 +201,12 @@ class Food extends Component {
 	}
 
 	render() {
+		if (Object.keys(this.props.food.data).length === 0 || Object.keys(this.props.food.indices).length === 0) {
+			return (
+				<CenteredCircularProgress size={50} />
+			);
+		}
+
 		let dataVis = null;
 		if (this.state.selectedFoods.length > 0) {
 			//At least one food is selected
@@ -206,7 +214,7 @@ class Food extends Component {
 			const sources = this.state.selectedFoods.map(selectedFood => {
 				const foodId = selectedFood.value;
 				const foodData = this.props.food.data[foodId];
-				const usdaFoodId = (foodId +"").padStart(5, '0');
+				const usdaFoodId = (foodId + "").padStart(5, '0');
 
 				return (
 					<li key={foodData.name}>
@@ -239,8 +247,8 @@ class Food extends Component {
 						yLabel="RDA Density"
 					/>
 				);
-			}else{
-				rdaDensity = `${firstfoodData.name}: ${Food.getRdaDensity(firstfoodData.n)}`;
+			} else {
+				rdaDensity = `${firstfoodData.name}: ${Food.getRdaDensity(firstfoodData.n)}%`;
 			}
 
 			// console.log(this.preprocessMacros(GraphNutrients["macros"],GraphNutrients["macros"]))
@@ -368,22 +376,17 @@ class Food extends Component {
 					</ul>
 				</div>
 			);
-		} else {
-			//no foods are selected
-			dataVis = (
-				<div>
-					<p>Enter a tag in the search bar to display info</p>
-				</div>
-			);
 		}
 
 		return (
 			<div>
+				{/* <p>Enter a tag in the search bar to display info</p> */}
 				<NestedSelectField
 					selectedFoods={this.state.selectedFoods}
 					addFood={this.addFood}
 				/>
 				<LinkableSelect
+					placeholder="Food Text Search..."
 					name="form-field-name"
 					filterOptions={this.props.food.filterOptions}
 					value={this.state.selectedFoods}
