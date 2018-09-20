@@ -10,7 +10,7 @@ import { withRouter } from 'react-router-dom';
 import Resources from '../resources/index.jsx';
 import styled from 'styled-components';
 
-const StyledTabs = styled(Tabs) `
+const StyledTabs = styled(Tabs)`
 margin:5px;
 `;
 
@@ -25,17 +25,13 @@ class LinkableTabs extends Component {
         }
     }
     getDefaultActiveTab() {
-        if (this.props.notLinkable) return 0;
-
-        const hash = this.props.location.hash;
-
+        const hash = decodeURI(this.props.location.hash).toLowerCase().slice(1); // remove the '#' at the beginning
         let initTabIndex = 0;
 
-        if (hash === "") this.switchTab(null, initTabIndex);
-        else {
+        if (!this.props.notLinkable && hash !== "") {
             this.props.tabs.forEach((x, i) => {
                 const label = x.label;
-                if (`#${label.toLowerCase()}` === hash) initTabIndex = i;
+                if (label.toLowerCase() === hash) initTabIndex = i;
             });
         }
 
