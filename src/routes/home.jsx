@@ -67,8 +67,8 @@ export default class Home extends Component {
 
 					<p>
 						Diet high in a diverse range of nutrient-dense plant foods, and
-						avoids animal products and processed foods (such as oil, sugar,
-						or refined grains). WFPB is somewhat similar to the
+						avoids animal products and processed foods (such as oil, sugar, or
+						refined grains). WFPB is somewhat similar to the
 						{getLink(
 							"https://www.hsph.harvard.edu/nutritionsource/healthy-weight/diet-reviews/mediterranean-diet/",
 							"Mediterranean Diet"
@@ -233,6 +233,14 @@ export default class Home extends Component {
 						</li>
 					</ol>
 					<h3>Other Nutrients To Consider</h3>
+					<p>
+						Most people will get all other required nutrients when eating a
+						diverse range of plant foods. If you are worried about your
+						nutrition try tracking it with{" "}
+						{getLink("https://cronometer.com/", "Cronometer")} or a similar app.
+					</p>
+					<p>People often have concerns about:</p>
+					
 					<ol>
 						<li>
 							Americans eat twice the <b>protein</b> that's recommended.{" "}
@@ -248,9 +256,10 @@ export default class Home extends Component {
 						</li>
 						<li>
 							<b>Omega 3 fatty acids</b> have been shown to improve brain and
-							joint health. There are 3 types: ALA, DHA, and EPA. Plants only
-							make ALA. Your body can convert ALA to the more useful DHA+EPA,
-							but only in small amounts.{" "}
+							joint health. Current evidence does not support their role in
+							improving heart health. There are 3 types: ALA, DHA, and EPA.
+							Plants only make ALA. Your body can convert ALA to the more useful
+							DHA+EPA, but only in small amounts.{" "}
 							<b>
 								It can be good to supplement with DHA/EPA derived from algae
 							</b>
