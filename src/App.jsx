@@ -1,55 +1,56 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import {
-	BrowserRouter as Router,
-	Route, Switch
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import learnMoreData from './assets/data/media.json';
-import { preprocess, indexByTags } from './utils/GeneralUtils.jsx';
-import Header from './components/header';
-import Footer from './components/footer';
+import learnMoreData from "./assets/data/media.json";
+import { preprocess, indexByTags } from "./utils/GeneralUtils.jsx";
+import Header from "./components/header";
+import Footer from "./components/footer";
 
-import Home from './routes/home.jsx';
-import Supplies from './routes/supplies.jsx';
-import Data from './routes/food.jsx';
-import ResearchContainer from './routes/research_container.jsx';
-import LearnMore from './routes/learn-more';
-import Endorsements from './routes/endorsements';
+import Home from "./routes/home.jsx";
+import Supplies from "./routes/supplies.jsx";
+import Data from "./routes/food.jsx";
+import ResearchContainer from "./routes/research_container.jsx";
+import LearnMore from "./routes/learn-more";
+import Endorsements from "./routes/endorsements";
 
-import 'react-select/dist/react-select.css';
-import 'react-virtualized/styles.css';
-import 'react-virtualized-select/styles.css';
+import "react-select/dist/react-select.css";
+import "react-virtualized/styles.css";
+import "react-virtualized-select/styles.css";
 
-import DataLoader from './utils/data/DataLoader.js';
+import DataLoader from "./utils/data/DataLoader.js";
 
-import { Provider } from 'react-redux'
-import { createStore } from 'redux';
-import rootReducer from './utils/data/reducers';
+import { Provider } from "react-redux";
+import { createStore } from "redux";
+import rootReducer from "./utils/data/reducers";
 
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import lightBlue from "@material-ui/core/colors/lightBlue";
+import orange from "@material-ui/core/colors/orange";
+import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
 // import Parse from './utils/fdaDataCreation/parseFdaData';
 // Parse.parse(store);
 
-let store = createStore(
-	rootReducer
-);
+let store = createStore(rootReducer);
 
 const Wrapper = styled.div`
-display: flex;  
-min-height: 100%;
-flex-direction: column;
-justify-content:space-between;
+	display: flex;
+	min-height: 100%;
+	flex-direction: column;
+	justify-content: space-between;
 `;
 const Body = styled.div`
-flex:1;
+	flex: 1;
 `;
 
 const theme = createMuiTheme({
-	typography: { htmlFontSize: 14 }
+	typography: { htmlFontSize: 14 },
+	palette: {
+		primary: lightBlue,
+		secondary: orange
+	}
 });
 
 export default class App extends Component {
@@ -59,12 +60,12 @@ export default class App extends Component {
 
 		//simple global data container
 		window.globalAppData = {
-			appName: 'WFPBD.fit',
+			appName: "WFPBD.fit",
 			learnMore: {
 				documentaries: indexByTags(preprocess(learnMoreData.documentaries)),
 				videos: indexByTags(preprocess(learnMoreData.videos)),
 				books: indexByTags(preprocess(learnMoreData.books)),
-				wikipedia: indexByTags(preprocess(learnMoreData.wikipedia)),
+				wikipedia: indexByTags(preprocess(learnMoreData.wikipedia))
 			}
 		};
 		document.title = window.globalAppData.appName; //set tab title
@@ -76,13 +77,12 @@ export default class App extends Component {
 		return (
 			<MuiThemeProvider theme={theme}>
 				<Provider store={store}>
-					<Router >
+					<Router>
 						<Wrapper>
 							<Header />
 							<Body>
 								<Switch>
-									<Route exact path="/"
-										render={(props) => <Home {...props} />} />
+									<Route exact path="/" render={props => <Home {...props} />} />
 									<Route path="/research" component={ResearchContainer} />
 									<Route path="/data" component={Data} />
 									<Route path="/endorsements" component={Endorsements} />

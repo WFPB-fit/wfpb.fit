@@ -12,6 +12,10 @@ const FlexToolbar = styled(Toolbar)`
 	justify-content: space-between;
 `;
 
+const Center = styled.div`
+	text-align: center;
+`;
+
 export default class Header extends Component {
 	render() {
 		return (
@@ -19,34 +23,34 @@ export default class Header extends Component {
 				<AppBar position="static">
 					<FlexToolbar>
 						{/* left  */}
-						<div>
+						<Center>
 							<Button component={Link} to="/">
 								{window.globalAppData.appName}
 							</Button>
-						</div>
+						</Center>
 
 						{/* mid  */}
-						<div>
-							<Button component={Link} to="/research" color="secondary">
+						<Center>
+							<Button component={Link} to="/research">
 								Research
 							</Button>
-							<Button component={Link} to="/data" color="secondary">
-								Data
+							<Button component={Link} to="/data">
+								Food Data
 							</Button>
-							<Button component={Link} to="/media" color="secondary">
+							<Button component={Link} to="/media">
 								Media
 							</Button>
-							<Button component={Link} to="/endorsements" color="secondary">
+							<Button component={Link} to="/endorsements">
 								Endorsements
 							</Button>
-						</div>
+						</Center>
 
 						{/* right  */}
-						<div>
-							<Button component={Link} to="/donate" color="secondary">
+						<Center>
+							<Button component={Link} to="/donate">
 								Donate
 							</Button>
-						</div>
+						</Center>
 					</FlexToolbar>
 				</AppBar>
 			</div>
