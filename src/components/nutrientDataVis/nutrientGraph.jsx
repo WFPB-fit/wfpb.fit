@@ -71,19 +71,12 @@ export default class NutrientGraph extends Component {
         const valDecimal = ( val - parseInt(val) )
 		let magnitude = - parseInt( valDecimal.toExponential().split('e')[1] );
 		magnitude = Math.max(magnitude, 1);
-		// if (unit !== '%') {
-		//     if (d.y < 1e-3) { val *= 1e6; prefix = 'µ'; }
-		//     else if (d.y < 1) { val *= 1e3; prefix = 'm'; }
-		// }
 
 		let displayVal = `${val.toFixed(magnitude)} ${prefix}${unit}`;
 		if (d.nutrientDataIsMissing) displayVal = "Data Missing";
-		// else if (val === 0) `0 Grams`;
-		// let nameComponents = d.foodName.split(",");
 
-		// return `${d.foodName}: \n${d.x}: ${displayVal}`;
-		// return `${NutrientGraph.processGraphLabel(d.foodName)} : ${displayVal}`;
-		return `${d.foodName} : ${displayVal}`;
+		// return `${d.foodName} : ${displayVal}`;
+		return '';
 	}
 	
 	getVictoryGraphLines(linesData) {

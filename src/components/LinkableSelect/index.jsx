@@ -33,8 +33,9 @@ class LinkableSelect extends Component {
 
 	setSelectablesFromURL(optionsValues, paramName, paramSeparator) {
 		//set initial tags from url params
-		const currentUrl = new URLSearchParams(this.props.location.search).get(paramName) || "";
-		const urlTags = (currentUrl).split(paramSeparator);
+		const currentUrl =
+			new URLSearchParams(this.props.location.search).get(paramName) || "";
+		const urlTags = currentUrl.split(paramSeparator);
 		const realUrlTags = urlTags.filter(t => t in optionsValues);
 
 		let selectables = [];
@@ -53,13 +54,17 @@ class LinkableSelect extends Component {
 		this.setSelectablesFromURL = this.setSelectablesFromURL.bind(this);
 	}
 
-	componentWillReceiveProps(props){
-		if (!this.props.options && props.options) {
+	componentDidMount() {
+		if (this.props.options) {
 			let optionsValues = {};
-			for (let selectable of props.options) {
+			for (let selectable of this.props.options) {
 				optionsValues[selectable.value] = selectable.label;
 			}
-			this.setSelectablesFromURL(optionsValues, props.paramName, props.paramSeparator);
+			this.setSelectablesFromURL(
+				optionsValues,
+				this.props.paramName,
+				this.props.paramSeparator
+			);
 		}
 	}
 
