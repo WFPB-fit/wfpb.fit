@@ -29,6 +29,10 @@ const SquarishImg = styled(ModalImage)`
 	display: block;
 `;
 
+const Emojis = styled.div`
+	font-size: 25px;
+`;
+
 export default class Home extends Component {
 	constructor(props) {
 		super(props);
@@ -59,12 +63,12 @@ export default class Home extends Component {
 						from an accredited physician or dietitian.
 					</p>
 
-					<h2>What is WFPB Diet?</h2>
+					<h2>What is WFPBD?</h2>
 
 					<p>
-						WFPBD is a pattern of eating habits that prioritize a diverse range
-						of nutrient-dense plant foods, and avoid animal products and
-						processed foods. WFPB is somewhat similar to the
+						Diet high in a diverse range of nutrient-dense plant foods, and
+						avoids animal products and processed foods (such as oil, sugar,
+						or refined grains). WFPB is somewhat similar to the
 						{getLink(
 							"https://www.hsph.harvard.edu/nutritionsource/healthy-weight/diet-reviews/mediterranean-diet/",
 							"Mediterranean Diet"
@@ -76,21 +80,14 @@ export default class Home extends Component {
 						)}
 						.
 					</p>
-					<h3>What do you eat?</h3>
-					<p>
-						Nutrient dense plant foods include: vegetables, fruits, beans,
-						legumes, whole grains, nuts, seeds, even fungi or algae, and more.
-					</p>
-					<p>
-						Animal products are to be avoided and include meat, dairy, eggs,
-						poultry, fish, and shellfish.
-					</p>
-					<p>
-						Processed foods include sugar, oil, refined grains, candy, creams,
-						etc.
-					</p>
 
-					<h3>Example Diet</h3>
+					<Emojis>
+						<p>
+							✔️ - 🥕🍅🥒🌿🍆🍄🥔🌱🥦🌾🥝🍓🍋🍈🍊🍍🍐🍇🍉🍌🍒🥑🍎🥜🌰🌶️🌽🍠🍵
+						</p>
+						<p>❌ - 🥩🐖🐄🐔🦃🥚🥛🧀🐟🦐</p>
+						<p>❌ - 🍬🥐🍟🍦🥧🍺</p>
+					</Emojis>
 
 					<TallSkinnyImg
 						src="/imgs/assets/foods/pyramids/gregor-daily-dozen.jpg"
