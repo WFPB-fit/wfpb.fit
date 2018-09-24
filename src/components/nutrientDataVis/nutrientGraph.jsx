@@ -85,7 +85,7 @@ export default class NutrientGraph extends Component {
 
 			return (
 				<VictoryLine
-					key={line.id}
+					key={'line'+line.id}
 					style={{
 						data: { stroke: line.color }
 					}}
@@ -103,7 +103,7 @@ export default class NutrientGraph extends Component {
 				<VictoryScatter
 					name="missingData"
 					data={line.dataPoints}
-					key={line.id}
+					key={'scatter'+line.id}
 					dataComponent={<ScatterPoint />}
 					size={3}
 					style={{

@@ -73,6 +73,7 @@ class LinkableSelect extends Component {
 
 		return (
 			<VirtualizedSelect
+				style={{ margin: "5px 0" }}
 				onChange={this.tagsChanged}
 				{...props}
 				name="form-field-name"

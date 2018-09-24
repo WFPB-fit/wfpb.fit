@@ -41,7 +41,7 @@ export default class Home extends Component {
 					<h1>{window.globalAppData.appName}</h1>
 					<p>
 						This non-profit website aggregates resources about the{" "}
-						<b>whole food, low-fat, plant-based diet (WFPBD)</b>. WFPBD has been
+						<b>whole food, plant-based diet (WFPBD)</b>. WFPBD has been
 						documented to{" "}
 						<b>
 							ease weightloss, reverse heart disease, protect against type II
@@ -86,7 +86,7 @@ export default class Home extends Component {
 						poultry, fish, and shellfish.
 					</p>
 					<p>
-						Processed foods include sugar, oil, refined grains, candies, creams,
+						Processed foods include sugar, oil, refined grains, candy, creams,
 						etc.
 					</p>
 
@@ -117,6 +117,10 @@ export default class Home extends Component {
 						the #1 cause of antibiotic use, water use, water pollution, land
 						use, native habitat destruction, plastic in the ocean, animal death,
 						and global climate change.
+					</p>
+
+					<p>
+						<b>And it tastes great.</b>
 					</p>
 
 					<h2>How does it work?</h2>
@@ -207,13 +211,13 @@ export default class Home extends Component {
 						<b>This site aggregates info and research into WFPBD.</b>
 					</p>
 
-					<h2>Potential Nutrient Deficiencies</h2>
+					<h2>Nutrients to be careful of on WFPBD</h2>
 					<ol>
 						<li>
 							Created by bacteria, <b>vitamin B12</b> is stored in animal
 							tissue. Without eating animals B12 will need to be taken as a
-							vitamin or eaten through fortified foods. Even without a strict
-							WFPB diet, B12 supplementation can be helpful, as
+							vitamin or eaten through fortified foods. B12 supplementation can
+							be helpful even on regular diets, as
 							{getLink(
 								"https://www.plantbaseddoctors.org/",
 								"3% of US adults and 7% of seniors are B12 deficient, and 14-17% of adults are marginally depleted."
