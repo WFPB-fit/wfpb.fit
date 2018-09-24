@@ -2,12 +2,9 @@ import React, { Component } from "react";
 import {
 	VictoryChart,
 	VictoryTooltip,
-	createContainer,
 	VictoryLine,
 	VictoryVoronoiContainer,
 	VictoryAxis,
-	VictoryArea,
-	VictoryPolarAxis,
 	VictoryTheme,
 	VictoryScatter
 } from "victory";
@@ -26,8 +23,11 @@ export default class NutrientGraph extends Component {
 	}
 	static processGraphLabel(label) {
 		if (label.length > MAX_LABEL_LEN * 2) {
-			label = label.substring(0, MAX_LABEL_LEN) + "..." + label.substring(label.length - MAX_LABEL_LEN - 1, label.length);
-        }
+			label =
+				label.substring(0, MAX_LABEL_LEN) +
+				"..." +
+				label.substring(label.length - MAX_LABEL_LEN - 1, label.length);
+		}
 		return label;
 	}
 	constructor(props) {
@@ -66,25 +66,23 @@ export default class NutrientGraph extends Component {
 		let prefix = "";
 		if (!unit) {
 			unit = "";
-        }
+		}
 
-        const valDecimal = ( val - parseInt(val) )
+		const valDecimal = ( val - parseInt(val) )
 		let magnitude = - parseInt( valDecimal.toExponential().split('e')[1] );
 		magnitude = Math.max(magnitude, 1);
 
 		let displayVal = `${val.toFixed(magnitude)} ${prefix}${unit}`;
 		if (d.nutrientDataIsMissing) displayVal = "Data Missing";
 
-		// return `${d.foodName} : ${displayVal}`;
-		return '';
+		return `${d.foodName} : ${displayVal}`;
+		// return "";
 	}
-	
+
 	getVictoryGraphLines(linesData) {
 		return linesData.map(line => {
-			// const keys = Object.keys(data).sort(alphaCompare);
-			// data = NutrientGraph.transformObjectToVictoryXYArray(data, food.name);
-
 			if (line.dataPoints.length === 0) return null; //if no values in VictoryArea = crash
+
 			return (
 				<VictoryLine
 					key={line.id}
@@ -132,8 +130,8 @@ export default class NutrientGraph extends Component {
 
 		return (
 			<WidthWrapper>
-				<VictoryChart  //SVG child needs to have `overflow: visible` for tool tip to not be cut off. Added this as a global style "for now"
-                    // domain={{ y: [0, 100] }}
+				<VictoryChart //SVG child needs to have `overflow: visible` for tool tip to not be cut off. Added this as a global style "for now"
+					// domain={{ y: [0, 100] }}
 					padding={{ bottom: 100, left: 35, right: 35, top: 40 }}
 					theme={VictoryTheme.material}
 					containerComponent={

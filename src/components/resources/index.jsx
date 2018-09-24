@@ -25,7 +25,6 @@ padding:5px;
 
 export default class Resources extends Component {
 	handleSelectedTagsChanged(value) {
-		console.log(value)
 		this.setState({ selectedTags: value });
 	}
 	handleSortByChanged(event) {

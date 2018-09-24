@@ -122,7 +122,8 @@ class Food extends Component {
 		const proteinCal = foodData.n[203] * 4;
 		const fatCal = foodData.n[204] * 9;
 		const carbCal = (foodData.n[205] - (foodData.n[291] || 0)) * 4; //carb = 205, fiber=291. Fiber is a carb but it has no calories
-		const totalCal = proteinCal + fatCal + carbCal;
+		// const alcoholCal = foodData.n[221] * 7;
+		const totalCal = foodData.n[208]; //cant add them all together - may not sum to 100% of calories 
 
 		let dataPoints = [];
 
@@ -250,8 +251,6 @@ class Food extends Component {
 			} else {
 				rdaDensity = `${firstfoodData.name}: ${Food.getRdaDensity(firstfoodData.n)}%`;
 			}
-
-			// console.log(this.preprocessMacros(GraphNutrients["macros"],GraphNutrients["macros"]))
 
 			dataVis = (
 				<div>
