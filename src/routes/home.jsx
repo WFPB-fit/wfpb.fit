@@ -59,18 +59,12 @@ export default class Home extends Component {
 						from an accredited physician or dietitian.
 					</p>
 
-					<Button
-						onClick={this.props.toggleDrawer}
-						variant="raised"
-						color="primary"
-					>
-						Learn More
-					</Button>
-
 					<h2>What is WFPB Diet?</h2>
 
 					<p>
-						WFPB is somewhat similar to the
+						WFPBD is a pattern of eating habits that prioritize a diverse range
+						of nutrient-dense plant foods, and avoid animal products and
+						processed foods. WFPB is somewhat similar to the
 						{getLink(
 							"https://www.hsph.harvard.edu/nutritionsource/healthy-weight/diet-reviews/mediterranean-diet/",
 							"Mediterranean Diet"
@@ -80,29 +74,23 @@ export default class Home extends Component {
 							"https://www.hsph.harvard.edu/nutritionsource/healthy-weight/diet-reviews/dash-diet/",
 							"DASH Diet"
 						)}
-						. WFPBD is eating habits that prioritize a diverse range of
-						nutrient-dense plant foods, and avoid animal products and processed
-						foods.
+						.
 					</p>
 					<h3>What do you eat?</h3>
 					<p>
 						Nutrient dense plant foods include: vegetables, fruits, beans,
-						legumes, whole grains, nuts, seeds, and more.
-					</p>
-					<p>
-						Also, other plant-like foods such as fungi or algae can be
-						nutritious.
+						legumes, whole grains, nuts, seeds, even fungi or algae, and more.
 					</p>
 					<p>
 						Animal products are to be avoided and include meat, dairy, eggs,
-						poultry, fish, shellfish, etc.
+						poultry, fish, and shellfish.
 					</p>
 					<p>
 						Processed foods include sugar, oil, refined grains, candies, creams,
 						etc.
 					</p>
 
-					<h3>Examples</h3>
+					<h3>Example Diet</h3>
 
 					<TallSkinnyImg
 						src="/imgs/assets/foods/pyramids/gregor-daily-dozen.jpg"
@@ -215,7 +203,7 @@ export default class Home extends Component {
 							to eat.
 						</b>{" "}
 						Decades of diverse, quality research and the endorsements of
-						governments and physician groups supports this idea.{" "}
+						governments and physician groups support WFPBD.{" "}
 						<b>This site aggregates info and research into WFPBD.</b>
 					</p>
 
@@ -223,9 +211,9 @@ export default class Home extends Component {
 					<ol>
 						<li>
 							Created by bacteria, <b>vitamin B12</b> is stored in animal
-							tissue. Without eating animals B12 will need to be supplemented.
-							Even without a strict WFPB diet, B12 supplementation can be
-							helpful, as
+							tissue. Without eating animals B12 will need to be taken as a
+							vitamin or eaten through fortified foods. Even without a strict
+							WFPB diet, B12 supplementation can be helpful, as
 							{getLink(
 								"https://www.plantbaseddoctors.org/",
 								"3% of US adults and 7% of seniors are B12 deficient, and 14-17% of adults are marginally depleted."
@@ -239,8 +227,8 @@ export default class Home extends Component {
 							)}
 							When there's not enough sun, Vitamin D must be obtained through
 							food, typically fish. Since WFPBD does not recommend animal
-							products, instead use a D vitamin, fortified foods, algae
-							supplements, or a UVB lamp to get your vitamin D.
+							products, instead use a D vitamin (cheap and effectve), fortified
+							foods, algae supplements, or a UVB lamp to get your vitamin D.
 						</li>
 					</ol>
 					<h3>Other Nutrients To Consider</h3>
@@ -254,8 +242,8 @@ export default class Home extends Component {
 							</b>{" "}
 							High protein plant foods include beans, peas, nuts, seeds, soy
 							products, and whole grains.{" "}
-							<b>Complementary Proteins are an outdated idea</b>, as nearly any whole
-							plant food can fulfill essential amino acid requirements.
+							<b>Complementary Proteins are an outdated idea</b>, as nearly any
+							whole plant food can fulfill essential amino acid requirements.
 						</li>
 						<li>
 							<b>Omega 3 fatty acids</b> have been shown to improve brain and
@@ -271,8 +259,9 @@ export default class Home extends Component {
 						<li>
 							<b>Iron</b> is harder to absorb from plants (non-heme) than
 							animals (heme).{" "}
-							<b>Eat a variety of plant foods to get all your iron</b>, particularly
-							green leafy vegetables, beans, whole grains, and seeds.{" "}
+							<b>Eat a variety of plant foods to get all your iron</b>,
+							particularly green leafy vegetables, beans, whole grains, and
+							seeds.{" "}
 							<b>Combine iron-rich plants with foods high in Vitamin C</b> (like
 							fruit or green leafy vegetables) to help absorption.
 						</li>

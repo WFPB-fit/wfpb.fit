@@ -38,16 +38,6 @@ let store = createStore(
 	rootReducer
 );
 
-// used for the options in the Navigation drawer
-window.navLinks = [
-	{ txt: 'Home', href: '/' },
-	{ txt: 'Research', href: '/research' },
-	{ txt: 'Data', href: '/data' },
-	// { txt: 'Supplies', href: '/supplies' },
-	{ txt: 'Media', href: '/media' },
-	{ txt: 'Endorsements', href: '/endorsements' }
-];
-
 const Wrapper = styled.div`
 display: flex;  
 min-height: 100%;
@@ -67,12 +57,9 @@ export default class App extends Component {
 		super(props);
 		this.header = React.createRef();
 
-		this.toggleDrawer = this.toggleDrawer.bind(this);
-		this.closeDrawer = this.closeDrawer.bind(this);
-
 		//simple global data container
 		window.globalAppData = {
-			appName: 'Whole Food Plant-Based Diet',
+			appName: 'WFPBD.fit',
 			learnMore: {
 				documentaries: indexByTags(preprocess(learnMoreData.documentaries)),
 				videos: indexByTags(preprocess(learnMoreData.videos)),
@@ -83,17 +70,6 @@ export default class App extends Component {
 		document.title = window.globalAppData.appName; //set tab title
 
 		DataLoader.init(store);
-
-		this.state = {
-			drawerOpen: false
-		};
-	}
-
-	toggleDrawer() {
-		this.setState({ drawerOpen: !this.state.drawerOpen });
-	}
-	closeDrawer(e) {
-		this.setState({ drawerOpen: false });
 	}
 
 	render() {
@@ -102,15 +78,11 @@ export default class App extends Component {
 				<Provider store={store}>
 					<Router >
 						<Wrapper>
-							<Header
-								toggleDrawer={this.toggleDrawer}
-								closeDrawer={this.closeDrawer}
-								drawerOpen={this.state.drawerOpen}
-							/>
+							<Header />
 							<Body>
 								<Switch>
 									<Route exact path="/"
-										render={(props) => <Home {...props} toggleDrawer={this.toggleDrawer} />} />
+										render={(props) => <Home {...props} />} />
 									<Route path="/research" component={ResearchContainer} />
 									<Route path="/data" component={Data} />
 									<Route path="/endorsements" component={Endorsements} />
