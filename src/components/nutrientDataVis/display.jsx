@@ -124,8 +124,8 @@ class Food extends Component {
 		const fatCal = foodData.n[204] * 9;
 		const carbCal = (foodData.n[205] - (foodData.n[291] || 0)) * 4; //carb = 205, fiber=291. Fiber is a carb but it has no calories
 		// const alcoholCal = foodData.n[221] * 7;
-		const totalCal = foodData.n[208]; //cant add them all together - may not sum to 100% of calories 
-
+		const totalCal = 100; // food normalized to be 100kcal  //foodData.n[208]; //cant add them all together - may not sum to 100% of calories 
+		console.log(totalCal, proteinCal, fatCal, carbCal, foodData.n)
 		let dataPoints = [];
 
 		//"203": "Protein",
