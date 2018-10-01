@@ -65,7 +65,8 @@ class Food extends Component {
 		let sum = 0;
 		for (const nId in RDA) {
 			const need = RDA[nId]
-			const percentRDA = (nutrients[nId] || 0) / need;
+			const nutrientAmount = (nutrients[nId] || 0);
+			const percentRDA = nutrientAmount / need;
 			sum += Math.min(percentRDA, 1); //up to 100% of RDA, over that is not needed. Good idea?
 			// sum += percentRDA;
 			// debugger
@@ -73,8 +74,8 @@ class Food extends Component {
 		//Normalize to 100kCal
 		// sum *= 100 / nutrients[208]; //Already calorie-normalized in the offline data processing
 
-
-		return parseFloat((sum / numRdaNutrients * 100).toFixed(1));
+		const percentTotalRDA = sum / numRdaNutrients
+		return parseFloat((percentTotalRDA * 100).toFixed(1));
 	}
 
 	getNutrientName(nId) {
