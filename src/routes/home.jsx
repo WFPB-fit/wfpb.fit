@@ -329,7 +329,7 @@ export default class Home extends Component {
 							<b>Buy and prepare food in bulk</b> to save time and money.
 							Preparing ahead of time can lead to
 							{getLink(
-								"https://www.ncbi.nlm.nih.gov/pubmed/23597811",
+								"/research?selected=prep",
 								"healthier eating choices."
 							)}
 						</li>
