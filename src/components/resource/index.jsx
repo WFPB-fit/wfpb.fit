@@ -162,7 +162,8 @@ export default class Resource extends Component {
 					}
 					{resource.website &&
 						<Button size="small" variant="raised" color="primary" target="_blank" href={resource.website}>
-							{new URL(resource.website).hostname.replace("www.", "")}
+							Website
+							{/* {new URL(resource.website).hostname.replace("www.", "")} */}
 						</Button>
 					}
 

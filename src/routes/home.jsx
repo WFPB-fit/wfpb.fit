@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
-import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
+import KeyValueTable from "../components/keyValueTable";
 
 import {
 	WidthWrapper,
@@ -62,15 +61,12 @@ export default class Home extends Component {
 						{getLink("https://www.plantbaseddoctors.org", "second opinion")}
 						from an accredited physician or dietitian.
 					</p>
-
 					<h2>What is WFPBD?</h2>
-
 					<p>
 						A diet high in a diverse range of nutrient-dense plant foods and low
 						in animal products or processed foods (such as oil, sugar, or
 						refined grains).
 					</p>
-
 					<Emojis>
 						<p>
 							✔️ - 🥕🍅🥒🌿🍆🍄🥔🌱🥦🌾🥝🍓🍋🍈🍊🍍🍐🍇🍉🍌🍒🥑🍎🥜🌰🌶️🌽🍠🍵
@@ -78,7 +74,6 @@ export default class Home extends Component {
 						<p>❌ - 🥩🥚🥛🧀🐖🐄🐔🦃🐟🦐</p>
 						<p>❌ - 🍬🥐🍟🍦🥧🍺</p>
 					</Emojis>
-
 					<TallSkinnyImg
 						src="/imgs/assets/foods/pyramids/gregor-daily-dozen.jpg"
 						alt="Nutrition Facts Daily Dozen"
@@ -87,32 +82,50 @@ export default class Home extends Component {
 						src="/imgs/assets/foods/pyramids/Plant-Based-Dietitian-Pyramid.jpg"
 						alt="Plant-Based-Dietitian-Pyramid"
 					/>
-
 					{/* <img alt="WFPBD foods" src="/imgs/assets/foods/Fruits_Veg.jpg" /> */}
-
 					<h2>Why eat this way?</h2>
-
 					<p>
 						<b>
 							Disease is expensive, time consuming, miserable, and difficult.
 							WFPBD is a powerful way to help avoid disease.
 						</b>
 					</p>
-
 					<p>
 						<b>WFPBD is also an ethical way to eat. </b> Animal agriculture is
 						the #1 cause of antibiotic use, water use, water pollution, land
 						use, native habitat destruction, plastic in the ocean, animal death,
 						and global climate change.
 					</p>
-
 					<p>
 						<b>And it tastes great.</b>
 					</p>
-
 					<h2>How does it work?</h2>
-
 					<ul>
+						<li>
+							Most Americans are{" "}
+							{getLink(
+								"https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/food-surveys-research-group/docs/wweia-usual-intake-data-tables/",
+								"deficient in essential nutrients"
+							)}{" "}
+							that are common in a WFPB diet. Fixing these deficiencies can
+							greatly improve overall health.
+							<KeyValueTable
+								// title="Percentage of Americans Defiicent In..."
+								style={{ maxWidth: "350px", margin: "5px auto" }}
+								keyLabel="Nutrient"
+								valueLabel="Americans Deficient (%)"
+								data={{
+									Fiber: 97,
+									Potassium: 97,
+									"Vitamin E": 97,
+									"Vitamin K": 73,
+									Calcium: 70,
+									Magnesium: 56,
+									ALA: 44,
+									"Vitamin C": 31
+								}}
+							/>
+						</li>
 						<li>
 							<b>
 								Trans fat, saturated fat, and to a lesser degree, dietary
@@ -167,7 +180,6 @@ export default class Home extends Component {
 						</li>
 						<li>{getLink("/research", "And more...")}</li>
 					</ul>
-
 					<h2>How can I be sure of these benefits?</h2>
 					<p>
 						Without expert training and a constant look into available research,{" "}
@@ -186,8 +198,22 @@ export default class Home extends Component {
 						many thousands of regular people{" "}
 						{getLink("/endorsements", "endorse")} WFPBD.
 					</p>
-
 					<h2>Potential Nutrient Deficiencies on WFPBD</h2>
+					The following nutrients can be harder to get on WFPBD, but actual
+					deficiencies are more rare.
+					<KeyValueTable
+						// title="Percentage of Americans Defiicent In..."
+						style={{ maxWidth: "350px", margin: "5px auto" }}
+						keyLabel="Nutrient"
+						valueLabel="Americans Deficient (%)"
+						data={{
+							"Vitamin D": 69,
+							Zinc: 12,
+							Iron: 5,
+							Protein: 3,
+							B12: 3
+						}}
+					/>
 					<ol>
 						<li>
 							Created by bacteria, <b>vitamin B12</b> is stored in animal
@@ -196,7 +222,7 @@ export default class Home extends Component {
 							be helpful even on regular diets, as
 							{getLink(
 								"https://www.plantbaseddoctors.org/",
-								"3% of US adults and 7% of seniors are B12 deficient, and 14-17% of adults are marginally depleted."
+								"14-17% of adults are marginally depleted."
 							)}
 						</li>
 						<li>
@@ -211,7 +237,7 @@ export default class Home extends Component {
 							foods, algae supplements, or a UVB lamp to get your vitamin D.
 						</li>
 					</ol>
-					<h3>Common Nutrition Concerns About WFPBD</h3>
+					<h3>Common Concerns About WFPBD</h3>
 					<p>
 						Most people will get all other required nutrients when eating a
 						diverse range of whole, plant-based foods. If you are worried about
@@ -219,7 +245,6 @@ export default class Home extends Component {
 						{getLink("https://cronometer.com/", "Cronometer")}, a similar app,
 						or discussing with your doctor.
 					</p>
-
 					<ol>
 						<li>
 							Americans eat twice the <b>protein</b> that's recommended.{" "}
@@ -245,13 +270,10 @@ export default class Home extends Component {
 							directly as a cleaner source.
 						</li>
 						<li>
-							<b>Iron</b> is harder to absorb from plants (non-heme) than
-							animals (heme).{" "}
-							<b>Eat a variety of plant foods to get all your iron</b>,
-							particularly green leafy vegetables, beans, whole grains, and
-							seeds.{" "}
-							<b>Combine iron-rich plants with foods high in Vitamin C</b> (like
-							fruit or green leafy vegetables) to help absorption.
+							<b>Iron, Calcium, and Zinc</b> are common concerns but
+							deficiencies are rare. Eating a diverse range of fresh plant foods
+							will ensure you get more than enough, particularly leafy greens,
+							beans, and seeds are great sources.
 						</li>
 					</ol>
 					<h2>Getting Started Tips</h2>
@@ -309,9 +331,9 @@ export default class Home extends Component {
 						</li>
 						<li>
 							<b>
-								Eating a nutrient-dense WFPBD may make it necessary to increase the
-								volume, amount, or frequency of food eaten to maintain your calorie
-								intake.
+								Eating a nutrient-dense WFPBD may make it necessary to increase
+								the volume, amount, or frequency of food eaten to maintain your
+								calorie intake.
 							</b>
 						</li>
 						<li>
@@ -328,10 +350,7 @@ export default class Home extends Component {
 						<li>
 							<b>Buy and prepare food in bulk</b> to save time and money.
 							Preparing ahead of time can lead to
-							{getLink(
-								"/research?selected=prep",
-								"healthier eating choices."
-							)}
+							{getLink("/research?selected=prep", "healthier eating choices.")}
 						</li>
 						<li>
 							<b>Reduce food waste</b> by
