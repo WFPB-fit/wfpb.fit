@@ -36,7 +36,7 @@ export default class Resource extends Component {
 						{Object.keys(this.props.data).map(key => {
                             const val = this.props.data[key]
 							return (
-								<TableRow>
+								<TableRow key={key}>
 									<TableCell>{key}</TableCell>
 									<TableCell numeric={typeof val === 'number'}>{val}</TableCell>
 								</TableRow>

@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-import CircularProgress from '@material-ui/core/CircularProgress';
+import CircularProgress from "@material-ui/core/CircularProgress";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export function preprocess(resources) {
 	return resources.map((resource, indx) => {
@@ -71,21 +73,27 @@ export function sumValues(obj) {
 		return sum + val;
 	}, 0);
 }
-export function getLink(url, text) {
+export function getLink(url, text, useHashLink = false) {
 	if (!url || url === "") return null;
 
 	if (!text || text === "") {
 		const urlObj = new URL(url);
 		text = urlObj.hostname.replace("www.", "");
 	}
-	return (
-		<span>
-			{" "}
-			<a href={url} target="_blank">
-				{text}
-			</a>{" "}
-		</span>
-	);
+
+	if (url.charAt(0) === "/") {
+		const LinkComponent = useHashLink ? HashLink : Link;
+		return <LinkComponent to={url}> {text}</LinkComponent>;
+	} else {
+		return (
+			<span>
+				{" "}
+				<a href={url} target="_blank">
+					{text}
+				</a>{" "}
+			</span>
+		);
+	}
 }
 export function joinMetaData(arr) {
 	const realData = arr.filter(el => el); //filter out falsy values like null
@@ -103,10 +111,10 @@ export function getTitleized(val) {
 }
 
 export const CenteredCircularProgress = styled(CircularProgress)`
-position:absolute;
-top:50%;
-left: 50%;
-transform: translate(-50%,-50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 `;
 
 export const WidthWrapper = styled.div`

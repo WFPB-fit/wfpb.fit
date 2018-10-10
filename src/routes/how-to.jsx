@@ -33,7 +33,7 @@ export default class HowTo extends Component {
 		return (
 			<ul>
 				{data.map(x => {
-					return <li>{getLink(x.url, x.name)}</li>;
+					return <li key={x.url}>{getLink(x.url, x.name)}</li>;
 				})}
 			</ul>
 		);
@@ -167,22 +167,8 @@ export default class HowTo extends Component {
 						)}
 					</li>
 				</ol>
-				<h2>Potential Nutrient Deficiencies on WFPBD</h2>
-				The following nutrients can be harder to get on WFPBD, but actual
-				deficiencies are more rare.
-				<KeyValueTable
-					// title="Percentage of Americans Defiicent In..."
-					style={{ maxWidth: "350px", margin: "5px auto" }}
-					keyLabel="Nutrient"
-					valueLabel="Americans Deficient (%)"
-					data={{
-						"Vitamin D": 69,
-						Zinc: 12,
-						Iron: 5,
-						Protein: 3,
-						B12: 3
-					}}
-				/>
+				<h2 id="issues">Potential Nutrient Deficiencies on WFPBD</h2>
+				The following nutrients might be harder to get on WFPBD.
 				<ol>
 					<li>
 						Created by bacteria, <b>vitamin B12</b> is stored in animal tissue.

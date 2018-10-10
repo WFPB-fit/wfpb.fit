@@ -99,6 +99,21 @@ export default class Home extends Component {
 									"Vitamin C": 31
 								}}
 							/>
+							Nutrients that are {getLink("/how-to#issues","less common",true)} in WFPBD are much less likely to
+							have deficiencies.
+							<KeyValueTable
+								// title="Percentage of Americans Defiicent In..."
+								style={{ maxWidth: "350px", margin: "5px auto" }}
+								keyLabel="Nutrient"
+								valueLabel="Americans Deficient (%)"
+								data={{
+									"Vitamin D": 69,
+									Zinc: 12,
+									Iron: 5,
+									Protein: 3,
+									B12: 3
+								}}
+							/>
 						</li>
 						<li>
 							<b>
@@ -171,8 +186,7 @@ export default class Home extends Component {
 						</b>{" "}
 						Decades of diverse, quality {getLink("/research", "research")}{" "}
 						support WFPBD. Governments, professional medical associations, and
-						prominent physicians{" "}
-						{getLink("/endorsements", "endorse")} WFPBD.
+						prominent physicians  {getLink("/endorsements#orgs","endorse",true)} WFPBD.
 					</p>
 				</WidthWrapper>
 			</div>
