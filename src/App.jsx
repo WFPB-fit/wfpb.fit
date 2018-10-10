@@ -10,7 +10,7 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 
 import Home from "./routes/home.jsx";
-import Supplies from "./routes/supplies.jsx";
+import HowTo from "./routes/how-to.jsx";
 import Data from "./routes/food.jsx";
 import ResearchContainer from "./routes/research_container.jsx";
 import LearnMore from "./routes/learn-more";
@@ -26,7 +26,7 @@ import { Provider } from "react-redux";
 import { createStore } from "redux";
 import rootReducer from "./utils/data/reducers";
 
-import lightBlue from "@material-ui/core/colors/lightBlue";
+import blue from "@material-ui/core/colors/blue";
 import orange from "@material-ui/core/colors/orange";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
@@ -48,7 +48,8 @@ const Body = styled.div`
 const theme = createMuiTheme({
 	typography: { htmlFontSize: 14 },
 	palette: {
-		primary: lightBlue,
+		// type: 'dark',
+		primary: blue,
 		secondary: orange
 	}
 });
@@ -87,6 +88,7 @@ export default class App extends Component {
 									<Route path="/data" component={Data} />
 									<Route path="/endorsements" component={Endorsements} />
 									<Route path="/media" component={LearnMore} />
+									<Route path="/how-to" component={HowTo} />
 								</Switch>
 							</Body>
 							<Footer />

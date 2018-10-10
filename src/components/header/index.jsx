@@ -24,30 +24,41 @@ export default class Header extends Component {
 					<FlexToolbar>
 						{/* left  */}
 						<Center>
-							<Button component={Link} to="/">
+							<Button component={Link} to="/" style={{ color: "white" }}>
 								{window.globalAppData.appName}
 							</Button>
 						</Center>
 
 						{/* mid  */}
 						<Center>
-							<Button component={Link} to="/research">
+							<Button component={Link} to="/how-to" style={{ color: "white" }}>
+								How-To
+							</Button>
+							<Button
+								component={Link}
+								to="/research"
+								style={{ color: "white" }}
+							>
 								Research
 							</Button>
-							<Button component={Link} to="/data">
-								Food Data
+							<Button component={Link} to="/data" style={{ color: "white" }}>
+								Data
 							</Button>
-							<Button component={Link} to="/media">
+							<Button component={Link} to="/media" style={{ color: "white" }}>
 								Media
 							</Button>
-							<Button component={Link} to="/endorsements">
+							<Button
+								component={Link}
+								to="/endorsements"
+								style={{ color: "white" }}
+							>
 								Endorsements
 							</Button>
 						</Center>
 
 						{/* right  */}
 						<Center>
-							<Button component={Link} to="/donate">
+							<Button component={Link} to="/donate" style={{ color: "white" }}>
 								Donate
 							</Button>
 						</Center>

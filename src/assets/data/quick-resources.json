@@ -1,0 +1,48 @@
+{
+	"books": [
+		{
+			"url": "https://www.amazon.com/How-Gene-Stone-Michael-Greger/dp/1509852506/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=",
+			"name": "How Not To Die"
+		},
+		{
+			"url": "https://www.amazon.com/Proteinaholic-Obsession-Meat-Killing-About/dp/0062279319/ref=sr_1_1?s=books&ie=UTF8&qid=1513444674&sr=1-1",
+			"name": "Proteinaholic"
+		},
+		{
+			"url": "https://www.amazon.com/gp/product/B007PF7MGS/ref=dbs_a_def_rwt_hsch_vapi_taft_p1_i0",
+			"name": "The Starch Solution"
+		},
+		{
+			"url": "https://www.amazon.com/gp/product/1635651271/ref=dbs_a_def_rwt_bibl_vppi_i0",
+			"name": "Dr. Neal Barnard's Program for Reversing Diabetes"
+		},
+		{
+			"url": "https://www.amazon.com/Prevent-Reverse-Heart-Disease-Nutrition-Based/dp/1583333002?qid=1539183325&refinements=p_27%3ACaldwell+B.+Esselstyn+Jr.&s=Books&sr=1-1&text=Caldwell+B.+Esselstyn+Jr.&ref=sr_1_1",
+			"name": "Prevent and Reverse Heart Disease"
+		},
+		{
+			"url": "https://www.amazon.com/gp/product/B00APDFVLU/ref=dbs_a_def_rwt_hsch_vapi_taft_p1_i0",
+			"name": "Whole"
+		}
+	],
+	"sites": [
+		{ "url": "https://nutritionfacts.org/", "name": "Nutrition Facts" },
+		{
+			"url": "https://www.drmcdougall.com/health/education/health-science/",
+			"name": "Dr McDougall Education"
+		},
+		{
+			"url": "https://www.hsph.harvard.edu/nutritionsource/",
+			"name": "Harvard Nutrition Source"
+		}
+    ],
+    "programs":[
+
+    ],
+    "communities":[
+
+    ],
+    "recipes":[
+        
+    ]
+}
