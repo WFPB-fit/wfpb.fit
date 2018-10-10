@@ -8,6 +8,7 @@ import { WidthWrapper, getLink } from "../utils/GeneralUtils.jsx";
 import ModalImage from "../components/ModalImage";
 
 import QuickResources from "../assets/data/quick-resources.json";
+import Heading from "../components/heading";
 
 const TallSkinnyImg = styled(ModalImage)`
 	width: 60%;
@@ -41,7 +42,7 @@ export default class HowTo extends Component {
 	render() {
 		return (
 			<WidthWrapper>
-				<h2>What to eat?</h2>
+					<Heading id="what" txt="What to eat?" variant="display2" />
 				<p>
 					Diverse, whole, plant based foods that meet all nutritional needs
 					might look like:{" "}
@@ -54,36 +55,36 @@ export default class HowTo extends Component {
 					src="/imgs/assets/foods/pyramids/Plant-Based-Dietitian-Pyramid.jpg"
 					alt="Plant-Based-Dietitian-Pyramid"
 				/>
-				<h2>Where can I learn more?</h2>
+					<Heading id="learn" txt="Where can I learn more?" variant="display2" />
 				<p>
 					See the {getLink("/research", "research")} page or start looking
 					through {getLink("https://scholar.google.com/", "Google Scholar")} for
 					scientific sources.
 				</p>
-				<h3>Online Education</h3>
+				<Heading id="online-ed" txt="Online Education" variant="display1" />
 				<p>For summaries and explanation of complex nutritional science:</p>
 				{HowTo.getListed(QuickResources.sites)}
-				<h3>Books</h3>
+				<Heading id="books" txt="Books" variant="display1" />
 				<p>
 					These popular books provide overviews of how and why WFPB works so
 					well. More books can be found on the{" "}
 					{getLink("/endorsements", "endorsements")} page.{" "}
 				</p>
 				{HowTo.getListed(QuickResources.books)}
-				<h2>Where can I get help?</h2>
-				<h3>Communities</h3>
+				<Heading id="help" txt="Where can I get help?" variant="display2" />
+				<Heading id="communities" txt="Communities" variant="display1" />
 				Online forums are a great place for advice, questions, discussion, and
 				motivation.
 				{HowTo.getListed(QuickResources.communities)}
-				<h3>Programs</h3>
+				<Heading id="programs" txt="Programs" variant="display1" />
 				Multi-week programs with strong evidence-based results can guide you
 				through the process, but may cost a few hundred dollars.
 				{HowTo.getListed(QuickResources.programs)}
-				<h2>What's for dinner?</h2>
+				<Heading id="recipes" txt="What's for dinner?" variant="display2" />
 				Whether you need cheap, fast, and easy or delicious and decadent there's
 				a WFPB recipe waiting for you.
 				{HowTo.getListed(QuickResources.recipes)}
-				<h2>Getting Started Tips</h2>
+				<Heading id="tips" txt="Getting Started Tips" variant="display2" />
 				<ol>
 					<li>
 						<b>Everyone's body is different.</b> Increasing WFPB intake and
@@ -167,7 +168,7 @@ export default class HowTo extends Component {
 						)}
 					</li>
 				</ol>
-				<h2 id="issues">Potential Nutrient Deficiencies on WFPBD</h2>
+				<Heading id="potential-issues" txt="Potential Issues" variant="display2" />
 				The following nutrients might be harder to get on WFPBD.
 				<ol>
 					<li>
@@ -191,7 +192,7 @@ export default class HowTo extends Component {
 						supplements, or a special UVB lamp.
 					</li>
 				</ol>
-				<h3>Common Concerns About WFPBD</h3>
+				<Heading id="common-concerns" txt="Common Concerns" variant="display1" />
 				<p>
 					Most people will get all other required nutrients when eating a
 					diverse range of whole, plant-based foods. If you are worried about

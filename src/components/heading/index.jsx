@@ -8,15 +8,17 @@ import { HashLink } from "react-router-hash-link";
 
 export default class Heading extends Component {
 	render() {
-        console.log(this.props.variant)
-		return (
-			<Typography variant={this.props.variant}>
-				<IconButton
-					containerElement={<HashLink to={`#${this.props.id}`} />}
-					id={this.props.id}
-				>
+		const icon = this.props.id ? (
+			<IconButton id={this.props.id}>
+				<HashLink to={`#${this.props.id}`}>
 					<LinkIcon />
-				</IconButton>
+				</HashLink>
+			</IconButton>
+        ) : null;
+        
+		return (
+			<Typography style={{ margin: "20px 0" }} variant={this.props.variant}>
+				{icon}
 				{this.props.txt}
 			</Typography>
 		);

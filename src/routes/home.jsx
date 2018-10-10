@@ -8,6 +8,8 @@ import {
 	VerticalMidAlignWrapper
 } from "../utils/GeneralUtils.jsx";
 
+import Heading from "../components/heading";
+
 import styled from "styled-components";
 
 const Emojis = styled.div`
@@ -23,7 +25,7 @@ export default class Home extends Component {
 		return (
 			<div>
 				<WidthWrapper>
-					<h1>{window.globalAppData.appName}</h1>
+					<Heading txt={window.globalAppData.appName} variant="display3" />
 					<p>
 						This non-profit website aggregates resources about the{" "}
 						<b>whole food, plant-based diet (WFPBD)</b>. WFPBD has been
@@ -43,7 +45,7 @@ export default class Home extends Component {
 						{getLink("https://www.plantbaseddoctors.org", "second opinion")}
 						from an accredited physician or dietitian.
 					</p>
-					<h2>What is WFPBD?</h2>
+					<Heading id="what" txt="What is WFPBD?" variant="display2" />
 					<p>
 						A diet high in a diverse range of nutrient-dense plant foods and low
 						in animal products or processed foods (such as oil, sugar, or
@@ -57,7 +59,7 @@ export default class Home extends Component {
 						<p>❌ - 🍬🥐🍟🍦🥧🍺</p>
 					</Emojis>
 					{/* <img alt="WFPBD foods" src="/imgs/assets/foods/Fruits_Veg.jpg" /> */}
-					<h2>Why eat this way?</h2>
+					<Heading id="why" txt="Why eat this way?" variant="display2" />
 					<p>
 						<b>
 							Disease is expensive, time consuming, miserable, and difficult.
@@ -73,7 +75,7 @@ export default class Home extends Component {
 					<p>
 						<b>It's also cheap and tastes great.</b>
 					</p>
-					<h2>How does it work?</h2>
+					<Heading id="how" txt="How does it work?" variant="display2" />
 					<ul>
 						<li>
 							Most Americans are{" "}
@@ -99,7 +101,10 @@ export default class Home extends Component {
 									"Vitamin C": 31
 								}}
 							/>
-							Nutrients that are {getLink("/how-to#issues","less common",true)} in WFPBD are much less likely to
+							A small number of nutrients may be{" "}
+							{getLink("/how-to#potential-issues", "less common", true)} in
+							WFPBD though, so plan your diet well to ensure proper nutrition.
+							{/* Nutrients that are {getLink("/how-to#potential-issues","less common",true)} in WFPBD are less likely to
 							have deficiencies.
 							<KeyValueTable
 								// title="Percentage of Americans Defiicent In..."
@@ -113,7 +118,7 @@ export default class Home extends Component {
 									Protein: 3,
 									B12: 3
 								}}
-							/>
+							/> */}
 						</li>
 						<li>
 							<b>
@@ -169,7 +174,11 @@ export default class Home extends Component {
 						</li>
 						<li>{getLink("/research", "And more...")}</li>
 					</ul>
-					<h2>How can I be sure of these benefits?</h2>
+					{/* <Heading
+						id="certain"
+						txt="How can I be sure of these benefits?"
+						variant="display2"
+					/>
 					<p>
 						Without expert training and a constant look into available research,{" "}
 						<b>it can be difficult to know what to believe. </b>
@@ -186,8 +195,9 @@ export default class Home extends Component {
 						</b>{" "}
 						Decades of diverse, quality {getLink("/research", "research")}{" "}
 						support WFPBD. Governments, professional medical associations, and
-						prominent physicians  {getLink("/endorsements#orgs","endorse",true)} WFPBD.
-					</p>
+						prominent physicians{" "}
+						{getLink("/endorsements#orgs", "endorse", true)} WFPBD.
+					</p> */}
 				</WidthWrapper>
 			</div>
 		);

@@ -40,7 +40,7 @@ export default class Endorsements extends Component {
 		));
 		const doctors = preprocess(endorsements.doctors).map(x => (
 			<Resource resource={x} key={x.id} />
-		));
+));
 
 		return (
 			<WidthWrapper>
