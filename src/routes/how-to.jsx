@@ -197,7 +197,7 @@ export default class HowTo extends Component {
 					Most people will get all other required nutrients when eating a
 					diverse range of whole, plant-based foods. If you are worried about
 					your nutrition try tracking it with{" "}
-					{getLink("https://cronometer.com/", "Cronometer")}, a similar app,
+					{getLink("https://cronometer.com/", "Cronometer,")} a similar app,
 					discussing with your doctor, or getting a blood test.
 				</p>
 				<ol>

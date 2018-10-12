@@ -10,9 +10,6 @@ import { Link } from "react-router-dom";
 const FlexToolbar = styled(Toolbar)`
 	display: flex;
 	justify-content: space-between;
-`;
-
-const Center = styled.div`
 	text-align: center;
 `;
 
@@ -23,14 +20,14 @@ export default class Header extends Component {
 				<AppBar position="static">
 					<FlexToolbar>
 						{/* left  */}
-						<Center>
+						<div>
 							<Button component={Link} to="/" style={{ color: "white" }}>
 								{window.globalAppData.appName}
 							</Button>
-						</Center>
+						</div>
 
 						{/* mid  */}
-						<Center>
+						<div>
 							<Button component={Link} to="/how-to" style={{ color: "white" }}>
 								How-To
 							</Button>
@@ -54,14 +51,14 @@ export default class Header extends Component {
 							>
 								Endorsements
 							</Button>
-						</Center>
+						</div>
 
 						{/* right  */}
-						<Center>
+						<div>
 							<Button component={Link} to="/donate" style={{ color: "white" }}>
 								Donate
 							</Button>
-						</Center>
+						</div>
 					</FlexToolbar>
 				</AppBar>
 			</div>

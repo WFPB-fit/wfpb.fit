@@ -73,26 +73,27 @@ export function sumValues(obj) {
 		return sum + val;
 	}, 0);
 }
-export function getLink(url, text, useHashLink = false) {
+export function getLink(url, text, useHashLink = false, spacePad = true) {
 	if (!url || url === "") return null;
 
 	if (!text || text === "") {
 		const urlObj = new URL(url);
 		text = urlObj.hostname.replace("www.", "");
 	}
+	
+	const anchor = (
+		<a href={url} target="_blank">
+			{text}
+		</a>
+	);
 
 	if (url.charAt(0) === "/") {
 		const LinkComponent = useHashLink ? HashLink : Link;
 		return <LinkComponent to={url}> {text}</LinkComponent>;
+	} else if (spacePad) {
+		return <span> {anchor} </span>;
 	} else {
-		return (
-			<span>
-				{" "}
-				<a href={url} target="_blank">
-					{text}
-				</a>{" "}
-			</span>
-		);
+		return anchor;
 	}
 }
 export function joinMetaData(arr) {
