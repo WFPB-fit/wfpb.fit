@@ -1,6 +1,73 @@
 {
-	"disease": ["nitrates", "contaminants", "pollution", "antibiotic resistance", "physicians", "bones", "plant-based diet", "cancer", "multiple sclerosis", "essential tremor", "cardiovascular disease", "teeth", "migraine", "inflammation", "autoimmune", "arthritis", "ibd", "weight", "allergy", "puberty", "lupus", "cognition", "dementia", "mental health", "diabetes"],
-	"food": ["prep","soy","milk", "flaxseed", "taste","shopping", "fruit", "veges"],
-	"nutrients": ["fiber", "calcium", "ala", "vitamin a", "fat", "trans fat", "saturated fat", "protein", "cholesterol", "phytochemicals"],
-	"environment": ["climate", "deforestation", "meat production", "agriculture", "water", "biodiversity", "pollution", "nitrates", "contaminants"]
+	"disease": [
+		"acne",
+		"nitrates",
+		"contaminants",
+		"pollution",
+		"antibiotics",
+		"physicians",
+		"bones",
+		"plant-based diet",
+		"cancer",
+		"multiple sclerosis",
+		"essential tremor",
+		"cardiovascular disease",
+		"teeth",
+		"migraine",
+		"inflammation",
+		"autoimmune",
+		"arthritis",
+		"ibd",
+		"weight",
+		"allergy",
+		"puberty",
+		"lupus",
+		"cognition",
+		"dementia",
+		"mental health",
+		"diabetes"
+	],
+	"food": [
+		"prep",
+		"fish (nutrition)",
+		"soy",
+		"milk",
+		"flaxseed",
+		"taste",
+		"shopping",
+		"fruit",
+		"veges"
+	],
+	"nutrients": [
+		"fiber",
+		"calcium",
+		"ala",
+		"vitamin a",
+		"fat",
+		"trans fat",
+		"saturated fat",
+		"protein",
+		"cholesterol",
+		"phytochemicals"
+	],
+	"environment": [
+		"water use",
+		"water pollution",
+		"water plastic",
+		"climate change",
+		"animal collapse",
+		"amazon",
+		"land degradation",
+		"land use",
+		"biodiversity loss"
+	],
+	"animals": [
+		"animal collapse",
+		"cows",
+		"poultry",
+		"pigs",
+		"goats",
+		"sheep",
+		"fish (animal)"
+	]
 }

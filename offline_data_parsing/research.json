@@ -1,4 +1,5 @@
-[{
+[
+	{
 		"title": "Empirical analyses of the influence of diet on human concentrations of persistent organic pollutants: a systematic review of all studies conducted in Spain.",
 		"url": "https://www.ncbi.nlm.nih.gov/pubmed/21683445",
 		"year": 2011,
@@ -33,7 +34,7 @@
 		"type": "meta analysis",
 		"availability": "full",
 		"tags": "vitamin d",
-		"quote":"Vitamin D deficiency is a problem in populations with limited sun exposure where a dietary intake of vitamin D becomes essential. However, dietary recommendations for vitamin D are difficult to meet because few food items naturally contain vitamin D and it would, therefore, be valuable to increase the food sources of vitamin D in the human diet or to optimize the content by bio-fortification. Traditionally, only animal products have been considered a source of vitamin D3 ... Planktonic microalgae, inhabiting the sea, are another large group of photosynthetic organisms that contain vitamin D. Microalgae are, as part of the aquatic food chain, identified as a source of vitamin D for fish. "
+		"quote": "Vitamin D deficiency is a problem in populations with limited sun exposure where a dietary intake of vitamin D becomes essential. However, dietary recommendations for vitamin D are difficult to meet because few food items naturally contain vitamin D and it would, therefore, be valuable to increase the food sources of vitamin D in the human diet or to optimize the content by bio-fortification. Traditionally, only animal products have been considered a source of vitamin D3 ... Planktonic microalgae, inhabiting the sea, are another large group of photosynthetic organisms that contain vitamin D. Microalgae are, as part of the aquatic food chain, identified as a source of vitamin D for fish. "
 	},
 	{
 		"title": "Lactose intolerance and risk of lung, breast and ovarian cancers: aetiological clues from a population-based study in Sweden",
@@ -385,7 +386,7 @@
 		"year": 2012,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "antibiotic resistance",
+		"tags": "antibiotics",
 		"quote": "It is evident that at present, the resources devoted to studying the role of antibiotic use in food animals—both in terms of funding and scientific inquiry—are insufficient. It is now critical that agricultural use of antibiotics be recognized as one of the major contributors to the development of resistant organisms that result in life-threatening human infections and included as part of the strategy to control the mounting public health crisis of antibiotic resistance."
 	},
 	{
@@ -1385,7 +1386,7 @@
 		"type": "article",
 		"availability": "full",
 		"tags": "land",
-		"quote":"There’s a single, major occupant on all this land: cows. Between pastures and cropland used to produce feed, 41 percent of U.S. land in the contiguous states revolves around livestock."
+		"quote": "There’s a single, major occupant on all this land: cows. Between pastures and cropland used to produce feed, 41 percent of U.S. land in the contiguous states revolves around livestock."
 	},
 	{
 		"title": "2017 Global Nutrition Report",
@@ -1394,7 +1395,7 @@
 		"year": 2017,
 		"type": "research report",
 		"availability": "full",
-		"tags": "environment,diet",
+		"tags": "water use,land use",
 		"quote": "1. Good nutrition can drive greater environmental sustainability. Agriculture and food production is the backbone of our diets and nutrition. Food production uses 70% of the world’s freshwater supply and 38% of the world’s land. Current agriculture practices produce 20% of all greenhouse gas emissions, and livestock uses 70% of agricultural land. Eating better is necessary to ensure that food production systems are more sustainable. 2. Good nutrition is infrastructure for economic development. ... 3. Good nutrition means less burden on health systems ... 4. Good nutrition supports equity and inclusion ... 5. Good nutrition and improved food security enhances peace and stability"
 	},
 	{
@@ -1485,7 +1486,7 @@
 		"year": 2015,
 		"type": "research report",
 		"availability": "full",
-		"tags": "plant-based diet,meat production,antibiotic resistance,pollution",
+		"tags": "plant-based diet,meat production,antibiotics,pollution",
 		"quote": "Our analysis finds that transitioning the American diet to one that includes less processed food and meat, and more fruits and vegetables, would significantly shift today's corn- and soybean-dominated farm landscape to one that is more diversified. In turn, a landscape that produces a healthier mix of crops and livestock for local and regional markets can have positive effects—not only in improved nutrition and health for consumers but also in the form of significant benefits for the environment and farm country's local economies. ... Together, cereal grains and oilseeds represent 59 percent of U.S. crop acreage while vegetables, fruits, and nuts account for only 2 percent. ... This distribution of cropland is incentivized by farm policies that provide subsidies forfarmers to grow select nonperishable 'commodity' crops e.g., corn and soybeans. Moreover, farmers who receive such subsidies are prohibited from planting any acreage with fruits and vegetables (unless certain highly prescribed conditions are met). In addition, the insurance program administered and subsidized by the U.S. Department of Agriculture (USDA) is oriented toward farmers who grow a handful of subsidized commodity crops, often leaving many fruit and vegetable farmers (particularly those growing a variety of crops) without access to adequate insurance and thus poorly positioned to obtain needed credit ... Our analysis found that if Americans consumed just one additional serving of fruits or vegetables each day, we would prevent 30,000 deaths from coronary heart disease and stroke annually and save $5 billion in national health care expenditures; if Americans went a step further and ate enough fruits and vegetables to fully meet federal dietary guidelines, we would prevent 127,000 such deaths each year and save $17 billion in medical costs."
 	},
 	{
@@ -1973,7 +1974,8 @@
 		"availability": "full",
 		"year": 2017,
 		"tags": "milk,environment,saturated fat,politics",
-		"quote":"Schools account for about 7 to 8 percent of all milk sales. Knowing it’s a must-win market, the dairy industry uses its money and lobbying power to convince us that milk is an essential part of children’s diets. And it works. During the 2013-2014 school year, the USDA spent more than $20 million taxpayer dollars on dairy product subsidies that went into school lunches and other child nutrition programs."	},
+		"quote": "Schools account for about 7 to 8 percent of all milk sales. Knowing it’s a must-win market, the dairy industry uses its money and lobbying power to convince us that milk is an essential part of children’s diets. And it works. During the 2013-2014 school year, the USDA spent more than $20 million taxpayer dollars on dairy product subsidies that went into school lunches and other child nutrition programs."
+	},
 	{
 		"title": "Identification of Top Food Sources of Various Dietary Components",
 		"url": "https://epi.grants.cancer.gov/diet/foodsources/",
@@ -1999,7 +2001,7 @@
 		"type": "research report",
 		"availability": "full",
 		"year": 2010,
-		"tags": "water,habitat loss,biodiversity,pollution",
+		"tags": "land degradation,biodiversity loss,water pollution,water use",
 		"quote": "Agriculture and food consumption are identified as one of the most important drivers of environmental pressures, especially habitat change, climate change, water use and toxic emissions. ... a global shift towards a vegan diet is vital to save the world from hunger, fuel poverty, and the worst impacts of climate change."
 	},
 	{
@@ -2018,7 +2020,7 @@
 		"type": "research report",
 		"availability": "full",
 		"year": 2017,
-		"tags": "GHG,meat production,habitat loss,water,pollution",
+		"tags": "GHG,meat production,habitat loss,water pollution,pollution",
 		"quote": "this report has deliberately confined itself to a very narrow, albeit important and complex remit: that of grassfed ruminants in grazing systems, and their relationship with climate change ... 300Livestock supply chain emissions contribute about 14.5% of this total [GHG emissions] at 7.1 Gt CO2-eq/yr (1.9 Gt C-eq)), with most of the emissions generated at the agricultural stage. Of this, about 80% is attributable to ruminants. ... could grazing ruminants also help sequester carbon in soils, and if so to what extent might this compensate? As the following numbers show, the answer is ‘not much’. ... While some grasslands are natural, many of the grazing lands used today were formed at great environmental cost from what was originally forest. Grazing livestock have historically been the main agent of anthropogenic deforestation and associated CO2 release. ... the livestock systems that operate today cause an enormous amount, and many kinds of, environmental damage. To raise the animals we eat and use, we have cleared forests, driven species to extinction, polluted air and waterways, and released vast quantities of GHG emissions into the atmosphere. The rearing of animals has literally transformed the face of this earth."
 	},
 	{
@@ -2320,7 +2322,7 @@
 		"availability": "full",
 		"year": 2016,
 		"tags": "climate",
-		"quote":"Averaged over all categories, caloric and protein efficiencies are 7%–8%. At 3% in both metrics, beef is by far the least efficient. We find that reallocating the agricultural land used for beef feed to poultry feed production can meet the caloric and protein demands of ≈120 and ≈140 million additional people consuming the mean American diet, respectively, roughly 40% of current US population. ... We find that these legume-dominated plant-based diets substitute beef with a dietary shift potential of ≈190 million individuals."
+		"quote": "Averaged over all categories, caloric and protein efficiencies are 7%–8%. At 3% in both metrics, beef is by far the least efficient. We find that reallocating the agricultural land used for beef feed to poultry feed production can meet the caloric and protein demands of ≈120 and ≈140 million additional people consuming the mean American diet, respectively, roughly 40% of current US population. ... We find that these legume-dominated plant-based diets substitute beef with a dietary shift potential of ≈190 million individuals."
 	},
 	{
 		"title": "USDA: Livestock Slaughter Annual Summary",
@@ -2811,7 +2813,8 @@
 		"availability": "full",
 		"tags": "plant-based diet",
 		"quote": "These diets are appropriate for all stages of the life cycle, including pregnancy, lactation, infancy, childhood, adolescence, older adulthood, and for athletes. Plant-based diets are more environmentally sustainable than diets rich in animal products because they use fewer natural resources and are associated with much less environmental damage. Vegetarians and vegans are at reduced risk of certain health conditions, including ischemic heart disease, type 2 diabetes, hypertension, certain types of cancer, and obesity. ... Vegans need reliable sources of vitamin B-12, such as fortified foods or supplements."
-	}, {
+	},
+	{
 		"title": "Humoral immunity to cow's milk proteins and gliadin within the etiology of recurrent aphthous ulcers?",
 		"url": "https://www.ncbi.nlm.nih.gov/pubmed/19563417",
 		"year": 2009,
@@ -2820,7 +2823,8 @@
 		"tags": "canker sores,milk",
 		"quote": "These results indicate the strong association between high levels of serum anti-CMP [cow's milk protein] IgA, IgG and IgE antibodies and clinical manifestations of recurrent aphthous ulcers [canker sores].",
 		"pdf": "https://health.gov/dietaryguidelines/2015-scientific-report/PDFs/Scientific-Report-of-the-2015-Dietary-Guidelines-Advisory-Committee.pdf"
-	}, {
+	},
+	{
 		"title": "Efficacy of honey in comparison to topical corticosteroid for treatment of recurrent minor aphthous ulceration: a randomized, blind, controlled, parallel, double-center clinical trial.",
 		"url": "https://www.ncbi.nlm.nih.gov/pubmed/25019115",
 		"year": 2014,
@@ -2828,7 +2832,8 @@
 		"type": "study",
 		"tags": "canker sores,honey",
 		"quote": "There were 94 subjects, with 180 minor recurrent aphthous ulcerations. The ulcers were distributed as 67, 57, and 56 ulcers for honey, topical corticosteroid, and Orabase treatment, respectively. There was a statistically significant difference between the honey group and the other two groups in terms of reduction of ulcer size, days of pain, and degree of erythema. No side effects were reported in any group."
-	},  {
+	},
+	{
 		"title": "Clinical evaluation of fluid extract of Chamomilla recutita for oral aphthae.",
 		"url": "https://www.ncbi.nlm.nih.gov/pubmed/16865865",
 		"year": 2006,
@@ -2836,7 +2841,8 @@
 		"type": "study",
 		"tags": "canker sores,chamomile",
 		"quote": "This study evaluates the fluid extract from Chamomilla recutita's safety and effectiveness in pain relief from aphthous stomatitis and other painful ulcers of the oral mucous membrane. The analgesic effect was considered excellent by 82% and good by 18% of the patients, as demonstrated with the Analogical Visual Scale for chronic and experimental pains after 5, 10, and 15 minutes. Tolerance was evaluated as excellent by 97% and good by 1% of the subjects."
-	}, {
+	},
+	{
 		"title": "Effect of sodium lauryl sulfate on recurrent aphthous stomatitis: a randomized controlled clinical trial.",
 		"url": "https://www.ncbi.nlm.nih.gov/pubmed/22435470",
 		"year": 2012,
@@ -2844,7 +2850,8 @@
 		"type": "study",
 		"tags": "canker sores,SLS",
 		"quote": "The number of ulcers and episodes did not differ significantly between SLS-A, SLS-B, and SLS-free. Only duration of ulcers and mean pain score was significantly decreased during the period using SLS-free."
-	}, {
+	},
+	{
 		"title": "The effectiveness of dentifrices without and with sodium lauryl sulfate on plaque, gingivitis and gingival abrasion—a randomized clinical trial",
 		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4799265/",
 		"year": 2016,
@@ -2852,7 +2859,8 @@
 		"type": "study",
 		"tags": "canker sores,SLS",
 		"quote": "As dentifrices with and without SLS clinically showed no difference in the present study with regard to gingivitis and plaque, an SLS-free dentifrice could be recommended to patients suffering from recurrent aphthous ulcers. Whether the frequency of recurrent aphthous ulcers is reduced when people start to brush with an SLS-free dentifrice remains still part of a discussion"
-	}, {
+	},
+	{
 		"title": "Scientific Report of the 2015 Dietary Guidelines Advisory Committee",
 		"year": 2015,
 		"availability": "full",
@@ -2860,7 +2868,8 @@
 		"tags": "diet",
 		"quote": "The major findings regarding sustainable diets were that a diet higher in plant-based foods, such as vegetables, fruits, whole grains, legumes, nuts, and seeds, and lower in calories and animal-based foods is more health promoting and is associated with less environmental impact than is the current U.S. diet. ",
 		"pdf": "https://health.gov/dietaryguidelines/2015-scientific-report/PDFs/Scientific-Report-of-the-2015-Dietary-Guidelines-Advisory-Committee.pdf"
-	}, {
+	},
+	{
 		"title": "Lifestyle Management:Standards of Medical Care in Diabetes 2018",
 		"year": 2018,
 		"availability": "full",
@@ -2868,7 +2877,8 @@
 		"tags": "diet",
 		"quote": "The Mediterranean (54,55), Dietary Approaches to Stop Hyper-tension (DASH) (56–58), and plant-based diets (59,60) are all examples of healthful eating patterns that have shown positive results in research, but individualized meal planning should focus on personal preferences, needs, and goals.",
 		"pdf": "http://care.diabetesjournals.org/content/diacare/41/Supplement_1/S38.full.pdf"
-	}, {
+	},
+	{
 		"title": "Plates, pyramids, planetDevelopments in national healthy and sustainable dietary guidelines: a state of play assessment",
 		"year": 2016,
 		"availability": "full",
@@ -2996,7 +3006,7 @@
 		"year": 2006,
 		"type": "research report",
 		"availability": "full",
-		"tags": "climate,meat production",
+		"tags": "climate,meat production,water use, water pollution, air pollution",
 		"quote": "The livestock sector emerges as one of the top two or three most significant contributors to the most serious environmental problems, at every scale from local to global. The findings of this report suggest that it should be a major policy focus when dealing with problems of land degradation, climate change and air pollution, water shortage and water pollution and loss of biodiversity."
 	},
 	{
@@ -3005,7 +3015,7 @@
 		"year": 2010,
 		"type": "research report",
 		"availability": "full",
-		"tags": "climate,meat production,agriculture",
+		"tags": "climate,meat production,agriculture,water pollution",
 		"quote": "Benefits and cost are distributed rather unevenly ... Demand for meat ... is projected to double between 2000 and 2050. ... the livestock revolution has been fed by inexpensive, often subsidixed grains, cheap fuel, and rapid technological change. ... Livestock occupy over one-fourth of the terrestrial surface of the planet, on pasture and grazing land, of which a significant part is degraded. Expansion of pasture occurs in Latin America at the expense of forests. Concentrate feed demand occupies about one-third of total arable land. ... [Livestock production is] associated with pollution, habitat destruction, and greenhouse gas emissions. Livestock are also an important contributor to water pollution"
 	},
 	{
@@ -3060,7 +3070,7 @@
 		"year": 2005,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "water",
+		"tags": "water pollution",
 		"quote": "Here we demonstrate that nitrogen-deficient areas of the tropical and subtropical oceans are acutely vulnerable to nitrogen pollution. Despite naturally high nutrient concentrations and productivity6,7,8, nitrogen-rich agricultural runoff fuels large (54–577 km2) phytoplankton blooms in the Gulf of California. Runoff exerts a strong and consistent influence on biological processes, in 80% of cases stimulating blooms within days of fertilization and irrigation of agricultural fields. We project that by the year 2050, 27–59% of all nitrogen fertilizer will be applied in developing regions located upstream of nitrogen-deficient marine ecosystems. Our findings highlight the present and future vulnerability of these ecosystems to agricultural runoff."
 	},
 	{
@@ -3070,8 +3080,8 @@
 		"year": 2017,
 		"type": "research report",
 		"availability": "full",
-		"tags": "water,agribusiness,meat production",
-		"quote": "The scale and environmental impact of the meat industry is enormous: more than a third of all land in the continental U.S. is dedicated to growing feed crops and providing the pastures to raise meat. ... Demand for feed crops is driving widespread water contamination across the country, destroying America’s last native prairies, and releasing potent greenhouse gases. ... Our research found that these [environmental] impacts are driven primarily by the large agribusinesses that comprise America’s meat industry. At the pinnacle of this concentration of power is Tyson Foods, America’s largest meat company, which produces one out of every five pounds of all meat raised in the United States. Tyson is renowned for pioneering and consolidating our modern industrial meat system. Our analysis also found Tyson to be the dominant meat company in all the regions suffering the worst environmental impacts from industrial meat and feed production – from grassland clearing in Nebraska, Iowa, and Kansas, to manure and fertilizer pollution pouring into waterways from theHeartland down to the Gulf states."
+		"tags": "land use,water use,land degradation,agribusiness,meat production",
+		"quote": "The scale and environmental impact of the meat industry is enormous: more than a third of all land in the continental U.S. is dedicated to growing feed crops and providing the pastures to raise meat. ... Demand for feed crops is driving widespread water contamination across the country, destroying America’s last native prairies, and releasing potent greenhouse gases. ... Our research found that these [environmental] impacts are driven primarily by the large agribusinesses that comprise America’s meat industry. At the pinnacle of this concentration of power is Tyson Foods, America’s largest meat company, which produces one out of every five pounds of all meat raised in the United States. Tyson is renowned for pioneering and consolidating our modern industrial meat system. Our analysis also found Tyson to be the dominant meat company in all the regions suffering the worst environmental impacts from industrial meat and feed production – from grassland clearing in Nebraska, Iowa, and Kansas, to manure and fertilizer pollution pouring into waterways from the Heartland down to the Gulf states."
 	},
 	{
 		"title": "A Global Assessment of the Water Footprint of Farm Animal Products",
@@ -3080,7 +3090,7 @@
 		"year": 2012,
 		"type": "study",
 		"availability": "full",
-		"tags": "water,meat production",
+		"tags": "water use",
 		"quote": "Nearly one-third of the total water footprint of agriculture in the world is related to the production of animal products. The water footprint of any animal product is larger than the water footprint of crop products with equivalent nutritional value. The average water footprint per calorie for beef is 20 times larger than for cereals and starchy roots. The water footprint per gram of protein for milk, eggs and chicken meat is 1.5 times larger than for pulses. The unfavorable feed conversion efficiency for animal products is largely responsible for the relatively large water footprint of animal products compared to the crop products. Animal products from industrial systems generally consume and pollute more ground- and surface-water resources than animal products from grazing or mixed systems. The rising global meat consumption and the intensification of animal production systems will put further pressure on the global freshwater resources in the coming decades."
 	},
 	{
@@ -3100,7 +3110,7 @@
 		"year": 2016,
 		"type": "research report",
 		"availability": "full",
-		"tags": "deforestation,water,pollution",
+		"tags": "land use,climate change,water use",
 		"quote": "we estimate that the world needs to close a 70 percent “food gap” between the crop calories available in 2006 and expected calorie demand in 2050. The food gap stems primarily from population growth and changing diets. ... Western-style diets, which are high in calories, protein, and animal-based foods. ... Overconsumption of protein occurs in all of the world’s regions, and it is rising ..., animal based foods are typically more resource-intensive and environmentally impactful to produce than plant-based foods (Figure ES-2). Production of animal-based foods accounted for more than three-quarters of global agricultural land use and around two-thirds of agriculture’s production-related greenhouse gas emissions in 2009, while only contributing 37 percent of total protein consumed by people in that year. ... Beef is one of the least efficient foods to produce when considered from a “feed input to food output” perspective. When accounting for all feeds, including both crops and forages, by one estimate only 1 percent of gross cattle feed calories and 4 percent of ingested protein are converted to human-edible calories and protein, respectively. In comparison, by this estimate, poultry convert 11 percent of feed calories and 20 percent of feed protein into human edible calories and protein."
 	},
 	{
@@ -3109,7 +3119,7 @@
 		"year": 2018,
 		"type": "study",
 		"availability": "full",
-		"tags": "antibiotic resistance",
+		"tags": "antibiotics",
 		"quote": "Doctors call it the “last hope” antibiotic because it is used to treat patients who are critically ill with infections which have become resistant to nearly all other drugs. The World Health Organisation has called for the use of such antibiotics, which it calls “critically important to human medicines”, to be restricted in animals and banned as growth promoters. Their continued use in farming increases the chance bacteria will develop resistance to them, leaving them useless when treating patients. Yet thousands of tonnes of veterinary colistin was shipped to countries including Vietnam, India, South Korea and Russia in 2016, the Bureau can reveal. In India at least five animal pharmaceutical companies are openly advertising products containing colistin as growth promoters."
 	},
 	{
@@ -3182,7 +3192,7 @@
 		"type": "study",
 		"availability": "full",
 		"tags": "arthritis",
-		"quote":"obesity is associated with loss of beneficial Bifidobacteria, while key proinflammatory species gain in abundance. A downstream systemic inflammatory signature culminates with macrophage migration to the synovium and accelerated knee OA. Oligofructose supplementation restores the lean gut microbiome in obese mice, in part, by supporting key commensal microflora, particularly Bifidobacterium pseudolongum. This is associated with reduced inflammation in the colon, circulation, and knee and protection from OA."
+		"quote": "obesity is associated with loss of beneficial Bifidobacteria, while key proinflammatory species gain in abundance. A downstream systemic inflammatory signature culminates with macrophage migration to the synovium and accelerated knee OA. Oligofructose supplementation restores the lean gut microbiome in obese mice, in part, by supporting key commensal microflora, particularly Bifidobacterium pseudolongum. This is associated with reduced inflammation in the colon, circulation, and knee and protection from OA."
 	},
 	{
 		"title": "Phytoestrogens and human health effects: weighing up the current evidence",
@@ -3208,7 +3218,7 @@
 		"year": 2015,
 		"type": "research report",
 		"availability": "full",
-		"tags": "water,nitrates,contaminants",
+		"tags": "water pollution",
 		"quote": "the Tap Water Database also reveals nationwide detection of other drinking water contaminants at levels that are legal but scientists and medical experts say are not fully protective of public health. For example: ... In 2015, more than 1,800 water systems serving 7 million Americans in 48 states detected nitrates - chemicals from animal waste or agricultural fertilizers - at an average above the level the National Cancer Institute research shows increases the risk of cancer, which is a concentration just half of the government's legal limit for nitrate in drinking water"
 	},
 	{
@@ -3218,7 +3228,7 @@
 		"year": 2010,
 		"type": "research report",
 		"availability": "full",
-		"tags": "water",
+		"tags": "water use",
 		"quote": "The water footprint of meat from beef cattle (15 400 m 3 /ton as a global average) is much larger than the footprints of meat from sheep (10 400 m 3 /ton), pig (6000 m 3 /ton), goat (5 500 m 3 /ton) or chicken (4 300 m 3 /ton). The global average water footprint of chicken egg is 3 300 m 3 /ton, while the water footprint of cow milk amounts to 1000 m 3 /ton. Per ton of product, animal products generally have a larger water footprint than crop products. The same is true when we look at the water footprint per calorie. The average water footprint per calorie for beef is twenty times larger than for cereals and starchy roots. When we look at the water requirements for protein, it has been found that the water footprint per gram of protein for milk, eggs and chicken meat is about 1.5 times larger than for pulses. For beef, the water footprint per gram of protein is 6 times larger than for pulses. In the case of fat, butter has a relatively small water footprint per gram of fat, even lower than for oil crops. All other animal products, however, have larger water footprints per gram of fat when compared to oil crops. From a freshwater resource perspective, it is more efficient to obtain calories, protein and fat through crop products than animal products. ... Global animal production requires about 2422 Gm 3 of water per year (87.2% green, 6.2% blue, 6.6% grey water). One third of this volume is for the beef cattle sector; another 19% for the dairy cattle sector. Most of the total volume of water (98%) refers to the water footprint of the feed for the animals. Drinking water for the animals, service water and feed mixing water account only for 1.1%, 0.8% and 0.03%, respectively."
 	},
 	{
@@ -3227,7 +3237,7 @@
 		"year": 2001,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "nitrates,contaminants",
+		"tags": "water pollution",
 		"quote": "Nitrate contamination of drinking water may increase cancer risk ... For all cancers, there was no association with increasing nitrate in drinking water, nor were there clear and consistent associations for non-Hodgkin lymphoma; leukemia; melanoma; or cancers of the colon, breast, lung, pancreas, or kidney. There were positive associations for bladder cancer [relative risks (RRs) across nitrate quartiles = 1, 1.69, 1.10, and 2.83] and ovarian cancer (RR = 1, 1.52, 1.81, and 1.84), and inverse associations for uterine cancer (RR = 1, 0.86, 0.86, and 0.55) and rectal cancer (RR = 1, 0.72, 0.95, and 0.47) after adjustment for a variety of cancer risk/protective factors, agents that affect nitrosation (smoking, vitamin C, and vitamin E intake), dietary nitrate, and water source. Similar results were obtained when analyses were restricted to nitrate level in drinking water from 1955 through 1964. The positive association for bladder cancer is consistent with some previous data; the associations for ovarian, uterine, and rectal cancer were unexpected."
 	},
 	{

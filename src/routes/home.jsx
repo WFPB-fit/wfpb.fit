@@ -68,9 +68,44 @@ export default class Home extends Component {
 					</p>
 					<p>
 						<b>WFPBD is also an ethical way to eat. </b> Animal agriculture is
-						the #1 cause of antibiotic use, water use, water pollution, land
-						use, native habitat destruction, plastic in the ocean, animal death,
-						and global climate change.
+						the #1 cause of
+						{getLink(
+							"/research?selected=antibiotics#disease",
+							"antibiotic resistance,"
+						)}
+						{getLink(
+							"/research?selected=water+use#disease",
+							"water use,"
+						)}
+						{getLink(
+							"/research?selected=water+pollution#disease",
+							"water pollution,"
+						)}
+						{getLink(
+							"/research?selected=water+use#disease",
+							"land use,"
+						)}
+						{getLink(
+							"/research?selected=water+use#disease",
+							"land degradation,"
+						)}
+						{getLink(
+							"/research?selected=water+use#disease",
+							"biodiversity loss,"
+						)}
+						{getLink(
+							"/research?selected=water+plastic#disease",
+							"oceanic plastic,"
+						)}
+						{getLink(
+							"/research#animals",
+							"animal death,"
+						)}
+						and
+						{getLink(
+							"/research?selected=climate+change#disease",
+							"climate change,"
+						)}
 					</p>
 					<p>
 						<b>It's also cheap and tastes great.</b>
