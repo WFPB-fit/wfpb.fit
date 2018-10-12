@@ -9,13 +9,13 @@ import { HashLink } from "react-router-hash-link";
 export default class Heading extends Component {
 	render() {
 		const icon = this.props.id ? (
-			<IconButton id={this.props.id}>
-				<HashLink to={`#${this.props.id}`}>
+			<HashLink to={`#${this.props.id}`}>
+				<IconButton id={this.props.id}>
 					<LinkIcon />
-				</HashLink>
-			</IconButton>
-        ) : null;
-        
+				</IconButton>
+			</HashLink>
+		) : null;
+
 		return (
 			<Typography style={{ margin: "20px 0" }} variant={this.props.variant}>
 				{icon}
