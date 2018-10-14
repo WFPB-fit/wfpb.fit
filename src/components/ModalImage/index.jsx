@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-import styled from "styled-components";
 import Modal from "@material-ui/core/Modal";
 
 export default class LinkableSelect extends Component {

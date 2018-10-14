@@ -31,9 +31,6 @@ const GraphContainer = styled.div`
 display:block;
 text-align:center;
 `;
-const ContainerDiv = styled.div`
-text-align:center;
-`;
 
 export default class UnitChart extends Component {
     constructor(props) {

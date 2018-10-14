@@ -126,7 +126,6 @@ export default class NestedSelectField extends Component {
         let prevSelectObj = this.props.selectObject;
         for (let i = 0; i < this.state.selectedKeys.length; i++) {
             const selectedKey = this.state.selectedKeys[i];
-            const keys = Object.keys(prevSelectObj).sort(alphaCompare);
             // console.log(selectedKey, this.state.selectedKeys, Object.keys(prevSelectObj))
             selectFields.push(this.getSelectField(Object.keys(prevSelectObj), i, selectedKey));
             addFoodButtons.push(this.getFoodButton(prevSelectObj));

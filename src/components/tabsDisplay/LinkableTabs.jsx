@@ -7,7 +7,6 @@ import Paper from '@material-ui/core/Paper';
 
 import { withRouter } from 'react-router-dom';
 
-import Resources from '../resources/index.jsx';
 import styled from 'styled-components';
 
 const StyledTabs = styled(Tabs)`
@@ -49,7 +48,7 @@ class LinkableTabs extends Component {
     }
     render() {
         const { match, location, history, staticContext, notLinkable, ...passedProps } = this.props; //https://github.com/DefinitelyTyped/DefinitelyTyped/issues/13689#issuecomment-296246134
-        const isScrollable = this.props.tabs.length > 2;
+        // const isScrollable = this.props.tabs.length > 2;
         return (
             <div>
                 <Paper>

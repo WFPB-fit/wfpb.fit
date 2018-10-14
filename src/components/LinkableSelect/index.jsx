@@ -1,12 +1,7 @@
 import React, { Component } from "react";
 
 import VirtualizedSelect from "react-virtualized-select";
-import SelectField from "@material-ui/core/Select";
 import { withRouter } from "react-router-dom";
-
-import styled from "styled-components";
-
-import PropTypes from "prop-types";
 
 import { alphaCompare } from "../../utils/GeneralUtils.jsx";
 

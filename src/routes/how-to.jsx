@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 import styled from "styled-components";
 
-import KeyValueTable from "../components/keyValueTable";
 import { WidthWrapper, getLink } from "../utils/GeneralUtils.jsx";
 
 import ModalImage from "../components/ModalImage";
@@ -27,9 +26,6 @@ const SquarishImg = styled(ModalImage)`
 `;
 
 export default class HowTo extends Component {
-	constructor(props) {
-		super(props);
-	}
 	static getListed(data) {
 		return (
 			<ul>
@@ -42,7 +38,7 @@ export default class HowTo extends Component {
 	render() {
 		return (
 			<WidthWrapper>
-					<Heading id="what" txt="What to eat?" variant="display2" />
+				<Heading id="what" txt="What to eat?" variant="display2" />
 				<p>
 					Diverse, whole, plant based foods that meet all nutritional needs
 					might look like:{" "}
@@ -55,7 +51,7 @@ export default class HowTo extends Component {
 					src="/imgs/assets/foods/pyramids/Plant-Based-Dietitian-Pyramid.jpg"
 					alt="Plant-Based-Dietitian-Pyramid"
 				/>
-					<Heading id="learn" txt="Where can I learn more?" variant="display2" />
+				<Heading id="learn" txt="Where can I learn more?" variant="display2" />
 				<p>
 					See the {getLink("/research", "research")} page or start looking
 					through {getLink("https://scholar.google.com/", "Google Scholar")} for
@@ -168,7 +164,11 @@ export default class HowTo extends Component {
 						)}
 					</li>
 				</ol>
-				<Heading id="potential-issues" txt="Potential Issues" variant="display2" />
+				<Heading
+					id="potential-issues"
+					txt="Potential Issues"
+					variant="display2"
+				/>
 				The following nutrients might be harder to get on WFPBD.
 				<ol>
 					<li>
@@ -192,7 +192,11 @@ export default class HowTo extends Component {
 						supplements, or a special UVB lamp.
 					</li>
 				</ol>
-				<Heading id="common-concerns" txt="Common Concerns" variant="display1" />
+				<Heading
+					id="common-concerns"
+					txt="Common Concerns"
+					variant="display1"
+				/>
 				<p>
 					Most people will get all other required nutrients when eating a
 					diverse range of whole, plant-based foods. If you are worried about

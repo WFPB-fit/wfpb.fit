@@ -1,6 +1,6 @@
 const genderConstants = {
 	male: 5,
-	female: -161,
+	female: -161
 };
 
 const activityScalars = {
@@ -23,12 +23,14 @@ export default function calculateHarrisBenedict1990({
 
 	let bmr = 10 * kg + 6.25 * cm - 5 * age;
 
-	if (!(gender in genderConstants)) throw `Gender "${gender}" not found`;
+	if (!(gender in genderConstants))
+		throw new Error(`Gender "${gender}" not found`);
 	else {
 		bmr += genderConstants[gender];
 	}
 
-	if (!(activityLevel in activityScalars)) throw `Activity level "${activityLevel}" not found`;
+	if (!(activityLevel in activityScalars))
+		throw new Error(`Activity level "${activityLevel}" not found`);
 	else {
 		bmr *= activityScalars[activityLevel];
 	}

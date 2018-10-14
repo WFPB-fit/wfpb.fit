@@ -8,15 +8,9 @@ import Input from "@material-ui/core/Input";
 import InputLabel from "@material-ui/core/InputLabel";
 import FormControl from "@material-ui/core/FormControl";
 
-import styled from "styled-components";
-
 import Resource from "../resource/index.jsx";
 import { titleize, alphaCompare } from "../../utils/GeneralUtils.jsx";
 import LinkableSelect from "../LinkableSelect";
-
-const PaddedPaper = styled(Paper)`
-	padding: 5px;
-`;
 
 export default class Resources extends Component {
 	handleSelectedTagsChanged(value) {

@@ -30,10 +30,6 @@ export default class NutrientGraph extends Component {
 		}
 		return label;
 	}
-	constructor(props) {
-		super(props);
-	}
-
 	static getVictoryData(foodData, name, color) {
 		return Object.keys(foodData).map(key => {
 			return { x: key, y: foodData[key], name: name, color: color };
@@ -68,8 +64,8 @@ export default class NutrientGraph extends Component {
 			unit = "";
 		}
 
-		const valDecimal = ( val - parseInt(val) )
-		let magnitude = - parseInt( valDecimal.toExponential().split('e')[1] );
+		const valDecimal = val - parseInt(val, 10);
+		let magnitude = -parseInt(valDecimal.toExponential().split("e")[1], 10);
 		magnitude = Math.max(magnitude, 1);
 
 		let displayVal = `${val.toFixed(magnitude)} ${prefix}${unit}`;
@@ -85,7 +81,7 @@ export default class NutrientGraph extends Component {
 
 			return (
 				<VictoryLine
-					key={'line'+line.id}
+					key={"line" + line.id}
 					style={{
 						data: { stroke: line.color }
 					}}
@@ -103,7 +99,7 @@ export default class NutrientGraph extends Component {
 				<VictoryScatter
 					name="missingData"
 					data={line.dataPoints}
-					key={'scatter'+line.id}
+					key={"scatter" + line.id}
 					dataComponent={<ScatterPoint />}
 					size={3}
 					style={{
@@ -115,15 +111,7 @@ export default class NutrientGraph extends Component {
 	}
 
 	render() {
-		const linesData = this.props.linesData,
-			w = 200,
-			h = 200;
-
-		const axisStyle = {
-			axis: { stroke: "none" },
-			ticks: { stroke: "grey", size: 3 },
-			tickLabels: { fontSize: 5, padding: 1 }
-		};
+		const linesData = this.props.linesData;
 
 		const yLabel =
 			typeof this.props.yLabel === "string" ? this.props.yLabel : "Grams";

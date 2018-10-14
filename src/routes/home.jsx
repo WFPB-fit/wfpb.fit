@@ -4,8 +4,7 @@ import KeyValueTable from "../components/keyValueTable";
 
 import {
 	WidthWrapper,
-	getLink,
-	VerticalMidAlignWrapper
+	getLink
 } from "../utils/GeneralUtils.jsx";
 
 import Heading from "../components/heading";
@@ -17,10 +16,6 @@ const Emojis = styled.div`
 `;
 
 export default class Home extends Component {
-	constructor(props) {
-		super(props);
-	}
-
 	render() {
 		return (
 			<div>
@@ -52,11 +47,26 @@ export default class Home extends Component {
 						refined grains).
 					</p>
 					<Emojis>
-						<p>
+						<span
+							role="img"
+							aria-label="Emojis of fruit, vegetables, and mushrooms"
+						>
 							✔️ - 🥕🍅🥒🌿🍆🍄🥔🌱🥦🌾🥝🍓🍋🍈🍊🍍🍐🍇🍉🍌🍒🥑🍎🥜🌰🌶️🌽🍠🍵
-						</p>
-						<p>❌ - 🥩🥚🥛🧀🐖🐄🐔🦃🐟🦐</p>
-						<p>❌ - 🍬🥐🍟🍦🥧🍺</p>
+						</span>
+						<br />
+						<span
+							role="img"
+							aria-label="Emojis of fruit, vegetables, and mushrooms"
+						>
+							❌ - 🥩🥚🥛🧀🐖🐄🐔🦃🐟🦐{" "}
+						</span>
+						<br />
+						<span
+							role="img"
+							aria-label="Emojis of fruit, vegetables, and mushrooms"
+						>
+							❌ - 🍬🥐🍟🍦🥧🍺{" "}
+						</span>
 					</Emojis>
 					{/* <img alt="WFPBD foods" src="/imgs/assets/foods/Fruits_Veg.jpg" /> */}
 					<Heading id="why" txt="Why eat this way?" variant="display2" />
@@ -73,18 +83,12 @@ export default class Home extends Component {
 							"/research?selected=antibiotics#disease",
 							"antibiotic resistance,"
 						)}
-						{getLink(
-							"/research?selected=water+use#disease",
-							"water use,"
-						)}
+						{getLink("/research?selected=water+use#disease", "water use,")}
 						{getLink(
 							"/research?selected=water+pollution#disease",
 							"water pollution,"
 						)}
-						{getLink(
-							"/research?selected=water+use#disease",
-							"land use,"
-						)}
+						{getLink("/research?selected=water+use#disease", "land use,")}
 						{getLink(
 							"/research?selected=water+use#disease",
 							"land degradation,"
@@ -97,10 +101,7 @@ export default class Home extends Component {
 							"/research?selected=water+plastic#disease",
 							"oceanic plastic,"
 						)}
-						{getLink(
-							"/research#animals",
-							"animal death,"
-						)}
+						{getLink("/research#animals", "animal death,")}
 						and
 						{getLink(
 							"/research?selected=climate+change#disease",

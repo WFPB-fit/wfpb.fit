@@ -48,7 +48,7 @@ export function getRandomColor() {
 	return color;
 }
 export function getNutrientFromId(id, nutrients) {
-	const n = nutrients.filter(x => x.nutrient_id == id); //find the nutrient. use '==' as one may be string and other integer
+	const n = nutrients.filter(x => x.nutrient_id === id); //find the nutrient. use '==' as one may be string and other integer
 	return n.length === 1 ? n[0] : null;
 }
 export function numCommonElements(arr1, arr2) {
@@ -69,7 +69,7 @@ export function objSwap(json) {
 }
 export function sumValues(obj) {
 	return Object.keys(obj).reduce((sum, key) => {
-		const val = parseInt(obj[key] || 0);
+		const val = parseInt(obj[key] || 0, 10);
 		return sum + val;
 	}, 0);
 }
@@ -80,7 +80,7 @@ export function getLink(url, text, useHashLink = false, spacePad = true) {
 		const urlObj = new URL(url);
 		text = urlObj.hostname.replace("www.", "");
 	}
-	
+
 	const anchor = (
 		<a href={url} target="_blank">
 			{text}

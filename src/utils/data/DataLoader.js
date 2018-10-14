@@ -1,5 +1,5 @@
-import { combineReducers } from "redux";
-import { getNutrientFromId, titleize } from "../GeneralUtils.jsx";
+// import { combineReducers } from "redux";
+import { titleize } from "../GeneralUtils.jsx";
 import pluralize from "pluralize";
 
 import GraphNutrients from "../../assets/data/preprocessed_data/graphNutrients.json";
