@@ -1,34 +1,30 @@
 import React, { Component } from "react";
 
-import KeyValueTable from "../components/keyValueTable";
+import Button from "@material-ui/core/Button";
 
-import {
-	WidthWrapper,
-	getLink
-} from "../utils/GeneralUtils.jsx";
-
+import { WidthWrapper, getLink } from "../utils/GeneralUtils.jsx";
 import Heading from "../components/heading";
 
-import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-const Emojis = styled.div`
-	font-size: 25px;
-`;
+// import styled from "styled-components";
+// const Emojis = styled.div`
+// 	font-size: 25px;
+// `;
 
 export default class Home extends Component {
 	render() {
 		return (
 			<div>
 				<WidthWrapper>
-					<Heading txt={window.globalAppData.appName} variant="display3" />
+					<Heading txt={window.globalAppData.appName} variant="h1" />
 					<p>
-						This non-profit website aggregates resources about the{" "}
-						<b>whole food, plant-based diet (WFPBD)</b>. WFPBD has been
-						documented to{" "}
+						Learn about the <b>whole food, plant-based (WFPB)</b> diet. WFPB has
+						been documented to{" "}
 						<b>
-							ease weightloss, reverse heart disease, protect against type II
-							diabetes, help prevent cancer, improve autoimmune disease, extend
-							lifespan
+							reverse heart disease, protect against type II diabetes, help
+							prevent cancer, ease weightloss, improve autoimmune disease,
+							extend lifespan
 						</b>
 						, and more.
 					</p>
@@ -40,13 +36,13 @@ export default class Home extends Component {
 						{getLink("https://www.plantbaseddoctors.org", "second opinion")}
 						from an accredited physician or dietitian.
 					</p>
-					<Heading id="what" txt="What is WFPBD?" variant="display2" />
+					<Heading id="what" txt="What is WFPBD?" variant="h2" />
 					<p>
 						A diet high in a diverse range of nutrient-dense plant foods and low
 						in animal products or processed foods (such as oil, sugar, or
 						refined grains).
 					</p>
-					<Emojis>
+					{/* <Emojis>
 						<span
 							role="img"
 							aria-label="Emojis of fruit, vegetables, and mushrooms"
@@ -67,9 +63,9 @@ export default class Home extends Component {
 						>
 							❌ - 🍬🥐🍟🍦🥧🍺{" "}
 						</span>
-					</Emojis>
+					</Emojis> */}
 					{/* <img alt="WFPBD foods" src="/imgs/assets/foods/Fruits_Veg.jpg" /> */}
-					<Heading id="why" txt="Why eat this way?" variant="display2" />
+					<Heading id="why" txt="Why eat this way?" variant="h2" />
 					<p>
 						<b>
 							Disease is expensive, time consuming, miserable, and difficult.
@@ -78,142 +74,54 @@ export default class Home extends Component {
 					</p>
 					<p>
 						<b>WFPBD is also an ethical way to eat. </b> Animal agriculture is
-						the #1 cause of
+						the #1 cause of{" "}
 						{getLink(
 							"/research?selected=antibiotics#disease",
 							"antibiotic resistance,"
-						)}
-						{getLink("/research?selected=water+use#disease", "water use,")}
+						)}{" "}
+						{getLink("/research?selected=water+use#disease", "water use,")}{" "}
 						{getLink(
 							"/research?selected=water+pollution#disease",
 							"water pollution,"
-						)}
-						{getLink("/research?selected=water+use#disease", "land use,")}
+						)}{" "}
+						{getLink("/research?selected=water+use#disease", "land use,")}{" "}
 						{getLink(
 							"/research?selected=water+use#disease",
 							"land degradation,"
-						)}
+						)}{" "}
 						{getLink(
 							"/research?selected=water+use#disease",
 							"biodiversity loss,"
-						)}
+						)}{" "}
 						{getLink(
 							"/research?selected=water+plastic#disease",
 							"oceanic plastic,"
-						)}
-						{getLink("/research#animals", "animal death,")}
-						and
+						)}{" "}
+						{getLink("/research#animals", "animal death,")} and{" "}
 						{getLink(
 							"/research?selected=climate+change#disease",
-							"climate change,"
+							"climate change."
 						)}
 					</p>
 					<p>
 						<b>It's also cheap and tastes great.</b>
 					</p>
-					<Heading id="how" txt="How does it work?" variant="display2" />
-					<ul>
-						<li>
-							Most Americans are{" "}
-							{getLink(
-								"https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/food-surveys-research-group/docs/wweia-usual-intake-data-tables/",
-								"deficient in essential nutrients"
-							)}{" "}
-							that are common in a WFPB diet. Fixing these deficiencies can
-							greatly improve overall health.
-							<KeyValueTable
-								// title="Percentage of Americans Defiicent In..."
-								style={{ maxWidth: "350px", margin: "5px auto" }}
-								keyLabel="Nutrient"
-								valueLabel="Americans Deficient (%)"
-								data={{
-									Fiber: 97,
-									Potassium: 97,
-									"Vitamin E": 97,
-									"Vitamin K": 73,
-									Calcium: 70,
-									Magnesium: 56,
-									ALA: 44,
-									"Vitamin C": 31
-								}}
-							/>
-							A small number of nutrients may be{" "}
-							{getLink("/how-to#potential-issues", "less common", true)} in
-							WFPBD though, so plan your diet well to ensure proper nutrition.
-							{/* Nutrients that are {getLink("/how-to#potential-issues","less common",true)} in WFPBD are less likely to
-							have deficiencies.
-							<KeyValueTable
-								// title="Percentage of Americans Defiicent In..."
-								style={{ maxWidth: "350px", margin: "5px auto" }}
-								keyLabel="Nutrient"
-								valueLabel="Americans Deficient (%)"
-								data={{
-									"Vitamin D": 69,
-									Zinc: 12,
-									Iron: 5,
-									Protein: 3,
-									B12: 3
-								}}
-							/> */}
-						</li>
-						<li>
-							<b>
-								Trans fat, saturated fat, and to a lesser degree, dietary
-								cholesterol are primarily found in animal tissue and play a
-								strong role in artery and heart disease.
-							</b>{" "}
-							Plants do not contain trans fat nor cholesterol, and saturated fat
-							is much less abundant. Plants also contain phytochemicals and
-							phytosterols that may help prevent artery disease. Artery disease
-							(Athleroscloris) may play a causal role in a variety of other
-							diseases beyond heart disease.
-						</li>
-						<li>
-							Poorly digested by our bodies,{" "}
-							<b>
-								whole plant foods are the only source of fiber and resistant
-								starch (RS), which feed the "good" bacterial flora in our gut.
-							</b>
-							Without this protective flora, disease-causing molecules can enter
-							more freely into our body. This "leaky gut syndrome" overactivates
-							the immune system and may lead to chronic inflammation, autoimmune
-							disease and cancer.
-						</li>
-						<li>
-							<b>
-								Fiber and resistant starch is filling (high satiety), and make
-								it easier to stop over-eating.{" "}
-							</b>
-							In addition to being critical to health and very filling, they
-							also provide little to no calories which helps prevent or reverse
-							obesity.
-						</li>
-						<li>
-							Cellular DNA can be damaged by Oxidative Stress, which can lead to
-							cancer.{" "}
-							<b>
-								Antioxidants help prevent oxidative stress, and are bountiful in
-								plants.
-							</b>{" "}
-							Antioxidants include vitamins and phytochemicals like Carotenoids
-							and Flavonoids.
-						</li>
-						<li>
-							Animal agriculture is the #1 user of antibiotics. It has even been
-							caught using "last-resort" antibiotics.{" "}
-							<b>
-								Closely confined and medicated animals leads to the evolution of
-								new and antibiotic-resistent disease, some of which can be
-								spread to humans through air, food, or water contamination from
-								waste ponds.
-							</b>
-						</li>
-						<li>{getLink("/research", "And more...")}</li>
-					</ul>
+					<div style={{ display: "block", textAlign: "center" }}>
+							<Button
+								component={Link}
+								variant="contained"
+								color="primary"
+								to="/how-to"
+								style={{ color: "white" }}
+							>
+								Get Started
+							</Button>
+						</div>
+
 					{/* <Heading
 						id="certain"
 						txt="How can I be sure of these benefits?"
-						variant="display2"
+						variant="h2"
 					/>
 					<p>
 						Without expert training and a constant look into available research,{" "}

@@ -13,15 +13,19 @@ const Wrapper = styled.div`
 export default class Header extends Component {
 	render() {
 		return (
-			<Wrapper>
-				<div />
-				<div>
-					{getLink("https://github.com", "Issues?", false, false)}
-					<br />
-					{getLink("https://github.com", "Source", false, false)}
-				</div>
-				<div />
-			</Wrapper>
+			<div>
+				<hr />
+
+				<Wrapper>
+					<div />
+					<div>
+						{getLink("https://github.com", "Issues?", false, false)}
+						<br />
+						{getLink("https://github.com", "Source", false, false)}
+					</div>
+					<div />
+				</Wrapper>
+			</div>
 		);
 	}
 }

@@ -61,7 +61,7 @@ export default class App extends Component {
 
 		//simple global data container
 		window.globalAppData = {
-			appName: "WFPBD.fit",
+			appName: "WFPB.fit",
 			learnMore: {
 				documentaries: indexByTags(preprocess(learnMoreData.documentaries)),
 				videos: indexByTags(preprocess(learnMoreData.videos)),

@@ -1,14 +1,12 @@
-import { connect } from 'react-redux'
-import FoodComponent from './display.jsx'
+import { connect } from "react-redux";
+import FoodDisplayComponent from "./display.jsx";
 
 const mapStateToProps = state => {
-  return {
-    food: state.food
-  }
-}
+	return {
+		food: state.food
+	};
+};
 
-const FoodContainer = connect(
-  mapStateToProps
-)(FoodComponent)
+const FoodContainer = connect(mapStateToProps)(FoodDisplayComponent);
 
-export default FoodContainer
+export default FoodContainer;

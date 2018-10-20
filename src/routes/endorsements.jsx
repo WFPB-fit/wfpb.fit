@@ -44,18 +44,18 @@ export default class Endorsements extends Component {
 
 		return (
 			<WidthWrapper>
-				<Heading id="orgs" txt="Organizations" variant="display2" />
+				<Heading id="orgs" txt="Organizations" variant="h2" />
 				{orgs}
-				<Heading id="physicians" txt="Physicians" variant="display2" />
+				<Heading id="physicians" txt="Physicians" variant="h2" />
 				{doctors}
-				<Heading id="athletes" txt="Athletes" variant="display2" />
+				<Heading id="athletes" txt="Athletes" variant="h2" />
 				<ResourceTabs
 					notLinkable
 					tabs={this.athleteTabs}
 					location={this.props.location}
 					history={this.props.history}
 				/>
-				<Heading id="celebs" txt="Celebrities" variant="display2" />
+				<Heading id="celebs" txt="Celebrities" variant="h2" />
 				<p>{endorsements.celebrities}</p>
 				<h3>And More!</h3>
 			</WidthWrapper>

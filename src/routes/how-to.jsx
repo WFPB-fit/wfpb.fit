@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { WidthWrapper, getLink } from "../utils/GeneralUtils.jsx";
 
 import ModalImage from "../components/ModalImage";
+import KeyValueTable from "../components/keyValueTable";
 
 import QuickResources from "../assets/data/quick-resources.json";
 import Heading from "../components/heading";
@@ -38,7 +39,7 @@ export default class HowTo extends Component {
 	render() {
 		return (
 			<WidthWrapper>
-				<Heading id="what" txt="What to eat?" variant="display2" />
+				<Heading id="what" txt="What to eat?" variant="h2" />
 				<p>
 					Diverse, whole, plant based foods that meet all nutritional needs
 					might look like:{" "}
@@ -51,36 +52,36 @@ export default class HowTo extends Component {
 					src="/imgs/assets/foods/pyramids/Plant-Based-Dietitian-Pyramid.jpg"
 					alt="Plant-Based-Dietitian-Pyramid"
 				/>
-				<Heading id="learn" txt="Where can I learn more?" variant="display2" />
+				<Heading id="learn" txt="Where can I learn more?" variant="h2" />
 				<p>
 					See the {getLink("/research", "research")} page or start looking
 					through {getLink("https://scholar.google.com/", "Google Scholar")} for
 					scientific sources.
 				</p>
-				<Heading id="online-ed" txt="Online Education" variant="display1" />
+				<Heading id="online-ed" txt="Online Education" variant="h3" />
 				<p>For summaries and explanation of complex nutritional science:</p>
 				{HowTo.getListed(QuickResources.sites)}
-				<Heading id="books" txt="Books" variant="display1" />
+				<Heading id="books" txt="Books" variant="h3" />
 				<p>
 					These popular books provide overviews of how and why WFPB works so
 					well. More books can be found on the{" "}
 					{getLink("/endorsements", "endorsements")} page.{" "}
 				</p>
 				{HowTo.getListed(QuickResources.books)}
-				<Heading id="help" txt="Where can I get help?" variant="display2" />
-				<Heading id="communities" txt="Communities" variant="display1" />
+				<Heading id="help" txt="Where can I get help?" variant="h2" />
+				<Heading id="communities" txt="Communities" variant="h3" />
 				Online forums are a great place for advice, questions, discussion, and
 				motivation.
 				{HowTo.getListed(QuickResources.communities)}
-				<Heading id="programs" txt="Programs" variant="display1" />
+				<Heading id="programs" txt="Programs" variant="h3" />
 				Multi-week programs with strong evidence-based results can guide you
 				through the process, but may cost a few hundred dollars.
 				{HowTo.getListed(QuickResources.programs)}
-				<Heading id="recipes" txt="What's for dinner?" variant="display2" />
+				<Heading id="recipes" txt="What's for dinner?" variant="h2" />
 				Whether you need cheap, fast, and easy or delicious and decadent there's
 				a WFPB recipe waiting for you.
 				{HowTo.getListed(QuickResources.recipes)}
-				<Heading id="tips" txt="Getting Started Tips" variant="display2" />
+				<Heading id="tips" txt="Getting Started Tips" variant="h2" />
 				<ol>
 					<li>
 						<b>Everyone's body is different.</b> Increasing WFPB intake and
@@ -164,10 +165,109 @@ export default class HowTo extends Component {
 						)}
 					</li>
 				</ol>
+				<Heading id="how" txt="How does it work?" variant="h2" />
+				<ul>
+					<li>
+						Most Americans are{" "}
+						{getLink(
+							"https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/food-surveys-research-group/docs/wweia-usual-intake-data-tables/",
+							"deficient in essential nutrients"
+						)}{" "}
+						that are common in a WFPB diet. Fixing these deficiencies can
+						greatly improve overall health.
+						<KeyValueTable
+							// title="Percentage of Americans Defiicent In..."
+							style={{ maxWidth: "350px", margin: "5px auto" }}
+							keyLabel="Nutrient"
+							valueLabel="Americans Deficient (%)"
+							data={{
+								Fiber: 97,
+								Potassium: 97,
+								"Vitamin E": 97,
+								"Vitamin K": 73,
+								Calcium: 70,
+								Magnesium: 56,
+								ALA: 44,
+								"Vitamin C": 31
+							}}
+						/>
+						A small number of nutrients may be{" "}
+						{getLink("/how-to#potential-issues", "less common", true)} in WFPBD
+						though, so plan your diet well to ensure proper nutrition.
+						{/* Nutrients that are {getLink("/how-to#potential-issues","less common",true)} in WFPBD are less likely to
+							have deficiencies.
+							<KeyValueTable
+								// title="Percentage of Americans Defiicent In..."
+								style={{ maxWidth: "350px", margin: "5px auto" }}
+								keyLabel="Nutrient"
+								valueLabel="Americans Deficient (%)"
+								data={{
+									"Vitamin D": 69,
+									Zinc: 12,
+									Iron: 5,
+									Protein: 3,
+									B12: 3
+								}}
+							/> */}
+					</li>
+					<li>
+						<b>
+							Trans fat, saturated fat, and to a lesser degree, dietary
+							cholesterol are primarily found in animal tissue and play a strong
+							role in artery and heart disease.
+						</b>{" "}
+						Plants do not contain trans fat nor cholesterol, and saturated fat
+						is much less abundant. Plants also contain phytochemicals and
+						phytosterols that may help prevent artery disease. Artery disease
+						(Athleroscloris) may play a causal role in a variety of other
+						diseases beyond heart disease.
+					</li>
+					<li>
+						Poorly digested by our bodies,{" "}
+						<b>
+							whole plant foods are the only source of fiber and resistant
+							starch (RS), which feed the "good" bacterial flora in our gut.
+						</b>
+						Without this protective flora, disease-causing molecules can enter
+						more freely into our body. This "leaky gut syndrome" overactivates
+						the immune system and may lead to chronic inflammation, autoimmune
+						disease and cancer.
+					</li>
+					<li>
+						<b>
+							Fiber and resistant starch is filling (high satiety), and make it
+							easier to stop over-eating.{" "}
+						</b>
+						In addition to being critical to health and very filling, they also
+						provide little to no calories which helps prevent or reverse
+						obesity.
+					</li>
+					<li>
+						Cellular DNA can be damaged by Oxidative Stress, which can lead to
+						cancer.{" "}
+						<b>
+							Antioxidants help prevent oxidative stress, and are bountiful in
+							plants.
+						</b>{" "}
+						Antioxidants include vitamins and phytochemicals like Carotenoids
+						and Flavonoids.
+					</li>
+					<li>
+						Animal agriculture is the #1 user of antibiotics. It has even been
+						caught using "last-resort" antibiotics.{" "}
+						<b>
+							Closely confined and medicated animals leads to the evolution of
+							new and antibiotic-resistent disease, some of which can be spread
+							to humans through air, food, or water contamination from waste
+							ponds.
+						</b>
+					</li>
+					<li>{getLink("/research", "And more...")}</li>
+				</ul>
 				<Heading
 					id="potential-issues"
 					txt="Potential Issues"
-					variant="display2"
+					variant="h2"
 				/>
 				The following nutrients might be harder to get on WFPBD.
 				<ol>
@@ -195,7 +295,7 @@ export default class HowTo extends Component {
 				<Heading
 					id="common-concerns"
 					txt="Common Concerns"
-					variant="display1"
+					variant="h3"
 				/>
 				<p>
 					Most people will get all other required nutrients when eating a

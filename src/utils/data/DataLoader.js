@@ -1,5 +1,5 @@
 // import { combineReducers } from "redux";
-import { titleize } from "../GeneralUtils.jsx";
+import { titleize, getRandomColor } from "../GeneralUtils.jsx";
 import pluralize from "pluralize";
 
 import GraphNutrients from "../../assets/data/preprocessed_data/graphNutrients.json";
@@ -24,16 +24,22 @@ export default class DataLoader {
 	static async loadFoodData() {
 		let indices = JSON.parse(localStorage.getItem("foodIndex"));
 		let foodData = JSON.parse(localStorage.getItem("foodData"));
+		let foodColors = JSON.parse(localStorage.getItem("foodColors"));
 
-		if (!indices || !foodData) {
+		if (!indices || !foodData || !foodColors) {
 			foodData = await import("../../assets/data/preprocessed_data/foods.json");
-			// foodData = DataLoader._preprocessFoodData(foodData);
 			indices = DataLoader._preprocessFoodIndices(foodData);
+			foodColors = DataLoader._preprocessFoodColors(foodData);
 
 			// localStorage.setItem('foodIndex', JSON.stringify(indices));
 			// localStorage.setItem('foodData', JSON.stringify(foodData));
+			// localStorage.setItem('foodColors', JSON.stringify(foodColors));
 		}
 
+		DataLoader.store.dispatch({
+			type: "ADD_FOOD_COLORS",
+			foodColors: foodColors
+		});
 		DataLoader.store.dispatch({
 			type: "ADD_INDEXED_FOODS",
 			indices: indices
@@ -57,6 +63,15 @@ export default class DataLoader {
 			type: "ADD_STUDIES_TEXT",
 			data: studies_text
 		});
+	}
+
+	static _preprocessFoodColors(foodData) {
+		const foodIds = Object.keys(foodData);
+		let foodColors = {};
+		for(const id of foodIds){
+			foodColors[id] = getRandomColor();
+		}
+		return foodColors;
 	}
 
 	static _preprocessFoodData(foodData) {

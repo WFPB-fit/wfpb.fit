@@ -5,7 +5,6 @@ import LinkableSelect from "../LinkableSelect";
 
 import {
 	titleize,
-	getRandomColor,
 	getLink,
 	alphaCompare,
 	CenteredCircularProgress
@@ -110,7 +109,7 @@ class Food extends Component {
 			const foodId = selectedFood.value;
 
 			let foodData = Object.assign({}, this.props.food.data[foodId]); //each foodData is a line
-			foodData.color = getRandomColor();
+			foodData.color = this.props.food.foodColors[foodId];
 			foodData.id = foodId;
 			foodData.dataPoints = getDataPointsFunction(foodId);
 
@@ -203,7 +202,7 @@ class Food extends Component {
 	}
 
 	render() {
-		if (Object.keys(this.props.food.data).length === 0 || Object.keys(this.props.food.indices).length === 0) {
+		if (Object.keys(this.props.food.data).length === 0 || Object.keys(this.props.food.foodColors).length === 0) {
 			return (
 				<CenteredCircularProgress size={50} />
 			);
@@ -270,10 +269,10 @@ class Food extends Component {
 								this.getNutrientWeights(GraphNutrients["macros"])
 							)}
 						/>
-						<h2>Macronutrient as a % of Calories</h2>
+						{/* <h2>Macronutrient as a % of Calories</h2>
 						<NutrientGraph
 							linesData={this.getGraphData(this.getMacroPercentages)}
-						/>
+						/> */}
 						<h2>Carbohydrates</h2>
 						<NutrientGraph
 							linesData={this.getGraphData(

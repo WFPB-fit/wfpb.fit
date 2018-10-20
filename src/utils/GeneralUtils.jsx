@@ -82,16 +82,14 @@ export function getLink(url, text, useHashLink = false, spacePad = true) {
 	}
 
 	const anchor = (
-		<a href={url} target="_blank">
-			{text}
-		</a>
+		<a href={url} target="_blank">{text}</a>
 	);
 
 	if (url.charAt(0) === "/") {
 		const LinkComponent = useHashLink ? HashLink : Link;
 		return <LinkComponent to={url}> {text}</LinkComponent>;
 	} else if (spacePad) {
-		return <span> {anchor} </span>;
+		return <span>{" "}{anchor}{" "}</span>;
 	} else {
 		return anchor;
 	}
