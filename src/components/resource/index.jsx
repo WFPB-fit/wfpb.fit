@@ -125,7 +125,7 @@ export default class Resource extends Component {
 			let txt;
 			if (resource.quote) txt = <Quote>{resource.quote}</Quote>;
 			else if (resource.summary)
-				txt = <Typography variant="body1">{resource.summary}</Typography>;
+				txt = <Typography>{resource.summary}</Typography>;
 			else txt = <CircularProgress />;
 
 			CardInfo = (
@@ -145,10 +145,10 @@ export default class Resource extends Component {
 			<StyledCard>
 				{DisplayCardMedia}
 				<CardContent>
-					<Typography align="center" variant="headline">
+					<Typography align="center" variant="h4">
 						{title}
 					</Typography>
-					<Typography align="center" variant="subheading">
+					<Typography align="center" variant="h6">
 						{metaData}
 					</Typography>
 
@@ -159,7 +159,7 @@ export default class Resource extends Component {
 					{resource.url && (
 						<Button
 							size="small"
-							variant="raised"
+							variant="contained"
 							color="primary"
 							target="_blank"
 							href={resource.url}
@@ -170,7 +170,7 @@ export default class Resource extends Component {
 					{buy && (
 						<Button
 							size="small"
-							variant="raised"
+							variant="contained"
 							color="primary"
 							target="_blank"
 							href={buy}
@@ -181,7 +181,7 @@ export default class Resource extends Component {
 					{resource.website && (
 						<Button
 							size="small"
-							variant="raised"
+							variant="contained"
 							color="primary"
 							target="_blank"
 							href={resource.website}

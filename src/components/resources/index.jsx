@@ -103,7 +103,7 @@ export default class Resources extends Component {
 		return (
 			<div>
 				<Paper style={{ padding: "10px" }}>
-					<Typography variant="headline">Filter</Typography>
+					<Typography variant="h4">Filter</Typography>
 					<LinkableSelect
 						value={this.state.selectedTags}
 						onChange={this.handleSelectedTagsChanged}

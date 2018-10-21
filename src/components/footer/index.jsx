@@ -19,9 +19,9 @@ export default class Header extends Component {
 				<Wrapper>
 					<div />
 					<div>
-						{getLink("https://github.com", "Issues?", false, false)}
+						{getLink("https://github.com", "Report an Issue", false, false)}
 						<br />
-						{getLink("https://github.com", "Source", false, false)}
+						{getLink("https://github.com", "Source code", false, false)}
 					</div>
 					<div />
 				</Wrapper>

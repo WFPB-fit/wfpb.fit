@@ -101,7 +101,7 @@ export default class NestedSelectField extends Component {
                 const foodName = titleize(this.props.allFoodData[foodId].name);
                 return (
                     <Button
-                        variant="raised"
+                        variant="contained"
                         color="primary"
                         key={foodId}
                         onClick={this.addFoodClosure(foodId, foodName)}
