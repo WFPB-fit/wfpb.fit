@@ -31,7 +31,13 @@ export default class Resources extends Component {
 			bVal = this.availabilityScore[bVal] || 10;
 		}
 
-		return bVal - aVal;
+		aVal = parseInt(aVal,10);
+		bVal = parseInt(bVal,10);
+
+		console.log(aVal,bVal)
+
+		const compare = aVal - bVal;
+		return (this.state.sortBy ==="year") ? -compare : compare;
 	}
 
 	constructor(props) {

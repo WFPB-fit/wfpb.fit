@@ -46,7 +46,10 @@ const Body = styled.div`
 `;
 
 const theme = createMuiTheme({
-	typography: { htmlFontSize: 14 },
+	typography: {
+		htmlFontSize: 14,
+		useNextVariants: true
+	},
 	palette: {
 		// type: 'dark',
 		primary: blue,

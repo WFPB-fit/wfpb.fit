@@ -5,7 +5,7 @@
 		"year": 2011,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "pollution",
+		"tags": "water pollution,dairy",
 		"quote": "The most consistent association was between fish consumption and PCBs and HCB, followed by dairy products and PCBs. A few studies observed a relationship between meat and some POPs, whilst intake of vegetables, fruits and cereals was rarely related to POP levels. "
 	},
 	{
@@ -17,14 +17,14 @@
 		"tags": "calcium,bones",
 		"quote": "Increasing calcium intake from dietary sources or by taking calcium supplements produces small non-progressive increases in BMD, which are unlikely to lead to a clinically significant reduction in risk of fracture."
 	},
-	{
+	{	
 		"title": "Dietary Sources of Energy, Solid Fats, and Added Sugars Among Children and Adolescents in the United States",
 		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3428130/",
 		"more_info_url": "https://epi.grants.cancer.gov/diet/foodsources/",
 		"year": 2010,
 		"type": "study",
 		"availability": "full",
-		"tags": "plant-based diet",
+		"tags": "food sources",
 		"quote": "The top sources of energy for 2–18 year olds were grain desserts (138 kcal/day), pizza (136 kcal), and soda (118 kcal). Sugar-sweetened beverages (soda and fruit drinks combined) provided 173 kcal/day. ... Nearly 40% of total calories consumed (798 kcal/day of 2027 kcal) by 2–18 year olds were in the form of empty calories (433 kcal from solid fat and 365 kcal from added sugars). "
 	},
 	{
@@ -42,7 +42,7 @@
 		"year": 2015,
 		"type": "study",
 		"availability": "full",
-		"tags": "milk,cancer",
+		"tags": "dairy,cancer",
 		"quote": "people with lactose intolerance, characterised by low consumption of milk and other dairy products, had decreased risks of lung, breast, and ovarian cancers, but the decreased risks were not found in their family members, suggesting that the protective effects against these cancers may be related to their specific dietary pattern."
 	},
 	{
@@ -51,7 +51,7 @@
 		"year": 2012,
 		"type": "study",
 		"availability": "full",
-		"tags": "milk,bones",
+		"tags": "dairy,bones,vitamin d",
 		"quote": "Vitamin D intake is associated with lower stress fracture risk among adolescent girls ... Girls consuming 3 or more servings per day of dairy were no more likely (hazard ratio (HR)=1.02, 95% confidence interval (CI)=0.65, 1.61) than their peers consuming no dairy to develop a stress fracture (Table 2). Similarly, there was no suggestion that higher calcium intake from both dietary sources and supplements was protective against stress fractures. Girls in the highest quintile were no less likely (HR=1.57, 95%=CI 0.77, 3.17) than girls in the lowest quintile to develop a stress fracture."
 	},
 	{
@@ -60,7 +60,7 @@
 		"year": 2014,
 		"type": "study",
 		"availability": "full",
-		"tags": "milk,bones",
+		"tags": "dairy,bones",
 		"quote": "After controlling for known risk factors and current milk consumption, each additional glass of milk per day during teenage years was associated with a significant 9% higher risk of hip fracture in men (RR=1.09, 95% CI 1.01–1.17). The association was attenuated when height was added to the model (RR=1.06, 95% CI 0.98–1.14). Teenage milk consumption was not associated with hip fractures in women (RR=1.00, 95% CI 0.95–1.05 per glass per day)."
 	},
 	{
@@ -69,8 +69,8 @@
 		"year": 2010,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "flaxseed,ala",
-		"quote": "For every £1 UK consumers spend on food, additional costs of around £1 are incurred. These costs are not paid by the food businesses, nor are they included within the retail price of food. Instead they are passed on to society in a range of hidden ways. In total, production-related costs account for an extra 50p for every £1 spent on food, while the costs of diet-related disease account for an extra 37p."
+		"tags": "flaxseed,ala,heart disease",
+		"quote": "it is possible to advocate a potential pleiotropic effect of ALA beyond the more conventional cholesterol-lowering actions of most cardiovascular drugs. Most importantly, the body of ALA research now argues persuasively for the initiation of careful, randomized, controlled trials of dietary flaxseed and/or ALA in a patient population with symptoms of atherosclerotic heart disease."
 	},
 	{
 		"title": "The Hidden Cost of UK Food",
@@ -79,8 +79,8 @@
 		"year": 2017,
 		"type": "research report",
 		"availability": "full",
-		"tags": "environment,agribusiness",
-		"quote": "it is possible to advocate a potential pleiotropic effect of ALA beyond the more conventional cholesterol-lowering actions of most cardiovascular drugs. Most importantly, the body of ALA research now argues persuasively for the initiation of careful, randomized, controlled trials of dietary flaxseed and/or ALA in a patient population with symptoms of atherosclerotic heart disease."
+		"tags": "lobbying,subsidies",
+		"quote": "In total, production-related costs account for an extra 50p for every £1 spent on food, while the costs of diet-related disease account for an extra 37p. "
 	},
 	{
 		"title": "No Pasture for Parmesan and Grana Padano Cows",
@@ -88,7 +88,7 @@
 		"year": 2017,
 		"type": "article",
 		"availability": "full",
-		"tags": "animals,agribusiness",
+		"tags": "cows",
 		"quote": "A recent Compassion in World Farming investigation uncovered cruelty behind Parmigiano Reggiano, also known as Parmesan, and its sister product Grana Padano cheese. We visited a number of Italian farms supplying milk for these cheeses, and found intensive, zero-grazing systems with cows permanently confined indoors."
 	},
 	{
@@ -106,7 +106,7 @@
 		"year": 1970,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "multiple sclerosis",
+		"tags": "multiple sclerosis,saturated fat",
 		"quote": "This study indicated that, in all probability, MS is caused largely by consumption of saturated animal fat."
 	},
 	{
@@ -115,7 +115,7 @@
 		"year": 1990,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "multiple sclerosis",
+		"tags": "multiple sclerosis,saturated fat,fat",
 		"quote": "144 multiple sclerosis patients took a low-fat diet for 34 years ... patients who adhered to the prescribed diet (less than or equal to 20 g fat/day) showed significantly less deterioration and much lower death rates than did those who consumed more fat than prescribed (greater than 20 g fat/day). The greatest benefit was seen in those with minimum disability at the start of the trial; in this group, when those who died from non-MS diseases were excluded from the analysis, 95% survived and remained physically active."
 	},
 	{
@@ -133,7 +133,7 @@
 		"year": 2012,
 		"type": "study",
 		"availability": "full",
-		"tags": "essential tremor,pollution",
+		"tags": "essential tremor",
 		"quote": "Blood harmane concentration was elevated in ET cases compared to controls when re-assessed at a second time point several years later, indicating what seems to be a stable association between this environmental toxin and ET. ... Humans may be exposed to low levels of harmane through a variety of foods, including vegetables and meat, with concentrations in animal protein considered to be among the highest. Harmane and other β-carboline alkaloids are found in particularly high ng/gm concentrations in beef, chicken and pork, and cooking leads to furthermore increased concentrations"
 	},
 	{
@@ -143,7 +143,7 @@
 		"type": "study",
 		"availability": "full",
 		"pdf": "https://watermark.silverchair.com/dys137.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAaEwggGdBgkqhkiG9w0BBwagggGOMIIBigIBADCCAYMGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQM-IFN9YxgK8Ib6d4aAgEQgIIBVGGG8gQfNRlQKvxlhNme5Y-D_pnmN_Os14U3KIidxgPnt_6U0yAlypAtiDrmo1P1KWm8xsuT2DxN4_9C_yjxyt-N6sDy9J-97Vq84YFlHDu8fxWXAxg1nIpOgFhVlnezA21LryKNP337e_JW75bg9xFK3DBWC2svufNMmlcLeCDMrtU1rLwaWXFOVaxfLH9vGX4OF59cuhk6bAnM7g_DGzyAvJw5P0rpAY-Ef2dZhNq_Qr-8lPA1urcB3HjBpyuBEZS8_AC4ysRLQQ6f_XpHgpZuCsIXtgB2Xs8OjzI2cz1YYfYCvd-Og-8ST9_Pz1Ts86KQBbICwJ0jpljO-pMfsNDsZty7n2OZGRuR7pXYpBNqQaEBfufuXyntpvjeyHrInRMsF2lbh8VRdH-fXYMEorix0lmylynMdD-uAWuJnCABrJbAtgz4nsFf-hpxYD4TX5pKE1c",
-		"tags": "cardiovascular disease",
+		"tags": "heart disease,cholesterol,fat,WFPB",
 		"quote": "In the African population of Uganda coronary heart disease is almost non-existent ... In the Asian community, on the other hand, coronary heart disease is a major problem. ... [In African population] The staple foods, green plantain and sweet potatoes, are steamed in banana leaves; cassava, yams, maize, and millet are also staple commodities in particular of the non-Baganda groups, while pumpkins, tomatoes, and green leafy vegetables are taken by all. The adequacy of protein in the diet depends almost entirely on the extent to which pulses, groundnuts, and cereals are used. ... [Asian] community is on the whole economically prosperous as compared with the Africans ... [In Hindus] eggs are eaten in small quantities in most families, especially by the men. The Muslim diet differs in that meat, fish, and poultry are taken and eggs are more freely used. ... this particular survey the average estimated quantities of fats taken per person weekly are: 1 lb (454 g) cottonseed oil; ½ – ¾ lb. (230-340 g) ghee; ¼ lb. (114 g) butter; 6–8 pints milk; and 1 oz (30 g) cheese. It is evident that fats and oils provide a large proportion of the total caloric intake."
 	},
 	{
@@ -152,7 +152,7 @@
 		"year": 2010,
 		"type": "study",
 		"availability": "full",
-		"tags": "essential tremor,pollution",
+		"tags": "essential tremor",
 		"quote": "Blood harmane and lead concentrations separately correlated with total tremor scores. Participants with high blood concentrations of both toxicants had the highest tremor scores, suggesting an additive effect of these toxicants on tremor severity. ... Several other correlations were noted, including an association between daily animal protein consumption and blood harmane concentrations"
 	},
 	{
@@ -170,7 +170,7 @@
 		"year": 2001,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "cardiovascular disease",
+		"tags": "heart disease,WFPB,fat",
 		"quote": "The world's advanced countries have easy access to plentiful high-fat food; ironically, it is this rich diet that produces atherosclerosis. In the world's poorer nations, many people subsist on a primarily plant-based diet, which is far healthier, especially in terms of heart disease. ... compelling data from nutritional studies, population surveys, and interventional studies support the effectiveness of a plant-based diet and aggressive lipid lowering to arrest, prevent, and selectively reverse heart disease. In essence, this is an offensive strategy."
 	},
 	{
@@ -179,7 +179,7 @@
 		"year": 2008,
 		"type": "study",
 		"availability": "full",
-		"tags": "essential tremor,pollution",
+		"tags": "essential tremor",
 		"quote": "In an adjusted logistic regression analysis in males, higher total current meat consumption was associated with ET (OR = 1.006, p = 0.04, i.e., with 10 additional g/day of meat, odds of ET increased by 6%). Male cases had higher odds of being in the highest than lowest quartile of total current meat consumption (adjusted OR = 21.36, p = 0.001). "
 	},
 	{
@@ -188,7 +188,7 @@
 		"year": 2007,
 		"type": "study",
 		"availability": "full",
-		"tags": "essential tremor,pollution",
+		"tags": "essential tremor",
 		"quote": "Mean (± SD) harmane concentration was 5.63 (± 6.63) ng/g; harmane concentration was highest in chicken (8.48 ± 9.86 ng/g) and lowest in beef steak (3.80 ± 3.6 ng/g). Harmane concentration was higher than that of the other HCAs and significantly correlated with PhIP concentration ... There was some correlation between meat doneness and harmane concentration, although this correlation was less robust than that observed for PhIP. "
 	},
 	{
@@ -197,17 +197,8 @@
 		"year": 2012,
 		"type": "study",
 		"availability": "full",
-		"tags": "essential tremor,pollution",
+		"tags": "essential tremor",
 		"quote": "Blood harmane concentration was elevated in ET cases compared to controls when re-assessed at a second time point several years later, indicating what seems to be a stable association between this environmental toxin and ET. ... Humans may be exposed to low levels of harmane through a variety of foods, including vegetables and meat, with concentrations in animal protein considered to be among the highest. Harmane and other β-carboline alkaloids are found in particularly high ng/gm concentrations in beef, chicken and pork, and cooking leads to furthermore increased concentrations"
-	},
-	{
-		"title": "Lavender essential oil in the treatment of migraine headache: a placebo-controlled clinical trial.",
-		"url": "https://www.karger.com/Article/Abstract/335249",
-		"year": 2012,
-		"type": "study",
-		"availability": "abstract",
-		"tags": "migraine",
-		"quote": "From 129 headache attacks in cases, 92 responded entirely or partially to lavender. In the control group, 32 out of 68 recorded headache attacks responded to placebo. The percentage of responders was significantly higher in the lavender group than the placebo group (p = 0.001)."
 	},
 	{
 		"title": "Retinoid Receptors in Bone and Their Role in Bone Remodeling",
@@ -252,7 +243,7 @@
 		"type": "meta analysis",
 		"availability": "abstract",
 		"tags": "vitamin a,bones",
-		"quote": "Studies of vitamin A showed inconsistent results. Excessive, as well as insufficient, levels of retinol intake may be associated with compromised bone health. "
+		"quote": "Studies of vitamin A showed inconsistent results. Excessive, as well as insufficient, levels of retinol [animal-derived Vitamin A] intake may be associated with compromised bone health. "
 	},
 	{
 		"title": "Serum Retinol Levels and the Risk of Fracture",
@@ -261,7 +252,7 @@
 		"type": "meta analysis",
 		"availability": "full",
 		"tags": "vitamin a,bones",
-		"quote": "Men with retinol levels in the 99th percentile (>103.12 μg per deciliter [3.60 μmol per liter]) had an overall risk of fracture that exceeded the risk among men with lower levels by a factor of seven (P<0.001). The level of serum beta carotene was not associated with the risk of fracture."
+		"quote": "Men with retinol [animal-derived Vitamin A] levels in the 99th percentile (>103.12 μg per deciliter [3.60 μmol per liter]) had an overall risk of fracture that exceeded the risk among men with lower levels by a factor of seven (P<0.001). The level of serum beta carotene [plant-derived Vitamin A] was not associated with the risk of fracture."
 	},
 	{
 		"title": "Excessive Dietary Intake of Vitamin A Is Associated with Reduced Bone Mineral Density and Increased Risk for Hip Fracture",
@@ -270,7 +261,7 @@
 		"type": "study",
 		"availability": "abstract",
 		"tags": "vitamin a,bones",
-		"quote": "retinol intake was negatively associated with bone mineral density. For every 1-mg increase in daily intake of retinol, risk for hip fracture increased by 68% "
+		"quote": "retinol [animal-derived Vitamin A] intake was negatively associated with bone mineral density. For every 1-mg increase in daily intake of retinol, risk for hip fracture increased by 68% "
 	},
 	{
 		"title": "Role of “Western Diet” in Inflammatory Autoimmune Diseases",
@@ -278,7 +269,7 @@
 		"year": 2015,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "inflammation",
+		"tags": "fat,cholesterol,protein,inflammation",
 		"quote": "nutritional patterns collectively termed the “Western diet”, including high-fat and cholesterol, high-protein, high-sugar, and excess salt intake, as well as frequent consumption of processed and ‘fast foods’, promote obesity, metabolic syndrome, and cardiovascular disease ... numerous positive experimental results across different disease entities encourage further exploration of the cellular and molecular immunological basis underlying nutritional control of autoimmunity. It is current knowledge that nutrition, the intestinal microbiota, the gut mucosal immune system, and autoimmune pathology are deeply intertwined."
 	},
 	{
@@ -287,7 +278,7 @@
 		"year": 2015,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "autoimmune,inflammation",
+		"tags": "fat,inflammation",
 		"quote": "There is a substantial amount of evidence to suggest that many foods, nutrients and non-nutrient food components modulate inflammation both acutely and chronically ... elevated unresolved chronic inflammation is a core perturbation in a range of chronic diseases and is an important determinant of the pathological impact of excess adiposity"
 	},
 	{
@@ -296,7 +287,7 @@
 		"year": 2010,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "inflammation",
+		"tags": "inflammation,fiber,fruit,veges",
 		"quote": "Inflammation is the common link among the leading causes of death. Inflammation is the common link among the leading causes of death. Mechanistic studies have shown how various dietary components can modulate key pathways to inflammation including sympathetic activity, oxidative stress, transcription factor nuclear factor kappa B (NF-κB) activation, and proinflammatory cytokine production ... Diets that promote inflammation are high in refined starches, sugar, saturated and trans-fats, and low in omega-3 fatty acids, natural antioxidants and fiber from fruits, vegetables, and whole grains"
 	},
 	{
@@ -314,7 +305,7 @@
 		"year": 2010,
 		"type": "study",
 		"availability": "full",
-		"tags": "plant-based diet",
+		"tags": "overall mortality,moderation",
 		"quote": "Red and processed meat intakes were associated with modest increases in total mortality, cancer mortality and CVD mortality."
 	},
 	{
@@ -323,7 +314,7 @@
 		"year": 2011,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "plant-based diets,bones",
+		"tags": "WFPB,bones",
 		"quote": "The modern Western-type diet is deficient in fruits and vegetables and contains excessive animal products, generating the accumulation of non-metabolizable anions and a lifespan state of overlooked metabolic acidosis, whose magnitude increases progressively with aging ...These adaptive processes lower the urine pH and induce an extensive change in urine composition, including hypocitraturia, hypercalciuria, and nitrogen and phosphate wasting. Low urine pH predisposes to uric acid stone formation. Hypocitraturia and hypercalciuria are risk factors for calcium stone disease. Even a very mild degree of metabolic acidosis induces skeletal muscle resistance to the insulin action and dietary acid load may be an important variable in predicting the metabolic abnormalities and the cardiovascular risk of the general population"
 	},
 	{
@@ -332,7 +323,7 @@
 		"year": 2011,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "plant-based diet",
+		"tags": "vegetarian,WFPB",
 		"quote": "There is now a significant amount of research that demonstrates the health benefits of vegetarian and plant-based diets"
 	},
 	{
@@ -341,7 +332,7 @@
 		"year": 2011,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "multiple sclerosis",
+		"tags": "multiple sclerosis,microbiota,inflammation",
 		"quote": "Present data reveal that healthy dietary molecules have a pleiotropic role and are able to change cell metabolism from anabolism to catabolism and down-regulate inflammation by interacting with enzymes, nuclear receptors and transcriptional factors. The control of gut dysbiosis and the combination of hypo-caloric, low-fat diets with specific vitamins, oligoelements and dietary integrators, including fish oil and polyphenols, may slow-down the progression of the disease and ameliorate the wellness of MS patients."
 	},
 	{
@@ -350,7 +341,7 @@
 		"year": 2013,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "plant-based diet",
+		"tags": "WFPB",
 		"quote": "Healthy eating may be best achieved with a plant-based diet...They may also reduce the number of medications needed to treat chronic diseases and lower ischemic heart disease mortality rates. Physicians should consider recommending a plant-based diet to all their patients, especially those with high blood pressure, diabetes, cardiovascular disease, or obesity."
 	},
 	{
@@ -359,7 +350,7 @@
 		"year": 2016,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "plant-based diet",
+		"tags": "WFPB",
 		"quote": "Plant-based diets have been associated with lowering overall and ischemic heart disease mortality; supporting sustainable weight management; reducing medication needs; lowering the risk for most chronic diseases; decreasing the incidence and severity of high-risk conditions, including obesity, hypertension, hyperlipidemia, and hyperglycemia; and even possibly reversing advanced coronary artery disease and type 2 diabetes. The reason for these outcomes is two-fold. First, there are inherent benefits to eating a wide variety of health-promoting plants. Second, there is additional benefit from crowding out—and thereby avoiding—the injurious constituents found in animal products, including the following: [saturated fats, dietary cholesterol, antibiotics, Insulin-like growth factor, Heme iron, Chemical contaminants, Carnitine, Neu5Gc]"
 	},
 	{
@@ -440,7 +431,7 @@
 		"year": 2012,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "plant-based diet",
+		"tags": "vegetarian,moderation",
 		"quote": "Both vegetarian diets and prudent diets allowing small amounts of red meat are associated with reduced risk of diseases...Evidence linking red meat intake, particularly processed meat, and increased risk of CHD, cancer and type 2 diabetes is convincing and provides indirect support for consumption of a plant-based diet."
 	},
 	{
@@ -449,7 +440,7 @@
 		"year": 2016,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "plant-based diet",
+		"tags": "vegetarian,cancer,heart disease",
 		"quote": "This comprehensive meta-analysis reports a significant protective effect of a vegetarian diet versus the incidence and/or mortality from ischemic heart disease (−25%) and incidence from total cancer (−8%). Vegan diet conferred a significant reduced risk (−15%) of incidence from total cancer"
 	},
 	{
@@ -458,7 +449,7 @@
 		"year": 2015,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "plant-based diets,plants",
+		"tags": "phytochemicals",
 		"quote": "The present review will give an overview of widely investigated plant-derived compounds (curcumin, resveratrol, epigallocatechol-3-gallate, quercetin, colchicine, capsaicin, andrographolide, and genistein) which have exhibited potent effects on cellular and humoral immune functions in pre-clinical investigations and will highlight their clinical potential."
 	},
 	{
@@ -467,7 +458,7 @@
 		"year": 1999,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "plant-based diet",
+		"tags": "vegetarian",
 		"quote": "review the beneficial and adverse effects of vegetarian diets in various medical conditions"
 	},
 	{
@@ -476,7 +467,7 @@
 		"year": 2009,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "plant-based diet",
+		"tags": "vegan,heart disease",
 		"quote": "Vegans are thinner, have lower serum cholesterol and blood pressure, and enjoy a lower risk of CVD"
 	},
 	{
@@ -485,7 +476,7 @@
 		"year": 2011,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "fat,trans fat",
+		"tags": "trans fat",
 		"quote": "the mean dietary intake of IP-TFA has decreased significantly from that cited in the 2003 US Food and Drug Administration (FDA) final rule that established labelling requirements for trans fat (4.6 g/p/d for adults)."
 	},
 	{
@@ -494,7 +485,7 @@
 		"year": 2012,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "fat,trans fat",
+		"tags": "trans fat",
 		"quote": "The present study supports that TFA intake, irrespective of source, increases CVD risk. "
 	},
 	{
@@ -503,7 +494,7 @@
 		"year": 2004,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "plant-based diet,fat,cholesterol,fiber,phytochemicals",
+		"tags": "vegetarian,fat,cholesterol,fiber,phytochemicals",
 		"quote": "The benefits arise from lower intakes of saturated fat, cholesterol and animal protein as well as higher intakes of complex carbohydrates, dietary fiber, magnesium, folic acid, vitamin C and E, carotenoids and other phytochemicals."
 	},
 	{
@@ -512,7 +503,7 @@
 		"year": 2010,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "plant-based diet",
+		"tags": "mediterranean",
 		"quote": "This updated meta-analysis confirms, in a larger number of subjects and studies, the significant and consistent protection provided by adherence to the Mediterranean diet in relation to the occurrence of major chronic degenerative diseases."
 	},
 	{
@@ -530,7 +521,7 @@
 		"year": 2002,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "cancer",
+		"tags": "cancer,phytochemicals",
 		"quote": "experimental studies have provided growing evidence for the beneficial action of flavonoids on multiple cancer-related biological pathways (carcinogen bioactivation, cell-signaling, cell cycle regulation, angiogenesis, oxidative stress, inflammation). Although the epidemiologic data on flavonoids and cancer are still limited and conflicting, some protective associations have been suggested for flavonoid-rich foods (soy and premenopausal breast cancer; green tea and stomach cancer; onion and lung cancer)."
 	},
 	{
@@ -539,7 +530,7 @@
 		"year": 2011,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "cancer",
+		"tags": "cancer,vegetarian",
 		"quote": "Most large prospective observational studies show that vegetarian diets are at least modestly cancer protective (10%–12% reduction in overall cancer risk) although results for specific cancers are less clear. No long-term randomized clinical trials have been conducted to address this relationship. However, a broad body of evidence links specific plant foods such as fruits and vegetables, plant constituents such as fiber, antioxidants and other phytochemicals, and achieving and maintaining a healthy weight to reduced risk of cancer diagnosis and recurrence. Also, research links the consumption of meat, especially red and processed meats, to increased risk of several types of cancer"
 	},
 	{
@@ -557,7 +548,7 @@
 		"year": 2007,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "cancer",
+		"tags": "cancer,WFPB",
 		"quote": "However, diet plays an important role in cancer prevention and survival and may also be implicated in racial and ethnic disparities. ... A plant-based diet, generally low in fat and high in fiber, may offer survival benefits for both breast and prostate cancer. Further research is required to establish effective interventions that promote healthy dietary choices that enhance cancer survival."
 	},
 	{
@@ -566,7 +557,7 @@
 		"year": 2007,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "cancer,fiber",
+		"tags": "cancer,fiber,vegan,WFPB",
 		"quote": "Ninety-three early-stage prostate cancer patients participated in a randomized controlled trial and were assigned to a very-low-fat (10% fat) vegan diet supplemented with soy protein and lifestyle changes or to usual care. ... Analyses of changes in dietary intake of macronutrients, vitamins, minerals, carotenoids, and isoflavones from baseline to 1 year showed significantly increased intake of most protective dietary factors (eg, fiber increased from a mean of 31 to 59 g/day, lycopene increased from 8,693 to 34,464 μg/day) and significantly decreased intake of most pathogenic dietary factors (eg, saturated fatty acids decreased from 20 to 5 g/day, cholesterol decreased from 200 to 10 mg/day) in the intervention group compared to controls"
 	},
 	{
@@ -575,7 +566,7 @@
 		"year": 2011,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "cancer",
+		"tags": "cancer,WFPB",
 		"quote": "Evidence from observational studies suggests that a low-fat, high-fibre diet might be protective against cancer recurrence and progression. However, there is a paucity of RCTs substantiating this. There is more support for physical activity, with a dose response for better outcomes. ... evidence suggests that the mechanism of benefit from diet and physical activity pertains to body weight, with excess body weight being a risk factor"
 	},
 	{
@@ -584,7 +575,7 @@
 		"year": 2008,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "cancer",
+		"tags": "cancer,WFPB",
 		"quote": "The patients in the experimental arm were encouraged to adopt a low-fat, plant-based diet, to exercise and practice stress management, and to attend group support sessions ... Patients with early-stage prostate cancer choosing active surveillance might be able to avoid or delay conventional treatment for at least 2 years by making changes in their diet and lifestyle."
 	},
 	{
@@ -593,7 +584,7 @@
 		"year": 2017,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "cancer",
+		"tags": "cancer,protein",
 		"quote": "the promotion of cancer growth and development in laboratory animals initiated by a powerful mutagen/carcinogen can be repetitively turned on and off by non-mutagenic mechanisms, even completely, by modifying the consumption of protein at relevant levels of intake. ... This suggests that ultimate cancer development is primarily a nutrition-responsive disease rather than a genetic disease, with the understanding that nutrition is a comprehensive, wholistic biological effect that reflects the natural contents of nutrients and related substances in whole, intact food. "
 	},
 	{
@@ -602,17 +593,8 @@
 		"year": 2006,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "cancer,fiber",
+		"tags": "cancer,fiber,WFPB",
 		"quote": "These results show that a very-low-fat, high-fiber diet combined with daily exercise results in major reductions in risk factors for BCa while subjects remained overweight/obese"
-	},
-	{
-		"title": "Intensive lifestyle changes may affect the progression of prostate cancer.",
-		"url": "https://www.ncbi.nlm.nih.gov/pubmed/16094059",
-		"year": 2005,
-		"type": "study",
-		"availability": "abstract",
-		"tags": "cancer,fiber",
-		"quote": "Intensive lifestyle changes may affect the progression of early, low grade prostate cancer in men. Further studies and longer term followup are warranted."
 	},
 	{
 		"title": "Fasting followed by vegetarian diet in patients with rheumatoid arthritis: a systematic review",
@@ -620,7 +602,7 @@
 		"year": 2009,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "arthritis",
+		"tags": "arthritis,vegetarian",
 		"quote": "available evidence suggests that fasting followed by vegetarian diets might be useful in the treatment of RA"
 	},
 	{
@@ -647,7 +629,7 @@
 		"year": 1999,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "arthritis",
+		"tags": "arthritis,vegetarian",
 		"quote": "the results show that some patients with RA can benefit from a fasting period followed by a vegetarian diet"
 	},
 	{
@@ -656,7 +638,7 @@
 		"year": 2015,
 		"type": "study",
 		"availability": "full",
-		"tags": "arthritis",
+		"tags": "arthritis,WFPB",
 		"quote": "results suggest that a whole-foods, plant-based diet significantly improves self-assessed measures of functional status among osteoarthritis patients"
 	},
 	{
@@ -665,7 +647,7 @@
 		"year": 1997,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "arthritis",
+		"tags": "arthritis,vegan,microbiota",
 		"quote": "a vegan diet changes the faecal microbial flora in RA patients, and changes in the faecal flora are associated with improvement in RA activity."
 	},
 	{
@@ -674,7 +656,7 @@
 		"year": 1998,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "arthritis",
+		"tags": "arthritis,vegan",
 		"quote": "results showed that an uncooked vegan diet, rich in lactobacilli, decreased subjective symptoms of rheumatoid arthritis"
 	},
 	{
@@ -683,7 +665,7 @@
 		"year": 2004,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "arthritis",
+		"tags": "arthritis,vegan",
 		"quote": "This study showed that patients with moderate-to-severe RA, who switch to a very low-fat, vegan diet can experience significant reductions in RA symptoms."
 	},
 	{
@@ -692,7 +674,7 @@
 		"year": 2017,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "ibd",
+		"tags": "IBD",
 		"quote": "Pre-illness studies in IBD and intervention trials provide convincing evidence that a plant-based diet, with increased consumption of fruit/vegetables and less red meat intake could be suggested to patients with IBD in remission."
 	},
 	{
@@ -701,7 +683,7 @@
 		"year": 2017,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "ibd",
+		"tags": "IBD,fruit,veges",
 		"quote": "in several animal models, high-fat/high-sugar diet, gluten, red meat, maltodextrin, and emulsifiers may induce or accelerate intestinal inflammation. Certain dietary fibres and soy protein might be beneficial...Presumably diet alone is inadequate to cause IBD, but there is evidence for a gene/diet interaction"
 	},
 	{
@@ -710,7 +692,7 @@
 		"year": 2017,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "ibd",
+		"tags": "IBD",
 		"quote": "epidemiology studies have indicated that diets high in animal fat and low in fruits and vegetables are the most common pattern associated with an increased risk of IBD"
 	},
 	{
@@ -719,7 +701,7 @@
 		"year": 2017,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "ibd",
+		"tags": "IBD",
 		"quote": "Until several ongoing clinical trials are completed, a reasonable approach to dietary recommendations for patients with IBD is to propose a well-balanced, healthy (low-fat, low-sugar) diet prepared from fresh ingredients, such as the Mediterranean diet, with exclusions of self-identified foods that worsen or trigger IBD-related symptoms."
 	},
 	{
@@ -728,7 +710,7 @@
 		"year": 2017,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "ibd",
+		"tags": "IBD",
 		"quote": "Evidence now proposes that whereas human genetics are important, they explain only a small fraction of the risk of developing the disease...The aim of this topical review was to extensively review the literature on the role of diet and nutrition in the aetiology and management of IBD and set the agenda for future research."
 	},
 	{
@@ -737,7 +719,7 @@
 		"year": 2017,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "ibd",
+		"tags": "IBD",
 		"quote": "The present meta-analysis offers proof to support that a low FODMAP diet is beneficial for reducing gastrointestinal symptoms in patients with quiescent IBD. With the inherent limitations, the findings of this analysis remain to be confirmed"
 	},
 	{
@@ -746,7 +728,7 @@
 		"year": 2016,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "ibd",
+		"tags": "IBD",
 		"quote": "The incidence of inflammatory bowel disease (IBD) is steadily in the rise in Western as well as in developing countries paralleling the increase of westernized diets, characterized by high protein and fat as well as excessive sugar intake, with less vegetables and fiber."
 	},
 	{
@@ -755,7 +737,7 @@
 		"year": 2016,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "ibd",
+		"tags": "IBD",
 		"quote": "This article critically reviews the current evidence on environmental risk factors for IBD and proposes directions for future research."
 	},
 	{
@@ -764,7 +746,7 @@
 		"year": 2016,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "ibd",
+		"tags": "IBD",
 		"quote": "Exclusion diets and the low FODMAP diet are two areas identified in this review that show promise for having therapeutic benefits for patients with IBD."
 	},
 	{
@@ -773,7 +755,7 @@
 		"year": 2016,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "ibd",
+		"tags": "IBD,phytochemicals",
 		"quote": "In conclusion, natural products can be considered as dietary supplements with therapeutic potential for IBD, provided that their safety and efficacy is confirmed in future well-designed clinical trials with adequate sample size."
 	},
 	{
@@ -782,7 +764,7 @@
 		"year": 2015,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "ibd",
+		"tags": "IBD",
 		"quote": "The present meta-analysis supports the efficacy of a low FODMAP diet in the treatment of functional gastrointestinal symptomultiple sclerosis"
 	},
 	{
@@ -791,7 +773,7 @@
 		"year": 2015,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "ibd",
+		"tags": "IBD",
 		"quote": "the low-FODMAP diet and the IBD-AID, seem to be reasonably balanced and sound without causing weight loss in ill IBD patients."
 	},
 	{
@@ -800,7 +782,7 @@
 		"year": 2015,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "ibd",
+		"tags": "IBD",
 		"quote": "Established high-prevalence populations of IBD in North America and Europe experienced the steepest increase in incidence towards the second half of the twentieth century. Furthermore, populations previously considered 'low risk' (such as in Japan and India) are witnessing an increase in incidence..."
 	},
 	{
@@ -809,7 +791,7 @@
 		"year": 2015,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "ibd",
+		"tags": "IBD",
 		"quote": "essentially all food groups- fruits, vegetables, meats, and grains- have been noted by patient self-report to exacerbate symptoms and do not provide generalizable information for other patients with IBD. Rather, patients may be instructed to be aware of their diet through food diaries and their symptoms and make modifications specific to the individual patient"
 	},
 	{
@@ -818,7 +800,7 @@
 		"year": 2011,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "ibd",
+		"tags": "IBD",
 		"quote": "High dietary intakes of total fats, PUFAs, omega-6 fatty acids, and meat were associated with an increased risk of CD and UC. High fiber and fruit intakes were associated with decreased CD risk, and high vegetable intake was associated with decreased UC risk."
 	},
 	{
@@ -827,7 +809,7 @@
 		"year": 2011,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "ibd,fiber",
+		"tags": "IBD,fiber",
 		"quote": "data from 170,776 women, followed up over 26 years...[shows] long-term intake of dietary fiber, particularly from fruit, is associated with lower risk of CD but not UC."
 	},
 	{
@@ -836,7 +818,7 @@
 		"year": 1996,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "ibd",
+		"tags": "IBD,veges,dairy",
 		"quote": "increased incidence of Crohn disease was strongly (P < 0.001) correlated with increased dietary intake of total fat (r = 0.919). animal fat (r = 0.880), n-6 polyunsaturated fatty acids (r = 0.883), animal protein (r = 0.908), milk protein (r = 0.924), and the ratio of n-6 to n-3 fatty acid intake (r = 0.792)...and was inversely correlated with intake of vegetable protein (r = -0.941, P < 0.001)."
 	},
 	{
@@ -845,7 +827,7 @@
 		"year": 2010,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "ibd",
+		"tags": "IBD",
 		"quote": "Among 67,581 participants...High total protein intake, specifically animal protein, was associated with a significantly increased risk of IBD...high consumption of meat or fish but not of eggs or dairy products was associated with IBD risk."
 	},
 	{
@@ -854,7 +836,7 @@
 		"year": 2015,
 		"type": "study",
 		"availability": "full",
-		"tags": "ibd,fiber",
+		"tags": "IBD,fiber",
 		"quote": "Although the precise mechanism is to be determined, epidemiology provides convincing evidence that a plant-based diet is a healthy diet providing therapeutic and/or preventive effects against current major chronic diseases.22–24 Available data suggest the rationale to use dietary fiber in the treatment of IBD."
 	},
 	{
@@ -863,7 +845,7 @@
 		"year": 2017,
 		"type": "study",
 		"availability": "full",
-		"tags": "weight",
+		"tags": "weight loss,WFPB,obesity,heart disease, diabetes",
 		"quote": "This programme led to significant improvements in BMI, cholesterol and other risk factors. To the best of our knowledge, this research has achieved greater weight loss at 6 and 12 months than any other trial that does not limit energy intake or mandate regular exercise."
 	},
 	{
@@ -872,7 +854,7 @@
 		"year": 2006,
 		"type": "study",
 		"availability": "full",
-		"tags": "weight",
+		"tags": "weight loss,moderation,vegan,vegetarian",
 		"quote": "Lowest weight gain was seen among those who, during follow-up, had changed to a diet containing fewer animal food"
 	},
 	{
@@ -908,7 +890,7 @@
 		"year": 2009,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "diabetes",
+		"tags": "diabetes,vegetarian,vegan",
 		"quote": "Vegetarian and vegan diets offer significant benefits for diabetes management. In observational studies, individuals following vegetarian diets are about half as likely to develop diabetes, compared with non-vegetarians. In clinical trials in individuals with type 2 diabetes, low-fat vegan diets improve glycemic control to a greater extent than conventional diabetes diets. "
 	},
 	{
@@ -917,7 +899,7 @@
 		"year": 2009,
 		"type": "study",
 		"availability": "full",
-		"tags": "diabetes",
+		"tags": "diabetes,vegetarian,moderation",
 		"quote": "We found a strong protective association between Taiwanese vegetarian diet and diabetes/IFG, after controlling for various potential confounders and risk factors."
 	},
 	{
@@ -926,7 +908,7 @@
 		"year": 2008,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "diabetes,weight,saturated fat",
+		"tags": "diabetes,weightobesity,saturated fat",
 		"quote": "Western diets rich in saturated fats cause obesity and insulin resistance, and increase levels of circulating NEFAs [non-esterified ('free') fatty acids]. In addition, they contribute to beta-cell failure in genetically predisposed individuals. NEFAs cause beta-cell apoptosis and may thus contribute to progressive beta-cell loss in Type 2 diabetes. "
 	},
 	{
@@ -944,7 +926,7 @@
 		"year": 2006,
 		"type": "study",
 		"availability": "full",
-		"tags": "saturated fat,fat",
+		"tags": "saturated fat,fat,obesity",
 		"quote": "Oral ingestion of fats with differing degrees of saturation resulted in different effects on insulin secretion and action. PUFA ingestion resulted in an absolute reduction in insulin secretion and SFA ingestion induced insulin resistance. Failure of insulin secretion to compensate for insulin resistance implies impaired beta cell function in the SFA study."
 	},
 	{
@@ -953,7 +935,7 @@
 		"year": 2007,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "plant-based diet",
+		"tags": "vegan,heart disease",
 		"quote": "Long-term consumption of a low-calorie low-protein vegan diet or regular endurance exercise training is associated with low cardiometabolic risk. Moreover, our data suggest that specific components of a low-calorie low-protein vegan diet provide additional beneficial effects on blood pressure."
 	},
 	{
@@ -962,7 +944,7 @@
 		"year": 2016,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "oil",
+		"tags": "oil,heart disease",
 		"quote": "Overall, the weight of the evidence from intervention studies to date suggests that replacing coconut oil with cis unsaturated fats would alter blood lipid profiles in a manner consistent with a reduction in risk factors for cardiovascular disease."
 	},
 	{
@@ -971,7 +953,7 @@
 		"year": 2003,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "cholesterol,cardiovascular disease",
+		"tags": "cholesterol,heart disease",
 		"quote": "There is a positive linear relation between LDL cholesterol and annual changes in plaque size, with an LDL value of 75 mg/dL predicting, on average, no plaque progression. HDL cholesterol shows an inverse relation with annual changes in plaque size."
 	},
 	{
@@ -980,7 +962,7 @@
 		"year": 1981,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "cholesterol,cardiovascular disease",
+		"tags": "cholesterol,heart disease,vegetarian,moderation",
 		"quote": "In a controlled trial, 21 strict vegetarians were studied prospectively for eight weeks: a two-week control period of the usual vegetarian diet was followed by four weeks, during which 250 g of beef was added isocalorically to the daily vegetarian diet and then by two weeks of the control diet. Plasma high-density lipoprotein-cholesterol did not change during the study, whereas plasma total cholesterol rose significantly by 19% at the end of the meat-eating period. Systolic blood pressure (BP) increased significantly during the meat eating by 3% over control values, whereas diastolic BP showed no major changes."
 	},
 	{
@@ -1007,7 +989,7 @@
 		"year": 2009,
 		"type": "study",
 		"availability": "full",
-		"tags": "diabetes,weight,plant-based diet",
+		"tags": "diabetes,weight loss,vegetarian,vegan",
 		"quote": "The 5-unit BMI difference between vegans and nonvegetarians indicates a substantial potential of vegetarianism to protect against obesity. Increased conformity to vegetarian diets protected against risk of type 2 diabetes after lifestyle characteristics and BMI were taken into account. Pesco- and semi-vegetarian diets afforded intermediate protection."
 	},
 	{
@@ -1016,7 +998,7 @@
 		"year": 2009,
 		"type": "study",
 		"availability": "full",
-		"tags": "cancer",
+		"tags": "cancer,vegetarian",
 		"quote": "The overall cancer incidence rates of both the vegetarians and the nonvegetarians in this study are low compared with national rates. Within the study, the incidence of all cancers combined was lower among vegetarians than among meat eaters, but the incidence of colorectal cancer was higher in vegetarians than in meat eaters."
 	},
 	{
@@ -1052,7 +1034,7 @@
 		"year": 2017,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "weight,cardiovascular disease",
+		"tags": "TOFI,heart disease",
 		"quote": "During a mean follow-up of 5.4 years, obese individuals with no metabolic abnormalities had a higher risk of CHD (multivariate-adjusted hazard ratio [HR]: 1.49; 95% confidence interval [CI]: 1.45 to 1.54), cerebrovascular disease (HR: 1.07; 95% CI: 1.04 to 1.11), and heart failure (HR: 1.96; 95% CI: 1.86 to 2.06) compared with normal weight individuals with 0 metabolic abnormalities"
 	},
 	{
@@ -1061,7 +1043,7 @@
 		"year": 2014,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "weight",
+		"tags": "weight loss,vegetarian",
 		"quote": "The prescription of vegetarian diets reduces mean body weight, suggesting potential value for prevention and management of weight-related conditions."
 	},
 	{
@@ -1070,7 +1052,7 @@
 		"year": 2006,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "weight",
+		"tags": "obesity,vegetarian",
 		"quote": "Vegetarian diets are associated with reduced body weight, lower incidence of certain chronic disease, and lower medical costs compared with non-vegetarian diets"
 	},
 	{
@@ -1079,7 +1061,7 @@
 		"year": 2005,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "weight",
+		"tags": "weight loss, WFPB,vegan",
 		"quote": "Adoption of a low-fat, vegan diet was associated with significant weight loss in overweight postmenopausal women, despite the absence of prescribed limits on portion size or energy intake."
 	},
 	{
@@ -1088,7 +1070,7 @@
 		"year": 2010,
 		"type": "study",
 		"availability": "full",
-		"tags": "weight,taste",
+		"tags": "weight loss,taste,WFPB",
 		"quote": "768 participants primarily living in the United States who had changed their dietary habits from a low micronutrient to a high micronutrient diet...Highly significant differences were found between the two diets in relation to all physical and emotional symptoms as well as the location of hunger. Hunger was not an unpleasant experience while on the high nutrient density diet, was well tolerated and occurred with less frequency even when meals were skipped."
 	},
 	{
@@ -1124,7 +1106,7 @@
 		"year": 2017,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "cancer,cardiovascular disease",
+		"tags": "microbiota,cancer,heart disease",
 		"quote": "Recent studies have suggested that the intestinal microbiome plays an important role in modulating risk of several chronic diseases, including inflammatory bowel disease, obesity, type 2 diabetes, cardiovascular disease, and cancer ... This review systematically evaluates current data regarding the effects of several common dietary components on intestinal microbiota. We show that consumption of particular types of food produces predictable shifts in existing host bacterial genera"
 	},
 	{
@@ -1133,7 +1115,7 @@
 		"year": 2011,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "plant-based diet",
+		"tags": "WFPB,fruit,veges,bones,diabetes,heart disease",
 		"quote": "The modern Western-type diet is deficient in fruits and vegetables and contains excessive animal products, generating the accumulation of non-metabolizable anions and a lifespan state of overlooked metabolic acidosis ... Even a very mild degree of metabolic acidosis induces skeletal muscle resistance to the insulin action and dietary acid load may be an important variable in predicting the metabolic abnormalities and the cardiovascular risk of the general population, the overweight and obese persons, and other patient populations including diabetes and chronic kidney failure"
 	},
 	{
@@ -1142,7 +1124,7 @@
 		"year": 2006,
 		"type": "study",
 		"availability": "full",
-		"tags": "saturated fat,fat",
+		"tags": "saturated fat,fat,inflammation",
 		"quote": "Consumption of a meal containing saturated fat reduced the antiinflammatory potential of HDL and impaired arterial endothelial function, whereas the antiinflammatory potential of HDL improved after consumption of polyunsaturated fat. These results suggest that the fatty acid composition of a meal influences the antiinflammatory potential of HDL and endothelial function, both key factors in atherogenesis."
 	},
 	{
@@ -1151,7 +1133,7 @@
 		"year": 2003,
 		"type": "study",
 		"availability": "full",
-		"tags": "weight,fat,inflammation",
+		"tags": "obesity,diabetes,fat,inflammation",
 		"quote": "These data [of mice models] suggest that macrophages in WAT [White adipose tissue] play an active role in morbid obesity and that macrophage-related inflammatory activities may contribute to the pathogenesis of obesity-induced insulin resistance. We propose that obesity-related insulin resistance is, at least in part, a chronic inflammatory disease initiated in adipose tissue."
 	},
 	{
@@ -1160,7 +1142,7 @@
 		"year": 2007,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "weight",
+		"tags": "weight loss,vegan",
 		"quote": "Individuals in the vegan group lost more weight than those in the NCEP group at 1 year [-4.9 (-0.5, -8.0) kg vs. -1.8 (0.8, -4.3); p < 0.05] and at 2 years [-3.1 (0.0, -6.0) kg vs. -0.8 (3.1, -4.2) kg; p < 0.05]. "
 	},
 	{
@@ -1169,7 +1151,7 @@
 		"year": 2015,
 		"type": "study",
 		"availability": "full",
-		"tags": "weight,diabetes,plant-based diet",
+		"tags": "obesity,moderation,diabetes,WFPB",
 		"quote": "Our findings provide little evidence for benefits of diet diversity for either abdominal obesity or diabetes. Greater dissimilarity among foods was actually associated with gain in WC. These results do not support the notion that “eating everything in moderation” leads to greater diet quality or better metabolic health"
 	},
 	{
@@ -1187,17 +1169,8 @@
 		"year": 1998,
 		"type": "study",
 		"availability": "full",
-		"tags": "cardiovascular disease",
+		"tags": "heart disease,WFPB",
 		"quote": "More regression of coronary atherosclerosis occurred after 5 years than after 1 year in the experimental group. In contrast, in the control group, coronary atherosclerosis continued to progress and more than twice as many cardiac events occurred."
-	},
-	{
-		"title": "Reduction in the incidence of type 2 diabetes with lifestyle intervention or metformin.",
-		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/11832527/",
-		"year": 2002,
-		"type": "study",
-		"availability": "full",
-		"tags": "diabetes",
-		"quote": "The average follow-up was 2.8 years. The incidence of diabetes was 11.0, 7.8, and 4.8 cases per 100 person-years in the placebo, metformin, and lifestyle groups, respectively. The lifestyle intervention reduced the incidence by 58 percent (95 percent confidence interval, 48 to 66 percent) and metformin by 31 percent (95 percent confidence interval, 17 to 43 percent), as compared with placebo; the lifestyle intervention was significantly more effective than metformin."
 	},
 	{
 		"title": "American Cancer Society Guidelines on nutrition and physical activity for cancer prevention: reducing the risk of cancer with healthy food choices and physical activity.",
@@ -1205,7 +1178,7 @@
 		"year": 2012,
 		"type": "research report",
 		"availability": "full",
-		"tags": "cancer",
+		"tags": "cancer,fruit,veges",
 		"quote": "These Guidelines therefore emphasize the importance of achieving or maintaining a healthy body weight; adopting a physically active lifestyle; consuming a healthy diet that emphasizes plant foods, particularly within the context of weight management; and limiting consumption of alcoholic beverages."
 	},
 	{
@@ -1214,7 +1187,7 @@
 		"year": 2014,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "plant-based diet,gut",
+		"tags": "vegan,microbiota,WFPB",
 		"quote": "The vegan gut profile appears to be unique in several characteristics, including a reduced abundance of pathobionts and a greater abundance of protective species. Reduced levels of inflammation may be the key feature linking the vegan gut microbiota with protective health effects. However, it is still unclear whether a therapeutic vegan diet can be prescribed to alter the gut microflora for long-term health benefits."
 	},
 	{
@@ -1223,7 +1196,7 @@
 		"year": 2016,
 		"type": "study",
 		"availability": "full",
-		"tags": "gut",
+		"tags": "vegan,moderation,microbiota",
 		"quote": "Plasma metabolome of vegans differed markedly from omnivores but the gut microbiota was surprisingly similar. Unlike prior studies of individuals living in agrarian societies, higher consumption of fermentable substrate in vegans was not associated with higher levels of faecal short chain fatty acids, a finding confirmed in a 10-day controlled feeding experiment. Similarly, the proportion of vegans capable of producing equol, a soy-based gut microbiota metabolite, was less than that was reported in Asian societies despite the high consumption of soy-based products."
 	},
 	{
@@ -1232,7 +1205,7 @@
 		"year": 2009,
 		"type": "study",
 		"availability": "full",
-		"tags": "plant-based diet",
+		"tags": "WFPB,vegan,diabetes",
 		"quote": "Both diets were associated with sustained reductions in weight and plasma lipid concentrations. In an analysis controlling for medication changes, a low-fat vegan diet appeared to improve glycemia and plasma lipids more than did conventional diabetes diet recommendations. Whether the observed differences provide clinical benefit for the macro- or microvascular complications of diabetes remains to be established. "
 	},
 	{
@@ -1241,7 +1214,7 @@
 		"year": 2016,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "plant-based diet",
+		"tags": "vegan,vegetarian,moderation,WFPB",
 		"quote": "Highly significant differences were found in estimated nutrient intakes between meat eaters and vegans, with fish eaters and vegetarians usually having intermediate values. Meat eaters had the highest energy intakes, followed by fish eaters and vegetarians, whereas vegans had the lowest intakes. Vegans had the highest intakes of polyunsaturated fatty acids, dietary fiber, vitamins C and E, folate, magnesium, iron, and copper. Meat eaters had the highest intake of saturated fatty acids, protein, vitamin B2, vitamin B12, vitamin D, zinc, and iodine. Fish eaters had the highest intakes of calcium and selenium. ... The results suggested a high prevalence of inadequacy for dietary vitamin B12 and iodine in vegans."
 	},
 	{
@@ -1286,7 +1259,7 @@
 		"year": 2013,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "weight",
+		"tags": "weight loss,heart disease,WFPB",
 		"quote": "An 18-week dietary intervention using a low-fat plant-based diet in a corporate setting improves body weight, plasma lipids, and, in individuals with diabetes, glycemic control."
 	},
 	{
@@ -1295,7 +1268,7 @@
 		"year": 2007,
 		"type": "study",
 		"availability": "full",
-		"tags": "weight",
+		"tags": "vegan,weight loss",
 		"quote": "Individuals in the vegan group lost more weight than those in the NCEP group at 1 year [−4.9 (−0.5, −8.0) kg vs. −1.8 (0.8, −4.3); p < 0.05] and at 2 years [−3.1 (0.0, −6.0) kg vs. −0.8 (3.1, −4.2) kg; p < 0.05]."
 	},
 	{
@@ -1304,7 +1277,7 @@
 		"year": 2014,
 		"type": "study",
 		"availability": "full",
-		"tags": "allergy,fiber",
+		"tags": "allergy,fiber,microbiota",
 		"quote": "Dietary elements, including fiber and vitamin A, therefore regulate numerous protective pathways in the gastrointestinal tract [of mice], necessary for immune non-responsiveness to food antigens."
 	},
 	{
@@ -1313,7 +1286,7 @@
 		"year": 2017,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "allergy",
+		"tags": "allergy,fruit,veges",
 		"quote": "Most of the studies (n = 30) reported beneficial associations of fruit and vegetable consumption with risk of asthma and/or respiratory function, while eight studies found no significant relationship. Some studies (n = 20) reported mixed results, as they found a negative association between fruit only or vegetable only, and asthma. In addition, the meta-analyses in both adults and children showed inverse associations between fruit intake and risk of prevalent wheeze and asthma severity (p < 0.05). Likewise, vegetable intake was negatively associated with risk of prevalent asthma (p < 0.05). Seven studies examined immune responses in relation to fruit and vegetable intake in asthma, with n = 6 showing a protective effect against either systemic or airway inflammation. "
 	},
 	{
@@ -1322,7 +1295,7 @@
 		"year": 1974,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "multiple sclerosis",
+		"tags": "multiple sclerosis,WFPB",
 		"quote": "Prevalence of MS in many countries was correlated with average daily per capita consumption of fats and oils, protein, and calories, including calories of animal origin. Of these dietary factors, only calories of animal origin and fats and oils correlated significantly with MS prevalence. When the latter two were combined (animal-fats), a significant correlation with MS prevalence of.70 resulted, suggesting that increased consumption of animal-fat may be associated with MS."
 	},
 	{
@@ -1331,7 +1304,7 @@
 		"year": 2015,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "multiple sclerosis",
+		"tags": "multiple sclerosis,WFPB",
 		"quote": "Here we show that dietary factors and lifestyle may exacerbate or ameliorate MS symptoms by modulating the inflammatory status ... What increases inflammation are hypercaloric Western-style diets, characterized by high salt, animal fat, red meat, sugar-sweetened drinks, fried food, low fiber, and lack of physical exercise. The persistence of this type of diet upregulates the metabolism of human cells toward biosynthetic pathways including those of proinflammatory molecules and also leads to a dysbiotic gut microbiota, alteration of intestinal immunity, and low-grade systemic inflammation. Conversely, exercise and low-calorie diets based on the assumption of vegetables, fruit, legumes, fish, prebiotics, and probiotics act on nuclear receptors and enzymes that upregulate oxidative metabolism, downregulate the synthesis of proinflammatory molecules, and restore or maintain a healthy symbiotic gut microbiota."
 	},
 	{
@@ -1340,7 +1313,7 @@
 		"year": 2008,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "multiple sclerosis",
+		"tags": "multiple sclerosis,fat",
 		"quote": "Surveys suggest that up to 70% of people with MS have tried one or more CAM treatment for their MS ... The most promising among CAM therapies that warrant further investigation are a low-fat diet, omega-3 fatty acids, lipoic acid and vitamin D supplementation as potential anti-inflammatory and neuroprotective agents"
 	},
 	{
@@ -1349,7 +1322,7 @@
 		"year": 2011,
 		"type": "study",
 		"availability": "full",
-		"tags": "puberty,milk",
+		"tags": "puberty,dairy",
 		"quote": "There is some evidence that greater milk intake is associated with an increased risk of early menarche, or a lower age at menarche."
 	},
 	{
@@ -1358,7 +1331,7 @@
 		"year": 2008,
 		"type": "study",
 		"availability": "full",
-		"tags": "puberty,weight",
+		"tags": "puberty,obesity",
 		"quote": "Girls with higher weight status in early childhood were more likely to exhibit earlier pubertal development relative to peers at 9 years, indicating that weight status preceded pubertal timing in girls."
 	},
 	{
@@ -1367,7 +1340,7 @@
 		"year": 2017,
 		"type": "research report",
 		"availability": "full",
-		"tags": "consumer trends",
+		"tags": "trends",
 		"quote": "Consumers' diets are diverse, and while most claim not to follow a specific diet, there is a gradual shift occurring in response to health trends. Interestingly, 44% of consumers in Germany follow a low-meat diet, which is a significant increase from 2014 (26%). Similarly, 6% of US consumers now claim to be vegan, up from just 1% in 2014."
 	},
 	{
@@ -1376,7 +1349,7 @@
 		"year": 2016,
 		"type": "article",
 		"availability": "full",
-		"tags": "consumer trends",
+		"tags": "trends",
 		"quote": "At least 542,000 people in Britain are now following a vegan diet and never consume any animal products including meat, fish, milk, cheese, eggs and honey. This is a whopping increase since the last estimate of 150,000 ten years ago, making veganism one of Britain’s fastest growing lifestyle movements."
 	},
 	{
@@ -1385,17 +1358,17 @@
 		"year": 2018,
 		"type": "article",
 		"availability": "full",
-		"tags": "land",
+		"tags": "land use",
 		"quote": "There’s a single, major occupant on all this land: cows. Between pastures and cropland used to produce feed, 41 percent of U.S. land in the contiguous states revolves around livestock."
 	},
 	{
 		"title": "2017 Global Nutrition Report",
 		"url": "http://www.globalnutritionreport.org/the-report/",
-		"pdf": "https://www.globalnutritionreport.org/files/2017/11/Report_2017.pdf",
+		"pdf": "http://165.227.233.32/wp-content/uploads/2017/11/Report_2017-2.pdf",
 		"year": 2017,
 		"type": "research report",
 		"availability": "full",
-		"tags": "water use,land use",
+		"tags": "water use,land use,public health,food security",
 		"quote": "1. Good nutrition can drive greater environmental sustainability. Agriculture and food production is the backbone of our diets and nutrition. Food production uses 70% of the world’s freshwater supply and 38% of the world’s land. Current agriculture practices produce 20% of all greenhouse gas emissions, and livestock uses 70% of agricultural land. Eating better is necessary to ensure that food production systems are more sustainable. 2. Good nutrition is infrastructure for economic development. ... 3. Good nutrition means less burden on health systems ... 4. Good nutrition supports equity and inclusion ... 5. Good nutrition and improved food security enhances peace and stability"
 	},
 	{
@@ -1404,7 +1377,7 @@
 		"year": 2016,
 		"type": "research report",
 		"availability": "abstract",
-		"tags": "consumer trends",
+		"tags": "trends",
 		"quote": "The market for meat substitutes was valued at USD 3.81 Billion in 2015, and is projected to grow at a CAGR of 6.6% from 2016. The rise in trend of vegan diet among consumers, due to the growing awareness on health effects of heavy meat consumption and meat adulteration, and its significant impact on the food industry retail chain as ingredients in convenience food, ready-to-cook foods, and ready-to-eat foods, have boosted the demand for meat substitutes across the globe."
 	},
 	{
@@ -1414,7 +1387,7 @@
 		"year": 2013,
 		"type": "research report",
 		"availability": "abstract",
-		"tags": "consumer trends",
+		"tags": "trends",
 		"quote": "12% of global food and drink products launched in 2013 carried a vegetarian claim, up from 6% in 2009. "
 	},
 	{
@@ -1423,7 +1396,7 @@
 		"year": 2016,
 		"type": "research report",
 		"availability": "abstract",
-		"tags": "consumer trends,milk",
+		"tags": "trends,dairy",
 		"quote": "The global market for milk alternatives reached $5.8 billion in 2014 and should reach nearly $10.9 billion by 2019, with a compound annual growth rate (CAGR) of 13.3% through 2019. The soy milk category of this market reached $4.4 billion in 2014 and should reach nearly $8.0 billion by 2019, a CAGR of 12.5%. Almond milk reached $886.8 million in 2014 and should reach $1.8 billion by 2019, a CAGR of l15.8%"
 	},
 	{
@@ -1432,7 +1405,7 @@
 		"year": 2011,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "puberty,milk",
+		"tags": "puberty,dairy,hormones",
 		"quote": "[Dioxins] may be transferred to humans from animal meat or milk ... To date, various EDs have been shown to exert unwanted effects on pubertal development. It is possible that there are numerous other chemicals with potential harmful effects on pubertal development. Future population-based studies are warranted for further investigation."
 	},
 	{
@@ -1441,7 +1414,7 @@
 		"year": 2000,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "lupus",
+		"tags": "lupus,protein,fat,flaxseed",
 		"quote": "Aggravating substances appear to include excess calories, excess protein, high fat (especially saturated and omega-6 polyunsaturated fatty acids), zinc, iron, and L-canavanine found in alfalfa tablets. Possible beneficial dietary compounds include vitamin E, vitamin A (beta-carotene), selenium, fish oils (omega-3 polyunsaturated fatty acids), evening primrose oil, flaxseed, a plant herb (Tripterygium wilfordii), dehydroepiandrosterone, and calcium plus vitamin D (if taking corticosteroids) ... No large-scale studies have been performed with LE patients to substantiate the benefit, if any, of these individual dietary interventions"
 	},
 	{
@@ -1449,7 +1422,7 @@
 		"url": "https://www.ncbi.nlm.nih.gov/pubmed/1349403",
 		"year": 1992,
 		"type": "study",
-		"tags": "lupus",
+		"tags": "lupus,vegetarian",
 		"availability": "paywall"
 	},
 	{
@@ -1458,7 +1431,7 @@
 		"year": 2009,
 		"type": "study",
 		"availability": "full",
-		"tags": "lupus",
+		"tags": "lupus,phytochemicals",
 		"quote": "Apigenin therapy of SNF1 mice with established lupus suppressed serum levels of pathogenic autoantibodies to nuclear antigens up to 97% and markedly delayed development of severe glomerulonephritis"
 	},
 	{
@@ -1467,7 +1440,7 @@
 		"year": 2014,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "plant-based diet,fruit,veges",
+		"tags": "heart disease,overall mortality,cancer,fruit,veges",
 		"quote": "Higher consumption of fruit and vegetables was significantly associated with a lower risk of all cause mortality. Pooled hazard ratios of all cause mortality were 0.95 (95% confidence interval 0.92 to 0.98) for an increment of one serving a day of fruit and vegetables (P=0.001), 0.94 (0.90 to 0.98) for fruit (P=0.002), and 0.95 (0.92 to 0.99) for vegetables (P=0.006). There was a threshold around five servings of fruit and vegetables a day, after which the risk of all cause mortality did not reduce further. A significant inverse association was observed for cardiovascular mortality (hazard ratio for each additional serving a day of fruit and vegetables 0.96, 95% confidence interval 0.92 to 0.99), while higher consumption of fruit and vegetables was not appreciably associated with risk of cancer mortality."
 	},
 	{
@@ -1486,7 +1459,7 @@
 		"year": 2015,
 		"type": "research report",
 		"availability": "full",
-		"tags": "plant-based diet,meat production,antibiotics,pollution",
+		"tags": "public health,overall mortality,antibiotics,pollution,fruit,veges",
 		"quote": "Our analysis finds that transitioning the American diet to one that includes less processed food and meat, and more fruits and vegetables, would significantly shift today's corn- and soybean-dominated farm landscape to one that is more diversified. In turn, a landscape that produces a healthier mix of crops and livestock for local and regional markets can have positive effects—not only in improved nutrition and health for consumers but also in the form of significant benefits for the environment and farm country's local economies. ... Together, cereal grains and oilseeds represent 59 percent of U.S. crop acreage while vegetables, fruits, and nuts account for only 2 percent. ... This distribution of cropland is incentivized by farm policies that provide subsidies forfarmers to grow select nonperishable 'commodity' crops e.g., corn and soybeans. Moreover, farmers who receive such subsidies are prohibited from planting any acreage with fruits and vegetables (unless certain highly prescribed conditions are met). In addition, the insurance program administered and subsidized by the U.S. Department of Agriculture (USDA) is oriented toward farmers who grow a handful of subsidized commodity crops, often leaving many fruit and vegetable farmers (particularly those growing a variety of crops) without access to adequate insurance and thus poorly positioned to obtain needed credit ... Our analysis found that if Americans consumed just one additional serving of fruits or vegetables each day, we would prevent 30,000 deaths from coronary heart disease and stroke annually and save $5 billion in national health care expenditures; if Americans went a step further and ate enough fruits and vegetables to fully meet federal dietary guidelines, we would prevent 127,000 such deaths each year and save $17 billion in medical costs."
 	},
 	{
@@ -1495,7 +1468,7 @@
 		"year": 2009,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "back pain,cardiovascular disease",
+		"tags": "pain,heart disease",
 		"quote": "Post-mortem studies showed an association between atheromatous lesions in the aorta and DD [disk degeneration], as well as between occluded lumbar arteries and life-time LBP [low back pain]. In clinical studies, aortic calcification was associated with LBP, and stenosis of lumbar arteries was associated with both DD and LBP. In epidemiological studies, smoking and high serum cholesterol levels were found to have the most consistent associations with DD and LBP."
 	},
 	{
@@ -1504,7 +1477,7 @@
 		"year": 2015,
 		"type": "study",
 		"availability": "full",
-		"tags": "plant-based diet",
+		"tags": "fruit,veges",
 		"quote": "Overall, 12.2% of adults met fruit recommendations ranging from 7.3% in West Virginia to 15.5% in DC, and 9.3% met vegetable recommendations, ranging from 5.8% in West Virginia to 12.0% in Alaska. Intake was low across all socioeconomic groups."
 	},
 	{
@@ -1513,7 +1486,7 @@
 		"year": 2016,
 		"type": "study",
 		"availability": "full",
-		"tags": "plant-based diet,fruit,veges",
+		"tags": "WFPB,overall mortality,fruit,veges",
 		"quote": "In the fully adjusted models, increasing consumption of fruit and vegetables combined was associated with reductions in all-cause mortality, with the highest risk reduction seen up to 7 serves/day or more of fruit and vegetables (P for trend = 0.002, hazard ratio for highest versus lowest consumption quartile: 0.90; 95 % confidence interval: 0.84, 0.97). Separate consumption of fruit and vegetables, as well as consumption of raw or cooked vegetables, were associated with a reduced risk of all-cause mortality in the crude and minimally adjusted models (all P for trend <0.05). With the exception of raw vegetables, these associations remained significant in the fully adjusted models (all P for trend <0.05). Age and sex were significant effect modifiers of the association between fruit and vegetable consumption and all-cause mortality."
 	},
 	{
@@ -1522,7 +1495,7 @@
 		"year": 2001,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "plant-based diet,fruit,fiber",
+		"tags": "nuts.WFPB,fruit,fiber",
 		"quote": "Compared with the starch-based and low-fat diets, the high-fiber vegetable diet resulted in the largest reduction in low-density lipoprotein (LDL) cholesterol (33% +/- 4%, P <.001) and the greatest fecal bile acid output (1.13 +/- 0.30 g/d, P =.002), fecal bulk (906 +/- 130 g/d, P <.001), and fecal short-chain fatty acid outputs (78 +/- 13 mmol/d, P <.001). Nevertheless, due to the increase in fecal bulk, the actual concentrations of fecal bile acids were lowest on the vegetable diet (1.2 mg/g wet weight, P =.002). Maximum lipid reductions occurred within 1 week. Urinary mevalonic acid excretion increased (P =.036) on the high-vegetable diet reflecting large fecal steroid losses. We conclude that very high-vegetable fiber intakes reduce risk factors for cardiovascular disease and possibly colon cancer. Vegetable and fruit fibers therefore warrant further detailed investigation."
 	},
 	{
@@ -1531,7 +1504,7 @@
 		"year": 2014,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "cognition",
+		"tags": "mediterranean,dementia",
 		"quote": "While the overall number of studies is small, pooled results suggest that a higher adherence to the MeDi is associated with a reduced risk of developing MCI and AD, and a reduced risk of progressing from MCI to AD. Further prospective-cohort studies with longer follow-up and randomized controlled trials are warranted to consolidate the evidence."
 	},
 	{
@@ -1540,7 +1513,7 @@
 		"year": 2016,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "cognition",
+		"tags": "dementia,fruit,veges,dairy,fish (nutrition)",
 		"quote": "Rates of Alzheimer's disease (AD) are rising worldwide. The most important risk factors seem to be linked to diet. For example, when Japan made the nutrition transition from the traditional Japanese diet to the Western diet, AD rates rose from 1% in 1985 to 7% in 2008. Foods protective against AD include fruits, vegetables, grains, low-fat dairy products, legumes, and fish, whereas risk factors include meat, sweets, and high-fat dairy products. ... reducing meat consumption could significantly reduce the risk of AD as well as of several cancers, diabetes mellitus type 2, stroke, and, likely, chronic kidney disease."
 	},
 	{
@@ -1558,7 +1531,7 @@
 		"year": 2012,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "cognition",
+		"tags": "cognition,phytochemicals",
 		"quote": "Accumulated evidence suggests that naturally occurring phyto-compounds, such as polyphenolic antioxidants found in fruits, vegetables, herbs and nuts, may potentially hinder neurodegeneration, and improve memory and cognitive function. ... The neuroprotective effects of various naturally occurring compounds in AD is evaluating in this review."
 	},
 	{
@@ -1594,7 +1567,7 @@
 		"year": 2013,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "phytochemicals,cardiovascular disease",
+		"tags": "phytochemicals,heart disease",
 		"quote": "Despite the contradictions, there are many data supporting the anti-inflammatory action of carotenoids and their protective effect on cardiovascular events. The unfavourable findings may arise from the use of synthetic molecules slightly different from natural ones or by the competition between the plasma concentrations of carotenoids synthetically derived and of those normally taken with foods. The current data are promising, although further studies and a better standardization of methods are needed to obtain clearer results."
 	},
 	{
@@ -1603,7 +1576,7 @@
 		"year": 2018,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "phytochemicals,mushrooms",
+		"tags": "phytochemicals",
 		"quote": "Mushrooms are rich in anti-inflammatory components, such as polysaccharides, phenolic and indolic compounds, mycosteroids, fatty acids, carotenoids, vitamins, and biometals. Metabolites from mushrooms of the Basidiomycota taxon possess antioxidant, anticancer, and most significantly, anti-inflammatory properties. Recent reports indicate that edible mushroom extracts exhibit favourable therapeutic and health-promoting benefits, particularly in relation to diseases associated with inflammation. In all certainty, edible mushrooms can be referred to as a \"superfood\" and are recommended as a valuable constituent of the daily diet."
 	},
 	{
@@ -1613,7 +1586,7 @@
 		"year": 2014,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "phytochemicals,cardiovascular disease",
+		"tags": "phytochemicals,heart disease",
 		"quote": "Recent studies indicated that high dietary intake of six main carotenoids (i.e., lycopene, <- and®-carotene, lutein, zeaxanthin, and astaxanthin) was associated with reduced risk of stroke and other cardiovascular outcomes. However, the main mechanism of the action of these nutrients was not identified, and multiple mechanisms except antioxidant activity were suggested to be involved in the observed beneficial effects. The dietary intake of six major carotenoids should be promoted as this may have a substantial positive effect on stroke prevention and stroke mortality reduction."
 	},
 	{
@@ -1622,7 +1595,7 @@
 		"year": 2017,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "phytochemicals,cardiovascular disease",
+		"tags": "phytochemicals,heart disease",
 		"quote": "The intakes of anthocyanidins (RR 0·89, 95 % CI 0·83, 0·96), proanthocyanidins (RR 0·90, 95 % CI 0·82, 0·98), flavones (RR 0·88, 95 % CI 0·82, 0·96), flavanones (RR 0·88, 95 % CI 0·82, 0·96) and flavan-3-ols (RR 0·87, 95 % CI 0·80, 0·95) were inversely associated with the risk of CVD when comparing the highest and lowest categories of intake. A similar association was observed for flavonol intake and CVD risk. Sensitivity and subgroup analyses further supported this association. The summary RR for CVD for every 10 mg/d increment in flavonol intake was 0·95 (95 % CI 0·91, 0·99). The present systematic review suggests that the dietary intakes of six classes of flavonoids, namely flavonols, anthocyanidins, proanthocyanidins, flavones, flavanones and flavan-3-ols, significantly decrease the risk of CVD."
 	},
 	{
@@ -1640,7 +1613,7 @@
 		"year": 2012,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "phytochemicals,cardiovascular disease",
+		"tags": "phytochemicals,heart disease",
 		"quote": "Meta-analyses of combined flavonoid subclasses showed significant improvements in FMD [endothelial/vein/blood flow function] (chronic, 0.73% (0.17, 1.30) 14 RCTs; acute, 2.33% (1.58, 3.08) 18 RCTs) and blood pressures (systolic, -1.46 mmHg (-2.38, -0.53) 63 RCTs; diastolic, -1.25 mmHg (-1.82, -0.67) 63 RCTs). Similar benefits were observed for the flavan-3-ol, catechol flavonoids (catechins, quercetin, cyanidin etc.), procyanidins, epicatechin and catechin subgroups. ... The present analysis suggests that flavonoid bioactivity does not follow a classical linear dose-response association and this may have important biological implications."
 	},
 	{
@@ -1649,7 +1622,7 @@
 		"year": 2016,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "phytochemicals",
+		"tags": "phytochemicals,inflammation",
 		"quote": "In vitro and some animal models have shown that quercetin, a polyphenol derived from plants, has a wide range of biological actions including anti-carcinogenic, anti-inflammatory and antiviral activities; as well as attenuating lipid peroxidation, platelet aggregation and capillary permeability. ... Nevertheless, further studies are needed to better characterize the mechanisms of action underlying the beneficial effects of quercetin on inflammation and immunity."
 	},
 	{
@@ -1722,7 +1695,7 @@
 		"year": 2012,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "cognition",
+		"tags": "cognition,fruit,veges",
 		"quote": "Increased intake of vegetables is associated with a lower risk of dementia and slower rates of cognitive decline in older age. Yet, evidence that this association is also valid for high fruit consumption is lacking."
 	},
 	{
@@ -1740,7 +1713,7 @@
 		"year": 2017,
 		"type": "study",
 		"availability": "full",
-		"tags": "plant-based diet, environment",
+		"tags": "WFPB,climate change",
 		"quote": "The modeled system without animals increased total food production (23%), altered foods available for domestic consumption, and decreased agricultural US GHGs (28%), but only reduced total US GHG by 2.6 percentage units. Compared with systems with animals, diets formulated for the US population in the plants-only systems had greater excess of dietary energy and resulted in a greater number of deficiencies in essential nutrients."
 	},
 	{
@@ -1749,7 +1722,7 @@
 		"year": 2007,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "cognition",
+		"tags": "cognition,phytochemicals",
 		"quote": "Emerging evidence suggests that dietary-derived flavonoids have the potential to improve human memory and neuro-cognitive performance via their ability to protect vulnerableneurons, enhance existing neuronal function and stimulate neuronal regeneration ... The presentreview explores the potential of flavonoids and their metabolite forms to promote memory andlearning through their interactions with neuronal signalling pathways pivotal in controlling LTPand memory in human subjects."
 	},
 	{
@@ -1776,7 +1749,7 @@
 		"year": 2010,
 		"type": "study",
 		"availability": "full",
-		"tags": "mental health",
+		"tags": "mental health,vegetarian",
 		"quote": "Vegetarians (VEG:n = 60) reported significantly less negative emotion than omnivores (OMN:n = 78) as measured by both mean total DASS and POMS scores (8.32 ± 0.88 vs 17.51 ± 1.88, p = .000 and 0.10 ± 1.99 vs 15.33 ± 3.10, p = .007, respectively). VEG reported significantly lower mean intakes of EPA (p < .001), DHA (p < .001), as well as the omega-6 fatty acid, arachidonic acid (AA; p < .001), and reported higher mean intakes of shorter-chain α-linolenic acid (p < .001) and linoleic acid (p < .001) than OMN. Mean total DASS and POMS scores were positively related to mean intakes of EPA (p < 0.05), DHA (p < 0.05), and AA (p < 0.05), and inversely related to intakes of ALA (p < 0.05), and LA (p < 0.05), indicating that participants with low intakes of EPA, DHA, and AA and high intakes of ALA and LA had better mood."
 	},
 	{
@@ -1785,7 +1758,7 @@
 		"year": 2012,
 		"type": "study",
 		"availability": "full",
-		"tags": "mental health",
+		"tags": "mental health,moderation",
 		"quote": "Thirty-nine omnivores were randomly assigned to a control group consuming meat, fish, and poultry daily (OMN); a group consuming fish 3-4 times weekly but avoiding meat and poultry (FISH), or a vegetarian group avoiding meat, fish, and poultry (VEG). At baseline and after two weeks, participants completed a food frequency questionnaire, the Profile of Mood States questionnaire and the Depression Anxiety and Stress Scales. After the diet intervention, VEG participants reduced their EPA, DHA, and AA intakes, while FISH participants increased their EPA and DHA intakes. Mood scores were unchanged for OMN or FISH participants, but several mood scores for VEG participants improved significantly after two weeks."
 	},
 	{
@@ -1794,7 +1767,7 @@
 		"year": 2004,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "oxidative stress",
+		"tags": "vegetarian,heart disease",
 		"quote": "A long-term vegetarian diet is associated with markedly higher fasting plasma AA [ascorbic acid] concentrations and lower concentrations of TAG, UA, and hsCRP. Long-term vegetarians have a better antioxidant status and coronary heart disease risk profile than do apparently healthy omnivores. Plasma AA may act a useful marker of overall health status."
 	},
 	{
@@ -1803,7 +1776,7 @@
 		"year": 2009,
 		"type": "study",
 		"availability": "full",
-		"tags": "diet,cognition,mental health",
+		"tags": "low carb,mental health",
 		"quote": "In this large, randomized, controlled study, we compared the long-term effects of a moderate energy-restricted LC [low carb] diet with those of a conventional isocaloric LF [low fat] diet on mood and cognitive function in overweight and obese individuals. ... In the present study, for the majority of the mood measures, including the SAI, BDI, and TMDS and the POMS subscales of anger, depression, and confusion, a significant effect of diet composition was observed showing that scores improved over the longer term and then remained stable for participants who were on the LF diet (ie, a positive effect of the diet on mood was maintained), but in the LC group, despite an initial improvement, scores returned toward baseline levels over time (ie, mood returned toward more negative baseline levels). The sustained improvements in mood in the LF group compared with the LC group are consistent with results from epidemiological studies showing that diets high in carbohydrate and low in fat and protein are associated with lower levels of anxiety and depression and have beneficial effects on psychological well-being."
 	},
 	{
@@ -1812,7 +1785,7 @@
 		"year": 2014,
 		"type": "study",
 		"availability": "full",
-		"tags": "fat,mental health,pufa",
+		"tags": "fat,mental health",
 		"quote": "Higher serum status of AA and AdA, two omega-6 fatty acids, were associated with greater likelihood of SR [suicide risk] and MDE [major depressive episode] among pregnant Brazilian women independently of confounding variables."
 	},
 	{
@@ -1838,17 +1811,8 @@
 		"year": 2017,
 		"type": "research report",
 		"availability": "abstract",
-		"tags": "milk,consumer trends",
+		"tags": "dairy,trends",
 		"quote": "Per capita consumption of fluid milk beverages decreased by close to 22% from 2000 to 2016. Through the same period, consumption of non-dairy plant-based milk alternatives has increased by triple digits. The decrease in dairy milk consumption can be interpreted as each consumer going from 10 glasses of milk each week to eight glasses per week, not much on an individual level but enormous when viewed in terms of the whole population on an annual basis. Even so, milk is still being consumed in over 90% of the households in the U.S. ... the dairy and dairy alternative beverages market will reach nearly $28 billion by 2021."
-	},
-	{
-		"title": "The effects of 8 weeks of whey or rice protein supplementation on body composition and exercise performance",
-		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3698202/",
-		"year": 2013,
-		"type": "study",
-		"availability": "full",
-		"tags": "protein",
-		"quote": "Both whey and rice protein isolate administration post resistance exercise improved indices of body composition and exercise performance; however, there were no differences between the two groups."
 	},
 	{
 		"title": "The incidence of dementia and intake of animal products: preliminary findings from the Adventist Health Study.",
@@ -1856,7 +1820,7 @@
 		"year": 1993,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "cognition,dementia",
+		"tags": "cognition,dementia,moderation,vegetarian",
 		"quote": "The matched subjects who ate meat (including poultry and fish) were more than twice as likely to become demented as their vegetarian counterparts (relative risk 2.18, p = 0.065) and the discrepancy was further widened (relative risk 2.99, p = 0.048) when past meat consumption was taken into account ... There was a trend towards delayed onset of dementia in vegetarians in both substudies"
 	},
 	{
@@ -1865,17 +1829,8 @@
 		"year": 2012,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "cognition",
+		"tags": "cognition,obesity",
 		"quote": "The present paper summarizes research showing that Western diet intake is associated with cognitive impairment ... a model is described proposing that Western diet consumption contributes to the development of excessive food intake and obesity, in part, by interfering with a type of hippocampal-dependent memory inhibition that is critical in the ability of animals to refrain from responding to environmental cues associated with food, and ultimately from consuming energy intake in excess of that driven solely by caloric need."
-	},
-	{
-		"title": "Crossover study of diets enriched with virgin olive oil, walnuts or almonds. Effects on lipids and other cardiovascular risk markers.",
-		"url": "https://www.ncbi.nlm.nih.gov/pubmed/21421296",
-		"year": 2011,
-		"type": "meta analysis",
-		"availability": "abstract",
-		"tags": "cognition",
-		"quote": "In 18 participants completing the study (9 women, mean age 56 y, BMI 25.7 kg/m(2)), LDL-cholesterol was reduced from baseline by 7.3%, 10.8% and 13.4% after the VOO [Virgin Olive Oil], walnut and almond diets, respectively (P = 0.001, Friedman test). Total cholesterol and LDL/HDL ratios decreased in parallel. LDL-cholesterol decreases were greater than predicted from dietary fatty acid and cholesterol exchanges among diets."
 	},
 	{
 		"title": "Palm oil and blood lipid–related markers of cardiovascular disease: a systematic review and meta-analysis of dietary intervention trials",
@@ -1883,7 +1838,7 @@
 		"year": 2014,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "oil,fat",
+		"tags": "oil,fat,heart disease",
 		"quote": "Comparison of PO [palm oil] diets with diets rich in stearic acid, monounsaturated fatty acids (MUFAs), and polyunsaturated fatty acids (PUFAs) showed significantly higher TC [total cholesterol], LDL cholesterol, apolipoprotein B, HDL cholesterol, and apolipoprotein A-I, whereas most of the same biomarkers were significantly lower when compared with diets rich in myristic/lauric acid. Comparison of PO-rich diets with diets rich in trans fatty acids showed significantly higher concentrations of HDL cholesterol and apolipoprotein A-I and significantly lower apolipoprotein B, triacylglycerols, and TC/HDL cholesterol. ... Both favorable and unfavorable changes in CHD/CVD risk markers occurred when PO was substituted for the primary dietary fats, whereas only favorable changes occurred when PO was substituted for trans fatty acids."
 	},
 	{
@@ -1892,7 +1847,7 @@
 		"year": 2012,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "cognition",
+		"tags": "dementia",
 		"quote": "The interaction of genes with their environment, may explain ND [neurodegenerative diseases]"
 	},
 	{
@@ -1910,7 +1865,7 @@
 		"year": 2015,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "cognition",
+		"tags": "cognition,dementia",
 		"quote": "The results suggest that better adherence to a Mediterranean diet is associated with less cognitive decline, dementia, or Alzheimer disease ... Other healthy dietary patterns, derived both a priori ... and a posteriori ..., were shown to be associated with reduced cognitive decline and/or a reduced risk of dementia ... More conclusive evidence is needed to reach more targeted and detailed guidelines to prevent or postpone cognitive decline."
 	},
 	{
@@ -1964,7 +1919,7 @@
 		"year": 2011,
 		"type": "study",
 		"availability": "full",
-		"tags": "pesticides",
+		"tags": "pesticides,cognition",
 		"quote": "Prenatal but not postnatal urinary DAP [a pesticide] concentrations were associated with poorer intellectual development in 7-year-old children. Maternal urinary DAP concentrations in the present study were higher but nonetheless within the range of levels measured in the general U.S. population."
 	},
 	{
@@ -1973,7 +1928,7 @@
 		"type": "article",
 		"availability": "full",
 		"year": 2017,
-		"tags": "milk,environment,saturated fat,politics",
+		"tags": "dairy,lobbying",
 		"quote": "Schools account for about 7 to 8 percent of all milk sales. Knowing it’s a must-win market, the dairy industry uses its money and lobbying power to convince us that milk is an essential part of children’s diets. And it works. During the 2013-2014 school year, the USDA spent more than $20 million taxpayer dollars on dairy product subsidies that went into school lunches and other child nutrition programs."
 	},
 	{
@@ -1982,17 +1937,8 @@
 		"type": "study",
 		"availability": "full",
 		"year": 2012,
-		"tags": "saturated fat,fiber,cholesterol,protein,fat,sodium,calcium,potassium",
-		"quote": "Milk and other dairy products are the No. 1 source of artery-clogging saturated fat in the American diet, contributing to heart disease, type 2 diabetes and Alzheimer’s disease. Studies have also linked dairy products to an increased risk of breast, ovarian and prostate cancers. ... Producing just a single gallon of milk requires 880 gallons of water. That’s nearly 55 gallons per cup. ... Industrial dairy cows suffer a life filled with illness, with one out of every 10 cows in a herd prematurely dying every year. Given natural conditions like healthy food and outdoor exercise, cows have an average lifespan of 20 years. ... Schools account for about 7 to 8 percent of all milk sales. Knowing it’s a must-win market, the dairy industry uses its money and lobbying power to convince us that milk is an essential part of children’s diets. And it works."
-	},
-	{
-		"title": "Dietary sources of energy, solid fats, and added sugars among children and adolescents in the United States.",
-		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3428130/",
-		"type": "study",
-		"availability": "full",
-		"year": 2012,
-		"tags": "saturated fat,policy",
-		"quote": "There is an overlap between the major sources of energy and empty calories: soda, grain desserts, pizza, and whole milk. The landscape of choices available to children and adolescents must change to provide fewer unhealthy foods and more healthy foods with fewer calories. Identifying top sources of energy and empty calories can provide targets for changes in the marketplace and food environment. However, product reformulation alone is not sufficient—the flow of empty calories into the food supply must be reduced."
+		"tags": "saturated fat,fiber,cholesterol,protein,fat,sodium,calcium,potassium,food sources",
+		"quote": "Examining the top sources of dietary constituents that should be reduced is especially helpful for identifying targets for changes in the marketplace and food environment."
 	},
 	{
 		"title": "UNEP: Assessing the Environmental Impacts of Consumption and Production: Priority Products and Materials",
@@ -2010,7 +1956,7 @@
 		"type": "study",
 		"availability": "full",
 		"year": 2017,
-		"tags": "GHG",
+		"tags": "climate change",
 		"quote": "Using the new emissions factors, we estimate global livestock emissions of 119.1 ± 18.2 Tg methane in 2011; this quantity is 11% greater than that obtained using the IPCC 2006 emissions factors, encompassing an 8.4% increase in enteric fermentation methane, a 36.7% increase in manure management methane, and notable variability among regions and sources. For example, revised manure management methane emissions for 2011 in the US increased by 71.8%."
 	},
 	{
@@ -2020,7 +1966,7 @@
 		"type": "research report",
 		"availability": "full",
 		"year": 2017,
-		"tags": "GHG,meat production,habitat loss,water pollution,pollution",
+		"tags": "climate change,water pollution,land use,land degradation",
 		"quote": "this report has deliberately confined itself to a very narrow, albeit important and complex remit: that of grassfed ruminants in grazing systems, and their relationship with climate change ... 300Livestock supply chain emissions contribute about 14.5% of this total [GHG emissions] at 7.1 Gt CO2-eq/yr (1.9 Gt C-eq)), with most of the emissions generated at the agricultural stage. Of this, about 80% is attributable to ruminants. ... could grazing ruminants also help sequester carbon in soils, and if so to what extent might this compensate? As the following numbers show, the answer is ‘not much’. ... While some grasslands are natural, many of the grazing lands used today were formed at great environmental cost from what was originally forest. Grazing livestock have historically been the main agent of anthropogenic deforestation and associated CO2 release. ... the livestock systems that operate today cause an enormous amount, and many kinds of, environmental damage. To raise the animals we eat and use, we have cleared forests, driven species to extinction, polluted air and waterways, and released vast quantities of GHG emissions into the atmosphere. The rearing of animals has literally transformed the face of this earth."
 	},
 	{
@@ -2029,7 +1975,7 @@
 		"type": "study",
 		"availability": "abstract",
 		"year": 2017,
-		"tags": "biodiversity",
+		"tags": "biodiversity loss",
 		"quote": "Tens of thousands of species are threatened with extinction as a result of human activities. ... Proactive international efforts to increase crop yields, minimize land clearing and habitat fragmentation, and protect natural lands could increase food security in developing nations and preserve much of Earth's remaining biodiversity."
 	},
 	{
@@ -2038,7 +1984,7 @@
 		"type": "article",
 		"availability": "full",
 		"year": 2017,
-		"tags": "consumer trends",
+		"tags": "trends",
 		"quote": "whether it’s animal-based protein or plant-based protein, they have an appetite for it. Plant-based protein is growing almost, at this point, a little faster than animal-based, so I think the migration may continue in that direction,” Tom Hayes, CEO of Tyson Foods Inc. (TSN) told FOX Business."
 	},
 	{
@@ -2048,7 +1994,7 @@
 		"type": "study",
 		"availability": "full",
 		"year": 2015,
-		"tags": "mental health,diet",
+		"tags": "mental health,WFPB",
 		"quote": "There were 292 participants (79.8% women, 20.2% men), with body mass index>=25 kg/m2 and/or previous diagnosis of type 2 diabetes. ... In an intention-to-treat analysis, improvements in impairment because of health (p<.001), overall work impairment because of health (p=.02), non-work-related activity impairment because of health (p<.001), depression (p=.02), anxiety (p=.04), fatigue (p=.001), emotional well-being (p=.01), daily functioning because of physical health (p=.01), and general health (p=0.02) in the intervention group were significantly greater than in the control group. Results were similar for study completers."
 	},
 	{
@@ -2057,7 +2003,7 @@
 		"type": "article",
 		"availability": "full",
 		"year": 2014,
-		"tags": "agribusiness",
+		"tags": "farmers",
 		"quote": "some people involved in contract farming say it doesn't benefit everyone. ... Building the chicken houses will cost a million dollars, which means taking on a mountain of debt. ... you discover that there are expenses the brochure didn't really mention, such as repairs, a tractor and additional labor. That can eat up your profit. ... there's the uncertainty created by the tournament ... But once you owe all that money, he says, you're stuck, because those loans are secured by the land on your farm, or by your home. ... contract farming is still expanding. It's now the way that most pork is produced, too."
 	},
 	{
@@ -2066,7 +2012,7 @@
 		"type": "study",
 		"availability": "abstract",
 		"year": 2011,
-		"tags": "milk,soy,bones",
+		"tags": "dairy,soy,bones",
 		"quote": "Compared with women who did not drink soy milk, women drinking soy milk once a day or more had 56% lower odds of osteoporosis (OR = 0.44; 95% CI, 0.20-0.98; Ptrend = .04). Women whose dairy intake was once a day or more had a 62% reduction in the likelihood of having osteoporosis (OR = 0.38; 95% CI, 0.17-0.86; Ptrend = .02) compared with women whose dairy intake was less than twice a week. Among individual dairy products, only cheese showed an independent and significant protection (OR = 0.28; 95% CI, 0.12-0.66; Ptrend = .004) for women eating cheese more than once per week vs those who ate cheese less than once a week."
 	},
 	{
@@ -2075,7 +2021,7 @@
 		"type": "article",
 		"availability": "full",
 		"year": 2014,
-		"tags": "agribusiness",
+		"tags": "farmers",
 		"quote": "By controlling all stages of meat production from the hatchery to the slaughterhouse, Leonard says the companies have taken power away from farmers, cut production and reported record profits. Today, just two companies make about 40 percent of the chicken in the U.S. ... You'll have a farmer who will borrow maybe $500,000, maybe as much as $2 million, to build a large industrial footprint of these kinds of factory farms where they can raise 25,000 chickens in a single barn. But for all the size, scale and sophistication of these farms, the farmer never owns the actual chickens that are put into these barns. The farmer contracts with a company like Tyson, and Tyson will come and deliver birds and deliver feed. The farmer is paid to raise animals. The farmers have almost no control over the most important things in the operation. The farmer has no control over what quality of chicks are delivered to the farm, whether they are healthy or not. The farmer doesn't control what kind of feed is delivered to the farm. So essentially they end up taking orders from a big company like Tyson Foods in the same way a serf might be tied to a lord many, many years ago."
 	},
 	{
@@ -2084,7 +2030,7 @@
 		"type": "article",
 		"availability": "full",
 		"year": 2015,
-		"tags": "agribusiness",
+		"tags": "lobbying,subsidies,eating guidelines",
 		"quote": "Beef alone is a $95 billion-a-year business, according to the USDA. And the North American Meat Institute (NAMI) estimates that, in total, the meat industry contributes about $894 billion to the US economy. That size translates into political influence ... While the USDA is tasked with regulating the meat industry, it also has a role in promoting it. This tension plays out every time the US government wants to give out dietary advice—and the results generally wind up favoring the industry. ... the panel’s advice to eat less of specifically red and processed meat has run into the same industry objections ... [industry] Attack the scientific methodology used by those recommending a drop in consumption."
 	},
 	{
@@ -2093,7 +2039,7 @@
 		"type": "article",
 		"availability": "full",
 		"year": 2017,
-		"tags": "agribusiness,environment",
+		"tags": "lobbying",
 		"quote": "Americans cut their beef consumption by 19 percent between 2005 and 2014 ... That drop in beef intake was the main contributor to a 10 percent reduction in the amount of climate-warming pollution Americans caused through their diets ... “roughly equivalent to the annual pollution of 57 million car tailpipes.” ... In the lead [of lobbying pay] was the dairy industry, which spent more than $6 million lobbying in 2016. It almost doubled the lobbying payments of the livestock industry, and more than quadrupled those of poultry and eggs. ... Last year, the group [National Pork Producers Council] spent more than $1.6 million lobbying on bills addressing issues like water quality and antibiotics."
 	},
 	{
@@ -2102,7 +2048,7 @@
 		"type": "study",
 		"availability": "abstract",
 		"year": 2015,
-		"tags": "agribusiness",
+		"tags": "public health",
 		"quote": "This paper explores a series of examples which illustrate how public health is being undermined by the 'Nanny Industry' and how industry uses fear of government regulation to maintain its own dominance, to maintain its profits and to do so at a significant financial and social cost to the community and to public health."
 	},
 	{
@@ -2111,7 +2057,7 @@
 		"type": "study",
 		"availability": "abstract",
 		"year": 2015,
-		"tags": "agribusiness",
+		"tags": "public health",
 		"quote": "Some marketing strategies have deliberately mis-informed consumers thus directly contributing to many public health problems. Far from removing free choice, government policies that restrain commercial communications and stimuli are prerequisites necessary to promote free choice."
 	},
 	{
@@ -2120,7 +2066,7 @@
 		"type": "article",
 		"availability": "abstract",
 		"year": 2015,
-		"tags": "agribusiness",
+		"tags": "fat,lobbying",
 		"quote": "Policy evidence from existing food tax implementation suggest that taxes need to be paralleled by subsidies and other interventions to encourage healthy eating. ... Key opponents to taxes are the food industry who use a range of arguments to prevent taxation being implemented. Public health advocates are weak in tackling the issues of corporate power and providing evidence to maintain policy and political support. The public health movement needs to continue to develop the political will among politicians and the public for taxes on food. A new way of looking at policy formation is required and this includes addressing the power of corporate interests and the role of professionals in shaping or combating these influences"
 	},
 	{
@@ -2129,7 +2075,7 @@
 		"type": "study",
 		"availability": "abstract",
 		"year": 2015,
-		"tags": "agribusiness",
+		"tags": "fat,lobbying,public health",
 		"quote": "In 2011, Denmark introduced the world's first tax on saturated fat, but only 15 months later the fat tax was abolished. ... Our findings suggest that industry and trade associations were heavily involved in the political process of formulating the fat tax. Industry representatives used certain tactics to oppose the fat tax: threatening lawsuits, predicting welfare losses, casting doubt on evidence, diverting focus and requesting postponement. After the fat tax was implemented, the food industry continued their opposition through intensified lobbyism and juridical actions at EU level. However, other factors seem to have contributed to the fall of the fat tax. The tax received criticism for being poorly designed and gradually lost popularity among health professionals, politicians and the public. In the end, the fat tax was abolished for financial reasons. This study demonstrates how politicians considered the fat tax as a funding source rather than a public health initiative, which resulted in significant shortcomings. Furthermore, we demonstrate that the massive influence by industry stakeholders was not balanced with inputs from public health professionals, who should assume a more proactive role in policy-making"
 	},
 	{
@@ -2138,7 +2084,7 @@
 		"type": "study",
 		"availability": "full",
 		"year": 2014,
-		"tags": "agribusiness",
+		"tags": "lobbying",
 		"quote": "The emergence of the industry’s public use of personal responsibility rhetoric in the late 1970s illustrates that its tactics preceded the ascension of personal responsibility rhetoric commonly associated with the “Reagan revolution” in the 1980s. ... Our analysis likely underestimated tobacco industry use of personal responsibility rhetoric in the news during this period because of missing years of archived newspapers ... Because tactics similar to the tobacco industry “playbook” are being used by industries from fossil fuels to packaged foods and beverages, understanding these arguments is a matter of increasing importance for advocates seeking to regulate industry practices and products that may harm the public’s health.Because tactics similar to the tobacco industry “playbook” are being used by industries from fossil fuels33 to packaged foods and beverages,31,34 understanding these arguments is a matter of increasing importance for advocates seeking to regulate industry practices and products that may harm the public’s health."
 	},
 	{
@@ -2147,7 +2093,7 @@
 		"type": "article",
 		"availability": "full",
 		"year": 2013,
-		"tags": "agribusiness",
+		"tags": "public health",
 		"quote": "Here, I seek to show how Bloomberg has fundamentally changed public health policy and discourse. He has used the engine of government to make New York City a laboratory for innovation—raising the visibility of public health, testing policy effectiveness, and probing the boundaries of state power. Even though the courts have blocked some of his boldest initiatives, he has offered a paradigm for the “new public health”—reaching beyond infectious diseases to upstream risk factors in everyday life and the human habitat. I also critically probe various arguments designed to derail his policies ... A host of vested corporate interests—the sugar, alcohol, and tobacco industries, along with restaurants and advertisers—can make common cause around slippery slope concerns. All of these groups stand to lose if health is placed at the center of public policy. Slippery slope arguments should be approached with suspicion, as they force a speculative analysis without any specifics about the policy feared to lie downslope, or the likelihood of its being manifest. The task of policy-makers is to delineate which policies are acceptable and which are not. Their adoption of any given policy does not suggest that they will extend the same reasoning in other realms. It should not be necessary to win a debate today about policies that may, or may not, be proposed in the future"
 	},
 	{
@@ -2156,7 +2102,7 @@
 		"type": "meta analysis",
 		"availability": "full",
 		"year": 2010,
-		"tags": "fat,trans fat",
+		"tags": "fat,trans fat,heart disease",
 		"quote": "Published data suggest that all fatty acids with a double bond in the trans configuration raise the ratio of plasma LDL to HDL cholesterol. ... Removing all such ruminant trans fatty acids from the diet would lower the total trans fatty acid intake in the United States and Europe by about 0.5% of energy and might therefore reduce cardiovascular disease risk by 1.5 to 6%"
 	},
 	{
@@ -2184,7 +2130,7 @@
 		"type": "study",
 		"availability": "full",
 		"year": 2008,
-		"tags": "fat,diabetes,oil",
+		"tags": "saturated fat,diabetes,oil",
 		"quote": "FMD [blood flow-mediated dilatation] did not change significantly after the MUFA-rich [monounsaturated fatty acid] meal but declined after the SAFA-rich[saturated fatty acid] meal. The FMD during the experiment, expressed as incremental area under the curve, increased after the MUFA-rich meal by 5.2 ± 2.5% and decreased after the SAFA-rich meal by 16.7 ± 6.0% (Δ = −11.5 ± 6.4%; P = 0.008). ... consumption of a single MUFA-rich meal in the form of extra-virgin olive oil does not impair endothelial function in subjects with type 2 diabetes. On the contrary, consumption of a SAFA-rich meal exerts a noxious effect on endothelial function that starts at 2 h and is maintained up to 6 h postprandially. Notably, the differential effects of MUFA- and SAFA-rich diets on endothelial function were observed for similar changes in plasma glucose, insulin, and lipid concentrations in TPAC and reactive hyperemia."
 	},
 	{
@@ -2194,7 +2140,7 @@
 		"type": "study",
 		"availability": "full",
 		"year": 2012,
-		"tags": "fat,oil",
+		"tags": "oil",
 		"quote": "Olive oil is well known for its cardioprotective properties; however, epidemiological data showing that olive oil consumption reduces incident CHD events are still limited. ... The analysis included 40 142 participants (38 % male), free of CHD events at baseline, recruited from five EPIC-Spain centres from 1992 to 1996 and followed up until 2004. ... Olive oil intake was negatively associated with CHD [congenital heart disease] risk after excluding dietary mis-reporters ... Olive oil intake is an indicator of a healthy MD and is usually correlated with foods such as vegetables; not adjusting for dietary factors may have led to an overestimation of the association."
 	},
 	{
@@ -2221,7 +2167,7 @@
 		"type": "meta analysis",
 		"availability": "full",
 		"year": 2005,
-		"tags": "fat,nuts",
+		"tags": "nuts",
 		"quote": "The results of 3 almond (50–100 g/d), 2 peanut (35–68 g/d), 1 pecan nut (72 g/d), and 4 walnut (40–84 g/d) studies showed decreases in total cholesterol between 2 and 16% and LDL cholesterol between 2 and 19% compared with subjects consuming control diets. Consumption of macadamia nuts (50–100 g/d) produced less convincing results. In conclusion, consumption of ∼50–100 g (∼1.5–3.5 servings) of nuts ≥ 5 times/wk as part of a heart-healthy diet with total fat content (high in mono- and/or polyunsaturated fatty acids) of ∼35% of energy may significantly decrease total cholesterol and LDL cholesterol in normo- and hyperlipidemic individuals."
 	},
 	{
@@ -2230,7 +2176,7 @@
 		"type": "article",
 		"availability": "full",
 		"year": 2014,
-		"tags": "agribusiness",
+		"tags": "corruption",
 		"quote": "As of 2014, JBS’s U.S. subsidiary held a 22 percent market-share in U.S. beef processing and an 18 percent market-share in poultry processing. ... Secretly recorded tapes surfaced in May of Brazil’s president, Michel Temer, allegedly discussing bribing a former legislator. The tapes were recorded by JBS chairman Joesley Batista and came to light when he and his brother, Wesley Batista, signed a leniency agreement with federal prosecutors and agreed to have JBS’s holding company pay a $3.2 billion fine."
 	},
 	{
@@ -2239,7 +2185,7 @@
 		"type": "meta analysis",
 		"availability": "abstract",
 		"year": 2011,
-		"tags": "nuts,fat",
+		"tags": "nuts",
 		"quote": "Because nuts are low in sodium and contain significant amounts of mono- and polyunsaturated fatty acids, fiber, minerals such as magnesium, potassium and calcium, and antioxidants, they have been suggested as potentially protective foods against hypertension. Limited evidence from prospective studies and clinical trials suggests that nut consumption has a beneficial effect on both BP [high blood pressure] and EF [endothelial function]. However, BP changes were a secondary outcome in nut feeding trials and no study used ambulatory BP monitoring as the standard for BP measurements."
 	},
 	{
@@ -2248,7 +2194,7 @@
 		"type": "study",
 		"availability": "full",
 		"year": 2000,
-		"tags": "oil,fat",
+		"tags": "oil,fat,mediterranean",
 		"quote": "Contrary to part of our hypothesis, our study found that omega-9 (oleic acid)-rich olive oil impairs endothelial function postprandially. ... The mechanism appears to be oxidative stress because the decrease in FMD [flow-mediated vasodilation] was reduced (71%) by the concomitant administration of vitamins C and E. Balsamic vinegar (red wine product) and salad reduced the postprandial impairment in endothelial function to a similar extent (65%). In keeping with our hypothesis, the omega-3-rich canola oil and salmon meals did not reduce FMD significantly. ... Dietary fruits, vegetables, and their products appear to provide some protection against the direct impairment in endothelial function produced by high-fat foods, including olive oil."
 	},
 	{
@@ -2257,7 +2203,7 @@
 		"type": "study",
 		"availability": "full",
 		"year": 2006,
-		"tags": "nuts,oil,fat",
+		"tags": "oil,fat,nuts",
 		"quote": "Our main finding was that, in comparison with olive oil, walnuts reverse the impairment of endothelial function associated with eating a fatty meal. The fact that a single walnut meal positively effects postprandial vasoactivity further supports the beneficial effects of walnuts on cardiovascular risk"
 	},
 	{
@@ -2266,8 +2212,8 @@
 		"type": "meta analysis",
 		"availability": "abstract",
 		"year": 1993,
-		"tags": "agribusiness",
-		"quote": "[USDA guideline change ]was only the latest in a long series of industry attempts to influence federal dietary recommendations. ... Since 1977, for example, under pressure from meat producers, federal dietary advice has evolved from “decrease consumption of meat” to “have two or three (daily) servings.” Thus, this recent incident also highlights the inherent conflict of interest in the Department of Agriculture's dual mandates to promote U.S. agricultural products and to advise the public about healthy food choices."
+		"tags": "lobbying,eating guidelines",
+		"quote": "[USDA guideline change] was only the latest in a long series of industry attempts to influence federal dietary recommendations. ... Since 1977, for example, under pressure from meat producers, federal dietary advice has evolved from “decrease consumption of meat” to “have two or three (daily) servings.” Thus, this recent incident also highlights the inherent conflict of interest in the Department of Agriculture's dual mandates to promote U.S. agricultural products and to advise the public about healthy food choices."
 	},
 	{
 		"title": "Veal Farmers of Ontario: The Real Deal about Veal",
@@ -2275,7 +2221,7 @@
 		"type": "article",
 		"availability": "full",
 		"year": 2015,
-		"tags": "animals",
+		"tags": "cows",
 		"quote": "Most people do not realize that veal is produced from male (bull) dairy calves. On a dairy farm, these bull calves are not needed for replenishing the milking herd because they cannot produce milk and they are generally not used to produce beef. All dairy cows must give birth to a calf each year to provide the milk that we drink. Approximately 50% of all calves born are female calves (heifers). These heifers will eventually be used by the dairy producer to replace older cows for milking purposes. Only a very select few of all the bull calves born are used for breeding stock. Dairy producers will sell the bull calves to veal producers, either privately or through a sales barn. Therefore, bull calves can be used by the veal industry to create a quality food product."
 	},
 	{
@@ -2284,7 +2230,7 @@
 		"type": "article",
 		"availability": "full",
 		"year": 2008,
-		"tags": "animals",
+		"tags": "cows",
 		"quote": "The practice of removing calves from their dams before nursing increased from 19.2 percent of heifer calves in 1991 to 65.6 percent in 2007"
 	},
 	{
@@ -2294,26 +2240,8 @@
 		"type": "research report",
 		"availability": "full",
 		"year": 2017,
-		"tags": "animals",
+		"tags": "slaughter",
 		"summary": "The USDA summarizes how many animals are slaughtered, though it only counts the processing plants that are federally inspected. In 2016 alone the industry (and thus consumers) killed 8,768,427,000 baby chickens, 140,587,000 adult chickens, 241,418,000 baby turkeys, 1,837,000 adult turkeys, and 27,268,000 ducks."
-	},
-	{
-		"title": "Effects of a ginger extract on knee pain in patients with osteoarthritis.",
-		"url": "https://www.ncbi.nlm.nih.gov/pubmed/11710709",
-		"type": "study",
-		"availability": "abstract",
-		"year": 2001,
-		"tags": "ginger,arthritis",
-		"quote": "A highly purified and standardized ginger extract had a statistically significant effect on reducing symptoms of OA of the knee. This effect was moderate. There was a good safety profile, with mostly mild GI adverse events in the ginger extract group."
-	},
-	{
-		"title": "Ginger--an herbal medicinal product with broad anti-inflammatory actions.",
-		"url": "https://www.ncbi.nlm.nih.gov/pubmed/16117603",
-		"type": "meta analysis",
-		"availability": "abstract",
-		"year": 2001,
-		"tags": "ginger",
-		"quote": "The anti-inflammatory properties of ginger have been known and valued for centuries. During the past 25 years, many laboratories have provided scientific support for the long-held belief that ginger contains constituents with antiinflammatory properties. "
 	},
 	{
 		"title": "Energy and protein feed-to-food conversion efficiencies in the US and potential food security gains from dietary changes",
@@ -2321,7 +2249,7 @@
 		"type": "study",
 		"availability": "full",
 		"year": 2016,
-		"tags": "climate",
+		"tags": "food security,climate change,land use",
 		"quote": "Averaged over all categories, caloric and protein efficiencies are 7%–8%. At 3% in both metrics, beef is by far the least efficient. We find that reallocating the agricultural land used for beef feed to poultry feed production can meet the caloric and protein demands of ≈120 and ≈140 million additional people consuming the mean American diet, respectively, roughly 40% of current US population. ... We find that these legume-dominated plant-based diets substitute beef with a dietary shift potential of ≈190 million individuals."
 	},
 	{
@@ -2331,7 +2259,7 @@
 		"type": "research report",
 		"availability": "full",
 		"year": 2017,
-		"tags": "animals",
+		"tags": "slaughter",
 		"summary": "The USDA summarizes how many animals are slaughtered, though it only counts the processing plants that are federally inspected. In 2016 alone the industry (and thus consumers) killed 30,676,100 adult cattle, 512,700 baby calves, 118,303,900 hogs/pigs, and 2,332,600."
 	},
 	{
@@ -2340,7 +2268,7 @@
 		"type": "study",
 		"availability": "full",
 		"year": 2014,
-		"tags": "ghg",
+		"tags": "vegetarian,vegan,climate change",
 		"summary": "The age-and-sex-adjusted mean (95 % confidence interval) GHG emissions in kilograms of carbon dioxide equivalents per day (kgCO2e/day) were 7.19 (7.16, 7.22) for high meat-eaters ( > = 100 g/d), 5.63 (5.61, 5.65) for medium meat-eaters (50-99 g/d), 4.67 (4.65, 4.70) for low meat-eaters ( < 50 g/d), 3.91 (3.88, 3.94) for fish-eaters, 3.81 (3.79, 3.83) for vegetarians and 2.89 (2.83, 2.94) for vegans. In conclusion, dietary GHG emissions in self-selected meat-eaters are approximately twice as high as those in vegans. "
 	},
 	{
@@ -2349,7 +2277,7 @@
 		"type": "study",
 		"availability": "abstract",
 		"year": 2008,
-		"tags": "animals",
+		"tags": "cows",
 		"quote": "The periparturient cow undergoes a transition from non-lactating to lactating at calving. The animal is tremendously challenged to maintain calcium homeostasis. Those that fail can develop milk fever, a clinical disorder that is life threatening to the cow and predisposes the animal to a variety of other disorders."
 	},
 	{
@@ -2358,7 +2286,7 @@
 		"type": "study",
 		"availability": "full",
 		"year": 2014,
-		"tags": "cancer",
+		"tags": "cancer,vegetarian",
 		"quote": "The multivariate HR of overall cancer risk among vegetarians compared to non-vegetarians was statistically significant (HR=0.92; 95%CI: 0.85, 0.99) for both genders combined. Also, a statistically significant association was found between vegetarian diet and cancers of the gastrointestinal tract (HR=0.76; 95%CI: 0.63, 0.90). When analyzing the association of specific vegetarian dietary patterns, vegan diets showed statistically significant protection for overall cancer incidence (HR=0.84; 95%CI: 0.72, 0.99) in both genders combined and for female-specific cancers (HR=0.66; 95%CI: 0.47, 0.92). Lacto-ovo-vegetarians appeared to be associated with decreased risk of cancers of the gastrointestinal system (HR=0.75; 95%CI: 0.60, 0.92)."
 	},
 	{
@@ -2385,7 +2313,7 @@
 		"type": "study",
 		"availability": "abstract",
 		"year": 2009,
-		"tags": "protein,methionine",
+		"tags": "protein,methionine,vegan",
 		"quote": "The multivariate HR of overall cancer risk among vegetarians compared to non-vegetarians was statistically significant (HR=0.92; 95%CI: 0.85, 0.99) for both genders combined. Also, a statistically significant association was found between vegetarian diet and cancers of the gastrointestinal tract (HR=0.76; 95%CI: 0.63, 0.90). When analyzing the association of specific vegetarian dietary patterns, vegan diets showed statistically significant protection for overall cancer incidence (HR=0.84; 95%CI: 0.72, 0.99) in both genders combined and for female-specific cancers (HR=0.66; 95%CI: 0.47, 0.92). Lacto-ovo-vegetarians appeared to be associated with decreased risk of cancers of the gastrointestinal system (HR=0.75; 95%CI: 0.60, 0.92)."
 	},
 	{
@@ -2394,7 +2322,7 @@
 		"type": "meta analysis",
 		"availability": "abstract",
 		"year": 2012,
-		"tags": "protein",
+		"tags": "protein,microbiota",
 		"quote": "It is generally accepted that carbohydrate fermentation results in beneficial effects for the host because of the generation of short chain fatty acids, whereas protein fermentation is considered detrimental for the host's health. Protein fermentation mainly occurs in the distal colon, when carbohydrates get depleted and results in the production of potentially toxic metabolites such as ammonia, amines, phenols and sulfides."
 	},
 	{
@@ -2403,7 +2331,7 @@
 		"type": "article",
 		"availability": "full",
 		"year": 2014,
-		"tags": "agribusiness",
+		"tags": "lobbying",
 		"quote": "The meat industry in the United States is a powerful political force, both in the legislative and the regulatory arena ... Instead of spreading lots of money around to many different lawmakers in an attempt to gain access and influence -- the traditional method used by many large corporations -- the meat industry targets their approach to a small number of key lawmakers and regulators that have a direct impact on their business interests."
 	},
 	{
@@ -2412,7 +2340,7 @@
 		"type": "article",
 		"availability": "full",
 		"year": 2016,
-		"tags": "agribusiness",
+		"tags": "lobbying,oversight",
 		"quote": "Beef commands a premium if it is labeled “grass-fed” or “naturally raised,” but the Department of Agriculture withdrew oversight of those terms in January and no longer verifies such claims. Even in cases where the U.S.D.A. does certify labels, the rules can be slippery. The term “humanely raised,” for example, has no standard definition, and the U.S.D.A. does not conduct site visits to confirm enforcement for those approved to use the label. ... Large [meat] producers successfully lobbied Congress to create a “checkoff” program, which imbued private industry with the power, via the U.S.D.A., to collect a percentage of all beef and pork sales to be used for the general promotion of eating meat. ... Thus began an era in which U.S.D.A. officials began to view themselves as partnering with industry, rather than monitoring it. "
 	},
 	{
@@ -2421,7 +2349,7 @@
 		"type": "article",
 		"availability": "full",
 		"year": 2016,
-		"tags": "agribusiness",
+		"tags": "eating guidelines,lobbying",
 		"quote": "a number of leading nutrition experts—including some tasked by the government to advise it on the latest research—say the guidelines are influenced too much by food manufacturers, food producers, and special interest groups. As a result, many experts say some of the government’s diet advice continues to promulgate out-of-date research from years past. ... Some experts disagree [with recommendation of 'healthy' red meat], telling TIME that the discrepancies between the Advisory Committee’s report and the final guidelines are evidence that USDA and HHS do not rely on science to form their nutrition policies."
 	},
 	{
@@ -2430,7 +2358,7 @@
 		"type": "research report",
 		"availability": "full",
 		"year": 2017,
-		"tags": "environment",
+		"tags": "climate change",
 		"quote": "Between 2005 and 2014, Americans cut their per-capita diet-related climate-warming pollution by approximately 10 percent. Based on NRDC’s calculations, these changes cumulatively avoided approximately 271 million metric tons (MMT) of climate-warming pollution. This was roughly equivalent to the annual pollution of 57 million car tailpipes, with most of these cuts in emissions due to reduced beef consumption"
 	},
 	{
@@ -2439,7 +2367,7 @@
 		"type": "research report",
 		"availability": "full",
 		"year": 2012,
-		"tags": "environment",
+		"tags": "climate change",
 		"quote": "Both intensive (industrial) and non-intensive (traditional) forms of meat production result in the release of greenhouse gases (GHGs). As meat supply and consumption increase around the world, more sustainable food systems must be encouraged."
 	},
 	{
@@ -2448,7 +2376,7 @@
 		"type": "study",
 		"availability": "abstract",
 		"year": 2016,
-		"tags": "environment",
+		"tags": "climate change",
 		"quote": "We find that during the last 50 years, global greenhouse gas (GHG) emissions released from beef cattle, pork and chickens increased by 59 %, 89 % and 461 % respectively."
 	},
 	{
@@ -2470,57 +2398,12 @@
 		"quote": "More than 98 percent of samples of strawberries, spinach, peaches, nectarines, cherries and apples tested positive for residue of at least one pesticide. ... More than 80 percent of pineapples, papayas, asparagus, onions and cabbage had no pesticide residues."
 	},
 	{
-		"title": "Nutrition intervention for migraine: a randomized crossover trial",
-		"url": "https://link.springer.com/content/pdf/10.1186%2F1129-2377-15-69.pdf",
-		"year": 2014,
-		"type": "study",
-		"availability": "full",
-		"tags": "migraine",
-		"quote": "Worst headache pain in last 2 weeks, as measured by visual analog scale, was initially 6.4/10 cm (SD2.1 cm), and declined 2.1 cm during the diet period and 0.7 cm during the supplement period (p=0.03). Averageheadache intensity (0–10 scale) was initially 4.2 (SD 1.4) per week, and this declined by 1.0 during the diet periodand by 0.5 during the supplement period (p=0.20). Average headache frequency was initially 2.3 (SD 1.8) per week,and this declined by 0.3 during the diet period and by 0.4 during the supplement period (p=0.61). "
-	},
-	{
-		"title": "Is Migraine Food Allergy?: A Double-blind Controlled Trial of Oligoantigenic Diet Treatment",
-		"url": "http://www.sciencedirect.com/science/article/pii/S0140673683908668?_rdoc=1&_fmt=high&_origin=gateway&_docanchor=&md5=b8429449ccfc9c30159a5f9aeaa92ffb",
-		"year": 1983,
-		"type": "study",
-		"availability": "abstract",
-		"tags": "migraine",
-		"quote": "93% of 88 children with severe frequent migraine recovered on oligoantigenic diets; the causative foods were identified by sequential reintroduction, and the role of the foods provoking migraine was established by a double-blind controlled trial in 40 of the children"
-	},
-	{
-		"title": "Diet restriction in migraine, based on IgG against foods: A clinical double-blind, randomised, cross-over trial",
-		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2899772/",
-		"year": 2010,
-		"type": "study",
-		"availability": "full",
-		"tags": "migraine",
-		"quote": "The average count of reactions with abnormally high titre was 24 ± 11 against 266 foods. Compared to baseline, there was a statistically significant reduction in the number of headache days (from 10.5 ± 4.4 to 7.5 ± 3.7; P < 0.001) and number of migraine attacks (from 9.0 ± 4.4 to 6.2 ± 3.8; P < 0.001) in the elimination diet period."
-	},
-	{
-		"title": "The diet factor in pediatric and adolescent migraine",
-		"url": "http://www.sciencedirect.com/science/article/pii/S0887899402004666",
-		"year": 2003,
-		"type": "study",
-		"availability": "abstract",
-		"tags": "migraine",
-		"quote": " list of foods, beverages, and additives that trigger migraine includes cheese, chocolate, citrus fruits, hot dogs, monosodium glutamate, aspartame, fatty foods, ice cream, caffeine withdrawal, and alcoholic drinks, especially red wine and beer. ... A well-balanced diet is encouraged, with avoidance of fasting or skipped meals."
-	},
-	{
-		"title": "The prevalence of diet-induced migraine",
-		"url": "https://www.ncbi.nlm.nih.gov/pubmed/6498931",
-		"year": 1984,
-		"type": "study",
-		"availability": "abstract",
-		"tags": "migraine",
-		"quote": "Nineteen percent of about 490 patients with classical or common migraine reported that headaches can be precipitated by chocolate, 18% by cheese and 11% by citrus fruit, and a highly significant majority of these patients were sensitive to all three foods. ... Patients with affected relatives were significantly more likely to report sensitivity to alcohol and chocolate; sensitivity to cheese and citrus fruit was less strongly related "
-	},
-	{
 		"title": "Differential acute postprandial effects of processed meat and isocaloric vegan meals on the gastrointestinal hormone response in subjects suffering from type 2 diabetes and healthy controls: a randomized crossover study.",
 		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4164634/",
 		"year": 2014,
 		"type": "study",
 		"availability": "full",
-		"tags": "diabetes",
+		"tags": "diabetes,vegan,hormones,meat",
 		"quote": "Our results suggest that the diet composition and the energy content, rather than the carbohydrate count, should be important considerations for dietary management and demonstrate that processed meat consumption is accompanied by impaired GIH responses and increased oxidative stress marker levels in diabetic patients."
 	},
 	{
@@ -2548,8 +2431,8 @@
 		"year": 2014,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "diabetes",
-		"quote": "The study confirmed that adherence to specific dietary patterns, commonly characterised by high intake of fruits or vegetables and low intake of processed meat, sugar-sweetened beverages, and refined grains, may lower type 2 diabetes risk."
+		"tags": "diabetes,fruit,veges",
+		"quote": "Our analysis of 179,956 participants and 19,123 incident type 2 diabetes cases reported that those consuming the highest fruit and vegetable intake had a 7 % (95 % CI: 0.87 – 1.00) lower risk of diabetes when compared with the lowest intake consumers, with a particular benefit for consumption of green leafy vegetables"
 	},
 	{
 		"title": "Dietary fibre and incidence of type 2 diabetes in eight European countries: the EPIC-InterAct Study and a meta-analysis of prospective studies.",
@@ -2557,7 +2440,7 @@
 		"year": 2015,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "diabetes",
+		"tags": "diabetes,fiber",
 		"quote": "The overall evidence indicates that the intake of total and cereal fibre is inversely related to the risk of type 2 diabetes. The results of the EPIC-InterAct Study suggest that the association may be partially explained by body weight."
 	},
 	{
@@ -2584,7 +2467,7 @@
 		"year": 2007,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "diabetes",
+		"tags": "diabetes,vegan",
 		"quote": "Ninety-three early-stage prostate cancer patients participated in a randomized controlled trial and were assigned to a very-low-fat (10% fat) vegan diet supplemented with soy protein and lifestyle changes or to usual care. ... Analyses of changes in dietary intake of macronutrients, vitamins, minerals, carotenoids, and isoflavones from baseline to 1 year showed significantly increased intake of most protective dietary factors (eg, fiber increased from a mean of 31 to 59 g/day, lycopene increased from 8,693 to 34,464 μg/day) and significantly decreased intake of most pathogenic dietary factors (eg, saturated fatty acids decreased from 20 to 5 g/day, cholesterol decreased from 200 to 10 mg/day) in the intervention group compared to controls"
 	},
 	{
@@ -2593,7 +2476,7 @@
 		"year": 2003,
 		"type": "study",
 		"availability": "full",
-		"tags": "diabetes",
+		"tags": "diabetes,inflammation,fat",
 		"quote": "Increasing evidence from human population studies and animal research has established correlative as well as causative links between chronic inflammation and insulin resistance ... we show that many inflammation and macrophage-specific genes are dramatically upregulated in white adipose tissue (WAT) in mouse models of genetic and high-fat diet-induced obesity (DIO). ... We propose that obesity-related insulin resistance is, at least in part, a chronic inflammatory disease initiated in adipose tissue."
 	},
 	{
@@ -2602,7 +2485,7 @@
 		"year": 2014,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "diabetes",
+		"tags": "diabetes,vegetarian",
 		"quote": "Consumption of vegetarian diets was associated with a significant reduction in HbA1c [−0.39 percentage point; 95% confidence interval (CI), −0.62 to −0.15; P=0.001; I2=3.0; P for heterogeneity =0.389], and a non-significant reduction in fasting blood glucose concentration (−0.36 mmol/L; 95% CI, −1.04 to 0.32; P=0.301; I2=0; P for heterogeneity =0.710), compared with consumption of comparator diets."
 	},
 	{
@@ -2611,7 +2494,7 @@
 		"year": 2009,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "diabetes",
+		"tags": "diabetes,vegetarian,vegan",
 		"quote": "In clinical trials in individuals with type 2 diabetes, low-fat vegan diets improve glycemic control to a greater extent than conventional diabetes diets"
 	},
 	{
@@ -2620,7 +2503,7 @@
 		"year": 2009,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "diabetes",
+		"tags": "diabetes,vegetarian,vegan",
 		"quote": "In clinical trials in individuals with type 2 diabetes, low-fat vegan diets improve glycemic control to a greater extent than conventional diabetes diets"
 	},
 	{
@@ -2629,7 +2512,7 @@
 		"year": 2009,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "diabetes",
+		"tags": "diabetes,vegetarian",
 		"quote": "The study population comprised 22,434 men and 38,469 women...The 5-unit BMI difference between vegans and nonvegetarians indicates a substantial potential of vegetarianism to protect against obesity. Increased conformity to vegetarian diets protected against risk of type 2 diabetes after lifestyle characteristics and BMI were taken into account. Pesco- and semi-vegetarian diets afforded intermediate protection."
 	},
 	{
@@ -2638,7 +2521,7 @@
 		"year": 2011,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "diabetes",
+		"tags": "diabetes,vegetarian",
 		"quote": "Participants were 15,200 men and 26,187 women...who were free of diabetes. ... Vegetarian diets (vegan, lacto ovo, semi-) were associated with a substantial and independent reduction in diabetes incidence. In Blacks the dimension of the protection associated with vegetarian diets was as great as the excess risk associated with Black ethnicity."
 	},
 	{
@@ -2647,7 +2530,7 @@
 		"year": 2003,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "diabetes",
+		"tags": "diabetes,vegetarian",
 		"quote": "The vegetarian diet, therefore, contains a portfolio of natural products and food forms of benefit for both the carbohydrate and lipid abnormalities in diabetes. It is anticipated that their combined use in vegetarian diets will produce very significant metabolic advantages for the prevention and treatment of diabetes and its complications."
 	},
 	{
@@ -2656,7 +2539,7 @@
 		"year": 2015,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "diabetes",
+		"tags": "diabetes,vegetarian",
 		"quote": "This systematic review and meta-analysis provides evidence that vegetarian diets effectively lower blood concentrations of total cholesterol, low-density lipoprotein cholesterol, high-density lipoprotein cholesterol, and non-high-density lipoprotein cholesterol. Such diets could be a useful nonpharmaceutical means of managing dyslipidemia, especially hypercholesterolemia."
 	},
 	{
@@ -2665,7 +2548,7 @@
 		"year": 2006,
 		"type": "study",
 		"availability": "full",
-		"tags": "diabetes",
+		"tags": "diabetes,vegan",
 		"quote": "Individuals with type 2 diabetes (n = 99) were randomly assigned to a low-fat vegan diet (n = 49) or a diet following the American Diabetes Association (ADA) guidelines (n = 50) ... Both a low-fat vegan diet and a diet based on ADA guidelines improved glycemic and lipid control in type 2 diabetic patients. These improvements were greater with a low-fat vegan diet."
 	},
 	{
@@ -2674,7 +2557,7 @@
 		"year": 2016,
 		"type": "study",
 		"availability": "full",
-		"tags": "diabetes",
+		"tags": "diabetes,vegan",
 		"quote": "Although both groups showed significant reductions in HbA1C levels, the reductions were larger in the vegan group than in the conventional group (-0.5% vs. -0.2%; p-for-interaction = 0.017). When only considering participants with high compliance, the difference in HbA1c level reduction between the groups was found to be larger (-0.9% vs. -0.3%). The beneficial effect of vegan diets was noted even after adjusting for changes in total energy intake or waist circumference over the 12 weeks."
 	},
 	{
@@ -2683,7 +2566,7 @@
 		"year": 2003,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "cardiovascular disease",
+		"tags": "heart disease,WFPB",
 		"quote": "Evidence from prospective cohort studies indicates that a high consumption of plant-based foods such as fruit and vegetables, nuts, and whole grains is associated with a significantly lower risk of coronary artery disease and stroke...Such diets, which also have many other health benefits, deserve more emphasis in dietary recommendations to prevent chronic diseases."
 	},
 	{
@@ -2692,7 +2575,7 @@
 		"year": 2017,
 		"type": "study",
 		"availability": "full",
-		"tags": "cardiovascular disease",
+		"tags": "heart disease,WFPB",
 		"quote": "After 12 years, we reviewed the CVD events of our 18 adherent patients. During the eight years prior to entering our study, while in the care of expert cardiologists, they had sustained 49 cardiac events, which was indicative of disease progression. In contrast, 17 of the 18 patients sustained no further events during the 12 years they spent in our study"
 	},
 	{
@@ -2701,7 +2584,7 @@
 		"year": 2014,
 		"type": "study",
 		"availability": "full",
-		"tags": "cardiovascular disease",
+		"tags": "heart disease,WFPB",
 		"quote": "Of the 198 patients with CVD, 177 (89%) were adherent. Major cardiac events judged to be recurrent disease totaled one stroke in the adherent cardiovascular participants—a recurrent event rate of .6%, significantly less than reported by other studies of plant-based nutrition therapy. Thirteen of 21 (62%) nonadherent participants experienced adverse events."
 	},
 	{
@@ -2710,7 +2593,7 @@
 		"year": 1998,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "cardiovascular disease",
+		"tags": "heart disease",
 		"quote": "Investigators collected and analyzed mortality data for >50 diseases, including 7 different cancers, from 65 counties and 130 villages in rural mainland China ... The combined coronary artery disease mortality rates for both genders in rural China were inversely associated with the frequency of intake of green vegetables and plasma erythrocyte monounsaturated fatty acids, but positively associated with a combined index of salt intake plus urinary sodium and plasma apolipoprotein B. These apolipoproteins, in turn, are positively associated with animal protein intake and the frequency of meat intake and inversely associated with plant protein, legume, and light-colored vegetable intake."
 	},
 	{
@@ -2719,7 +2602,7 @@
 		"year": 2015,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "cardiovascular disease",
+		"tags": "heart disease,WFPB",
 		"quote": "We suggest that a shift toward a plant-based diet may confer protective effects against atherosclerotic CAD by increasing endothelial protective factors in the circulation while reducing factors that are injurious to endothelial cells ... This review provides a mechanistic perspective of the evidence for protection by a plant-based diet against atherosclerotic CAD."
 	},
 	{
@@ -2727,7 +2610,7 @@
 		"url": "http://www.sciencedirect.com/science/article/pii/S014067365191210X?_rdoc=1&_fmt=high&_origin=gateway&_docanchor=&md5=b8429449ccfc9c30159a5f9aeaa92ffb&ccp=y",
 		"year": 1951,
 		"type": "study",
-		"tags": "cardiovascular disease",
+		"tags": "heart disease",
 		"availability": "abstract",
 		"quote": ""
 	},
@@ -2737,7 +2620,7 @@
 		"year": 2015,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "milk,cancer",
+		"tags": "dairy,hormones,cancer",
 		"quote": "The collected data from other researchers and our own data are indicating that the presence of steroid hormones in dairy products could be counted as an important risk factor for various cancers in humans."
 	},
 	{
@@ -2746,7 +2629,7 @@
 		"year": 2014,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "milk,bones",
+		"tags": "dairy,bones",
 		"quote": "Two large Swedish cohorts, one with 61 433 women (39-74 years at baseline 1987-90) and one with 45 339 men (45-79 years at baseline 1997), were administered food frequency questionnaires ... High milk intake was associated with higher mortality in one cohort of women and in another cohort of men, and with higher fracture incidence in women"
 	},
 	{
@@ -2755,7 +2638,7 @@
 		"year": 2015,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "milk",
+		"tags": "dairy,overall mortality,heart disease,cancer",
 		"quote": "The range of non-fermented and fermented milk consumption and the shape of the associations between milk consumption and mortality differed considerably between studies ... we observed no consistent association between milk consumption and all-cause or cause-specific mortality."
 	},
 	{
@@ -2764,7 +2647,7 @@
 		"year": 2011,
 		"type": "study",
 		"availability": "full",
-		"tags": "plant-based diet,low carb",
+		"tags": "overall mortality,low carb",
 		"quote": "A low-carbohydrate diet based on animal sources was associated with higher all-cause mortality in both men and women, whereas a vegetable-based low-carbohydrate diet was associated with lower all-cause and cardiovascular disease mortality rates."
 	},
 	{
@@ -2773,7 +2656,7 @@
 		"year": 2014,
 		"type": "study",
 		"availability": "full",
-		"tags": "plant-based diet,fiber",
+		"tags": "eating guidelines,WFPB,vegan,moderation",
 		"quote": "The most restricted diet, i.e., the vegan diet, had the lowest total energy intake, better fat intake profile, lowest protein and highest dietary fiber intake in contrast to the omnivorous diet. Calcium intake was lowest for the vegans and below national dietary recommendations. The vegan diet received the highest index values and the omnivorous the lowest for HEI-2010 and MDS. Typical aspects of a vegan diet (high fruit and vegetable intake, low sodium intake, and low intake of saturated fat) contributed substantially to the total score, independent of the indexing system used. "
 	},
 	{
@@ -2782,7 +2665,7 @@
 		"year": 2014,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "plant-based diet",
+		"tags": "heart disease,cancer,overall mortality,moderation,vegan",
 		"quote": "Vegetarian diets confer protection against cardiovascular diseases, cardiometabolic risk factors, some cancers and total mortality. Compared to lacto-ovo-vegetarian diets, vegan diets seem to offer additional protection for obesity, hypertension, type-2 diabetes, and cardiovascular mortality. Males experience greater health benefits than females."
 	},
 	{
@@ -2791,7 +2674,7 @@
 		"year": 1994,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "milk,bones",
+		"tags": "dairy,bones",
 		"quote": "There were 416 subjects ... Consumption of dairy products, particularly at age 20 years, was associated with an increased risk of hip fracture in old age."
 	},
 	{
@@ -2801,7 +2684,7 @@
 		"year": 2009,
 		"type": "research report",
 		"availability": "full",
-		"tags": "plant-based diet",
+		"tags": "eating guidelines,vegetarian",
 		"quote": "It is the position of the American Dietetic Association that appropriately planned vegetarian diets, including total vegetarian or vegan diets, are healthful, nutritionally adequate, and may provide health benefits in the prevention and treatment of certain diseases. ... An evidence- based review showed that vegetarian diets can be nutritionally adequate in pregnancy and result in positive maternal and infant health outcomes. The results of an evidence-based review showed that a vegetarian diet is associated with a lower risk of death from ischemic heart disease. Vegetarians also appear to have lower low-density lipoprotein cholesterol levels, lower blood pressure, and lower rates of hypertension and type 2 diabetes than nonvegetarians. Furthermore, vegetarians tend to have a lower body mass index and lower overall cancer rates. "
 	},
 	{
@@ -2811,7 +2694,7 @@
 		"year": 2016,
 		"type": "research report",
 		"availability": "full",
-		"tags": "plant-based diet",
+		"tags": "eating guidelines,vegetarian",
 		"quote": "These diets are appropriate for all stages of the life cycle, including pregnancy, lactation, infancy, childhood, adolescence, older adulthood, and for athletes. Plant-based diets are more environmentally sustainable than diets rich in animal products because they use fewer natural resources and are associated with much less environmental damage. Vegetarians and vegans are at reduced risk of certain health conditions, including ischemic heart disease, type 2 diabetes, hypertension, certain types of cancer, and obesity. ... Vegans need reliable sources of vitamin B-12, such as fortified foods or supplements."
 	},
 	{
@@ -2820,52 +2703,16 @@
 		"year": 2009,
 		"availability": "abstract",
 		"type": "study",
-		"tags": "canker sores,milk",
+		"tags": "canker sores,dairy",
 		"quote": "These results indicate the strong association between high levels of serum anti-CMP [cow's milk protein] IgA, IgG and IgE antibodies and clinical manifestations of recurrent aphthous ulcers [canker sores].",
 		"pdf": "https://health.gov/dietaryguidelines/2015-scientific-report/PDFs/Scientific-Report-of-the-2015-Dietary-Guidelines-Advisory-Committee.pdf"
-	},
-	{
-		"title": "Efficacy of honey in comparison to topical corticosteroid for treatment of recurrent minor aphthous ulceration: a randomized, blind, controlled, parallel, double-center clinical trial.",
-		"url": "https://www.ncbi.nlm.nih.gov/pubmed/25019115",
-		"year": 2014,
-		"availability": "abstract",
-		"type": "study",
-		"tags": "canker sores,honey",
-		"quote": "There were 94 subjects, with 180 minor recurrent aphthous ulcerations. The ulcers were distributed as 67, 57, and 56 ulcers for honey, topical corticosteroid, and Orabase treatment, respectively. There was a statistically significant difference between the honey group and the other two groups in terms of reduction of ulcer size, days of pain, and degree of erythema. No side effects were reported in any group."
-	},
-	{
-		"title": "Clinical evaluation of fluid extract of Chamomilla recutita for oral aphthae.",
-		"url": "https://www.ncbi.nlm.nih.gov/pubmed/16865865",
-		"year": 2006,
-		"availability": "abstract",
-		"type": "study",
-		"tags": "canker sores,chamomile",
-		"quote": "This study evaluates the fluid extract from Chamomilla recutita's safety and effectiveness in pain relief from aphthous stomatitis and other painful ulcers of the oral mucous membrane. The analgesic effect was considered excellent by 82% and good by 18% of the patients, as demonstrated with the Analogical Visual Scale for chronic and experimental pains after 5, 10, and 15 minutes. Tolerance was evaluated as excellent by 97% and good by 1% of the subjects."
-	},
-	{
-		"title": "Effect of sodium lauryl sulfate on recurrent aphthous stomatitis: a randomized controlled clinical trial.",
-		"url": "https://www.ncbi.nlm.nih.gov/pubmed/22435470",
-		"year": 2012,
-		"availability": "abstract",
-		"type": "study",
-		"tags": "canker sores,SLS",
-		"quote": "The number of ulcers and episodes did not differ significantly between SLS-A, SLS-B, and SLS-free. Only duration of ulcers and mean pain score was significantly decreased during the period using SLS-free."
-	},
-	{
-		"title": "The effectiveness of dentifrices without and with sodium lauryl sulfate on plaque, gingivitis and gingival abrasion—a randomized clinical trial",
-		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4799265/",
-		"year": 2016,
-		"availability": "full",
-		"type": "study",
-		"tags": "canker sores,SLS",
-		"quote": "As dentifrices with and without SLS clinically showed no difference in the present study with regard to gingivitis and plaque, an SLS-free dentifrice could be recommended to patients suffering from recurrent aphthous ulcers. Whether the frequency of recurrent aphthous ulcers is reduced when people start to brush with an SLS-free dentifrice remains still part of a discussion"
 	},
 	{
 		"title": "Scientific Report of the 2015 Dietary Guidelines Advisory Committee",
 		"year": 2015,
 		"availability": "full",
 		"type": "research report",
-		"tags": "diet",
+		"tags": "eating guidelines",
 		"quote": "The major findings regarding sustainable diets were that a diet higher in plant-based foods, such as vegetables, fruits, whole grains, legumes, nuts, and seeds, and lower in calories and animal-based foods is more health promoting and is associated with less environmental impact than is the current U.S. diet. ",
 		"pdf": "https://health.gov/dietaryguidelines/2015-scientific-report/PDFs/Scientific-Report-of-the-2015-Dietary-Guidelines-Advisory-Committee.pdf"
 	},
@@ -2874,16 +2721,16 @@
 		"year": 2018,
 		"availability": "full",
 		"type": "research report",
-		"tags": "diet",
+		"tags": "diabetes,eating guidelines",
 		"quote": "The Mediterranean (54,55), Dietary Approaches to Stop Hyper-tension (DASH) (56–58), and plant-based diets (59,60) are all examples of healthful eating patterns that have shown positive results in research, but individualized meal planning should focus on personal preferences, needs, and goals.",
 		"pdf": "http://care.diabetesjournals.org/content/diacare/41/Supplement_1/S38.full.pdf"
 	},
 	{
-		"title": "Plates, pyramids, planetDevelopments in national healthy and sustainable dietary guidelines: a state of play assessment",
+		"title": "Plates, pyramids, planet: Developments in national healthy and sustainable dietary guidelines: a state of play assessment",
 		"year": 2016,
 		"availability": "full",
 		"type": "research report",
-		"tags": "diet",
+		"tags": "climate change,eating guidelines",
 		"quote": "Characteristics of low environmental impact diets consistent with good health ... Diversity – a wide variety of foods eaten. Based around: minimally processed tubers and whole grains; legumes; fruits and vegetables – particularly those that are field grown, “robust” (less prone to spoilage) and less requiring of rapid and more energy-intensive transport modes. Meat, if eaten, in moderate quantities – and all animal parts consumed. Dairy products or alternatives (e.g. fortified milk substitutes and other foods rich in calcium and micronutrients) eaten in moderation. Unsalted seeds and nuts. Small quantities of fish and aquatic products sourced from certified fisheries. Very limited consumption of foods high in fat, sugar or salt and low in micronutrients e.g. crisps, confectionery, sugary drinks. Oils and fats with a beneficial Omega 3:6 ratio such as rapeseed  and olive oil. ",
 		"pdf": "http://fao.org/3/a-i5640e.pdf"
 	},
@@ -2894,7 +2741,7 @@
 		"year": 2014,
 		"type": "research report",
 		"availability": "full",
-		"tags": "plant-based diet",
+		"tags": "eating guidelines,heart disease,cancer,diabetes,vegan",
 		"quote": "A healthy vegan diet has many health benefits including lower rates of obesity, heart disease, high blood pressure, high blood cholesterol, type 2 diabetes and certain types of cancer. It may take planning to get enough protein, iron, zinc, calcium, vitamins D and B12 and omega-3 fats from foods or supplements. A healthy vegan diet can meet all your nutrient needs at any stage of life including when you are pregnant, breastfeeding or for older adults"
 	},
 	{
@@ -2903,17 +2750,8 @@
 		"year": 2015,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "milk,cancer",
+		"tags": "dairy,cancer",
 		"quote": "α-Casein and total casein did not affect the proliferations of RWPE1, HEK293, A459, SNU484, MCF7, HEK293, or RWPE1 cells. However, PC3 cells treated with 1 mg/mL of α-casein and casein showed increased proliferation (228% and 166%, respectively), and the proliferation of LNCaP cells was also enhanced by 134% and 142%, respectively"
-	},
-	{
-		"title": "Fourth National Climate Assessment (NCA4), Volume I",
-		"url": "https://science2017.globalchange.gov/",
-		"year": 2017,
-		"type": "research report",
-		"availability": "full",
-		"tags": "climate",
-		"quote": "This period is now the warmest in the history of modern civilization. ... human activities, especially emissions of greenhouse gases, are the dominant cause of the observed warming since the mid-20th century. ... Thousands of studies conducted by researchers around the world have documented changes in surface, atmospheric, and oceanic temperatures; melting glaciers; diminishing snow cover; shrinking sea ice; rising sea levels; ocean acidification; and increasing atmospheric water vapor. ... global average sea level has risen by about 7–8 inches since 1900, with almost half (about 3 inches) of that rise occurring since 1993 ... Heavy rainfall is increasing in intensity and frequency across the United States and globally and is expected to continue to increase. ... Heatwaves have become more frequent in the United States since the 1960s, while extreme cold temperatures and cold waves are less frequent. ... The incidence of large forest fires in the western United States and Alaska has increased since the early 1980s and is projected to further increase ... The global atmospheric carbon dioxide (CO2) concentration has now passed 400 parts per million (ppm), a level that last occurred about 3 million years ago, when both global average temperature and sea level were significantly higher than today. ... In 2014 and 2015, emission growth rates slowed as economic growth became less carbon-intensive. Even if this slowing trend continues, however, it is not yet at a rate that would limit global average temperature change to well below 3.6°F (2°C) above preindustrial levels."
 	},
 	{
 		"title": "Analysis and valuation of the health and climate change cobenefits of dietary change",
@@ -2921,7 +2759,7 @@
 		"year": 2016,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "climate,plant-based diet,meat production",
+		"tags": "climate change,overall mortality",
 		"quote": "Transitioning toward more plant-based diets that are in line with standard dietary guidelines could reduce global mortality by 6–10% and food-related greenhouse gas emissions by 29–70% compared with a reference scenario in 2050...Overall, we estimate the economic benefits of improving diets to be 1–31 trillion US dollars, which is equivalent to 0.4–13% of global gross domestic product (GDP) in 2050."
 	},
 	{
@@ -2931,7 +2769,7 @@
 		"year": 2012,
 		"type": "research report",
 		"availability": "full",
-		"tags": "climate,agriculture",
+		"tags": "climate change,food security",
 		"quote": "Food systems contribute 19%–29% of global anthropogenic green-house gas (GHG) emissions [in 2008]. ... climate change will affect agricultural yields and earnings,food prices, reliability of delivery, food quality, and, notably, food safety.Low-income producers and consumers of food will be more vulnerable ..."
 	},
 	{
@@ -2941,7 +2779,7 @@
 		"year": 2012,
 		"type": "research report",
 		"availability": "full",
-		"tags": "climate,agriculture",
+		"tags": "climate change,food security",
 		"quote": "The world’s agricultural systems face an uphill struggle in feeding a projected nine to ten billion people by 2050. Climate change introduces a significant hurdle in this struggle."
 	},
 	{
@@ -2950,7 +2788,7 @@
 		"year": 2013,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "climate,meat production",
+		"tags": "climate change",
 		"quote": "[In the UK] By far the largest potential reduction in GHG emissions is achieved by eliminating meat from the diet (35% reduction), followed by changing from carbon-intensive lamb and beef to less carbon-intensive pork and chicken (18% reduction). ... We show how combinations of consumer actions can easily lead to reductions of 25% in food related GHG emissions. If such changes were adopted by the entire UK population this would be equivalent to a 71% reduction in the exhaust pipe emissions of CO2 from the entire UK passenger car fleet (which totalled 71 Mt CO2e year−1 in 2009)."
 	},
 	{
@@ -2959,7 +2797,7 @@
 		"year": 2014,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "climate,meat production",
+		"tags": "climate change,dairy",
 		"quote": "We conclude that reduced ruminant meat and dairy consumption will be indispensable for reaching the 2 °C target with a high probability"
 	},
 	{
@@ -2969,7 +2807,7 @@
 		"year": 2013,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "climate,meat production",
+		"tags": "climate change",
 		"quote": "To reach the 2 °C climate target (2.1 tCO2-eq. per capita in 2050), the GHG emission intensity of consumption has to be reduced by a factor of 5 in 2050. ... The above review of the feasibility of the GHG intensities indicates two areas where changes in consumption trends might still be required to achieve the climate target: meat and dairy (animal calories) consumption and air travel"
 	},
 	{
@@ -2978,7 +2816,7 @@
 		"year": 2017,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "climate,meat production,land use",
+		"tags": "climate change,land use",
 		"quote": "Our results demonstrate that substituting one food for another, beans for beef, could achieve approximately 46 to 74% of the reductions needed to meet the 2020 GHG [greenhouse gas) target for the US. In turn, this shift would free up 42% of US cropland (692,918 km2)."
 	},
 	{
@@ -2987,7 +2825,7 @@
 		"year": 2006,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "climate,water,biodiversity",
+		"tags": "climate change,fish (animal),biodiversity",
 		"quote": "Globally, the rate of fisheries collapses, defined here as catches dropping below 10% of the recorded maximum (23), has been accelerating over time, with 29% of currently fished species considered collapsed in 2003 ... The data further revealed that despite large increases in global fishing effort, cumulative yields across all species and LMEs [large marine ecosystems] had declined by 13% ... This trend is of serious concern because it projects the global coUapse of all taxa currently fished by the mid-21st century (based on the extrapolation of regression in Fig. 3A to I00% in the year 2048)."
 	},
 	{
@@ -3006,7 +2844,7 @@
 		"year": 2006,
 		"type": "research report",
 		"availability": "full",
-		"tags": "climate,meat production,water use, water pollution, air pollution",
+		"tags": "climate change,water use, water pollution, air pollution",
 		"quote": "The livestock sector emerges as one of the top two or three most significant contributors to the most serious environmental problems, at every scale from local to global. The findings of this report suggest that it should be a major policy focus when dealing with problems of land degradation, climate change and air pollution, water shortage and water pollution and loss of biodiversity."
 	},
 	{
@@ -3015,7 +2853,7 @@
 		"year": 2010,
 		"type": "research report",
 		"availability": "full",
-		"tags": "climate,meat production,agriculture,water pollution",
+		"tags": "climate change,water pollution,land use,water use,heart disease,cancer",
 		"quote": "Benefits and cost are distributed rather unevenly ... Demand for meat ... is projected to double between 2000 and 2050. ... the livestock revolution has been fed by inexpensive, often subsidixed grains, cheap fuel, and rapid technological change. ... Livestock occupy over one-fourth of the terrestrial surface of the planet, on pasture and grazing land, of which a significant part is degraded. Expansion of pasture occurs in Latin America at the expense of forests. Concentrate feed demand occupies about one-third of total arable land. ... [Livestock production is] associated with pollution, habitat destruction, and greenhouse gas emissions. Livestock are also an important contributor to water pollution"
 	},
 	{
@@ -3024,7 +2862,7 @@
 		"year": 2016,
 		"type": "research report",
 		"availability": "full",
-		"tags": "climate,agriculture",
+		"tags": "climate change,food security",
 		"quote": "Beyond 2030, the negative impacts of climate change on the productivity of crops, livestock, fisheries and forestry will become increasingly severe in all regions."
 	},
 	{
@@ -3033,7 +2871,7 @@
 		"year": 2013,
 		"type": "research report",
 		"availability": "full",
-		"tags": "climate,meat production",
+		"tags": "climate change",
 		"quote": "Total GHG emissions from livestock supply chains are estimated at 7.1 gigatonnes CO2-eq per annum for the 2005 reference period. They represent 14.5 percent of all human-induced emissions using the most recent IPCC estimates for total an-thropogenic emissions (49 gigatonnes CO2-eq for the year 2004; IPCC, 2007)."
 	},
 	{
@@ -3042,7 +2880,7 @@
 		"year": 2017,
 		"type": "research report",
 		"availability": "full",
-		"tags": "climate,meat production",
+		"tags": "climate change,biodiversity loss,land use",
 		"quote": "If everyone reduced the amount of animal products they ate to meet their nutritional requirements, the total agricultual land required would decline by 13%...The growth in intensive industrial farming coupled with an increased need for protein and energy-rich animal feed has had a devastating impact on nature. Feed crops threaten the biodiversity of many of Earth's most valuble and vulnerable areas."
 	},
 	{
@@ -3051,7 +2889,7 @@
 		"year": 2009,
 		"type": "research report",
 		"availability": "full",
-		"tags": "climate,deforestation,meat production",
+		"tags": "climate change,amazon,land degradation",
 		"quote": "The Amazon is estimated to store 80-120 billion tonnes of carbon. If destroyed, some fifty times the annual GHG emissions of the USA could be emitted ... According to the Brazilian government: ‘Cattle are responsible for about 80% of all deforestation’ in the Amazon region ... 12The cattle sector in the Brazilian Amazon is responsible for 14% of the world’s annual deforestation. This makes it the world’s largest driver of deforestation, responsible for more forest loss than the total deforestation in any country outside Brazil except Indonesia"
 	},
 	{
@@ -3061,7 +2899,7 @@
 		"year": 2004,
 		"type": "research report",
 		"availability": "full",
-		"tags": "deforestation,meat production",
+		"tags": "amazon,land degradation",
 		"quote": "From an environmental perspective, despite the uncertainties of valuation, the limited evidence available suggests that the costs of deforestation may be extremely high and possibly exceed private benefits from cattle ranching, particularly when the uncertainties of irreversible losses of genetic heritage (not yet fully understood) are incorporated. ... Land-use data on Amazonia demonstrates that the main cause of deforestation in the region is cattle ranching. Expansion of ranching since the early 1970s has been a continu-ous and inertial process. ... Regardless of who the original agents are, the end result of the land occupation process isalmost inevitably the establishment of ranching activities. If this were not financially viable, forest conversion or deforestation would not occur on the scale on which it is occurring"
 	},
 	{
@@ -3070,7 +2908,7 @@
 		"year": 2005,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "water pollution",
+		"tags": "water pollution,biodiversity loss",
 		"quote": "Here we demonstrate that nitrogen-deficient areas of the tropical and subtropical oceans are acutely vulnerable to nitrogen pollution. Despite naturally high nutrient concentrations and productivity6,7,8, nitrogen-rich agricultural runoff fuels large (54–577 km2) phytoplankton blooms in the Gulf of California. Runoff exerts a strong and consistent influence on biological processes, in 80% of cases stimulating blooms within days of fertilization and irrigation of agricultural fields. We project that by the year 2050, 27–59% of all nitrogen fertilizer will be applied in developing regions located upstream of nitrogen-deficient marine ecosystems. Our findings highlight the present and future vulnerability of these ecosystems to agricultural runoff."
 	},
 	{
@@ -3080,7 +2918,7 @@
 		"year": 2017,
 		"type": "research report",
 		"availability": "full",
-		"tags": "land use,water use,land degradation,agribusiness,meat production",
+		"tags": "land use,water use,grasslands,land degradation,consolidation",
 		"quote": "The scale and environmental impact of the meat industry is enormous: more than a third of all land in the continental U.S. is dedicated to growing feed crops and providing the pastures to raise meat. ... Demand for feed crops is driving widespread water contamination across the country, destroying America’s last native prairies, and releasing potent greenhouse gases. ... Our research found that these [environmental] impacts are driven primarily by the large agribusinesses that comprise America’s meat industry. At the pinnacle of this concentration of power is Tyson Foods, America’s largest meat company, which produces one out of every five pounds of all meat raised in the United States. Tyson is renowned for pioneering and consolidating our modern industrial meat system. Our analysis also found Tyson to be the dominant meat company in all the regions suffering the worst environmental impacts from industrial meat and feed production – from grassland clearing in Nebraska, Iowa, and Kansas, to manure and fertilizer pollution pouring into waterways from the Heartland down to the Gulf states."
 	},
 	{
@@ -3100,7 +2938,7 @@
 		"year": 2005,
 		"type": "study",
 		"availability": "full",
-		"tags": "deforestation",
+		"tags": "land use",
 		"quote": "The paper observes large differences among requirements for specific foods. Especially livestock products, fats, and coffee have large land requirements. ... The trend toward food consumption associated with affluent life styles will bring with it a need for more land. This causes competition with other claims, such as infrastructural developments or ecological forms of agriculture."
 	},
 	{
@@ -3110,7 +2948,7 @@
 		"year": 2016,
 		"type": "research report",
 		"availability": "full",
-		"tags": "land use,climate change,water use",
+		"tags": "land use,climate change,water use,water pollution,biodiversity loss",
 		"quote": "we estimate that the world needs to close a 70 percent “food gap” between the crop calories available in 2006 and expected calorie demand in 2050. The food gap stems primarily from population growth and changing diets. ... Western-style diets, which are high in calories, protein, and animal-based foods. ... Overconsumption of protein occurs in all of the world’s regions, and it is rising ..., animal based foods are typically more resource-intensive and environmentally impactful to produce than plant-based foods (Figure ES-2). Production of animal-based foods accounted for more than three-quarters of global agricultural land use and around two-thirds of agriculture’s production-related greenhouse gas emissions in 2009, while only contributing 37 percent of total protein consumed by people in that year. ... Beef is one of the least efficient foods to produce when considered from a “feed input to food output” perspective. When accounting for all feeds, including both crops and forages, by one estimate only 1 percent of gross cattle feed calories and 4 percent of ingested protein are converted to human-edible calories and protein, respectively. In comparison, by this estimate, poultry convert 11 percent of feed calories and 20 percent of feed protein into human edible calories and protein."
 	},
 	{
@@ -3137,7 +2975,7 @@
 		"year": 2010,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "soy,phytochemicals,phytoestrogens",
+		"tags": "soy,phytochemicals,phytoestrogens,reproduction",
 		"quote": "In contrast to the results of some rodent studies, findings from a recently published metaanalysis and subsequently published studies show that neither isoflavone supplements nor isoflavone-rich soy affect total or free testosterone (T) levels. Similarly, there is essentially no evidence from the nine identified clinical studies that isoflavone exposure affects circulating estrogen levels in men. Clinical evidence also indicates that isoflavones have no effect on sperm or semen parameters, although only three intervention studies were identified and none were longer than 3 months in duration. Finally, findings from animal studies suggesting that isoflavones increase the risk of erectile dysfunction are not applicable to men, because of differences in isoflavone metabolism between rodents and humans and the excessively high amount of isoflavones to which the animals were exposed."
 	},
 	{
@@ -3155,7 +2993,7 @@
 		"year": 2014,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "soy",
+		"tags": "soy,formula",
 		"quote": "The present review includes cross-sectional, case–control, cohort studies or clinical trials that were carried out in children fed SIF [soy infant formula] compared with those fed other types of infant formulas and that measured safety. ... We found that the anthropometric patterns of children fed SIF were similar to those of children fed CMF [cow's milk-based formula] or HM [human milk substitute]. Despite the high levels of phytates and aluminium in SIF, Hb, serum protein, Zn and Ca concentrations and bone mineral content were found to be similar to those of children fed CMF or HM. We also found the levels of genistein and daidzein to be higher in children fed SIF; however, we did not find strong evidence of a negative effect on reproductive and endocrine functions. Immune measurements and neurocognitive parameters were similar in all the feeding groups. In conclusion, modern SIF are evidence-based safety options to feed children requiring them. The patterns of growth, bone health and metabolic, reproductive, endocrine, immune and neurological functions are similar to those observed in children fed CMF or HM."
 	},
 	{
@@ -3164,7 +3002,7 @@
 		"year": 2001,
 		"type": "study",
 		"availability": "full",
-		"tags": "soy,phytoestrogens",
+		"tags": "soy,phytoestrogens,formula",
 		"quote": "Exposure to soy formula does not appear to lead to different general health or reproductive outcomes than exposure to cow milk formula. Although the few positive findings should be explored in future studies, our findings are reassuring about the safety of infant soy formula. ... Dietary phytoestrogens during adulthood have been suggested in numerous epidemiological studies to be protective against cancer of the prostate, colon, rectum, stomach, breast, and lung and to exert similarly protective effects against chronic conditions such as atherosclerosis and osteoporosis."
 	},
 	{
@@ -3173,7 +3011,7 @@
 		"year": 2008,
 		"type": "study",
 		"availability": "full",
-		"tags": "soy,phytoestrogens",
+		"tags": "soy,phytoestrogens,reproduction",
 		"quote": "These data suggest that higher intake of soy foods and soy isoflavones is associated with lower sperm concentration [measured by sperm/ml]. ... Soy food and isoflavone intakes were unrelated to total sperm count, ejaculate volume, sperm motility or sperm morphology in these analyses."
 	},
 	{
@@ -3191,7 +3029,7 @@
 		"year": 2018,
 		"type": "study",
 		"availability": "full",
-		"tags": "arthritis",
+		"tags": "arthritis,inflammation,obesity,microbiota",
 		"quote": "obesity is associated with loss of beneficial Bifidobacteria, while key proinflammatory species gain in abundance. A downstream systemic inflammatory signature culminates with macrophage migration to the synovium and accelerated knee OA. Oligofructose supplementation restores the lean gut microbiome in obese mice, in part, by supporting key commensal microflora, particularly Bifidobacterium pseudolongum. This is associated with reduced inflammation in the colon, circulation, and knee and protection from OA."
 	},
 	{
@@ -3209,7 +3047,7 @@
 		"year": 2018,
 		"type": "research report",
 		"availability": "abstract",
-		"tags": "cancer",
+		"tags": "cancer,fruit,veges,meat",
 		"quote": "Vegetables and fruit are also a rich source of various nutrients that can impact cancer risk, such as vitamins C and E, selenium and folate. A substantial body of experimental data links many of these compounds with anti-tumorigenic effects in various cells in both animal and in vitro models...red and processed meat with an increased risk of cancer...alcohol consumption leads to cancer"
 	},
 	{
@@ -3246,7 +3084,7 @@
 		"year": 2017,
 		"type": "article",
 		"availability": "full",
-		"tags": "climate,deforestation,meat production",
+		"tags": "amazon,land use, land degradation",
 		"quote": "Deforestation has trended upwards since 2012, with a sharp 29 percent increase in the rate of clearing in 2016 ... Old deforestation motives continue ... These are in addition to the overt economy of selling agricultural products for profit"
 	},
 	{
@@ -3255,7 +3093,7 @@
 		"year": 2015,
 		"type": "meta analysis",
 		"availability": "abstract",
-		"tags": "climate,biodiversity,meat production",
+		"tags": "biodiversity,land use",
 		"quote": "Livestock production is the single largest driver of habitat loss"
 	}
 ]
