@@ -135,6 +135,14 @@ export default class Resource extends Component {
 				</div>
 			);
 		}
+		let isGraphic = null;
+		if (resource.graphic) {
+			isGraphic = (
+				<Typography align="center" variant="h6">
+					GRAPHIC
+				</Typography>
+			);
+		}
 
 		let buy = resource.buyURL;
 		if (resource.amzn) buy = `http://a.co/${resource.amzn}`;
@@ -148,6 +156,9 @@ export default class Resource extends Component {
 					<Typography align="center" variant="h4">
 						{title}
 					</Typography>
+
+					{isGraphic}
+
 					<Typography align="center" variant="h6">
 						{metaData}
 					</Typography>
