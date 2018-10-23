@@ -32,13 +32,14 @@
 			"name": "Dr McDougall Education"
 		},
 		{
-			"url": "https://www.hsph.harvard.edu/nutritionsource/",
+			"url": "https://www.hsph.harvard.edu/nutritionsource/what-should-you-eat/",
 			"name": "Harvard Nutrition Source"
 		}
     ],
     "programs":[
 		{ "url": "https://www.chiphealth.com/", "name": "Complete Health Improvement Program (CHIP)" },
 		{ "url": "https://engine2diet.com/7drc/", "name": "Engine 2 Seven Day Challenge" },
+		{ "url": "https://www.challenge22.com/challenge22/", "name": "Challenge 22" },
 		{ "url": "https://www.plantpurenation.com/products/plantpure-health-weight-loss-seminar", "name": "Plant Pure Nation" },
 		{ "url": "https://nutritionstudies.org/courses/plant-based-nutrition/", "name": "Plant Based Nutrition Certificate" },
 		{ "url": "https://www.forksoverknives.com/cooking-course/", "name": "Forks Over Knives Cooking Course" }

@@ -17,7 +17,7 @@
 		"tags": "calcium,bones",
 		"quote": "Increasing calcium intake from dietary sources or by taking calcium supplements produces small non-progressive increases in BMD, which are unlikely to lead to a clinically significant reduction in risk of fracture."
 	},
-	{	
+	{
 		"title": "Dietary Sources of Energy, Solid Fats, and Added Sugars Among Children and Adolescents in the United States",
 		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3428130/",
 		"more_info_url": "https://epi.grants.cancer.gov/diet/foodsources/",
@@ -69,7 +69,7 @@
 		"year": 2010,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "flaxseed,ala,heart disease",
+		"tags": "flaxseed,omega-3,heart disease",
 		"quote": "it is possible to advocate a potential pleiotropic effect of ALA beyond the more conventional cholesterol-lowering actions of most cardiovascular drugs. Most importantly, the body of ALA research now argues persuasively for the initiation of careful, randomized, controlled trials of dietary flaxseed and/or ALA in a patient population with symptoms of atherosclerotic heart disease."
 	},
 	{
@@ -379,6 +379,134 @@
 		"availability": "full",
 		"tags": "antibiotics",
 		"quote": "It is evident that at present, the resources devoted to studying the role of antibiotic use in food animals—both in terms of funding and scientific inquiry—are insufficient. It is now critical that agricultural use of antibiotics be recognized as one of the major contributors to the development of resistant organisms that result in life-threatening human infections and included as part of the strategy to control the mounting public health crisis of antibiotic resistance."
+	},
+	{
+		"title": "Biological annihilation via the ongoing sixth mass extinction signaled by vertebrate population losses and declines",
+		"url": "http://www.pnas.org/content/114/30/E6089",
+		"year": 2017,
+		"type": "study",
+		"availability": "full",
+		"tags": "biodiversity loss,land use",
+		"quote": "Using a sample of 27,600 terrestrial vertebrate species, and a more detailed analysis of 177 mammal species, we show the extremely high degree of population decay in vertebrates, even in common “species of low concern.” Dwindling population sizes and range shrinkages amount to a massive anthropogenic erosion of biodiversity and of the ecosystem services essential to civilization. This “biological annihilation” underlines the seriousness for humanity of Earth’s ongoing sixth mass extinction event."
+	},
+	{
+		"title": "Linking sustainability to the healthy eating patterns of the Dietary Guidelines for Americans: a modelling study",
+		"url": "https://linkinghub.elsevier.com/retrieve/pii/S2542-5196(18)30167-0",
+		"pdf": "https://www.thelancet.com/pdfs/journals/lanplh/PIIS2542-5196(18)30167-0.pdf",
+		"year": 2018,
+		"type": "study",
+		"availability": "full",
+		"tags": "climate change,eating guidelines,mediterranean,vegetarian,water use,land use,water pollution",
+		"quote": "All three patterns had similar water depletion impacts, with fruits and vegetables as major contributors. For five of the six impacts, the VEG pattern had 42–84% lower burdens than both the US and MED patterns. Reliance on plant-based protein and eggs in the VEG pattern versus emphasis on animal-based protein in the other patterns was a key driver of differences, as was a lower overall protein foods recommendation in the VEG pattern."
+	},
+	{
+		"title": "Environmental Impacts of Plant-Based Diets: How Does Organic Food Consumption Contribute to Environmental Sustainability?",
+		"url": "https://www.frontiersin.org/articles/10.3389/fnut.2018.00008/full",
+		"year": 2018,
+		"type": "study",
+		"availability": "full",
+		"tags": "climate change,land use",
+		"quote": "A higher provegetarian score was associated with lower environmental impacts (GHG emissionsQ5vsQ1 = 838/1,664 kg CO2eq/year, −49.6%, P < 0.0001; CEDQ5vsQ1 = 4,853/6,775 MJ/year, −26.9%, P < 0.0001; land occupationQ5vsQ1 = 2,420/4,138 m2/year, −41.5%, P < 0.0001)."
+	},
+	{
+		"title": "WhooPea: Plant Sources Are Changing the Protein Landscape",
+		"url": "http://members.luxresearchinc.com/research/report/16091",
+		"year": 2014,
+		"type": "study",
+		"availability": "abstract",
+		"tags": "trends",
+		"quote": "The current dominance of meat and seafood will wane in the coming decades, and several alternative protein sources will fill the gap, potentially representing up to 33% market share within the overall protein space by 2054. "
+	},
+	{
+		"title": "WhooPea: Plant Sources Are Changing the Protein Landscape",
+		"url": "http://members.luxresearchinc.com/research/report/16091",
+		"year": 2014,
+		"type": "study",
+		"availability": "abstract",
+		"tags": "trends",
+		"quote": "The current dominance of meat and seafood will wane in the coming decades, and several alternative protein sources will fill the gap, potentially representing up to 33% market share within the overall protein space by 2054. "
+	},
+	{
+		"title": "WhooPea: Plant Sources Are Changing the Protein Landscape",
+		"url": "https://www.prnewswire.com/news-releases/62-increase-in-plant-based-product-claims-says-innova-market-insights-300677563.html",
+		"year": 2018,
+		"type": "article",
+		"availability": "abstract",
+		"tags": "trends",
+		"quote": ""
+	},
+	{
+		"title": "MEAT ALTERNATIVES - US - JUNE 2013",
+		"url": "https://store.mintel.com/meat-alternatives-us-june-2013",
+		"year": 2013,
+		"type": "study",
+		"availability": "abstract",
+		"tags": "trends",
+		"quote": "Conventional channel, natural supermarket, and specialty supermarket sales of meat alternatives reached $553 million in 2012, representing 8% growth from 2010."
+	},
+	{
+		"title": "Meat Substitutes Market worth 6.43 Billion USD by 2023",
+		"url": "https://www.marketsandmarkets.com/PressReleases/meat-substitutes.asp",
+		"year": 2017,
+		"type": "study",
+		"availability": "abstract",
+		"tags": "trends",
+		"quote": "The meat substitutes market is estimated at USD 4.63 Billion in 2018 and is projected to reach a value of USD 6.43 Billion by 2023, at a CAGR of 6.8%. The market is driven by factors such as rising health concerns (which include obesity and diabetes) due to consumption of meat products."
+	},
+	{
+		"title": "The Location and Protection Status of Earth’s Diminishing Marine Wilderness",
+		"url": "https://www.cell.com/current-biology/fulltext/S0960-9822(18)30772-3",
+		"year": 2018,
+		"type": "study",
+		"availability": "abstract",
+		"tags": "biodiversity loss",
+		"quote": "1. We classify 13.2% (∼55 million km 2) of the world’s ocean as marine wilderness; 2.Little wilderness remains in coastal areas (e.g., coral reefs) 3. Only 4.9% of marine wilderness is currently within marine protected areas; 4. Targets to retain marine wilderness are needed in global conservation strategies"
+	},
+	{
+		"title": "Nitrated meat products are associated with mania in humans and altered behavior and brain gene expression in rats",
+		"url": "https://www.nature.com/articles/s41380-018-0105-6",
+		"year": 2018,
+		"type": "study",
+		"availability": "abstract",
+		"tags": "cognition",
+		"quote": "We found that a history of eating nitrated dry cured meat but not other meat or fish products was strongly and independently associated with current mania (adjusted odds ratio 3.49, 95% confidence interval (CI) 2.24–5.45, p < 8.97 × 10−8). Lower odds of association were found between eating nitrated dry cured meat and other psychiatric disorders. "
+	},
+	{
+		"title": "2018 Retail Sales Data for Plant-Based Foods",
+		"url": "https://plantbasedfoods.org/consumer-access/nielsen-data-release-2018/",
+		"year": 2018,
+		"type": "study",
+		"availability": "abstract",
+		"tags": "trends",
+		"quote": "The plant-based foods industry is seeing tremendous growth, with sales up 20% in dollar sales since last year. According to data PBFA commissioned from Nielsen, a leading retail data company, plant-based food sales topped $3.3 billion over the past year."
+	},
+	{
+		"title": "The role of pulses in satiety, food intake and body weight management",
+		"url": "https://www.sciencedirect.com/science/article/pii/S1756464617301615",
+		"year": 2017,
+		"type": "study",
+		"availability": "abstract",
+		"tags": "beans,weight loss",
+		"quote": "Pulses are low-energy and nutrient-dense foods with great potential to increase satiety, which can decrease food intake and facilitate body weight management. Human intervention studies examining effects of acute pulse consumption on satiety and food intake have produced mixed results, although a recent meta-analysis summarized a significant increase in satiety but not food intake. To connect these measures more directly to obesity risk, observational studies have related pulse consumption to lower body weight and obesity risk, while intervention studies have shown significant reductions in body weight following pulse consumption with or without energy restriction."
+	},
+	{
+		"title": "Reducing food’s environmental impacts through producers and consumers",
+		"url": "http://science.sciencemag.org/content/360/6392/987",
+		"pdf": "https://josephpoore.com/Science%20360%206392%20987%20-%20Accepted%20Manuscript.pdf",
+		"year": 2018,
+		"type": "study",
+		"availability": "full",
+		"tags": "climate change,water use,water pollution,land use",
+		"quote": "impacts of the lowest-impact animal products typically exceed those of vegetable substitutes ...  We consider a second scenario where consumption of each animal product is halved by replacing production with above-median GHG emissions with vegetable equivalents. This achieves 73% of the previous scenario’s GHG reduction and 67, 64, and 55% of the land use, acidification, and eutrophication reductions. "
+	},
+	{
+		"title": "The biomass distribution on Earth",
+		"url": "http://www.pnas.org/content/115/25/6506",
+		"year": 2018,
+		"type": "study",
+		"availability": "full",
+		"tags": "biodiversity loss",
+		"quote": "Today, the biomass of humans (≈0.06 Gt C; SI Appendix, Table S9) and the biomass of livestock (≈0.1 Gt C, dominated by cattle and pigs; SI Appendix, Table S10) far surpass that of wild mammals, which has a mass of ≈0.007 Gt C (SI Appendix, Table S11).  ... In fact, humans and livestock outweigh all vertebrates combined, with the exception of fish. Even though humans and livestock dominate mammalian biomass, they are a small fraction of the ≈2 Gt C of animal biomass, which primarily comprises arthropods (≈1 Gt C; SI Appendix, Tables S13 and S14), followed by fish (≈0.7 Gt C; SI Appendix, Table S15)"
 	},
 	{
 		"title": "Fattening Fasting: Hungry Grocery Shoppers Buy More Calories, Not More Food",
@@ -1970,6 +2098,118 @@
 		"quote": "this report has deliberately confined itself to a very narrow, albeit important and complex remit: that of grassfed ruminants in grazing systems, and their relationship with climate change ... 300Livestock supply chain emissions contribute about 14.5% of this total [GHG emissions] at 7.1 Gt CO2-eq/yr (1.9 Gt C-eq)), with most of the emissions generated at the agricultural stage. Of this, about 80% is attributable to ruminants. ... could grazing ruminants also help sequester carbon in soils, and if so to what extent might this compensate? As the following numbers show, the answer is ‘not much’. ... While some grasslands are natural, many of the grazing lands used today were formed at great environmental cost from what was originally forest. Grazing livestock have historically been the main agent of anthropogenic deforestation and associated CO2 release. ... the livestock systems that operate today cause an enormous amount, and many kinds of, environmental damage. To raise the animals we eat and use, we have cleared forests, driven species to extinction, polluted air and waterways, and released vast quantities of GHG emissions into the atmosphere. The rearing of animals has literally transformed the face of this earth."
 	},
 	{
+		"title": "Emissions Impossible: How big meat and dairy are heating up the planet",
+		"url": "https://www.iatp.org/emissions-impossible",
+		"pdf": "https://www.iatp.org/sites/default/files/2018-08/Emissions%20impossible%20EN%2012.pdf",
+		"type": "research report",
+		"availability": "full",
+		"year": 2018,
+		"tags": "climate change,water pollution,land use,land degradation,consolidation,farmers",
+		"quote": "The world’s biggest meat and dairy companies could surpass ExxonMobil, Shell and BP as the world’s biggest climate polluters within the next few decades. At a time when the planet must dramatically reduce its greenhouse gas emissions, these global animal protein giants are driving consumption by ramping up production and exports. GRAIN and IATP examined the world’s largest 35 companies and found that most are not reporting their GHG emissions data and few have set targets that could reduce their overall emissions."
+	},
+	{
+		"title": "Short-Lived Climate Pollutant Reduction Strategy",
+		"pdf": "https://www.arb.ca.gov/cc/shortlived/meetings/03142017/final_slcp_report.pdf",
+		"type": "research report",
+		"availability": "full",
+		"year": 2017,
+		"tags": "climate change",
+		"quote": "Methane is responsible for about 20 percent of current net climate forcing globally. In California, about half of methane emissions come from dairy and livestock manure or organic waste streams that are landfilled. "
+	},
+	{
+		"title": "Estimates of illegal and unreported fish in seafood imports to the USA",
+		"url": "https://www.sciencedirect.com/science/article/pii/S0308597X14000918",
+		"type": "study",
+		"availability": "full",
+		"year": 2014,
+		"tags": "biodiversity loss",
+		"quote": "Illegal and unreported catches represented 20–32% by weight of wild-caught seafood imported to the USA in 2011...This trade represents between 4% and 16% of the value of the global illegal fish catch and reveals the unintentional role of the USA, one of the largest seafood markets in the world, in funding the profits of illegal fishing."
+	},
+	{
+		"title": "2018: The State of the World Fisheries and Aquaculture",
+		"url": "http://www.fao.org/state-of-fisheries-aquaculture/en/",
+		"pdf": "http://www.fao.org/3/I9540EN/i9540en.pdf",
+		"type": "research report",
+		"availability": "full",
+		"year": 2018,
+		"tags": "biodiversity loss",
+		"quote": "The fraction of fish stocks that are within biologically sustainable levels has exhibited a decreasing trend, from 90.0 percent in 1974 to 66.9 percent in 2015. In contrast, the percentage of stocks fished at biologically unsustainable levels increased from 10 percent in 1974 to 33.1 percent in 2015, with the largest increases in the late 1970s and 1980s."
+	},
+	{
+		"title": "Abandoned, lost or otherwise discarded fishing gear",
+		"url": "http://www.fao.org/state-of-fisheries-aquaculture/en/",
+		"type": "research report",
+		"availability": "full",
+		"year": 2009,
+		"tags": "water pollution",
+		"quote": "Abandoned, lost or otherwise discarded fishing gear (ALDFG) is of increasing concern due to its numerous negative impacts. The ability of ALDFG to continue to fish (often referred to as “ghost fishing”) has detrimental impacts on fish stocks and potential impacts on endangered species and benthic environments. Fishing gear has been abandoned, lost or otherwise discarded since fishing began, but increases in the scale of fishing operations and technologies used in recent decades mean that the extent and impact of ALDFG debris have increased significantly with the use of synthetic materials, the overall increase in fishing capacity and the targeting of more distant and deepwater grounds. ALDFG is also a concern because of its potential to become a navigational hazard (with associated safety issues) in coastal and offshore areas. "
+	},
+	{
+		"title": "Evidence that the Great Pacific Garbage Patch is rapidly accumulating plastic",
+		"url": "https://www.nature.com/articles/s41598-018-22939-w",
+		"type": "study",
+		"availability": "full",
+		"year": 2018,
+		"tags": "water pollution",
+		"quote": "Over three-quarters of the GPGP mass was carried by debris larger than 5 cm and at least 46% was comprised of fishing nets. Microplastics accounted for 8% of the total mass but 94% of the estimated 1.8 (1.1–3.6) trillion pieces floating in the area ... Finally, our results suggest that ocean plastic pollution within the GPGP is increasing exponentially and at a faster rate than in surrounding waters."
+	},
+	{
+		"title": "Association Between Omega-3 Fatty Acid Supplementation and Risk of Major Cardiovascular Disease Events: A Systematic Review and Meta-analysis",
+		"url": "https://jamanetwork.com/journals/jama/article-abstract/1357266?=gt%3b",
+		"type": "meta analysis",
+		"availability": "abstract",
+		"year": 2012,
+		"tags": "omega-3,heart disease",
+		"quote": "Overall, omega-3 PUFA supplementation was not associated with a lower risk of all-cause mortality, cardiac death, sudden death, myocardial infarction, or stroke based on relative and absolute measures of association."
+	},
+	{
+		"title": "Risks and benefits of omega 3 fats for mortality, cardiovascular disease, and cancer: systematic review",
+		"url": "https://www.bmj.com/content/332/7544/752?page=1&tab=responses",
+		"type": "meta analysis",
+		"availability": "full",
+		"year": 2006,
+		"tags": "omega-3,heart disease,cancer,overall mortality",
+		"quote": "Long chain and shorter chain omega 3 fats do not have a clear effect on total mortality, combined cardiovascular events, or cancer."
+	},
+	{
+		"title": "Association between fish consumption, long chain omega 3 fatty acids, and risk of cerebrovascular disease: systematic review and meta-analysis",
+		"url": "https://www.bmj.com/content/345/bmj.e6698.full",
+		"type": "meta analysis",
+		"availability": "full",
+		"year": 2006,
+		"tags": "omega-3,heart disease,fish (nutrition)",
+		"quote": "Available observational data indicate moderate, inverse associations of fish consumption and long chain omega 3 fatty acids with cerebrovascular risk. Long chain omega 3 fatty acids measured as circulating biomarkers in observational studies or supplements in primary and secondary prevention trials were not associated with cerebrovascular disease. The beneficial effect of fish intake on cerebrovascular risk is likely to be mediated through the interplay of a wide range of nutrients abundant in fish."
+	},
+	{
+		"title": "State Indicator Report on Fruits and Vegetables, 2018",
+		"url": "https://www.cdc.gov/nutrition/data-statistics/2018-state-indicator-report-fruits-vegetables.html",
+		"pdf": "https://www.cdc.gov/nutrition/downloads/fruits-vegetables/2018/2018-fruit-vegetable-report-508.pdf",
+		"type": "research report",
+		"availability": "full",
+		"year": 2018,
+		"tags": "food sources,fruit,veges,public health",
+		"quote": "Eating a diet rich in fruits and vegetables as part of an overall healthy diet can help protect against a number of serious and costly chronic diseases, including heart disease, type 2 diabetes, some cancers, and obesity. Fruits and vegetables also provide important vitamins and minerals that help the human body work as it should and fight off illness and disease ... Only 1 in 10 US adults eat the recommended  amount of fruits or vegetables ...As part of a healthy food environment, fruits and vegetables need to be accessible and affordable in the places where children and families spend time"
+	},
+	{
+		"title": "Tracking the global footprint of fisheries",
+		"url": "http://science.sciencemag.org/content/359/6378/904",
+		"type": "study",
+		"availability": "full",
+		"year": 2018,
+		"tags": "biodiversity loss",
+		"quote": "More than half of the world's oceans are subject to industrial-scale harvest, spanning an area four times that covered by terrestrial agriculture. Furthermore, fishing efforts seem not to depend on economic or environmental drivers, but rather social and political schedules. Thus, more active measures will likely be needed to ensure sustainable use of ocean resources."
+	},
+	{
+		"title": "Catch reconstructions reveal that global marine fisheries catches are higher than reported and declining",
+		"url": "https://www.nature.com/articles/ncomms10244",
+		"pdf": "http://www.fao.org/3/I9540EN/i9540en.pdf",
+		"type": "study",
+		"availability": "full",
+		"year": 2018,
+		"tags": "biodiversity loss",
+		"quote": "we identify catch trajectories differing considerably from the national data submitted to the FAO. We suggest that catch actually peaked at 130 million tonnes, and has been declining much more strongly since. This decline in reconstructed catches reflects declines in industrial catches and to a smaller extent declining discards"
+	},
+	{
 		"title": "Future threats to biodiversity and pathways to their prevention",
 		"url": "https://www.nature.com/articles/nature22900",
 		"type": "study",
@@ -3086,6 +3326,114 @@
 		"availability": "full",
 		"tags": "amazon,land use, land degradation",
 		"quote": "Deforestation has trended upwards since 2012, with a sharp 29 percent increase in the rate of clearing in 2016 ... Old deforestation motives continue ... These are in addition to the overt economy of selling agricultural products for profit"
+	},
+	{
+		"title": "Comprehensive resistome analysis reveals the prevalence of NDM and MCR-1 in Chinese poultry production",
+		"url": "https://www.nature.com/articles/nmicrobiol2016260",
+		"year": 2017,
+		"type": "study",
+		"availability": "abstract",
+		"tags": "antibiotics",
+		"quote": "we show that mcr-1, but not blaNDM, is prevalent in hatcheries, but blaNDM quickly contaminates flocks through dogs, flies and wild birds."
+	},
+	{
+		"title": "Multivitamins in the prevention of cardiovascular disease in men: the Physicians' Health Study II randomized controlled trial.",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3501249/",
+		"year": 2012,
+		"type": "study",
+		"availability": "full",
+		"tags": "multivitamins,heart disease",
+		"quote": "Among this population of US male physicians, taking a daily multivitamin did not reduce major cardiovascular events, MI, stroke, and CVD mortality after more than a decade of treatment and follow-up."
+	},
+	{
+		"title": "Multivitamin use and risk of cancer and cardiovascular disease in the Women's Health Initiative cohorts.",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3868488/",
+		"year": 2009,
+		"type": "study",
+		"availability": "full",
+		"tags": "multivitamins,heart disease,cancer",
+		"quote": " Women's Health Initiative study provided convincing evidence that multivitamin use has little or no influence on the risk of common cancers, CVD, or total mortality in postmenopausal women."
+	},
+	{
+		"title": "Multivitamin-multimineral supplementation and mortality: a meta-analysis of randomized controlled trials.",
+		"url": "https://academic.oup.com/ajcn/article/97/2/437/4577151",
+		"year": 2012,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "multivitamins,overall mortality",
+		"quote": "Multivitamin-multimineral treatment has no effect on mortality risk."
+	},
+	{
+		"title": "Vitamin and Mineral Supplements in the Primary Prevention of Cardiovascular Disease and Cancer: An Updated Systematic Evidence Review for the U.S. Preventive Services Task Force",
+		"url": "http://annals.org/aim/fullarticle/1767855/vitamin-mineral-supplements-primary-prevention-cardiovascular-disease-cancer-updated-systematic",
+		"year": 2013,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "multivitamins,cancer,heart disease",
+		"quote": "Limited evidence supports any benefit from vitamin and mineral supplementation for the prevention of cancer or CVD"
+	},
+	{
+		"title": "Dietary Supplements and Mortality Rate in Older Women: The Iowa Women's Health Study",
+		"url": "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/1105975",
+		"year": 2011,
+		"type": "study",
+		"availability": "full",
+		"tags": "multivitamins,overall mortality",
+		"quote": "In older women, several commonly used dietary vitamin and mineral supplements may be associated with increased total mortality risk; this association is strongest with supplemental iron. In contrast to the findings of many studies, calcium is associated with decreased risk"
+	},
+	{
+		"title": "Long-Term Multivitamin Supplementation and Cognitive Function in Men: A Randomized Trial",
+		"url": "http://annals.org/aim/article-abstract/1789250/long-term-multivitamin-supplementation-cognitive-function-men-randomized-trial?doi=10.7326%2f0003-4819-159-12-201312170-00006",
+		"year": 2013,
+		"type": "study",
+		"availability": "abstract",
+		"tags": "multivitamins,cognition",
+		"quote": "No difference was found in mean cognitive change over time between the multivitamin and placebo groups or in the mean level of cognition at any of the 4 assessments"
+	},
+	{
+		"title": "Vitamin D and Calcium Supplementation to Prevent Fractures in Adults: U.S. Preventive Services Task Force Recommendation Statement",
+		"url": "http://annals.org/aim/fullarticle/1655858/vitamin-d-calcium-supplementation-prevent-fractures-adults-u-s-preventive",
+		"year": 2013,
+		"type": "research report",
+		"availability": "full",
+		"tags": "multivitamins,vitamin d,calcium",
+		"quote": "The USPSTF concludes with moderate certainty that daily supplementation with 400 IU or less of vitamin D3 and 1000 mg or less of calcium has no net benefit for the primary prevention of fractures."
+	},
+	{
+		"title": "Options for keeping the food system within environmental limits",
+		"url": "https://www.nature.com/articles/s41586-018-0594-0.epdf?referrer_access_token=VqVYAx3UNNcARcSadxQdHdRgN0jAjWel9jnR3ZoTv0M2ZckU8PFAjFp2beHrcOXhHVPwiboHFjCLaVoEktOYmh0BvAMiYY6p6shkg4VDMNtQ4b1-iWuE_0A6KzMVurLh00wuuXQb_x6PSYmdKD8CwYVYilwpieAz6T5zbmZn_jcyT6XJAZLx6y-6nBipe73NIkbzdDcDgk3aulOOWdmVMwCIs6KmCJnlY_Wdb1gcIHmkYEH0ufgA5XasE7EuGjen8HGeDgvNl-wkWRcFbSfZxqMp4eHcpuvQkJWTfFWLuczOs6GfVgPHIuPj1gsukve_7K8ExdWHbpBnHB0yClT3Q6ECZezcYUdONSnOyp0jBwg%3D&tracking_referrer=www.washingtonpost.com",
+		"year": 2018,
+		"type": "study",
+		"availability": "full",
+		"tags": "climate change,water pollution,land use,water use,biodiversity loss",
+		"quote": "as a result of expected changes in population and income levels, the environmental effects of the food system could increase by 50–90% in the absence of technological changes and dedicated mitigation measures, reaching levels that are beyond the planetary boundaries that define a safe operating space for humanity. We analyse several options for reducing the environmental effects of the food system, including dietary changes towards healthier, more plant-based diets, improvements in technologies and management, and reductions in food loss and waste. We find that no single measure is enough to keep these effects within all planetary boundaries simultaneously, and that a synergistic combination of measures will be needed to sufficiently mitigate the projected increase in environmental pressures"
+	},
+	{
+		"title": "The Efficacy and Safety of Multivitamin and Mineral Supplement Use To Prevent Cancer and Chronic Disease in Adults: A Systematic Review for a National Institutes of Health State-of-the-Science Conference",
+		"url": "http://annals.org/aim/fullarticle/728199/efficacy-safety-multivitamin-mineral-supplement-use-prevent-cancer-chronic-disease",
+		"year": 2006,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "multivitamins",
+		"quote": "Evidence is insufficient to prove the presence or absence of benefits from use of multivitamin and mineral supplements to prevent cancer and chronic disease"
+	},
+	{
+		"title": "Meta-analysis: high-dosage vitamin E supplementation may increase all-cause mortality.",
+		"url": "http://annals.org/aim/fullarticle/718049/meta-analysis-high-dosage-vitamin-e-supplementation-may-increase-all",
+		"year": 2005,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "vitamin e",
+		"quote": "High-dosage (≥400 IU/d) vitamin E supplements may increase all-cause mortality and should be avoided"
+	},
+	{
+		"title": "Chain Reaction IV: Burger Edition. How Top Restaurants Rate on Reducing Antibiotic Use in Their Meat Supply Chains",
+		"url": "https://consumersunion.org/wp-content/uploads/2018/10/ChainReaction4_Report_FINAL.pdf",
+		"year": 2018,
+		"type": "research report",
+		"availability": "full",
+		"tags": "antibiotics",
+		"quote": "Our survey shows that only two chains, Shake Shack and BurgerFi, source beef raised without the routine use of antibiotics. Most other chains have no public antibiotic use policy. "
 	},
 	{
 		"title": "Biodiversity conservation: The key is reducing meat consumption",
