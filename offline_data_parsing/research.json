@@ -3079,6 +3079,78 @@
 		"quote": "our analysis shows that livestock and their byproducts actually account for at least 32,564 million tons of CO2e per year, or 51 percent of annual worldwide GHG [greenhouse gases] ... Some of these [sources of GHG] are obvious but underestimated, some are simply overlooked, and some are emissions sources that are already counted but have been assigned to the wrong sectors. ... where it was impossible to avoid imprecision in estimating any sum of GHGs, we strove to minimize the sum so our overall estimate could be understood as conservative."
 	},
 	{
+		"title": "WASTED CATCH: UNSOLVED PROBLEMS IN U.S. FISHERIES",
+		"pdf": "http://oceana.org/sites/default/files/reports/Bycatch_Report_FINAL.pdf",
+		"year": 2014,
+		"type": "research report",
+		"availability": "full",
+		"tags": "biodiversity loss",
+		"quote": "According to some estimates, global bycatch may amount to 40 percent of the world’s catch, totaling 63 billion pounds per year ... Some fisheries discard more fish at sea than what they bring to port, in addition to injuring and killing thousands of whales, dolphins, seals, sea turtles and sharks each year. While bycatch data is often outdated and inaccurate, researchers estimate that 17-22 percent of U.S. catch is discarded every year, according to the best available data"
+	},
+	{
+		"title": "Viable-but-Nonculturable Listeria monocytogenes and Salmonella enterica Serovar Thompson Induced by Chlorine Stress Remain Infectious",
+		"pdf": "https://mbio.asm.org/content/9/2/e00540-18.full",
+		"year": 2018,
+		"type": "study",
+		"availability": "full",
+		"tags": "biodiversity loss",
+		"quote": "bacterial food-borne pathogens are known to enter a viable-but-nonculturable (VBNC) state in response to environmental stresses such as chlorine, which is commonly used for fresh produce decontamination...These data emphasize the risk that VBNC food-borne pathogens could pose to public health should they continue to go undetected."
+	},
+	{
+		"title": "Better diet quality relates to larger brain tissue volumes",
+		"pdf": "http://n.neurology.org/content/90/24/e2166",
+		"year": 2018,
+		"type": "study",
+		"availability": "abstract",
+		"tags": "cognition",
+		"quote": "High intake of vegetables, fruit, whole grains, nuts, dairy, and fish and low intake of sugar-containing beverages were associated with larger brain volumes."
+	},
+	{
+		"title": "Is the use of cholesterol in mortality risk algorithms in clinical guidelines valid? Ten years prospective data from the Norwegian HUNT 2 study",
+		"pdf": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3303886/",
+		"year": 2012,
+		"type": "study",
+		"availability": "full",
+		"tags": "cholesterol",
+		"quote": "cholesterol emerged as an overestimated risk factor in our study, indicating that guideline information might be misleading, particularly for women with ‘moderately elevated’ cholesterol levels in the range of 5–7 mmol L−1. "
+	},
+	{
+		"title": "Protective effect of lycopene on serum cholesterol and blood pressure: Meta-analyses of intervention trials.",
+		"pdf": "https://www.ncbi.nlm.nih.gov/pubmed/21163596",
+		"year": 2011,
+		"type": "meta analysis",
+		"availability": "abstract",
+		"tags": "phytochemicals,heart disease",
+		"quote": "Our meta-analysis suggests that lycopene taken in doses ≥25mg daily is effective in reducing LDL cholesterol by about 10% which is comparable to the effect of low doses of statins in patient with slightly elevated cholesterol levels. More research is needed to confirm suggested beneficial effects on total serum cholesterol and systolic blood pressure."
+	},
+	{
+		"title": "Dietary Fats and Cardiovascular Disease: A Presidential Advisory From the American Heart Association",
+		"pdf": "https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000000510",
+		"year": 2017,
+		"type": "research report",
+		"availability": "full",
+		"tags": "fat,saturated fat,heart disease",
+		"quote": "In summary, randomized controlled trials that lowered intake of dietary saturated fat and replaced it with polyunsaturated vegetable oil reduced CVD by ≈30%, similar to the reduction achieved by statin treatment...Taking into consideration the totality of the scientific evidence, satisfying rigorous criteria for causality, we conclude strongly that lowering intake of saturated fat and replacing it with unsaturated fats, especially polyunsaturated fats, will lower the incidence of CVD"
+	},
+	{
+		"title": "Abundance of impacted forest patches less than 5 km2 is a key driver of the incidence of malaria in Amazonian Brazil",
+		"pdf": "https://www.nature.com/articles/s41598-018-25344-5",
+		"year": 2018,
+		"type": "study",
+		"availability": "full",
+		"tags": "land use,land degradation,",
+		"quote": "We found that areas affected by one kilometer square of deforestation produced 27 new malaria cases (r² = 0.78; F1,10 = 35.81; P < 0.001). Unexpectedly, we found both a highly significant positive correlation between number of impacted forest patches less than 5 km2 and malaria cases, and that these patch sizes accounted for greater than ~95% of all patches in the study area."
+	},
+	{
+		"title": "Experimental evidence for tipping points in social convention",
+		"pdf": "http://science.sciencemag.org/content/360/6393/1116.editor-summary",
+		"year": 2018,
+		"type": "study",
+		"availability": "abstract",
+		"tags": "trends",
+		"quote": "Once a population has converged on a consensus, how can a group with a minority viewpoint overturn it? ... When the number of confederates was roughly 25% of the group, the opinion of the majority could be tipped to that of the minority."
+	},
+	{
 		"title": "Livestock’s Long Shadow: Environmental Issues and Options (UN FAO)",
 		"url": "http://www.fao.org/docrep/010/a0701e/a0701e00.HTM",
 		"year": 2006,
