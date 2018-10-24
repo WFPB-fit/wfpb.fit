@@ -481,6 +481,24 @@
 		"quote": "The plant-based foods industry is seeing tremendous growth, with sales up 20% in dollar sales since last year. According to data PBFA commissioned from Nielsen, a leading retail data company, plant-based food sales topped $3.3 billion over the past year."
 	},
 	{
+		"title": "WWF: Food in a Warming World: The Changing Foods on the British Plate",
+		"url": "https://www.wwf.org.uk/sites/default/files/2018-03/Food_in_a_warming_world_report.PDF",
+		"year": 2018,
+		"type": "research report",
+		"availability": "full",
+		"tags": "climate change,food security",
+		"quote": "WWF recently calculated that our individual ‘carbon budgets’ for the food we eat need to reduce by 8% from 5.17 kg CO 2 e per person per day today to 4.77 kg CO 2 e per person per day in 2020 in order to be on target to meet the Paris climate agreement in 2030. Following a Livewell diet has the potential to achieve an 18% reduction to 4.25kg CO 2 e per person per day in 2020. ... WWF has developed six principles people can follow to ensure their diet is healthy as well as being sustainable and good for the planet. ... [1.] Eat more plants"
+	},
+	{
+		"title": "The Avoidable Crisis: The European Meat Industry's Environmental Catastrophe",
+		"url": "http://www.mightyearth.org/avoidablecrisis/",
+		"year": 2018,
+		"type": "investigative journalism",
+		"availability": "full",
+		"tags": "climate change,land use, land degradation,amazon,biodiversity loss",
+		"quote": "The meat industry relies on massive quantities of soy for animal feed to raise livestock: about 75% of the world’s soy is used for animal feed ...  we documented large agribusinesses bulldozing and burning thousands of hectares of the extraordinary ecosystem known as the Gran Chaco ... American soy companies like Cargill and Bunge have infiltrated these frontiers, bulldozing and burning these habitats to make way for vast fields of genetically modified soy ... Europe imported 27.8 million tons of soy from Latin America in 2016. The Netherlands, Spain, Germany, and Italy are the largest importers of South American soy in Europe. Once in Europe, the soy is purchased either by animal feed or meat processors and then is used to raise livestock."
+	},
+	{
 		"title": "The role of pulses in satiety, food intake and body weight management",
 		"url": "https://www.sciencedirect.com/science/article/pii/S1756464617301615",
 		"year": 2017,
@@ -1609,6 +1627,15 @@
 		"quote": "Overall, 12.2% of adults met fruit recommendations ranging from 7.3% in West Virginia to 15.5% in DC, and 9.3% met vegetable recommendations, ranging from 5.8% in West Virginia to 12.0% in Alaska. Intake was low across all socioeconomic groups."
 	},
 	{
+		"title": "Fruit and vegetable consumption and mortality from all causes, cardiovascular disease, and cancer: systematic review and dose-response meta-analysis of prospective cohort studies",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4115152/",
+		"year": 2014,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "fruit,veges,heart disease,cancer,overall mortality",
+		"quote": "This meta-analysis provides further evidence that a higher consumption of fruit and vegetables is associated with a lower risk of all cause mortality, particularly cardiovascular mortality."
+	},
+	{
 		"title": "Fruit and vegetable consumption and all-cause mortality: evidence from a large Australian cohort study",
 		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3599615/",
 		"year": 2016,
@@ -1872,6 +1899,24 @@
 		"quote": "Animal proteins is an important source of protein, however potential health concerns do exist from a diet of protein consumed from primarily animal sources. With a proper combination of sources, vegetable proteins may provide similar benefits as protein from animal sources."
 	},
 	{
+		"title": "The opportunity cost of animal based diets exceeds all food losses",
+		"url": "http://www.pnas.org/content/115/15/3804",
+		"year": 2018,
+		"type": "study",
+		"availability": "full",
+		"tags": "food security",
+		"quote": "We find that although the characteristic conventional retail-to-consumer food losses are ≈30% for plant and animal products, the opportunity food losses of beef, pork, dairy, poultry, and eggs are 96%, 90%, 75%, 50%, and 40%, respectively. This arises because plant-based replacement diets can produce 20-fold and twofold more nutritionally similar food per cropland than beef and eggs, the most and least resource-intensive animal categories, respectively. ... Concurrently replacing all animal-based items in the US diet with plant-based alternatives will add enough food to feed, in full, 350 million additional people, well above the expected benefits of eliminating all supply chain food waste."
+	},
+	{
+		"title": "Global environmental costs of China's thirst for milk",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/29417720",
+		"year": 2018,
+		"type": "study",
+		"availability": "abstract",
+		"tags": "climate change,dairy",
+		"quote": "Meeting China's milk demand in a business as usual scenario will increase global dairy-related (China and the leading milk exporting regions) greenhouse gas (GHG) emissions by 35% (from 565 to 764 Tg CO2eq ) and land use for dairy feed production by 32% (from 84 to 111 million ha) compared to 2010, while reactive nitrogen losses from the dairy sector will increase by 48% (from 3.6 to 5.4 Tg nitrogen). ... We propose that a more sustainable dairy future will rely on high milk demanding regions (such as China) improving their domestic milk and feed production efficiencies up to the level of leading milk producing countries ... However, this still represents an increase in total GHG emissions of 19% whereas land use will decrease by 8% when compared with 2010 levels, respectively."
+	},
+	{
 		"title": "Vegetarian diets are associated with healthy mood states: a cross-sectional study in Seventh Day Adventist adult",
 		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2887769/",
 		"year": 2010,
@@ -1881,6 +1926,15 @@
 		"quote": "Vegetarians (VEG:n = 60) reported significantly less negative emotion than omnivores (OMN:n = 78) as measured by both mean total DASS and POMS scores (8.32 ± 0.88 vs 17.51 ± 1.88, p = .000 and 0.10 ± 1.99 vs 15.33 ± 3.10, p = .007, respectively). VEG reported significantly lower mean intakes of EPA (p < .001), DHA (p < .001), as well as the omega-6 fatty acid, arachidonic acid (AA; p < .001), and reported higher mean intakes of shorter-chain α-linolenic acid (p < .001) and linoleic acid (p < .001) than OMN. Mean total DASS and POMS scores were positively related to mean intakes of EPA (p < 0.05), DHA (p < 0.05), and AA (p < 0.05), and inversely related to intakes of ALA (p < 0.05), and LA (p < 0.05), indicating that participants with low intakes of EPA, DHA, and AA and high intakes of ALA and LA had better mood."
 	},
 	{
+		"title": "Frequency of Microplastics in Mesopelagic Fishes from the Northwest Atlantic",
+		"url": "https://www.frontiersin.org/articles/10.3389/fmars.2018.00039/full",
+		"year": 2018,
+		"type": "study",
+		"availability": "full",
+		"tags": "fish (nutrition)",
+		"quote": "Microplastics are a ubiquitous pollutant in our seas today and are known to have detrimental effects on a variety of organisms ... any ingestion of microplastics by mesopelagic fish may adversely affect this cycling and may aid in transport of microplastics from surface waters to the deep-sea benthos ... Seventy-three percent of all fish contained plastics in their gut contents ... Additionally, using forensic techniques we were able to highlight that fibres are a real concern rather than an artefact of airborne contamination."
+	},
+	{
 		"title": "Restriction of meat, fish, and poultry in omnivores improves mood: A pilot randomized controlled trial",
 		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3293760/",
 		"year": 2012,
@@ -1888,6 +1942,24 @@
 		"availability": "full",
 		"tags": "mental health,moderation",
 		"quote": "Thirty-nine omnivores were randomly assigned to a control group consuming meat, fish, and poultry daily (OMN); a group consuming fish 3-4 times weekly but avoiding meat and poultry (FISH), or a vegetarian group avoiding meat, fish, and poultry (VEG). At baseline and after two weeks, participants completed a food frequency questionnaire, the Profile of Mood States questionnaire and the Depression Anxiety and Stress Scales. After the diet intervention, VEG participants reduced their EPA, DHA, and AA intakes, while FISH participants increased their EPA and DHA intakes. Mood scores were unchanged for OMN or FISH participants, but several mood scores for VEG participants improved significantly after two weeks."
+	},
+	{
+		"title": "Functional foods/ingredients and dental caries",
+		"pdf": "https://pdfs.semanticscholar.org/3b92/8424de90e4732cae01d65c9073e427acc7f9.pdf",
+		"year": 2012,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "teeth,phytochemicals",
+		"quote": "Some fruits and plants of human nutrition (e.g. tea, cocoa, coffee and raisins) contain polyphenols as phenolic acids or flavonoids that may suppress by antioxidant activity oral pathogens associated with caries and are thus hypothesised to benefit oral health"
+	},
+	{
+		"title": "Nutrients and bioactives in green leafy vegetables and cognitive decline",
+		"pdf": "http://n.neurology.org/content/90/3/e214",
+		"year": 2018,
+		"type": "study",
+		"availability": "abstract",
+		"tags": "dementia,veges",
+		"quote": "Consumption of approximately 1 serving per day of green leafy vegetables and foods rich in phylloquinone, lutein, nitrate, folate, α-tocopherol, and kaempferol may help to slow cognitive decline with aging."
 	},
 	{
 		"title": "Effects of a long-term vegetarian diet on biomarkers of antioxidant status and cardiovascular disease risk.",
@@ -3205,6 +3277,15 @@
 		"quote": "The Amazon is estimated to store 80-120 billion tonnes of carbon. If destroyed, some fifty times the annual GHG emissions of the USA could be emitted ... According to the Brazilian government: ‘Cattle are responsible for about 80% of all deforestation’ in the Amazon region ... 12The cattle sector in the Brazilian Amazon is responsible for 14% of the world’s annual deforestation. This makes it the world’s largest driver of deforestation, responsible for more forest loss than the total deforestation in any country outside Brazil except Indonesia"
 	},
 	{
+		"title": "USDA: Dairy Data",
+		"url": "https://www.ers.usda.gov/data-products/dairy-data/",
+		"year": 2018,
+		"type": "research report",
+		"availability": "full",
+		"tags": "trends,food sources",
+		"quote": "The Dairy Data Set includes data files covering domestic supply and demand and trade of various dairy products"
+	},
+	{
 		"title": "The World Bank: Causes of Deforestation of the Brazilian Amazon",
 		"url": "https://openknowledge.worldbank.org/handle/10986/15060?locale-attribute=en",
 		"pdf": "http://documents.worldbank.org/curated/en/758171468768828889/pdf/277150PAPER0wbwp0no1022.pdf",
@@ -3213,6 +3294,26 @@
 		"availability": "full",
 		"tags": "amazon,land degradation",
 		"quote": "From an environmental perspective, despite the uncertainties of valuation, the limited evidence available suggests that the costs of deforestation may be extremely high and possibly exceed private benefits from cattle ranching, particularly when the uncertainties of irreversible losses of genetic heritage (not yet fully understood) are incorporated. ... Land-use data on Amazonia demonstrates that the main cause of deforestation in the region is cattle ranching. Expansion of ranching since the early 1970s has been a continu-ous and inertial process. ... Regardless of who the original agents are, the end result of the land occupation process isalmost inevitably the establishment of ranching activities. If this were not financially viable, forest conversion or deforestation would not occur on the scale on which it is occurring"
+	},
+	{
+		"title": "The hidden water resource use behind meat and dairy",
+		"url":"https://academic.oup.com/af/article/2/2/3/4638610",
+		"pdf": "https://waterfootprint.org/media/downloads/Hoekstra-2012-Water-Meat-Dairy.pdf",
+		"year": 2012,
+		"type": "research report",
+		"availability": "full",
+		"tags": "water use",
+		"quote": "In a recent study, Mekonnen and Hoekstra (2010) showed that the water footprint of any animal product is larger than the water footprint of a wisely chosen crop product with equivalent nutritional value. Ercin et al. (2011) illustrated this by comparing the water footprint of 2 soybean products with 2 equivalent animal products. They calculated that 1 L of soy milk produced in Belgium had a water footprint of approximately 300 L, whereas the water footprint of 1 L of milk from cows was more than 3 times larger. The water footprint of a 150-g soy burger produced in the Netherlands appears to be about 160 L, whereas the water footprint of an average 150-g beef burger is nearly 15 times larger."
+	},
+	{
+		"title": "CONSULTANTS PREDICT 11 HOTTEST FOOD & BEVERAGE TRENDS IN RESTAURANT & HOTEL DINING FOR 2018",
+		"url":"https://www.baumwhiteman.com/trend-reports",
+		"pdf": "https://docs.wixstatic.com/ugd/0c5d00_90935d6fda344991a8fc2452eb112c83.pdf",
+		"year": 2018,
+		"type": "article",
+		"availability": "full",
+		"tags": "trends",
+		"quote": "one mega-trend finds restaurants way behind the curve: The rapid consumer shift to \"plant-based\" foods."
 	},
 	{
 		"title": "Agricultural runoff fuels large phytoplankton blooms in vulnerable areas of the ocean",
@@ -3224,7 +3325,7 @@
 		"quote": "Here we demonstrate that nitrogen-deficient areas of the tropical and subtropical oceans are acutely vulnerable to nitrogen pollution. Despite naturally high nutrient concentrations and productivity6,7,8, nitrogen-rich agricultural runoff fuels large (54–577 km2) phytoplankton blooms in the Gulf of California. Runoff exerts a strong and consistent influence on biological processes, in 80% of cases stimulating blooms within days of fertilization and irrigation of agricultural fields. We project that by the year 2050, 27–59% of all nitrogen fertilizer will be applied in developing regions located upstream of nitrogen-deficient marine ecosystems. Our findings highlight the present and future vulnerability of these ecosystems to agricultural runoff."
 	},
 	{
-		"title": "Mystery Meat II:The Industry Behind the Quiet Destruction of the American Heartland",
+		"title": "Mystery Meat II: The Industry Behind the Quiet Destruction of the American Heartland",
 		"url": "http://www.mightyearth.org/heartlanddestruction/",
 		"pdf": "http://www.mightyearth.org/wp-content/uploads/2017/08/Meat-Pollution-in-America.pdf",
 		"year": 2017,

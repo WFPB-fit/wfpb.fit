@@ -17,10 +17,13 @@ def preprocess_studies(folder_name):
         elif 'summary' in study:
             study_summaries[i] = {'summary': study['summary']}
             del study['summary']
+    
 
-
-    availabilities = get_possibilites(studies,'availability')
-    study_types = get_possibilites(studies,'type')
+    
+    with open('../src/assets/data/study_metadata_names.json') as metadata_file:	
+        metadata = json.load(metadata_file)
+    availabilities = invert_dict(metadata['availability'])
+    study_types = invert_dict(metadata['types'])
     for study in studies:
         study['availability'] = availabilities[study['availability']]
         study['type'] = study_types[study['type']]
@@ -34,13 +37,16 @@ def preprocess_studies(folder_name):
         json.dump(study_quotes, outfile)
 
     #invert these dictionaries for easier usage
-    # availabilities = dict([[v,k] for k,v in availabilities.items()])
-    # study_types = dict([[v,k] for k,v in study_types.items()])
+    # availabilities = invert_dict(availabilities)
+    # study_types = invert_dict(study_types)
     # pdb.set_trace()
     # with open(folder_name+"study_availability.json", 'w') as outfile:
     #     json.dump(availabilities, outfile)
     # with open(folder_name+"study_types.json", 'w') as outfile:
     #     json.dump(study_types, outfile)
+
+def invert_dict(d):
+    return dict([[v,k] for k,v in d.items()])
 
 def process_url(study):
     if 'url' not in study:

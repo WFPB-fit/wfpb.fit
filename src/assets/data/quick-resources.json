@@ -34,6 +34,10 @@
 		{
 			"url": "https://www.hsph.harvard.edu/nutritionsource/what-should-you-eat/",
 			"name": "Harvard Nutrition Source"
+		},
+		{
+			"url": "https://www.pcrm.org/health",
+			"name": "Physicians Committee for Responsible Medicine"
 		}
     ],
     "programs":[
@@ -54,9 +58,11 @@
     "recipes":[
 		{ "url": "https://www.forksoverknives.com/recipes/", "name": "Forks Over Knives" },
 		{ "url": "http://engine2diet.com/blog/category/recipes/", "name": "Engine 2 Diet" },
+		{ "url": "https://plantbasedonabudget.com/recipes/", "name": "Plant Based on a Budget" },
 		{ "url": "https://www.drmcdougall.com/health/education/recipes/mcdougall-recipes/", "name": "McDougall Recipes" },
 		{ "url": "https://nutritionstudies.org/recipes/", "name": "Nutrition Studies Recipes" },
 		{ "url": "https://happyherbivore.com/recipes/", "name": "Happy Herbivore" },
+		{ "url": "https://www.vegaroo.co/vegan-recipes", "name": "Vegaroo" },
 		{ "url": "https://www.brandnewvegan.com/recipe-index", "name": "Brand New Vegan" },
 		{ "url": "https://www.feastingonfruit.com/recipe-index/", "name": "Feasting on Fruit" },
 		{ "url": "http://www.straightupfood.com/blog/recipe-index/", "name": "Straight Up Food" },
