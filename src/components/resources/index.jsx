@@ -12,6 +12,8 @@ import Resource from "../resource/index.jsx";
 import { titleize, alphaCompare } from "../../utils/GeneralUtils.jsx";
 import LinkableSelect from "../LinkableSelect";
 
+import StudyMetadataNames from '../../assets/data/study_metadata_names.json';
+
 export default class Resources extends Component {
 	handleSelectedTagsChanged(value) {
 		this.setState({ selectedTags: value });
@@ -24,17 +26,15 @@ export default class Resources extends Component {
 		let bVal = b[this.state.sortBy] || 1;
 
 		if (this.state.sortBy === "type") {
-			aVal = this.typeScore[aVal] || 1;
-			bVal = this.typeScore[bVal] || 1;
+			aVal = StudyMetadataNames.types[aVal] || 1;
+			bVal = StudyMetadataNames.types[bVal] || 1;
 		} else if (this.state.sortBy === "availability") {
-			aVal = this.availabilityScore[aVal] || 10;
-			bVal = this.availabilityScore[bVal] || 10;
+			aVal = StudyMetadataNames.availability[aVal] || 10;
+			bVal = StudyMetadataNames.availability[bVal] || 10;
 		}
 
 		aVal = parseInt(aVal,10);
 		bVal = parseInt(bVal,10);
-
-		console.log(aVal,bVal)
 
 		const compare = aVal - bVal;
 		return (this.state.sortBy ==="year") ? -compare : compare;
@@ -76,19 +76,6 @@ export default class Resources extends Component {
 			}, {})
 		);
 		this.numTotal = allResearch.length;
-
-		//determine how sorting will work for different Resource values using the following objects
-		this.typeScore = {
-			"research report": 3,
-			"meta analysis": 2,
-			study: 1,
-			article: 0
-		};
-		this.availabilityScore = {
-			full: 3,
-			abstract: 2,
-			paywall: 1
-		};
 	}
 
 	getStudiesFromSelectedTags() {

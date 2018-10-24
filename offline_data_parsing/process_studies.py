@@ -1,5 +1,5 @@
 import json
-
+import pdb
 
 def preprocess_studies(folder_name):
     with open('./research.json') as research:	
@@ -34,12 +34,13 @@ def preprocess_studies(folder_name):
         json.dump(study_quotes, outfile)
 
     #invert these dictionaries for easier usage
-    availabilities = dict([[v,k] for k,v in availabilities.items()])
-    study_types = dict([[v,k] for k,v in study_types.items()])
-    with open(folder_name+"study_availability.json", 'w') as outfile:
-        json.dump(availabilities, outfile)
-    with open(folder_name+"study_types.json", 'w') as outfile:
-        json.dump(study_types, outfile)
+    # availabilities = dict([[v,k] for k,v in availabilities.items()])
+    # study_types = dict([[v,k] for k,v in study_types.items()])
+    # pdb.set_trace()
+    # with open(folder_name+"study_availability.json", 'w') as outfile:
+    #     json.dump(availabilities, outfile)
+    # with open(folder_name+"study_types.json", 'w') as outfile:
+    #     json.dump(study_types, outfile)
 
 def process_url(study):
     if 'url' not in study:

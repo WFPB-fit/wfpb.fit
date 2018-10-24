@@ -1,0 +1,10 @@
+{
+	"types": {
+        "0": "research report",
+		"1": "meta analysis",
+		"2": "study",
+		"3": "article"
+	},
+    "availability": { "0": "abstract", "1": "full", "2": "paywall" },
+    "tags":{}
+}

@@ -1,12 +1,10 @@
 import fetch_foods
 import process_studies
 import os
-import shutil
 
 export_folder = "../src/assets/data/preprocessed_data/"
-if os.path.exists(export_folder):
-    shutil.rmtree(export_folder)
-os.makedirs(export_folder)
+if not os.path.exists(export_folder):
+    os.makedirs(export_folder)
 
-fetch_foods.format_and_save_usda_food_data(export_folder)
+# fetch_foods.format_and_save_usda_food_data(export_folder)
 process_studies.preprocess_studies(export_folder)
