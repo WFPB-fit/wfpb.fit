@@ -192,17 +192,6 @@ export default class Resource extends Component {
 							Source
 						</Button>
 					)}
-					{buy && (
-						<Button
-							size="small"
-							variant="contained"
-							color="primary"
-							target="_blank"
-							href={buy}
-						>
-							Buy
-						</Button>
-					)}
 					{resource.website && (
 						<Button
 							size="small"
@@ -212,6 +201,30 @@ export default class Resource extends Component {
 							href={resource.website}
 						>
 							Website
+							{/* {new URL(resource.website).hostname.replace("www.", "")} */}
+						</Button>
+					)}
+					{resource.source && (
+						<Button
+							size="small"
+							variant="contained"
+							color="primary"
+							target="_blank"
+							href={resource.website}
+						>
+							Source
+							{/* {new URL(resource.website).hostname.replace("www.", "")} */}
+						</Button>
+					)}
+					{resource.wiki && (
+						<Button
+							size="small"
+							variant="contained"
+							color="primary"
+							target="_blank"
+							href={resource.website}
+						>
+							Wikipedia
 							{/* {new URL(resource.website).hostname.replace("www.", "")} */}
 						</Button>
 					)}

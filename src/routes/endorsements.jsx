@@ -40,7 +40,19 @@ export default class Endorsements extends Component {
 		));
 		const doctors = preprocess(endorsements.doctors).map(x => (
 			<Resource resource={x} key={x.id} />
-));
+		));
+		const celebs = preprocess(endorsements.celebrities).map(x => (
+			<div
+				style={{
+					width: "400px",
+					display: "inline-block",
+					margin: "5px",
+					verticalAlign: "top"
+				}}
+			>
+				<Resource resource={x} key={x.id} />
+			</div>
+		));
 
 		return (
 			<WidthWrapper>
@@ -56,7 +68,7 @@ export default class Endorsements extends Component {
 					history={this.props.history}
 				/>
 				<Heading id="celebs" txt="Celebrities" variant="h2" />
-				<p>{endorsements.celebrities}</p>
+				<div style={{ textAlign: "center" }}>{celebs}</div>
 				<h3>And More!</h3>
 			</WidthWrapper>
 		);

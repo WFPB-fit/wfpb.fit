@@ -3,7 +3,6 @@
 		{
 			"name": "Michael Greger",
 			"books": "https://www.amazon.com/Michael-Greger/e/B001K892OG",
-			"profile_img": "/imgs/people/doctors/gregor.jpg",
 			"summary": "American physician, author, and professional speaker on public health issues, particularly the benefits of a whole foods, plant-based, healthy diet and the harms of eating animal products.",
 			"website": "https://nutritionfacts.org/"
 		},
@@ -11,27 +10,23 @@
 			"name": "T. Colin Campbell",
 			"books": "https://www.amazon.com/T.-Colin-Campbell/e/B001K7QPBA",
 			"website": "http://nutritionstudies.org/",
-			"profile_img": "/imgs/people/doctors/campbell.jpg",
 			"summary": "American biochemist who specializes in the effect of nutrition on long-term health. He is the Jacob Gould Schurman Professor Emeritus of Nutritional Biochemistry at Cornell University."
 		},
 		{
 			"name": "John A. McDougall",
 			"books": "https://www.amazon.com/John-A.-McDougall/e/B001IZVGHW",
-			"profile_img": "/imgs/people/doctors/mcdougall.jpg",
 			"summary": "A graduate of Michigan State University’s College of Human Medicine, Dr. McDougall performed his internship at Queen’s Medical Center in Honolulu, Hawaii, and his medical residency at the University of Hawaii. He is certified as an internist by the Board of Internal Medicine and the National Board of Medical Examiners.  He and Mary are also the authors of several nationally best-selling books as well as the co-founders of Dr. McDougall’s Right Foods, which produces high quality vegetarian cuisine to make it easier for people to eat well on the go.",
 			"website": "https://www.drmcdougall.com/"
 		},
 		{
 			"name": "Neal Barnard",
 			"books": "https://www.amazon.com/Neal%20D.%20Barnard/e/B001ILHHG0/ref=la_B001ILHHG0_pg_3?rh=n%3A283155%2Cp_82%3AB001ILHHG0&page=3&sort=author-pages-popularity-rank&ie=UTF8&qid=1510798053",
-			"profile_img": "/imgs/people/doctors/barnard.jpg",
 			"summary": "American author, clinical researcher, and founding president of the Physicians Committee for Responsible Medicine. ",
 			"website": "https://www.pcrm.org/media/experts/neal-barnard"
 		},
 		{
 			"name": "Caldwell Esselstyn",
 			"books": "https://www.amazon.com/Prevent-Reverse-Heart-Disease-Nutrition-Based/dp/1583333002?qid=1539183409&refinements=p_27%3ACaldwell+B.+Esselstyn+Jr.&s=Books&sr=1-1&text=Caldwell+B.+Esselstyn+Jr.&ref=sr_1_1",
-			"profile_img": "/imgs/people/doctors/esselstyn.jpg",
 			"summary": "Caldwell B. Esselstyn, Jr., received his B.A. from Yale University and his M.D. from Western Reserve University. In 1956, pulling the No. 6 oar as a member of the victorious United States rowing team, he was awarded a gold medal at the Olympic Games. Dr. Esselstyn has been associated with the Cleveland Clinic since 1968. In 1991, Dr. Esselstyn served as President of the American Association of Endocrine Surgeons. His scientific publications number over 150, “The Best Doctors in America” 1994-1995 published by Woodward and White cites Dr. Esselstyn’s surgical expertise in the categories of endocrine and breast disease. In 1995 he published his bench mark long-term nutritional research arresting and reversing coronary artery disease in severely ill patients. ",
 			"website": "http://www.dresselstyn.com"
 		},
@@ -39,41 +34,35 @@
 			"name": "Garth Davis",
 			"books": "https://www.amazon.com/Proteinaholic-Obsession-Meat-Killing-About/dp/0062279319/ref=sr_1_1?s=books&ie=UTF8&qid=1513444674&sr=1-1",
 			"website": "https://www.thedavisclinic.com/dr-garth-davis.html",
-			"profile_img": "/imgs/people/doctors/davis.jpg",
 			"summary": "Dr. Davis graduated Phi Beta Kappa from the University of Texas in Austin where he was the Student Government President. Dr. Davis completed his surgical residency at the prestigious University of Michigan in Ann Arbor where he was elected to the position of Chief Administrative Resident. He is certified by the American Board of Surgery and is a Fellow of the American College of Surgeons and a Fellow of the American Society for Metabolic and Bariatric Surgery. "
 		},
 		{
 			"name": "Joel Fuhrman",
 			"books": "https://www.amazon.com/Joel-Fuhrman/e/B001ILFMKI/ref=sr_ntt_srch_lnk_1?qid=1513444375&sr=8-1",
-			"profile_img": "/imgs/people/doctors/fuhrman.jpg",
 			"summary": "Joel Fuhrman, M.D. is a board-certified family physician, six-time New York Times best-selling author and internationally recognized expert on nutrition and natural healing, who specializes in preventing and reversing disease through nutritional methods. Dr. Fuhrman is the President of the Nutritional Research Foundation. ",
 			"website": "https://www.drfuhrman.com/"
 		},
 		{
 			"name": "Michael Klaper",
 			"books": "https://www.amazon.com/Michael-Klaper/e/B00J4R7ZEE",
-			"profile_img": "/imgs/people/doctors/klaper.jpg",
 			"summary": "American physician, author, and veganism advocate",
 			"website": "https://doctorklaper.com/"
 		},
 		{
 			"name": "Dean Ornish",
 			"books": "https://www.amazon.com/Dean-Ornish-MD/e/B000APT53I",
-			"profile_img": "/imgs/people/doctors/ornish.jpg",
 			"summary": "American physician and researcher. He is the president and founder of the nonprofit Preventive Medicine Research Institute in Sausalito, California and a Clinical Professor of Medicine at the University of California, San Francisco. ",
 			"website": "https://www.ornish.com/"
 		},
 		{
 			"name": "Joel Kahn",
 			"books": "https://www.amazon.com/Joel-K.-Kahn-MD/e/B00QODW9VU",
-			"profile_img": "/imgs/people/doctors/kahn.jpg",
 			"summary": "Dr. Kahn is a Clinical Professor of Medicine at Wayne State University School of Medicine and Director of Cardiac Wellness, Michigan Healthcare Professionals PC. He is a graduate Summa Cum Laude of the University of Michigan School of Medicine. He lectures widely on the cardiac benefits of vegan nutrition, mind body practices and heart attack prevention. He writes blogs for MindBodyGreen, OneGreenPlanet, Aloha.com, and Forksoverknives.com. He also writes for Readers Digest Magazine as the Holistic Heart Doc and his first book, The Whole Heart Solution.",
 			"website": "https://drjoelkahn.com/"
 		},
 		{
 			"name": "Terry Shintani",
 			"books": "https://www.amazon.com/s/ref=dp_byline_sr_book_1?ie=UTF8&text=Terry+Shintani&search-alias=books&field-author=Terry+Shintani&sort=relevancerank",
-			"profile_img": "/imgs/people/doctors/shintani.jpg",
 			"summary": "American physician, attorney, nutritionist, professor, author, lecturer, radio show host and community advocate in Hawaii. ",
 			"website": "http://www.drshintani.com/about"
 		}
@@ -170,11 +159,157 @@
 			"website": "https://www.nhs.uk/Livewell/Vegetarianhealth/Pages/Vegandiets.aspx"
 		}
 	],
-	"celebrities": "Arnold Schwarzenegger, Bill Clinton, Al Gore, Pamela Anderson, James Cameron, Penn Jillette, Ellen Degeneres, Olivia Wilde, Beyonce, Natalie Portman, Jennifer Lopez, Ariana Grande, Jaoquin Pheonix, Carrie Underwood, Miley Cyrus, Peter Dinklage, Jason Derulo, Charlie Sheen, Kylie Jenner, Ne-Yo, Jared Leto, Jason Mraz, Tia Blanco, Ben Cohen, Alicia Silverstone, Alex Baldwin, Lea Michele, Dax Shepard, Kristen Bell, Portia de Rossi, Lewis Hamilton, Brad Pitt, Robbie Williams, Craig Robinson, Russell Brand, Tobey Maguire, Woody Harrelson, Ellen Page, Liam Hemsworth, Mayim Bialik, Casey Affleck, Moby, Russell Simmons, Sia, Stevie Wonder, RZA,  Wacka Flocka Flame, Jason Derulo, Charlie Sheen, Kylie Jenner, Ne-Yo, Paul McCartney, David Attenborough, Kat Von D, Evanna Lynch, Travis Barker, Mya, Mike Tyson, John Sally, Chris Evans",
+	"celebrities": [
+		{
+			"name": "Arnold Schwarzenegger",
+			"summary": "Former bodybuilder, action star, and governer of California",
+			"source": "https://www.instagram.com/p/BG83mY1uIL-/?utm_source=ig_embed",
+			"wiki": "https://en.wikipedia.org/wiki/Arnold_Schwarzenegger"
+		},
+		{
+			"name": "Bill Clinton",
+			"summary": "Former president of the United States",
+			"source": "https://www.youtube.com/watch?v=rrMBoI6co2c&feature=youtu.be&t=2652",
+			"wiki": "https://en.wikipedia.org/wiki/Bill_Clinton"
+		},
+		{
+			"name": "Al Gore",
+			"summary": "Former vice president of the United States",
+			"source": "https://www.medscape.com/viewarticle/820999",
+			"wiki": "https://en.wikipedia.org/wiki/Al_Gore"
+		},
+		{
+			"name": "James Cameron",
+			"summary": "Canadian filmmaker, philanthropist, and deep-sea explorer",
+			"source": "https://www.mensjournal.com/health-fitness/james-cameron-why-i-eat-a-vegan-diet-20150915/",
+			"wiki": "https://en.wikipedia.org/wiki/James_Cameron"
+		},
+		{
+			"name": "Natalie Portman",
+			"summary": "Film actress, producer, and director with dual Israeli and American citizenship.",
+			"source": "https://www.youtube.com/watch?v=z39Q4wqlZ6k",
+			"wiki": "https://en.wikipedia.org/wiki/Beyonc%C3%A9"
+		},
+		{
+			"name": "Beyonce",
+			"summary": "American singer, songwriter, producer, and actress.",
+			"source": "https://www.nytimes.com/2015/05/10/style/jay-z-and-beyonce-want-to-put-you-in-a-vegan-state-of-mind.html",
+			"wiki": "https://en.wikipedia.org/wiki/Beyonc%C3%A9"
+		},
+		{
+			"name": "Jay Z",
+			"summary": "American rapper, entrepreneur, songwriter, and record producer.",
+			"source": "https://www.nytimes.com/2015/05/10/style/jay-z-and-beyonce-want-to-put-you-in-a-vegan-state-of-mind.html",
+			"wiki": "https://en.wikipedia.org/wiki/Jay-Z"
+		},
+		{
+			"name": "Jaoquin Pheonix",
+			"summary": "American actor, producer, and activist.",
+			"source": "https://en.wikipedia.org/wiki/Joaquin_Phoenix#Animal_rights_activism",
+			"wiki": "https://en.wikipedia.org/wiki/Joaquin_Phoenix"
+		},
+		{
+			"name": "Pamela Anderson",
+			"summary": "Canadian American actress and model",
+			"source": "https://en.wikipedia.org/wiki/Pamela_Anderson#Veganism",
+			"wiki": "https://en.wikipedia.org/wiki/Pamela_Anderson"
+		},
+		{
+			"name": "Peter Dinklage",
+			"summary": "American actor and film producer.",
+			"source": "https://www.youtube.com/watch?v=BJmsY681rpg",
+			"wiki": "https://en.wikipedia.org/wiki/Peter_Dinklage"
+		},
+		{
+			"name": "Miley Cyrus",
+			"summary": "American singer, songwriter, and actress.",
+			"source": "https://www.youtube.com/watch?v=RIneZ-s14_Q",
+			"wiki": "https://en.wikipedia.org/wiki/Miley_Cyrus"
+		},
+		{
+			"name": "Penn Jillette",
+			"summary": "American magician, comedian, musician, actor, inventor, filmmaker, television personality, and best-selling author.",
+			"source": "https://twitter.com/pennjillette/status/585993557804064768?lang=en",
+			"wiki": "https://en.wikipedia.org/wiki/Penn_Jillette"
+		},
+		{
+			"name": "Ellen Degeneres",
+			"summary": "American comedian, television host, actress, writer, producer, and LGBT activist.",
+			"source": "https://www.youtube.com/watch?v=-Cm6cGI6K6o",
+			"wiki": "https://en.wikipedia.org/wiki/Ellen_DeGeneres"
+		},
+		{
+			"name": "Ariana Grande",
+			"summary": "American singer, songwriter and actress.",
+			"source": "https://twitter.com/ArianaGrande/status/397803765279260672",
+			"wiki": "https://en.wikipedia.org/wiki/Ariana_Grande"
+		},
+		{
+			"name": "Carrie Underwood",
+			"summary": "American singer, songwriter and actress.",
+			"source": "https://www.self.com/story/carrie-underwood-almost-vegan",
+			"wiki": "https://en.wikipedia.org/wiki/Carrie_Underwood"
+		},
+		{
+			"name": "Jason Derulo",
+			"summary": "American singer, songwriter, and dancer.",
+			"source": "http://www.onegreenplanet.org/vegan-food/musician-jason-derulo-goes-vegan-and-his-favorite-foods/",
+			"wiki": "https://en.wikipedia.org/wiki/Jason_Derulo"
+		},
+		{
+			"name": "Jennifer Lopez",
+			"summary": "American singer, actress, dancer and producer.",
+			"source": "https://www.youtube.com/watch?v=qVJ06NnfX-A",
+			"wiki": "https://en.wikipedia.org/wiki/Jennifer_Lopez"
+		},
+		{
+			"name": "Ne-Yo",
+			"summary": "American singer, songwriter, record producer, actor and dancer.",
+			"source": "https://www.youtube.com/watch?v=okSYSBhvnzI",
+			"wiki": "https://en.wikipedia.org/wiki/Ne-Yo"
+		},
+		{
+			"name": "Jared Leto",
+			"summary": "American actor, singer, songwriter, and director.",
+			"source": "https://www.gq-magazine.co.uk/article/jared-leto-hugo-boss-red-fragrance-interview",
+			"wiki": "https://en.wikipedia.org/wiki/Ne-Yo"
+		},
+		{
+			"name": "Jason Mraz",
+			"summary": "American singer-songwriter.",
+			"source": "https://www.vegetariantimes.com/uncategorized/one-on-one-with-jason-mraz",
+			"wiki": "https://en.wikipedia.org/wiki/Jason_Mraz"
+		},
+		{
+			"name": "Jared Leto",
+			"summary": "American actor, singer, songwriter, and director.",
+			"source": "https://www.gq-magazine.co.uk/article/jared-leto-hugo-boss-red-fragrance-interview",
+			"wiki": "https://en.wikipedia.org/wiki/Ne-Yo"
+		},
+		{
+			"name": "Alec Baldwin",
+			"summary": "American actor, writer, producer, and comedian.",
+			"source": "https://veganuary.com/people/alec-baldwin/",
+			"wiki": "https://en.wikipedia.org/wiki/Alec_Baldwin"
+		},
+		{
+			"name": "Alicia Silverstone",
+			"summary": "American actor, singer, songwriter, and director.",
+			"source": "https://www.youtube.com/watch?v=xryZ6DqNZqI",
+			"wiki": "https://en.wikipedia.org/wiki/Alicia_Silverstone"
+		},
+		{
+			"name": "Olivia Wilde",
+			"summary": "American actress, model, producer, director and activist.",
+			"source": "https://www.look.co.uk/fashion/olivia-wilde-talks-hm-motherhood-and-crazy-diets-30079",
+			"wiki": "https://en.wikipedia.org/wiki/Olivia_Wilde"
+		}
+	],
+	"more vegan celebrities": "Lea Michele, Dax Shepard, Kristen Bell, Portia de Rossi, Lewis Hamilton, Brad Pitt, Robbie Williams, Craig Robinson, Russell Brand, Tobey Maguire, Woody Harrelson, Ellen Page, Liam Hemsworth, Mayim Bialik, Casey Affleck, Moby, Russell Simmons, Sia, Stevie Wonder, RZA,  Wacka Flocka Flame, Jason Derulo, Charlie Sheen, Kylie Jenner, Ne-Yo, Paul McCartney, David Attenborough, Kat Von D, Evanna Lynch, Travis Barker, Mya, Mike Tyson, John Sally, Chris Evans",
 	"athletes": {
 		"endurance": "Scott Jurek, Carl Lewis, Rich Roll, Denis Mikhaylove, Fiona Oakes, Harvey Lewis, Kate Ziegler, Jason Lester, Brendan Brazier, Molly Cameron, Christine Vardaros, Dave Zabriskie, Kuntal Joisher",
 		"fighting": "Mac Danzig, David Meyer, Cam Awesome, James Southwood, Nate Diaz, Jake Shields, Georgi Karakhanyan, Timothy Bradley, Steph Goyne, Nick Diaz",
 		"lifting": "Patrik Baboumian, Kendrick Farris, Alex Dargatz, Torre Washington, Julia Hubbard, Amansa Riester, Derek Tresize, Joel Kirkillis, Steph Davis, Sara Lee",
-		"sports": "Cardale Jones, Tony Gonzalez, Ed Templeton, Damian Lillard, Kyrie Irving, Billie Jean King, Venus Williams, Joe Namath, Robert Parish, Ricky Williams, David Carter, Jermain Defoe, Serena Williams, Peter Siddle, Mirco Bergamasco, Roland Williams, Tony Horton, Wilson Chandler, Griff Whalen, Jahlil Okafor"
+		"sports": "Tia Blanco, Cardale Jones, Tony Gonzalez, Ed Templeton, Damian Lillard, Kyrie Irving, Billie Jean King, Venus Williams, Joe Namath, Robert Parish, Ricky Williams, David Carter, Jermain Defoe, Serena Williams, Peter Siddle, Mirco Bergamasco, Roland Williams, Tony Horton, Wilson Chandler, Griff Whalen, Jahlil Okafor"
 	}
 }
