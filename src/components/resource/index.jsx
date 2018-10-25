@@ -10,6 +10,8 @@ import Button from "@material-ui/core/Button";
 
 import styled from "styled-components";
 
+import Blur from "react-css-blur";
+
 import {
 	titleize,
 	joinMetaData,
@@ -18,11 +20,17 @@ import {
 import Help from "../help";
 import Quote from "../quote";
 
-import StudyMetadataNames from '../../assets/data/study_metadata_names.json';
+import StudyMetadataNames from "../../assets/data/study_metadata_names.json";
 
 import CircularProgress from "@material-ui/core/CircularProgress";
 
 export default class Resource extends Component {
+	state = { blurOn: this.props.resource.graphic };
+
+	turnOffBlur = () => {
+		this.setState({ blurOn: false });
+	};
+
 	static youtubeID(url) {
 		if (!url || url.indexOf("youtube.com") < 0) {
 			return null;
@@ -71,7 +79,9 @@ export default class Resource extends Component {
 	render() {
 		const resource = this.props.resource;
 
-		const availability = getTitleized(StudyMetadataNames.availability[resource.availability]);
+		const availability = getTitleized(
+			StudyMetadataNames.availability[resource.availability]
+		);
 		const type = getTitleized(StudyMetadataNames.types[resource.type]);
 		const tags = Resource.getTags(resource.tags);
 		const rating = Resource.getRating(resource.rating);
@@ -85,7 +95,7 @@ export default class Resource extends Component {
 			tags
 		]);
 
-		const video = Resource.getEmbeddedVideoCode(resource.video);
+		let video = Resource.getEmbeddedVideoCode(resource.video);
 
 		const isMediaCard = resource.profile_img;
 
@@ -121,25 +131,33 @@ export default class Resource extends Component {
 
 		let CardInfo = null;
 		if (!isMediaCard) {
-			let txt;
+			let txt = <CircularProgress />;
 			if (resource.quote) txt = <Quote>{resource.quote}</Quote>;
 			else if (resource.summary)
 				txt = <Typography>{resource.summary}</Typography>;
-			else txt = <CircularProgress />;
+
+			if (this.state.blurOn && video) {
+				video = (
+					<div onClick={this.turnOffBlur}>
+						<Button
+							style={{ display: "block", margin: "5px auto" }}
+							variant="contained"
+							color="primary"
+						>
+							Graphic - click to unblur
+						</Button>
+						<Blur radius={this.state.blurOn ? "5px" : "0"} transition="400ms">
+							{video}
+						</Blur>
+					</div>
+				);
+			}
 
 			CardInfo = (
 				<div>
 					{txt}
 					{video}
 				</div>
-			);
-		}
-		let isGraphic = null;
-		if (resource.graphic) {
-			isGraphic = (
-				<Typography align="center" variant="h6">
-					GRAPHIC
-				</Typography>
 			);
 		}
 
@@ -156,12 +174,9 @@ export default class Resource extends Component {
 						{title}
 					</Typography>
 
-					{isGraphic}
-
 					<Typography align="center" variant="h6">
 						{metaData}
 					</Typography>
-
 					{CardInfo}
 				</CardContent>
 

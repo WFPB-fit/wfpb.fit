@@ -48,9 +48,13 @@ export default class HowTo extends Component {
 					src="/imgs/assets/foods/pyramids/gregor-daily-dozen.jpg"
 					alt="Nutrition Facts Daily Dozen"
 				/>
-				<SquarishImg
+				{/* <SquarishImg
 					src="/imgs/assets/foods/pyramids/Plant-Based-Dietitian-Pyramid.jpg"
 					alt="Plant-Based-Dietitian-Pyramid"
+				/> */}
+				<SquarishImg
+					src="/imgs/assets/foods/pyramids/wfpb_food_pyramid_nutriciously.jpg"
+					alt="Nutriciously WFPB low fat food pyramid"
 				/>
 				<Heading id="learn" txt="Where can I learn more?" variant="h2" />
 				<p>
@@ -74,8 +78,8 @@ export default class HowTo extends Component {
 				motivation.
 				{HowTo.getListed(QuickResources.communities)}
 				<Heading id="programs" txt="Programs" variant="h3" />
-				Multi-week programs with strong evidence-based results can guide you
-				through the process, but may cost a few hundred dollars.
+				Structured programs can guide you through the transition. Some cost
+				money, some are free.
 				{HowTo.getListed(QuickResources.programs)}
 				<Heading id="recipes" txt="What's for dinner?" variant="h2" />
 				Whether you need cheap, fast, and easy or delicious and decadent there's
@@ -264,11 +268,7 @@ export default class HowTo extends Component {
 					</li>
 					<li>{getLink("/research", "And more...")}</li>
 				</ul>
-				<Heading
-					id="potential-issues"
-					txt="Potential Issues"
-					variant="h2"
-				/>
+				<Heading id="potential-issues" txt="Potential Issues" variant="h2" />
 				The following nutrients might be harder to get on WFPBD.
 				<ol>
 					<li>
@@ -292,11 +292,7 @@ export default class HowTo extends Component {
 						supplements, or a special UVB lamp.
 					</li>
 				</ol>
-				<Heading
-					id="common-concerns"
-					txt="Common Concerns"
-					variant="h3"
-				/>
+				<Heading id="common-concerns" txt="Common Concerns" variant="h3" />
 				<p>
 					Most people will get all other required nutrients when eating a
 					diverse range of whole, plant-based foods. If you are worried about

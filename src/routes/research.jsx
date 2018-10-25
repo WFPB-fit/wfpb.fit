@@ -26,7 +26,6 @@ export default class Research extends Component {
 	render() {
 		if (this.props.studies_metadata) {
 			let md = this.props.studies_metadata;
-			const agribusinessTags = ['agribusiness'];
 			let txt = this.props.studies_text;
 
 			if (txt){
@@ -38,8 +37,8 @@ export default class Research extends Component {
 			let food_studies = Research.filterStudiesByTags(md, tags.food);
 			let nutrient_studies = Research.filterStudiesByTags(md, tags.nutrients);
 			let environment_studies = Research.filterStudiesByTags(md, tags.environment);
-			let agribusiness_studies = Research.filterStudiesByTags(md, agribusinessTags);
-			let animals_studies = Research.filterStudiesByTags(md, []);
+			let agribusiness_studies = Research.filterStudiesByTags(md, tags.agribusiness);
+			// let animals_studies = Research.filterStudiesByTags(md, []);
 
 			let tabs = [{
 				label: 'Disease',
@@ -59,13 +58,14 @@ export default class Research extends Component {
 				resources: environment_studies
 			}, {
 				label: 'Agribusiness',
-				tags: agribusinessTags,
+				tags: tags.agribusiness,
 				resources: agribusiness_studies
-			}, {
-				label: 'Animals',
-				tags: [],
-				resources: animals_studies
-			}
+			},
+			//  {
+			// 	label: 'Animals',
+			// 	tags: [],
+			// 	resources: animals_studies
+			// }
 			];
 
 			return (

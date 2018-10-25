@@ -39,37 +39,101 @@
 			"url": "https://www.pcrm.org/health",
 			"name": "Physicians Committee for Responsible Medicine"
 		}
-    ],
-    "programs":[
-		{ "url": "https://www.chiphealth.com/", "name": "Complete Health Improvement Program (CHIP)" },
-		{ "url": "https://engine2diet.com/7drc/", "name": "Engine 2 Seven Day Challenge" },
-		{ "url": "https://www.challenge22.com/challenge22/", "name": "Challenge 22" },
-		{ "url": "https://www.plantpurenation.com/products/plantpure-health-weight-loss-seminar", "name": "Plant Pure Nation" },
-		{ "url": "https://nutritionstudies.org/courses/plant-based-nutrition/", "name": "Plant Based Nutrition Certificate" },
-		{ "url": "https://www.forksoverknives.com/cooking-course/", "name": "Forks Over Knives Cooking Course" }
-    ],
-    "communities":[
-		{ "url": "https://www.meetup.com/topics/whole-foods-plant-based-diet/?_cookie-check=ziUDSkh6uoDwOK-G", "name": "WFPBD Meetups" },
-		{ "url": "https://www.reddit.com/r/PlantBasedDiet/", "name": "Reddit's Plant Based Diet" },
-		{ "url": "https://www.plantbaseddoctors.org/", "name": "Plant Based Doctors" },
+	],
+	"programs": [
+		{ "url": "https://nutriciously.com/course/", "name": "Nutriciously" },
+		{
+			"url": "https://www.chiphealth.com/",
+			"name": "Complete Health Improvement Program (CHIP)"
+		},
+		{
+			"url": "https://engine2diet.com/7drc/",
+			"name": "Engine 2 Seven Day Challenge"
+		},
+		{
+			"url": "https://www.challenge22.com/challenge22/",
+			"name": "Challenge 22"
+		},
+		{
+			"url": "https://www.plantpurenation.com/products/plantpure-health-weight-loss-seminar",
+			"name": "Plant Pure Nation"
+		},
+		{
+			"url": "https://nutritionstudies.org/courses/plant-based-nutrition/",
+			"name": "Plant Based Nutrition Certificate"
+		},
+		{
+			"url": "https://www.forksoverknives.com/cooking-course/",
+			"name": "Forks Over Knives Cooking Course"
+		}
+	],
+	"communities": [
+		{
+			"url": "https://www.meetup.com/topics/whole-foods-plant-based-diet/?_cookie-check=ziUDSkh6uoDwOK-G",
+			"name": "WFPBD Meetups"
+		},
+		{
+			"url": "https://www.reddit.com/r/PlantBasedDiet/",
+			"name": "Reddit's Plant Based Diet"
+		},
+		{
+			"url": "https://www.plantbaseddoctors.org/",
+			"name": "Plant Based Doctors"
+		},
 		{ "url": "https://www.veggieboards.com/", "name": "Veggie Boards" },
-		{ "url": "https://plantpurecommunities.org/plantpurepods/", "name": "Plant Pure Pods" }
-    ],
-    "recipes":[
-		{ "url": "https://www.forksoverknives.com/recipes/", "name": "Forks Over Knives" },
-		{ "url": "http://engine2diet.com/blog/category/recipes/", "name": "Engine 2 Diet" },
-		{ "url": "https://plantbasedonabudget.com/recipes/", "name": "Plant Based on a Budget" },
-		{ "url": "https://www.drmcdougall.com/health/education/recipes/mcdougall-recipes/", "name": "McDougall Recipes" },
-		{ "url": "https://nutritionstudies.org/recipes/", "name": "Nutrition Studies Recipes" },
+		{
+			"url": "https://plantpurecommunities.org/plantpurepods/",
+			"name": "Plant Pure Pods"
+		}
+	],
+	"recipes": [
+		{
+			"url": "https://www.forksoverknives.com/recipes/",
+			"name": "Forks Over Knives"
+		},
+		{
+			"url": "http://engine2diet.com/blog/category/recipes/",
+			"name": "Engine 2 Diet"
+		},
+		{
+			"url": "https://plantbasedonabudget.com/recipes/",
+			"name": "Plant Based on a Budget"
+		},
+		{
+			"url": "https://www.drmcdougall.com/health/education/recipes/mcdougall-recipes/",
+			"name": "McDougall Recipes"
+		},
+		{
+			"url": "https://nutritionstudies.org/recipes/",
+			"name": "Nutrition Studies Recipes"
+		},
 		{ "url": "https://happyherbivore.com/recipes/", "name": "Happy Herbivore" },
 		{ "url": "https://www.vegaroo.co/vegan-recipes", "name": "Vegaroo" },
-		{ "url": "https://www.brandnewvegan.com/recipe-index", "name": "Brand New Vegan" },
-		{ "url": "https://www.feastingonfruit.com/recipe-index/", "name": "Feasting on Fruit" },
-		{ "url": "http://www.straightupfood.com/blog/recipe-index/", "name": "Straight Up Food" },
+		{
+			"url": "https://www.brandnewvegan.com/recipe-index",
+			"name": "Brand New Vegan"
+		},
+		{
+			"url": "https://www.feastingonfruit.com/recipe-index/",
+			"name": "Feasting on Fruit"
+		},
+		{
+			"url": "http://www.straightupfood.com/blog/recipe-index/",
+			"name": "Straight Up Food"
+		},
 		{ "url": "http://thevegan8.com/all-recipes/", "name": "The Vegan 8" },
 		{ "url": "https://dreenaburton.com/recipe-page/", "name": "Dreena Burton" },
-		{ "url": "https://blog.fatfreevegan.com/recipes", "name": "Fat Free Vegan Kitchen" },
-		{ "url": "https://ohsheglows.com/categories/recipes-2/food-allergies/allergies-oil-free/", "name": "Oh She Glows" },
-		{ "url": "https://cleanfooddirtygirl.com/recipe-index/", "name": "Clean Food Dirty Girl" }
-    ]
+		{
+			"url": "https://blog.fatfreevegan.com/recipes",
+			"name": "Fat Free Vegan Kitchen"
+		},
+		{
+			"url": "https://ohsheglows.com/categories/recipes-2/food-allergies/allergies-oil-free/",
+			"name": "Oh She Glows"
+		},
+		{
+			"url": "https://cleanfooddirtygirl.com/recipe-index/",
+			"name": "Clean Food Dirty Girl"
+		}
+	]
 }

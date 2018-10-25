@@ -590,6 +590,33 @@
 		"quote": "The present review will give an overview of widely investigated plant-derived compounds (curcumin, resveratrol, epigallocatechol-3-gallate, quercetin, colchicine, capsaicin, andrographolide, and genistein) which have exhibited potent effects on cellular and humoral immune functions in pre-clinical investigations and will highlight their clinical potential."
 	},
 	{
+		"title": "The long-term health of vegetarians and vegans.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/26707634",
+		"year": 2016,
+		"type": "meta analysis",
+		"availability": "abstract",
+		"tags": "vegetarian,vegan,obesity,heart disease,cancer,overall mortality",
+		"quote": "Vegetarians have a lower prevalence of overweight and obesity and a lower risk of IHD compared with non-vegetarians from a similar background, whereas the data are equivocal for stroke. For cancer, there is some evidence that the risk for all cancer sites combined is slightly lower in vegetarians than in non-vegetarians, but findings for individual cancer sites are inconclusive. Vegetarians have also been found to have lower risks for diabetes, diverticular disease and eye cataract. Overall mortality is similar for vegetarians and comparable non-vegetarians, but vegetarian groups compare favourably with the general population. The long-term health of vegetarians appears to be generally good, and for some diseases and medical conditions it may be better than that of comparable omnivores. Much more research is needed, particularly on the long-term health of vegans."
+	},
+	{
+		"title": "Does the type of weight loss diet affect who participates in a behavioral weight loss intervention? A comparison of participants for a plant-based diet versus a standard diet trial",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3932532/",
+		"year": 2014,
+		"type": "study",
+		"availability": "full",
+		"tags": "vegetarian,vegan,WFPB",
+		"quote": "The findings of this study demonstrate that using plant-based dietary approaches for weight loss intervention studies does not lead to a population which is significantly different from who enrolls in a standard, behavioral weight loss study using a reduced calorie dietary approach."
+	},
+	{
+		"title": "A plant-based diet and animal protein: questioning dietary fat and considering animal protein as the main cause of heart disease",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5466939/",
+		"year": 2017,
+		"type": "article",
+		"availability": "full",
+		"tags": "fat,protein,heart disease",
+		"quote": "During these last 75 years, an enormous amount of clinical, epidemiological and laboratory follow-up research has promoted, directly and indirectly, the idea that ‘fat’ is a (if not ‘the’) cause of cardiovascular disease.  ... [this] mostly arose from population-based studies that do not translate into estimates of disease risk for individuals ... Dietary fat strongly correlates with breast and other cancers[6],[49]–[51] but, similar to heart disease, these correlations occur for total and saturated fats, not for unsaturated fat,[52] thus favoring an association of these cancers with animal-based foods. Also, among these countries, dietary fat and animal protein consumption are highly correlated,[53] thus the observed association of these cancers with dietary fat could just as easily be an association with animal protein. Indeed, in a survey of 37 countries, the correlations of animal protein and saturated fat with breast and colon cancer exceeded those with socio-economic factors that typically characterize Western societies.[54] Similarly, in rural China, affluent cancers are much less common than in the U.S.[53] In these areas, dietary animal protein consumption is only about 10% that in the U.S. and mean plasma cholesterol [a surrogate for more animal and less plant protein consumption and the variable that is mainly correlated with this aggregate group of cancers and other affluent diseases (P < 0.001)] is only 127 mg/dL.[54] This is an impressive finding in an environment with such low statistical sensitivity."
+	},
+	{
 		"title": "Vegetarian diet: panacea for modern lifestyle diseases?",
 		"url": "https://academic.oup.com/qjmed/article/92/9/531/1520534/Vegetarian-diet-panacea-for-modern-lifestyle",
 		"year": 1999,
@@ -597,6 +624,15 @@
 		"availability": "full",
 		"tags": "vegetarian",
 		"quote": "review the beneficial and adverse effects of vegetarian diets in various medical conditions"
+	},
+	{
+		"title": "Health-Promoting Components of Fruits and Vegetables in the Diet",
+		"url": "https://academic.oup.com/advances/article/4/3/384S/4591619",
+		"year": 2013,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "WFPB,fruit,veges",
+		"quote": "Regular consumption of fruits, vegetables, whole grains, and other plant foods has been negatively correlated with the risk of the development of chronic diseases. There is a huge gap between the average consumption of fruits and vegetables in Americans and the amount recommended by the 2010 Dietary Guidelines for Americans ... A wide variety of fruits, vegetables, whole grains, and other plant foods provide a range of nutrients and different bioactive compounds including phytochemicals, vitamins, minerals, and fibers. ... More and more evidence suggests that the health benefits of fruits, vegetables, whole grains, and other plant foods are attributed to the synergy or interactions of bioactive compounds and other nutrients in whole foods. Therefore, consumers should obtain their nutrients, antioxidants, bioactive compounds, and phytochemicals from a balanced diet with a wide variety of fruits, vegetables, whole grains, and other plant foods for optimal nutrition, health, and well-being, not from dietary supplements."
 	},
 	{
 		"title": "Health effects of vegan diets",
@@ -1346,6 +1382,24 @@
 		"quote": "Both diets were associated with sustained reductions in weight and plasma lipid concentrations. In an analysis controlling for medication changes, a low-fat vegan diet appeared to improve glycemia and plasma lipids more than did conventional diabetes diet recommendations. Whether the observed differences provide clinical benefit for the macro- or microvascular complications of diabetes remains to be established. "
 	},
 	{
+		"title": "A vegan diet free of gluten improves the signs and symptoms of rheumatoid arthritis: the effects on arthritis correlate with a reduction in antibodies to food antigens",
+		"url": "https://academic.oup.com/rheumatology/article/40/10/1175/1787820",
+		"year": 2001,
+		"type": "study",
+		"availability": "full",
+		"tags": "vegan,arthritis",
+		"quote": "Twenty‐two patients in the vegan group and 25 patients in the non‐vegan diet group completed 9 months or more on the diet regimens. Of these diet completers, 40.5% (nine patients) in the vegan group fulfilled the ACR20 improvement criteria compared with 4% (one patient) in the non‐vegan group. "
+	},
+	{
+		"title": "A vegan or vegetarian diet substantially alters the human colonic faecal microbiota",
+		"url": "https://www.nature.com/articles/ejcn2011141",
+		"year": 2011,
+		"type": "study",
+		"availability": "full",
+		"tags": "vegan,microbiota",
+		"quote": "We examined faecal samples of vegetarians (n=144), vegans (n=105) and an equal number of control subjects consuming ordinary omnivorous diet who were matched for age and gender ... Total counts of Bacteroides spp., Bifidobacterium spp., Escherichia coli and Enterobacteriaceae spp. were significantly lower (P=0.001, P=0.002, P=0.006 and P=0.008, respectively) in vegan samples than in controls, whereas others (E. coli biovars, Klebsiella spp., Enterobacter spp., other Enterobacteriaceae, Enterococcus spp., Lactobacillus spp., Citrobacter spp. and Clostridium spp.) were not. Subjects on a vegetarian diet ranked between vegans and controls. The total microbial count did not differ between the groups. In addition, subjects on a vegan or vegetarian diet showed significantly (P=0.0001) lower stool pH than did controls, and stool pH and counts of E. coli and Enterobacteriaceae were significantly correlated across all subgroups."
+	},
+	{
 		"title": "High compliance with dietary recommendations in a cohort of meat eaters, fish eaters, vegetarians, and vegans: results from the European Prospective Investigation into Cancer and Nutrition–Oxford study",
 		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4844163/",
 		"year": 2016,
@@ -1353,6 +1407,35 @@
 		"availability": "full",
 		"tags": "vegan,vegetarian,moderation,WFPB",
 		"quote": "Highly significant differences were found in estimated nutrient intakes between meat eaters and vegans, with fish eaters and vegetarians usually having intermediate values. Meat eaters had the highest energy intakes, followed by fish eaters and vegetarians, whereas vegans had the lowest intakes. Vegans had the highest intakes of polyunsaturated fatty acids, dietary fiber, vitamins C and E, folate, magnesium, iron, and copper. Meat eaters had the highest intake of saturated fatty acids, protein, vitamin B2, vitamin B12, vitamin D, zinc, and iodine. Fish eaters had the highest intakes of calcium and selenium. ... The results suggested a high prevalence of inadequacy for dietary vitamin B12 and iodine in vegans."
+	},
+	{
+		"title": "Antioxidants in vegan diet and rheumatic disorders.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/11156742",
+		"pdf": "https://eurekamag.com/pdf/003/003648192.pdf",
+		"year": 2000,
+		"type": "study",
+		"availability": "full",
+		"tags": "vegan,fiber,phytochemicals,arthritis,fibromyalgia,microbiota",
+		"quote": "Interventions and cross sectional studies on subjects consuming uncooked vegan diet called living food (LF) have been carried out ... The shift of fibromyalgic subjects to LF resulted in a decrease of their joint stiffness and pain as well as an improvement of their self-experienced health. The rheumatoid arthritis patients eating the LF diet also reported similar positive responses and the objective measures supported this finding. The improvement of rheumatoid arthritis was significantly correlated with the day-to-day fluctuation of subjective symptoms. In conclusion the rheumatoid patients subjectively benefited from the vegan diet rich in antioxidants, lactobacilli and fibre, and this was also seen in objective measures"
+	},
+	{
+		"title": "Potential contributions of food consumption patterns to climate change",
+		"url": "https://academic.oup.com/ajcn/article/89/5/1704S/4596965",
+		"year": 2009,
+		"type": "study",
+		"availability": "full",
+		"tags": "climate change",
+		"quote": "For protein-rich food, such as legumes, meat, fish, cheese, and eggs, the difference is a factor of 30 with the lowest emissions per kilogram for legumes, poultry, and eggs and the highest for beef, cheese, and pork. Large emissions for ruminants are explained mainly by methane emissions from enteric fermentation. For vegetables and fruits, emissions usually are ≤2.5 kg CO2 equivalents/kg product, even if there is a high degree of processing and substantial transportation. Products transported by plane are an exception because emissions may be as large as for certain meats. Emissions from foods rich in carbohydrates, such as potatoes, pasta, and wheat, are <1.1 kg/kg edible food. We suggest that changes in the diet toward more plant-based foods, toward meat from animals with little enteric fermentation, and toward foods processed in an energy-efficient manner offer an interesting and little explored area for mitigating climate change."
+	},
+	{
+		"title": "Potential contributions of food consumption patterns to climate change",
+		"url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(07)61256-2/fulltext",
+		"pdf": "http://people.umass.edu/bethanyb/GCE/McMichael%20et%20al.%2C%202007.pdf",
+		"year": 2007,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "climate change",
+		"quote": "Worldwide, greenhouse-gas emissions from agriculture (crop production and animal husbandry) and associated changes in land use, are estimated to exceed those from power generation and transport. Methane and nitrous oxide, combined, are more important emissions from this sector than is carbon dioxide. "
 	},
 	{
 		"title": "Perceived protein needs and measured protein intake in collegiate male athletes: an observational study",
@@ -1398,6 +1481,51 @@
 		"availability": "abstract",
 		"tags": "weight loss,heart disease,WFPB",
 		"quote": "An 18-week dietary intervention using a low-fat plant-based diet in a corporate setting improves body weight, plasma lipids, and, in individuals with diabetes, glycemic control."
+	},
+	{
+		"title": "The Impact of Diet and Lifestyle on Gut Microbiota and Human Health",
+		"url": "https://www.mdpi.com/2072-6643/7/1/17/htm",
+		"year": 2014,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "microbiota",
+		"quote": "There is growing recognition of the role of diet and other environmental factors in modulating the composition and metabolic activity of the human gut microbiota, which in turn can impact health. This narrative review explores the relevant contemporary scientific literature to provide a general perspective of this broad area. "
+	},
+	{
+		"title": "Higher Diet Quality Is Associated with Decreased Risk of All-Cause, Cardiovascular Disease, and Cancer Mortality among Older Adults ",
+		"url": "https://academic.oup.com/jn/article/144/6/881/4615977",
+		"year": 2014,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "cancer,heart disease,overall mortality,dash,mediterranean",
+		"quote": "high adherence on each [diet] index was protective for CVD and cancer mortality examined separately. These findings indicate that multiple scores reflect core tenets of a healthy diet that may lower the risk of mortality outcomes"
+	},
+	{
+		"title": "Diet and the Intestinal Microbiome: Associations, Functions, and Implications for Health and Disease",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4216184/",
+		"year": 2014,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "microbiota,WFPB,heart disease,ibd,inflammation",
+		"quote": "Age-dependent and societal differences in the intestinal microbiota could result from differences in diet. Examples include differences in the intestinal microbiota of breast- vs formula-fed infants, or differences in microbial richness in individuals consuming an agrarian plant-based vs a Western diet, which is high in meat and fat. We review how diet affects the structure and metabolome of the human intestinal microbiome, and may contribute to health or pathogenesis of disorders such as coronary vascular disease and inflammatory bowel diseases."
+	},
+	{
+		"title": "Sustainability of plant-based diets: back to the future ",
+		"url": "https://academic.oup.com/ajcn/article/100/suppl_1/476S/4576675",
+		"year": 2014,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "climate change,food security",
+		"quote": "At the current trends of food consumption and environmental changes, food security and food sustainability are on a collision course. Changing course (to avoid the collision) will require extreme downward shifts in meat and dairy consumption by large segments of the world’s population. Other approaches such as food waste reduction and precision agriculture and/or other technological advances have to be simultaneously pursued; however, they are insufficient to make the global food system sustainable. "
+	},
+	{
+		"title": "Plant-Based Dietary Patterns and Incidence of Type 2 Diabetes in US Men and Women: Results from Three Prospective Cohort Studies",
+		"url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002039",
+		"year": 2016,
+		"type": "study",
+		"availability": "full",
+		"tags": "WFPB,diabetes",
+		"quote": "Limitations of the study include self-reported diet assessment, with the possibility of measurement error, and the potential for residual or unmeasured confounding given the observational nature of the study design. ...Our study suggests that plant-based diets, especially when rich in high-quality plant foods, are associated with substantially lower risk of developing T2D. This supports current recommendations to shift to diets rich in healthy plant foods, with lower intake of less healthy plant and animal foods."
 	},
 	{
 		"title": "A Two-Year Randomized Weight Loss Trial Comparing a Vegan Diet to a More Moderate Low-Fat Diet",
@@ -2909,6 +3037,24 @@
 		"quote": "We suggest that a shift toward a plant-based diet may confer protective effects against atherosclerotic CAD by increasing endothelial protective factors in the circulation while reducing factors that are injurious to endothelial cells ... This review provides a mechanistic perspective of the evidence for protection by a plant-based diet against atherosclerotic CAD."
 	},
 	{
+		"title": "A plant-based diet for overweight and obesity prevention and treatment",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5466943/",
+		"year": 2017,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "obesity,weight loss,WFPB",
+		"quote": "Both clinical trials and observational research indicate an advantage to adoption of PBDs for preventing overweight and obesity and promoting weight loss. PBDs may also confer higher levels of diet quality than are observed with other therapeutic diet approaches, with similar levels of adherence and acceptability. ... Based on the available evidence, PBDs should be considered a viable option for the treatment and prevention of overweight and obesity."
+	},
+	{
+		"title": "Plant Protein and Animal Proteins: Do They Differentially Affect Cardiovascular Disease Risk? ",
+		"url": "https://academic.oup.com/advances/article/6/6/712/4555152",
+		"year": 2015,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "heart disease,moderation,WFPB",
+		"quote": "This review evaluates the current evidence from observational and intervention studies, focusing on the specific protein-providing foods and populations studied ... Evidence to date is inconclusive, and additional studies are needed to further advance our understanding of the complexity of plant protein vs. animal protein comparisons. Nonetheless, current evidence supports the idea that CVD risk can be reduced by a dietary pattern that provides more plant sources of protein compared with the typical American diet and also includes animal-based protein foods that are unprocessed and low in saturated fat."
+	},
+	{
 		"title": "Mortality from Circulatory Diseases in Norway 1940-1945",
 		"url": "http://www.sciencedirect.com/science/article/pii/S014067365191210X?_rdoc=1&_fmt=high&_origin=gateway&_docanchor=&md5=b8429449ccfc9c30159a5f9aeaa92ffb&ccp=y",
 		"year": 1951,
@@ -3064,6 +3210,24 @@
 		"availability": "full",
 		"tags": "climate change,overall mortality",
 		"quote": "Transitioning toward more plant-based diets that are in line with standard dietary guidelines could reduce global mortality by 6–10% and food-related greenhouse gas emissions by 29–70% compared with a reference scenario in 2050...Overall, we estimate the economic benefits of improving diets to be 1–31 trillion US dollars, which is equivalent to 0.4–13% of global gross domestic product (GDP) in 2050."
+	},
+	{
+		"title": "Health effects of dietary fiber.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/24876314",
+		"year": 2014,
+		"type": "meta analysis",
+		"availability": "abstract",
+		"tags": "fiber",
+		"quote": "Today, dietary fibers are known to be protective effect against certain gastrointestinal diseases, constipation, hemorrhoids, colon cancer, gastroesophageal reflux disease, duodenal ulcer, diverticulitis, obesity, diabetes, stroke, hypertension and cardiovascular diseases. In this review the physicochemical and biological properties of dietary fibers and their important implications on human health will be investigated."
+	},
+	{
+		"title": "Health effects of vegetables and fruit: assessing mechanisms of action in human experimental studies ",
+		"url": "https://academic.oup.com/ajcn/article/70/3/475s/4714935",
+		"year": 1999,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "fruit,veges,phytochemicals",
+		"quote": "Epidemiologic data support the association between high intake of vegetables and fruits and low risk of chronic disease. ... Vegetables and fruit are rich sources of a variety of nutrients, including vitamins, trace minerals, and dietary fiber, and many other classes of biologically active compounds. These phytochemicals can have complementary and overlapping mechanisms of action, including modulation of detoxification enzymes, stimulation of the immune system, reduction of platelet aggregation, modulation of cholesterol synthesis and hormone metabolism, reduction of blood pressure, and antioxidant, antibacterial, and antiviral effects. "
 	},
 	{
 		"title": "Climate Change and Food Systems",
@@ -3251,12 +3415,21 @@
 	},
 	{
 		"title": "Appetite for Destruction: Summary Report",
-		"url": "https://www.wwf.org.uk/sites/default/files/2017-10/WWF_AppetiteForDestruction_Summary_Report_SignOff.pdf",
+		"pdf": "https://www.wwf.org.uk/sites/default/files/2017-10/WWF_AppetiteForDestruction_Summary_Report_SignOff.pdf",
 		"year": 2017,
 		"type": "research report",
 		"availability": "full",
 		"tags": "climate change,biodiversity loss,land use",
 		"quote": "If everyone reduced the amount of animal products they ate to meet their nutritional requirements, the total agricultual land required would decline by 13%...The growth in intensive industrial farming coupled with an increased need for protein and energy-rich animal feed has had a devastating impact on nature. Feed crops threaten the biodiversity of many of Earth's most valuble and vulnerable areas."
+	},
+	{
+		"title": "(FAIRR) The Livestock Levy: Are Regulators Considering Meat Taxes?",
+		"pdf": "http://www.fairr.org/wp-content/uploads/The-Livestock-Levy-FAIRR-Initiative-2017.pdf",
+		"year": 2017,
+		"type": "research report",
+		"availability": "full",
+		"tags": "climate change,public health,water use,land use",
+		"quote": "over 180 countries now impose a tax on tobacco, 60 jurisdictions tax carbon and at least 25 tax sugar. This report explores whether meat may be the next product on this list ... However meeting this growing demand has proven a difficult endeavour for the global livestock industry, and in recent years the sectors has been linked with a range of environmental, health and social problems. This includes emerging evidence connecting meat consumption with: • Greenhouse gas emissions that exceed emissions from the transport sector; • An increasing incidence rate of global obesity and associated higher risks of type 2 diabetes and cancer; • Increasing levels of antibiotic resistance; • Threats to global food security and water availability; • Soil degradation and deforestation"
 	},
 	{
 		"title": "World Widelife Fund: Slaughtering the Amazon",
@@ -3266,6 +3439,16 @@
 		"availability": "full",
 		"tags": "climate change,amazon,land degradation",
 		"quote": "The Amazon is estimated to store 80-120 billion tonnes of carbon. If destroyed, some fifty times the annual GHG emissions of the USA could be emitted ... According to the Brazilian government: ‘Cattle are responsible for about 80% of all deforestation’ in the Amazon region ... 12The cattle sector in the Brazilian Amazon is responsible for 14% of the world’s annual deforestation. This makes it the world’s largest driver of deforestation, responsible for more forest loss than the total deforestation in any country outside Brazil except Indonesia"
+	},
+	{
+		"title": "Less Beef, Less Carbon",
+		"url": "https://www.nrdc.org/experts/sujatha-jahagirdar/less-beef-less-carbon",
+		"pdf": "https://www.nrdc.org/sites/default/files/less-beef-less-carbon-ip.pdf",
+		"year": 2017,
+		"type": "research report",
+		"availability": "full",
+		"tags": "trends,climate change",
+		"quote": "Between 2005 and 2014, Americans cut their per-capita diet-related climate-warming pollution by approximately 10 percent. Based on NRDC’s calculations, these changes cumulatively avoided approximately 271 million metric tons (MMT) of climate-warming pollution. This was roughly equivalent to the annual pollution of 57 million car tailpipes, with most of these cuts in emissions due to reduced beef consumption. The most impactful diet adjustments relate to the reduced consumption of specific products. For starters, Americans consumed 19 percent less beef, avoiding an estimated 185 MMT of climate-warming pollution or roughly the equivalent of the annual tailpipe pollution of 39 million cars. Americans’ reduced consumption of other products—such as milk, pork, shellfish, and high fructose corn syrup—accounts for the remaining emissions cuts. Pollution could have been cut even deeper had Americans not simultaneously increased consumption of other carbon-intensive foods like cheese, yogurt, butter and other foods. Despite a drop in consumption, beef still contributes more climate-warming pollution than any other food in the American diet. In fact, it comprised approximately 34 percent of total dietrelated per capita climate-warming pollution in 2014, the last year for which data is available.The most impactful diet adjustments relate to the reduced consumption of specific products. For starters, Americans consumed 19 percent less beef, avoiding an estimated 185 MMT of climate-warming pollution or roughly the equivalent of the annual tailpipe pollution of 39 million cars. Americans’ reduced consumption of other products—such as milk, pork, shellfish, and high fructose corn syrup—accounts for the remaining emissions cuts. Pollution could have been cut even deeper had Americans not simultaneously increased consumption of other carbon-intensive foods like cheese, yogurt, butter and other foods. ... AMERICANS CONTINUE TO EAT MORE BEEF THAN ALMOST ANY OTHER COUNTRY "
 	},
 	{
 		"title": "USDA: Dairy Data",
@@ -3288,7 +3471,7 @@
 	},
 	{
 		"title": "The hidden water resource use behind meat and dairy",
-		"url":"https://academic.oup.com/af/article/2/2/3/4638610",
+		"url": "https://academic.oup.com/af/article/2/2/3/4638610",
 		"pdf": "https://waterfootprint.org/media/downloads/Hoekstra-2012-Water-Meat-Dairy.pdf",
 		"year": 2012,
 		"type": "research report",
@@ -3298,7 +3481,7 @@
 	},
 	{
 		"title": "CONSULTANTS PREDICT 11 HOTTEST FOOD & BEVERAGE TRENDS IN RESTAURANT & HOTEL DINING FOR 2018",
-		"url":"https://www.baumwhiteman.com/trend-reports",
+		"url": "https://www.baumwhiteman.com/trend-reports",
 		"pdf": "https://docs.wixstatic.com/ugd/0c5d00_90935d6fda344991a8fc2452eb112c83.pdf",
 		"year": 2018,
 		"type": "article",
