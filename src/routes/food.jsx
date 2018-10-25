@@ -4,7 +4,6 @@ import LinkableTabs from '../components/tabsDisplay/LinkableTabs.jsx';
 
 import NutrientDataVis from '../components/nutrientDataVis';
 import YourImpact from '../components/yourImpact';
-import TotalImpact from '../components/totalImpact';
 import { WidthWrapper } from '../utils/GeneralUtils.jsx';
 
 export default class Food extends Component {
@@ -12,9 +11,8 @@ export default class Food extends Component {
         super(props)
 
         this.tabs = [
-            { label: 'Foods', component: (<NutrientDataVis />) },
-            { label: 'Total Impact', component: (<TotalImpact />) },
-            { label: 'Your Impact', component: (<YourImpact />) },
+            { label: 'Nutrition', component: (<NutrientDataVis />) },
+            { label: 'Environment', component: (<YourImpact />) },
         ];
     }
     render() {

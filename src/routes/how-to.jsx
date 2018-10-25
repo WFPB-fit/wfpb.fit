@@ -53,7 +53,11 @@ export default class HowTo extends Component {
 					alt="Plant-Based-Dietitian-Pyramid"
 				/> */}
 				<SquarishImg
-					src="/imgs/assets/foods/pyramids/wfpb_food_pyramid_nutriciously.jpg"
+					src="/imgs/assets/foods/pyramids/lowfat_highcarb_wfpb_food_pyramid_nutriciously.jpg"
+					alt="Nutriciously WFPB low fat food pyramid"
+				/>
+				<SquarishImg
+					src="/imgs/assets/foods/pyramids/vegan_food_pyramid_by_nutriciously7.jpg"
 					alt="Nutriciously WFPB low fat food pyramid"
 				/>
 				<Heading id="help" txt="Where can I get help?" variant="h2" />
