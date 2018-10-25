@@ -1,14 +1,21 @@
 {
-	"doctors":[{
-		"url": "http://plantbaseddocs.com/find-a-practitioner-near-you/",
-		"name": "Plant-based Docs – Find a Practitioner"
-	},{
-		"url": "https://www.drmcdougall.com/connections/finding-a-healthcare-provider/",
-		"name": "Dr. McDougall – Find a Health Care Practitioner"
-	},{
-		"url": "https://lifestylemedicine.org/Find-a-Lifestyle-Medicine-Practitioner",
-		"name": "American College of Lifestyle Medicine"
-	}
+	"doctors": [
+		{
+			"url": "http://plantbaseddocs.com/find-a-practitioner-near-you/",
+			"name": "Plant-based Docs – Find a Practitioner"
+		},
+		{
+			"url": "https://www.drmcdougall.com/connections/finding-a-healthcare-provider/",
+			"name": "Dr. McDougall – Find a Health Care Practitioner"
+		},
+		{
+			"url": "https://lifestylemedicine.org/Find-a-Lifestyle-Medicine-Practitioner",
+			"name": "American College of Lifestyle Medicine"
+		},
+		{
+			"url": "https://www.plantbaseddoctors.org/",
+			"name": "Plant Based Doctors"
+		}
 	],
 	"books": [
 		{
@@ -86,10 +93,6 @@
 		{
 			"url": "https://www.reddit.com/r/PlantBasedDiet/",
 			"name": "Reddit's Plant Based Diet"
-		},
-		{
-			"url": "https://www.plantbaseddoctors.org/",
-			"name": "Plant Based Doctors"
 		},
 		{ "url": "https://www.veggieboards.com/", "name": "Veggie Boards" },
 		{

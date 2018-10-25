@@ -161,11 +161,6 @@ export default class Resource extends Component {
 			);
 		}
 
-		let buy = resource.buyURL;
-		if (resource.amzn) buy = `http://a.co/${resource.amzn}`;
-		else if (resource.wmart)
-			buy = `https://www.walmart.com/ip/${resource.wmart}`;
-
 		return (
 			<StyledCard>
 				{DisplayCardMedia}

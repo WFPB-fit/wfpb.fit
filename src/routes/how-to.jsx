@@ -61,7 +61,7 @@ export default class HowTo extends Component {
 					alt="Nutriciously WFPB low fat food pyramid"
 				/>
 				<Heading id="help" txt="Where can I get help?" variant="h2" />
-				<Heading id="drs" txt="Doctors" variant="h3" />
+				<Heading id="doctors" txt="Doctors" variant="h3" />
 				Find a medical professional to help you on your journey.
 				{HowTo.getListed(QuickResources.doctors)}
 				<Heading id="communities" txt="Communities" variant="h3" />
@@ -85,7 +85,7 @@ export default class HowTo extends Component {
 				<p>
 					These popular books provide overviews of how and why WFPB works so
 					well. More books can be found on the{" "}
-					{getLink("/endorsements", "endorsements")} page.{" "}
+					{getLink("/endorsements#orgs", "endorsements")} page.{" "}
 				</p>
 				{HowTo.getListed(QuickResources.books)}
 				<Heading id="recipes" txt="What's for dinner?" variant="h2" />

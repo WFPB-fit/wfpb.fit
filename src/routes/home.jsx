@@ -33,8 +33,10 @@ export default class Home extends Component {
 						If you have an illness, discuss your diet with your doctor before
 						making changes. Do not stop taking medications until a doctor says
 						it is safe. Never be afraid of asking questions or getting a
-						{getLink("https://www.plantbaseddoctors.org", "second opinion")}
-						from an accredited physician or dietitian.
+						{" "}
+						{getLink("/how-to#doctors", "second opinion")} 
+						{" "} from an accredited
+						physician or dietitian.
 					</p>
 					<Heading id="what" txt="What is WFPBD?" variant="h2" />
 					<p>
@@ -107,16 +109,16 @@ export default class Home extends Component {
 						<b>It's also cheap and tastes great.</b>
 					</p>
 					<div style={{ display: "block", textAlign: "center" }}>
-							<Button
-								component={Link}
-								variant="contained"
-								color="primary"
-								to="/how-to"
-								style={{ color: "white" }}
-							>
-								Get Started
-							</Button>
-						</div>
+						<Button
+							component={Link}
+							variant="contained"
+							color="primary"
+							to="/how-to"
+							style={{ color: "white" }}
+						>
+							Get Started
+						</Button>
+					</div>
 
 					{/* <Heading
 						id="certain"

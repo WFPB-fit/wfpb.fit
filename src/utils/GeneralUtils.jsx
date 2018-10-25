@@ -73,7 +73,7 @@ export function sumValues(obj) {
 		return sum + val;
 	}, 0);
 }
-export function getLink(url, text, useHashLink = false, spacePad = true) {
+export function getLink(url, text, useHashLink = true, spacePad = true) {
 	if (!url || url === "") return null;
 
 	if (!text || text === "") {
