@@ -1,4 +1,15 @@
 {
+	"doctors":[{
+		"url": "http://plantbaseddocs.com/find-a-practitioner-near-you/",
+		"name": "Plant-based Docs – Find a Practitioner"
+	},{
+		"url": "https://www.drmcdougall.com/connections/finding-a-healthcare-provider/",
+		"name": "Dr. McDougall – Find a Health Care Practitioner"
+	},{
+		"url": "https://lifestylemedicine.org/Find-a-Lifestyle-Medicine-Practitioner",
+		"name": "American College of Lifestyle Medicine"
+	}
+	],
 	"books": [
 		{
 			"url": "https://www.amazon.com/How-Gene-Stone-Michael-Greger/dp/1509852506/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=",
