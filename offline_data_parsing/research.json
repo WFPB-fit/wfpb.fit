@@ -680,13 +680,13 @@
 		"quote": "This updated meta-analysis confirms, in a larger number of subjects and studies, the significant and consistent protection provided by adherence to the Mediterranean diet in relation to the occurrence of major chronic degenerative diseases."
 	},
 	{
-		"title": "Food, Nutrition, Physical Activity, and the Prevention of Cancer: a Global Perspective",
-		"url": "http://www.aicr.org/assets/docs/pdf/reports/Second_Expert_Report.pdf",
+		"title": "WCRF Second Expert Report - Food, Nutrition, Physical Activity, and the Prevention of Cancer: a Global Perspective",
+		"pdf": "http://www.aicr.org/assets/docs/pdf/reports/Second_Expert_Report.pdf",
 		"year": 2007,
 		"type": "research report",
 		"tags": "cancer",
 		"availability": "full",
-		"summary": "page 67: grains/cereals. 75: veges, fruits, nuts, seeds, legumes, herbs, spices. 116: meat, poultry, fish, eggs. 129: milk, dairy. 135: Fat, Oil. 141: salty, sugary foods. 157: alcohol"
+		"quote": "Higher consumption of several plant foods probably protects against cancers of various sites. What is meant by ‘plant-based’ is diets that give more emphasis to those plant foods that are high in nutrients, high in dietary fibre (and so in non-starch polysaccharides), and low in energy density. Non-starchy vegetables, and fruits, probably protect against some cancers. Being typically low in energy density, they probablyalso protect against weight gain. ... Red or processed meats are convincing or probable causes of some cancers. Diets with high levels of animal fats are often relatively high in energy, increasing the risk of weight gain."
 	},
 	{
 		"title": "Cancer preventive effects of flavonoids—a review",
@@ -699,7 +699,7 @@
 	},
 	{
 		"title": "Reduced cancer risk in vegetarians: an analysis of recent reports",
-		"url": "http://www.aicr.org/assets/docs/pdf/reports/Second_Expert_Report.pdf",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3048091/",
 		"year": 2011,
 		"type": "meta analysis",
 		"availability": "full",
@@ -2667,12 +2667,11 @@
 	{
 		"title": "USDA: Poultry Slaughter Annual Summary",
 		"url": "http://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1497",
-		"pdf": "http://usda.mannlib.cornell.edu/usda/current/PoulSlauSu/PoulSlauSu-02-24-2017.pdf",
 		"type": "research report",
 		"availability": "full",
-		"year": 2017,
+		"year": 2018,
 		"tags": "slaughter",
-		"summary": "The USDA summarizes how many animals are slaughtered, though it only counts the processing plants that are federally inspected. In 2016 alone the industry (and thus consumers) killed 8,768,427,000 baby chickens, 140,587,000 adult chickens, 241,418,000 baby turkeys, 1,837,000 adult turkeys, and 27,268,000 ducks."
+		"quote": "Monthly and annual U.S. totals of the number of head and live weight of chickens, turkeys, ducks, and other poultry slaughtered under Federal inspection are presented in this report. Also included are average live weights, pounds certified, and both ante-mortem and post-mortem condemnations. Data for young chickens and young turkeys are shown for selected states."
 	},
 	{
 		"title": "Energy and protein feed-to-food conversion efficiencies in the US and potential food security gains from dietary changes",
@@ -2686,12 +2685,11 @@
 	{
 		"title": "USDA: Livestock Slaughter Annual Summary",
 		"url": "http://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1097",
-		"pdf": "http://usda.mannlib.cornell.edu/usda/current/LiveSlauSu/LiveSlauSu-04-19-2017.pdf",
 		"type": "research report",
 		"availability": "full",
-		"year": 2017,
+		"year": 2018,
 		"tags": "slaughter",
-		"summary": "The USDA summarizes how many animals are slaughtered, though it only counts the processing plants that are federally inspected. In 2016 alone the industry (and thus consumers) killed 30,676,100 adult cattle, 512,700 baby calves, 118,303,900 hogs/pigs, and 2,332,600."
+		"quote": "There were 834 plants slaughtering under federal inspection on January 1, 2018 compared with 814 last year. Of these, 666 plants slaughtered at least one head of cattle during 2017 with the 13 largest plants slaughtering 57 percent of the total cattle killed. Hogs were slaughtered at 636 plants, with the 13 largest plants accounting for 59 percent of the total. For calves, 5 of the 190 plants accounted for 72 percent of the total and 2 of the 537 plants that slaughtered sheep or lambs in 2017 comprised 38 percent of the total head."
 	},
 	{
 		"title": "Dietary greenhouse gas emissions of meat-eaters, fish-eaters, vegetarians and vegans in the UK",
@@ -2700,7 +2698,7 @@
 		"availability": "full",
 		"year": 2014,
 		"tags": "vegetarian,vegan,climate change",
-		"summary": "The age-and-sex-adjusted mean (95 % confidence interval) GHG emissions in kilograms of carbon dioxide equivalents per day (kgCO2e/day) were 7.19 (7.16, 7.22) for high meat-eaters ( > = 100 g/d), 5.63 (5.61, 5.65) for medium meat-eaters (50-99 g/d), 4.67 (4.65, 4.70) for low meat-eaters ( < 50 g/d), 3.91 (3.88, 3.94) for fish-eaters, 3.81 (3.79, 3.83) for vegetarians and 2.89 (2.83, 2.94) for vegans. In conclusion, dietary GHG emissions in self-selected meat-eaters are approximately twice as high as those in vegans. "
+		"quote": "The age-and-sex-adjusted mean (95 % confidence interval) GHG emissions in kilograms of carbon dioxide equivalents per day (kgCO2e/day) were 7.19 (7.16, 7.22) for high meat-eaters ( > = 100 g/d), 5.63 (5.61, 5.65) for medium meat-eaters (50-99 g/d), 4.67 (4.65, 4.70) for low meat-eaters ( < 50 g/d), 3.91 (3.88, 3.94) for fish-eaters, 3.81 (3.79, 3.83) for vegetarians and 2.89 (2.83, 2.94) for vegans. In conclusion, dietary GHG emissions in self-selected meat-eaters are approximately twice as high as those in vegans. "
 	},
 	{
 		"title": "The monitoring, prevention, and treatment of milk fever and subclinical hypocalcemia in dairy cows",
@@ -3629,8 +3627,9 @@
 		"quote": "In adults, no current data exist to suggest that consumption of phytoestrogens at the levels normally encountered in the diet is likely to be harmful. Epidemiological studies suggest that foodstuffs containing phytoestrogens may have a beneficial role in protecting against a number of chronic diseases and conditions. For cancer of the prostate, colon, rectum, stomach and lung, the evidence is most consistent for a protective effect resulting from a high intake of grains, legumes, fruits and vegetables; it is not possible to identify particular food types or components that may be responsible. Dietary intervention studies indicate that in women soya and linseed may have beneficial effects on the risk of breast cancer and may help to alleviate postmenopausal symptoms. For osteoporosis, tentative evidence suggests phytoestrogens may have similar effects in maintaining bone density to those of the related pharmaceutical compound ipriflavone. Soya also appears to have beneficial effects on blood lipids which may help to reduce the risk of cardiovascular disease and atherosclerosis. Generally, however, little evidence exists to link these effects directly to phytoestrogens; many other components of soya and linseed are biologically active in various experimental systems and may be responsible for the observed effects in humans."
 	},
 	{
-		"title": "WCRF: Diet, Nutrition, Physical Activity and Cancer: a Global Perspective",
+		"title": "WCRF Third Expert Report: Diet, Nutrition, Physical Activity and Cancer: a Global Perspective",
 		"url": "https://www.wcrf.org/dietandcancer/contents",
+		"pdf": "https://www.wcrf.org/sites/default/files/Full-Report-PDF-bundle.zip",
 		"year": 2018,
 		"type": "research report",
 		"availability": "abstract",

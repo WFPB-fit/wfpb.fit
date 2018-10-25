@@ -7,16 +7,12 @@ def preprocess_studies(folder_name):
 
     #add ID and export 'quotes' to another dictionary
     study_quotes = {}
-    study_summaries = {}
     for i in range(len(studies)):
         study = studies[i]
         study['id'] = i
         if 'quote' in study:
             study_quotes[i] = {'quote': study['quote']}
             del study['quote']
-        elif 'summary' in study:
-            study_summaries[i] = {'summary': study['summary']}
-            del study['summary']
     
 
     
