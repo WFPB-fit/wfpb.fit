@@ -50,12 +50,6 @@ export default class CalorieForm extends Component {
 					<VizHelpExplanation refFoodUsages={this.props.refFoodUsages} />
 				</LeftH2>
 
-				<h3>Water</h3>
-				<ModifiableUnitBarChart
-					units={WRI.units["water"]}
-					data={this.getEnvData("water")}
-				/>
-
 				<h3>Land</h3>
 				<ModifiableUnitBarChart
 					units={WRI.units["land"]}
@@ -66,6 +60,12 @@ export default class CalorieForm extends Component {
 				<ModifiableUnitBarChart
 					units={WRI.units["ghg"]}
 					data={this.getEnvData("ghg")}
+				/>
+				
+				<h3>Water</h3>
+				<ModifiableUnitBarChart
+					units={WRI.units["water"]}
+					data={this.getEnvData("water")}
 				/>
 			</ContainerDiv>
 		);

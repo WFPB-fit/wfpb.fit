@@ -2692,6 +2692,34 @@
 		"quote": "There were 834 plants slaughtering under federal inspection on January 1, 2018 compared with 814 last year. Of these, 666 plants slaughtered at least one head of cattle during 2017 with the 13 largest plants slaughtering 57 percent of the total cattle killed. Hogs were slaughtered at 636 plants, with the 13 largest plants accounting for 59 percent of the total. For calves, 5 of the 190 plants accounted for 72 percent of the total and 2 of the 537 plants that slaughtered sheep or lambs in 2017 comprised 38 percent of the total head."
 	},
 	{
+		"title": "WWF: Living Planet Report 2018",
+		"url": "https://www.worldwildlife.org/pages/living-planet-report-2018",
+		"pdf":"https://c402277.ssl.cf1.rackcdn.com/publications/1187/files/original/LPR2018_Full_Report_Spreads.pdf",
+		"type": "research report",
+		"availability": "full",
+		"year": 2018,
+		"tags": "biodiversity loss,land use,land degradation,food security",
+		"quote": "All economic activity ultimately depends on services provided by nature, estimated to be worth around US$125 trillion a year. As we better understand our reliance on natural systems it’s clear that nature is not just a ‘nice to have’. Business and the finance industry are starting to question how global environmental risks will affect the macroeconomic performance of countries, sectors and financial markets, ... Exploding human consumption is the driving force behind the unprecedented planetary change we are witnessing, through the increased demand for energy, land and water.  ... While climate change is a growing threat, the main drivers of biodiversity decline continue to be the overexploitation of species, agriculture and land conversion. ...  The Living Planet Index also tracks the state of global biodiversity by measuring the population abundance of thousands of vertebrate species around the world. The latest index shows an overall decline of 60% in population sizes between 1970 and 2014. Species population declines are especially pronounced in the tropics, with South and Central America suffering the most dramatic decline, an 89% loss compared to 1970. Freshwater species numbers have also declined dramatically, with the Freshwater Index showing an 83% decline since 1970."
+	},
+	{
+		"title": "When too much isn’t enough: Does current food production meet global nutritional needs?",
+		"url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0205683",
+		"type": "study",
+		"availability": "full",
+		"year": 2018,
+		"tags": "biodiversity loss,land use,land degradation,food security",
+		"quote": "Results show that the global agricultural system currently overproduces grains, fats, and sugars while production of fruits and vegetables and protein is not sufficient to meet the nutritional needs of the current population. Correcting this imbalance could reduce the amount of arable land used by agriculture by 51 million ha globally but would increase total land used for agriculture by 407 million ha and increase greenhouse gas emissions. For a growing population, our calculations suggest that the only way to eat a nutritionally balanced diet, save land and reduce greenhouse gas emissions is to consume and produce more fruits and vegetables as well as transition to diets higher in plant-based protein. Such a move will help protect habitats and help meet the Sustainable Development Goals."
+	},
+	{
+		"title": "Options for keeping the food system within environmental limits",
+		"url": "https://www.nature.com/articles/s41586-018-0594-0",
+		"type": "study",
+		"availability": "abstract",
+		"year": 2018,
+		"tags": "food security",
+		"quote": "The food system is a major driver of climate change, changes in land use, depletion of freshwater resources, and pollution of aquatic and terrestrial ecosystems through excessive nitrogen and phosphorus inputs. Here we show that between 2010 and 2050, as a result of expected changes in population and income levels, the environmental effects of the food system could increase by 50–90% in the absence of technological changes and dedicated mitigation measures, reaching levels that are beyond the planetary boundaries that define a safe operating space for humanity. We analyse several options for reducing the environmental effects of the food system, including dietary changes towards healthier, more plant-based diets, improvements in technologies and management, and reductions in food loss and waste. We find that no single measure is enough to keep these effects within all planetary boundaries simultaneously, and that a synergistic combination of measures will be needed to sufficiently mitigate the projected increase in environmental pressures."
+	},
+	{
 		"title": "Dietary greenhouse gas emissions of meat-eaters, fish-eaters, vegetarians and vegans in the UK",
 		"url": "https://link.springer.com/article/10.1007%2Fs10584-014-1169-1/fulltext.html",
 		"type": "study",
