@@ -233,10 +233,46 @@
 			"wiki": "https://en.wikipedia.org/wiki/Penn_Jillette"
 		},
 		{
+			"name": "Woody Harrelson",
+			"summary": "American actor and playwright.",
+			"source": "https://www.oxygen.com/very-real/the-top-8-strictest-celebrity-vegans-ranked",
+			"wiki": "https://en.wikipedia.org/wiki/Woody_Harrelson"
+		},
+		{
+			"name": "Tobey Maguire",
+			"summary": "American actor and film producer.",
+			"source": "https://www.oxygen.com/very-real/the-top-8-strictest-celebrity-vegans-ranked",
+			"wiki": "https://en.wikipedia.org/wiki/Tobey_Maguire"
+		},
+		{
 			"name": "Ellen Degeneres",
 			"summary": "American comedian, television host, actress, writer, producer, and LGBT activist.",
 			"source": "https://www.youtube.com/watch?v=-Cm6cGI6K6o",
 			"wiki": "https://en.wikipedia.org/wiki/Ellen_DeGeneres"
+		},
+		{
+			"name": "Portia de Rossi",
+			"summary": "Australian and American model, philanthropist, and actress.",
+			"source": "http://www.oprah.com/spirit/portia-de-rossis-aha-moment-becoming-vegan",
+			"wiki": "https://en.wikipedia.org/wiki/Portia_de_Rossi"
+		},
+		{
+			"name": "Ellen Page",
+			"summary": "Canadian actress and producer.",
+			"source": "https://veganuary.com/people/ellen-page/",
+			"wiki": "https://en.wikipedia.org/wiki/Ellen_Page"
+		},
+		{
+			"name": "Moby",
+			"summary": "American musician, DJ, record producer, singer, songwriter, and photographer.",
+			"source": "https://en.wikipedia.org/wiki/Moby",
+			"wiki": "https://en.wikipedia.org/wiki/Moby"
+		},
+		{
+			"name": "Russell Brand",
+			"summary": "English comedian, actor, radio host, author, and activist.",
+			"source": "https://www.livekindly.co/russell-brand-happy-pear-vegan-restaurant/",
+			"wiki": "https://en.wikipedia.org/wiki/Russell_Brand"
 		},
 		{
 			"name": "Ariana Grande",
@@ -249,6 +285,12 @@
 			"summary": "American singer, songwriter and actress.",
 			"source": "https://www.self.com/story/carrie-underwood-almost-vegan",
 			"wiki": "https://en.wikipedia.org/wiki/Carrie_Underwood"
+		},
+		{
+			"name": "Mayim Bialik",
+			"summary": "American actress, author, and neuroscientist.",
+			"source": "https://books.google.com/books/about/Mayim_s_Vegan_Table.html?id=PahRAQAAQBAJ&source=kp_book_description",
+			"wiki": "https://en.wikipedia.org/wiki/Mayim_Bialik"
 		},
 		{
 			"name": "Jason Derulo",
@@ -281,10 +323,10 @@
 			"wiki": "https://en.wikipedia.org/wiki/Jason_Mraz"
 		},
 		{
-			"name": "Jared Leto",
-			"summary": "American actor, singer, songwriter, and director.",
-			"source": "https://www.gq-magazine.co.uk/article/jared-leto-hugo-boss-red-fragrance-interview",
-			"wiki": "https://en.wikipedia.org/wiki/Ne-Yo"
+			"name": "Liam Hemsworth",
+			"summary": "Australian actor.",
+			"source": "https://www.businessinsider.com/heres-why-liam-hemsworth-is-a-vegan-2017-7",
+			"wiki": "https://en.wikipedia.org/wiki/Liam_Hemsworth"
 		},
 		{
 			"name": "Alec Baldwin",
@@ -293,10 +335,154 @@
 			"wiki": "https://en.wikipedia.org/wiki/Alec_Baldwin"
 		},
 		{
+			"name": "Casey Affleck",
+			"summary": "American actor and director .",
+			"source": "https://www.youtube.com/watch?v=COQVRYPRsCY",
+			"wiki": "https://en.wikipedia.org/wiki/Casey_Affleck"
+		},
+		{
+			"name": "Brad Pitt",
+			"summary": "American actor and film producer",
+			"source": "https://www.dailymail.co.uk/tvshowbiz/article-1200663/Angelina-Jolie-vetoes-Brad-Pitts-meat-plea-rainbow-brood.html",
+			"wiki": "https://en.wikipedia.org/wiki/Brad_Pitt"
+		},
+		{
+			"name": "Russell Simmons",
+			"summary": "American entrepreneur, record producer, and author.",
+			"source": "https://www.today.com/health/russell-simmons-shares-secrets-being-happy-vegan-t33461",
+			"wiki": "https://en.wikipedia.org/wiki/Russell_Simmons"
+		},
+		{
 			"name": "Alicia Silverstone",
 			"summary": "American actor, singer, songwriter, and director.",
 			"source": "https://www.youtube.com/watch?v=xryZ6DqNZqI",
 			"wiki": "https://en.wikipedia.org/wiki/Alicia_Silverstone"
+		},
+		{
+			"name": "Evanna Lynch",
+			"summary": "Irish actress, vegan activist, podcast host and narrator",
+			"source": "https://www.veganfoodandliving.com/exclusive-interview-with-evanna-lynch/",
+			"wiki": "https://en.wikipedia.org/wiki/Evanna_Lynch"
+		},
+		{
+			"name": "Travis Barker",
+			"summary": "American musician, songwriter, and record producer, best known as the drummer for the rock band Blink-182",
+			"source": "https://www.mensjournal.com/entertainment/blink-182s-travis-barker-why-im-vegan-w473107/",
+			"wiki": "https://en.wikipedia.org/wiki/Travis_Barker"
+		},
+		{
+			"name": "Mike Tyson",
+			"summary": "American former professional boxer who competed from 1985 to 2005. He reigned as the undisputed world heavyweight champion and holds the record as the youngest boxer to win a heavyweight title",
+			"source": "https://www.youtube.com/watch?v=Vc-DeGEXAmM",
+			"wiki": "https://en.wikipedia.org/wiki/Mike_Tyson"
+		},
+		{
+			"name": "Roland Williams",
+			"summary": "Tight end for 8 years in the NFL. Highlights included the St. Louis Rams’ 1998 Rookie of the Year award, the 2003 American Football Conference Championship, and most notably, the 1999 St. Louis Rams' Super Bowl 34 Championship, where Roland scored 7 touchdowns and was a key part of the legendary “Greatest Show On Turf” offensive unit featuring Quarterback Kurt Warner and Running Back Marshall Faulk.",
+			"source": "https://www.meatlessmonday.com/articles/roland-williams/",
+			"wiki": "https://en.wikipedia.org/wiki/Roland_Williams"
+		},
+		{
+			"name": "John Salley",
+			"summary": "American retired professional basketball player, actor and talk show host. He was the first player in NBA history to play on three championship-winning franchises, as well as the first player in the NBA to win a championship in three decades. ",
+			"source": "https://www.youtube.com/watch?v=5SKAxMS5bLE",
+			"wiki": "https://en.wikipedia.org/wiki/John_Salley"
+		},
+		{
+			"name": "Dave Bautista",
+			"summary": "American actor, professional wrestler, mixed martial artist and bodybuilder",
+			"source": "https://www.mensjournal.com/health-fitness/dave-bautistas-guardians-of-the-galaxy-vol-2-workout-w483319/",
+			"wiki": "https://en.wikipedia.org/wiki/Dave_Bautista"
+		},
+		{
+			"name": "Kristen Bell",
+			"summary": "American actress.",
+			"source": "https://www.today.com/food/why-kristen-bell-stopped-vegan-diet-go-vegetarian-t117396",
+			"wiki": "https://en.wikipedia.org/wiki/Kristen_Bell"
+		},
+		{
+			"name": "Lewis Hamilton",
+			"summary": "a British racing driver who races in Formula One for Mercedes AMG Petronas.",
+			"source": "https://www.cnn.com/2017/11/24/motorsport/lewis-hamilton-vegan-formula-one-mercedes-diet-elite-athletes/index.html",
+			"wiki": "https://en.wikipedia.org/wiki/Lewis_Hamilton"
+		},
+		{
+			"name": "Sia",
+			"summary": "Australian singer, songwriter, record producer and music video director.",
+			"source": "https://twitter.com/sia/status/465781323089473536",
+			"wiki": "https://en.wikipedia.org/wiki/Sia_(musician)"
+		},
+		{
+			"name": "Stevie Wonder",
+			"summary": "American singer, songwriter, musician, record producer, and multi-instrumentalist.",
+			"source": "https://www.aol.com/article/2016/02/26/stevie-wonder-talks-being-vegan-and-living-a-green-lifestyle/21319400/",
+			"wiki": "https://en.wikipedia.org/wiki/Stevie_Wonder"
+		},
+		{
+			"name": "Craig Robinson",
+			"summary": "American actor, comedian, and singer",
+			"source": "https://www.mensjournal.com/health-fitness/photos-actor-craig-robinson-dropped-50-pounds-cutting-booze-and-going/",
+			"wiki": "https://en.wikipedia.org/wiki/Craig_Robinson_(actor)"
+		},
+		{
+			"name": "RZA",
+			"summary": "American rapper, record producer, musician, actor, filmmaker and author. A prominent figure in hip hop, RZA is the de facto leader of the Wu-Tang Clan",
+			"source": "https://www.peta.org/features/rza-wu-tang-vegan-peta/",
+			"wiki": "https://en.wikipedia.org/wiki/RZA"
+		},
+		{
+			"name": "Paul McCartney",
+			"summary": "English singer-songwriter, multi-instrumentalist, and composer. He gained worldwide fame as the bass guitarist and singer for the rock band the Beatles, widely considered the most popular and influential group in the history of pop music",
+			"source": "https://www.plantbasednews.org/post/sir-paul-mccartney-meat-free-new-rock-n-roll",
+			"wiki": "https://en.wikipedia.org/wiki/Paul_McCartney"
+		},
+		{
+			"name": "David Attenborough",
+			"summary": "English broadcaster and naturalist",
+			"source": "https://www.telegraph.co.uk/news/2017/10/23/david-attenborough-admits-has-stopped-eating-meat/",
+			"wiki": "https://en.wikipedia.org/wiki/David_Attenborough"
+		},
+		{
+			"name": "Kat Von D",
+			"summary": "American tattoo artist, model, musician, author, entrepreneur, and television personality",
+			"source": "https://mercyforanimals.org/kat-von-d-veganism-changed-me",
+			"wiki": "https://en.wikipedia.org/wiki/Kat_Von_D"
+		},
+		{
+			"name": "Mya",
+			"summary": "American recording artist, songwriter, producer, and actress",
+			"source": "https://www.peta.org/features/mya-from-vegetarian-to-vegan/",
+			"wiki": "https://en.wikipedia.org/wiki/M%C3%BDa"
+		},
+		{
+			"name": "Chris Evans",
+			"summary": "American actor. Evans is known for his superhero roles as the Marvel Comics characters Captain America in the Marvel Cinematic Universe and Human Torch in Fantastic Four and its 2007 sequel",
+			"source": "https://www.youtube.com/watch?v=9wMizV1KG-M&feature=youtu.be&t=245",
+			"wiki": "https://en.wikipedia.org/wiki/Chris_Evans_(actor)"
+		},
+		{
+			"name": "Mark Ruffalo",
+			"summary": "American actor, filmmaker and activist",
+			"source": "https://twitter.com/MarkRuffalo/status/926500655195357184?ref_src=twsrc%5Etfw&ref_url=https%3A%2F%2Fwww.peta.org%2Fblog%2Fvegan-avengers%2F&tfw_creator=peta&tfw_site=peta",
+			"wiki": "https://en.wikipedia.org/wiki/Mark_Ruffalo"
+		},
+		{
+			"name": "Benedict Cumberbatch",
+			"summary": "English actor who has performed in film, television, theatre and radio",
+			"source": "https://www.peta.org/blog/benedict-cumberbatch-says-he-eats-vegan/",
+			"wiki": "https://en.wikipedia.org/wiki/Benedict_Cumberbatch"
+		},
+		{
+			"name": "Scarlett Johansson",
+			"summary": "American actress and singer",
+			"source": "https://www.sportsrec.com/13712473-want-scarlett-johanssons-avengers-physique-go-vegan-and-do-these-hardcore-workouts.html",
+			"wiki": "https://en.wikipedia.org/wiki/Scarlett_Johansson"
+		},
+		{
+			"name": "Chadwick Boseman",
+			"summary": "American actor",
+			"source": "https://www.peta.org/blog/vegan-avengers/",
+			"wiki": "https://en.wikipedia.org/wiki/Chadwick_Boseman"
 		},
 		{
 			"name": "Olivia Wilde",
@@ -305,11 +491,314 @@
 			"wiki": "https://en.wikipedia.org/wiki/Olivia_Wilde"
 		}
 	],
-	"more vegan celebrities": "Lea Michele, Dax Shepard, Kristen Bell, Portia de Rossi, Lewis Hamilton, Brad Pitt, Robbie Williams, Craig Robinson, Russell Brand, Tobey Maguire, Woody Harrelson, Ellen Page, Liam Hemsworth, Mayim Bialik, Casey Affleck, Moby, Russell Simmons, Sia, Stevie Wonder, RZA,  Wacka Flocka Flame, Jason Derulo, Charlie Sheen, Kylie Jenner, Ne-Yo, Paul McCartney, David Attenborough, Kat Von D, Evanna Lynch, Travis Barker, Mya, Mike Tyson, John Sally, Chris Evans",
 	"athletes": {
-		"endurance": "Scott Jurek, Carl Lewis, Rich Roll, Denis Mikhaylove, Fiona Oakes, Harvey Lewis, Kate Ziegler, Jason Lester, Brendan Brazier, Molly Cameron, Christine Vardaros, Dave Zabriskie, Kuntal Joisher",
-		"fighting": "Mac Danzig, David Meyer, Cam Awesome, James Southwood, Nate Diaz, Jake Shields, Georgi Karakhanyan, Timothy Bradley, Steph Goyne, Nick Diaz",
-		"lifting": "Patrik Baboumian, Kendrick Farris, Alex Dargatz, Torre Washington, Julia Hubbard, Amansa Riester, Derek Tresize, Joel Kirkillis, Steph Davis, Sara Lee",
-		"sports": "Tia Blanco, Cardale Jones, Tony Gonzalez, Ed Templeton, Damian Lillard, Kyrie Irving, Billie Jean King, Venus Williams, Joe Namath, Robert Parish, Ricky Williams, David Carter, Jermain Defoe, Serena Williams, Peter Siddle, Mirco Bergamasco, Roland Williams, Tony Horton, Wilson Chandler, Griff Whalen, Jahlil Okafor"
+		"endurance": [
+			{
+				"name": "Scott Jurek",
+				"summary": "American ultramarathoner, New York Times bestselling author of Eat & Run, and public speaker. Throughout his career, Jurek has been one of the most dominant ultramarathon runners in the world, winning many of the sport's most prestigious races multiple times, including the Hardrock Hundred (2007), the Badwater Ultramarathon (2005, 2006), the Spartathlon (2006, 2007, 2008), and the Western States 100 Mile Endurance Run (1999–2005). In 2010, at the 24-Hour World Championships in Brive-la-Gaillarde, France, Jurek won a silver medal behind Shingo Inoue and set a new US record for distance run in 24 hours with 165.7 miles (an average pace of 8 minutes and 42 seconds per mile).",
+				"source": "http://www.scottjurek.com/eat-run",
+				"wiki": "https://en.wikipedia.org/wiki/Scott_Jurek"
+			},
+			{
+				"name": "Carl Lewis",
+				"summary": "American former track and field athlete who won nine Olympic gold medals, one Olympic silver medal, and 10 World Championships medals, including eight gold. His career spanned from 1979 to 1996, when he last won an Olympic event. He is one of only three Olympic athletes who won a gold medal in the same individual event in four consecutive Olympic Games.",
+				"source": "https://blog.bulletproof.com/carl-lewis-vegan/",
+				"wiki": "https://en.wikipedia.org/wiki/Carl_Lewis"
+			},
+			{
+				"name": "Fiona Oakes",
+				"summary": "a British marathon runner, who holds four world records for marathon running. In 2013, she won both the Antarctic Ice Marathon and the North Pole Marathon. She runs despite losing a knee cap from an illness when she was 17. Fiona has been vegan since 6 years old.",
+				"source": "https://twitter.com/marathonfiend?lang=en",
+				"wiki": "https://en.wikipedia.org/wiki/Fiona_Oakes"
+			},
+			{
+				"name": "Harvey Sweetland Lewis",
+				"summary": "American ultrarunner, social studies and economics teacher, world traveler and public speaker. Lewis is one of six male runners representing Team USA at the 2017 International Association of Ultrarunners (IAU) 24 Hour World Championship on July 1–2, 2017 in Belfast, Northern Ireland. Previously, he has represented Team USA at the last three 24-Hour World Championships in 2012, 2013 and 2014. In July 2014, Lewis won the Badwater Ultramarathon near Death Valley, CA, in just under 23 hours and 53 minutes. This race is touted as the world’s toughest foot race due to extremely hot temperatures and immense elevation changes throughout the course. Six months later near the Canada–US border in International Falls, MN, Lewis tied for second place at the Arrowhead 135 ",
+				"source": "https://en.wikipedia.org/wiki/Harvey_Sweetland_Lewis#Vegetarian",
+				"wiki": "https://en.wikipedia.org/wiki/Fiona_Oakes"
+			},
+			{
+				"name": "Kate Ziegler",
+				"summary": "American competition swimmer who specializes in freestyle and long-distance events. Ziegler has won a total of fifteen medals in major international competition, including eight golds, five silvers, and two bronze spanning the World Aquatics and the Pan Pacific Championships. She was a member of the 2012 United States Olympic Team, and competed in the 800-meter freestyle event at the 2012 Summer Olympics.",
+				"source": "https://www.stack.com/a/vegetarian-athlete-kate-ziegler",
+				"wiki": "https://en.wikipedia.org/wiki/Kate_Ziegler"
+			},
+			{
+				"name": "Jason Lester",
+				"summary": "endurance athlete, the author of Running on Faith, and the 2009 ESPY Award winner for Best Male Athlete with a Disability. He is the first disabled athlete to complete the Ultraman World Championships. He is the Founder of the EP1C, INC. brand and is the Chairman of The NEVER STOP Foundation. Lester has completed endurance challenges such as the EPIC5 Challenge (5 Iron distance triathlons on 5 Hawaiian islands in 5 consecutive days), and a 1,000-mile (1,600 km) run and 4,000-mile (6,400 km) bike across the United States. On May 5, 2013 Lester ran 3,550 miles (5,710 km) across the United States, becoming the 4th fastest runner to run from San Francisco to New York City to raise money for Hurricane Sandy victims. He has also run 2,600 miles (4,200 km) along The Great Wall of China in 83 days, setting a world record by becoming the first person to run the length of the wall solo in a single attempt",
+				"source": "https://www.instagram.com/p/n7OlTXNTcx/?hl=en",
+				"wiki": "https://en.wikipedia.org/wiki/Jason_P._Lester"
+			},
+			{
+				"name": "David Zabriskie",
+				"summary": "retired professional road bicycle racer from the United States, who competed as a professional between 1999 and 2013. His main strength is individual time trials and his career highlights include stage wins in all three Grand Tour stage races and winning the US National Time Trial Championship seven times.  ",
+				"source": "https://www.independent.co.uk/news/world/americas/american-will-be-first-cyclist-to-ride-a-vegan-tour-de-france-2304496.html",
+				"wiki": "https://en.wikipedia.org/wiki/David_Zabriskie"
+			},
+			{
+				"name": "Christine Vardaros",
+				"summary": "Professional cyclist. She represented USA Cycling at 3 World Cyclo-Cross Championships as well as over 25 Cyclo-Cross World Cups since year 2002. In addition, she has made many appearances to the podium of UCI International events, including a few wins.",
+				"source": "https://twitter.com/vardaros?lang=en",
+				"wiki": "https://en.wikipedia.org/wiki/Christine_Vardaros"
+			},
+			{
+				"name": "Molly Cameron",
+				"summary": "American professional cyclo-cross racing cyclist who rides for Portland Bicycle Studio. She is the only transgender athlete to compete in a UCI Cyclo-cross World Cup and an acknowledged vegan athlete. Molly won the 2004 Cross Crusade singlespeed series and has been racing at a pro level ever since. She has competed in cyclo-cross races in the USA and Europe at the elite racer level.",
+				"source": "https://twitter.com/themollycameron?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+				"wiki": "https://en.wikipedia.org/wiki/Molly_Cameron"
+			},
+			{
+				"name": "Rich Roll",
+				"summary": "In May 2010 Rich completed the EPIC5 CHALLENGE- 5 ironman-distance triathlons on 5 islands of Hawaii in under a week. Rich has been a top finisher at the 2008 and 2009 Ultraman World Championships in Hawaii.",
+				"source": "http://www.richroll.com/bio/"
+			},
+			{
+				"name": "Brendan Brazier",
+				"summary": "Canadian former endurance athlete, author, advocate of a vegan diet, and creator of the Vega line of food products and supplements. Brazier is a former Ironman triathlete (1998 – 2004). He is the author of The Thrive Diet (2007), Thrive Fitness (2009), and Thrive Foods: 200 Plant-Based Recipes for Peak Health (2011).",
+				"source": "https://en.wikipedia.org/wiki/Brendan_Brazier",
+				"wiki": "https://en.wikipedia.org/wiki/Brendan_Brazier"
+			}
+		],
+		"fighting": [
+			{
+				"name": "Nate Diaz",
+				"summary": "American professional mixed martial artist. He holds notable victories over the likes of Conor McGregor, Donald Cerrone, Gray Maynard, and Takanori Gomi. Diaz is tied with Joe Lauzon for the most UFC bonus awards, with 15 in total.[7] Nate Diaz, along with Conor McGregor, holds the record for the highest UFC pay-per-view buy rate for their contest at UFC 202",
+				"source": "https://www.youtube.com/watch?v=02M39kqWheo",
+				"wiki": "https://en.wikipedia.org/wiki/Nate_Diaz"
+			},
+			{
+				"name": "Nick Diaz",
+				"summary": "American mixed martial artist and promoter, who most recently competed for the Ultimate Fighting Championship (UFC). Widely regarded as a pioneer for the sport of MMA and since beginning his career in 2001, Diaz has competed in UFC, PRIDE, Strikeforce, EliteXC, World Extreme Cagefighting (WEC), DREAM, and Shooto. He is a former welterweight champion in Strikeforce and WEC, and is the older brother of Nate Diaz.",
+				"source": "https://www.youtube.com/watch?v=D9oyzGsJ8Yc",
+				"wiki": "https://en.wikipedia.org/wiki/Nick_Diaz"
+			},
+			{
+				"name": "Mac Danzig",
+				"summary": "American mixed martial artist, who competed as a lightweight in several MMA promotions, most notably the Ultimate Fighting Championship.",
+				"source": "http://www.ufc.com/news/Mac-Danzig-Diet-The-Truth-About-Vegan?id=",
+				"wiki": "https://en.wikipedia.org/wiki/Mac_Danzig"
+			},
+			{
+				"name": "Cam Awesome",
+				"summary": "American amateur boxer best known for winning the US title in 2008, 2010, 2013 and 2014 and the Golden Gloves in 2009, 2011 and 2013 at super heavyweight",
+				"source": "https://twitter.com/CamFAwesome",
+				"wiki": "https://en.wikipedia.org/wiki/Cam_F._Awesome"
+			},
+			{
+				"name": "Jake Shields",
+				"summary": "American mixed martial artist, currently fighting in the welterweight division for the PFL. He was the last Rumble on the Rock Welterweight Champion, the only Elite XC Welterweight Champion, a former Shooto Welterweight Champion and former Strikeforce Middleweight Champion. He also fought for the Ultimate Fighting Championship (UFC).",
+				"source": "https://www.youtube.com/watch?v=zA4Rd3C0fWU",
+				"wiki": "https://en.wikipedia.org/wiki/Jake_Shields"
+			},
+			{
+				"name": "Timothy Bradley",
+				"summary": "American former professional boxer who competed from 2004 to 2016. He held five world championships in two weight classes, including the WBC light welterweight title twice between 2008 and 2011; the WBO light welterweight title from 2009 to 2012; and the WBO welterweight title twice between 2012 and 2016. In October 2013, The Ring magazine ranked him as the world's third best active boxer, pound for pound. ",
+				"source": "https://www.youtube.com/watch?v=ruQ8AldIiBU",
+				"wiki": "https://en.wikipedia.org/wiki/Timothy_Bradley"
+			},
+			{
+				"name": "Georgi Karakhanyan",
+				"summary": "a Soviet-born Armenian-American professional mixed martial artist who most recently competed in the Featherweight division of Bellator MMA. A professional competitor since 2006, Karakhanyan has also formerly competed for the World Series of Fighting, DREAM, Tachi Palace Fights, and King of the Cage. Karakhanyan is also the former WSOF Featherweight Champion.",
+				"source": "http://www.sandiegouniontribune.com/sports/sdut-bellator-132-georgi-karakhanyan-vegetarian-diet-2015jan15-story.html",
+				"wiki": "https://en.wikipedia.org/wiki/Georgi_Karakhanyan"
+			},
+			{
+				"name": "David Meyer",
+				"summary": "Jiu Jitsu martial artist, having won multiple medals and a world championship",
+				"source": "https://www.usadojo.com/david-meyer/"
+			}
+		],
+		"lifting": [
+			{
+				"name": "Patrik Baboumian",
+				"summary": "German strongman competitor, strength athlete and former bodybuilder, also known as a veganism promoter. In 1999 he won the IFBB German junior bodybuilding championship, and in 2002 he became the overall junior champion at the Gießen Campions-Cup. Baboumian currently holds the world log lift record in the 105k-category (165 kg), as well as the German heavyweight loglift record (180 kg) and the title of 'Strongest Man of Germany' (105 kg division). Since 2006 he has been competing at IFSA Strongman events. In 2007 Baboumian competed at the FSA -105 kg World Championships and ended up with a 14th place.",
+				"source": "https://www.youtube.com/watch?v=6XmcyMxN8sI",
+				"wiki": "https://en.wikipedia.org/wiki/Patrik_Baboumian"
+			},
+			{
+				"name": "Kendrick Farris",
+				"summary": "Olympic weightlifter from the United States. He competed for the United States in the 85 kg weight class at the 2008 Summer Olympics where he placed 8th. Farris also participated in the 2012 Summer Olympics in London where he placed 10th. He was the Silver Medalist at the 2013 Summer Universiade and the Pan-American Champion in 2010. During the Olympic trials on May 8, 2016, Farris broke the U.S record by lifting a total of 831 pounds (377 kg) -- 370 pounds (168 kg) in the snatch and 461 pounds (209 kg) in the clean and jerk. In the 2016 Olympics, Farris finished 11th in the 94 kg weight class, with a 160 kg snatch and 197 kg clean and jerk.",
+				"source": "https://www.mensjournal.com/food-drink/vegan-diet-american-olympic-weightlifter-kendrick-farris/",
+				"wiki": "https://en.wikipedia.org/wiki/Kendrick_Farris"
+			},
+			{
+				"name": "Julia Hubbard",
+				"summary": "Vegan Nutritionist & PT Figure Pro 3xMiss Universe 3xWorld Champ, 3xBritish Champ, Sprinter ",
+				"source": "https://greatveganathletes.com/julia-hubbard-vegan-sprinter-and-figure-competitor"
+			},
+			{
+				"name": "Alexander Dargatz",
+				"summary": "German bodybuilder, winner of the World Champion Fitness title with the World Fitness Federation in December 2005.",
+				"source": "https://veganuary.com/people/alexander-dargatz",
+				"wiki": "https://en.wikiquote.org/wiki/Alexander_Diargatz"
+			},
+			{
+				"name": "Amansa Riester",
+				"summary": "Boxer and body builder. Four time Chicago Golden Gloves winner.",
+				"source": "https://greatveganathletes.com/amanda-riester-vegan-boxer-and-figure-competitor"
+			},
+			{
+				"name": "Amansa Riester",
+				"summary": "Boxer and body builder. Four time Chicago Golden Gloves winner.",
+				"source": "https://greatveganathletes.com/amanda-riester-vegan-boxer-and-figure-competitor"
+			},
+			{
+				"name": "Joel Kirkillis",
+				"summary": "Australian Joel Kirkilis is a vegan bodybuilder who became the Victoria (Aus) bodybuilding champion in 2009. In 2010 he entered the INBA Melbourne Open and the Victoria Class 2 competition, and finished second in each.",
+				"source": "https://greatveganathletes.com/joel-kirkilis-vegan-bodybuilder-and-powerlifter"
+			}
+		],
+		"sports": [
+			{
+				"name": "Tony Gonzalez",
+				"summary": "former American football tight end. He played college football and college basketball at University of California, Berkeley, and was recognized as a consensus All-American in football. He was drafted by the Kansas City Chiefs in the first round of the 1997 NFL Draft. Gonzalez, a fourteen time Pro Bowl selection, currently holds the NFL record for total receiving yards (15,127) by a tight end. He also is second all time in receptions with 1,325, trailing only Jerry Rice. Gonzalez is first in receptions by a tight end. Gonzalez was known for his durability, missing only two games in his seventeen year career. Beginning with the start of the 2000 season, Gonzalez had 1,145 receptions and only one fumble, making him one of the most sure handed players of all time.",
+				"source": "https://www.mindbodygreen.com/0-1304/Q-A-with-Tony-Gonzalez-AllPro-Football-Player-on-PlantBased-Diet-Slow-Food-More.html",
+				"wiki": "https://en.wikipedia.org/wiki/Tony_Gonzalez"
+			},
+			{
+				"name": "Cardale Jones",
+				"summary": "American football quarterback for the Los Angeles Chargers of the National Football League (NFL). He played college football at Ohio State.",
+				"source": "https://twitter.com/cardale7_/status/912386171640020992?lang=en",
+				"wiki": "https://en.wikipedia.org/wiki/Cardale_Jones"
+			},
+			{
+				"name": "Griff Whalen",
+				"summary": "American football wide receiver who is currently a free agent. He played college football at Stanford and was signed by the Indianapolis Colts as an undrafted free agent in 2012. Whalen has also been a member of the Miami Dolphins, San Diego Chargers, New England Patriots, Baltimore Ravens, and Oakland Raiders.",
+				"source": "https://www.youtube.com/watch?v=HF2MOQH3c-E",
+				"wiki": "https://en.wikipedia.org/wiki/Griff_Whalen"
+			},
+			{
+				"name": "David Carter",
+				"summary": "American football defensive end and vegan activist. He is currently a free agent. He was drafted by the Arizona Cardinals in the sixth round of the 2011 NFL Draft. He played college football at UCLA.",
+				"source": "https://www.gq.com/story/vegan-diet-of-nfl-player-david-carter",
+				"wiki": "https://en.wikipedia.org/wiki/David_Carter_(defensive_lineman)"
+			},
+			{
+				"name": "Ricky Williams",
+				"summary": "former American football running back who played 12 seasons in the National Football League (NFL) and one season in the Canadian Football League (CFL). He played college football for the University of Texas, where he was a two-time All-American and won the Heisman Trophy. Williams was drafted by the New Orleans Saints fifth overall in the 1999 NFL Draft and spent three seasons with the team before he was traded to the Miami Dolphins in 2002. Porter was ranked as one of the top prospects in the class of 2017.  He was selected 14th overall by the Nuggets in the 2018 NBA draft.",
+				"source": "http://www.espn.com/blog/afceast/post/_/id/18355/ricky-williams-on-fasting-and-religion",
+				"wiki": "https://en.wikipedia.org/wiki/Ricky_Williams."
+			},
+			{
+				"name": "Kyrie Irving",
+				"summary": "professional basketball player for the Boston Celtics of the National Basketball Association (NBA). He was named NBA Rookie of the Year after being selected by the Cleveland Cavaliers with the first overall pick in the 2011 NBA draft. A five-time NBA All-Star, Irving was selected to the All-NBA Third Team in 2015. He won an NBA championship with the Cavaliers in 2016.",
+				"source": "https://www.boston.com/sports/boston-celtics/2017/11/15/kyrie-irving-vegan-diet-improved-play",
+				"wiki": "https://en.wikipedia.org/wiki/Kyrie_Irving"
+			},
+			{
+				"name": "Jahlil Okafor",
+				"summary": "American professional basketball player for the New Orleans Pelicans of the National Basketball Association (NBA). He played his freshman season of college for the 2014–15 Duke national championship team. He was selected with the third overall pick in the 2015 NBA draft by the Philadelphia 76ers. He has previously played in the NBA for the 76ers and Brooklyn Nets.",
+				"source": "https://www.netsdaily.com/2017/12/14/16778394/jahlil-okafor-stumps-for-vegan-diet",
+				"wiki": "https://en.wikipedia.org/wiki/Jahlil_Okafor"
+			},
+			{
+				"name": "JaVale McGee",
+				"summary": "American professional basketball player for the Los Angeles Lakers of the National Basketball Association (NBA). He was selected 18th overall by the Washington Wizards in the 2008 NBA draft. He is a two-time NBA champion, having won consecutive titles with the Golden State Warriors in 2017 and 2018 before signing with the Lakers.",
+				"source": "https://www.gq.com/story/javale-mcgee-real-life-diet",
+				"wiki": "https://en.wikipedia.org/wiki/JaVale_McGee"
+			},
+			{
+				"name": "Wilson Chandler",
+				"summary": "American professional basketball player for the Philadelphia 76ers of the National Basketball Association (NBA). He has previously played for Zhejiang Guangsha of the Chinese Basketball Association during the 2011 NBA lockout and the NBA's New York Knicks and Denver Nuggets. He played college basketball at DePaul University for two years before declaring for the 2007 NBA draft, where he was a first-round selection of the Knicks",
+				"source": "https://www.businessinsider.com/wilson-chandler-vegan-diet-season-2017-9",
+				"wiki": "https://en.wikipedia.org/wiki/Wilson_Chandler"
+			},
+			{
+				"name": "Enes Kanter",
+				"summary": "Turkish professional basketball player for the New York Knicks of the National Basketball Association (NBA).",
+				"source": "https://www.sbnation.com/2017/10/25/16505120/nba-vegan-vegetarian-tracker-food-trend-wilson-chandler-kyrie-irving-damian-lillard-enes-kanter",
+				"wiki": "https://en.wikipedia.org/wiki/Enes_Kanter"
+			},
+			{
+				"name": "Al Jefferson",
+				"summary": "American professional basketball player for the Xinjiang Flying Tigers of the Chinese Basketball Association (CBA). He played high school basketball for Prentiss High School in Mississippi before skipping college to enter the 2004 NBA draft, where he was drafted 15th overall by the Boston Celtics. He has previously played for the Celtics, Minnesota Timberwolves, Utah Jazz, Charlotte Hornets and Indiana Pacers.",
+				"source": "http://www.espn.com/blog/nba/rumors/post/_/id/44867/rumor-central-vegetarian-diet-key-to-al-jefferson-slimming-down",
+				"wiki": "https://en.wikipedia.org/wiki/Al_Jefferson"
+			},
+			{
+				"name": "Michael Porter Jr",
+				"summary": "American professional basketball player for the Denver Nuggets of the National Basketball Association (NBA). He played college basketball at the University of Missouri. Porter was ranked as one of the top prospects in the class of 2017.  He was selected 14th overall by the Nuggets in the 2018 NBA draft.",
+				"source": "https://www.gq.com/story/michael-porter-jr-real-life-diet",
+				"wiki": "https://en.wikipedia.org/wiki/Michael_Porter_Jr."
+			},
+			{
+				"name": "Damian Lillard",
+				"summary": "American professional basketball player for the Portland Trail Blazers of the National Basketball Association (NBA). He played college basketball for the Weber State Wildcats and earned third-team All-American honors in 2012. After being selected by Portland with the sixth overall pick in the 2012 NBA draft, Lillard was unanimously voted the NBA Rookie of the Year. An NBA All-Star in 2014, 2015 and 2018, Lillard is one of six players in franchise history to become a three-time All-Star.",
+				"source": "https://www.sbnation.com/nba/2018/1/19/16909254/damian-lillard-not-vegan-diet-lifestyle-update-trail-blazers-nba-trends",
+				"wiki": "https://en.wikipedia.org/wiki/Damian_Lillard"
+			},
+			{
+				"name": "Martina Navratilova",
+				"summary": "former Czechoslovak and later American professional tennis player and coach. In 2005, Tennis magazine selected her as the greatest female tennis player for the years 1975 through 2005 and she is considered one of the best, if not the best, female tennis players of all time.",
+				"source": "https://www.youtube.com/watch?v=MiCgh0sw4vU",
+				"wiki": "https://en.wikipedia.org/wiki/Martina_Navratilova"
+			},
+			{
+				"name": "Billie Jean King",
+				"summary": "American former World No. 1 professional tennis player. King won 39 Grand Slam titles: 12 in singles, 16 in women's doubles, and 11 in mixed doubles. King won the singles title at the inaugural WTA Tour Championships. King often represented the United States in the Federation Cup and the Wightman Cup. She was a member of the victorious United States team in seven Federation Cups and nine Wightman Cups. For three years, King was the United States' captain in the Federation Cup.",
+				"source": "https://reducetarian.org/blog/2017/4/26/muscular-and-meatless-staying-fit-on-a-plant-based-diet",
+				"wiki": "https://en.wikipedia.org/wiki/Billie_Jean_King"
+			},
+			{
+				"name": "Venus Williams",
+				"summary": "American professional tennis player who is currently ranked world No. 21 in the WTA singles rankings. She is generally regarded as one of the all-time greats of women's tennis and, along with younger sister Serena Williams, is credited with ushering in a new era of power and athleticism on the women's professional tennis tour.",
+				"source": "https://www.health.com/nutrition/venus-williams-raw-vegan-diet",
+				"wiki": "https://en.wikipedia.org/wiki/Venus_Williams"
+			},
+			{
+				"name": "Serena Williams",
+				"summary": "American professional tennis player. The Women's Tennis Association (WTA) ranked her world No. 1 in singles on eight separate occasions between 2002 and 2017. She reached the No. 1 ranking for the first time on July 8, 2002. On her sixth occasion, she held the ranking for 186 consecutive weeks, tying the record set by Steffi Graf. In total, she has been No. 1 for 319 weeks, which ranks third in the 'Open Era' among female players behind Graf and Martina Navratilova. Williams holds the most Grand Slam titles in singles, doubles, and mixed doubles combined among active players. Her 39 major titles puts her joint-third on the all-time list and second in the Open Era: 23 in singles, 14 in women's doubles, and two in mixed doubles. She is the most recent female player to have held all four Grand Slam singles titles simultaneously (2002–03 and 2014–15) and the third player to achieve this twice, after Rod Laver and Graf. She is also the most recent player to have won a Grand Slam title on each surface (hard, clay and grass) in one calendar year. She is also, together with her sister Venus, the most recent player to have held all four Grand Slam women's doubles titles simultaneously (2009–10).",
+				"source": "https://www.irishexaminer.com/breakingnews/lifestyle/serena-williams-and-other-top-athletes-are-vegan-so-can-a-plant-based-diet-give-you-the-edge-832633.html",
+				"wiki": "https://en.wikipedia.org/wiki/Serena_Williams"
+			},
+			{
+				"name": "Tia Blanco",
+				"summary": "Professional surfer from Puerto Rico who won the first place Gold medal at the International Surfing Association (ISA) Open Women's World Surfing Championship 2015 in Popoyo, Nicaragua and successfully defended the title by winning the 2016 edition",
+				"source": "https://www.mensjournal.com/health-fitness/why-surfer-tia-blanco-is-vegan-w471552/",
+				"wiki": "https://en.wikipedia.org/wiki/Tia_Blanco"
+			},
+			{
+				"name": "Jermain Defoe",
+				"summary": "English professional footballer who plays as a striker for Premier League club AFC Bournemouth and the English national team.  April 2011, Defoe became the 20th player to score a century of Premier League goals, and is currently the seventh-highest goalscorer in Premier League history. He became the fifth highest goalscorer in Tottenham's history in September 2013, and the club's highest goalscorer in European competitions in November 2013. Defoe also holds the Premier League record for the most goals scored as a substitute, with 22, as of 11 January 2014. On 19 November 2016, Defoe scored his 150th Premier League goal, becoming the joint tenth-highest goal scorer in Premier League history.",
+				"source": "https://www.theguardian.com/football/2017/mar/27/jermain-defoe-england-striker-lithuania",
+				"wiki": "https://en.wikipedia.org/wiki/Jermain_Defoe"
+			},
+			{
+				"name": "Peter Siddle",
+				"summary": "Australian Test cricketer. He is a specialist right-arm fast-medium bowler who currently plays for Victoria in first-class and List A cricket and for the Adelaide Strikers in the Big Bash League. He has played Test cricket for Australia over an eight-year period from 2008 to 2016, before being recalled for the Test series against Pakistan in 2018. Early in Siddle's career he faced injury problems, but he overcame them in 2009 to be named the ICC Emerging Player of the Year. Though injuries continued to plague him throughout his career, he rose to prominence in the 2010–11 Ashes series when he became the ninth Australian to take a Test hat-trick with wickets on three consecutive deliveries. He remained a regular fixture in Australia's team until his bowling pace started to drop in 2014, with Australia's selectors beginning to focus on younger, faster bowlers. Siddle became a vegan in 2012, subsequently receiving criticism that suggested his diet had a negative effect on his performance, which he disputed.",
+				"source": "http://www.espncricinfo.com/australia-v-sri-lanka-2012/content/story/596840.html",
+				"wiki": "https://en.wikipedia.org/wiki/Peter_Siddle"
+			},
+			{
+				"name": "Mirco Bergamasco",
+				"summary": "Italian rugby union and rugby league player. Bergamasco has played both rugby league and rugby union, and is a dual-code rugby international, having played for both the Italy national rugby union team and the Italy national rugby league team. He primarily plays at centre or wing. He played in the 2003, 2007 and 2011 Rugby World Cups as well as the 2017 Rugby League World Cup",
+				"source": "https://www.peta.org.uk/blog/italian-rugby-legend-credits-vegan-fuel-giving-powerful-physique/",
+				"wiki": "https://en.wikipedia.org/wiki/Mirco_Bergamasco"
+			},
+			{
+				"name": "Kuntal Joisher",
+				"summary": "mountaineer and vegan based in Mumbai, India. On 15 May 2018, he stood on top of Mt. Lhotse, the fourth highest mountain in the world at 8516 meters, and became the first human in the world to have ascended any 8000 meter mountain on a 100% Vegan lifestyle. During the course of the expedition, Joisher only consumed strictly Vegan food, and used only Vegan gear including a one-piece synthetic suit made completely from animal-free material, as well as mittens and gloves constructed devoid of Down or Leather. He is also the first mountaineer to have climbed Mount Everest from the south side on a completely plant-based diet. He reached the summit on May 19, 2016. He is also the first mountaineer to have climbed Mt. Manaslu, the eighth highest mountain in the world, on a completely plant-based diet. He reached the summit on 1 October 2014",
+				"source": "http://www.kuntaljoisher.com/",
+				"wiki": "https://en.wikipedia.org/wiki/Kuntal_Joisher"
+			},
+			{
+				"name": "Tia Blanco",
+				"summary": "Professional surfer from Puerto Rico who won the first place Gold medal at the International Surfing Association (ISA) Open Women's World Surfing Championship 2015 in Popoyo, Nicaragua and successfully defended the title by winning the 2016 edition",
+				"source": "https://www.mensjournal.com/health-fitness/why-surfer-tia-blanco-is-vegan-w471552/",
+				"wiki": "https://en.wikipedia.org/wiki/Tia_Blanco"
+			},
+			{
+				"name": "Tony Horton",
+				"summary": "American personal trainer, author, and former actor. He is best known as the creator of the commercial home exercise regimen P90X.",
+				"source": "https://www.veganfoodandliving.com/p90x-founder-tony-horton-switching-plant-based-diet/",
+				"wiki": "https://en.wikipedia.org/wiki/Tony_Horton_(personal_trainer)"
+			},
+			{
+				"name": "Ed Templeton",
+				"summary": "American professional skateboarder, skateboard company owner, photographer and contemporary artist. He is best known for founding the skateboard company, Toy Machine, a company that, as of October 2018, he continues to own and manage.",
+				"source": "https://www.onegreenplanet.org/lifestyle/a-skateboarding-icon-talks-vegan-food-and-more-an-interview-with-ed-templeton/",
+				"wiki": "https://en.wikipedia.org/wiki/Ed_Templeton"
+			}
+		]
 	}
 }

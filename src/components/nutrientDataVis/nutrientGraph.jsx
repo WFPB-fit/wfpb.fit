@@ -43,7 +43,6 @@ export default class NutrientGraph extends Component {
 	// }
 
 	static transformObjectToVictoryXYArray(obj, name) {
-		debugger;
 		let arrData = Object.keys(obj)
 			.sort(alphaCompare)
 			.map(key => {

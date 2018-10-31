@@ -4,36 +4,53 @@ import React, { Component } from "react";
 import Resource from "../components/resource/index.jsx";
 import { preprocess } from "../utils/GeneralUtils.jsx";
 import endorsements from "../assets/data/endorsements.json";
-import ResourceTabs from "../components/tabsDisplay/ResourceTabs.jsx";
+import LinkableTabs from "../components/tabsDisplay/LinkableTabs.jsx";
 import { WidthWrapper } from "../utils/GeneralUtils";
 import Heading from "../components/heading";
+
+const celebStyle = {
+	width: "45%",
+	display: "inline-block",
+	margin: "5px",
+	verticalAlign: "top"
+};
 
 export default class Endorsements extends Component {
 	constructor(props) {
 		super(props);
+
 		this.athleteTabs = [
 			{
 				label: "Endurance",
-				resources: endorsements.athletes.endurance,
-				position: 0
+				component: Endorsements.getShortCards(endorsements.athletes.endurance)
 			},
 			{
 				label: "Fighting",
-				resources: endorsements.athletes.fighting,
-				position: 1
+				component: Endorsements.getShortCards(endorsements.athletes.fighting)
 			},
 			{
 				label: "Lifting",
-				resources: endorsements.athletes.lifting,
-				position: 2
+				component: Endorsements.getShortCards(endorsements.athletes.lifting)
 			},
 			{
 				label: "Sports",
-				resources: endorsements.athletes.sports,
-				position: 3
+				component: Endorsements.getShortCards(endorsements.athletes.sports)
 			}
 		];
 	}
+
+	static getShortCards(data) {
+		return (
+			<div style={{ textAlign: "center" }}>
+				{preprocess(data).map(x => (
+					<div style={celebStyle}>
+						<Resource resource={x} key={x.id} />
+					</div>
+				))}
+			</div>
+		);
+	}
+
 	render() {
 		const orgs = preprocess(endorsements.organizations).map(x => (
 			<Resource resource={x} key={x.id} />
@@ -41,18 +58,8 @@ export default class Endorsements extends Component {
 		const doctors = preprocess(endorsements.doctors).map(x => (
 			<Resource resource={x} key={x.id} />
 		));
-		const celebs = preprocess(endorsements.celebrities).map(x => (
-			<div
-				style={{
-					width: "400px",
-					display: "inline-block",
-					margin: "5px",
-					verticalAlign: "top"
-				}}
-			>
-				<Resource resource={x} key={x.id} />
-			</div>
-		));
+
+		const celebs = Endorsements.getShortCards(endorsements.celebrities);
 
 		return (
 			<WidthWrapper>
@@ -61,14 +68,9 @@ export default class Endorsements extends Component {
 				<Heading id="physicians" txt="Physicians" variant="h2" />
 				{doctors}
 				<Heading id="athletes" txt="Athletes" variant="h2" />
-				<ResourceTabs
-					notLinkable
-					tabs={this.athleteTabs}
-					location={this.props.location}
-					history={this.props.history}
-				/>
+				<LinkableTabs tabs={this.athleteTabs} />
 				<Heading id="celebs" txt="Celebrities" variant="h2" />
-				<div style={{ textAlign: "center" }}>{celebs}</div>
+				{celebs}
 				<h3>And More!</h3>
 			</WidthWrapper>
 		);
