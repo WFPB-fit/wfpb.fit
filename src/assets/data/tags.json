@@ -14,7 +14,6 @@
 		"skin",
 		"smell",
 		"overall mortality",
-		"acne",
 		"allergy",
 		"antibiotics",
 		"arthritis",
@@ -84,7 +83,6 @@
 		"phytoestrogens"
 	],
 	"environment": [
-		"air pollution",
 		"amazon",
 		"food security",
 		"grasslands",

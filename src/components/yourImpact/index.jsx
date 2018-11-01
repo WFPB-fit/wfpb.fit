@@ -77,6 +77,10 @@ export default class YourImpact extends Component {
 
 		return (
 			<Wrapper>
+				{/* <Typography>
+					View your diet's impact on water use, land use, and Greenhouse Gas creation.
+				</Typography> */}
+
 				<h2>
 					Calorie Estimator
 					<Help
@@ -106,7 +110,14 @@ export default class YourImpact extends Component {
 						title="Diet Compositon"
 						content={
 							<div>
-								<h4>Categories</h4>
+								<Typography variant="h4">Calories</Typography>
+								<Typography>
+									Note: Fat has 9 calories per gram, protein has 4 cal/g, and
+									carbs have 4 cal/g or less. Thus, oil and fatty animal
+									products may be a larger source of your calories than it may
+									appear based on portion sizes.
+								</Typography>
+								<Typography variant="h4">Categories</Typography>
 								<Typography>
 									Roots and tubers include potatoes, yams, carrots, cassava, and
 									other vegetables or starchs that grow underground.
@@ -119,7 +130,7 @@ export default class YourImpact extends Component {
 									and much more. All pulses are nitrogen-fixing, and thus do not
 									require much, if any, fertilizer.
 								</Typography>
-								<h4>Source</h4>
+								<Typography variant="h4">Source</Typography>
 								<Typography>
 									These food categories and corresponding data are from the
 									World Research Institute's "Shifting Diets for a Sustainable

@@ -28,17 +28,17 @@ export default class Header extends Component {
 						>
 							Support
 						</Button>
+						<Button
+							component={Link}
+							color="primary"
+							to="/support-wfpb"
+							style={{ fontSize: "12px" }}
+						>
+							Contact
+						</Button>
 					</div>
 					<div />
 					<div>
-						<Button
-							color="primary"
-							href="https://github.com"
-							style={{ fontSize: "12px" }}
-							target="_blank"
-						>
-							Report an Issue
-						</Button>
 						<Button
 							color="primary"
 							href="https://github.com"

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 
+import Typography from "@material-ui/core/Typography";
+
 import LinkableSelect from "../LinkableSelect";
 
 import {
@@ -10,7 +12,8 @@ import {
 	CenteredCircularProgress
 } from "../../utils/GeneralUtils.jsx";
 
-import RDA from "../../assets/data/preprocessed_data/RDA.json";
+import Help from "../help";
+import DRI from "../../assets/data/preprocessed_data/DRI.json";
 import NutrientNames from "../../assets/data/nutrientNames.js";
 import NutrientGraph from "./nutrientGraph.jsx";
 // import BestFoodSelector from './bestFood';
@@ -60,21 +63,21 @@ class Food extends Component {
 
 	// https://academic.oup.com/ajcn/article/99/5/1223S/4577490
 	static getRdaDensity(nutrients) {
-		const numRdaNutrients = Object.values(RDA).length;
+		const numRdaNutrients = Object.values(DRI).length;
 		let sum = 0;
-		for (const nId in RDA) {
-			const need = RDA[nId]
-			const nutrientAmount = (nutrients[nId] || 0);
-			const percentRDA = nutrientAmount / need;
-			sum += Math.min(percentRDA, 1); //up to 100% of RDA, over that is not needed. Good idea?
-			// sum += percentRDA;
+		for (const nId in DRI) {
+			const need = DRI[nId];
+			const nutrientAmount = nutrients[nId] || 0;
+			const percentDRI = nutrientAmount / need;
+			sum += Math.min(percentDRI, 1); //up to 100% of DRI, over that is not needed. Good idea?
+			// sum += percentDRI;
 			// debugger
 		}
 		//Normalize to 100kCal
 		// sum *= 100 / nutrients[208]; //Already calorie-normalized in the offline data processing
 
-		const percentTotalRDA = sum / numRdaNutrients
-		return parseFloat((percentTotalRDA * 100).toFixed(1));
+		const percentTotalDRI = sum / numRdaNutrients;
+		return parseFloat((percentTotalDRI * 100).toFixed(1));
 	}
 
 	getNutrientName(nId) {
@@ -123,8 +126,8 @@ class Food extends Component {
 		const fatCal = foodData.n[204] * 9;
 		const carbCal = (foodData.n[205] - (foodData.n[291] || 0)) * 4; //carb = 205, fiber=291. Fiber is a carb but it has no calories
 		// const alcoholCal = foodData.n[221] * 7;
-		const totalCal = 100; // food normalized to be 100kcal  //foodData.n[208]; //cant add them all together - may not sum to 100% of calories 
-		console.log(totalCal, proteinCal, fatCal, carbCal, foodData.n)
+		const totalCal = 100; // food normalized to be 100kcal  //foodData.n[208]; //cant add them all together - may not sum to 100% of calories
+		console.log(totalCal, proteinCal, fatCal, carbCal, foodData.n);
 		let dataPoints = [];
 
 		//"203": "Protein",
@@ -190,7 +193,12 @@ class Food extends Component {
 		let foodsRdaDataLine = this.state.selectedFoods.map(selectedFood => {
 			const foodId = selectedFood.value;
 			const foodData = this.props.food.data[foodId];
-			return { x: foodData.name, y: Food.getRdaDensity(foodData.n), unit: "%", foodName: foodData.name };
+			return {
+				x: foodData.name,
+				y: Food.getRdaDensity(foodData.n),
+				unit: "%",
+				foodName: foodData.name
+			};
 		}, []);
 
 		return [
@@ -202,10 +210,11 @@ class Food extends Component {
 	}
 
 	render() {
-		if (Object.keys(this.props.food.data).length === 0 || Object.keys(this.props.food.foodColors).length === 0) {
-			return (
-				<CenteredCircularProgress size={50} />
-			);
+		if (
+			Object.keys(this.props.food.data).length === 0 ||
+			Object.keys(this.props.food.foodColors).length === 0
+		) {
+			return <CenteredCircularProgress size={50} />;
 		}
 
 		let dataVis = null;
@@ -215,7 +224,7 @@ class Food extends Component {
 			const sources = this.state.selectedFoods.map(selectedFood => {
 				const foodId = selectedFood.value;
 				const foodData = this.props.food.data[foodId];
-				const usdaFoodId = (foodId + "").padStart(5, '0');
+				const usdaFoodId = (foodId + "").padStart(5, "0");
 
 				return (
 					<li key={foodData.name}>
@@ -240,30 +249,83 @@ class Food extends Component {
 				);
 			}
 
-			let rdaDensity;
+			let driDensity;
 			if (this.state.selectedFoods.length > 1) {
-				rdaDensity = (
+				driDensity = (
 					<NutrientGraph
 						linesData={this.getRdaLineGraphData()}
-						yLabel="RDA Density"
+						yLabel="DRI Density"
 					/>
 				);
 			} else {
-				rdaDensity = `${firstfoodData.name}: ${Food.getRdaDensity(firstfoodData.n)}%`;
+				driDensity = `${firstfoodData.name}: ${Food.getRdaDensity(
+					firstfoodData.n
+				)}%`;
 			}
 
 			dataVis = (
 				<div>
-					<p>Nutrients in 100 Grams of each food:</p>
-
 					<div>
-						<h2>RDA Density</h2>
-						{rdaDensity}
+						<h2>
+							DRI Density
+							<Help
+								title="DRI Density"
+								content={
+									<div>
+										<Typography>Higher is better</Typography>
+										<Typography>
+											DRI density for each food is calculated by
+										</Typography>
+										<ol>
+											<li>
+												Get human nutrient requirements, also known as Dietary
+												Reference Intakes (DRI), from the{" "}
+												{getLink(
+													"http://nationalacademies.org/HMD/Activities/Nutrition/SummaryDRIs/DRI-Tables.aspx",
+													"National Academies of Sciences."
+												)}
+											</li>
+											<li>
+												For each food, normalize its nutrients to 100 Calories.
+												That means we use the USDA's data, given in terms of 100
+												grams of food, to calculate how much of each nutrient
+												would be in 100 Calories of food.
+											</li>
+											<li>
+												For every nutrient, its normalized value is divided by
+												its DRI value. The result is the percent 100 Calories of
+												food fulfills of DRI nutrient requirements.
+											</li>
+											<li>
+												Sum up all these nutrient percentages to get percent of
+												total DRI fulfillment from 100 Calories of food, or DRI
+												density for short.
+											</li>
+										</ol>
+										<Typography>
+											Unfortunately, the value shown here is not exact. Some
+											nutrients have a DRI but the USDA source data does not
+											have information on how much of it is in our food. Those
+											nutrients are:
+										</Typography>
+										<ul>
+											<li>Biotin</li>
+											<li>Chromium</li>
+											<li>Iodine</li>
+											<li>Molybdenum</li>
+											<li>Linoleic Acid</li>
+										</ul>
+									</div>
+								}
+							/>
+						</h2>
+						{driDensity}
 
-						<h2>Calories</h2>
+						<h2>Calories (per 100g)</h2>
 						{calories}
 
-						<h2>Macronutrients</h2>
+
+						<h2>Macronutrients (per 100Cal)</h2>
 						<NutrientGraph
 							linesData={this.getGraphData(
 								this.getNutrientWeights(GraphNutrients["macros"])
@@ -273,13 +335,13 @@ class Food extends Component {
 						<NutrientGraph
 							linesData={this.getGraphData(this.getMacroPercentages)}
 						/> */}
-						<h2>Carbohydrates</h2>
+						<h2>Carbohydrates (per 100Cal)</h2>
 						<NutrientGraph
 							linesData={this.getGraphData(
 								this.getNutrientWeights(GraphNutrients["carbs"])
 							)}
 						/>
-						<h2>Fats</h2>
+						<h2>Fats (per 100Cal)</h2>
 						<NutrientGraph
 							linesData={this.getGraphData(
 								this.getNutrientWeights(GraphNutrients["fats"])
@@ -290,13 +352,13 @@ class Food extends Component {
 							Polyunsaturated Fat
 						</p>
 
-						<h2>Omega 3's</h2>
+						<h2>Omega 3's (per 100Cal)</h2>
 						<NutrientGraph
 							linesData={this.getGraphData(
 								this.getNutrientWeights(GraphNutrients["omega3"])
 							)}
 						/>
-						<h2>Vitamins</h2>
+						<h2>Vitamins (per 100Cal)</h2>
 						<NutrientGraph
 							linesData={this.getGraphData(
 								this.getNutrientWeights(GraphNutrients["vitamins"])
@@ -307,25 +369,25 @@ class Food extends Component {
 						selectedFoods={selectedFoodsData}
 						nutrientDataKey="fats"
 					/> */}
-						<h2>Minerals</h2>
+						<h2>Minerals (per 100Cal)</h2>
 						<NutrientGraph
 							linesData={this.getGraphData(
 								this.getNutrientWeights(GraphNutrients["minerals"])
 							)}
 						/>
-						<h2>Amino Acids</h2>
+						<h2>Amino Acids (per 100Cal)</h2>
 						<NutrientGraph
 							linesData={this.getGraphData(
 								this.getNutrientWeights(GraphNutrients["amino"])
 							)}
 						/>
-						<h2>Carotenoids</h2>
+						<h2>Carotenoids (per 100Cal)</h2>
 						<NutrientGraph
 							linesData={this.getGraphData(
 								this.getNutrientWeights(GraphNutrients["carotenoids"])
 							)}
 						/>
-						<h2>Flavonoids</h2>
+						<h2>Flavonoids (per 100Cal)</h2>
 						<NutrientGraph
 							linesData={this.getGraphData(
 								this.getNutrientWeights(GraphNutrients["flavonoids"])
@@ -379,13 +441,13 @@ class Food extends Component {
 
 		return (
 			<div>
-				{/* <p>Enter a tag in the search bar to display info</p> */}
+				<Typography variant="h4">Compare Food Nutrition</Typography>
 				<NestedSelectField
 					selectedFoods={this.state.selectedFoods}
 					addFood={this.addFood}
 				/>
 				<LinkableSelect
-					placeholder="Food Text Search..."
+					placeholder="Food Name Search..."
 					name="form-field-name"
 					filterOptions={this.props.food.filterOptions}
 					value={this.state.selectedFoods}

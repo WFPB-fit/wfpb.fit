@@ -18,7 +18,7 @@ export default class Heading extends Component {
 
 		return (
 			<Typography style={{ margin: "20px 0" }} variant={this.props.variant}>
-				{icon}
+				{!this.props.hideLink && icon}
 				{this.props.txt}
 			</Typography>
 		);

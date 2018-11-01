@@ -7,6 +7,7 @@ import endorsements from "../assets/data/endorsements.json";
 import LinkableTabs from "../components/tabsDisplay/LinkableTabs.jsx";
 import { WidthWrapper } from "../utils/GeneralUtils";
 import Heading from "../components/heading";
+import Typography from '@material-ui/core/Typography';
 
 const celebStyle = {
 	width: "45%",
@@ -43,8 +44,8 @@ export default class Endorsements extends Component {
 		return (
 			<div style={{ textAlign: "center" }}>
 				{preprocess(data).map(x => (
-					<div style={celebStyle}>
-						<Resource resource={x} key={x.id} />
+					<div key={x.id} style={celebStyle}>
+						<Resource resource={x} />
 					</div>
 				))}
 			</div>
@@ -66,12 +67,24 @@ export default class Endorsements extends Component {
 				<Heading id="orgs" txt="Organizations" variant="h2" />
 				{orgs}
 				<Heading id="physicians" txt="Physicians" variant="h2" />
+				<Typography variant="h6">
+					The following individuals have advocated for a whole food, plant-based
+					diet to improve public health.
+				</Typography>
 				{doctors}
 				<Heading id="athletes" txt="Athletes" variant="h2" />
+				<Typography variant="h6">
+					The following individuals eat a vegetarian, vegan, or whole food,
+					plant-based diet.
+				</Typography>
 				<LinkableTabs tabs={this.athleteTabs} />
 				<Heading id="celebs" txt="Celebrities" variant="h2" />
+				<Typography variant="h6">
+					The following individuals eat a vegetarian, vegan, or whole food,
+					plant-based diet.
+				</Typography>
 				{celebs}
-				<h3>And More!</h3>
+				<Heading txt="And many more!" variant="h3" hideLink />
 			</WidthWrapper>
 		);
 	}
