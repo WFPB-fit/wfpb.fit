@@ -408,8 +408,10 @@ class Food extends Component {
 						</li>
 						<ul>
 							<li>
-								Vitamin E: Alpha, Beta, Gamma, Delta Tocopherol & Alpha, Beta,
-								Gamma, Delta Tocotrienol
+								Vitamin E: Alpha Tocotrienol and Added Vitmin E
+							</li>
+							<li>
+								Vitamin B12: Vitamin B12 and Added Vitamin B12
 							</li>
 							<li>
 								Anthocyanidins: Cyanidin, Petunidin, Delphinidin, Malvidin,
