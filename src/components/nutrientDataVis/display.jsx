@@ -324,7 +324,6 @@ class Food extends Component {
 						<h2>Calories (per 100g)</h2>
 						{calories}
 
-
 						<h2>Macronutrients (per 100Cal)</h2>
 						<NutrientGraph
 							linesData={this.getGraphData(
@@ -407,12 +406,8 @@ class Food extends Component {
 							nutrients, including:
 						</li>
 						<ul>
-							<li>
-								Vitamin E: Alpha Tocotrienol and Added Vitmin E
-							</li>
-							<li>
-								Vitamin B12: Vitamin B12 and Added Vitamin B12
-							</li>
+							<li>Vitamin E: Alpha Tocotrienol and Added Vitmin E</li>
+							<li>Vitamin B12: Vitamin B12 and Added Vitamin B12</li>
 							<li>
 								Anthocyanidins: Cyanidin, Petunidin, Delphinidin, Malvidin,
 								Pelargonidin, Peonidin{" "}
@@ -444,6 +439,10 @@ class Food extends Component {
 		return (
 			<div>
 				<Typography variant="h4">Compare Food Nutrition</Typography>
+				<Typography>
+					Enter a text search into the search bar or use the selector to narrow
+					down choices
+				</Typography>
 				<NestedSelectField
 					selectedFoods={this.state.selectedFoods}
 					addFood={this.addFood}
