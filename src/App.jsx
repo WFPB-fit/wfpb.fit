@@ -15,6 +15,7 @@ import Data from "./routes/food.jsx";
 import ResearchContainer from "./routes/research_container.jsx";
 import LearnMore from "./routes/learn-more";
 import Endorsements from "./routes/endorsements";
+import Support from './routes/support';
 
 import "react-select/dist/react-select.css";
 import "react-virtualized/styles.css";
@@ -92,6 +93,7 @@ export default class App extends Component {
 									<Route path="/endorsements" component={Endorsements} />
 									<Route path="/media" component={LearnMore} />
 									<Route path="/how-to" component={HowTo} />
+									<Route path="/support-wfpb" component={Support} />
 								</Switch>
 							</Body>
 							<Footer />
