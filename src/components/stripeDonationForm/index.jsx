@@ -48,7 +48,7 @@ export default class StripeDonationForm extends Component {
 					})
 					.then(txt => {
 						console.log(txt);
-						this.setState({ donationResponse: "Thank you for donating!" });
+						this.setState({ donationResponse: txt });
 					})
 					.catch(error => {
 						this.setState({
@@ -95,7 +95,7 @@ export default class StripeDonationForm extends Component {
 			<div>
 				<p
 					style={{
-						display: this.state.stripeSubmissionError ? "block" : "none"
+						display: (this.state.donationResponse.length > 0) ? "block" : "none"
 					}}
 				>
 					{this.state.donationResponse}
