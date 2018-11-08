@@ -7,8 +7,9 @@ import Button from "@material-ui/core/Button";
 // import FormControlLabel from "@material-ui/core/FormControlLabel";
 
 const minDonationAmount = 0.5;
-const backendUrl =
-	"https://boqu8b2s6k.execute-api.us-east-1.amazonaws.com/latest";
+// const backendUrl =
+// 	"https://boqu8b2s6k.execute-api.us-east-1.amazonaws.com/latest";
+const backendUrl = "http://localhost:5000";
 // const live_key = "pk_live_gYNCfpHpLEzEPpKk3qjjklwV";
 const test_key = "pk_test_pYPBajqbOoTntc5A3B5XmTWJ";
 
@@ -24,33 +25,35 @@ export default class StripeDonationForm extends Component {
 		this.handler = StripeCheckout.configure({
 			key: test_key,
 			locale: "auto",
-			mode: "no-cors",
 			name: "WFPB.FIT SPC",
 			description: "One-time non tax-deductible donation",
 			token: token => {
 				// Send the donation to your server
-				console.log("server pinged");
+				console.log("Submitting donation to server");
 
 				fetch(`${backendUrl}/charge`, {
 					method: "POST",
 					headers: {
-						"Content-Type": "application/json"
+						"Content-Type": "application/x-www-form-urlencoded"
 					},
-					body: JSON.stringify({
-						stripeToken: token,
-						chargeAmount: this.state.donationAmount,
-						saveEmail: this.state.saveToEmailList
-					})
+					body: encodeURIComponent(
+						JSON.stringify({
+							stripeToken: token.id,
+							chargeAmount: Math.round(100 * this.state.donationAmount) // Needs to be an integer in cents
+						})
+					)
 				})
-					.then(res => res.json())
-					.then(json => {
-						console.log("response is " + json);
+					.then(res => {
+						return res.text();
+					})
+					.then(txt => {
+						console.log(txt);
 						this.setState({ donationResponse: "Thank you for donating!" });
 					})
 					.catch(error => {
 						this.setState({
 							donationResponse:
-								"There was an issue processing your request. Please try again later"
+								"There was an issue sending your request. Please try again later"
 						});
 					});
 			}
@@ -84,10 +87,7 @@ export default class StripeDonationForm extends Component {
 		console.log("form submitted");
 		event.preventDefault();
 
-		const amount = this.state.donationAmount * 100; // Needs to be an integer!
-		this.handler.open({
-			amount: Math.round(amount)
-		});
+		this.handler.open();
 	};
 
 	render() {
