@@ -8,7 +8,7 @@ import Button from "@material-ui/core/Button";
 
 const minDonationAmount = 0.5;
 // const backendUrl =
-// 	"https://boqu8b2s6k.execute-api.us-east-1.amazonaws.com/latest";
+// 	"	";
 const backendUrl = "http://localhost:5000";
 // const live_key = "pk_live_gYNCfpHpLEzEPpKk3qjjklwV";
 const test_key = "pk_test_pYPBajqbOoTntc5A3B5XmTWJ";
@@ -17,7 +17,6 @@ export default class StripeDonationForm extends Component {
 	state = {
 		donationAmount: 1,
 		isDonationError: false,
-		saveToEmailList: true,
 		donationResponse: ""
 	};
 
@@ -34,9 +33,9 @@ export default class StripeDonationForm extends Component {
 				fetch(`${backendUrl}/charge`, {
 					method: "POST",
 					headers: {
-						"Content-Type": "application/x-www-form-urlencoded"
+						"Content-Type": "application/json"
 					},
-					body: encodeURIComponent(
+					body: (
 						JSON.stringify({
 							stripeToken: token.id,
 							chargeAmount: Math.round(100 * this.state.donationAmount) // Needs to be an integer in cents
@@ -79,9 +78,6 @@ export default class StripeDonationForm extends Component {
 			isDonationError: StripeDonationForm.isDonationInvalid(amount)
 		});
 	};
-	handleSaveToEmailListChange = event => {
-		this.setState({ saveToEmailList: event.target.value });
-	};
 
 	formSubmit = async event => {
 		console.log("form submitted");
@@ -114,16 +110,6 @@ export default class StripeDonationForm extends Component {
 							min: 0
 						}}
 					/>
-					<br />
-					{/* <FormControlLabel
-						control={
-							<Checkbox
-								checked={this.state.saveToEmailList}
-								onChange={this.handleSaveToEmailListChange}
-							/>
-						}
-						label="Save my email to mailing list after donation"
-					/> */}
 					<br />
 					<Button variant="contained" color="primary" type="submit">
 						Start Donation
