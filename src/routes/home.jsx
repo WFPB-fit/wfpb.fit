@@ -30,12 +30,10 @@ export default class Home extends Component {
 					</p>
 					<h3>DISCLAIMER</h3>
 					<p>
-						If you have an illness, discuss your diet with your doctor before
-						making changes. Do not stop taking medications until a doctor says
-						it is safe. Never be afraid of asking questions or getting a
-						{" "}
-						{getLink("/how-to#doctors", "second opinion")} 
-						{" "} from an accredited
+						Discuss your diet with your doctor before making changes. Do not
+						stop taking medications until a doctor says it is safe. Never be
+						afraid of asking questions or getting a{" "}
+						{getLink("/how-to#doctors", "second opinion")} from an accredited
 						physician or dietitian.
 					</p>
 					<Heading id="what" txt="What is WFPBD?" variant="h2" />
@@ -97,9 +95,9 @@ export default class Home extends Component {
 						)}{" "}
 						{getLink(
 							"/research?selected=water+plastic#disease",
-							"oceanic plastic,"
+							"oceanic plastic"
 						)}{" "}
-						{getLink("/research#animals", "animal death,")} and{" "}
+						and{" "}
 						{getLink(
 							"/research?selected=climate+change#disease",
 							"climate change."

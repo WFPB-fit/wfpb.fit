@@ -28,6 +28,9 @@ export default class Header extends Component {
 
 						{/* mid  */}
 						<div>
+							<Button component={Link} to="/how-to" style={{ color: "white" }}>
+								How-To
+							</Button>
 							<Button
 								component={Link}
 								to="/research"
@@ -52,8 +55,13 @@ export default class Header extends Component {
 
 						{/* right  */}
 						<div>
-							<Button component={Link} to="/how-to" style={{ color: "white" }}>
-								How-To
+							<Button
+								component={Link}
+								color="primary"
+								to="/support-wfpb"
+								style={{ color:"white" }}
+							>
+								Support
 							</Button>
 						</div>
 					</FlexToolbar>

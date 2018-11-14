@@ -7,9 +7,7 @@ import Button from "@material-ui/core/Button";
 // import FormControlLabel from "@material-ui/core/FormControlLabel";
 
 const minDonationAmount = 0.5;
-// const backendUrl =
-// 	"	";
-const backendUrl = "http://localhost:5000";
+const backendUrl = "https://2oxgc88kd9.execute-api.eu-central-1.amazonaws.com/production";
 // const live_key = "pk_live_gYNCfpHpLEzEPpKk3qjjklwV";
 const test_key = "pk_test_pYPBajqbOoTntc5A3B5XmTWJ";
 

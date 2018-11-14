@@ -1,8 +1,7 @@
 {
   "name": "wfpbd",
   "version": "0.1.0",
-  "private": true,
-  "proxy": "http://localhost:5000/",
+  "license": "MIT",
   "dependencies": {
     "@material-ui/core": "^3.2.0",
     "@material-ui/icons": "^3.0.1",

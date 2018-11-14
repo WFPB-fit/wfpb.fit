@@ -2,7 +2,8 @@ import React, { Component } from "react";
 
 import styled from "styled-components";
 import Button from "@material-ui/core/Button";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Typography } from "@material-ui/core";
 
 const Wrapper = styled.div`
 	padding: 5px;
@@ -16,28 +17,15 @@ export default class Header extends Component {
 	render() {
 		return (
 			<div>
-				<hr style={{margin:'10px 0 0 0'}}/>
+				<hr style={{ margin: "10px 0 0 0" }} />
 
 				<Wrapper>
-					<div>
-						<Button
-							component={Link}
-							color="primary"
-							to="/support-wfpb"
-							style={{ fontSize: "12px" }}
-						>
-							Support
-						</Button>
-						<Button
-							component={Link}
-							color="primary"
-							to="/support-wfpb"
-							style={{ fontSize: "12px" }}
-						>
-							Contact
-						</Button>
-					</div>
 					<div />
+					<div>
+						<Typography>
+							Discuss your diet with your doctor before making changes
+						</Typography>
+					</div>
 					<div>
 						<Button
 							color="primary"
