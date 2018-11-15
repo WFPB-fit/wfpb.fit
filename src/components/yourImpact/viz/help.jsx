@@ -40,13 +40,14 @@ export default class DataVizHelp extends Component {
 						})}
 						<Typography variant="h5">Food Waste</Typography>
 						<Typography>
-							All reference diets incorporate food waste in their environmental
-							impact. Each food group is wasted at different rates by consumers,
-							these values are taken from{" "}
+							All reference diets incorporate retail and consumer food waste in
+							their environmental impact. Each food group is wasted at different
+							rates by consumers, these values are taken from{" "}
 							{getLink(
 								"https://www.ers.usda.gov/webdocs/publications/43833/43680_eib121.pdf?v=0",
 								"The Estimated Amount, Value, and Calories of Postharvest Food Losses at the Retail and Consumer Levels in the United States"
-							)} (USDA).
+							)}{" "}
+							(USDA).
 						</Typography>
 					</div>
 				}

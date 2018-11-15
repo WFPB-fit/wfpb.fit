@@ -24,6 +24,29 @@ export default [
 		}
 	},
 	{
+		label: "WFPB",
+		data: {
+			Sugar: 0,
+			Rice: 5,
+			"Mustard/Rape-seed oil": 0,
+			"Soybean oil": 0,
+			"Sunflowerseed oil": 0,
+			Maize: 5,
+			"Roots and tubers": 15,
+			Wheat: 5,
+			"Fruits and vegetables": 40,
+			Nuts: 10,
+			Pulses: 20,
+			Pork: 0,
+			Eggs: 0,
+			"Fish (farmed)": 0,
+			Poultry: 0,
+			Dairy: 0,
+			"Sheep and goat": 0,
+			Beef: 0
+		}
+	},
+	{
 		label: "vegetarian",
 		data: {
 			Sugar: 10,

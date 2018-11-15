@@ -8,7 +8,10 @@ import { titleize, getLink } from "../../../utils/GeneralUtils";
 import VizHelpExplanation from "./help";
 import ModifiableUnitBarChart from "../../modifiableUnitBarChart";
 
-import FoodWaste from "../../../assets/data/environment/foodWaste";
+import {
+	ConsumerWaste,
+	RetailWaste
+} from "../../../assets/data/environment/foodWaste";
 
 import Help from "../../help";
 
@@ -28,10 +31,11 @@ export default class CalorieForm extends Component {
 				let ref = WRI[impactType][foodType];
 
 				// incorporate food waste
+				ref = ref / (1 - RetailWaste[foodType] / 100);
 				if (foodWastePercent === null) {
-					const wastedPercent = FoodWaste[foodType] / 100;
-					ref = ref / (1-wastedPercent);
+					ref = ref / (1 - ConsumerWaste[foodType] / 100);
 				}
+
 				return sum + ref * usage;
 			},
 			0

@@ -43,6 +43,9 @@ export default class Home extends Component {
 					>
 						<b>{window.globalAppData.appName}</b>
 					</Typography>
+					<Typography variant="h6" style={{ color: "white" }}>
+						Whole Food, Plant-Based Info
+					</Typography>
 				</CenteredTextImage>
 				<br />
 				<WidthWrapper>

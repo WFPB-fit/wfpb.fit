@@ -21,10 +21,10 @@ const Wrapper = styled.div`
 `;
 
 export default class YourImpact extends Component {
-	handleFoodWasteChange = (event) => {
+	handleFoodWasteChange = event => {
 		let val = event.target.value;
-		val = Math.max(val,0);
-		val = Math.min(val,99);
+		val = Math.max(val, 0);
+		val = Math.min(val, 99);
 		this.setState({ foodWastePercent: val });
 	};
 
@@ -133,11 +133,13 @@ export default class YourImpact extends Component {
 								<br />
 								<Typography>
 									In the below charts the values from that report are used to
-									scale the reference values to account for food waste. This
-									allows the data to be more specific. For example, Americans
-									waste about 33% of their fruit, but only 9% of tree
-									nuts/peanuts. This is accounted for in the reference diets in
-									the charts.
+									scale the environmental impact. Retail and consumer waste is
+									taken into account. The value you provide is used in your diet
+									calculation as your overall consumer waste. The other diets'
+									consumer waste, and each diets' retail waste, is specific to
+									each food group (for example: on average 9% of nuts are wasted
+									but 33% of fruit is wasted, this is taken into account in the
+									calculations).
 								</Typography>
 							</div>
 						}
