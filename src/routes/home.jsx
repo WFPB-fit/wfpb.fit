@@ -9,16 +9,43 @@ import { Link } from "react-router-dom";
 import Typography from "@material-ui/core/Typography";
 
 import styled from "styled-components";
+import CenteredTextImage from "../components/centeredtextImage/index.jsx";
 const Emojis = styled.div`
 	font-size: 25px;
 `;
 
 export default class Home extends Component {
+	state = { width: 0, height: 0 };
+
+	updateWindowDimensions = () => {
+		this.setState({ width: window.innerWidth, height: window.innerHeight });
+	};
+
+	componentDidMount() {
+		this.updateWindowDimensions();
+		window.addEventListener("resize", this.updateWindowDimensions);
+	}
+
+	componentWillUnmount() {
+		window.removeEventListener("resize", this.updateWindowDimensions);
+	}
+
 	render() {
 		return (
 			<div>
+				<CenteredTextImage
+					src="/imgs/assets/foods/veges.jpg"
+					height={this.state.width > 700 ? "700px" : "400px"}
+				>
+					<Typography
+						style={{ color: "white" }}
+						variant={this.state.width > 700 ? "h1" : "h2"}
+					>
+						<b>{window.globalAppData.appName}</b>
+					</Typography>
+				</CenteredTextImage>
+				<br />
 				<WidthWrapper>
-					<Heading txt={window.globalAppData.appName} variant="h1" />
 					<Typography>
 						Learn about the <b>whole food, plant-based (WFPB)</b> diet. WFPB has
 						been documented to{" "}
@@ -28,14 +55,6 @@ export default class Home extends Component {
 							extend lifespan
 						</b>
 						, and more.
-					</Typography>
-					<h3>DISCLAIMER</h3>
-					<Typography>
-						Discuss your diet with your doctor before making changes. Do not
-						stop taking medications until a doctor says it is safe. Never be
-						afraid of asking questions or getting a{" "}
-						{getLink("/how-to#doctors", "second opinion")} from an accredited
-						physician or dietitian.
 					</Typography>
 					<Heading id="what" txt="What is WFPB?" variant="h2" />
 					<Typography>
@@ -70,8 +89,8 @@ export default class Home extends Component {
 					{/* <img alt="WFPB foods" src="/imgs/assets/foods/Fruits_Veg.jpg" /> */}
 					<Heading id="why" txt="Why eat this way?" variant="h2" />
 					<Typography>
-						Disease is expensive, time consuming, miserable, and difficult.
-						WFPB is a powerful way to help avoid disease.
+						Disease is expensive, time consuming, miserable, and difficult. WFPB
+						is a powerful way to help avoid disease.
 					</Typography>
 					<Typography>
 						<b>WFPB is also an ethical way to eat. </b> Animal agriculture is
@@ -107,6 +126,15 @@ export default class Home extends Component {
 					<Typography>
 						<b>It's also cheap and tastes great.</b>
 					</Typography>
+					<h3>DISCLAIMER</h3>
+					<Typography>
+						Discuss your diet with your doctor before making changes. Do not
+						stop taking medications until a doctor says it is safe. Never be
+						afraid of asking questions or getting a{" "}
+						{getLink("/how-to#doctors", "second opinion")} from an accredited
+						physician or dietitian.
+					</Typography>
+
 					<div style={{ display: "block", textAlign: "center" }}>
 						<Button
 							component={Link}

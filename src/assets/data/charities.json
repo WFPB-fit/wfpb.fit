@@ -1,7 +1,32 @@
 [
 	{
+		"name": "Nutrition Facts",
+		"donate": "https://nutritionfacts.org/donate/",
+		"quote": "NUTRITIONFACTS.ORG is a strictly non-commercial, science-based public service provided by Dr. Michael Greger, providing free updates on the latest in nutrition research via bite-sized videos. There are more than a thousand videos on nearly every aspect of healthy eating, with new videos and articles uploaded every day"
+	},
+	{
+		"name": "WFPB.org",
+		"donate": "https://wfpb.org/donate/",
+		"quote": "WFPB.ORG is a mission-driven, non-profit organization that merges the impact of lifestyle choices on human and environmental health. It sets the universal standards for sustainable health centered on the education of science-based evidence and the empowerment of whole food, plant-based nutrition, lifestyle medicine, organic, non-GMO, plant-based agriculture, and sustainable living."
+	},
+	{
+		"name": "The Good Food Institute",
+		"donate": "https://www.gfi.org/donate",
+		"quote": "We work with scientists, investors, and entrepreneurs to make groundbreaking good food a reality. We focus on clean meat and plant-based alternatives to animal products—foods that are more delicious, safer to eat, and better for the planet than their outdated counterparts."
+	},
+	{
+		"name": "Veg Fund",
+		"donate": "https://vegfund.org/donate",
+		"quote": "VegFund empowers vegan advocates worldwide through grant funding and supporting effective outreach that inspires people to choose and maintain a vegan lifestyle."
+	},
+	{
+		"name": "The Humane League",
+		"donate": "https://secure.everyaction.com/cG8HRvst7kCtYR-AxtqC3w2",
+		"quote": "We exist to end the abuse of animals raised for food. We work to reform the way farm animals are treated while also inspiring people to make more compassionate food choices. Our strategy includes hard-hitting corporate campaigns and wide-ranging outreach and education programs, supported by an extensive network of organizations, activists and supporters around the world."
+	},
+	{
 		"name": "Plant Based Foods Association",
-		"url": "https://plantbasedfoods.org/donate/",
-		"desc": "The idea is to support the plant-based foods industry by: 1. Persuading conventional retailers to expand shelf space for plant-based foods; 2. Helping college and university food service directors offer plant-based options; 3. Educating reporters about the critical role plant-based food companies play."
+		"donate": "https://plantbasedfoods.org/donate/",
+		"quote": "The idea is to support the plant-based foods industry by: 1. Persuading conventional retailers to expand shelf space for plant-based foods; 2. Helping college and university food service directors offer plant-based options; 3. Educating reporters about the critical role plant-based food companies play."
 	}
 ]

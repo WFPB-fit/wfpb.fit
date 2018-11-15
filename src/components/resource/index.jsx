@@ -198,15 +198,15 @@ export default class Resource extends Component {
 							{/* {new URL(resource.website).hostname.replace("www.", "")} */}
 						</Button>
 					)}
-					{resource.source && (
+					{resource.donate && (
 						<Button
 							size="small"
 							variant="contained"
 							color="primary"
 							target="_blank"
-							href={resource.website}
+							href={resource.donate}
 						>
-							Source
+							Donate
 							{/* {new URL(resource.website).hostname.replace("www.", "")} */}
 						</Button>
 					)}
@@ -216,7 +216,7 @@ export default class Resource extends Component {
 							variant="contained"
 							color="primary"
 							target="_blank"
-							href={resource.website}
+							href={resource.wiki}
 						>
 							Wikipedia
 							{/* {new URL(resource.website).hostname.replace("www.", "")} */}

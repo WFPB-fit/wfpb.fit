@@ -23,7 +23,7 @@ export default class Header extends Component {
 					<div />
 					<div>
 						<Typography>
-							Discuss your diet with your doctor before making changes
+							Talk with your doctor before making diet changes
 						</Typography>
 					</div>
 					<div>

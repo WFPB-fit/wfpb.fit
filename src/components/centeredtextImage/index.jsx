@@ -12,22 +12,6 @@ transform: translate(-50%,-50%);
 `;
 
 export default class CenteredTextImage extends Component {
-    constructor(props) {
-        super(props);
-
-        // this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-        // this.state = { width: 0 };
-    }
-
-
-    // componentDidMount() {
-    // 	this.updateWindowDimensions();
-    // 	window.addEventListener('resize', this.updateWindowDimensions);
-    // }
-
-    // updateWindowDimensions() {
-    // 	this.setState({ width: window.innerWidth });
-    // }
 
     render() {
         return (

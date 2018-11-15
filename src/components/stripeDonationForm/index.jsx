@@ -9,6 +9,7 @@ import Typography from "@material-ui/core/Typography";
 import Modal from "@material-ui/core/Modal";
 import { CircularProgress } from "@material-ui/core";
 import Paper from "@material-ui/core/Paper";
+import { getLink } from "../../utils/GeneralUtils";
 
 const minDonationAmount = 0.5;
 
@@ -125,11 +126,11 @@ export default class StripeDonationForm extends Component {
 		}
 
 		return (
-			<div>
+			<div style = {{maxWidth:'70%', margin: '5px auto'}}>
 				<Modal open={this.state.open} onClose={this.handleClose}>
 					<Paper style={modalStyle}>{msg}</Paper>
 				</Modal>
-				<form style={{ textAlign: "center" }} onSubmit={this.formSubmit}>
+				<form style={{ textAlign: "center", margin: '5px' }} onSubmit={this.formSubmit}>
 					<TextField
 						style={{ textAlign: "center" }}
 						error={this.state.isDonationError}
@@ -148,6 +149,12 @@ export default class StripeDonationForm extends Component {
 						Start Donation
 					</Button>
 				</form>
+				<Typography style={{ fontSize: "13px", textAlign: "center" }}>
+					Donations are secured using {getLink("https://stripe.com/", "Stripe.")}
+					Your information is encrypted and automatically transferred to
+					financial institutions. This information is not made available to any
+					other parties.
+				</Typography>
 			</div>
 		);
 	}
