@@ -126,11 +126,14 @@ export default class StripeDonationForm extends Component {
 		}
 
 		return (
-			<div style = {{maxWidth:'70%', margin: '5px auto'}}>
+			<div style={{ maxWidth: "70%", margin: "5px auto" }}>
 				<Modal open={this.state.open} onClose={this.handleClose}>
 					<Paper style={modalStyle}>{msg}</Paper>
 				</Modal>
-				<form style={{ textAlign: "center", margin: '5px' }} onSubmit={this.formSubmit}>
+				<form
+					style={{ textAlign: "center", margin: "5px" }}
+					onSubmit={this.formSubmit}
+				>
 					<TextField
 						style={{ textAlign: "center" }}
 						error={this.state.isDonationError}
@@ -150,7 +153,8 @@ export default class StripeDonationForm extends Component {
 					</Button>
 				</form>
 				<Typography style={{ fontSize: "13px", textAlign: "center" }}>
-					Donations are secured using {getLink("https://stripe.com/", "Stripe.")}
+					Donations are secured using{" "}
+					{getLink("https://stripe.com/", "Stripe.")}
 					Your information is encrypted and automatically transferred to
 					financial institutions. This information is not made available to any
 					other parties.

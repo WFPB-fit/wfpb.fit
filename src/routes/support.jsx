@@ -13,19 +13,22 @@ import Heading from "../components/heading";
 
 export default class Support extends Component {
 	render() {
-		const groups = Charities.map(x => <Resource resource={x} key={x.id} />);
+		const groups = Charities.map(x => <Resource resource={x} key={x.name} />);
 
 		return (
 			<WidthWrapper>
-				<Typography variant="h2">Support Us</Typography>
+				<Heading id="support-us" txt="Support Us" variant="h2" />
+
 				<StripeDonationForm />
 
-				<Heading id="orgs" txt="Charities" variant="h2" />
+				<Heading id="charities" txt="Charities" variant="h2" />
 				<Typography variant="h6">
 					More great organizations that could use your support
 				</Typography>
 				{groups}
-				<Typography variant="h5">And many more!</Typography>
+				<Typography variant="h5" style={{ margin: "20px 0" }}>
+					And many more!
+				</Typography>
 			</WidthWrapper>
 		);
 	}
