@@ -33,8 +33,6 @@ export default class LinkableSelect extends Component {
 					className={this.props.className}
 				/>
 				<Modal
-					// aria-labelledby="simple-modal-title"
-					// aria-describedby="simple-modal-description"
 					open={this.state.open}
 					onClose={this.handleClose}
 				>

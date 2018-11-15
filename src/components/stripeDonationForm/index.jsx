@@ -6,6 +6,9 @@ import Button from "@material-ui/core/Button";
 // import Checkbox from "@material-ui/core/Checkbox";
 // import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Typography from "@material-ui/core/Typography";
+import Modal from "@material-ui/core/Modal";
+import { CircularProgress } from "@material-ui/core";
+import Paper from "@material-ui/core/Paper";
 
 const minDonationAmount = 0.5;
 
@@ -23,7 +26,16 @@ export default class StripeDonationForm extends Component {
 	state = {
 		donationAmount: 1,
 		isDonationError: false,
-		donationResponse: ""
+		donationResponse: null,
+		open: false
+	};
+
+	handleOpen = () => {
+		this.setState({ open: true });
+	};
+
+	handleClose = () => {
+		this.setState({ open: false });
 	};
 
 	componentDidMount() {
@@ -35,6 +47,8 @@ export default class StripeDonationForm extends Component {
 			token: token => {
 				// Send the donation to your server
 				console.log("Submitting donation to server");
+				this.setState({ donationResponse: null });
+				this.handleOpen();
 
 				fetch(`${backendUrl}/charge`, {
 					method: "POST",
@@ -91,15 +105,30 @@ export default class StripeDonationForm extends Component {
 	};
 
 	render() {
+		const centerStyle = {
+			top: `50%`,
+			left: `50%`,
+			position: `absolute`,
+			transform: `translate(-50%, -50%)`
+		};
+		let modalStyle = Object.assign({}, centerStyle);
+		modalStyle.minHeight = "20%";
+		modalStyle.minWidth = "20%";
+		modalStyle.padding = "5px";
+		let msg = <Typography> {this.state.donationResponse}</Typography>;
+		if (this.state.donationResponse === null) {
+			msg = (
+				<div style={centerStyle}>
+					<CircularProgress />
+				</div>
+			);
+		}
+
 		return (
 			<div>
-				<Typography
-					style={{
-						display: this.state.donationResponse.length > 0 ? "block" : "none"
-					}}
-				>
-					{this.state.donationResponse}
-				</Typography>
+				<Modal open={this.state.open} onClose={this.handleClose}>
+					<Paper style={modalStyle}>{msg}</Paper>
+				</Modal>
 				<form style={{ textAlign: "center" }} onSubmit={this.formSubmit}>
 					<TextField
 						style={{ textAlign: "center" }}

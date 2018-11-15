@@ -10,7 +10,6 @@ import Button from "@material-ui/core/Button";
 
 import styled from "styled-components";
 
-import Blur from "react-css-blur";
 
 import {
 	titleize,
@@ -146,9 +145,9 @@ export default class Resource extends Component {
 						>
 							Graphic - click to unblur
 						</Button>
-						<Blur radius={this.state.blurOn ? "5px" : "0"} transition="400ms">
+						<div style={{filter:`blur(${this.state.blurOn ? "5px" : "0"})`}} transition="400ms">
 							{video}
-						</Blur>
+						</div>
 					</div>
 				);
 			}
