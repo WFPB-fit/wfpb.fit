@@ -85,13 +85,13 @@ export default class Home extends Component {
 							"/research?selected=water+pollution#environment",
 							"water pollution,"
 						)}{" "}
-						{getLink("/research?selected=water+use#environment", "land use,")}{" "}
+						{getLink("/research?selected=lan+use#environment", "land use,")}{" "}
 						{getLink(
-							"/research?selected=water+use#environment",
+							"/research?selected=land+degradation#environment",
 							"land degradation,"
 						)}{" "}
 						{getLink(
-							"/research?selected=water+use#environment",
+							"/research?selected=biodiversity+loss#environment",
 							"biodiversity loss,"
 						)}{" "}
 						{getLink(
