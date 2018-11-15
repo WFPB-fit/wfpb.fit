@@ -29,7 +29,7 @@ export default class Header extends Component {
 					<div>
 						<Button
 							color="primary"
-							href="https://github.com"
+							href="https://github.com/WFPB-fit/wfpb.fit"
 							style={{ fontSize: "12px" }}
 							target="_blank"
 						>

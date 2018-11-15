@@ -1,28 +1,36 @@
 {
-  "name": "wfpbd",
-  "version": "0.1.0",
-  "license": "MIT",
-  "dependencies": {
-    "@material-ui/core": "^3.2.0",
-    "@material-ui/icons": "^3.0.1",
-    "@material-ui/lab": "^3.0.0-alpha.23",
-    "pluralize": "^7.0.0",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-redux": "^5.0.6",
-    "react-router-dom": "^4.2.2",
-    "react-router-hash-link": "^1.2.0",
-    "react-scripts": "1.0.17",
-    "react-select-fast-filter-options": "^0.2.3",
-    "react-virtualized-select": "^3.1.0",
-    "redux": "^3.7.2",
-    "styled-components": "^2.2.3",
-    "victory": "^30.4.0"
-  },
-  "scripts": {
-    "start": "NODE_ENV=dev react-scripts start",
-    "build": "NODE_ENV=production react-scripts build",
-    "test": "NODE_ENV=test react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+	"name": "wfpbd",
+	"version": "0.1.0",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/WFPB-fit/wfpb.fit.git"
+	},
+	"bugs": {
+		"email": "wfpb.fit@gmail.com",
+		"url": "https://github.com/WFPB-fit/wfpb.fit/issues"
+	},
+	"dependencies": {
+		"@material-ui/core": "^3.2.0",
+		"@material-ui/icons": "^3.0.1",
+		"@material-ui/lab": "^3.0.0-alpha.23",
+		"pluralize": "^7.0.0",
+		"react": "^16.4.2",
+		"react-dom": "^16.4.2",
+		"react-redux": "^5.0.6",
+		"react-router-dom": "^4.2.2",
+		"react-router-hash-link": "^1.2.0",
+		"react-scripts": "1.0.17",
+		"react-select-fast-filter-options": "^0.2.3",
+		"react-virtualized-select": "^3.1.0",
+		"redux": "^3.7.2",
+		"styled-components": "^2.2.3",
+		"victory": "^30.4.0"
+	},
+	"scripts": {
+		"start": "NODE_ENV=dev react-scripts start",
+		"build": "NODE_ENV=production react-scripts build",
+		"test": "NODE_ENV=test react-scripts test --env=jsdom",
+		"eject": "react-scripts eject"
+	}
 }
