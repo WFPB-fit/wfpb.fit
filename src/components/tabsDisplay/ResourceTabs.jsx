@@ -3,6 +3,7 @@ import Resources from "../resources/index.jsx";
 
 import { withRouter } from "react-router-dom";
 import LinkableTabs from "./LinkableTabs.jsx";
+import Typography from "@material-ui/core/Typography";
 
 export default class ResourceTabs extends Component {
 	render() {
@@ -10,7 +11,7 @@ export default class ResourceTabs extends Component {
 		const tabData = this.props.tabs.map(x => {
 			let content = x.component;
 			if (!content) {
-				content = <p>{x.resources}</p>;
+				content = <Typography>{x.resources}</Typography>;
 				if (typeof x.resources !== "string") {
 					content = (
 						<NonBlockedResources research={x.resources} tags={x.tags} />

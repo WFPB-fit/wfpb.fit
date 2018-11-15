@@ -24,3 +24,4 @@ yarn-error.log*
 
 src/assets/data/preprocessed_data
 *__pycache*
+*.pyc

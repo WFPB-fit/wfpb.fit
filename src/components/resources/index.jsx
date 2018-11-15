@@ -114,9 +114,9 @@ export default class Resources extends Component {
 							<MenuItem value={"type"}>Resource Type</MenuItem>
 						</SelectField>
 					</FormControl>
-					<p>
+					<Typography>
 						{resources.length} / {this.numTotal} Displayed
-					</p>
+					</Typography>
 				</Paper>
 
 				{resources.map(x => (

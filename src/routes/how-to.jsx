@@ -10,6 +10,8 @@ import ModalImage from "../components/ModalImage";
 import QuickResources from "../assets/data/quick-resources.json";
 import Heading from "../components/heading";
 
+import Typography from "@material-ui/core/Typography";
+
 const TallSkinnyImg = styled(ModalImage)`
 	width: 60%;
 	max-width: 400px;
@@ -40,10 +42,10 @@ export default class HowTo extends Component {
 		return (
 			<WidthWrapper>
 				<Heading id="what" txt="What to eat?" variant="h2" />
-				<p>
+				<Typography>
 					Diverse, whole, plant based foods that meet all nutritional needs
 					might look like:{" "}
-				</p>
+				</Typography>
 				<TallSkinnyImg
 					src="/imgs/assets/foods/pyramids/gregor-daily-dozen.jpg"
 					alt="Nutrition Facts Daily Dozen"
@@ -73,20 +75,20 @@ export default class HowTo extends Component {
 				money, some are free.
 				{HowTo.getListed(QuickResources.programs)}
 				<Heading id="learn" txt="Where can I learn more?" variant="h2" />
-				<p>
+				<Typography>
 					See the {getLink("/research", "research")} page or start looking
 					through {getLink("https://scholar.google.com/", "Google Scholar")} for
 					scientific sources.
-				</p>
+				</Typography>
 				<Heading id="online-ed" txt="Online Education" variant="h3" />
-				<p>For summaries and explanation of complex nutritional science:</p>
+				<Typography>For summaries and explanation of complex nutritional science:</Typography>
 				{HowTo.getListed(QuickResources.sites)}
 				<Heading id="books" txt="Books" variant="h3" />
-				<p>
+				<Typography>
 					These popular books provide overviews of how and why WFPB works so
 					well. More books can be found on the{" "}
 					{getLink("/endorsements#orgs", "endorsements")} page.{" "}
-				</p>
+				</Typography>
 				{HowTo.getListed(QuickResources.books)}
 				<Heading id="recipes" txt="What's for dinner?" variant="h2" />
 				Whether you need cheap, fast, and easy or delicious and decadent there's

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import Typography from "@material-ui/core/Typography";
+import Slider from "@material-ui/lab/Slider";
 
 import styled from "styled-components";
 
@@ -20,6 +21,10 @@ const Wrapper = styled.div`
 `;
 
 export default class YourImpact extends Component {
+	handleFoodWasteChange = (event, value) => {
+		this.setState({ foodWastePercent: value });
+	};
+
 	constructor(props) {
 		super(props);
 
@@ -32,7 +37,8 @@ export default class YourImpact extends Component {
 		this.state = {
 			overallVisible: false,
 			dietComposition: {},
-			dailyCalories: 0
+			dailyCalories: 0,
+			foodWastePercent: 25
 		};
 
 		//set default food usages to some random vegan amounts. Can try to find better data-backed defaults later
@@ -68,6 +74,7 @@ export default class YourImpact extends Component {
 		if (sumValues(this.state.dietComposition) === 100) {
 			viz = (
 				<DataVis
+					foodWastePercent={this.state.foodWastePercent}
 					foodUsage={this.state.dietComposition}
 					refFoodUsages={ReferenceFoodUsage}
 					dailyCalories={this.state.dailyCalories}
@@ -103,6 +110,51 @@ export default class YourImpact extends Component {
 				<CalorieEstimator
 					handleDailyCaloriesChange={this.handleDailyCaloriesChange}
 				/>
+
+				<h2>
+					Food Waste{" "}
+					<Help
+						title="Food Waste"
+						content={
+							<div>
+								<Typography>
+									Not all food we buy is eaten, but it still makes an
+									environmental impact. On average Americans waste over 20% of
+									their food, according to the USDA's report{" "}
+									{getLink(
+										"https://www.ers.usda.gov/webdocs/publications/43833/43680_eib121.pdf?v=0",
+										"The Estimated Amount, Value, and Calories of Postharvest Food Losses at the Retail and Consumer Levels in the United States"
+									)}
+								</Typography>
+								<br />
+								<Typography>
+									In the below charts the values from that report are used to
+									scale the reference values to account for food waste. This
+									allows the data to be more specific. For example, Americans
+									waste about 33% of their fruit, but only 9% of tree
+									nuts/peanuts. This is accounted for in the reference diets in
+									the charts.
+								</Typography>
+							</div>
+						}
+					/>
+				</h2>
+				<div
+					style={{
+						maxWidth: "80%",
+						margin: "5px auto",
+						display: "block",
+						textAlign: "center"
+					}}
+				>
+					<Typography>{this.state.foodWastePercent}% Wasted</Typography>
+					<Slider
+						step={1}
+						value={this.state.foodWastePercent}
+						aria-labelledby="label"
+						onChange={this.handleFoodWasteChange}
+					/>
+				</div>
 
 				<h2>
 					Diet Composition

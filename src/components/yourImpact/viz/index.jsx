@@ -8,6 +8,8 @@ import { titleize, getLink } from "../../../utils/GeneralUtils";
 import VizHelpExplanation from "./help";
 import ModifiableUnitBarChart from "../../modifiableUnitBarChart";
 
+import FoodWaste from "../../../assets/data/environment/foodWaste";
+
 import Help from "../../help";
 
 const ContainerDiv = styled.div`
@@ -19,18 +21,27 @@ const LeftH2 = styled.h2`
 `;
 
 export default class CalorieForm extends Component {
-	getEnvImpact(dietFoods, impactType) {
+	getEnvImpact(dietFoods, impactType, foodWastePercent = null) {
 		const dietComponentsCalories = Object.keys(dietFoods).reduce(
 			(sum, foodType) => {
 				const usage = (dietFoods[foodType] || 0) / 100.0;
-				return sum + WRI[impactType][foodType] * usage;
+				let foodImpact = sum + WRI[impactType][foodType] * usage;
+				if (foodWastePercent === null) {
+					const wastedPercent = FoodWaste[foodType] / 100;
+					foodImpact = foodImpact / (1 - wastedPercent);
+				}
+				return foodImpact;
 			},
 			0
 		);
 		const cals = this.props.dailyCalories || 0;
 		const calRatio = (cals * 365.25) / 1000000; //WRI is data is for 1 million calories
 
-		const scaledImpact = calRatio * dietComponentsCalories;
+		let scaledImpact = calRatio * dietComponentsCalories;
+		if (foodWastePercent !== null) {
+			scaledImpact /= 1 - this.props.foodWastePercent / 100;
+		}
+
 		return scaledImpact;
 	}
 
@@ -38,7 +49,13 @@ export default class CalorieForm extends Component {
 		let foodUsageData = this.props.refFoodUsages.slice(); //copy
 		foodUsageData.push({ label: "You", data: this.props.foodUsage });
 		foodUsageData = foodUsageData.map(x => {
-			return { x: titleize(x.label), y: this.getEnvImpact(x.data, impactType) };
+			let y;
+			if (x.label === "You") {
+				y = this.getEnvImpact(x.data, impactType, this.props.foodWastePercent);
+			} else {
+				y = this.getEnvImpact(x.data, impactType);
+			}
+			return { x: titleize(x.label), y: y };
 		});
 		return foodUsageData;
 	}

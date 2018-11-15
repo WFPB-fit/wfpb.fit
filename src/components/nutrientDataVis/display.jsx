@@ -346,10 +346,10 @@ class Food extends Component {
 								this.getNutrientWeights(GraphNutrients["fats"])
 							)}
 						/>
-						<p>
+						<Typography>
 							SAFA = Saturated Fat, MUFA = Monounsaturated Fat, PUFA =
 							Polyunsaturated Fat
-						</p>
+						</Typography>
 
 						<h2>Omega 3's (per 100Cal)</h2>
 						<NutrientGraph

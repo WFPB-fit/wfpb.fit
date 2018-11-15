@@ -6,11 +6,12 @@ import { WidthWrapper, getLink } from "../utils/GeneralUtils.jsx";
 import Heading from "../components/heading";
 
 import { Link } from "react-router-dom";
+import Typography from "@material-ui/core/Typography";
 
-// import styled from "styled-components";
-// const Emojis = styled.div`
-// 	font-size: 25px;
-// `;
+import styled from "styled-components";
+const Emojis = styled.div`
+	font-size: 25px;
+`;
 
 export default class Home extends Component {
 	render() {
@@ -18,7 +19,7 @@ export default class Home extends Component {
 			<div>
 				<WidthWrapper>
 					<Heading txt={window.globalAppData.appName} variant="h1" />
-					<p>
+					<Typography>
 						Learn about the <b>whole food, plant-based (WFPB)</b> diet. WFPB has
 						been documented to{" "}
 						<b>
@@ -27,22 +28,24 @@ export default class Home extends Component {
 							extend lifespan
 						</b>
 						, and more.
-					</p>
+					</Typography>
 					<h3>DISCLAIMER</h3>
-					<p>
+					<Typography>
 						Discuss your diet with your doctor before making changes. Do not
 						stop taking medications until a doctor says it is safe. Never be
 						afraid of asking questions or getting a{" "}
 						{getLink("/how-to#doctors", "second opinion")} from an accredited
 						physician or dietitian.
-					</p>
-					<Heading id="what" txt="What is WFPBD?" variant="h2" />
-					<p>
-						A diet high in a diverse range of nutrient-dense plant foods and low
-						in animal products or processed foods (such as oil, sugar, or
-						refined grains).
-					</p>
-					{/* <Emojis>
+					</Typography>
+					<Heading id="what" txt="What is WFPB?" variant="h2" />
+					<Typography>
+						<b>
+							A diet of diverse, nutrient-dense plant foods with minimal animal
+							products or processed foods
+						</b>{" "}
+						(such as oil, sugar, or refined grains).
+					</Typography>
+					<Emojis>
 						<span
 							role="img"
 							aria-label="Emojis of fruit, vegetables, and mushrooms"
@@ -63,49 +66,47 @@ export default class Home extends Component {
 						>
 							❌ - 🍬🥐🍟🍦🥧🍺{" "}
 						</span>
-					</Emojis> */}
-					{/* <img alt="WFPBD foods" src="/imgs/assets/foods/Fruits_Veg.jpg" /> */}
+					</Emojis>
+					{/* <img alt="WFPB foods" src="/imgs/assets/foods/Fruits_Veg.jpg" /> */}
 					<Heading id="why" txt="Why eat this way?" variant="h2" />
-					<p>
-						<b>
-							Disease is expensive, time consuming, miserable, and difficult.
-							WFPBD is a powerful way to help avoid disease.
-						</b>
-					</p>
-					<p>
-						<b>WFPBD is also an ethical way to eat. </b> Animal agriculture is
+					<Typography>
+						Disease is expensive, time consuming, miserable, and difficult.
+						WFPB is a powerful way to help avoid disease.
+					</Typography>
+					<Typography>
+						<b>WFPB is also an ethical way to eat. </b> Animal agriculture is
 						the #1 cause of{" "}
 						{getLink(
 							"/research?selected=antibiotics#disease",
 							"antibiotic resistance,"
 						)}{" "}
-						{getLink("/research?selected=water+use#disease", "water use,")}{" "}
+						{getLink("/research?selected=water+use#environment", "water use,")}{" "}
 						{getLink(
-							"/research?selected=water+pollution#disease",
+							"/research?selected=water+pollution#environment",
 							"water pollution,"
 						)}{" "}
-						{getLink("/research?selected=water+use#disease", "land use,")}{" "}
+						{getLink("/research?selected=water+use#environment", "land use,")}{" "}
 						{getLink(
-							"/research?selected=water+use#disease",
+							"/research?selected=water+use#environment",
 							"land degradation,"
 						)}{" "}
 						{getLink(
-							"/research?selected=water+use#disease",
+							"/research?selected=water+use#environment",
 							"biodiversity loss,"
 						)}{" "}
 						{getLink(
-							"/research?selected=water+plastic#disease",
+							"/research?selected=water+plastic#environment",
 							"oceanic plastic"
 						)}{" "}
 						and{" "}
 						{getLink(
-							"/research?selected=climate+change#disease",
+							"/research?selected=climate+change#environment",
 							"climate change."
 						)}
-					</p>
-					<p>
+					</Typography>
+					<Typography>
 						<b>It's also cheap and tastes great.</b>
-					</p>
+					</Typography>
 					<div style={{ display: "block", textAlign: "center" }}>
 						<Button
 							component={Link}
@@ -123,7 +124,7 @@ export default class Home extends Component {
 						txt="How can I be sure of these benefits?"
 						variant="h2"
 					/>
-					<p>
+					<Typography>
 						Without expert training and a constant look into available research,{" "}
 						<b>it can be difficult to know what to believe. </b>
 						Studies can be poorly or dishonestly designed. Reviews/meta analysis
@@ -131,17 +132,17 @@ export default class Home extends Component {
 						conclusions. Food is a multi-trillion dollar industry, with most of
 						the money flowing into unhealthy processed foods and animal
 						products.
-					</p>
-					<p>
+					</Typography>
+					<Typography>
 						<b>
-							WFPBD has a large body of evidence to support it as a healthy way
+							WFPB has a large body of evidence to support it as a healthy way
 							to eat.
 						</b>{" "}
 						Decades of diverse, quality {getLink("/research", "research")}{" "}
-						support WFPBD. Governments, professional medical associations, and
+						support WFPB. Governments, professional medical associations, and
 						prominent physicians{" "}
-						{getLink("/endorsements#orgs", "endorse", true)} WFPBD.
-					</p> */}
+						{getLink("/endorsements#orgs", "endorse", true)} WFPB.
+					</Typography> */}
 				</WidthWrapper>
 			</div>
 		);

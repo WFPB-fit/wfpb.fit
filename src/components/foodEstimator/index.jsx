@@ -5,6 +5,8 @@ import TextField from "@material-ui/core/TextField";
 import WRI from "../../assets/data/environment/wri.js";
 import { sumValues } from "../../utils/GeneralUtils.jsx";
 
+import Typography from "@material-ui/core/Typography";
+
 export default class CalorieForm extends Component {
 	getFoodFields() {
 		const percent = sumValues(this.props.dietComposition);
@@ -43,7 +45,7 @@ export default class CalorieForm extends Component {
 		return (
 			<div>
 				<div>{this.getFoodFields()}</div>
-				<p>{msg}</p>
+				<Typography>{msg}</Typography>
 			</div>
 		);
 	}

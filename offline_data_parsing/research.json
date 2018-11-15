@@ -296,7 +296,7 @@
 		"year": 2010,
 		"type": "study",
 		"availability": "full",
-		"tags": "overall mortality,moderation",
+		"tags": "overall mortality,omnivore",
 		"quote": "Red and processed meat intakes were associated with modest increases in total mortality, cancer mortality and CVD mortality."
 	},
 	{
@@ -454,6 +454,15 @@
 		"quote": "1. We classify 13.2% (∼55 million km 2) of the world’s ocean as marine wilderness; 2.Little wilderness remains in coastal areas (e.g., coral reefs) 3. Only 4.9% of marine wilderness is currently within marine protected areas; 4. Targets to retain marine wilderness are needed in global conservation strategies"
 	},
 	{
+		"title": "The Coral Reef Economy: The business case for investment in the protection, preservation and enhancement of coral reef health",
+		"pdf": "https://wedocs.unep.org/bitstream/handle/20.500.11822/26694/Coral_Reef_Economy.pdf?sequence=1&isAllowed=y",
+		"year": 2018,
+		"type": "research report",
+		"availability": "full",
+		"tags": "biodiversity loss",
+		"quote": "A shift toward a healthy state by 2030 could unlock an additional $35 billion (or $2.5 billion per annum) ... Efforts to enhance coral reef health must be considered within the longer-term context of climate change, which presents an existential threat to many reefs. Even if the objectives of the Paris Agreement are achieved, reports warn that up to 90% of all coral reefs could be lost by 2050. Acting on local threats (including overfishing, erosion, and pollution) in order to maximise reef resilience may help moderate impacts, but climate change effects, including ocean warming and altered cyclone and rainfallpatterns, add uncertainty to the analysis presented in this report." 	
+	},
+	{
 		"title": "Nitrated meat products are associated with mania in humans and altered behavior and brain gene expression in rats",
 		"url": "https://www.nature.com/articles/s41380-018-0105-6",
 		"year": 2018,
@@ -568,7 +577,7 @@
 		"year": 2012,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "vegetarian,moderation",
+		"tags": "vegetarian,omnivore",
 		"quote": "Both vegetarian diets and prudent diets allowing small amounts of red meat are associated with reduced risk of diseases...Evidence linking red meat intake, particularly processed meat, and increased risk of CHD, cancer and type 2 diabetes is convincing and provides indirect support for consumption of a plant-based diet."
 	},
 	{
@@ -1027,7 +1036,7 @@
 		"year": 2006,
 		"type": "study",
 		"availability": "full",
-		"tags": "weight loss,moderation,vegan,vegetarian",
+		"tags": "weight loss,omnivore,vegan,vegetarian",
 		"quote": "Lowest weight gain was seen among those who, during follow-up, had changed to a diet containing fewer animal food"
 	},
 	{
@@ -1072,7 +1081,7 @@
 		"year": 2009,
 		"type": "study",
 		"availability": "full",
-		"tags": "diabetes,vegetarian,moderation",
+		"tags": "diabetes,vegetarian,omnivore",
 		"quote": "We found a strong protective association between Taiwanese vegetarian diet and diabetes/IFG, after controlling for various potential confounders and risk factors."
 	},
 	{
@@ -1135,7 +1144,7 @@
 		"year": 1981,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "cholesterol,heart disease,vegetarian,moderation",
+		"tags": "cholesterol,heart disease,vegetarian,omnivore",
 		"quote": "In a controlled trial, 21 strict vegetarians were studied prospectively for eight weeks: a two-week control period of the usual vegetarian diet was followed by four weeks, during which 250 g of beef was added isocalorically to the daily vegetarian diet and then by two weeks of the control diet. Plasma high-density lipoprotein-cholesterol did not change during the study, whereas plasma total cholesterol rose significantly by 19% at the end of the meat-eating period. Systolic blood pressure (BP) increased significantly during the meat eating by 3% over control values, whereas diastolic BP showed no major changes."
 	},
 	{
@@ -1324,7 +1333,7 @@
 		"year": 2015,
 		"type": "study",
 		"availability": "full",
-		"tags": "obesity,moderation,diabetes,WFPB",
+		"tags": "obesity,omnivore,diabetes,WFPB",
 		"quote": "Our findings provide little evidence for benefits of diet diversity for either abdominal obesity or diabetes. Greater dissimilarity among foods was actually associated with gain in WC. These results do not support the notion that “eating everything in moderation” leads to greater diet quality or better metabolic health"
 	},
 	{
@@ -1369,7 +1378,7 @@
 		"year": 2016,
 		"type": "study",
 		"availability": "full",
-		"tags": "vegan,moderation,microbiota",
+		"tags": "vegan,omnivore,microbiota",
 		"quote": "Plasma metabolome of vegans differed markedly from omnivores but the gut microbiota was surprisingly similar. Unlike prior studies of individuals living in agrarian societies, higher consumption of fermentable substrate in vegans was not associated with higher levels of faecal short chain fatty acids, a finding confirmed in a 10-day controlled feeding experiment. Similarly, the proportion of vegans capable of producing equol, a soy-based gut microbiota metabolite, was less than that was reported in Asian societies despite the high consumption of soy-based products."
 	},
 	{
@@ -1405,7 +1414,7 @@
 		"year": 2016,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "vegan,vegetarian,moderation,WFPB",
+		"tags": "vegan,vegetarian,omnivore,WFPB",
 		"quote": "Highly significant differences were found in estimated nutrient intakes between meat eaters and vegans, with fish eaters and vegetarians usually having intermediate values. Meat eaters had the highest energy intakes, followed by fish eaters and vegetarians, whereas vegans had the lowest intakes. Vegans had the highest intakes of polyunsaturated fatty acids, dietary fiber, vitamins C and E, folate, magnesium, iron, and copper. Meat eaters had the highest intake of saturated fatty acids, protein, vitamin B2, vitamin B12, vitamin D, zinc, and iodine. Fish eaters had the highest intakes of calcium and selenium. ... The results suggested a high prevalence of inadequacy for dietary vitamin B12 and iodine in vegans."
 	},
 	{
@@ -2050,7 +2059,7 @@
 		"year": 2018,
 		"type": "study",
 		"availability": "full",
-		"tags": "fish (nutrition)",
+		"tags": "fish (nutrition),water plastic",
 		"quote": "Microplastics are a ubiquitous pollutant in our seas today and are known to have detrimental effects on a variety of organisms ... any ingestion of microplastics by mesopelagic fish may adversely affect this cycling and may aid in transport of microplastics from surface waters to the deep-sea benthos ... Seventy-three percent of all fish contained plastics in their gut contents ... Additionally, using forensic techniques we were able to highlight that fibres are a real concern rather than an artefact of airborne contamination."
 	},
 	{
@@ -2059,7 +2068,7 @@
 		"year": 2012,
 		"type": "study",
 		"availability": "full",
-		"tags": "mental health,moderation",
+		"tags": "mental health,omnivore",
 		"quote": "Thirty-nine omnivores were randomly assigned to a control group consuming meat, fish, and poultry daily (OMN); a group consuming fish 3-4 times weekly but avoiding meat and poultry (FISH), or a vegetarian group avoiding meat, fish, and poultry (VEG). At baseline and after two weeks, participants completed a food frequency questionnaire, the Profile of Mood States questionnaire and the Depression Anxiety and Stress Scales. After the diet intervention, VEG participants reduced their EPA, DHA, and AA intakes, while FISH participants increased their EPA and DHA intakes. Mood scores were unchanged for OMN or FISH participants, but several mood scores for VEG participants improved significantly after two weeks."
 	},
 	{
@@ -2139,7 +2148,7 @@
 		"year": 1993,
 		"type": "study",
 		"availability": "abstract",
-		"tags": "cognition,dementia,moderation,vegetarian",
+		"tags": "cognition,dementia,omnivore,vegetarian",
 		"quote": "The matched subjects who ate meat (including poultry and fish) were more than twice as likely to become demented as their vegetarian counterparts (relative risk 2.18, p = 0.065) and the discrepancy was further widened (relative risk 2.99, p = 0.048) when past meat consumption was taken into account ... There was a trend towards delayed onset of dementia in vegetarians in both substudies"
 	},
 	{
@@ -2332,7 +2341,7 @@
 		"type": "research report",
 		"availability": "full",
 		"year": 2009,
-		"tags": "water pollution",
+		"tags": "water plastic",
 		"quote": "Abandoned, lost or otherwise discarded fishing gear (ALDFG) is of increasing concern due to its numerous negative impacts. The ability of ALDFG to continue to fish (often referred to as “ghost fishing”) has detrimental impacts on fish stocks and potential impacts on endangered species and benthic environments. Fishing gear has been abandoned, lost or otherwise discarded since fishing began, but increases in the scale of fishing operations and technologies used in recent decades mean that the extent and impact of ALDFG debris have increased significantly with the use of synthetic materials, the overall increase in fishing capacity and the targeting of more distant and deepwater grounds. ALDFG is also a concern because of its potential to become a navigational hazard (with associated safety issues) in coastal and offshore areas. "
 	},
 	{
@@ -2361,6 +2370,15 @@
 		"year": 2006,
 		"tags": "omega-3,heart disease,cancer,overall mortality",
 		"quote": "Long chain and shorter chain omega 3 fats do not have a clear effect on total mortality, combined cardiovascular events, or cancer."
+	},
+	{
+		"title": "Potential to curb the environmental burdens of American beef consumption using a novel plant-based beef substitute",
+		"url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0189029",
+		"type": "study",
+		"availability": "full",
+		"year": 2017,
+		"tags": "climate change,land use,water use",
+		"quote": "We find that relative to the mean US diet, vegetarian and vegan diets significantly reduce per-capita food-borne greenhouse gas emission (32% and 67%, respectively), blue water use (70% and 75%, respectively) and land occupation (70% and 79%, respectively), primarily in the form of rangeland. The substitution of 10%, 25% and 50% of ground beef with plant-based burger (PBB) at the national scale results in substantial reductions in annual US dietary greenhouse gas emissions (4.55–45.42 Mt CO2 equivalents), water consumption (1.30–12.00 km3) and land occupation (22300–190100 km2). "
 	},
 	{
 		"title": "Association between fish consumption, long chain omega 3 fatty acids, and risk of cerebrovascular disease: systematic review and meta-analysis",
@@ -3086,7 +3104,7 @@
 		"year": 2015,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "heart disease,moderation,WFPB",
+		"tags": "heart disease,omnivore,WFPB",
 		"quote": "This review evaluates the current evidence from observational and intervention studies, focusing on the specific protein-providing foods and populations studied ... Evidence to date is inconclusive, and additional studies are needed to further advance our understanding of the complexity of plant protein vs. animal protein comparisons. Nonetheless, current evidence supports the idea that CVD risk can be reduced by a dietary pattern that provides more plant sources of protein compared with the typical American diet and also includes animal-based protein foods that are unprocessed and low in saturated fat."
 	},
 	{
@@ -3140,7 +3158,7 @@
 		"year": 2014,
 		"type": "study",
 		"availability": "full",
-		"tags": "eating guidelines,WFPB,vegan,moderation",
+		"tags": "eating guidelines,WFPB,vegan,omnivore",
 		"quote": "The most restricted diet, i.e., the vegan diet, had the lowest total energy intake, better fat intake profile, lowest protein and highest dietary fiber intake in contrast to the omnivorous diet. Calcium intake was lowest for the vegans and below national dietary recommendations. The vegan diet received the highest index values and the omnivorous the lowest for HEI-2010 and MDS. Typical aspects of a vegan diet (high fruit and vegetable intake, low sodium intake, and low intake of saturated fat) contributed substantially to the total score, independent of the indexing system used. "
 	},
 	{
@@ -3149,7 +3167,7 @@
 		"year": 2014,
 		"type": "meta analysis",
 		"availability": "full",
-		"tags": "heart disease,cancer,overall mortality,moderation,vegan",
+		"tags": "heart disease,cancer,overall mortality,omnivore,vegan",
 		"quote": "Vegetarian diets confer protection against cardiovascular diseases, cardiometabolic risk factors, some cancers and total mortality. Compared to lacto-ovo-vegetarian diets, vegan diets seem to offer additional protection for obesity, hypertension, type-2 diabetes, and cardiovascular mortality. Males experience greater health benefits than females."
 	},
 	{
