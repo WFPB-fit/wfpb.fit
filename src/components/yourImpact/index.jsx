@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
 import Typography from "@material-ui/core/Typography";
-import Slider from "@material-ui/lab/Slider";
 
 import styled from "styled-components";
+import TextField from "@material-ui/core/TextField";
 
 import CalorieEstimator from "./calorieEstimator/index.jsx";
 import FoodEstimator from "../foodEstimator";
@@ -21,8 +21,11 @@ const Wrapper = styled.div`
 `;
 
 export default class YourImpact extends Component {
-	handleFoodWasteChange = (event, value) => {
-		this.setState({ foodWastePercent: value });
+	handleFoodWasteChange = (event) => {
+		let val = event.target.value;
+		val = Math.max(val,0);
+		val = Math.min(val,99);
+		this.setState({ foodWastePercent: val });
 	};
 
 	constructor(props) {
@@ -148,13 +151,24 @@ export default class YourImpact extends Component {
 						textAlign: "center"
 					}}
 				>
-					<Typography>{this.state.foodWastePercent}% Wasted</Typography>
-					<Slider
+					<TextField
+						type="number"
+						label="% Wasted"
+						value={this.state.foodWastePercent}
+						style={{ width: "100px" }}
+						inputProps={{
+							min: 0,
+							max: 99
+						}}
+						onChange={this.handleFoodWasteChange}
+					/>
+
+					{/* <Slider
 						step={1}
 						value={this.state.foodWastePercent}
 						aria-labelledby="label"
 						onChange={this.handleFoodWasteChange}
-					/>
+					/> */}
 				</div>
 
 				<h2>
