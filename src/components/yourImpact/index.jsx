@@ -9,7 +9,7 @@ import CalorieEstimator from "./calorieEstimator/index.jsx";
 import FoodEstimator from "../foodEstimator";
 import DataVis from "./viz/index.jsx";
 import Help from "../help";
-import WRI from "../../assets/data/environment/wri.js";
+// import WRI from "../../assets/data/environment/wri.js";
 import ReferenceFoodUsage from "../../assets/data/environment/ReferenceFoodUsage.js";
 import { sumValues, getLink } from "../../utils/GeneralUtils.jsx";
 
@@ -36,22 +36,23 @@ export default class YourImpact extends Component {
 
 		this.state = {
 			overallVisible: false,
-			dietComposition: {},
 			dailyCalories: 0,
-			foodWastePercent: 25
+			foodWastePercent: 25,
+			dietComposition: Object.assign({}, ReferenceFoodUsage[2].data)
 		};
 
 		//set default food usages to some random vegan amounts. Can try to find better data-backed defaults later
-		Object.keys(WRI["land"]).forEach(x => {
-			this.state.dietComposition[x] = 0;
-		});
-		this.state.dietComposition.Wheat = 5;
-		this.state.dietComposition.Rice = 5;
-		this.state.dietComposition.Maize = 5;
-		this.state.dietComposition["Roots and tubers"] = 5;
-		this.state.dietComposition["Fruits and vegetables"] = 45;
-		this.state.dietComposition.Nuts = 10;
-		this.state.dietComposition.Pulses = 25;
+		//this.state.dietComposition = {}
+		// Object.keys(WRI["land"]).forEach(x => { //set everythin default to 0
+		// 	this.state.dietComposition[x] = 0;
+		// });
+		// this.state.dietComposition.Wheat = 5;
+		// this.state.dietComposition.Rice = 5;
+		// this.state.dietComposition.Maize = 5;
+		// this.state.dietComposition["Roots and tubers"] = 5;
+		// this.state.dietComposition["Fruits and vegetables"] = 45;
+		// this.state.dietComposition.Nuts = 10;
+		// this.state.dietComposition.Pulses = 25;
 	}
 
 	toggleOverallVisible() {

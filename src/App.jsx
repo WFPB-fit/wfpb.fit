@@ -15,7 +15,7 @@ import Data from "./routes/food.jsx";
 import ResearchContainer from "./routes/research_container.jsx";
 import LearnMore from "./routes/learn-more";
 import Endorsements from "./routes/endorsements";
-import Support from './routes/support';
+import Support from "./routes/support";
 
 import "react-select/dist/react-select.css";
 import "react-virtualized/styles.css";
@@ -55,7 +55,7 @@ const theme = createMuiTheme({
 		// type: 'dark',
 		primary: blue,
 		secondary: orange
-	}
+	},
 });
 
 export default class App extends Component {

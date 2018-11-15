@@ -1,6 +1,7 @@
 //currently these are just guesses, need better data
-export default [{
-		label: 'vegan',
+export default [
+	{
+		label: "vegan",
 		data: {
 			Sugar: 10,
 			Rice: 5,
@@ -20,10 +21,33 @@ export default [{
 			Dairy: 0,
 			"Sheep and goat": 0,
 			Beef: 0
-		},
+		}
 	},
 	{
-		label: 'american', //2010 USDA ERS - Food availability per capita - Calories Loss-Adjusted Food Availability- Doesn't use the same groupings, so this is still just guessing - https://www.ers.usda.gov/data-products/food-availability-per-capita-data-system/food-availability-per-capita-data-system/#Food Availability
+		label: "vegetarian",
+		data: {
+			Sugar: 10,
+			Rice: 5,
+			"Mustard/Rape-seed oil": 5,
+			"Soybean oil": 5,
+			"Sunflowerseed oil": 5,
+			Maize: 5,
+			"Roots and tubers": 10,
+			Wheat: 5,
+			"Fruits and vegetables": 10,
+			Nuts: 10,
+			Pulses: 10,
+			Pork: 0,
+			Eggs: 8,
+			"Fish (farmed)": 0,
+			Poultry: 0,
+			Dairy: 12,
+			"Sheep and goat": 0,
+			Beef: 0
+		}
+	},
+	{
+		label: "american", //2010 USDA ERS - Food availability per capita - Calories Loss-Adjusted Food Availability- Doesn't use the same groupings, so this is still just guessing - https://www.ers.usda.gov/data-products/food-availability-per-capita-data-system/food-availability-per-capita-data-system/#Food Availability
 		data: {
 			Sugar: 10,
 			Rice: 6,
@@ -46,7 +70,7 @@ export default [{
 		}
 	},
 	{
-		label: 'Meat Lover',
+		label: "Meat Lover",
 		data: {
 			Sugar: 0,
 			Rice: 0,
@@ -68,4 +92,4 @@ export default [{
 			Beef: 11
 		}
 	}
-]
+];

@@ -25,12 +25,14 @@ export default class CalorieForm extends Component {
 		const dietComponentsCalories = Object.keys(dietFoods).reduce(
 			(sum, foodType) => {
 				const usage = (dietFoods[foodType] || 0) / 100.0;
-				let foodImpact = sum + WRI[impactType][foodType] * usage;
+				let ref = WRI[impactType][foodType];
+
+				// incorporate food waste
 				if (foodWastePercent === null) {
 					const wastedPercent = FoodWaste[foodType] / 100;
-					foodImpact = foodImpact / (1 - wastedPercent);
+					ref = ref / (1-wastedPercent);
 				}
-				return foodImpact;
+				return sum + ref * usage;
 			},
 			0
 		);
@@ -39,7 +41,8 @@ export default class CalorieForm extends Component {
 
 		let scaledImpact = calRatio * dietComponentsCalories;
 		if (foodWastePercent !== null) {
-			scaledImpact /= 1 - this.props.foodWastePercent / 100;
+			foodWastePercent /= 100;
+			scaledImpact = scaledImpact / (1 - foodWastePercent);
 		}
 
 		return scaledImpact;
