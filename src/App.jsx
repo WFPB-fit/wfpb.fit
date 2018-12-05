@@ -30,6 +30,7 @@ import rootReducer from "./utils/data/reducers";
 import blue from "@material-ui/core/colors/blue";
 import orange from "@material-ui/core/colors/orange";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import withWindowDimensions from "./components/withWindowSize/index.jsx";
 
 // import Parse from './utils/fdaDataCreation/parseFdaData';
 // Parse.parse(store);
@@ -46,22 +47,31 @@ const Body = styled.div`
 	flex: 1;
 `;
 
-const theme = createMuiTheme({
-	typography: {
-		htmlFontSize: 14,
-		useNextVariants: true
-	},
-	palette: {
-		// type: 'dark',
-		primary: blue,
-		secondary: orange
-	},
-});
+const appRoutes = [
+	{ path: "/", txt: "Home", component: Home, exact: true },
+	{ path: "/research", txt: "Research", component: ResearchContainer },
+	{ path: "/data", txt: "Data", component: Data },
+	{ path: "/endorsements", txt: "Endorsements", component: Endorsements },
+	{ path: "/media", txt: "Media", component: LearnMore },
+	{ path: "/how-to", txt: "How-To", component: HowTo },
+	{ path: "/support", txt: "Support", component: Support }
+];
 
-export default class App extends Component {
+class App extends Component {
+	theme = createMuiTheme({
+		typography: {
+			htmlFontSize: (this.props.isMobileSize) ? 18 : 14,
+			useNextVariants: true
+		},
+		palette: {
+			// type: 'dark',
+			primary: blue,
+			secondary: orange
+		}
+	});
+
 	constructor(props) {
 		super(props);
-		this.header = React.createRef();
 
 		//simple global data container
 		window.globalAppData = {
@@ -80,20 +90,23 @@ export default class App extends Component {
 
 	render() {
 		return (
-			<MuiThemeProvider theme={theme}>
+			<MuiThemeProvider theme={this.theme}>
 				<Provider store={store}>
 					<Router>
 						<Wrapper>
-							<Header />
+							<Header appRoutes={appRoutes} />
 							<Body>
 								<Switch>
-									<Route exact path="/" render={props => <Home {...props} />} />
-									<Route path="/research" component={ResearchContainer} />
-									<Route path="/data" component={Data} />
-									<Route path="/endorsements" component={Endorsements} />
-									<Route path="/media" component={LearnMore} />
-									<Route path="/how-to" component={HowTo} />
-									<Route path="/support-wfpb" component={Support} />
+									{appRoutes.map(x => {
+										return (
+											<Route
+												key={x.path}
+												exact={x.exact}
+												path={x.path}
+												component={x.component}
+											/>
+										);
+									})}
 								</Switch>
 							</Body>
 							<Footer />
@@ -104,3 +117,5 @@ export default class App extends Component {
 		);
 	}
 }
+
+export default withWindowDimensions(App);

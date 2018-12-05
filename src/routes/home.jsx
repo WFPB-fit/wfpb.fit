@@ -18,31 +18,15 @@ const Row = styled.div`
 `;
 
 export default class Home extends Component {
-	state = { width: 0, height: 0 };
-
-	updateWindowDimensions = () => {
-		this.setState({ width: window.innerWidth, height: window.innerHeight });
-	};
-
-	componentDidMount() {
-		this.updateWindowDimensions();
-		window.addEventListener("resize", this.updateWindowDimensions);
-	}
-
-	componentWillUnmount() {
-		window.removeEventListener("resize", this.updateWindowDimensions);
-	}
-
 	render() {
 		return (
 			<div>
 				<CenteredTextImage
 					src="/imgs/assets/foods/veges.jpg"
-					height={this.state.width > 700 ? "700px" : "400px"}
 				>
 					<Typography
 						style={{ color: "white" }}
-						variant={this.state.width > 700 ? "h1" : "h2"}
+						variant="h1"
 					>
 						<b>{window.globalAppData.appName}</b>
 					</Typography>

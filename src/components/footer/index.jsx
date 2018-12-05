@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 
 import styled from "styled-components";
-import Button from "@material-ui/core/Button";
 // import { Link } from "react-router-dom";
 import { Typography } from "@material-ui/core";
+import IconButton from "@material-ui/core/IconButton";
+import GithubIcon from "../githubIcon";
 
 const Wrapper = styled.div`
 	padding: 5px;
@@ -27,14 +28,13 @@ export default class Header extends Component {
 						</Typography>
 					</div>
 					<div>
-						<Button
+						<IconButton
 							color="primary"
 							href="https://github.com/WFPB-fit/wfpb.fit"
-							style={{ fontSize: "12px" }}
 							target="_blank"
 						>
-							Source Code
-						</Button>
+							<GithubIcon />
+						</IconButton>
 					</div>
 				</Wrapper>
 			</div>

@@ -7,13 +7,16 @@ import Button from "@material-ui/core/Button";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+import HamburgerMenu from "../hamburger";
+import WithWindowSize from "../withWindowSize";
+
 const FlexToolbar = styled(Toolbar)`
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
 `;
 
-export default class Header extends Component {
+class MyComponent extends Component {
 	render() {
 		return (
 			<div>
@@ -28,41 +31,41 @@ export default class Header extends Component {
 
 						{/* mid  */}
 						<div>
-							<Button component={Link} to="/how-to" style={{ color: "white" }}>
-								How-To
-							</Button>
-							<Button
-								component={Link}
-								to="/research"
-								style={{ color: "white" }}
-							>
-								Research
-							</Button>
-							<Button component={Link} to="/data" style={{ color: "white" }}>
-								Data
-							</Button>
-							<Button component={Link} to="/media" style={{ color: "white" }}>
-								Media
-							</Button>
-							<Button
-								component={Link}
-								to="/endorsements"
-								style={{ color: "white" }}
-							>
-								Endorsements
-							</Button>
+							{!this.props.isMobileSize &&
+								this.props.appRoutes.map(x => {
+									if (x.path === "/" || x.path === "/support") {
+										return null;
+									}
+
+									return (
+										<Button
+											component={Link}
+											key={x.path}
+											to={x.path}
+											style={{ color: "white" }}
+										>
+											{x.txt}
+										</Button>
+									);
+								})}
 						</div>
 
 						{/* right  */}
 						<div>
-							<Button
-								component={Link}
-								color="primary"
-								to="/support-wfpb"
-								style={{ color:"white" }}
-							>
-								Support
-							</Button>
+							{!this.props.isMobileSize && (
+								<Button
+									component={Link}
+									color="primary"
+									to="/support"
+									style={{ color: "white" }}
+								>
+									Support
+								</Button>
+							)}
+
+							{this.props.isMobileSize && (
+								<HamburgerMenu appRoutes={this.props.appRoutes} />
+							)}
 						</div>
 					</FlexToolbar>
 				</AppBar>
@@ -70,3 +73,5 @@ export default class Header extends Component {
 		);
 	}
 }
+
+export default WithWindowSize(MyComponent);
