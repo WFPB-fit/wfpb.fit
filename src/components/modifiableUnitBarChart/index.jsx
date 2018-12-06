@@ -11,11 +11,12 @@ import { VictoryChart, VictoryTheme, VictoryBar, VictoryAxis } from "victory";
 import styled from "styled-components";
 
 import { titleize } from "../../utils/GeneralUtils";
+import numeral from "numeral";
 
-const GraphDiv = styled.div`    
+const GraphDiv = styled.div`
 	display: block;
 	@media (min-width: 700px) {
-        width:550px;
+		width: 550px;
 		display: inline-block;
 	}
 `;
@@ -52,6 +53,10 @@ export default class UnitChart extends Component {
 			unit: this.getKeyWithValue(1)
 		};
 	}
+
+	yAxisFormat = t => {
+		return numeral(t).format("0a");
+	};
 
 	setUnit(event) {
 		this.setState({ unit: this.getKeyWithValue(event.target.value) });
@@ -108,7 +113,7 @@ export default class UnitChart extends Component {
 										}
 									}}
 								/>
-								<VictoryAxis dependentAxis />
+								<VictoryAxis dependentAxis tickFormat={this.yAxisFormat} />
 							</VictoryChart>
 						</GraphDiv>
 					</GraphCenterer>

@@ -84,7 +84,7 @@ export default {
 			"Gallons Aviation Gas": (2204.62 / 18.40),
 		},
 		"water": {
-			"1,000 Cubic Meters": 1,
+			"Cubic Meters": 1,
 			"Gallons": 264172,
 			"Liters": 1000000,
 			"Minutes of Showering": (264172 / 2.2), //gallons / 2.2 GPM
