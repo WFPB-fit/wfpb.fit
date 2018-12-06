@@ -118,23 +118,12 @@ export default class CalorieForm extends Component {
 								<Typography>
 									Water units were found at the following locations:
 									{getLink(
-										"https://www.usbr.gov/lc/hooverdam/history/essays/jetflow.html",
-										"Hoover Dam"
-									)}
-									,
-									{getLink(
-										"https://www.niagarafallsstatepark.com/niagara-falls-state-park/amazing-niagara-facts",
-										"Niagara Falls"
-									)}
-									,
-									{getLink(
-										"https://en.wikipedia.org/wiki/Olympic-size_swimming_pool",
-										"Olympic Swimming Pool"
-									)}
-									,
-									{getLink(
 										"https://www.home-water-works.org/indoor-use/showers",
 										"Showers"
+									)},
+									{getLink(
+										"https://www.badeloftusa.com/ideas/how-much-does-bathtub-hold/",
+										"Bathtubs"
 									)}
 								</Typography>
 							</div>

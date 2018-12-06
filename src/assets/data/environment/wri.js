@@ -85,13 +85,11 @@ export default {
 		},
 		"water": {
 			"Cubic Meters": 1,
-			"Gallons": 264172,
-			"Liters": 1000000,
-			"Minutes of Showering": (264172 / 2.2), //gallons / 2.2 GPM
-			"Minutes of Low-Flow Showering": (264172 / 0.5), //gallons / 2.2 GPM
-			"Olympic Swimming Pools": (264172 / 660000), //660,430 gal in olympic pools
-			"Minutes of Max Flow thru Hoover Dam": (264172 / (28424 * 8) / 60), //28,424 gallons per second per gate * 8 gates https://www.usbr.gov/lc/hooverdam/history/essays/jetflow.html / 60 s/min
-			"Minutes of Flow thru Niagara Horseshoe Falls": (264172 / 681750 / 60)
+			"Gallons": 264.172,
+			"Liters": 1000.000,
+			"Minutes of Showering": (264.172 / 2.2), //gallons / 2.2 GPM
+			"Minutes of Low-Flow Showering": (264.172 / 0.5), //gallons / 2.2 GPM
+			"Full Bathtubs": (264.172 / 80) //80 gal in standard tubs
 		},
 	}
 }
