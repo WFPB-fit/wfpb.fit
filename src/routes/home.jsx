@@ -7,6 +7,7 @@ import Heading from "../components/heading";
 
 import { Link } from "react-router-dom";
 import Typography from "@material-ui/core/Typography";
+import withWindowDimensions from "../components/withWindowSize";
 
 import styled from "styled-components";
 import CenteredTextImage from "../components/centeredtextImage/index.jsx";
@@ -17,17 +18,13 @@ const Row = styled.div`
 	padding: 50px 0;
 `;
 
-export default class Home extends Component {
+class MyComponent extends Component {
 	render() {
+		const titleSize = this.props.isMobileSize ? "h2" : "h1";
 		return (
 			<div>
-				<CenteredTextImage
-					src="/imgs/assets/foods/veges.jpg"
-				>
-					<Typography
-						style={{ color: "white" }}
-						variant="h1"
-					>
+				<CenteredTextImage src="/imgs/assets/foods/veges.jpg">
+					<Typography style={{ color: "white" }} variant={titleSize}>
 						<b>{window.globalAppData.appName}</b>
 					</Typography>
 					<Typography
@@ -39,7 +36,7 @@ export default class Home extends Component {
 				</CenteredTextImage>
 				<Row>
 					<WidthWrapper>
-						<Heading id="what" txt="What is WFPB?" variant="h2" />
+						<Heading id="what" txt="What is WFPB?" variant="h4" />
 						<Typography>
 							<b>
 								A diet of diverse, nutrient-dense plant foods with minimal
@@ -81,7 +78,7 @@ export default class Home extends Component {
 				<Row>
 					<WidthWrapper>
 						{/* <img alt="WFPB foods" src="/imgs/assets/foods/Fruits_Veg.jpg" /> */}
-						<Heading id="why" txt="Why eat this way?" variant="h2" />
+						<Heading id="why" txt="Why eat this way?" variant="h4" />
 						<Typography>
 							Disease is expensive, time consuming, miserable, and difficult.
 							WFPB is a powerful way to help avoid disease.
@@ -164,7 +161,7 @@ export default class Home extends Component {
 							to eat.
 						</b>{" "}
 						Decades of diverse, quality {getLink("/research", "research")}{" "}
-						support WFPB. Governments, professional medical associations, and
+						support WFPB. Governments, pr ofessional medical associations, and
 						prominent physicians{" "}
 						{getLink("/endorsements#orgs", "endorse", true)} WFPB.
 					</Typography> */}
@@ -174,3 +171,5 @@ export default class Home extends Component {
 		);
 	}
 }
+
+export default withWindowDimensions(MyComponent);

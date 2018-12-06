@@ -41,7 +41,7 @@ export default class HowTo extends Component {
 	render() {
 		return (
 			<WidthWrapper>
-				<Heading id="what" txt="What to eat?" variant="h2" />
+				<Heading id="what" txt="What to eat?" variant="h4" />
 				<Typography>
 					Diverse, whole, plant based foods that meet all nutritional needs
 					might look like:{" "}
@@ -62,40 +62,40 @@ export default class HowTo extends Component {
 					src="/imgs/assets/foods/pyramids/vegan_food_pyramid_by_nutriciously7.jpg"
 					alt="Nutriciously WFPB low fat food pyramid"
 				/>
-				<Heading id="help" txt="Where can I get help?" variant="h2" />
-				<Heading id="doctors" txt="Doctors" variant="h3" />
+				<Heading id="help" txt="Where can I get help?" variant="h4" />
+				<Heading id="doctors" txt="Doctors" variant="h5" />
 				Find a medical professional to help you on your journey.
 				{HowTo.getListed(QuickResources.doctors)}
-				<Heading id="communities" txt="Communities" variant="h3" />
+				<Heading id="communities" txt="Communities" variant="h5" />
 				Online forums are a great place for advice, questions, discussion, and
 				motivation.
 				{HowTo.getListed(QuickResources.communities)}
-				<Heading id="programs" txt="Programs" variant="h3" />
+				<Heading id="programs" txt="Programs" variant="h5" />
 				Structured programs can guide you through the transition. Some cost
 				money, some are free.
 				{HowTo.getListed(QuickResources.programs)}
-				<Heading id="learn" txt="Where can I learn more?" variant="h2" />
+				<Heading id="learn" txt="Where can I learn more?" variant="h4" />
 				<Typography>
 					See the {getLink("/research", "research")} page or start looking
 					through {getLink("https://scholar.google.com/", "Google Scholar")} for
 					scientific sources.
 				</Typography>
-				<Heading id="online-ed" txt="Online Education" variant="h3" />
+				<Heading id="online-ed" txt="Online Education" variant="h5" />
 				<Typography>For summaries and explanation of complex nutritional science:</Typography>
 				{HowTo.getListed(QuickResources.sites)}
-				<Heading id="books" txt="Books" variant="h3" />
+				<Heading id="books" txt="Books" variant="h5" />
 				<Typography>
 					These popular books provide overviews of how and why WFPB works so
 					well. More books can be found on the{" "}
 					{getLink("/endorsements#orgs", "endorsements")} page.{" "}
 				</Typography>
 				{HowTo.getListed(QuickResources.books)}
-				<Heading id="recipes" txt="What's for dinner?" variant="h2" />
+				<Heading id="recipes" txt="What's for dinner?" variant="h4" />
 				Whether you need cheap, fast, and easy or delicious and decadent there's
 				a WFPB recipe waiting for you. Also see the "Books" section for recipe
 				books.
 				{HowTo.getListed(QuickResources.recipes)}
-				<Heading id="tips" txt="Getting Started Tips" variant="h2" />
+				<Heading id="tips" txt="Getting Started Tips" variant="h4" />
 				<ol>
 					<li>
 						<b>Everyone's body is different.</b> Increasing WFPB intake and

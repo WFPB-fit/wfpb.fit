@@ -164,7 +164,7 @@ export default class Resource extends Component {
 			<StyledCard>
 				{DisplayCardMedia}
 				<CardContent>
-					<Typography align="center" variant="h4">
+					<Typography align="center" variant="h5">
 						{title}
 					</Typography>
 

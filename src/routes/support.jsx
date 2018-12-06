@@ -17,16 +17,16 @@ export default class Support extends Component {
 
 		return (
 			<WidthWrapper>
-				<Heading id="support-us" txt="Support Us" variant="h2" />
+				<Heading id="support-us" txt="Support Us" variant="h4" />
 
 				<StripeDonationForm />
 
-				<Heading id="charities" txt="Charities" variant="h2" />
+				<Heading id="charities" txt="Charities" variant="h4" />
 				<Typography variant="h6">
 					More great organizations that could use your support
 				</Typography>
 				{groups}
-				<Typography variant="h5" style={{ margin: "20px 0" }}>
+				<Typography variant="h6" style={{ margin: "20px 0" }}>
 					And many more!
 				</Typography>
 			</WidthWrapper>

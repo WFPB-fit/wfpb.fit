@@ -46,6 +46,17 @@ const Wrapper = styled.div`
 const Body = styled.div`
 	flex: 1;
 `;
+const theme = createMuiTheme({
+	typography: {
+		htmlFontSize: 14,
+		useNextVariants: true
+	},
+	palette: {
+		// type: 'dark',
+		primary: blue,
+		secondary: orange
+	}
+});
 
 const appRoutes = [
 	{ path: "/", txt: "Home", component: Home, exact: true },
@@ -58,18 +69,6 @@ const appRoutes = [
 ];
 
 class App extends Component {
-	theme = createMuiTheme({
-		typography: {
-			htmlFontSize: (this.props.isMobileSize) ? 18 : 14,
-			useNextVariants: true
-		},
-		palette: {
-			// type: 'dark',
-			primary: blue,
-			secondary: orange
-		}
-	});
-
 	constructor(props) {
 		super(props);
 
@@ -90,7 +89,7 @@ class App extends Component {
 
 	render() {
 		return (
-			<MuiThemeProvider theme={this.theme}>
+			<MuiThemeProvider theme={theme}>
 				<Provider store={store}>
 					<Router>
 						<Wrapper>

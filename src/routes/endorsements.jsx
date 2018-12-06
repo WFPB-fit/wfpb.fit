@@ -64,27 +64,27 @@ export default class Endorsements extends Component {
 
 		return (
 			<WidthWrapper>
-				<Heading id="orgs" txt="Organizations" variant="h2" />
+				<Heading id="orgs" txt="Organizations" variant="h4" />
 				{orgs}
-				<Heading id="physicians" txt="Physicians" variant="h2" />
+				<Heading id="physicians" txt="Physicians" variant="h4" />
 				<Typography variant="h6">
 					The following individuals have advocated for a whole food, plant-based
 					diet to improve public health.
 				</Typography>
 				{doctors}
-				<Heading id="athletes" txt="Athletes" variant="h2" />
+				<Heading id="athletes" txt="Athletes" variant="h4" />
 				<Typography variant="h6">
 					The following individuals eat a vegetarian, vegan, or whole food,
 					plant-based diet.
 				</Typography>
 				<LinkableTabs tabs={this.athleteTabs} />
-				<Heading id="celebs" txt="Celebrities" variant="h2" />
+				<Heading id="celebs" txt="Celebrities" variant="h4" />
 				<Typography variant="h6">
 					The following individuals eat a vegetarian, vegan, or whole food,
 					plant-based diet.
 				</Typography>
 				{celebs}
-				<Heading txt="And many more!" variant="h3" hideLink />
+				<Heading txt="And many more!" variant="h5" hideLink />
 			</WidthWrapper>
 		);
 	}
