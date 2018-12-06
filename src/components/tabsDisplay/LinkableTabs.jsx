@@ -69,7 +69,7 @@ class LinkableTabs extends Component {
 				<Paper>
 					<StyledTabs
 						// fullWidth
-						// centered
+						centered={!this.props.isMobileSize}
 						scrollable={this.props.isMobileSize}
 						scrollButtons={ (this.props.isMobileSize) ? "on" : "auto"}
 						onChange={this.switchTab}

@@ -7,14 +7,7 @@ import endorsements from "../assets/data/endorsements.json";
 import LinkableTabs from "../components/tabsDisplay/LinkableTabs.jsx";
 import { WidthWrapper } from "../utils/GeneralUtils";
 import Heading from "../components/heading";
-import Typography from '@material-ui/core/Typography';
-
-const celebStyle = {
-	width: "45%",
-	display: "inline-block",
-	margin: "5px",
-	verticalAlign: "top"
-};
+import Typography from "@material-ui/core/Typography";
 
 export default class Endorsements extends Component {
 	constructor(props) {
@@ -42,12 +35,22 @@ export default class Endorsements extends Component {
 
 	static getShortCards(data) {
 		return (
-			<div style={{ textAlign: "center" }}>
-				{preprocess(data).map(x => (
-					<div key={x.id} style={celebStyle}>
-						<Resource resource={x} />
-					</div>
-				))}
+			<div>
+				{data.map(x => {
+					return (
+						<Typography key={x.wiki+x.source+x.name} style={{margin:'7px'}}>
+							<a href={x.wiki}>{x.name}</a> <a href={x.source}>(Source)</a>- {x.summary}
+						</Typography>
+					);
+
+					// <div style={{ textAlign: "center" }}>
+					// 	{preprocess(data).map(x => (
+					// 		<div key={x.id} style={celebStyle}>
+					// 			<Resource resource={x} />
+					// 		</div>
+					// 	))}
+					// </div>
+				})}
 			</div>
 		);
 	}
