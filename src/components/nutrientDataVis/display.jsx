@@ -294,7 +294,7 @@ class Food extends Component {
 											<li>
 												For every nutrient, its normalized value is divided by
 												its DRI value. The result is the percent 100 Calories of
-												food fulfills of DRI nutrient requirements.
+												food fulfills for each DRI nutrient requirements.
 											</li>
 											<li>
 												Sum up all these nutrient percentages to get percent of

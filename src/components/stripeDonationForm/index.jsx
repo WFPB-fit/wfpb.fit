@@ -14,7 +14,7 @@ import { getLink } from "../../utils/GeneralUtils";
 const minDonationAmount = 0.5;
 
 const backendUrl =
-	"https://2oxgc88kd9.execute-api.eu-central-1.amazonaws.com/production";
+	"https://tyoxm4p5gk.execute-api.us-west-2.amazonaws.com/prod/";
 
 const live_key = "pk_live_gYNCfpHpLEzEPpKk3qjjklwV";
 const test_key = "pk_test_pYPBajqbOoTntc5A3B5XmTWJ";

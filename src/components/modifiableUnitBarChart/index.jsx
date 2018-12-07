@@ -109,7 +109,7 @@ export default class UnitChart extends Component {
 									style={{
 										grid: { stroke: "none" },
 										tickLabels: {
-											fontSize: 10
+											fontSize: 9
 										}
 									}}
 								/>
