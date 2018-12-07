@@ -13,14 +13,11 @@ import { getLink } from "../../utils/GeneralUtils";
 
 const minDonationAmount = 0.5;
 
-const backendUrl =
-	"https://tyoxm4p5gk.execute-api.us-west-2.amazonaws.com/prod";
-
-const live_key = "pk_live_gYNCfpHpLEzEPpKk3qjjklwV";
-const test_key = "pk_test_pYPBajqbOoTntc5A3B5XmTWJ";
-let key = test_key;
+let backendUrl = "http://localhost:5000";
+let key = "pk_test_pYPBajqbOoTntc5A3B5XmTWJ"; //test stripe key
 if (process.env.NODE_ENV === "production") {
-	key = live_key;
+	key = "pk_live_gYNCfpHpLEzEPpKk3qjjklwV"; //live stripe key
+	backendUrl = "https://tyoxm4p5gk.execute-api.us-west-2.amazonaws.com/prod";
 }
 
 export default class StripeDonationForm extends Component {
