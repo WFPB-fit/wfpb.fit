@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { Typography } from "@material-ui/core";
 import IconButton from "@material-ui/core/IconButton";
 import GithubIcon from "../githubIcon";
+import EmailIcon from "@material-ui/icons/Email";
 
 const Wrapper = styled.div`
 	padding: 5px;
@@ -21,8 +22,12 @@ export default class Header extends Component {
 				<hr style={{ margin: "10px 0 0 0" }} />
 
 				<Wrapper>
-					<div />
 					<div>
+						<IconButton color="default" href="mailto:wfpb.fit@gmail.com">
+							<EmailIcon />
+						</IconButton>
+					</div>
+					<div style={{ display: "flex", alignItems: "center" }}>
 						<Typography>
 							Talk with your doctor before making diet changes
 						</Typography>

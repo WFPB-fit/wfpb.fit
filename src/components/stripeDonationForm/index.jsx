@@ -155,7 +155,10 @@ export default class StripeDonationForm extends Component {
 					Your information is encrypted and automatically transferred to
 					financial institutions. This information is not made available to any
 					other parties.
+					<br/>
+					See the code <a href="https://github.com/WFPB-fit/wfpb.fit-backend">here</a>
 				</Typography>
+				
 			</div>
 		);
 	}

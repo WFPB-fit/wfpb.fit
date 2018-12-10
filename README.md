@@ -4,8 +4,12 @@ Website that makes information easy to find about the Whole Food, Plant-Based di
 
 ### Contributing
 
-Contributions welcome! Open an issue, PR, or email at wfpb.fit@gmail.com if you find a bug or enhancement
+Contributions welcome! Open an issue, PR, or email us at wfpb.fit@gmail.com if you find an issue or want to suggest an improvement. We also love to hear from people who the site has helped.
 
 ### Running
 
-Simply clone the repo, install dependencies with `npm i`, then run with `npm run start`.
+```
+git clone https://github.com/WFPB-fit/wfpb.fit.git
+yarn
+npm run start
+```
