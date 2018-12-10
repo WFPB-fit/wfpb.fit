@@ -143,6 +143,16 @@ module.exports = {
               name: 'static/media/[name].[hash:8].[ext]',
             },
           },
+          //html-loader
+					{
+						test: /\.(html)$/,
+						use: {
+							loader: "html-loader",
+							options: {
+								attrs: [":data-src"]
+							}
+						}
+					},
           // Process JS with Babel.
           {
             test: /\.(js|jsx|mjs)$/,
