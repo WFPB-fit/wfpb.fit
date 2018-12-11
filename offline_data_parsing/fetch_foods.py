@@ -338,10 +338,11 @@ def fetch_USDA_data():
 	while len(ids) > 0:
 		id_subsection = ids[0:max_foods_per_request] 
 
-		usda_requests.append( get_response(id_subsection) )
+		req = get_response(id_subsection)
+		usda_requests.append( req )
 
 		ids = ids[max_foods_per_request:]
-	
+
 	responses = grequests.map(usda_requests)
 	
 	return list( map(lambda x: x.json(), responses) )
