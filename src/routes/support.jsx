@@ -11,7 +11,7 @@ import Charities from "../assets/data/charities.json";
 import Resource from "../components/resource";
 import Heading from "../components/heading";
 
-import EmailSubscriptionSignupHTML from "../components/sendInBlueEmailSubscription/index.html";
+import EmailSignup from "../components/emailSignup/mailChimp.html";
 
 export default class Support extends Component {
 	render() {
@@ -23,8 +23,13 @@ export default class Support extends Component {
 				<StripeDonationForm />
 				<Heading id="subscribe" txt="Subscribe" variant="h4" />
 				<div
-					style={{ width: "50%", minWidth: "300px", margin: "0 auto" }}
-					dangerouslySetInnerHTML={{ __html: EmailSubscriptionSignupHTML }}
+					style={{
+						width: "50%",
+						minWidth: "300px",
+						margin: "0 auto",
+						textAlign: "center"
+					}}
+					dangerouslySetInnerHTML={{ __html: EmailSignup }}
 				/>{" "}
 				<Heading id="charities" txt="Charities" variant="h4" />
 				<Typography variant="h6">

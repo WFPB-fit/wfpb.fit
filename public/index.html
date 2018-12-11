@@ -66,6 +66,18 @@
 		/* .Select-menu-outer{
 		} */
 	</style>
+
+	<!-- RECAPTCHA connection-->
+	<script src='https://www.google.com/recaptcha/api.js?render=6LdQfX8UAAAAADGis13IXHCJuxWmLfgXZFlwZCi_'></script>
+	<script>
+		grecaptcha.ready(function() {
+		grecaptcha.execute('6LdQfX8UAAAAADGis13IXHCJuxWmLfgXZFlwZCi_', {action: 'action_name'})
+		.then(function(token) {
+		// Verify the token on the server.
+		});
+		});
+	</script>
+		
 </head>
 
 <body>
