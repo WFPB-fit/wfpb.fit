@@ -54,14 +54,14 @@ export default class HowTo extends Component {
 					src="/imgs/assets/foods/pyramids/Plant-Based-Dietitian-Pyramid.jpg"
 					alt="Plant-Based-Dietitian-Pyramid"
 				/> */}
-				<SquarishImg
+				{/* <SquarishImg
 					src="/imgs/assets/foods/pyramids/lowfat_highcarb_wfpb_food_pyramid_nutriciously.jpg"
 					alt="Nutriciously WFPB low fat food pyramid"
 				/>
 				<SquarishImg
 					src="/imgs/assets/foods/pyramids/vegan_food_pyramid_by_nutriciously7.jpg"
 					alt="Nutriciously WFPB low fat food pyramid"
-				/>
+				/> */}
 				<Heading id="help" txt="Where can I get help?" variant="h4" />
 				<Heading id="doctors" txt="Doctors" variant="h5" />
 				Find a medical professional to help you on your journey.
