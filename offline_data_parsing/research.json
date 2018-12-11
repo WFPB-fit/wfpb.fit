@@ -18,6 +18,15 @@
 		"quote": "Increasing calcium intake from dietary sources or by taking calcium supplements produces small non-progressive increases in BMD, which are unlikely to lead to a clinically significant reduction in risk of fracture."
 	},
 	{
+		"title": "Health and sustainability outcomes of vegetarian dietary patterns: a revisit of the EPIC-Oxford and the Adventist Health Study-2 cohorts",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/30487555",
+		"year": 2018,
+		"type": "study",
+		"availability": "abstract",
+		"tags": "vegetarian,cancer,overall mortality,climate change",
+		"quote": "Increasing calcium intake from dietary sources or by taking calcium supplements produces small non-progressive increases in BMD, which are unlikely to lead to a clinically significant reduction in risk of fracture."
+	},
+	{
 		"title": "Dietary Sources of Energy, Solid Fats, and Added Sugars Among Children and Adolescents in the United States",
 		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3428130/",
 		"more_info_url": "https://epi.grants.cancer.gov/diet/foodsources/",
@@ -3290,6 +3299,15 @@
 		"type": "research report",
 		"availability": "full",
 		"tags": "climate change,food security",
+		"quote": "Food systems contribute 19%–29% of global anthropogenic green-house gas (GHG) emissions [in 2008]. ... climate change will affect agricultural yields and earnings,food prices, reliability of delivery, food quality, and, notably, food safety.Low-income producers and consumers of food will be more vulnerable ..."
+	},
+	{
+		"title": "Effectiveness of plant-based diets in promoting well-being in the management of type 2 diabetes: a systematic review",
+		"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6235058/",
+		"year": 2018,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "diabetes,WFPB,mental health,weight loss",
 		"quote": "Food systems contribute 19%–29% of global anthropogenic green-house gas (GHG) emissions [in 2008]. ... climate change will affect agricultural yields and earnings,food prices, reliability of delivery, food quality, and, notably, food safety.Low-income producers and consumers of food will be more vulnerable ..."
 	},
 	{
