@@ -11,5 +11,5 @@ Contributions welcome! Open an issue, PR, or email us at wfpb.fit@gmail.com if y
 ```
 git clone https://github.com/WFPB-fit/wfpb.fit.git
 yarn
-npm run start
+yarn start
 ```

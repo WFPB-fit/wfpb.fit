@@ -8,7 +8,7 @@ import { alphaCompare } from "../GeneralUtils.jsx";
 // } from 'js-search';
 // import { stemmer } from 'porter-stemmer';
 // const porterStemmerTokenizer = new StemmingTokenizer(stemmer, new SimpleTokenizer())
-import createFilterOptions from "react-select-fast-filter-options";
+// import createFilterOptions from "react-select-fast-filter-options";
 
 function _getAllSelectables(foodData) {
 	return Object.keys(foodData)
@@ -38,10 +38,10 @@ function food(
 			return Object.assign({}, state, {
 				data: action.foodData,
 				allSelectables: selectables,
-				filterOptions: createFilterOptions({
-					options: selectables
-					// tokenizer: porterStemmerTokenizer,
-				})
+				// filterOptions: createFilterOptions({
+				// 	options: selectables
+				// 	// tokenizer: porterStemmerTokenizer,
+				// })
 			});
 		case "ADD_FOOD_COLORS":
 			return Object.assign({}, state, {

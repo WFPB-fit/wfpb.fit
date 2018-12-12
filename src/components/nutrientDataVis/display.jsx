@@ -450,7 +450,7 @@ class Food extends Component {
 				<LinkableSelect
 					placeholder="Food Name Search..."
 					name="form-field-name"
-					filterOptions={this.props.food.filterOptions}
+					// filterOptions={this.props.food.filterOptions}
 					value={this.state.selectedFoods}
 					onChange={this.handleSelectChange}
 					options={this.props.food.allSelectables}

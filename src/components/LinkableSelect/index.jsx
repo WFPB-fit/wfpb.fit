@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 
-import VirtualizedSelect from "react-virtualized-select";
+// import VirtualizedSelect from "react-virtualized-select";
 import { withRouter } from "react-router-dom";
 
 import { alphaCompare } from "../../utils/GeneralUtils.jsx";
+import ReactSelect, { createFilter } from 'react-select';
 
 class LinkableSelect extends Component {
 	tagsChanged = (value) => {
@@ -59,14 +60,19 @@ class LinkableSelect extends Component {
 
 	render() {
 		return (
-			<VirtualizedSelect
+			<ReactSelect
 				style={{ margin: "5px 0" }}
 				value={this.props.value}
 				onChange={this.tagsChanged}
 				options={this.props.options}
 				name="virtual-select-form"
-				joinValues
-				multi
+				filterOption={createFilter({
+					ignoreCase: true,
+					trim: true,
+					ignoreAccents: true,
+					matchFrom: "any"
+				})}
+				isMulti
 			/>
 		);
 	}

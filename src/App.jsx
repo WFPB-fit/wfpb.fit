@@ -9,10 +9,6 @@ import Footer from "./components/footer";
 
 import AppRoutes from "./utils/routes/appRoutes.js";
 
-import "react-select/dist/react-select.css";
-import "react-virtualized/styles.css";
-import "react-virtualized-select/styles.css";
-
 import DataLoader from "./utils/data/DataLoader.js";
 
 import { Provider } from "react-redux";
