@@ -12,7 +12,7 @@ import Resource from "../resource/index.jsx";
 import { titleize, alphaCompare } from "../../utils/GeneralUtils.jsx";
 import LinkableSelect from "../LinkableSelect";
 
-import StudyMetadataNames from '../../assets/data/study_metadata_names.json';
+import StudyMetadataNames from "../../assets/data/study_metadata_names.json";
 
 export default class Resources extends Component {
 	handleSelectedTagsChanged(value) {
@@ -33,11 +33,11 @@ export default class Resources extends Component {
 			bVal = StudyMetadataNames.availability[bVal] || 10;
 		}
 
-		aVal = parseInt(aVal,10);
-		bVal = parseInt(bVal,10);
+		aVal = parseInt(aVal, 10);
+		bVal = parseInt(bVal, 10);
 
 		const compare = aVal - bVal;
-		return (this.state.sortBy ==="year") ? -compare : compare;
+		return this.state.sortBy === "year" ? -compare : compare;
 	}
 
 	constructor(props) {
@@ -55,18 +55,8 @@ export default class Resources extends Component {
 		this.state = {
 			selectedTags: [],
 			sortBy: "year",
-			tags:[]
+			tags: []
 		};
-
-		//find all selectable tags
-		let tags = this.props.tags;
-		if (!this.props.tags) {
-			tags = Object.keys(this.props.research);
-		}
-		tags = tags.map(tag => {
-			return { value: tag, label: titleize(tag) };
-		});
-		this.setState({tags: tags.sort(alphaCompare)});
 
 		//find number of unique resources
 		const taggedResources = Object.values(this.props.research);
@@ -78,6 +68,18 @@ export default class Resources extends Component {
 		);
 		this.numTotal = allResearch.length;
 	}
+
+	getSelectableTags = () => {
+		//find all selectable tags
+		let tags = this.props.tags;
+		if (!tags) {
+			tags = Object.keys(this.props.research);
+		}
+		tags = tags.map(tag => {
+			return { value: tag, label: titleize(tag) };
+		});
+		return tags.sort(alphaCompare);
+	};
 
 	getStudiesFromSelectedTags() {
 		let selectedResources = {};
@@ -101,7 +103,7 @@ export default class Resources extends Component {
 					<LinkableSelect
 						value={this.state.selectedTags}
 						onChange={this.handleSelectedTagsChanged}
-						options={this.state.tags}
+						options={this.getSelectableTags()}
 					/>
 					<FormControl>
 						<InputLabel htmlFor="sort-select">Sort</InputLabel>
