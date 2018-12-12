@@ -24,3 +24,4 @@ export default class ResourceTabs extends Component {
 		return <LinkableTabs notLinkable={this.props.notLinkable} tabs={tabData} />;
 	}
 }
+

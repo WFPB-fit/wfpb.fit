@@ -72,8 +72,6 @@ export default class Research extends Component {
 				<WidthWrapper>
 					<ResourceTabs
 						tabs={tabs}
-						location={this.props.location}
-						history={this.props.history}
 					/>
 				</WidthWrapper>
 			);

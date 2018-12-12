@@ -29,8 +29,6 @@ export default class Health extends Component {
 			<WidthWrapper>
 				<ResourceTabs
 					tabs={this.tabs}
-					location={this.props.location}
-					history={this.props.history}
 				/>
 			</WidthWrapper>
 		);
