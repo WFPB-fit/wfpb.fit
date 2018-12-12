@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-// import VirtualizedSelect from "react-virtualized-select";
 import { withRouter } from "react-router-dom";
 
 import { alphaCompare } from "../../utils/GeneralUtils.jsx";

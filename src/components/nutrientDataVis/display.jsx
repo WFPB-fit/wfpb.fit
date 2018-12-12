@@ -440,8 +440,7 @@ class Food extends Component {
 			<div>
 				<Typography variant="h4">Compare Food Nutrition</Typography>
 				<Typography>
-					Enter a text search into the search bar or use the selector to narrow
-					down choices
+					Search for your favorite foods to see how their nutrition compares.
 				</Typography>
 				<NestedSelectField
 					selectedFoods={this.state.selectedFoods}

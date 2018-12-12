@@ -38,7 +38,7 @@ export default class Endorsements extends Component {
 			<div>
 				{data.map(x => {
 					return (
-						<Typography key={x.wiki+x.source+x.name} style={{margin:'7px'}}>
+						<Typography key={x.wiki + x.source + x.name} style={{ margin: '7px' }}>
 							<a href={x.wiki}>{x.name}</a> <a href={x.source}>(Source)</a>- {x.summary}
 						</Typography>
 					);
@@ -68,6 +68,10 @@ export default class Endorsements extends Component {
 		return (
 			<WidthWrapper>
 				<Heading id="orgs" txt="Organizations" variant="h4" />
+				<Typography variant="h6">
+					The following groups have endorsed a whole-food, vegan diet as healthy.
+				</Typography>
+
 				{orgs}
 				<Heading id="physicians" txt="Physicians" variant="h4" />
 				<Typography variant="h6">
