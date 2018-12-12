@@ -54,7 +54,8 @@ export default class Resources extends Component {
 		//init state first
 		this.state = {
 			selectedTags: [],
-			sortBy: "year"
+			sortBy: "year",
+			tags:[]
 		};
 
 		//find all selectable tags
@@ -65,7 +66,7 @@ export default class Resources extends Component {
 		tags = tags.map(tag => {
 			return { value: tag, label: titleize(tag) };
 		});
-		this.selectableTags = tags.sort(alphaCompare);
+		this.setState({tags: tags.sort(alphaCompare)});
 
 		//find number of unique resources
 		const taggedResources = Object.values(this.props.research);
@@ -100,7 +101,7 @@ export default class Resources extends Component {
 					<LinkableSelect
 						value={this.state.selectedTags}
 						onChange={this.handleSelectedTagsChanged}
-						options={this.selectableTags}
+						options={this.state.tags}
 					/>
 					<FormControl>
 						<InputLabel htmlFor="sort-select">Sort</InputLabel>

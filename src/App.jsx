@@ -4,8 +4,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import styled from "styled-components";
 
-import learnMoreData from "./assets/data/media.json";
-import { preprocess, indexByTags } from "./utils/GeneralUtils.jsx";
 import Header from "./components/header";
 import Footer from "./components/footer";
 
@@ -75,12 +73,6 @@ class App extends Component {
 		//simple global data container
 		window.globalAppData = {
 			appName: "WFPB.fit",
-			learnMore: {
-				documentaries: indexByTags(preprocess(learnMoreData.documentaries)),
-				videos: indexByTags(preprocess(learnMoreData.videos)),
-				books: indexByTags(preprocess(learnMoreData.books)),
-				wikipedia: indexByTags(preprocess(learnMoreData.wikipedia))
-			}
 		};
 		document.title = window.globalAppData.appName; //set tab title
 

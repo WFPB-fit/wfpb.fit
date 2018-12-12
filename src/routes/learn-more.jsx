@@ -2,22 +2,25 @@ import React, { Component } from 'react';
 import ResourceTabs from '../components/tabsDisplay/ResourceTabs.jsx';
 import { WidthWrapper } from '../utils/GeneralUtils.jsx';
 
+import learnMoreData from "../assets/data/media.json";
+import { preprocess, indexByTags } from "../utils/GeneralUtils.jsx";
+
 export default class Health extends Component {
 	constructor(props) {
 		super(props);
 
 		this.tabs = [{
 			label: 'Documentaries',
-			resources: window.globalAppData.learnMore.documentaries
+			resources: indexByTags(preprocess(learnMoreData.documentaries))
 		}, {
 			label: 'Books',
-			resources: window.globalAppData.learnMore.books
+			resources: indexByTags(preprocess(learnMoreData.books))
 		}, {
 			label: 'Videos',
-			resources: window.globalAppData.learnMore.videos
+			resources: indexByTags(preprocess(learnMoreData.videos))
 		}, {
 			label: 'Wikipedia',
-			resources: window.globalAppData.learnMore.wikipedia
+			resources: indexByTags(preprocess(learnMoreData.wikipedia))
 		},
 		];
 	}
