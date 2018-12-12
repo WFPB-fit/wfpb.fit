@@ -20,6 +20,8 @@ import orange from "@material-ui/core/colors/orange";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import withWindowDimensions from "./components/withWindowSize/index.jsx";
 
+import Home from "./routes/home.jsx";
+
 // import Parse from './utils/fdaDataCreation/parseFdaData';
 // Parse.parse(store);
 
@@ -78,6 +80,7 @@ class App extends Component {
 											/>
 										);
 									})}
+									<Route component={Home}/>	
 								</Switch>
 							</Body>
 							<Footer />

@@ -1,0 +1,6 @@
+# Initial request to non index.html pages will not hit react router 
+# https://tylermcginnis.com/react-router-cannot-get-url-refresh/
+# redirect everything to index
+# https://www.netlify.com/docs/redirects/
+
+/*    /index.html   200
