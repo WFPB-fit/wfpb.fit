@@ -87,10 +87,6 @@ class MyComponent extends Component {
 							<b>WFPB is also an ethical way to eat. </b> Animal agriculture is
 							the #1 cause of{" "}
 							{getLink(
-								"/research?selected=antibiotics#disease",
-								"antibiotic resistance,"
-							)}{" "}
-							{getLink(
 								"/research?selected=water+use#environment",
 								"water use,"
 							)}{" "}
@@ -111,11 +107,15 @@ class MyComponent extends Component {
 								"/research?selected=water+plastic#environment",
 								"oceanic plastic"
 							)}{" "}
-							and{" "}
 							{getLink(
 								"/research?selected=climate+change#environment",
 								"climate change."
 							)}
+							and{" "}
+							{getLink(
+								"/research?selected=antibiotics#disease",
+								"antibiotic use,"
+							)}{" "}
 						</Typography>
 						<Typography>
 							<b>It's also cheap and tastes great.</b>
