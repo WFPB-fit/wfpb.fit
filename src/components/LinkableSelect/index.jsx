@@ -6,7 +6,7 @@ import { withRouter } from "react-router-dom";
 import { alphaCompare } from "../../utils/GeneralUtils.jsx";
 
 class LinkableSelect extends Component {
-	tagsChanged(value) {
+	tagsChanged = (value) => {
 		this.props.onChange(value);
 
 		//update URL to match the new tags
@@ -26,7 +26,7 @@ class LinkableSelect extends Component {
 		this.props.history.replace(url.toString().replace(url.origin, ""));
 	}
 
-	setSelectablesFromURL(options, paramName, paramSeparator) {
+	setSelectablesFromURL = (options, paramName, paramSeparator) => {
 		let indexedOptions = {}
 		for (let selectable of options) {
 			indexedOptions[selectable.value] = selectable.label;
@@ -47,13 +47,6 @@ class LinkableSelect extends Component {
 		this.props.onChange(selectables);
 	}
 
-	constructor(props) {
-		super(props);
-		//bind fucntions to this class
-		this.tagsChanged = this.tagsChanged.bind(this);
-		this.setSelectablesFromURL = this.setSelectablesFromURL.bind(this);
-	}
-
 	componentDidMount() {
 		if (this.props.options) {
 			this.setSelectablesFromURL(
@@ -65,14 +58,13 @@ class LinkableSelect extends Component {
 	}
 
 	render() {
-		const { onChange, ...props } = this.props;
-
 		return (
 			<VirtualizedSelect
 				style={{ margin: "5px 0" }}
+				value={this.props.value}
 				onChange={this.tagsChanged}
-				{...props}
-				name="form-field-name"
+				options={this.props.options}
+				name="virtual-select-form"
 				joinValues
 				multi
 			/>
