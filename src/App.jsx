@@ -1,19 +1,13 @@
 import React, { Component } from "react";
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import styled from "styled-components";
 
 import Header from "./components/header";
 import Footer from "./components/footer";
 
-import Home from "./routes/home.jsx";
-import HowTo from "./routes/how-to.jsx";
-import Data from "./routes/food.jsx";
-import ResearchContainer from "./routes/research_container.jsx";
-import LearnMore from "./routes/learn-more";
-import Endorsements from "./routes/endorsements";
-import Support from "./routes/support";
+import AppRoutes from "./utils/routes/appRoutes.js";
 
 import "react-select/dist/react-select.css";
 import "react-virtualized/styles.css";
@@ -56,23 +50,13 @@ const theme = createMuiTheme({
 	}
 });
 
-const appRoutes = [
-	{ path: "/", txt: "Home", component: Home, exact: true },
-	{ path: "/research", txt: "Research", component: ResearchContainer },
-	{ path: "/data", txt: "Data", component: Data },
-	{ path: "/endorsements", txt: "Endorsements", component: Endorsements },
-	{ path: "/media", txt: "Media", component: LearnMore },
-	{ path: "/how-to", txt: "How-To", component: HowTo },
-	{ path: "/support", txt: "Support", component: Support }
-];
-
 class App extends Component {
 	constructor(props) {
 		super(props);
 
 		//simple global data container
 		window.globalAppData = {
-			appName: "WFPB.fit",
+			appName: "WFPB.fit"
 		};
 		document.title = window.globalAppData.appName; //set tab title
 
@@ -85,10 +69,10 @@ class App extends Component {
 				<Provider store={store}>
 					<Router>
 						<Wrapper>
-							<Header appRoutes={appRoutes} />
+							<Header appRoutes={AppRoutes} />
 							<Body>
 								<Switch>
-									{appRoutes.map(x => {
+									{AppRoutes.map(x => {
 										return (
 											<Route
 												key={x.path}
