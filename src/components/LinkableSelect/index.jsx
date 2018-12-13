@@ -64,6 +64,7 @@ class LinkableSelect extends Component {
 				value={this.props.value}
 				onChange={this.tagsChanged}
 				options={this.props.options}
+				optionClassName="needsclick" //https://github.com/JedWatson/react-select/issues/1036
 				onBlur={event => event.preventDefault()} //https://github.com/JedWatson/react-select/issues/2692
 				name="virtual-select-form"
 				filterOption={createFilter({
