@@ -46,9 +46,34 @@ class MyComponent extends Component {
 							documented to{" "}
 							<b>
 								{" "}
-								reverse heart disease, protect against type II diabetes, help
-								prevent cancer, ease weightloss, improve autoimmune disease,
-								extend lifespan, and more.
+								reverse{" "}
+								{getLink(
+									"/research?selected=heart+disease",
+									"heart disease,"
+								)}{" "}
+								protect against type II {" "}
+								{getLink(
+									"/research?selected=diabetes",
+									"diabetes,"
+								)}{" "} help prevent {" "}
+								{getLink(
+									"/research?selected=cancer",
+									"cancer,"
+								)}{" "} ease
+								{" "}
+								{getLink(
+									"/research?selected=weight+loss",
+									"weight loss,"
+								)}{" "} improve {" "}
+								{getLink(
+									"/research?selected=ibd_multiple+sclerosis_inflammation_lupus_arthritis",
+									"autoimmune,"
+								)}{" "} disease, extend {" "}
+								{getLink(
+									"/research?selected=overall+mortality",
+									"lifespan,"
+								)}{" "} and
+								more.
 							</b>
 						</Typography>
 						<Emojis>
