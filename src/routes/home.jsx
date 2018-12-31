@@ -76,7 +76,7 @@ class MyComponent extends Component {
 						{/* <img alt="WFPB foods" src="/imgs/assets/foods/Fruits_Veg.jpg" /> */}
 						<Heading id="why" txt="Why eat this way?" variant="h4" />
 						<Typography>
-							Research shows <b>WFPB fights disease,</b> it reverses{" "}
+							Research shows <b>WFPB fights disease:</b> it reverses{" "}
 							{getLink("/research?selected=heart+disease", "heart disease,")}{" "}
 							protects against type II{" "}
 							{getLink("/research?selected=diabetes", "diabetes,")} helps
@@ -93,7 +93,7 @@ class MyComponent extends Component {
 						</Typography>
 						<br />
 						<Typography>
-							<b>WFPB is a sustainable diet. </b> Animal agriculture is the #1
+							<b>WFPB is a sustainable diet:</b> Animal agriculture is the #1
 							cause of{" "}
 							{getLink(
 								"/research?selected=water+use#environment",
@@ -114,7 +114,7 @@ class MyComponent extends Component {
 							)}{" "}
 							{getLink(
 								"/research?selected=water+plastic#environment",
-								"oceanic plastic"
+								"oceanic plastic,"
 							)}{" "}
 							{getLink(
 								"/research?selected=climate+change#environment",
