@@ -38,7 +38,7 @@ class MyComponent extends Component {
 					<WidthWrapper>
 						<Heading id="what" txt="What is WFPB?" variant="h4" />
 						<Typography>
-							<b>Eating unprocessed plant foods.</b> such as fruit, vegetables,
+							<b>Eating unprocessed plant foods</b> such as fruit, vegetables,
 							legumes, and whole-grains.
 							<br />
 							<b>Avoiding animal products</b> such as meat, eggs, dairy, or
