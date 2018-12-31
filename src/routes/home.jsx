@@ -38,45 +38,15 @@ class MyComponent extends Component {
 					<WidthWrapper>
 						<Heading id="what" txt="What is WFPB?" variant="h4" />
 						<Typography>
-							<b>
-								A diet of diverse, nutrient-dense plant foods with minimal
-								animal products or processed foods
-							</b>{" "}
-							(such as oil, sugar, or refined grains). It's a diet that has been
-							documented to{" "}
-							<b>
-								{" "}
-								reverse{" "}
-								{getLink(
-									"/research?selected=heart+disease",
-									"heart disease,"
-								)}{" "}
-								protect against type II {" "}
-								{getLink(
-									"/research?selected=diabetes",
-									"diabetes,"
-								)}{" "} help prevent {" "}
-								{getLink(
-									"/research?selected=cancer",
-									"cancer,"
-								)}{" "} ease
-								{" "}
-								{getLink(
-									"/research?selected=weight+loss",
-									"weight loss,"
-								)}{" "} improve {" "}
-								{getLink(
-									"/research?selected=ibd_multiple+sclerosis_inflammation_lupus_arthritis",
-									"autoimmune,"
-								)}{" "} disease, extend {" "}
-								{getLink(
-									"/research?selected=overall+mortality",
-									"lifespan,"
-								)}{" "} and
-								more.
-							</b>
-						</Typography>
-						<Emojis>
+							<b>Eating unprocessed plant foods.</b> such as fruit, vegetables,
+							legumes, and whole-grains.
+							<br />
+							<b>Avoiding animal products</b> such as meat, eggs, dairy, or
+							fish.
+							<br />
+							<b>Avoiding processed food</b> such as sugar, oil, and refined
+							grains.
+							{/* <Emojis>
 							<span
 								role="img"
 								aria-label="Emojis of fruit, vegetables, and mushrooms"
@@ -97,7 +67,8 @@ class MyComponent extends Component {
 							>
 								❌ - 🍬🥐🍟🍦🥧🍺{" "}
 							</span>
-						</Emojis>
+						</Emojis> */}
+						</Typography>
 					</WidthWrapper>
 				</Row>
 				<Row>
@@ -105,12 +76,25 @@ class MyComponent extends Component {
 						{/* <img alt="WFPB foods" src="/imgs/assets/foods/Fruits_Veg.jpg" /> */}
 						<Heading id="why" txt="Why eat this way?" variant="h4" />
 						<Typography>
-							Disease is expensive, time consuming, miserable, and difficult.
-							WFPB is a powerful way to help avoid disease.
+							Research shows <b>WFPB fights disease,</b> it reverses{" "}
+							{getLink("/research?selected=heart+disease", "heart disease,")}{" "}
+							protects against type II{" "}
+							{getLink("/research?selected=diabetes", "diabetes,")} helps
+							prevent {getLink("/research?selected=cancer", "cancer,")} eases{" "}
+							{getLink("/research?selected=weight+loss", "weight loss,")}{" "}
+							improves{" "}
+							{getLink(
+								"/research?selected=ibd_multiple+sclerosis_inflammation_lupus_arthritis",
+								"autoimmune,"
+							)}{" "}
+							disease, extends{" "}
+							{getLink("/research?selected=overall+mortality", "lifespan,")} and
+							more.
 						</Typography>
+						<br />
 						<Typography>
-							<b>WFPB is also an ethical way to eat. </b> Animal agriculture is
-							the #1 cause of{" "}
+							<b>WFPB is a sustainable diet. </b> Animal agriculture is the #1
+							cause of{" "}
 							{getLink(
 								"/research?selected=water+use#environment",
 								"water use,"
@@ -134,14 +118,19 @@ class MyComponent extends Component {
 							)}{" "}
 							{getLink(
 								"/research?selected=climate+change#environment",
-								"climate change."
-							)}
+								"climate change,"
+							)}{" "}
 							and{" "}
 							{getLink(
 								"/research?selected=antibiotics#disease",
 								"antibiotic use,"
 							)}{" "}
 						</Typography>
+						<br />
+						<Typography>
+							<b>WFPB is an ethical diet</b> that minimizes harm to animals.
+						</Typography>
+						<br />
 						<Typography>
 							<b>It's also cheap and tastes great.</b>
 						</Typography>
