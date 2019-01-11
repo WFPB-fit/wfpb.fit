@@ -20,13 +20,14 @@ const TallSkinnyImg = styled(ModalImage)`
 	display: block;
 	color: black;
 `;
-const SquarishImg = styled(ModalImage)`
-	width: 70%;
-	max-width: 800px;
-	padding: 5px;
-	margin: 0 auto;
-	display: block;
-`;
+
+// const SquarishImg = styled(ModalImage)`
+// 	width: 70%;
+// 	max-width: 800px;
+// 	padding: 5px;
+// 	margin: 0 auto;
+// 	display: block;
+// `;
 
 export default class HowTo extends Component {
 	static getListed(data) {
