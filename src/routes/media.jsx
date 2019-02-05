@@ -5,7 +5,7 @@ import { WidthWrapper } from '../utils/GeneralUtils.jsx';
 import learnMoreData from "../assets/data/media.json";
 import { preprocess, indexByTags } from "../utils/GeneralUtils.jsx";
 
-export default class Health extends Component {
+export default class extends Component {
 	constructor(props) {
 		super(props);
 
