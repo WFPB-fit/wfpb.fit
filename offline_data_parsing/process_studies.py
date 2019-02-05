@@ -26,6 +26,8 @@ def preprocess_studies(folder_name):
         # process_url(study)
 
         study['tags'] = study['tags'].split(",")
+        for i in range(len(study['tags'])):
+            study['tags'][i] = study['tags'][i].lower()
 
     with open(folder_name+"studies_metadata.json", 'w') as outfile:
         json.dump(studies, outfile)

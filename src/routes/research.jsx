@@ -5,6 +5,14 @@ import ResourceTabs from '../components/tabsDisplay/ResourceTabs.jsx';
 
 import CircularProgress from '@material-ui/core/CircularProgress';
 
+//preprocess tags
+Object.entries(tags).forEach(
+    ([tagType, tags]) => {
+		for(let i=0;i<tags.length;i++){
+			tags[i] = tags[i].toLowerCase();
+		}
+	}
+);
 
 export default class Research extends Component {
 
