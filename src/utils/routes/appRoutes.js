@@ -1,6 +1,6 @@
 import Home from "../../routes/home.jsx";
 import HowTo from "../../routes/how-to.jsx";
-import Data from "../../routes/food.jsx";
+import Data from "../../routes/data.jsx";
 import ResearchContainer from "../../routes/research_container.jsx";
 import Media from "../../routes/media";
 import Endorsements from "../../routes/endorsements";

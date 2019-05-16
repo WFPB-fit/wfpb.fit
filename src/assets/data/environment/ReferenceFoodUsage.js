@@ -1,28 +1,28 @@
 //currently these are just guesses, need better data
 export default [
-	{
-		label: "vegan",
-		data: {
-			Sugar: 10,
-			Rice: 5,
-			"Mustard/Rape-seed oil": 5,
-			"Soybean oil": 5,
-			"Sunflowerseed oil": 5,
-			Maize: 5,
-			"Roots and tubers": 15,
-			Wheat: 5,
-			"Fruits and vegetables": 15,
-			Nuts: 15,
-			Pulses: 15,
-			Pork: 0,
-			Eggs: 0,
-			"Fish (farmed)": 0,
-			Poultry: 0,
-			Dairy: 0,
-			"Sheep and goat": 0,
-			Beef: 0
-		}
-	},
+	// {
+	// 	label: "vegan",
+	// 	data: {
+	// 		Sugar: 10,
+	// 		Rice: 5,
+	// 		"Mustard/Rape-seed oil": 5,
+	// 		"Soybean oil": 5,
+	// 		"Sunflowerseed oil": 5,
+	// 		Maize: 5,
+	// 		"Roots and tubers": 15,
+	// 		Wheat: 5,
+	// 		"Fruits and vegetables": 15,
+	// 		Nuts: 15,
+	// 		Pulses: 15,
+	// 		Pork: 0,
+	// 		Eggs: 0,
+	// 		"Fish (farmed)": 0,
+	// 		Poultry: 0,
+	// 		Dairy: 0,
+	// 		"Sheep and goat": 0,
+	// 		Beef: 0
+	// 	}
+	// },
 	{
 		label: "WFPB",
 		data: {
@@ -70,7 +70,7 @@ export default [
 		}
 	},
 	{
-		label: "american", //2010 USDA ERS - Food availability per capita - Calories Loss-Adjusted Food Availability- Doesn't use the same groupings, so this is still just guessing - https://www.ers.usda.gov/data-products/food-availability-per-capita-data-system/food-availability-per-capita-data-system/#Food Availability
+		label: "USA", //2010 USDA ERS - Food availability per capita - Calories Loss-Adjusted Food Availability- Doesn't use the same groupings, so this is still just guessing - https://www.ers.usda.gov/data-products/food-availability-per-capita-data-system/food-availability-per-capita-data-system/#Food Availability
 		data: {
 			Sugar: 10,
 			Rice: 6,
@@ -93,26 +93,26 @@ export default [
 		}
 	},
 	{
-		label: "Meat Lover",
+		label: "Meaty",
 		data: {
 			Sugar: 0,
 			Rice: 0,
-			"Mustard/Rape-seed oil": 5,
-			"Soybean oil": 5,
-			"Sunflowerseed oil": 5,
-			Maize: 0,
+			"Mustard/Rape-seed oil": 4,
+			"Soybean oil": 4,
+			"Sunflowerseed oil":4 ,
+			Maize: 1,
 			"Roots and tubers": 5,
-			Wheat: 0,
+			Wheat: 2,
 			"Fruits and vegetables": 5,
 			Nuts: 5,
 			Pulses: 5,
 			Pork: 8,
-			Eggs: 10,
+			Eggs: 8,
 			"Fish (farmed)": 8,
 			Poultry: 12,
 			Dairy: 8,
 			"Sheep and goat": 8,
-			Beef: 11
+			Beef: 13
 		}
 	}
 ];

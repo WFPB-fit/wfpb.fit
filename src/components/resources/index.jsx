@@ -12,7 +12,7 @@ import Resource from "../resource/index.jsx";
 import { titleize, alphaCompare } from "../../utils/GeneralUtils.jsx";
 import LinkableSelect from "../LinkableSelect";
 
-import StudyMetadataNames from "../../assets/data/study_metadata_names.json";
+// import StudyMetadataNames from "../../assets/data/study_metadata_names.json";
 
 export default class Resources extends Component {
 	handleSelectedTagsChanged(value) {
@@ -24,14 +24,14 @@ export default class Resources extends Component {
 	sortResources(a, b) {
 		let aVal = a[this.state.sortBy] || 1;
 		let bVal = b[this.state.sortBy] || 1;
-
-		if (this.state.sortBy === "type") {
-			aVal = StudyMetadataNames.types[aVal] || 1;
-			bVal = StudyMetadataNames.types[bVal] || 1;
-		} else if (this.state.sortBy === "availability") {
-			aVal = StudyMetadataNames.availability[aVal] || 10;
-			bVal = StudyMetadataNames.availability[bVal] || 10;
-		}
+		
+		// if (this.state.sortBy === "type") {
+		// 	aVal = types[aVal] || 1;
+		// 	bVal = types[bVal] || 1;
+		// } else if (this.state.sortBy === "availability") {
+		// 	aVal = availabilities[aVal] || 10;
+		// 	bVal = availabilities[bVal] || 10;
+		// }
 
 		aVal = parseInt(aVal, 10);
 		bVal = parseInt(bVal, 10);
