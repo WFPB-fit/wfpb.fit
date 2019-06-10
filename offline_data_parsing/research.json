@@ -469,7 +469,7 @@
 		"type": "research report",
 		"availability": "full",
 		"tags": "biodiversity loss",
-		"quote": "A shift toward a healthy state by 2030 could unlock an additional $35 billion (or $2.5 billion per annum) ... Efforts to enhance coral reef health must be considered within the longer-term context of climate change, which presents an existential threat to many reefs. Even if the objectives of the Paris Agreement are achieved, reports warn that up to 90% of all coral reefs could be lost by 2050. Acting on local threats (including overfishing, erosion, and pollution) in order to maximise reef resilience may help moderate impacts, but climate change effects, including ocean warming and altered cyclone and rainfallpatterns, add uncertainty to the analysis presented in this report." 	
+		"quote": "A shift toward a healthy state by 2030 could unlock an additional $35 billion (or $2.5 billion per annum) ... Efforts to enhance coral reef health must be considered within the longer-term context of climate change, which presents an existential threat to many reefs. Even if the objectives of the Paris Agreement are achieved, reports warn that up to 90% of all coral reefs could be lost by 2050. Acting on local threats (including overfishing, erosion, and pollution) in order to maximise reef resilience may help moderate impacts, but climate change effects, including ocean warming and altered cyclone and rainfallpatterns, add uncertainty to the analysis presented in this report."
 	},
 	{
 		"title": "Nitrated meat products are associated with mania in humans and altered behavior and brain gene expression in rats",
@@ -878,6 +878,62 @@
 		"quote": "in several animal models, high-fat/high-sugar diet, gluten, red meat, maltodextrin, and emulsifiers may induce or accelerate intestinal inflammation. Certain dietary fibres and soy protein might be beneficial...Presumably diet alone is inadequate to cause IBD, but there is evidence for a gene/diet interaction"
 	},
 	{
+		"title": "The EAT-Lancet Commission on Food, Planet, Health",
+		"url": "https://eatforum.org/eat-lancet-commission/",
+		"pdf": "https://eatforum.org/content/uploads/2019/01/EAT-Lancet_Commission_Summary_Report.pdf",
+		"year": 2019,
+		"type": "research report",
+		"availability": "full",
+		"tags": "biodiversity,climate change,overall mortality",
+		"quote": "The global adoption of healthy diets from sustainable food systems would safeguard our planet and improve the health of billions. ... The Commission  shows  that  feeding  10  billion  people  a healthy diet within safe planetary boundaries for food production by 2050 is both possible and necessary. The data are both sufficient and strong enough to warrant immediate action. It  also  demonstrates  that  the  universal  adoption  of a  planetary  health  diet  would  help  avoid  severe  environmental  degradation  and  prevent  approximately  11  million  human  deaths  annually."
+	},
+	{
+		"title": "The Pecking Order 2018",
+		"url": "https://www.worldanimalprotection.org.uk/pecking-order",
+		"pdf": "https://www.worldanimalprotection.org/sites/default/files/int_files/the_pecking_order_full_report.pdf?_ga=2.157581562.1126675532.1549395625-603108595.1549395625",
+		"year": 2018,
+		"type": "research report",
+		"availability": "full",
+		"tags": "biodiversity,climate change,overall mortality",
+		"quote": "Nine  of  the  world’s  most  iconic  fast-food  companies  are  not  up  to  scratch  in  protecting  and  managing  the welfare of the chickens that make their businesses possible and profitable. Not one of the companies assessed for ‘The Pecking Order 2018’ had an effectively-implemented strategic commitment to chicken welfare. This is despite increased customer concern for the way the animals used by these businesses are treated. Chickens that supply the fast-food industry are farmed on a huge industrial scale. Fast growth rates leading to lameness and immense pain and suffering are the norm as is extreme close confinement, in enormous, featureless sheds containing tens of thousands of birds."
+	},
+	{
+		"title": "Carbohydrate quality and human health: a series of systematic reviews and meta-analyses.",
+		"url": "https://www.ncbi.nlm.nih.gov/pubmed/30638909",
+		"year": 2019,
+		"type": "meta analysis",
+		"availability": "abstract",
+		"tags": "fiber,overall mortality",
+		"quote": "Just under 135 million person-years of data from 185 prospective studies and 58 clinical trials with 4635 adult participants were included in the analyses. Observational data suggest a 15-30% decrease in all-cause and cardiovascular related mortality, and incidence of coronary heart disease, stroke incidence and mortality, type 2 diabetes, and colorectal cancer when comparing the highest dietary fibre consumers with the lowest consumers Clinical trials show significantly lower bodyweight, systolic blood pressure, and total cholesterol when comparing higher with lower intakes of dietary fibre. Risk reduction associated with a range of critical outcomes was greatest when daily intake of dietary fibre was between 25 g and 29 g. Dose-response curves suggested that higher intakes of dietary fibre could confer even greater benefit to protect against cardiovascular diseases, type 2 diabetes, and colorectal and breast cancer. Similar findings for whole grain intake were observed. Smaller or no risk reductions were found with the observational data when comparing the effects of diets characterised by low rather than higher glycaemic index or load. The certainty of evidence for relationships between carbohydrate quality and critical outcomes was graded as moderate for dietary fibre, low to moderate for whole grains, and low to very low for dietary glycaemic index and glycaemic load. Data relating to other dietary exposures are scarce."
+	},
+	{
+		"title": "Decline of coastal apex shark populations over the past half century",
+		"url": "https://www.nature.com/articles/s42003-018-0233-1",
+		"year": 2018,
+		"type": "study",
+		"availability": "full",
+		"tags": "extinction",
+		"quote": "Here we reconstruct a unique fisheries-independent dataset from a shark control programme spanning 1760 km of the Australian coastline over the past 55 years. We report substantial declines (74–92%) of catch per unit effort of hammerhead (Sphyrnidae), whaler (Carcharhinidae), tiger shark (Galeocerdo cuvier) and white sharks (Carcharodon carcharias). ... Ongoing declines and lack of recovery of vulnerable and protected shark species are a cause for concern."
+	},
+	{
+		"title": "Food groups and risk of all-cause mortality: a systematic review and meta-analysis of prospective studies.",
+		"url": "https://academic.oup.com/ajcn/article/105/6/1462/4569801",
+		"year": 2017,
+		"type": "meta analysis",
+		"availability": "full",
+		"tags": "overall ,vegetarian",
+		"quote": "With increasing intake (for each daily serving) of whole grains (RR: 0.92; 95% CI: 0.89, 0.95), vegetables (RR: 0.96; 95% CI: 0.95, 0.98), fruits (RR: 0.94; 95% CI: 0.92, 0.97), nuts (RR: 0.76; 95% CI: 0.69, 0.84), and fish (RR: 0.93; 95% CI: 0.88, 0.98), the risk of all-cause mortality decreased; higher intake of red meat (RR: 1.10; 95% CI: 1.04, 1.18) and processed meat (RR: 1.23; 95% CI: 1.12, 1.36) was associated with an increased risk of all-cause mortality in a linear dose-response meta-analysis."
+	},
+	{
+		"title": "Reducing food’s environmental impacts through producers and consumers",
+		"url": "http://science.sciencemag.org/content/360/6392/987",
+		"year": 2018,
+		"type": "study",
+		"availability": "abstract",
+		"tags": "climate change,vegan",
+		"quote": "we consolidated data covering five environmental indicators; 38,700 farms; and 1600 processors, packaging types, and retailers. Impact can vary 50-fold among producers of the same product ... Most strikingly, impacts of the lowest-impact animal products typically exceed those of vegetable substitutes, providing new evidence for the importance of dietary change."
+	},
+	{
 		"title": "Diet as a Trigger or Therapy for Inflammatory Bowel Diseases.",
 		"url": "https://www.ncbi.nlm.nih.gov/pubmed/27793606",
 		"year": 2017,
@@ -945,8 +1001,8 @@
 		"url": "http://www.tandfonline.com/doi/abs/10.1586/17474124.2016.1145546",
 		"year": 2016,
 		"type": "meta analysis",
-		"availability": "abstract",
-		"tags": "IBD,phytochemicals",
+		"availability": "full",
+		"tags": "poultry",
 		"quote": "In conclusion, natural products can be considered as dietary supplements with therapeutic potential for IBD, provided that their safety and efficacy is confirmed in future well-designed clinical trials with adequate sample size."
 	},
 	{
@@ -2354,6 +2410,16 @@
 		"quote": "Over three-quarters of the GPGP mass was carried by debris larger than 5 cm and at least 46% was comprised of fishing nets. Microplastics accounted for 8% of the total mass but 94% of the estimated 1.8 (1.1–3.6) trillion pieces floating in the area ... Finally, our results suggest that ocean plastic pollution within the GPGP is increasing exponentially and at a faster rate than in surrounding waters."
 	},
 	{
+		"title": "Plastics in the Marine Environment",
+		"url": "https://www.eunomia.co.uk/reports-tools/plastics-in-the-marine-environment/",
+		"type": "study",
+		"pdf":"https://www.eunomia.co.uk/free-download/?fdpid=3789",
+		"availability": "full",
+		"year": 2016,
+		"tags": "water plastic",
+		"quote": "Over 80% of the annual [plastic] input comes from land-based sources. ... The remainder comes from plastics released at sea, the majority as a result of fishing activities – for example, due to lost and discarded fishing gear."
+	},
+	{
 		"title": "Association Between Omega-3 Fatty Acid Supplementation and Risk of Major Cardiovascular Disease Events: A Systematic Review and Meta-analysis",
 		"url": "https://jamanetwork.com/journals/jama/article-abstract/1357266?=gt%3b",
 		"type": "meta analysis",
@@ -2721,7 +2787,7 @@
 	{
 		"title": "WWF: Living Planet Report 2018",
 		"url": "https://www.worldwildlife.org/pages/living-planet-report-2018",
-		"pdf":"https://c402277.ssl.cf1.rackcdn.com/publications/1187/files/original/LPR2018_Full_Report_Spreads.pdf",
+		"pdf": "https://c402277.ssl.cf1.rackcdn.com/publications/1187/files/original/LPR2018_Full_Report_Spreads.pdf",
 		"type": "research report",
 		"availability": "full",
 		"year": 2018,

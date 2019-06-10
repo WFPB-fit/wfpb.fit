@@ -20,6 +20,15 @@ const Wrapper = styled.div`
 	}
 `;
 
+const USER_DEFAULT_FOOD_SRC = {
+	Sugar: 10,
+	"Soybean oil": 10,
+	Wheat: 10,
+	"Fruits and vegetables": 10,
+	Poultry: 10,
+	Beef: 50
+};
+
 export default class YourImpact extends Component {
 	handleFoodWasteChange = event => {
 		let val = event.target.value;
@@ -41,7 +50,7 @@ export default class YourImpact extends Component {
 			overallVisible: false,
 			dailyCalories: 0,
 			foodWastePercent: 25,
-			dietComposition: Object.assign({}, ReferenceFoodUsage[2].data)
+			dietComposition: USER_DEFAULT_FOOD_SRC
 		};
 
 		//set default food usages to some random vegan amounts. Can try to find better data-backed defaults later
@@ -182,7 +191,7 @@ export default class YourImpact extends Component {
 								<Typography variant="h4">Calories</Typography>
 								<Typography>
 									Note: Fat has 9 calories per gram, protein has 4 cal/g, and
-									carbs have 4 cal/g or less. Thus, oil and fatty animal
+									carbs have 4 cal/g or less. Thus, oil and fatty
 									products may be a larger source of your calories than it may
 									appear based on portion sizes.
 								</Typography>
@@ -195,9 +204,8 @@ export default class YourImpact extends Component {
 								<Typography>
 									Pulses are the grain seed of{" "}
 									{getLink("https://en.wikipedia.org/wiki/Legume", "Legumes")},
-									and include beans, chickpeas, alfalfa, lentils, peas, peanuts,
-									and much more. All pulses are nitrogen-fixing, and thus do not
-									require much, if any, fertilizer.
+									and include beans, chickpeas, lentils, peas, peanuts,
+									and much more.
 								</Typography>
 								<Typography variant="h4">Source</Typography>
 								<Typography>

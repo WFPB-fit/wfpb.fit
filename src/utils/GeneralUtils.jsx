@@ -7,10 +7,11 @@ import { HashLink } from "react-router-hash-link";
 
 export function preprocess(resources) {
 	return resources.map((resource, indx) => {
-		if (resource.tags) resource.tags = resource.tags.split(",");
-		resource.id = indx;
+		let r2 = Object.assign({},resource);
+		if (r2.tags) r2.tags = r2.tags.split(",");
+		r2.id = indx;
 
-		return resource;
+		return r2;
 	});
 }
 

@@ -1,11 +1,15 @@
 {
 	"types": {
-        "0": "research report",
+		"0": "research report",
 		"1": "meta analysis",
 		"2": "study",
-		"3":"investigative journalism",
+		"3": "investigative journalism",
 		"4": "article"
 	},
-    "availability": { "0": "abstract", "1": "full", "2": "paywall" },
-    "tags":{}
+	"availability": {
+		"0": "full",
+		"1": "abstract",
+		"2": "paywall"
+	},
+	"tags": {}
 }

@@ -11,9 +11,9 @@ import withWindowDimensions from "../components/withWindowSize";
 
 import styled from "styled-components";
 import CenteredTextImage from "../components/centeredtextImage/index.jsx";
-const Emojis = styled.div`
-	font-size: 25px;
-`;
+// const Emojis = styled.div`
+// 	font-size: 25px;
+// `;
 const Row = styled.div`
 	padding: 50px 0;
 `;
@@ -103,7 +103,7 @@ class MyComponent extends Component {
 								"/research?selected=water+pollution#environment",
 								"water pollution,"
 							)}{" "}
-							{getLink("/research?selected=lan+use#environment", "land use,")}{" "}
+							{getLink("/research?selected=land+use#environment", "land use,")}{" "}
 							{getLink(
 								"/research?selected=land+degradation#environment",
 								"land degradation,"
