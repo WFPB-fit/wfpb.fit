@@ -113,18 +113,20 @@ class MyComponent extends Component {
 								"biodiversity loss,"
 							)}{" "}
 							{getLink(
-								"/research?selected=water+plastic#environment",
-								"oceanic plastic,"
-							)}{" "}
-							{getLink(
 								"/research?selected=climate+change#environment",
 								"climate change,"
 							)}{" "}
 							and{" "}
 							{getLink(
 								"/research?selected=antibiotics#disease",
-								"antibiotic use,"
+								"antibiotic use."
 							)}{" "}
+							It is also a major contributor to {" "}
+							{getLink(
+								"/research?selected=water+plastic#environment",
+								"oceanic plastic"
+							)}
+							.
 						</Typography>
 						<br />
 						<Typography>
